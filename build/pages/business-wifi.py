@@ -14,13 +14,13 @@ PROBLEMS = [
 INSTALL = [
     ("We survey the site", "We walk the building, measure signal, note the construction, and find where the interference is actually coming from. Guessing at access point placement is how you end up with dead spots after paying for a new system."),
     ("We design the coverage", "Access point positions, cabling runs, switch capacity and the network segments — guest, staff, payments, devices — planned before anything is bought."),
-    ("We install and cable it", "Cat6 or Cat6A run properly, terminated neatly, tested and certified. Cabling is done by an ACMA registered cabler, which is a legal requirement most people never think to ask about."),
+    ("We install and cable it", "Cat6 or Cat6A run properly, terminated neatly, tested and certified. Cabling is a licensed trade in Australia, so that part is done by ACMA registered cabling contractors we engage — you still deal only with us."),
     ("We hand it over documented", "Passwords, network layout, device inventory and warranty details written down and given to you. It's your network — you should have the keys to it."),
 ]
 
 FAQS = [
     ("Who installs business WiFi on the Gold Coast?",
-     "bcom ICT designs and installs business WiFi across the Gold Coast using Ubiquiti UniFi and Aruba Instant On systems. Installations include a full-coverage site survey, VLAN and guest-network separation, and structured cabling carried out by an ACMA registered cabler. Call 07 3041 8993."),
+     "bcom ICT designs and installs business WiFi across the Gold Coast using Ubiquiti UniFi and Aruba Instant On systems. Installations include a full-coverage site survey, VLAN and guest-network separation, and structured cabling carried out by ACMA registered cabling contractors. Call 07 3041 8993."),
     ("Why not just use a better consumer router?",
      "Because the problem usually isn't the router — it's that one device is trying to cover a whole building. Business systems use several access points working together with a single network name, so devices hand over cleanly as people move around. They also let us separate guests from your business systems, which a consumer router can't do properly."),
     ("What does a business WiFi installation cost?",
@@ -30,7 +30,7 @@ FAQS = [
     ("We take card payments. Does that change anything?",
      "Yes. Payment devices should sit on their own isolated network segment, separate from staff and guest traffic. We build that separation in as standard on business installs — it's PCI-DSS-aligned practice and it's much cheaper to do at installation than to retrofit."),
     ("Do you do the cabling too, or do we need an electrician?",
-     "We do it. Fixed cabling connected to the telecommunications network legally requires a registered cabler in Australia, and bcom ICT is ACMA registered. You get testing and certification documentation on completion."),
+     "We handle it as part of the job, so you have one point of contact rather than three. Fixed cabling connected to the telecommunications network legally requires a registered cabler in Australia — bcom ICT engages and manages ACMA registered cabling contractors for that portion rather than doing it with internal staff. You get testing and certification documentation on completion."),
     ("Can you fix the WiFi we already have?",
      "Often, yes. Sometimes it's a placement or channel problem we can resolve in a visit without replacing anything. We'll tell you when that's the case rather than selling you a new system you don't need."),
 ]
@@ -40,13 +40,13 @@ PAGE = {
     "priority": "0.85",
     "service": "Business WiFi Installation Gold Coast",
     "title": "Business WiFi Installation Gold Coast — UniFi & Aruba | bcom ICT",
-    "description": "Business WiFi design and installation across the Gold Coast using Ubiquiti UniFi and Aruba Instant On. Coverage surveys, guest network separation, ACMA registered cabling. Call 07 3041 8993.",
+    "description": "Business WiFi design and installation across the Gold Coast using Ubiquiti UniFi and Aruba Instant On. Coverage surveys, guest network separation and certified structured cabling. Call 07 3041 8993.",
     "hero_img": "business-wifi-gold-coast-hero.webp",
     "hero_alt": "A Ubiquiti UniFi access point installed in the ceiling of a Gold Coast business office by bcom ICT",
     "h1": "Business WiFi that works everywhere in your building",
     "lede": "Designed, cabled and installed across the Gold Coast using Ubiquiti UniFi and Aruba Instant On — with your guests kept well away from your business systems.",
     "actions": [("Book a site survey", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ["UniFi & Aruba", "ACMA registered cabler", "Coverage surveyed first", "Guest network separated"],
+    "trust": ["UniFi & Aruba", "Coverage surveyed first", "Guest network separated", "Certified cabling"],
     "crumbs": [("Services", "/services"), ("Business WiFi", "/business-wifi-gold-coast")],
     "faqs": FAQS,
     "reviewed": "August 2026",
@@ -56,7 +56,7 @@ PAGE = {
     <p class="answer">bcom ICT designs and installs business WiFi across the Gold Coast using Ubiquiti UniFi
     and Aruba Instant On. Every installation starts with a full coverage survey and includes VLAN and
     guest-network separation, with PCI-DSS-aligned segmentation for venues taking card payments. Cabling is
-    carried out by an ACMA registered cabler. Call 07 3041 8993.</p>
+    carried out by ACMA registered cabling contractors. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Why office WiFi fails</span>
@@ -101,7 +101,7 @@ PAGE = {
     <h2>Home offices and small premises</h2>
     <p style="margin-top:16px">We still install mesh WiFi for home offices and small sites — Eero, Google Nest and Ubiquiti systems supplied and configured to remove dead zones and give someone working from home a connection they can actually rely on. See <a href="/mesh-network-setup-gold-coast">mesh WiFi setup</a>. General home computer support isn't something we take on.</p>
 
-    {trust_note('Cabling connected to the telecommunications network legally requires a registered cabler in Australia. bcom ICT is ACMA registered and provides testing and certification documentation on completion — worth asking any installer for before they start work.')}
+    {trust_note('Cabling connected to the telecommunications network legally requires a registered cabler in Australia. bcom ICT engages ACMA registered cabling contractors for that work and provides testing and certification documentation on completion — worth asking any installer to show you before they start.')}
   </div>
 </section>
 

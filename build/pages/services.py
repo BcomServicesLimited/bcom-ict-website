@@ -25,7 +25,7 @@ SECURITY = [
 ]
 
 INFRA = [
-    ("Office Network Cabling", "/network-cabling-for-offices-gold-coast", "Cat6 and Cat6A structured cabling by an ACMA registered cabler."),
+    ("Office Network Cabling", "/network-cabling-for-offices-gold-coast", "Cat6 and Cat6A structured cabling, installed by ACMA registered cabling contractors."),
     ("Network Security & Firewall", "/network-security-and-firewall-configuration-gold-coast", "Firewalls, VLANs, secure remote access and guest isolation."),
     ("Network Troubleshooting", "/network-troubleshooting-diagnostics-gold-coast", "Dropouts, slow speeds and devices that won't connect — diagnosed properly."),
     ("VoIP Phone Systems", "/voip-phone-system-installation-and-support-gold-coast", "Cloud calling with remote extensions, queues and number porting."),

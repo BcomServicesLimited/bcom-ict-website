@@ -40,7 +40,7 @@ Preview: `bcom-ict` server on port 4400.
 | GBP services | 36 across the six categories, all <=300 chars. Confirmed credentials worked in: ACMA registered cabler on cabling, police checks on on-site attendance, Microsoft Partner on M365. |
 | Suburb pages | Rebuild 10, genuinely distinct content — not templated |
 | ISO | **Aligned, NOT certified.** Never write "certified/compliant/accredited" for the org. |
-| Credentials | All four confirmed held — cabler registration, PI + cyber + public liability, police checks + Blue Cards, Microsoft Partner |
+| Credentials | PI + cyber + public liability insured. Police checks + QLD Blue Cards held. **No ACMA cabler registration** — cabling is subcontracted to ACMA registered contractors; never imply bcom ICT holds it. Microsoft: says "Silver Partner", but Silver/Gold are retired tiers — site says **"Microsoft Partner"** until Partner Center is checked. |
 | SLA | Draft P1–P4 matrix approved as-is |
 
 ### Wording rules that must not be broken
@@ -49,6 +49,9 @@ Preview: `bcom-ict` server on port 4400.
 - Callback promise is **"within 4 business hours"** everywhere. Never "1 hour".
 - Hours: phones answered 24/7, after hours by the AI operator, work actioned in business hours.
 - No residential/home-user copy. Home-office WiFi and mesh is fine; general home computer repair is not.
+- **Cabling:** "installed by ACMA registered cabling contractors" — bcom ICT engages and manages them.
+  Never "bcom ICT is ACMA registered" or "an ACMA registered cabler".
+- **Microsoft:** "Microsoft Partner" only. Not "Silver Partner" — that tier no longer exists.
 
 ---
 
@@ -95,12 +98,31 @@ Each chunk ends with a commit and a push. Tick as they land.
 | Item | Needed for |
 |---|---|
 | **Search Console export** — 12 months, page-level, impressions + clicks. *Said "see attached" but no file came through.* | Chunk 11 — decides which of the 11 WiFi brand pages get consolidated vs kept |
-| **ACMA cabler registration number** (the actual number) | Chunk 3 + cabling pages — the claim is confirmed, the number is what gets displayed |
 | **Insurer names and cover limits** for PI / cyber / public liability | Chunk 3 |
-| **Microsoft Partner designation** (which tier/solutions areas) | Chunk 3, Chunk 4 |
+| **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
 | Permission to name the national retail chain client | Chunk 4 case studies |
 | Cloudflare: confirm **Block AI bots = OFF** and managed robots.txt disabled on the zone | Before go-live — silently 403s every AI crawler |
 | Cloudflare Access on the `.pages.dev` staging domain | Before the site is publicly reachable |
+
+---
+
+## Staging preview
+
+**https://bcomserviceslimited.github.io/bcom-ict-website/**
+
+Served from the `gh-pages` branch. Regenerate after any change:
+
+```bash
+cd ~/bcom-ict-website && python3 build/build.py --staging /bcom-ict-website
+```
+
+then copy the output into a clone of `gh-pages` and push. The staging build sets
+`noindex, nofollow` on every page and ships a disallow-all `robots.txt`, so it
+cannot be indexed as a duplicate of the live site. **Always re-run
+`python3 build/build.py` afterwards** to restore the production build on `main`.
+
+This is for design approval only — the real staging target is a Cloudflare Pages
+project behind Cloudflare Access (chunk 11).
 
 ---
 

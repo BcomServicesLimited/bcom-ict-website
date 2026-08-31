@@ -48,7 +48,9 @@ SUBURBS = [
 CREDENTIALS = {
     "itil":        "ITIL 4 Foundation — Royce Clark",
     "iso42001":    "ISO/IEC 42001:2023 Lead Implementer, issued by BSI — Ollie",
-    "cabler":      "ACMA registered cabler",
+    # bcom ICT does NOT hold cabler registration. Cabling is subcontracted to
+    # ACMA registered cabling contractors. Never write "bcom ICT is ACMA registered".
+    "cabler":      "Cabling carried out by ACMA registered cabling contractors",
     "insurance":   "Professional indemnity, cyber liability and public liability insured",
     "screening":   "National police checks and Queensland Blue Cards held by attending technicians",
     "microsoft":   "Microsoft Partner",

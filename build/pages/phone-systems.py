@@ -32,7 +32,7 @@ FAQS = [
     ("What happens if the internet goes down?",
      "With cloud VoIP, calls can be set to fail over automatically to mobiles so you keep trading. We usually pair that with a 4G or 5G backup connection for the site. It's worth planning before you switch, not after the first outage."),
     ("Can you do the phone cabling as well?",
-     "Yes. Internal phone lines and voice cabling are installed to Australian standards by an ACMA registered cabler, with testing and documentation on handover."),
+     "Yes, as part of the job. Fixed cabling connected to the telecommunications network legally requires a registered cabler in Australia, so that portion is carried out by ACMA registered cabling contractors we engage and manage. You get testing and certification documentation on handover, and one point of contact for the whole install rather than three."),
     ("Does the phone system connect to Microsoft Teams?",
      "It can. Teams calling suits businesses already living in Microsoft 365 and wanting one app for chat, meetings and calls. It doesn't suit every business — reception-heavy operations often still want proper handsets and queues. We'll walk you through both."),
 ]
@@ -48,7 +48,7 @@ PAGE = {
     "h1": "Business phone systems, installed and supported",
     "lede": "Cloud VoIP, hosted PBX and on-premise systems across the Gold Coast — plus support for the legacy systems most providers have walked away from.",
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ["Number porting included", "Legacy PBX supported", "ACMA registered cabler", "Local since 2011"],
+    "trust": ["Number porting included", "Legacy PBX supported", "Certified cabling contractors", "Local since 2011"],
     "crumbs": [("Services", "/services"), ("Business Phone Systems", "/business-phone-systems-gold-coast")],
     "faqs": FAQS,
     "reviewed": "August 2026",
@@ -101,7 +101,7 @@ PAGE = {
     <h2>Getting the internet right first</h2>
     <p style="margin-top:16px">Cloud phone systems are only as good as the connection underneath them. Before any VoIP cutover we check your NBN or business internet service, look at whether your network prioritises voice traffic properly, and talk about failover so an outage doesn't take your phones down with your internet. That's usually a conversation about <a href="/nbn-internet-support-gold-coast">business NBN and internet</a> at the same time.</p>
 
-    {trust_note('Internal phone and voice cabling is installed to Australian standards by an ACMA registered cabler, with testing and certification documentation provided on handover.')}
+    {trust_note('Internal phone and voice cabling is installed to Australian standards by ACMA registered cabling contractors we engage and manage, with testing and certification documentation provided on handover.')}
   </div>
 </section>
 
