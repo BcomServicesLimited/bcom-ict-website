@@ -91,7 +91,8 @@ PAGE = {
           "Access ends when the session ends, unless you're a managed client with monitoring agreed separately",
         ])}
         <p style="margin-top:24px">If it turns out to need hands on hardware, we'll book an on-site visit —
-        same day where we can — and tell you the call-out and hourly rate before anyone gets in a car.</p>
+        same day where we can. On-site is a $100 + GST call-out plus $198 + GST per hour; remote is $198 + GST
+        per hour with no call-out. <a href="/pricing">Full rates here</a>, agreed before anyone gets in a car.</p>
       </div>
       <div>
         <h2>Before you call</h2>

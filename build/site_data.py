@@ -93,6 +93,21 @@ FOOTER = {
 }
 
 
+# Published rates. Confirmed by Royce 2026-08-31.
+# Business rate is quoted ex-GST because the audience is GST-registered
+# businesses; the inc-GST figure is shown alongside it everywhere so the
+# number is never ambiguous to a reader.
+RATES = {
+    "hourly_ex":   198,
+    "hourly_inc":  "217.80",
+    "callout_ex":  100,
+    "callout_inc": 110,
+    # First hour on site = call-out + one hour.
+    "onsite_first_ex":  298,
+    "onsite_first_inc": "327.80",
+}
+
+
 # Contact form endpoint. REPLACE before go-live — see BUILD-STATUS.md.
 # Royce needs to create the form and paste the ID here; until then the form
 # posts nowhere and the page leads with phone and email instead.

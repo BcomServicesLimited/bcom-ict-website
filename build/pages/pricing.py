@@ -1,9 +1,10 @@
 from layout import MARK, cta, faq_block, ticks, related, trust_note, verify_note
+from site_data import RATES as R
 
 TIERS = [
-    ("Ad-hoc support", "Pay for what you use", False,
-     "Charged as a fixed call-out fee plus hourly increments, agreed up front before anyone starts. Remote support is charged for time only, with no call-out.",
-     ["Quoted before we begin, never invoiced after",
+    ("Ad-hoc support", "$198 + GST per hour", False,
+     "Charged at $198 + GST per hour ($217.80 inc GST), in hourly increments. On-site work adds a $100 + GST call-out ($110 inc GST). Remote support is time only — no call-out.",
+     ["First hour on site: $298 + GST ($327.80 inc GST). First hour remote: $198 + GST ($217.80 inc GST)",
       "Remote first where the fault allows it — it's faster and cheaper",
       "No retainer, no minimum, no contract",
       "Same technicians as managed clients get"],
@@ -36,9 +37,11 @@ tiers = "".join(
 
 FAQS = [
     ("How much does business IT support cost on the Gold Coast?",
-     "bcom ICT charges ad-hoc support as a fixed call-out fee plus hourly increments, agreed before work starts, with remote support charged for time only and no call-out. Managed IT is a flat monthly fee based on staff and device numbers, covering monitoring, unlimited helpdesk, patching and backup. Projects are fixed-price after scoping. Every engagement is quoted before it begins. Call 07 3041 8993."),
-    ("Why don't you publish exact prices?",
-     "Because a number without context misleads more than it helps. Two businesses with the same headcount can differ by a factor of three depending on whether they run a server, how old the machines are, and what compliance obligations they carry. What we will do is quote before starting, and tell you the call-out and hourly rate on the phone before anyone gets in a car."),
+     "bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, plus a $100 + GST call-out ($110 inc GST) on on-site work — a first hour on site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review, month-to-month with no lock-in. Projects are fixed-price after scoping. Call 07 3041 8993."),
+    ("What is bcom ICT's hourly rate?",
+     "bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, billed in hourly increments. On-site work adds a $100 + GST call-out ($110 inc GST), so a first hour on site is $298 + GST ($327.80 inc GST). Remote support carries no call-out. Rates are agreed before work starts."),
+    ("Why isn't managed IT priced on this page?",
+     "Because a single monthly figure would mislead. Two businesses with the same headcount can differ by a factor of three depending on whether they run a server, how old the machines are, how many sites there are and what compliance obligations apply. We quote it after the free review, based on what you actually run rather than on a headcount and a guess."),
     ("Is managed IT more expensive than paying by the hour?",
      "In a quiet month, yes. Over a year, it usually isn't — and that's before counting the hours your staff lose to problems nobody is preventing. The real difference is predictability: you can budget for a flat monthly fee, and you're never weighing up whether a problem is worth a call-out."),
     ("Do you charge for quotes or the initial review?",
@@ -54,24 +57,36 @@ FAQS = [
 PAGE = {
     "path": "/pricing",
     "priority": "0.8",
-    "title": "Pricing — How bcom ICT Charges for Business IT",
-    "description": "How bcom ICT charges: ad-hoc support at a fixed call-out plus hourly increments, managed IT at a flat monthly fee with no lock-in, and projects fixed-priced after scoping.",
+    "title": "Pricing — $198 + GST per Hour | bcom ICT Gold Coast",
+    "description": "bcom ICT business IT support is $198 + GST per hour ($217.80 inc GST), plus a $100 + GST on-site call-out. Remote support has no call-out. Managed IT is a flat monthly fee with no lock-in.",
     "hero_kind": "doc",
     "eyebrow": "Pricing",
     "h1": "How we charge, and why we quote first",
-    "lede": "Three commercial models, each suited to a different situation. Everything is quoted before work starts — you'll never get an invoice for something you didn't approve.",
+    "lede": "$198 + GST an hour, $100 + GST call-out for on-site. Published, not negotiated per client — and everything is agreed before work starts.",
     "crumbs": [("Pricing", "/pricing")],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": f'''
 <section class="section section--tight">
   <div class="wrap">
-    <p class="answer">bcom ICT charges ad-hoc support as a fixed call-out fee plus hourly increments, agreed
-    before work starts. Remote support is charged for time only with no call-out. Managed IT is a flat
-    monthly fee based on staff and device numbers, month-to-month with no lock-in. Projects are fixed-price
-    after scoping. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, billed
+    in hourly increments, plus a $100 + GST call-out ($110 inc GST) for on-site work — so a first hour on
+    site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee, month-to-month
+    with no lock-in. Call 07 3041 8993.</p>
 
-    {verify_note("Indicative rates are deliberately not published on this page yet. Royce to confirm the current call-out fee, hourly rate and managed IT per-seat pricing before figures go live — a wrong number here is worse than no number.")}
+    <div class="pricecard" style="margin-top:40px;max-width:none">
+      <h3>Published rates</h3>
+      <div class="grid grid--3" style="margin-top:20px">
+        <div><div class="from">$198 <small>+ GST per hour · $217.80 inc GST</small></div></div>
+        <div><div class="from">$100 <small>+ GST on-site call-out · $110 inc GST</small></div></div>
+        <div><div class="from">$298 <small>+ GST first hour on site · $327.80 inc GST</small></div></div>
+      </div>
+      <p style="margin-top:20px;font-size:.9375rem;color:var(--slate)">Charged in hourly increments and
+      agreed before work starts. Remote support carries no call-out, which is why we try remote first
+      wherever the fault allows it. Managed IT is priced separately as a flat monthly fee — see below.</p>
+    </div>
+
+    {verify_note("Managed IT per-seat pricing is not published yet. It varies enough with device count, server presence and compliance obligations that a single figure would mislead — we quote it after the free review. Royce to confirm whether an indicative from-price should appear here.")}
 
     <div class="tiers">{tiers}</div>
   </div>

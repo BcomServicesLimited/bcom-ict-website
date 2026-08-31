@@ -42,6 +42,7 @@ Preview: `bcom-ict` server on port 4400.
 | ISO | **Aligned, NOT certified.** Never write "certified/compliant/accredited" for the org. |
 | Credentials | PI + cyber + public liability insured. Police checks + QLD Blue Cards held. **No ACMA cabler registration** — cabling is subcontracted to ACMA registered contractors; never imply bcom ICT holds it. Microsoft: says "Silver Partner", but Silver/Gold are retired tiers — site says **"Microsoft Partner"** until Partner Center is checked. |
 | SLA | Draft P1–P4 matrix approved as-is |
+| Rates | **$198 + GST per hour** ($217.80 inc). **$100 + GST on-site call-out** ($110 inc). First hour on site $298 + GST ($327.80 inc). Remote has no call-out. Single source of truth: `RATES` in `build/site_data.py`. Site quotes ex-GST with inc-GST alongside — audience is GST-registered businesses. |
 
 ### Wording rules that must not be broken
 - Organisation: *"aligned to ISO/IEC 27001:2022 … not currently certified"*. Never "ISO certified".
@@ -99,6 +100,8 @@ Each chunk ends with a commit and a push. Tick as they land.
 |---|---|
 | **Search Console export** — 12 months, page-level, impressions + clicks. *Said "see attached" but no file came through.* | Chunk 11 — decides which of the 11 WiFi brand pages get consolidated vs kept |
 | **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
+| **Is the $100 call-out ex-GST?** Assumed yes for consistency with the hourly rate. Site currently says "$100 + GST ($110 inc GST)" — correct if it is GST-inclusive | `/pricing` and 5 other pages |
+| **GBP from-prices are wrong** — profile says From $182 / $252 / $310; real minimum is $217.80 remote and $327.80 on site, inc GST. Set to $218 / $328 and delete from managed IT + all 6 cybersecurity services | GBP, this week |
 | **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
 | Permission to name the national retail chain client | `/case-studies` — written accurately but unnamed, with the reason stated in the FAQ |
 | Cloudflare: confirm **Block AI bots = OFF** and managed robots.txt disabled on the zone | Before go-live — silently 403s every AI crawler |
@@ -134,7 +137,7 @@ call from the page module:
 
 | Page | What to confirm |
 |---|---|
-| `/pricing` | Current call-out fee, hourly rate and managed IT per-seat pricing. Page explains all three commercial models but publishes **no figures** — a wrong number is worse than none. |
+| `/pricing` | ~~Hourly and call-out~~ **confirmed and published**: $198 + GST/hr, $100 + GST call-out. Still open: whether an indicative managed IT per-seat from-price should appear. |
 | `/contact` | Form posts to `FORM_ENDPOINT` in `build/site_data.py`, currently the placeholder `REPLACE_WITH_BCOM_FORM_ID`. Create the form, paste the ID, rebuild. Page leads with phone and email so nothing is broken meanwhile. |
 | `/ransomware-reporting-australia` | Cyber Security Act 2024 — current turnover threshold and reporting window for mandatory ransomware payment reporting (Dept of Home Affairs) |
 | `/notifiable-data-breach-guide-australia` | Small business exemption threshold and the current list of exceptions (OAIC); confirm the 30-day assessment window is unchanged |
