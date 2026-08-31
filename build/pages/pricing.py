@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, ticks, related, trust_note, verify_note
+from layout import MARK, cta, faq_block, ticks, related, trust_note
 from site_data import RATES as R
 
 TIERS = [
@@ -10,7 +10,7 @@ TIERS = [
       "Same technicians as managed clients get"],
      "Suits: simple setups where an occasional problem is an annoyance rather than a crisis."),
     ("Managed IT", "Flat monthly fee", True,
-     "A single monthly fee based on how many staff and devices you have. Covers monitoring, unlimited helpdesk, patching, backup and Microsoft 365 management.",
+     "A single monthly fee, calculated from your business requirements and the services you want included. Covers monitoring, unlimited helpdesk, patching, backup and Microsoft 365 management.",
      ["Unlimited helpdesk — no per-ticket charges",
       "4-hour response SLA on critical faults, after-hours attendance included",
       "Recurring problems chased to root cause at our cost",
@@ -40,8 +40,8 @@ FAQS = [
      "bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, plus a $100 + GST call-out ($110 inc GST) on on-site work — a first hour on site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review, month-to-month with no lock-in. Projects are fixed-price after scoping. Call 07 3041 8993."),
     ("What is bcom ICT's hourly rate?",
      "bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, billed in hourly increments. On-site work adds a $100 + GST call-out ($110 inc GST), so a first hour on site is $298 + GST ($327.80 inc GST). Remote support carries no call-out. Rates are agreed before work starts."),
-    ("Why isn't managed IT priced on this page?",
-     "Because a single monthly figure would mislead. Two businesses with the same headcount can differ by a factor of three depending on whether they run a server, how old the machines are, how many sites there are and what compliance obligations apply. We quote it after the free review, based on what you actually run rather than on a headcount and a guess."),
+    ("How is managed IT priced?",
+     "Managed IT is calculated from your business requirements and the services provided — not per seat. Two businesses with the same headcount can differ by a factor of three depending on whether they run a server, how old the machines are, how many sites there are, what has to stay available and what compliance obligations apply. bcom ICT quotes it after the free review, so the figure reflects your actual environment and the scope you've asked us to cover."),
     ("Is managed IT more expensive than paying by the hour?",
      "In a quiet month, yes. Over a year, it usually isn't — and that's before counting the hours your staff lose to problems nobody is preventing. The real difference is predictability: you can budget for a flat monthly fee, and you're never weighing up whether a problem is worth a call-out."),
     ("Do you charge for quotes or the initial review?",
@@ -58,7 +58,7 @@ PAGE = {
     "path": "/pricing",
     "priority": "0.8",
     "title": "Pricing — $198 + GST per Hour | bcom ICT Gold Coast",
-    "description": "bcom ICT business IT support is $198 + GST per hour ($217.80 inc GST), plus a $100 + GST on-site call-out. Remote support has no call-out. Managed IT is a flat monthly fee with no lock-in.",
+    "description": "bcom ICT business IT support is $198 + GST per hour ($217.80 inc GST), plus a $100 + GST on-site call-out. Remote support has no call-out. Managed IT is quoted to your requirements, month-to-month with no lock-in.",
     "hero_kind": "doc",
     "eyebrow": "Pricing",
     "h1": "How we charge, and why we quote first",
@@ -71,8 +71,8 @@ PAGE = {
   <div class="wrap">
     <p class="answer">bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, billed
     in hourly increments, plus a $100 + GST call-out ($110 inc GST) for on-site work — so a first hour on
-    site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee, month-to-month
-    with no lock-in. Call 07 3041 8993.</p>
+    site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from
+    your requirements and the services included, month-to-month with no lock-in. Call 07 3041 8993.</p>
 
     <div class="pricecard" style="margin-top:40px;max-width:none">
       <h3>Published rates</h3>
@@ -86,7 +86,9 @@ PAGE = {
       wherever the fault allows it. Managed IT is priced separately as a flat monthly fee — see below.</p>
     </div>
 
-    {verify_note("Managed IT per-seat pricing is not published yet. It varies enough with device count, server presence and compliance obligations that a single figure would mislead — we quote it after the free review. Royce to confirm whether an indicative from-price should appear here.")}
+    <p style="margin-top:28px;font-size:.9375rem;color:var(--slate);max-width:64ch">Managed IT is not listed
+    above because it is not a per-seat product. It is calculated from your business requirements and the
+    services you want included, and quoted after the free review — see <a href="#faq">how that works</a>.</p>
 
     <div class="tiers">{tiers}</div>
   </div>
@@ -94,9 +96,11 @@ PAGE = {
 
 <section class="section section--mist section--tight">
   <div class="wrap">
-    <h2>What actually drives the number</h2>
-    <p style="margin-top:16px">Two businesses with the same headcount can differ by a factor of three. These
-    are the things that move it, so you can sanity-check any quote you're given — ours or anyone else's.</p>
+    <h2>What drives a managed IT quote</h2>
+    <p style="margin-top:16px">Managed IT is priced on requirements and scope rather than per seat, which is
+    why there is no from-price above. Two businesses with the same headcount can differ by a factor of three.
+    These are the things that move it, so you can sanity-check any quote you're given — ours or anyone
+    else's.</p>
     {ticks([
       "<strong>Do you run a server?</strong> On-premise servers carry maintenance, backup and patching that cloud-only businesses simply don't have.",
       "<strong>How old is the hardware?</strong> A fleet of eight-year-old machines generates support hours no provider can prevent. Sometimes replacement is the cheaper support strategy.",

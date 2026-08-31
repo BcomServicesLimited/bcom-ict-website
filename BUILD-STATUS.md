@@ -42,6 +42,7 @@ Preview: `bcom-ict` server on port 4400.
 | ISO | **Aligned, NOT certified.** Never write "certified/compliant/accredited" for the org. |
 | Credentials | PI + cyber + public liability insured. Police checks + QLD Blue Cards held. **No ACMA cabler registration** — cabling is subcontracted to ACMA registered contractors; never imply bcom ICT holds it. Microsoft: says "Silver Partner", but Silver/Gold are retired tiers — site says **"Microsoft Partner"** until Partner Center is checked. |
 | SLA | Draft P1–P4 matrix approved as-is |
+| Managed IT pricing | **Not per-seat.** Calculated from business requirements and the services provided; quoted after the free review. Never write "based on staff and device numbers". |
 | Rates | **$198 + GST per hour** ($217.80 inc). **$100 + GST on-site call-out** ($110 inc). First hour on site $298 + GST ($327.80 inc). Remote has no call-out. Single source of truth: `RATES` in `build/site_data.py`. Site quotes ex-GST with inc-GST alongside — audience is GST-registered businesses. |
 
 ### Wording rules that must not be broken
@@ -137,7 +138,7 @@ call from the page module:
 
 | Page | What to confirm |
 |---|---|
-| `/pricing` | ~~Hourly and call-out~~ **confirmed and published**: $198 + GST/hr, $100 + GST call-out. Still open: whether an indicative managed IT per-seat from-price should appear. |
+| `/pricing` | **Resolved.** $198 + GST/hr and $100 + GST call-out published. Managed IT deliberately has **no from-price** — it is calculated from business requirements and services provided, not per seat, and is quoted after the free review. |
 | `/contact` | Form posts to `FORM_ENDPOINT` in `build/site_data.py`, currently the placeholder `REPLACE_WITH_BCOM_FORM_ID`. Create the form, paste the ID, rebuild. Page leads with phone and email so nothing is broken meanwhile. |
 | `/ransomware-reporting-australia` | Cyber Security Act 2024 — current turnover threshold and reporting window for mandatory ransomware payment reporting (Dept of Home Affairs) |
 | `/notifiable-data-breach-guide-australia` | Small business exemption threshold and the current list of exceptions (OAIC); confirm the 30-day assessment window is unchanged |

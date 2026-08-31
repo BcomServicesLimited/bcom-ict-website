@@ -35,7 +35,7 @@ ONBOARD = [
 
 FAQS = [
     ("What do managed IT services cost on the Gold Coast?",
-     "Managed IT is charged as a flat monthly fee based on how many staff and devices you have, rather than by the hour. It covers monitoring, unlimited helpdesk, patching, backup and Microsoft 365 management. bcom ICT quotes after reviewing your systems, so the number reflects what you actually run — and it's month-to-month, so you're not locked in while you find out whether it works."),
+     "Managed IT is charged as a flat monthly fee rather than by the hour. The figure is calculated from your business requirements and the services included — what you run, what has to stay available, what compliance applies, and which parts you want us to take on. bcom ICT quotes after reviewing your systems, so the number reflects your actual environment rather than a headcount, and it's month-to-month so you're not locked in while you find out whether it works."),
     ("What's the difference between managed IT and just calling someone when it breaks?",
      "Break-fix means you pay each time something goes wrong, and the provider only earns when it does. Managed IT means someone is watching your systems continuously, patching and backing them up, and fixing causes rather than symptoms. In practice most businesses switch because the running total of break-fix callouts stopped being predictable."),
     ("How fast do you respond?",
