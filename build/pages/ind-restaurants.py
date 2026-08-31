@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Dockets stop printing in the kitchen&rdquo;",
+     "the kitchen printer dropping off the network, often because it sits behind a wall of stainless steel and is on wireless when it should be cabled.",
+     "Cable the kitchen printer wherever it can be reached, and give it a fixed address. A kitchen that stops receiving dockets during service is a stopped restaurant, and it is one of the cheapest faults to design out."),
+    ("&ldquo;Delivery platform orders aren&rsquo;t reaching us&rdquo;",
+     "a tablet that has gone to sleep, lost its wireless connection, or logged itself out. Orders continue to be accepted at the platform end regardless.",
+     "Keep the ordering tablets powered, awake and on a network that reaches them properly, and check them at the start of every service. Missed delivery orders damage a venue&rsquo;s rating as well as its takings."),
+    ("&ldquo;Terminals lose the POS server mid-service&rdquo;",
+     "a network under load, or a server that has become the busiest device in the building without anyone noticing.",
+     "Watch what actually happens during service rather than testing at three in the afternoon. Faults in restaurants keep restaurant hours, and diagnosis has to happen when the fault does."),
+    ("&ldquo;Ordering works at some tables and not others&rdquo;",
+     "wireless coverage designed for the room as an empty space. A full dining room of people and furniture absorbs signal in ways an empty one does not.",
+     "Survey with the venue in a realistic state and put coverage where the tables are. Courtyards, mezzanines and anywhere behind a service area are the usual dead spots."),
+    ("&ldquo;It only ever breaks on Friday and Saturday night&rdquo;",
+     "load. Everything works at low volume, and the design limit is reached only when the venue is full &mdash; which is precisely when it is most expensive.",
+     "Size the network for the busiest hour, not the average one. A system that copes on a Tuesday and fails on a Saturday is not intermittent; it is undersized, and it will fail every Saturday."),
+    ("&ldquo;Nobody can help us at eight on a Saturday&rdquo;",
+     "a fair complaint. Our business hours are eight to five on weekdays, and we say so rather than implying otherwise.",
+     "Design the venue so that a single failure cannot stop service &mdash; offline-capable terminals, a mobile backup for payments, a printed fallback the staff have practised. Prevention is what protects a Saturday night, because no response time is fast enough once service has started."),
+]
+
+EXAMPLE_1 = example(
+    "The Saturday night failure that was arithmetic",
+    "A restaurant reported that its ordering terminals became unusable on Friday and Saturday evenings and were faultless the rest of the week. Two providers had attended, both midweek, and both found nothing wrong.",
+    "The venue ran everything &mdash; terminals, kitchen printer, delivery tablets, office computer, music and guest WiFi &mdash; through a single consumer access point mounted above the bar. On a Tuesday that device handled around fifteen connections. On a Saturday it handled over a hundred, most of them guest phones, and it reached its limit around the time the kitchen did.",
+    "Separated guest WiFi from venue systems entirely, cabled the kitchen printer and the terminals, and installed access points sized for a full room with the payment devices on their own segment.",
+    "Service ran through the following Saturday without an incident. The fault had never been intermittent &mdash; it had been perfectly predictable, and it only ever appeared when nobody could afford to look at it.")
+
+EXAMPLE_2 = example(
+    "Four months of delivery orders quietly declined",
+    "A caf&eacute; had signed up to a delivery platform and concluded the platform did not work in their area. Orders were rare and their rating had fallen far enough that they were considering withdrawing.",
+    "The platform tablet was on a power adaptor that had stopped charging it. Staff would find it flat, plug it in, and it would come back logged out. Orders arriving while it was asleep or logged out were auto-declined after a timeout, which the platform recorded against the venue as a rejection. The venue had never seen the orders and did not know they had been offered.",
+    "Replaced the adaptor, mounted the tablet on permanent power within wireless range, disabled the sleep behaviour, and added a start-of-service check to the opening routine.",
+    "Orders resumed immediately and the rating recovered over the following months. Four months of trade had been lost to a failed power adaptor and a device nobody had been given responsibility for.")
 
 FAQS = [   (   'What IT support does a restaurant need?',
         'Keeping point of sale and EFTPOS running through service is the priority — which means a reliable network, automatic 4G or 5G failover, payment terminals segmented from other traffic, and '
@@ -83,6 +118,30 @@ PAGE = {
                         'network can actually carry. Venues frequently run POS, ordering tablets, music, '
                         'cameras, staff phones and guest WiFi over a connection and access point specified '
                         'for far less — see <a href="/business-wifi-gold-coast">business WiFi</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The problems we are actually called to in venues</h2>
+      <p>Restaurant faults are timing problems. Six situations account for nearly all of them.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in a venue</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Business NBN & Internet', '/nbn-internet-support-gold-coast'),

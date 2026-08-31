@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;A supplier emailed us new bank details&rdquo;",
+     "business email compromise until proven otherwise. It is the single most common way money leaves an agency, and the email is usually genuine in every respect except the account number.",
+     "Verify by phone on a number you already hold &mdash; never one from the email &mdash; before changing any payment detail. Make that a rule that applies to everyone including a director, because the request will eventually appear to come from one."),
+    ("&ldquo;Our property manager&rsquo;s mailbox is sending things nobody wrote&rdquo;",
+     "a compromised mailbox. Attackers usually sit quietly for weeks reading correspondence to learn how the agency writes and when settlements occur before sending anything.",
+     "Contain the mailbox, force a password reset, revoke active sessions and check for forwarding rules the attacker left behind. The forwarding rule is the part most often missed, and it is how they get back in."),
+    ("&ldquo;Agents use their own phones and laptops for everything&rdquo;",
+     "the nature of the job rather than a failing. Agents work from cars, open homes and kitchen tables, and the agency has little visibility of any of it.",
+     "Secure the accounts rather than trying to control the devices. Multi-factor authentication on every mailbox does more for an agency than any device policy, because it survives a phone left in a caf&eacute;."),
+    ("&ldquo;The CRM and the portals have stopped talking&rdquo;",
+     "an integration broken by a password change, an expired token, or an upgrade at one end. Listings silently stop syncing and nobody notices until a vendor asks why their property is not showing.",
+     "Check the integration status rather than the listing. These failures are silent by design, so the fix is monitoring them rather than waiting for a complaint from a vendor."),
+    ("&ldquo;Trust account reconciliation doesn&rsquo;t match&rdquo;",
+     "usually an accounting question rather than an IT one &mdash; but occasionally the first visible sign of a payment redirected weeks earlier.",
+     "Rule out the security explanation early rather than late. If a payment was misdirected, the difference between finding it in days and finding it at reconciliation is often the difference between recovering the money and not."),
+    ("&ldquo;Everyone knows the office computer password&rdquo;",
+     "a shared machine at reception that became a shared everything. It usually holds saved logins to the CRM, the portals and sometimes the banking.",
+     "Separate the accounts and remove saved credentials from shared machines. An agency&rsquo;s front desk computer is frequently the least protected device holding the most valuable access."),
+]
+
+EXAMPLE_1 = example(
+    "The settlement email that was watched for five weeks",
+    "A Gold Coast agency was contacted by a purchaser asking why the deposit had not been acknowledged. It had been paid &mdash; to an account the agency had never held.",
+    "A sales agent&rsquo;s mailbox had been accessed five weeks earlier through a password reused from a breached website. The attacker had read correspondence quietly for over a month, learned the agency&rsquo;s tone and its settlement timing, and then sent a single message from the genuine mailbox with altered account details, timed for the afternoon before settlement. A forwarding rule had been quietly deleting the replies so the agent never saw the conversation.",
+    "Contained the mailbox, revoked every active session, removed the forwarding rule, enforced multi-factor authentication across the agency the same day, and produced a written technical account for the agency&rsquo;s insurer and lawyer.",
+    "Partial recovery was achieved because the bank was notified within hours rather than days. Multi-factor authentication would have prevented the whole thing and had been on a to-do list for two years, which is the part the principal found hardest.")
+
+EXAMPLE_2 = example(
+    "Six weeks of listings that never reached the portals",
+    "An agency noticed a vendor complaint about a property not appearing on a major portal. Checking further, several listings were affected, and nobody could say for how long.",
+    "The integration between the agency&rsquo;s CRM and the portal had stopped authenticating six weeks earlier following a password change made during an unrelated staff departure. Listings entered into the CRM appeared correct at the agency&rsquo;s end. Nothing had reached the portal since, and no error had been surfaced to anyone.",
+    "Restored the integration, re-published the affected listings, and set up monitoring that alerts on a failed sync rather than relying on a vendor to notice.",
+    "The agency now finds out within the hour instead of after six weeks. The commercial cost of a listing that is not visible is difficult to calculate and easy to imagine.")
 
 FAQS = [   (   'Why are real estate agencies targeted by cyber criminals?',
         'Because agencies hold trust accounts and transfer significant sums on written instruction. Business email compromise — getting into a mailbox, watching for a settlement, then sending '
@@ -88,6 +123,30 @@ PAGE = {
                         'support has to be available when the business is actually operating. It also '
                         'means access needs removing promptly when an agent leaves, which in a '
                         'high-turnover industry is a real control rather than paperwork.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The problems we are actually called to in agencies</h2>
+      <p>Agencies lose money in a small number of predictable ways, and one of them accounts for most of it.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in an agency</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
         ('Cybersecurity Risk Assessment', '/cybersecurity-health-check-for-small-business-gold-coast'),

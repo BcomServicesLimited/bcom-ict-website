@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;The till freezes part way through a sale&rdquo;",
+     "the terminal losing its connection to the point-of-sale server or the cloud service for a few seconds. Long enough to strand a transaction, short enough that everything looks fine by the time anyone investigates.",
+     "Log the network continuously rather than testing it while it is working. A till that freezes twice a day is losing sales quietly, and the fault is nearly always visible in the logs even though it is invisible in a test."),
+    ("&ldquo;Online stock doesn&rsquo;t match what&rsquo;s on the shelf&rdquo;",
+     "a sync between the point-of-sale system and the web store that has stopped or is running far less often than anyone believes.",
+     "Check the integration rather than the stock count. Selling something online that was sold in store an hour earlier costs a refund and a customer, and it is a systems failure rather than a staff one."),
+    ("&ldquo;Card payments go through but the receipt won&rsquo;t print&rdquo;",
+     "the receipt printer having dropped off the network, often after a router restart handed it a different address.",
+     "Give fixed addresses to the devices that need to be found reliably. Printers, terminals and scales should not be discovering each other afresh every time something reboots."),
+    ("&ldquo;One store is fine, the other has constant problems&rdquo;",
+     "two sites built by different people at different times. Same brand, same systems, entirely different networks underneath.",
+     "Bring both to the same standard rather than fixing the bad one repeatedly. Multi-site retail is only manageable when the sites are actually alike, and they rarely start that way."),
+    ("&ldquo;Customer WiFi runs on the same network as the tills&rdquo;",
+     "a single wireless network set up once and extended to guests later because it was easy.",
+     "Separate them properly. Anything handling card payments belongs on its own segment, away from both staff systems and customer devices &mdash; this is a card industry expectation as much as a security one."),
+    ("&ldquo;The scanner stopped working after an update&rdquo;",
+     "a driver or a permission changed by an operating system update. Retail hardware often depends on components that updates treat as optional.",
+     "Test updates on one terminal before they reach all of them, and keep a known-good configuration documented. A chain of tills that all update on the same night can close a shop."),
+]
+
+EXAMPLE_1 = example(
+    "Two stores, one brand, two completely different networks",
+    "A retailer with two Gold Coast stores found one traded without incident while the other had daily till problems. Same systems, same supplier, same staff training. The failing store had been blamed on its building for two years.",
+    "The stores had been fitted out four years apart by different contractors. The problem store ran its tills, its customer WiFi, its music streaming and its back-office computer on one flat network through a consumer router, with the payment terminals sharing capacity with whatever customers were doing. The good store had been cabled properly and segmented by accident rather than design.",
+    "Rebuilt the failing store to match the working one &mdash; separate segments for payments, staff systems and customer WiFi, proper switching, and fixed addressing for the terminals and printers.",
+    "Till problems stopped. The useful part was discovering the good store had been the accident, so both sites were documented to the same standard rather than one being left to chance.")
+
+EXAMPLE_2 = example(
+    "Selling stock that had already gone out the door",
+    "A specialty retailer was refunding online orders several times a week for items that were no longer in stock. Customers were told an item was available, paid for it, and then received an apology.",
+    "The link between the point-of-sale system and the web store had been set to update overnight when the shop first went online with a few dozen products. The range had since grown past two thousand lines and turnover had increased sharply, but the sync had never been revisited. Anything sold in store during the day remained purchasable online until the following morning.",
+    "Moved the integration to near real-time, added an alert for a failed sync, and set a stock buffer on the lines that sold fastest so a race between the counter and the website could not strand a customer.",
+    "Refunds for unavailable stock effectively stopped. The setting had been correct on the day it was configured and wrong for about three years afterwards, which is the usual shape of this problem.")
 
 FAQS = [   (   'What IT support does a retail business need?',
         'Above all, keeping point of sale and payment terminals running — which means a reliable network, automatic 4G or 5G failover when the internet drops, and payment devices segmented from '
@@ -89,6 +124,30 @@ PAGE = {
                                  'Stock, inventory and online integration support',
                                  'Standardised equipment across stores, ordered and configured centrally',
                                  'Backups of the systems you cannot rebuild from memory']}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The problems we are actually called to in shops</h2>
+      <p>Retail faults cost sales while they happen, so the six below matter more than their technical difficulty suggests.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in a shop</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Business NBN & Internet', '/nbn-internet-support-gold-coast'),

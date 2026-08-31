@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;A client is asking us to complete a security questionnaire&rdquo;",
+     "not a fault &mdash; a growing requirement. Larger clients, insurers and government buyers increasingly ask their advisers to evidence how information is protected before awarding work.",
+     "Answer it accurately rather than optimistically, and fix the gaps it exposes. A questionnaire is the cheapest security audit a firm ever gets, and answering it honestly is what makes it useful."),
+    ("&ldquo;Staff email documents to themselves to work at home&rdquo;",
+     "no sanctioned way of working remotely, so people invent one. Client material ends up in personal mailboxes and on home computers nobody controls.",
+     "Give them a proper remote path that is easier than the workaround. People route around friction, so the fix is to remove the friction rather than to write a policy prohibiting the shortcut."),
+    ("&ldquo;We can&rsquo;t send a large file to a client&rdquo;",
+     "mailbox limits. The usual response is a personal file-sharing account set up by whoever needed it that afternoon, holding client documents outside the firm entirely.",
+     "Provide a sanctioned way to send large files with expiry and access logging. This is a small piece of work that closes one of the more common ways confidential material leaves a firm."),
+    ("&ldquo;Someone who left still has access&rdquo;",
+     "an offboarding process that covers the building keys and not the systems. Mailboxes, document management and cloud applications each need separate attention and rarely get it on the last day.",
+     "Run offboarding from a checklist covering every system, executed on the day. Former staff retaining access to client files is both a real exposure and a very awkward thing to explain to a client."),
+    ("&ldquo;Our document management system is slow&rdquo;",
+     "the index, the storage, or the network path &mdash; and it is worth knowing which, because they have very different costs.",
+     "Profile where the time is actually going before anyone buys hardware. Document systems are frequently blamed for delays introduced somewhere between the workstation and the storage."),
+    ("&ldquo;We&rsquo;re not sure whether the Privacy Act applies to us&rdquo;",
+     "genuine uncertainty. The small business turnover exemption is narrower than most firms assume, and several kinds of professional practice fall outside it regardless of size.",
+     "Establish your actual position rather than assuming the exemption applies. Firms handling health information, credit information or tax file numbers frequently have obligations they have never assessed."),
+]
+
+EXAMPLE_1 = example(
+    "The contractor who still had the file server eighteen months on",
+    "An accounting firm engaged us after a client asked them to complete a security questionnaire. The firm expected to answer it comfortably &mdash; nothing had ever gone wrong.",
+    "A contractor engaged for a three-month project eighteen months earlier still held an active account with access to the file server and the Microsoft 365 tenancy. The engagement had ended amicably and nobody had removed anything. The account had been used twice since, both times almost certainly innocently, and the firm had no way to establish that from its own records.",
+    "Removed the access, audited every other account against the current staff list &mdash; which found two more &mdash; and built an offboarding checklist covering every system rather than only the mailbox.",
+    "The questionnaire was answered accurately. The firm&rsquo;s view afterwards was that the questionnaire had been worth more than the fee, which is usually the case when nobody has looked before.")
+
+EXAMPLE_2 = example(
+    "Large files leaving the firm through a personal account",
+    "A professional services firm needed to send bundles of documents to clients that were far too large for email. The practice had emerged organically and nobody had ever formalised it.",
+    "Three staff were using personal file-sharing accounts registered to their own private email addresses. Client documents from the previous four years were sitting in storage the firm did not own, could not audit, and would lose entirely if any of those people left. Two of the shared links had no expiry and were still live.",
+    "Set up sanctioned file sharing inside the firm&rsquo;s own tenancy with link expiry, access logging and revocation, migrated what was recoverable from the personal accounts, and expired the outstanding links.",
+    "Client material now leaves the firm through a path the firm controls and can audit. The staff involved had done nothing wrong &mdash; they had been given a job to do and no tool with which to do it.")
 
 FAQS = [   (   'What IT security do professional services firms need?',
         'At minimum: multi-factor authentication on every account, document access structured by role rather than open to everyone, managed devices for laptops that leave the office, email '
@@ -87,6 +122,30 @@ PAGE = {
                         '<a href="/asic-cybersecurity-compliance-gold-coast">ASIC cybersecurity '
                         'compliance</a>, including the evidence pack you would actually produce when '
                         'asked.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The problems we are actually called to in firms</h2>
+      <p>Professional practices tend to fail in the same six places, and none of them involve anyone doing anything malicious.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in a firm</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('ASIC Cybersecurity Compliance', '/asic-cybersecurity-compliance-gold-coast'),
         ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),

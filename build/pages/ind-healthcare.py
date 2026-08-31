@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;The practice software is slow every morning&rdquo;",
+     "the whole practice opening the day&rsquo;s appointments at once against a database on an ageing server or a stretched connection. Clinical software is chattier than most business applications and far less tolerant of latency.",
+     "Measure where the delay actually sits &mdash; the database, the network path, or the workstation. Practices are frequently sold a new server for a problem that lives in the link between the server and reception."),
+    ("&ldquo;Scanned documents aren&rsquo;t reaching patient files&rdquo;",
+     "a scanner configured to a folder or a mailbox that changed, usually during a Microsoft 365 migration or a staff change. The scan completes, the light goes green, and the document lands nowhere anyone looks.",
+     "Trace the path from the glass to the patient record and test it end to end. Referrals and results going missing silently is the version of this fault that matters clinically, and it is invisible until someone goes looking for a document."),
+    ("&ldquo;Secure messaging stopped delivering&rdquo;",
+     "a certificate expiry or a directory entry gone stale. Clinical messaging depends on a chain of things that quietly need renewing, and nothing prompts you until delivery fails.",
+     "Check the certificate and directory listing rather than assuming the other practice is at fault. Failed clinical messages tend to sit unnoticed because the sender sees them as sent."),
+    ("&ldquo;Everyone logs in as reception&rdquo;",
+     "a shared account set up years ago for convenience. It works, and it means the audit log in the practice software cannot tell you who viewed a patient record.",
+     "Give every person a named login. This is not bureaucracy &mdash; the ability to say who accessed a record is exactly what you need if a patient ever asks, and a shared account removes it entirely."),
+    ("&ldquo;Our backup is on a drive in the practice manager&rsquo;s drawer&rdquo;",
+     "a backup routine designed before ransomware and never revisited. It also means patient data leaving the premises in a bag, which is a separate problem again.",
+     "Move to encrypted backup held away from the network, with restores tested rather than assumed. Clinical data has both a recovery obligation and a privacy obligation, and a drive in a drawer satisfies neither well."),
+    ("&ldquo;A doctor wants to work from home&rdquo;",
+     "a reasonable request that is usually solved badly &mdash; remote desktop opened to the internet, or patient data copied onto a personal laptop.",
+     "Set up access that keeps the data inside the practice environment and requires multi-factor authentication. Done properly this is straightforward; done casually it is how practices end up notifying the OAIC."),
+]
+
+EXAMPLE_1 = example(
+    "Six months of referrals that never arrived",
+    "A general practice reported that specialist referrals were occasionally going missing. Reception would send a document, the specialist would later say nothing had been received, and everyone assumed the other end was at fault.",
+    "The practice scanner had been configured years earlier to deposit documents into a mailbox that was decommissioned during their Microsoft 365 migration six months prior. The scanner still reported success at the panel because the scan itself completed &mdash; only the delivery failed, and nothing checked. Roughly one in nine referrals had been affected, since staff used a different route when the scanner was busy.",
+    "Reconfigured the scan path to write directly into the patient record, added delivery confirmation, and audited six months of outgoing referrals against the practice software to identify which had never been sent.",
+    "Fourteen referrals were identified and re-sent, some for patients who had been waiting on appointments. The practice now gets a failure notification rather than a silent success, which is the difference that mattered.")
+
+EXAMPLE_2 = example(
+    "Proving who looked at a record, after the fact",
+    "An allied health practice received a complaint from a patient who believed a staff member had accessed their file without a clinical reason. The practice wanted to answer honestly and could not.",
+    "Reception, the practice manager and two part-time administrators all used the same login. The practice software had a complete audit trail showing exactly which records were opened and when, and every entry named the same shared account. The information needed to answer the patient existed and was useless.",
+    "Created named logins for every person, enforced multi-factor authentication, and worked with the practice on a short access policy stating that records are opened for clinical or administrative reasons only. Historic access under the shared account was disclosed to the patient as unattributable, because it was.",
+    "The practice can now answer that question. It cost an afternoon to set up and would have cost far more had the complaint gone further &mdash; and the honest answer the first time was the uncomfortable one.")
 
 FAQS = [   (   'Does the Privacy Act apply to a small medical practice?',
         "Yes. Health service providers are a named exception to the Privacy Act's small business exemption, so the obligations apply regardless of annual turnover. A two-practitioner allied health "
@@ -87,6 +122,30 @@ PAGE = {
                         'assessment. The notification decision itself remains yours — see <a '
                         'href="/notifiable-data-breach-guide-australia">the NDB guide</a> and <a '
                         'href="/cyber-incident-response-gold-coast">incident response</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The problems we are actually called to in practices</h2>
+      <p>Six issues account for most of what we see in medical and allied health, and none of them are exotic.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in a practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
         ('Notifiable Data Breaches guide', '/notifiable-data-breach-guide-australia'),

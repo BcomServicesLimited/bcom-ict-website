@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;We&rsquo;re missing calls and losing the job&rdquo;",
+     "one phone ringing in an empty office, or calls going to a mobile that is inside a wall cavity. In trades the first business to answer usually wins the work.",
+     "Ring several phones at once and put a real after-hours message on the line. This is configuration rather than hardware, and it is the change that most reliably pays for itself in a trades business."),
+    ("&ldquo;The job app won&rsquo;t sync from site&rdquo;",
+     "poor mobile coverage rather than a fault in the software. Job management apps hold work locally and push it when they can, and a basement or a steel shed defeats them.",
+     "Set the app up to work properly offline and confirm what happens to photos and notes captured with no signal. Most of these products handle it well when configured for it and badly when left at defaults."),
+    ("&ldquo;Photos from site are filling up phones&rdquo;",
+     "job photos stored on the handset instead of against the job. It becomes a real problem when a dispute arises two years later and the evidence was on a phone that has since been replaced.",
+     "Get photos attaching to the job record automatically. Site photography is often the only contemporaneous evidence a trades business has, and it belongs somewhere more durable than a camera roll."),
+    ("&ldquo;Quotes take all evening&rdquo;",
+     "the quoting happening twice &mdash; once on paper at the site and again at a laptop at night. It is the single largest unpaid time cost in most trades businesses.",
+     "Quote from the vehicle on a tablet or phone, using the pricing already in the system. The technology is unremarkable; the change is in the habit, and it usually returns several hours a week."),
+    ("&ldquo;Invoices go out a fortnight late&rdquo;",
+     "a paper trail that has to reach the office before anything can be billed. Cash flow suffers for reasons that have nothing to do with the customer.",
+     "Close the loop on site so the invoice can issue the day the work is done. Getting paid two weeks earlier is worth more to most trades businesses than any efficiency we could offer elsewhere."),
+    ("&ldquo;Someone changed our bank details on an invoice&rdquo;",
+     "invoice fraud. Trades businesses are attractive targets because invoices are frequently emailed as attachments and rarely verified.",
+     "Secure the mailbox with multi-factor authentication and give customers a way to verify account details independently. A single redirected progress payment on a commercial job can exceed a year of IT spend."),
+]
+
+EXAMPLE_1 = example(
+    "Answering the phone was the whole fix",
+    "A plumbing business with six people had been losing work and could not work out why. Their advertising was performing, the phone rang, and the jobs were going elsewhere.",
+    "Calls rang a single handset in an office nobody sat in during working hours, then dropped to a voicemail box checked once in the evening. Callers who reached voicemail simply rang the next plumber on the list. Roughly two-thirds of calls were going unanswered between eight and four.",
+    "Set up a hunt group ringing the office and the mobile app on every phone at once, with voicemail-to-email as a fallback and an after-hours message stating when calls would be returned. No new handsets were bought.",
+    "Calls are now answered from vehicles and sites by whoever is free. The owner&rsquo;s estimate was that the change paid for itself in the first fortnight, and the only hardware involved was phones the staff already had in their pockets.")
+
+EXAMPLE_2 = example(
+    "The progress payment that went to someone else",
+    "An electrical contractor invoiced a builder for a progress claim on a commercial job. Six weeks later, chasing the payment, they were told it had been paid on time.",
+    "The contractor&rsquo;s email account had been accessed using a password reused from another service. The attacker had sent a duplicate invoice from the genuine mailbox, identical apart from the account details, two days after the real one. The builder had paid the second invoice believing it to be a corrected version. There was no multi-factor authentication on any mailbox in the business.",
+    "Secured every account with multi-factor authentication, removed the attacker&rsquo;s access and forwarding rules, and provided a written technical account for the contractor&rsquo;s insurer and the builder&rsquo;s own investigation.",
+    "The dispute over who bore the loss took months. Multi-factor authentication across the whole business took under an hour to put in place afterwards, which is the comparison worth sitting with.")
 
 FAQS = [   (   'What IT does a trades business actually need?',
         'Job management and quoting software that works offline at sites with poor reception, mobile devices that can be replaced and configured the same day, a phone system that follows people '
@@ -85,6 +120,30 @@ PAGE = {
                         'nearly all of it, and it takes an afternoon. The second control is a rule that '
                         'any change of bank details is verified by phone on a number you already have. See '
                         '<a href="/cybersecurity-services-gold-coast">cybersecurity services</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The problems we are actually called to in trades</h2>
+      <p>Trades businesses lose money in the field and in the mailbox, and the field problems are the cheaper ones to fix.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in a trades business</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('VoIP Phone Systems', '/voip-phone-system-installation-and-support-gold-coast'),
         ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),

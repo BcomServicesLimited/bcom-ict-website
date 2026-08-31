@@ -161,7 +161,7 @@ drawn from real work with identifying detail removed, since we do not name
 clients without written permission.
 
 Every symptom heading and every example title is unique site-wide, checked
-on each pass. **126 symptom blocks and 47 worked examples, no duplicates.**
+on each pass. **174 symptom blocks and 63 worked examples, no duplicates.**
 
 - [x] **Chunk A — 6 core service pages** · 5,004 -> 10,238 words
 - [x] **Chunk B — 8 security & compliance pages** · 7,251 -> 13,132 words
@@ -177,7 +177,15 @@ on each pass. **126 symptom blocks and 47 worked examples, no duplicates.**
       cable. Phone cabling documents the NBN migration casualties — the lift
       emergency phone and the back-to-base alarm that had both been silently
       dead for years.
-- [ ] **Chunk D — 8 industry pages** · 6,223 words, ~5,800 to write
+- [x] **Chunk D — 8 industry pages** · 6,223 -> 12,943 words
+      Written so no two verticals blur into each other: retail is the till and
+      the stock sync, restaurants are the kitchen printer and the delivery
+      tablet, hospitality is guest room coverage and function-space density.
+      The security examples are all business email compromise and all different
+      — the agency mailbox watched for five weeks before a single altered
+      settlement email, the contractor's duplicate progress invoice, the
+      accounting firm's contractor still holding the file server eighteen
+      months on.
 - [ ] **Chunk E — 13 hardware, AI & consulting pages** · 8,548 words, ~11,000 to write
 - [ ] **Chunk F — remaining 45 pages** · ~23,400 to write
 

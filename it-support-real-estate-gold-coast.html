@@ -308,6 +308,47 @@
     <p style="max-width:68ch">Beyond the fraud problem, agencies have a particular shape: staff who are rarely at a desk, a CRM that is the business, portal integrations that have to keep working, and an industry where enquiries do not observe business hours.</p><p style="max-width:68ch;margin-top:16px">That means devices leaving the building need to be managed, phones need to follow people rather than sit on desks — see <a href="/voip-phone-system-installation-and-support-gold-coast">VoIP</a> — and support has to be available when the business is actually operating. It also means access needs removing promptly when an agent leaves, which in a high-turnover industry is a real control rather than paperwork.</p>
   </div>
 </section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The problems we are actually called to in agencies</h2>
+      <p>Agencies lose money in a small number of predictable ways, and one of them accounts for most of it.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>&ldquo;A supplier emailed us new bank details&rdquo;</h4><p class="cause"><span>Usually</span> business email compromise until proven otherwise. It is the single most common way money leaves an agency, and the email is usually genuine in every respect except the account number.</p><p class="fix"><span>What we do</span> Verify by phone on a number you already hold &mdash; never one from the email &mdash; before changing any payment detail. Make that a rule that applies to everyone including a director, because the request will eventually appear to come from one.</p></div><div class="issue"><h4>&ldquo;Our property manager&rsquo;s mailbox is sending things nobody wrote&rdquo;</h4><p class="cause"><span>Usually</span> a compromised mailbox. Attackers usually sit quietly for weeks reading correspondence to learn how the agency writes and when settlements occur before sending anything.</p><p class="fix"><span>What we do</span> Contain the mailbox, force a password reset, revoke active sessions and check for forwarding rules the attacker left behind. The forwarding rule is the part most often missed, and it is how they get back in.</p></div><div class="issue"><h4>&ldquo;Agents use their own phones and laptops for everything&rdquo;</h4><p class="cause"><span>Usually</span> the nature of the job rather than a failing. Agents work from cars, open homes and kitchen tables, and the agency has little visibility of any of it.</p><p class="fix"><span>What we do</span> Secure the accounts rather than trying to control the devices. Multi-factor authentication on every mailbox does more for an agency than any device policy, because it survives a phone left in a caf&eacute;.</p></div><div class="issue"><h4>&ldquo;The CRM and the portals have stopped talking&rdquo;</h4><p class="cause"><span>Usually</span> an integration broken by a password change, an expired token, or an upgrade at one end. Listings silently stop syncing and nobody notices until a vendor asks why their property is not showing.</p><p class="fix"><span>What we do</span> Check the integration status rather than the listing. These failures are silent by design, so the fix is monitoring them rather than waiting for a complaint from a vendor.</p></div><div class="issue"><h4>&ldquo;Trust account reconciliation doesn&rsquo;t match&rdquo;</h4><p class="cause"><span>Usually</span> usually an accounting question rather than an IT one &mdash; but occasionally the first visible sign of a payment redirected weeks earlier.</p><p class="fix"><span>What we do</span> Rule out the security explanation early rather than late. If a payment was misdirected, the difference between finding it in days and finding it at reconciliation is often the difference between recovering the money and not.</p></div><div class="issue"><h4>&ldquo;Everyone knows the office computer password&rdquo;</h4><p class="cause"><span>Usually</span> a shared machine at reception that became a shared everything. It usually holds saved logins to the CRM, the portals and sometimes the banking.</p><p class="fix"><span>What we do</span> Separate the accounts and remove saved credentials from shared machines. An agency&rsquo;s front desk computer is frequently the least protected device holding the most valuable access.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in an agency</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>The settlement email that was watched for five weeks</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A Gold Coast agency was contacted by a purchaser asking why the deposit had not been acknowledged. It had been paid &mdash; to an account the agency had never held.</p></div>
+    <div><h4>What we found</h4><p>A sales agent&rsquo;s mailbox had been accessed five weeks earlier through a password reused from a breached website. The attacker had read correspondence quietly for over a month, learned the agency&rsquo;s tone and its settlement timing, and then sent a single message from the genuine mailbox with altered account details, timed for the afternoon before settlement. A forwarding rule had been quietly deleting the replies so the agent never saw the conversation.</p></div>
+    <div><h4>What we did</h4><p>Contained the mailbox, revoked every active session, removed the forwarding rule, enforced multi-factor authentication across the agency the same day, and produced a written technical account for the agency&rsquo;s insurer and lawyer.</p></div>
+    <div><h4>The outcome</h4><p>Partial recovery was achieved because the bank was notified within hours rather than days. Multi-factor authentication would have prevented the whole thing and had been on a to-do list for two years, which is the part the principal found hardest.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Six weeks of listings that never reached the portals</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>An agency noticed a vendor complaint about a property not appearing on a major portal. Checking further, several listings were affected, and nobody could say for how long.</p></div>
+    <div><h4>What we found</h4><p>The integration between the agency&rsquo;s CRM and the portal had stopped authenticating six weeks earlier following a password change made during an unrelated staff departure. Listings entered into the CRM appeared correct at the agency&rsquo;s end. Nothing had reached the portal since, and no error had been surfaced to anyone.</p></div>
+    <div><h4>What we did</h4><p>Restored the integration, re-published the affected listings, and set up monitoring that alerts on a failed sync rather than relying on a vendor to notice.</p></div>
+    <div><h4>The outcome</h4><p>The agency now finds out within the hour instead of after six weeks. The commercial cost of a listing that is not visible is difficult to calculate and easy to imagine.</p></div>
+  </div>
+</div>
+  </div>
+</section>
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

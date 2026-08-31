@@ -308,6 +308,47 @@
     <ul class="ticks"><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>POS and payment terminal support, and the network they depend on</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>PCI-DSS-aligned segmentation separating payments, staff, guests and devices such as cameras</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span><a href='/business-wifi-gold-coast'>Business WiFi</a> designed for a shop floor rather than an office</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>Internet with automatic 4G or 5G failover, so an outage doesn't close the till</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>Stock, inventory and online integration support</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>Standardised equipment across stores, ordered and configured centrally</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>Backups of the systems you cannot rebuild from memory</span></li></ul>
   </div>
 </section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The problems we are actually called to in shops</h2>
+      <p>Retail faults cost sales while they happen, so the six below matter more than their technical difficulty suggests.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>&ldquo;The till freezes part way through a sale&rdquo;</h4><p class="cause"><span>Usually</span> the terminal losing its connection to the point-of-sale server or the cloud service for a few seconds. Long enough to strand a transaction, short enough that everything looks fine by the time anyone investigates.</p><p class="fix"><span>What we do</span> Log the network continuously rather than testing it while it is working. A till that freezes twice a day is losing sales quietly, and the fault is nearly always visible in the logs even though it is invisible in a test.</p></div><div class="issue"><h4>&ldquo;Online stock doesn&rsquo;t match what&rsquo;s on the shelf&rdquo;</h4><p class="cause"><span>Usually</span> a sync between the point-of-sale system and the web store that has stopped or is running far less often than anyone believes.</p><p class="fix"><span>What we do</span> Check the integration rather than the stock count. Selling something online that was sold in store an hour earlier costs a refund and a customer, and it is a systems failure rather than a staff one.</p></div><div class="issue"><h4>&ldquo;Card payments go through but the receipt won&rsquo;t print&rdquo;</h4><p class="cause"><span>Usually</span> the receipt printer having dropped off the network, often after a router restart handed it a different address.</p><p class="fix"><span>What we do</span> Give fixed addresses to the devices that need to be found reliably. Printers, terminals and scales should not be discovering each other afresh every time something reboots.</p></div><div class="issue"><h4>&ldquo;One store is fine, the other has constant problems&rdquo;</h4><p class="cause"><span>Usually</span> two sites built by different people at different times. Same brand, same systems, entirely different networks underneath.</p><p class="fix"><span>What we do</span> Bring both to the same standard rather than fixing the bad one repeatedly. Multi-site retail is only manageable when the sites are actually alike, and they rarely start that way.</p></div><div class="issue"><h4>&ldquo;Customer WiFi runs on the same network as the tills&rdquo;</h4><p class="cause"><span>Usually</span> a single wireless network set up once and extended to guests later because it was easy.</p><p class="fix"><span>What we do</span> Separate them properly. Anything handling card payments belongs on its own segment, away from both staff systems and customer devices &mdash; this is a card industry expectation as much as a security one.</p></div><div class="issue"><h4>&ldquo;The scanner stopped working after an update&rdquo;</h4><p class="cause"><span>Usually</span> a driver or a permission changed by an operating system update. Retail hardware often depends on components that updates treat as optional.</p><p class="fix"><span>What we do</span> Test updates on one terminal before they reach all of them, and keep a known-good configuration documented. A chain of tills that all update on the same night can close a shop.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in a shop</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Two stores, one brand, two completely different networks</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A retailer with two Gold Coast stores found one traded without incident while the other had daily till problems. Same systems, same supplier, same staff training. The failing store had been blamed on its building for two years.</p></div>
+    <div><h4>What we found</h4><p>The stores had been fitted out four years apart by different contractors. The problem store ran its tills, its customer WiFi, its music streaming and its back-office computer on one flat network through a consumer router, with the payment terminals sharing capacity with whatever customers were doing. The good store had been cabled properly and segmented by accident rather than design.</p></div>
+    <div><h4>What we did</h4><p>Rebuilt the failing store to match the working one &mdash; separate segments for payments, staff systems and customer WiFi, proper switching, and fixed addressing for the terminals and printers.</p></div>
+    <div><h4>The outcome</h4><p>Till problems stopped. The useful part was discovering the good store had been the accident, so both sites were documented to the same standard rather than one being left to chance.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Selling stock that had already gone out the door</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A specialty retailer was refunding online orders several times a week for items that were no longer in stock. Customers were told an item was available, paid for it, and then received an apology.</p></div>
+    <div><h4>What we found</h4><p>The link between the point-of-sale system and the web store had been set to update overnight when the shop first went online with a few dozen products. The range had since grown past two thousand lines and turnover had increased sharply, but the sync had never been revisited. Anything sold in store during the day remained purchasable online until the following morning.</p></div>
+    <div><h4>What we did</h4><p>Moved the integration to near real-time, added an alert for a failed sync, and set a stock buffer on the lines that sold fastest so a race between the counter and the website could not strand a customer.</p></div>
+    <div><h4>The outcome</h4><p>Refunds for unavailable stock effectively stopped. The setting had been correct on the day it was configured and wrong for about three years afterwards, which is the usual shape of this problem.</p></div>
+  </div>
+</div>
+  </div>
+</section>
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

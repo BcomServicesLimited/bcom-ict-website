@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;The person who set all this up has left&rdquo;",
+     "an arrangement that depended on one person &mdash; often a family member, a former staff member or a contractor &mdash; and no documentation of any kind.",
+     "Recover and document what exists before touching it: accounts, licences, domain, hosting, network layout. Almost every small business we take on starts here, and it is a day&rsquo;s work rather than a crisis."),
+    ("&ldquo;Nobody knows the passwords&rdquo;",
+     "credentials held in one person&rsquo;s memory, browser or notebook. The business functions perfectly until the day it needs to change something.",
+     "Establish proper ownership of the domain, the Microsoft tenancy and the accounting file, then hold credentials in a password manager the business controls. Ownership of the domain is the one worth checking first, because losing it is the hardest to undo."),
+    ("&ldquo;We all use the same login&rdquo;",
+     "convenience, usually dating from when the business had three people. It removes any ability to say who did what, and it means a departure requires changing a password everyone relies on.",
+     "Give every person their own account with multi-factor authentication. This is the single highest-value hour of work in most small businesses and it costs nothing beyond the time."),
+    ("&ldquo;The computers are getting old but they still work&rdquo;",
+     "machines past the point where repair is economic. They usually fail one at a time, at random, and each failure costs a day nobody planned for.",
+     "Plan replacement rather than reacting to it. Knowing that three machines are due next financial year turns an emergency into a line in a budget, and lets you buy well rather than urgently."),
+    ("&ldquo;We think the backup is working&rdquo;",
+     "a backup nobody has ever restored from. Backups fail silently, and the failure is discovered at the worst possible moment.",
+     "Test a restore. Not a report saying the backup completed &mdash; an actual file, recovered. A backup is only a backup once somebody has got something back out of it."),
+    ("&ldquo;When something breaks we don&rsquo;t know who to call&rdquo;",
+     "several suppliers with overlapping responsibilities and no agreement about who owns a problem. The internet provider, the software vendor and whoever built the website each point at the others.",
+     "Have one number to call and let us deal with the rest. Most small business downtime is spent establishing whose problem it is rather than fixing it."),
+]
+
+EXAMPLE_1 = example(
+    "The domain nobody in the business owned",
+    "A small business of eleven people asked for help moving to Microsoft 365. Straightforward work, until the question of who controlled the domain name came up and nobody could answer it.",
+    "The domain had been registered fourteen years earlier by a web designer who had built the original site and had not been engaged since. It was registered in that designer&rsquo;s own name, on their personal email address, with auto-renewal on a credit card that had long since expired. The business had no access to it whatsoever. Every email address the business used depended on a registration it did not own and could not renew.",
+    "Traced the registrar, established contact with the original designer, who transferred it willingly once asked, and moved the domain into an account owned by the business with the renewal on the business&rsquo;s own card.",
+    "The business now owns the thing its entire email identity rests on. Had that domain lapsed, the business would have lost every email address at once, and the recovery would have been a negotiation rather than an administrative task.")
+
+EXAMPLE_2 = example(
+    "Replacing computers on a plan instead of on a Tuesday",
+    "A business with fourteen staff had machines ranging from two to nine years old, bought as needed and never tracked. Failures were becoming frequent enough to be disruptive, and each one meant somebody idle for a day and a rushed purchase at retail prices.",
+    "Building an asset register found four machines past economic repair, three approaching it, and two already running an operating system no longer receiving security updates &mdash; which the business had not been told and had no way to know.",
+    "Set out a replacement schedule over eighteen months prioritising the unsupported machines, sourced at trade pricing with the configuration and data transfer handled before each machine was handed over, and recorded the fleet so the next cycle could be forecast rather than discovered.",
+    "Replacement is now a budgeted line rather than a series of emergencies. The business also spends less per machine, because nothing is being bought on the afternoon it died.")
 
 FAQS = [   (   'What size business does bcom ICT work with?',
         'Most clients have between three and sixty staff — businesses too large to keep muddling through and too small to justify a full-time IT employee. bcom ICT has supported Gold Coast small '
@@ -85,6 +120,30 @@ PAGE = {
                         'lock-in.</p><p style="max-width:68ch;margin-top:16px">Plenty of our managed '
                         'clients started as ad-hoc callers, and we have told plenty of businesses they are '
                         'not ready yet. The free review is how we work out which you are.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The problems we are actually called to in small businesses</h2>
+      <p>Almost every small business we take on has at least four of these, and none of them are anybody&rsquo;s fault.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in a small business</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Managed IT Services', '/managed-it-services-for-small-businesses-gold-coast'),
         ('Business IT Support', '/it-support-and-services-gold-coast'),
