@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "A Southport practice that could not say who opened a file",
+    "A professional practice in the Southport legal and medical precinct was asked by a client to describe how it controls access to confidential files. It could not answer with any confidence.",
+    "Four staff shared a single login on the reception machine, which also held saved credentials to the practice&rsquo;s document system. The audit trail existed and recorded every action against the same shared account, so it was complete and useless. The practice had assumed shared access was a reasonable arrangement for a small team.",
+    "Created named accounts for every person with multi-factor authentication, removed saved credentials from the shared machine, and set out a short written position on access that the practice could give to a client who asks.",
+    "The practice can now answer the question it was asked. Southport&rsquo;s concentration of legal, medical and accounting practices means client-driven security questions arrive here earlier than in most parts of the coast.")
 FAQS = [   (   'Do you provide IT support in Southport?',
         'Yes. bcom ICT attends Southport businesses from its office at 9 Ferny Avenue, Surfers Paradise — roughly ten minutes away — with same-day attendance almost always available. We cover the '
         'courts precinct, Nerang and Scarborough Streets, Australia Fair, Chinatown, the health precinct around the Gold Coast University Hospital, and the Broadwater frontage. Call 07 3041 8993.'),
@@ -124,6 +130,18 @@ PAGE = {
       <h2>What Southport businesses actually call us about</h2>
     </div>
     {ticks(['<strong>Document and matter file access</strong> structured by role rather than open to the whole practice — the most common request from legal clients', '<strong>Practice management and clinical software</strong> environments — server, backup, access and connectivity, working alongside the vendor', '<strong>Supplier security questionnaires</strong> that a client or a government buyer has sent, which our published service levels and trust centre answer directly', '<strong>Cabling in older towers</strong> where nobody knows what is behind the walls, tested and documented before anything is planned around it', '<strong>Multi-factor authentication rollouts</strong>, usually triggered by a professional indemnity renewal or an ASIC obligation', '<strong>Secure remote access</strong> replacing remote desktop published straight to the internet — one of the most exploited routes into an Australian practice', '<strong>Backups with tested restores</strong>, because a practice that cannot produce a client file has a professional problem as well as a technical one', '<strong>Office relocations</strong> within the Southport commercial core, staged over a weekend with everything tested before Monday'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Southport actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''

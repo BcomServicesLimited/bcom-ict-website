@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "A Helensvale retailer selling stock that had already gone",
+    "A retailer near the Helensvale centre was refunding online orders several times a week for items no longer in stock. Customers were told an item was available, paid, and then received an apology.",
+    "The link between the point-of-sale system and the web store had been set to update overnight when the shop first went online with a few dozen products. The range had since grown past two thousand lines. Anything sold over the counter during the day stayed purchasable online until the following morning, and trade had grown enough that this happened most days.",
+    "Moved the integration to near real-time, added an alert for a failed sync, and set a stock buffer on the fastest-moving lines so the counter and the website could not strand a customer.",
+    "Refunds for unavailable stock effectively stopped. The setting had been correct on the day it was configured and wrong for about three years afterwards.")
 FAQS = [   (   'Do you provide IT support in Helensvale?',
         'Yes. bcom ICT attends Helensvale businesses from its office at 9 Ferny Avenue, Surfers Paradise — roughly twenty-five minutes away — with same-day attendance usually available. Most faults '
         'are resolved remotely first at $198 + GST per hour with no call-out. We cover the Westfield Helensvale precinct, Lindfield Road, the station interchange area, and out toward Hope Island and '
@@ -131,6 +137,18 @@ PAGE = {
       <h2>What Helensvale businesses actually call us about</h2>
     </div>
     {ticks(['<strong>WiFi that does not reach the whole suite</strong> — usually one access point doing a job that needs two, and fixable without replacing anything', '<strong>Microsoft 365 migrations</strong> for practices moving off an old server or a hosting provider, cut over across a weekend', '<strong>Practice management software</strong> that will not connect, run or back up properly — we handle the environment and work alongside the vendor', "<strong>Multi-factor authentication rollouts</strong>, usually prompted by an insurer's renewal questionnaire getting harder", '<strong>Backups that have never been tested</strong> — the single most common finding when we take on a new Helensvale client', '<strong>Phone systems</strong> moving to cloud VoIP so staff can work from home or a second site, with numbers ported properly', '<strong>Office fit-outs and relocations</strong> in the newer commercial space, cabled and tested before anyone moves in', '<strong>Business internet faults</strong> where the provider keeps closing the ticket — we gather the evidence and escalate for you'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Helensvale actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''

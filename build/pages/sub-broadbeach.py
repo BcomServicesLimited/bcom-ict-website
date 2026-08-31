@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "A Broadbeach venue judged on its guest WiFi",
+    "A hospitality business near the Broadbeach convention precinct was losing function bookings. Organisers who ran one event were not returning, and feedback repeatedly mentioned connectivity.",
+    "The function space had wireless coverage suited to a site inspection with a handful of people and nowhere near enough capacity for a full room. Venues in this part of the coast are inspected by organisers who bring a laptop and test it in an empty room, which the venue passed every time, and then judged by two hundred delegates, which it did not.",
+    "Redesigned the function space for full occupancy, put the event network on its own segment away from venue systems and point-of-sale, and load-tested the room before the next booking rather than during it.",
+    "Events now run at capacity without incident. Around Broadbeach and the convention precinct, guest connectivity is part of the product rather than a back-office concern, and it is assessed publicly.")
 FAQS = [   (   'Do you provide IT support in Broadbeach?',
         'Yes. bcom ICT is based at 9 Ferny Avenue, Surfers Paradise — roughly five minutes from Broadbeach — so attendance is effectively always same-day and often much sooner. We cover Pacific Fair '
         'and the surrounding retail, the Oracle towers, the Surf Parade and Victoria Avenue dining strip, and the convention centre precinct. Call 07 3041 8993.'),
@@ -117,6 +123,18 @@ PAGE = {
       <h2>What Broadbeach businesses actually call us about</h2>
     </div>
     {ticks(['<strong>WiFi that collapses when the venue fills</strong> — a capacity design problem, not an internet problem, and measurable rather than guessable', '<strong>EFTPOS dropping out at peak</strong>, almost always saturated wireless rather than the terminal itself', '<strong>Automatic 4G or 5G failover</strong> so card payments continue through an internet outage — the single highest-value thing a retailer here can do', '<strong>Payment terminal segmentation</strong> retrofitted onto a flat network where guests, staff and EFTPOS all share one segment', '<strong>Online ordering integrations</strong> that stopped talking to the POS, usually silently, with orders simply not arriving', '<strong>Guest WiFi isolation</strong> where a customer network can currently reach back-office systems', '<strong>High-rise office fit-outs</strong> in the Oracle and surrounding towers, cabled and tested around building access rules', '<strong>Multi-site standardisation</strong> for operators running Broadbeach plus other Gold Coast locations'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Broadbeach actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''

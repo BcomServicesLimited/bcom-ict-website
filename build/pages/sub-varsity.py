@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "A Varsity Lakes business park tenancy with nobody holding the keys",
+    "A professional firm in a Varsity Lakes business park engaged us after the person who had handled their IT informally &mdash; a relative of one of the directors &mdash; became unavailable at short notice.",
+    "Nothing was documented. The domain, the Microsoft tenancy, the accounting file and the firewall were all under credentials held by that one person. The business could not add a staff member, reset a password or change anything at all. Everything worked perfectly and none of it could be touched.",
+    "Recovered ownership of each account through the proper verification processes, documented the whole environment, and moved credentials into a password manager the business itself controls.",
+    "The firm now owns its own systems. This is the most common way a Varsity Lakes business park tenancy comes to us &mdash; not a failure, but a dependency that became visible on the day it mattered.")
 FAQS = [   (   'Do you provide IT support in Varsity Lakes?',
         'Yes. bcom ICT attends Varsity Lakes businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover the business park precinct '
         'through Varsity Parade and Lakeview Boulevard, Scottsdale Drive, the Bond University corridor and Varsity Central. Call 07 3041 8993.'),
@@ -121,6 +127,18 @@ PAGE = {
       <h2>What Varsity Lakes businesses actually call us about</h2>
     </div>
     {ticks(['<strong>Networks outgrown by the business</strong> — a consumer router behind twenty-five people, still working, never revisited', '<strong>Hybrid working setups</strong> where the security needs to travel with the laptop rather than live in the building', '<strong>Document and file access</strong> structured by role rather than open to the whole firm', '<strong>Microsoft 365 tenancy reviews</strong> — MFA coverage, legacy authentication, sharing settings and unused licensing', '<strong>Client security questionnaires</strong>, needing a documented position rather than an assurance', '<strong>Backups with tested restores</strong>, because a firm that cannot produce a client file has a professional problem', '<strong>Practice management environments</strong> for medical and allied health, working alongside the software vendor', '<strong>Office fit-outs</strong> in the business park space, cabled and tested before anyone moves in'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Varsity Lakes actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''

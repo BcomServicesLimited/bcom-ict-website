@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "A Robina office that had outgrown its cabling",
+    "A professional services firm in a Robina commercial building had grown from nine people to twenty-six in the same tenancy. Network problems had become steadily more frequent and were being blamed on the internet connection.",
+    "The tenancy had been cabled for the original fit-out with twelve outlets. Desk switches had been added under desks as people arrived, chained one to another, and two of them were consumer units bought at retail. The internet service was performing exactly as specified &mdash; the building&rsquo;s internal network had simply been extended past the point where it worked.",
+    "Ran additional certified outlets to every position, replaced the chained desk switches with proper switching in a single cabinet, and documented the whole thing on a port schedule.",
+    "The faults stopped and the internet plan was left alone. Robina&rsquo;s office buildings suit growing professional firms well, and outgrowing the original fit-out is the most common thing we are called about here.")
 FAQS = [   (   'Do you provide IT support in Robina?',
         'Yes. bcom ICT attends Robina businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover Robina Town Centre, Robina Town '
         'Centre Drive, Laver Drive, Cheltenham Drive, Robina Quays and the hospital precinct. Most faults are resolved remotely first. Call 07 3041 8993.'),
@@ -120,6 +126,18 @@ PAGE = {
       <h2>What Robina businesses actually call us about</h2>
     </div>
     {ticks(['<strong>Supplier security questionnaires</strong> from a client or a government buyer, needing documented answers rather than assurances', '<strong>ASIC cyber resilience evidence</strong> for AFS licensees — gap assessment, remediation and an evidence pack that can actually be produced', '<strong>Networks outgrown by the business</strong>, specified when the firm was a third of its current size', '<strong>Microsoft 365 tenancy reviews</strong> — MFA coverage, legacy authentication, sharing settings and licensing nobody is using', '<strong>Hybrid working setups</strong> where security has to travel with the device rather than live in the office', "<strong>Backups with tested restores</strong>, which is the question an insurer's renewal form now asks directly", '<strong>Office fit-outs</strong> in the business park space — predictable, well-built, and quoted accordingly', '<strong>Practice and document management environments</strong>, working alongside the software vendor'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Robina actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''

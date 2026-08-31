@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "A Palm Beach practice on a connection with nothing behind it",
+    "A small practice on the Palm Beach strip had moved its booking system, files and phones into the cloud over several years. A single internet service carried all of it, which nobody had thought about in those terms.",
+    "Reviewing the setup before anything went wrong, an outage of any length would stop every function of the business at once &mdash; including the phone customers would use to ask what was happening. The premises were on a fibre-to-the-node service with copper for the final stretch, which in this part of the coast is the section most affected by weather.",
+    "Installed a router with automatic mobile failover, tested it by disconnecting the primary service during a quiet period, and confirmed calls stayed connected through the switchover.",
+    "A street fault some months later cost the practice a slower afternoon rather than a closed day. The equipment cost considerably less than the day would have.")
 FAQS = [   (   'Do you provide IT support in Palm Beach?',
         'Yes. bcom ICT attends Palm Beach businesses from its Surfers Paradise office, roughly twenty-five minutes away, with same-day attendance usually available. We cover the Gold Coast Highway '
         'strip, Nineteenth Avenue, the streets off the highway, and out through Elanora and Currumbin. Most faults are resolved remotely at $198 + GST per hour with no call-out. Call 07 3041 8993.'),
@@ -118,6 +124,18 @@ PAGE = {
       <h2>What Palm Beach businesses actually call us about</h2>
     </div>
     {ticks(['<strong>Card payments failing during trade</strong>, and the automatic failover connection that prevents it', '<strong>WiFi that will not cover the whole shopfront</strong>, usually solvable with one properly placed access point', '<strong>Microsoft 365 setup and clean-up</strong> for small teams that grew without anyone owning it', '<strong>Multi-factor authentication rollouts</strong> after a near-miss with an invoice email', '<strong>Backups for studios and practices</strong> holding client work or records that would hurt to lose', '<strong>A machine that will not start</strong> and someone who cannot work until it does', '<strong>Cabling in converted premises</strong>, done properly rather than run along the skirting', '<strong>Booking and payment system connectivity</strong> for treatment and wellness studios'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Palm Beach actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''

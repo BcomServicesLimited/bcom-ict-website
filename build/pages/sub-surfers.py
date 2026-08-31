@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "Getting a technician into a Surfers Paradise tower",
+    "A business occupying part of a floor in a Surfers Paradise high-rise had a server that would not come back after a building power interruption. Their previous provider had quoted a next-day visit because of the access arrangements.",
+    "The delay was not technical. Reaching the tenancy required building management sign-in, a lift access card programmed for that floor, and a loading dock booking for anything larger than a laptop bag. The previous provider had no standing arrangement and was starting that process from scratch each time.",
+    "Attended the same afternoon, having already held the building&rsquo;s contractor induction from other work in the tower, and restored the server from backup. Afterwards, we recorded the building&rsquo;s access requirements against the client so no future visit has to rediscover them.",
+    "Back trading that day rather than the next. In Surfers Paradise the access arrangements are frequently a larger part of the response time than the fault, which is why we keep the induction and dock details on file.")
 FAQS = [   (   'Do you provide IT support in Surfers Paradise?',
         "Yes — bcom ICT's office is at 9 Ferny Avenue, Surfers Paradise, so this is our home suburb. Attendance within Surfers Paradise is usually available within the hour during business hours, "
         'which are 8:00am to 5:00pm Monday to Friday, Brisbane time. Call 07 3041 8993.'),
@@ -123,6 +129,18 @@ PAGE = {
       <h2>What Surfers Paradise businesses actually call us about</h2>
     </div>
     {ticks(['<strong>Guest WiFi that works in the lobby but fails in the rooms</strong> — the single most common accommodation complaint, and a coverage design problem rather than an internet one', '<strong>Property management system connectivity</strong> and the backups behind it, because check-in stopping is not a wait-until-Monday problem', '<strong>Payment terminal segmentation</strong> across restaurant, bar, reception and function outlets, PCI-DSS aligned', '<strong>EFTPOS dropping out at peak</strong>, which is almost always saturated wireless rather than the terminal or the connection', '<strong>Function and conference connectivity</strong> designed for the room at capacity rather than empty', '<strong>Account lifecycle for seasonal staff</strong> — created fast, and more importantly removed the day someone leaves', '<strong>Cabling in older towers</strong>, surveyed and tested before anything is planned around it', '<strong>Office moves within and between towers</strong>, staged around building access rules and tested before anyone arrives'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Surfers Paradise actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''

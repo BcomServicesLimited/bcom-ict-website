@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "A Burleigh Heads shopfront with payments on the guest network",
+    "A business operating from a converted shopfront near James Street had card terminals dropping out during busy trade. It had been happening for months and was assumed to be the terminal provider&rsquo;s problem.",
+    "Everything in the premises ran through one consumer router mounted behind the counter &mdash; the terminals, the customer WiFi, the music, and a tablet used for orders. Customer devices and payments were competing for the same capacity, and the busy period was exactly when both peaked. The building&rsquo;s rendered walls also meant the single access point struggled to reach the rear of the tenancy.",
+    "Separated payments onto their own segment, put customer WiFi somewhere it cannot affect trading systems, and added coverage that reaches the back of the premises.",
+    "Terminal dropouts stopped. Burleigh&rsquo;s converted shopfronts and older buildings are frequently wired for a much smaller operation than the business now running in them.")
 FAQS = [   (   'Do you provide IT support in Burleigh Heads?',
         'Yes. bcom ICT attends Burleigh Heads businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover James Street, the Gold '
         'Coast Highway frontage, The Pines, and the streets behind the main strip. Most faults are resolved remotely first at $198 + GST per hour with no call-out. Call 07 3041 8993.'),
@@ -119,6 +125,18 @@ PAGE = {
       <h2>What Burleigh businesses actually call us about</h2>
     </div>
     {ticks(['<strong>WiFi that will not reach the terrace</strong> — usually solvable with one properly placed access point and a cable run', '<strong>EFTPOS dropping out during service</strong>, almost always saturated wireless rather than the terminal', '<strong>Automatic internet failover</strong> so card payments continue through an outage — cheap, and the highest-value thing a venue here can do', '<strong>Invoice redirection attempts</strong>, and the multi-factor authentication rollout that stops nearly all of them', '<strong>Cabling in converted premises</strong>, surveyed and installed properly rather than run along a skirting board', '<strong>Microsoft 365 setup and clean-up</strong> for small teams that grew organically without anyone owning it', '<strong>Backups for creative studios</strong> holding client work that would be genuinely painful to lose', '<strong>Booking and payment system connectivity</strong> for wellness and treatment studios'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Burleigh Heads actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''

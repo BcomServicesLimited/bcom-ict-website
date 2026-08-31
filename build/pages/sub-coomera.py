@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "A Coomera warehouse with no coverage where the work happened",
+    "A distribution business in a Coomera industrial estate had scanning devices that worked reliably in the office and failed constantly in the warehouse. Staff had resorted to writing stock movements on paper and entering them later.",
+    "Wireless coverage had been designed from the office outwards, which is adequate for an office and useless across a warehouse floor. Racking absorbs and reflects signal in ways an empty building does not, and the survey had been done before the racking went in. The dead areas correlated exactly with the aisles that moved the most stock.",
+    "Surveyed the building fully racked and loaded rather than empty, positioned access points along the aisles with cabling run through existing tray, and separated the scanning devices from general traffic.",
+    "Scanning works across the floor and the paper step is gone. Coomera&rsquo;s warehouses and industrial estates are almost always surveyed at the wrong moment &mdash; before the building holds what it is built to hold.")
 FAQS = [   (   'Do you provide IT support in Coomera?',
         'Yes. bcom ICT attends Coomera businesses — including the marine precinct and the industrial and logistics estates through Corporation Circuit and Millennium Circuit — from its Surfers '
         'Paradise office, roughly thirty minutes away. Same-day attendance is usually available and most faults are resolved remotely first. Call 07 3041 8993.'),
@@ -123,6 +129,18 @@ PAGE = {
       <h2>What Coomera businesses actually call us about</h2>
     </div>
     {ticks(['<strong>Coverage across a shed or warehouse floor</strong> — surveyed properly and specified for the racking or vessel layout', '<strong>Scanners and handhelds dropping out</strong> in the racking, which is a coverage shadow rather than a device fault', '<strong>Stock and warehouse management system connectivity</strong>, including integrations that fail silently', '<strong>Multi-site standardisation</strong> so every location runs the same equipment and configuration', '<strong>New premises fit-outs</strong> in the industrial estates, cabled and tested before operations move in', '<strong>Business internet and failover</strong>, so a connection fault does not stop despatch', '<strong>Invoice redirection prevention</strong> for trades and construction invoicing progress payments', '<strong>Office IT relocations</strong> as businesses outgrow their first Coomera premises'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Coomera actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''

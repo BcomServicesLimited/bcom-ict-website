@@ -1,5 +1,11 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
 
+LOCAL_EX = example(
+    "A Nerang workshop where the computers only failed in summer",
+    "A business operating from a Nerang industrial unit reported computers shutting down without warning. It had happened the previous summer, stopped over winter, and returned. Two machines had already been replaced.",
+    "The machines sat in a workshop environment and had drawn in enough dust to effectively block their cooling. In cooler months the reduced airflow was still sufficient. Above about thirty degrees ambient it was not, and the machines were shutting down to protect themselves. The two replacements had begun doing exactly the same thing within a year.",
+    "Serviced every machine, fitted filtered enclosures for the two in the worst positions, and moved one off the floor where it had been drawing dust directly from the workspace.",
+    "No shutdowns the following summer. Nerang&rsquo;s light industrial units and workshops present conditions ordinary office hardware is not built for, and it is usually an environment problem rather than a hardware one.")
 FAQS = [   (   'Do you provide IT support in Nerang?',
         'Yes. bcom ICT attends Nerang businesses — including the industrial estates through Lawrence Drive, Spencer Road and Rudman Parade — from its Surfers Paradise office, roughly twenty minutes '
         'away, with same-day attendance usually available. Call 07 3041 8993.'),
@@ -124,6 +130,18 @@ PAGE = {
       <h2>What Nerang businesses actually call us about</h2>
     </div>
     {ticks(['<strong>WiFi that will not reach the back of the shed</strong> — surveyed and solved with properly positioned access points rather than more consumer gear', '<strong>Scanners and handhelds dropping off</strong> in the racking, which is a coverage shadow rather than a device fault', '<strong>Job management software</strong> — Simpro, ServiceM8, Tradify and similar — environment, accounts, mobile access and accounting integrations', '<strong>Invoice redirection attempts</strong>, and the MFA rollout that prevents them', '<strong>Phone systems that follow people</strong> into the field rather than ringing an empty desk', "<strong>Mobile device replacement</strong> configured the same day, because a dropped phone should not cost a day's work", '<strong>Cabling across a large floor</strong>, installed by ACMA registered contractors and tested', '<strong>Stock and ordering system connectivity</strong>, including integrations that fail silently'])}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What IT support in Nerang actually involves</h2>
+      <p>A representative engagement, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {LOCAL_EX}
   </div>
 </section>
 '''
