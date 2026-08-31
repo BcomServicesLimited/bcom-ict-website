@@ -16,7 +16,7 @@ COMMON_ISSUES = [
     ("&ldquo;Nobody told us it stopped getting updates&rdquo;",
      "an operating system past its supported life on hardware that cannot take the current one. Nothing announces this and the machine keeps working perfectly.",
      "Check what is still receiving security updates. This is the one condition that turns replace-when-convenient into replace-now, and it is invisible from the desk."),
-    ("&ldquo;We don&rsquo;t know what we&rsquo;ve got&rdquo;",
+    ("&ldquo;We&rsquo;ve no idea how old any of these machines are&rdquo;",
      "no asset register, so age, specification, warranty and holder all live in individual memories.",
      "Build the register. It converts replacement from a series of surprises into a forecast, and tells you instantly whether a failed machine is still under warranty."),
 ]

@@ -22,11 +22,11 @@ COMMON_ISSUES = [
 ]
 
 EXAMPLE_1 = example(
-    "Nine hundred dollars a month for software nobody opened",
-    "A services business asked for a review of its technology spend before a budget cycle. Nothing was wrong; the directors simply wanted to know whether the total was reasonable.",
-    "Licence counts had never been reduced as people left, so the business was paying for nineteen more subscriptions than it had staff. Two separate products were being paid for that did substantially the same job, one adopted by a department unaware the other existed. A trial from two years earlier had converted to a paid plan nobody had noticed.",
-    "Reconciled every subscription against the current staff list and actual usage, consolidated the duplicated products onto the one people preferred, and set a quarterly review so the count cannot drift again.",
-    "Recurring spend fell by a little over nine hundred dollars a month with no loss of capability. The review took a few hours and had never been done because nobody owned the question.")
+    "The total was forty per cent higher than anyone thought",
+    "A business asked what it should be spending on technology. Answering that required knowing what it currently spent, which nobody could state. The directors&rsquo; working estimate was a monthly figure they had carried for years.",
+    "Technology spending was reaching the business through nine different suppliers and three cost categories. Internet and phone services sat under overheads. Software subscriptions were spread across four corporate cards belonging to different managers. Hardware was capitalised and therefore invisible in monthly reporting. Support was invoiced irregularly. Consolidated, the real annual figure was around forty per cent above the estimate &mdash; not because anything was wasteful, but because no single view of it had ever existed.",
+    "Built one register covering every supplier, subscription and capital purchase, with renewal dates and notice periods recorded against each, and set a quarterly review to keep it current.",
+    "The business could finally decide anything. Whether the total was reasonable turned out to be a much easier question than what the total was, and it had been unanswerable for years.")
 
 EXAMPLE_2 = example(
     "The cost that was not on any invoice",
