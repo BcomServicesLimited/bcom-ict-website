@@ -39,6 +39,18 @@ PAGE = {
     "description": "How to get IT support from bcom ICT: call 07 3041 8993 (returned in business hours), email support@bcomservices.com, or request remote support. Callback within 4 business hours.",
     "hero_kind": "doc",
     "eyebrow": "Support",
+    "aside": f'''
+      <span class="tag">Remote support</span>
+      <h2>Splashtop SOS</h2>
+      <p>Call or email us first so a technician is ready — then run this and read us the code.</p>
+      <a class="btn btn--primary btn--lg" href="{BIZ['splashtop']}" target="_blank" rel="noopener">Download Splashtop SOS {MARK}</a>
+      <ol>
+        <li>Run the file you just downloaded — nothing installs permanently.</li>
+        <li>It shows a <strong>9-digit session code</strong>.</li>
+        <li>Read the code to your technician and approve the connection.</li>
+      </ol>
+      <p class="after">You watch the whole session on your own screen and can end it at any moment. Access stops when the session does.</p>
+    ''',
     "h1": "Need help now?",
     "lede": "Call 07 3041 8993 — returned during business hours, Monday to Friday. You don't need to be an existing client.",
     "crumbs": [("Support", "/support")],
@@ -81,17 +93,9 @@ PAGE = {
   <div class="wrap">
     <div class="prose-cols">
       <div>
-        <h2>Remote support — Splashtop SOS</h2>
-        <p style="margin-top:16px">We use <strong>Splashtop SOS</strong>. It runs as a temporary application
-        for the length of the session and installs nothing permanent on your machine.</p>
-        <ol class="steps-ol">
-          <li>Call or email us first, so a technician is ready — a session needs a code you give us.</li>
-          <li>Go to <a href="{BIZ['splashtop']}" target="_blank" rel="noopener"><strong>sos.splashtop.com</strong></a> and download the small SOS application.</li>
-          <li>Run it. It shows you a <strong>9-digit session code</strong>.</li>
-          <li>Read that code to your technician. Nothing happens until you do.</li>
-          <li>Approve the connection when prompted. You can watch the whole session and end it at any moment.</li>
-        </ol>
-        <p style="margin-top:20px"><a class="btn btn--primary" href="{BIZ['splashtop']}" target="_blank" rel="noopener">Download Splashtop SOS {MARK}</a></p>
+        <h2>What Splashtop SOS actually does</h2>
+        <p style="margin-top:16px">It is a support tool, not monitoring software. Worth knowing exactly what
+        it is before you run it — and the download link is at the top of this page.</p>
         {ticks([
           "Nothing is permanently installed — the application closes with the session",
           "You give us the code; we cannot connect without it",

@@ -571,3 +571,28 @@ form.enquiry button[disabled]{opacity:.6;cursor:progress;}
   background:var(--mist);border:1px solid var(--line);border-radius:3px;
   padding:3px 8px;color:var(--ink-soft);white-space:nowrap;
 }
+
+/* ---------- doc hero with a side card ---------- */
+.hero--doc-split .hero-inner{display:grid;gap:var(--s7);align-items:center;}
+@media (min-width:940px){
+  .hero--doc-split .hero-inner{grid-template-columns:1fr 400px;gap:var(--s8);}
+}
+.hero-aside{
+  background:var(--paper);border:1px solid var(--blue-line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:var(--s6);
+}
+.hero-aside h2{font-size:1.1875rem;margin-bottom:var(--s2);}
+.hero-aside .tag{
+  font-family:var(--display);font-size:.6875rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--blue);display:block;margin-bottom:var(--s3);
+}
+.hero-aside p{font-size:.9375rem;color:var(--slate);}
+.hero-aside .btn{width:100%;margin-top:var(--s5);}
+.hero-aside ol{counter-reset:h;list-style:none;margin:var(--s4) 0 0;padding:0;display:flex;flex-direction:column;gap:10px;}
+.hero-aside ol li{counter-increment:h;position:relative;padding-left:30px;font-size:.9375rem;color:var(--ink-soft);}
+.hero-aside ol li::before{
+  content:counter(h);position:absolute;left:0;top:1px;width:20px;height:20px;
+  display:grid;place-items:center;border-radius:50%;background:var(--blue-tint);color:var(--blue);
+  font-family:var(--display);font-weight:700;font-size:.6875rem;
+}
+.hero-aside .after{font-size:.8125rem;color:var(--slate);margin-top:var(--s4);padding-top:var(--s4);border-top:1px solid var(--line);}

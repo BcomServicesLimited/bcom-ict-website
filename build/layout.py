@@ -11,7 +11,7 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "8"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "9"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 ROBOTS_OK = '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'
@@ -300,13 +300,18 @@ def hero(p):
     can see and no browser can preload."""
     kind = p.get("hero_kind", "page")
     if kind == "doc":
-        return f'''<section class="hero hero--doc">
+        # An optional right-hand card. Used on /support to put the remote-support
+        # download where people actually look first, rather than below the fold.
+        aside = f'<div class="hero-aside">{p["aside"]}</div>' if p.get("aside") else ""
+        split = " hero--doc-split" if p.get("aside") else ""
+        return f'''<section class="hero hero--doc{split}">
   <div class="wrap hero-inner">
     <div class="hero-copy">
       <span class="eyebrow">{p.get("eyebrow", "Trust centre")}</span>
       <h1>{p["h1"]}</h1>
       <p class="lede">{p["lede"]}</p>
     </div>
+    {aside}
   </div>
 </section>
 '''
