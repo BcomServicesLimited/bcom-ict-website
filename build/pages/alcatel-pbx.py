@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body, models
+from layout import cta, faq_block, related, svc_body, models, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Nobody local will support it&rdquo;",
+     "a platform more often found in larger sites and hospitality than in small offices, so fewer providers on the Gold Coast have worked on one.",
+     "We do support these. A capable system with no local support is a commercial problem rather than a technical one, and it does not by itself justify replacing working equipment."),
+    ("&ldquo;We&rsquo;ve shrunk and the system is sized for the old business&rdquo;",
+     "a platform specified for a larger headcount or a larger tenancy. It still works and the business is carrying capacity and maintenance it no longer needs.",
+     "Establish what the system costs to keep against what it would cost to move. Occasionally the right answer is to keep it and reduce what is licensed; occasionally it is genuinely time to move, and it is worth having both numbers."),
+    ("&ldquo;Room or guest features stopped after a change to another system&rdquo;",
+     "an integration between the phone system and something else &mdash; a property management system, a booking platform, a billing package &mdash; broken by an upgrade at the other end.",
+     "Check the integration rather than the phone system. These connections fail silently and the symptom always appears on the phone side, which is where everyone looks first."),
+    ("&ldquo;Calls over the SIP trunk sound poor while internal calls are fine&rdquo;",
+     "the path out to the provider, not the system. Internal calls never leave the building and are unaffected by whatever is happening on the connection.",
+     "That split is diagnostic on its own. Prioritise voice traffic on the way out and measure the connection for consistency rather than speed, which is what a call actually depends on."),
+    ("&ldquo;We can&rsquo;t find anyone who knows the programming&rdquo;",
+     "specialist knowledge that has become scarce as the installed base ages and the people who worked on these systems move on.",
+     "Get the configuration documented while the system is still running. The worst moment to discover nothing is written down is after a failure, and extracting it beforehand costs a fraction of reconstructing it afterwards."),
+    ("&ldquo;We&rsquo;re mid-lease and cannot replace it&rdquo;",
+     "a finance agreement with time left to run. It constrains the options and does not remove them.",
+     "Work within the constraint. Adding cloud extensions alongside an existing system, or improving what is there, is frequently possible without breaking an agreement &mdash; and knowing the lease end date lets the replacement be planned properly."),
+]
+
+EXAMPLE_1 = example(
+    "A capable system nobody would touch",
+    "A business had a functioning platform and could not find anyone willing to work on it. Three providers had quoted only for replacement, and one had declined to attend at all. The system itself had no reported faults.",
+    "The platform was in good order and appropriately sized for the business. The obstacle was availability of people who had worked on that family of systems, which had become genuinely scarce. Nothing needed fixing &mdash; the business simply had no route to make ordinary changes, which had made an asset feel like a liability.",
+    "Documented the configuration and numbering plan, made the outstanding changes that had accumulated, and put a support arrangement in place so ordinary requests have somewhere to go.",
+    "The business kept the system. It will be replaced when there is a reason beyond the difficulty of finding someone to answer the phone, and that decision now sits with the business.")
+
+EXAMPLE_2 = example(
+    "Guest features that stopped when something else was upgraded",
+    "An accommodation business found that room telephone features stopped working correctly after an unrelated system was upgraded. Calls still connected, and the functions tied to rooms did not behave.",
+    "The phone system integrated with the property management system, and the upgrade at the other end had changed how the two authenticated. The phone system continued to operate normally in every other respect, which is why it had been examined repeatedly and cleared. The integration had been in place for years and appeared in no documentation.",
+    "Restored the connection on the current method, then recorded every integration the phone system participates in and set monitoring so a broken link is reported rather than discovered at the front desk.",
+    "Room features work again. The phone system had never been at fault, and it had absorbed a week of investigation because it was the place the symptom appeared.")
 
 FAQS = [   (   'Who services Alcatel-Lucent phone systems on the Gold Coast?',
         'bcom ICT supplies, installs, programmes and repairs Alcatel-Lucent PBX systems across the Gold Coast, covering OXO Connect, OmniPCX Office and OmniPCX Enterprise, plus the current and legacy handset '
@@ -77,6 +112,30 @@ PAGE = {
                         'href="/voip-phone-system-installation-and-support-gold-coast">moving to cloud '
                         'VoIP</a> becomes a planned capital decision rather than a forced one — and we '
                         'test whether your internet is actually ready before recommending it.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The Alcatel-Lucent problems we are actually called to</h2>
+      <p>Six situations. The most common is not a fault but an absence of anyone to call.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What Alcatel-Lucent work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('PBX Systems', '/pabx-phone-systems-gold-coast'),
         ('Business Phone Systems', '/business-phone-systems-gold-coast'),

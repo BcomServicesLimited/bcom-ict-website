@@ -336,6 +336,47 @@
     <p style="max-width:68ch">We would rather tell you no. A UAP-AC-Pro serving fifteen devices in a normal office is not the bottleneck, and replacing it changes nothing you can measure.</p><p style="max-width:68ch;margin-top:16px"><strong>New hardware is worth it when</strong> you have genuine device density — thirty or more clients per access point — you are moving large files over wireless, the gear has reached end of software support, or you are fitting out new premises.</p><p style="max-width:68ch;margin-top:16px"><strong>It is not the answer when</strong> the complaint is coverage. Newer access points do not travel further through walls. That is placement and cabling, and it is what the <a href="/business-wifi-gold-coast">survey</a> resolves — sometimes for less than the hardware would have cost.</p>
   </div>
 </section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The UniFi problems we are actually called to</h2>
+      <p>Six situations specific to UniFi deployments, and the first one affects a great many of them.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>&ldquo;The controller is on a laptop under someone&rsquo;s desk&rdquo;</h4><p class="cause"><span>Usually</span> a UniFi network managed from a machine that was convenient at the time. The access points keep working when it is off, and nothing can be changed, monitored or updated.</p><p class="fix"><span>What we do</span> Move management somewhere permanent &mdash; a dedicated appliance or a hosted controller. Losing the controller does not take the network down, and it does take away every ability to manage it.</p></div><div class="issue"><h4>&ldquo;An access point won&rsquo;t adopt&rdquo;</h4><p class="cause"><span>Usually</span> a device still holding a previous controller&rsquo;s details, on a different network segment, or on firmware too far from the controller&rsquo;s.</p><p class="fix"><span>What we do</span> Reset the device properly and adopt it from the right segment. Second-hand and previously managed hardware is the usual cause, and it is straightforward once the reason is understood.</p></div><div class="issue"><h4>&ldquo;It all went wrong after a firmware update&rdquo;</h4><p class="cause"><span>Usually</span> an update applied to everything at once, or a controller and devices now on versions that do not work well together.</p><p class="fix"><span>What we do</span> Update deliberately rather than automatically, and keep the controller and devices in step. Applying a firmware update to every access point in a building simultaneously is a decision, not a default worth accepting.</p></div><div class="issue"><h4>&ldquo;We bought the wrong access points&rdquo;</h4><p class="cause"><span>Usually</span> hardware chosen on price or on a review rather than on the building. Coverage models, antenna patterns and density handling differ substantially across the range.</p><p class="fix"><span>What we do</span> Choose against the premises and the number of devices. The long-throw model suited to a warehouse aisle is the wrong choice for a partitioned office, and both are the right choice somewhere.</p></div><div class="issue"><h4>&ldquo;Our second site can&rsquo;t see the first&rdquo;</h4><p class="cause"><span>Usually</span> a site-to-site link that was never configured, or one broken by an address change at either end.</p><p class="fix"><span>What we do</span> Establish what the link is actually doing before rebuilding it. Multi-site setups fail in ways that look like the far site&rsquo;s problem from both directions.</p></div><div class="issue"><h4>&ldquo;Nobody knows what the guest network can reach&rdquo;</h4><p class="cause"><span>Usually</span> guest access enabled without the isolation and firewall rules that should accompany it. The guest network exists and is not actually separate from anything.</p><p class="fix"><span>What we do</span> Verify what a guest device can genuinely reach by testing from one. Assuming isolation is configured because the feature is enabled is one of the more common and more consequential mistakes on these networks.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What UniFi work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>The controller that left with the laptop</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business could no longer manage its UniFi network. The wireless still worked, and nothing could be changed, no new device could be added, and nobody could see what was happening on it.</p></div>
+    <div><h4>What we found</h4><p>The controller had been installed on a laptop belonging to a staff member who had left the business eight months earlier. The laptop had gone with them. The access points had continued operating on their last configuration the entire time, which is why nobody had noticed until they needed to add a device. No configuration backup existed anywhere.</p></div>
+    <div><h4>What we did</h4><p>Stood up a dedicated controller, re-adopted every access point, rebuilt the configuration properly with the guest network genuinely isolated this time, and set automatic configuration backups held off the device.</p></div>
+    <div><h4>The outcome</h4><p>The network is manageable again and no longer depends on any individual&rsquo;s laptop. The wireless had been running unmanaged and unmonitored for eight months, which is common and only becomes visible the day something needs to change.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>The wrong access point for the building</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business had installed capable access points across a partitioned office and had coverage complaints in several areas. The hardware was well regarded and the installation looked reasonable.</p></div>
+    <div><h4>What we found</h4><p>The model chosen was designed for long-range coverage in open spaces &mdash; an excellent choice in a warehouse. In an office divided into small rooms, its transmit power meant devices held onto distant access points instead of moving to the near one, and the coverage areas overlapped heavily enough to interfere with each other. The equipment was good and the wrong tool for this building.</p></div>
+    <div><h4>What we did</h4><p>Reduced transmit power to suit the partitioning, repositioned two units, and added one in an area the original layout had missed entirely.</p></div>
+    <div><h4>The outcome</h4><p>Coverage complaints stopped without new hardware. Turning the access points down improved the network, which is counter-intuitive and is the usual answer in a building full of walls.</p></div>
+  </div>
+</div>
+  </div>
+</section>
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

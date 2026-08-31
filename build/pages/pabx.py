@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body, price_table
+from layout import cta, faq_block, related, svc_body, price_table, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Our installer has retired&rdquo;",
+     "the single most common reason a business with a working PBX calls anyone. The system is fine and the knowledge has gone.",
+     "Recover administrative access and document the configuration. A platform nobody can change is not a broken platform, and being told to replace it is not the same as needing to."),
+    ("&ldquo;We can&rsquo;t change our own greeting&rdquo;",
+     "a system handed over without its credentials or its documentation, which is how most of them were handed over.",
+     "Make the change and then leave you able to make it yourself. If a business has to book a technician to alter an after-hours message, something has gone wrong that is not technical."),
+    ("&ldquo;Half the phones went out after a power failure&rdquo;",
+     "a card, a power supply or a component that did not survive the event. Older systems are more exposed to power disturbance than most equipment in a building.",
+     "Identify precisely what failed and whether it can be replaced, then protect the system properly. A PBX on unconditioned power in a building with supply problems will keep doing this."),
+    ("&ldquo;We want people working from home on the same number&rdquo;",
+     "a requirement most legacy systems were never designed for. It does not automatically mean replacing everything.",
+     "Consider a hybrid &mdash; the existing system for the office, cloud extensions for people outside it, joined so one number reaches whoever is available. Frequently a fraction of a full replacement."),
+    ("&ldquo;We&rsquo;ve been told the system is end of life&rdquo;",
+     "sometimes accurate and sometimes a sales position. What matters is whether parts are obtainable, whether it does what the business needs, and what the alternative costs.",
+     "Get an honest assessment with both paths costed. We supply new systems and we support old ones, so we have no structural reason to prefer either answer."),
+    ("&ldquo;We&rsquo;re moving premises and want to keep the system&rdquo;",
+     "usually possible and usually underestimated. The system moving is the easy part; the services and the cabling at the new site are not.",
+     "Plan the numbers, the services and the cabling well before the move rather than during it. Phones are the part of a relocation most often left to last and least able to absorb a delay."),
+]
+
+EXAMPLE_1 = example(
+    "Keeping the office system and adding the people who were not in it",
+    "A business with a healthy PBX needed six staff working from home to be reachable on the main number. Two providers had quoted for full cloud replacements, and the directors could not see why a working system had to be discarded.",
+    "The existing platform suited the sixteen people in the building and was not designed to extend beyond it. Replacing it entirely would have solved a problem affecting six people by discarding equipment serving sixteen, which nobody had questioned because nobody had proposed anything else.",
+    "Kept the PBX for the office, added cloud extensions for the six remote staff, and joined the two so a single published number rings whoever is available regardless of location.",
+    "Everyone has a working phone and the business spent a small fraction of a replacement. The PBX will be replaced when it genuinely reaches its end, which is a decision the business now gets to make on its own timing.")
+
+EXAMPLE_2 = example(
+    "Moving a phone system without losing a day",
+    "A business relocating within the Gold Coast wanted to take its phone system to the new premises and be operating from the first morning. The move was over a weekend.",
+    "The system itself would move without difficulty. The new tenancy had phone points of unknown vintage connected to nothing identifiable, no structured cabling to the positions the business intended to use, and services that had to be arranged with lead times longer than the business had allowed.",
+    "Ran cabling to every position through an ACMA registered contractor three weeks ahead, arranged the services with time to spare, and configured and tested the system against the new cabling while the old site was still trading.",
+    "The business moved on the Saturday and worked on the Monday. On moving day the system was carried in and connected to outlets already proven to work, which is the whole point of doing the preparation early.")
 
 FAQS = [   (   'Who services PBX phone systems on the Gold Coast?',
         'bcom ICT installs, programs and maintains on-premise PBX systems on the Gold Coast, including LG Ericsson iPECS, Panasonic KX-NS, KX-TDA and KX-TDE, NEC UNIVERGE SV9100, SV8100 and SL2100, '
@@ -116,6 +151,30 @@ PAGE = {
       <p>Handsets and installation are fixed price. The monthly plan is quoted alongside it.</p>
     </div>
     {price_table(PRICING, note='Hardware and installation are a one-off fixed price, agreed before we start. The monthly service and call plan is separate and depends on how many numbers and concurrent calls you need &mdash; we quote it alongside the install so you are looking at the whole cost rather than the attractive half of it. A business that does not want desk phones can run softphones on the computers and mobiles it already owns, which removes the hardware line entirely and leaves only the installation.')}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The PBX problems we are actually called to</h2>
+      <p>Six situations. The most common one is a working system with nobody left to maintain it.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What PBX work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 '''

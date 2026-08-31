@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body, models
+from layout import cta, faq_block, related, svc_body, models, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;We can&rsquo;t add an extension&rdquo;",
+     "capacity or licensing. NEC platforms gate features and port counts, and a system can be physically capable of something it is not currently entitled to do.",
+     "Establish what the system is licensed for before assuming it is full. Sometimes the answer is a licence, sometimes a card, and occasionally the system genuinely has no room left &mdash; the three have very different costs."),
+    ("&ldquo;A handset shows out of service&rdquo;",
+     "the extension, the cabling, or the card it terminates on. A single handset behaving this way and a whole group behaving this way are different faults.",
+     "Test whether the fault follows the handset or stays with the position. That one test separates a dead handset from a dead port from a dead card, and it takes minutes."),
+    ("&ldquo;We can&rsquo;t get into programming&rdquo;",
+     "credentials that left with a previous installer, or a system secured during an earlier service visit and never handed back.",
+     "Recover administrative access properly and document it for the business rather than for us. You should be able to change your own greeting without booking anyone."),
+    ("&ldquo;Music on hold stopped after someone made a change&rdquo;",
+     "a source disconnected or a setting altered during unrelated work. Callers hear silence and frequently assume they have been cut off.",
+     "Restore the source and confirm what callers actually hear by ringing in. A surprising amount of hold-experience trouble is only ever discovered by listening to it."),
+    ("&ldquo;We want to keep the system but add people working from home&rdquo;",
+     "a reasonable request that older platforms handle to varying degrees. Some can be extended; some cannot without a significant addition.",
+     "Assess what the platform genuinely supports before committing. A hybrid arrangement &mdash; the existing system for the office and cloud extensions for remote staff &mdash; is often the sensible middle path."),
+    ("&ldquo;Is it worth keeping?&rdquo;",
+     "a genuine question that depends on what the system still does well, what parts remain available, and what the business needs next.",
+     "Get the assessment in writing with both options costed. We supply new systems and support existing ones, so we are equally happy either way &mdash; which is the only position from which the advice is worth anything."),
+]
+
+EXAMPLE_1 = example(
+    "A licence, not a replacement",
+    "A business needed to add four extensions for new staff and had been advised the system was at capacity and would need replacing. A quote for a new platform was in front of the directors.",
+    "The system had the physical capacity and was not licensed for the additional ports. The distinction had not been explained, and the business had understood full to mean full. The licensing cost was a very small fraction of the replacement quote.",
+    "Established exactly what the platform was licensed for and what it could physically carry, purchased the licences, and configured the four extensions. Also set out honestly how much life the platform realistically had left, so the eventual replacement could be planned rather than forced.",
+    "Four staff had working phones within the week. The business will replace the system eventually and will do it on a schedule of its choosing, having been told the truth about where it stood.")
+
+EXAMPLE_2 = example(
+    "Keeping the system and adding the people who were not in the building",
+    "A business had staff working partly from home and a phone system that predated the arrangement. The assumption was that supporting remote workers meant replacing everything.",
+    "The office system was working well and suited the people in the building. It was not designed for extensions outside it. Replacing a functioning platform to solve a problem affecting five people out of twenty-two was a disproportionate response, and nobody had proposed anything smaller.",
+    "Kept the existing system for the office, added cloud extensions for the remote staff, and joined the two so that a single published number reaches whoever is available regardless of where they are.",
+    "The business spent a fraction of a replacement and everybody has a working phone. The full replacement will happen when the platform genuinely reaches its end, which it has not.")
 
 FAQS = [   (   'Who services NEC phone systems on the Gold Coast?',
         'bcom ICT supplies, installs, programmes and repairs NEC PBX systems across the Gold Coast, covering UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms, plus the current and '
@@ -79,6 +114,30 @@ PAGE = {
                         'href="/voip-phone-system-installation-and-support-gold-coast">moving to cloud '
                         'VoIP</a> becomes a planned capital decision rather than a forced one — and we '
                         'test whether your internet is actually ready before recommending it.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The NEC problems we are actually called to</h2>
+      <p>Six situations. Two of them are frequently mistaken for a system that needs replacing.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What NEC work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('PBX Systems', '/pabx-phone-systems-gold-coast'),
         ('Business Phone Systems', '/business-phone-systems-gold-coast'),

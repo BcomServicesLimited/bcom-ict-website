@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body, models
+from layout import cta, faq_block, related, svc_body, models, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Some handsets work and some don&rsquo;t&rdquo;",
+     "a mixed estate. These systems are frequently deployed with both IP and digital handsets, and a fault affecting only one kind points somewhere quite specific.",
+     "Establish which group is affected before investigating anything. IP handsets failing while digital ones work points at the network; the reverse points at cards or cabling, and knowing which halves the diagnosis immediately."),
+    ("&ldquo;The web administration page won&rsquo;t load&rdquo;",
+     "an address that changed, a browser that no longer supports how the interface was built, or a management network that was never reachable from where you are trying.",
+     "Reach it from the right place with a suitable browser. Administration interfaces on systems of this generation frequently outlive the browsers they were designed for, which is a very common reason people believe a system has failed."),
+    ("&ldquo;Remote extensions keep dropping&rdquo;",
+     "the connection between the extension and the system rather than either end &mdash; usually a firewall closing a session it believes has finished.",
+     "Adjust the session handling so a connection is held open for the length of a real working day. Remote extensions that drop at predictable intervals are almost always a timer."),
+    ("&ldquo;It lost its configuration after a power event&rdquo;",
+     "a system that came back to an earlier saved state, or one where a recent change was never committed to permanent storage.",
+     "Restore from the most recent good configuration and confirm it is actually being saved. Systems where changes were made but never written are a genuinely common and entirely avoidable loss."),
+    ("&ldquo;Nobody documented the numbering plan&rdquo;",
+     "extensions, hunt groups, pickup groups and routing built up over years by different hands with nothing written down.",
+     "Extract it from the system and write it down. Every subsequent change becomes an ordinary task instead of an investigation, and it is yours whether or not we do the work."),
+    ("&ldquo;We want to move to VoIP but keep the handsets&rdquo;",
+     "a reasonable instinct, since the handsets are usually the visible cost. Whether it is possible depends on the handsets and how the system is licensed.",
+     "Establish what your specific handsets support before planning around it. Sometimes they can carry across, sometimes they cannot, and the answer changes the shape of the whole project."),
+]
+
+EXAMPLE_1 = example(
+    "IP handsets failing while the digital ones were perfect",
+    "A business reported that about half its handsets dropped calls intermittently while the rest were faultless. The affected handsets were spread across the building with no obvious pattern, and the system had been examined twice.",
+    "Every affected handset was an IP extension and every unaffected one was digital. The digital handsets connected directly to the system and were unaffected by the network; the IP handsets crossed a switch that had a failing uplink, which lost packets under load. The phone system was working perfectly and had been the only thing anyone had looked at.",
+    "Replaced the failing uplink and prioritised voice traffic across the switching so calls could not queue behind other traffic.",
+    "The dropouts stopped. Splitting the fault by handset type took about ten minutes and pointed straight out of the phone system, which is where the problem had been the whole time.")
+
+EXAMPLE_2 = example(
+    "Changes that had never been saved",
+    "A business lost several months of phone system configuration after a power interruption &mdash; call routing, hunt group membership and greetings all reverted to an older arrangement nobody recognised.",
+    "Changes had been made over that period through the administration interface and applied to the running system without ever being written to permanent storage. Everything worked while the system stayed powered, and the system had stayed powered for eight months. The interruption simply revealed what had been true throughout.",
+    "Rebuilt the configuration from what staff could describe and from call records, then wrote it to permanent storage, took an off-system backup of it, and showed the business how to confirm a change has actually been saved.",
+    "The configuration now survives a power event and there is a copy held off the system. The loss was avoidable and had been sitting there for eight months waiting for a blackout.")
 
 FAQS = [   (   'Who services LG Ericsson phone systems on the Gold Coast?',
         'bcom ICT supplies, installs, programmes and repairs LG Ericsson PBX systems across the Gold Coast, covering iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms, plus the current and '
@@ -78,6 +113,30 @@ PAGE = {
                         'href="/voip-phone-system-installation-and-support-gold-coast">moving to cloud '
                         'VoIP</a> becomes a planned capital decision rather than a forced one — and we '
                         'test whether your internet is actually ready before recommending it.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The LG Ericsson problems we are actually called to</h2>
+      <p>Six situations. The first one usually points straight out of the phone system.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What LG Ericsson work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('PBX Systems', '/pabx-phone-systems-gold-coast'),
         ('Business Phone Systems', '/business-phone-systems-gold-coast'),

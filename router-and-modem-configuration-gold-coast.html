@@ -291,6 +291,57 @@
     <p style="max-width:68ch">Provider-supplied routers are built to a price. They're adequate for a household and frequently become the bottleneck once a business is running VoIP, a VPN, and thirty devices — long before the connection itself struggles.</p><p style="max-width:68ch;margin-top:16px">Symptoms look like slow internet: calls breaking up, connections dropping under load, remote access that stalls. We measure before recommending a replacement, because sometimes it's configuration rather than capacity — see <a href="/network-troubleshooting-diagnostics-gold-coast">network troubleshooting</a>.</p>
   </div>
 </section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The router and modem problems we are actually called to</h2>
+      <p>Six situations. Several of them look like faults in something else entirely.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>&ldquo;Our remote access stopped after the provider swapped the modem&rdquo;</h4><p class="cause"><span>Usually</span> a replacement unit delivered on factory settings. Every rule, forward and reservation that had been configured on the old one is gone, and nobody records them because nobody expects the swap.</p><p class="fix"><span>What we do</span> Rebuild the configuration and then keep a copy of it. A modem replacement is a routine event that takes a business offline for a day when nothing was documented.</p></div><div class="issue"><h4>&ldquo;Two routers, and half our things don&rsquo;t work&rdquo;</h4><p class="cause"><span>Usually</span> double NAT &mdash; a business router behind a provider&rsquo;s modem, both handing out addresses and both translating traffic. Ordinary browsing works and anything needing an inbound connection does not.</p><p class="fix"><span>What we do</span> Put the provider&rsquo;s unit into a pass-through mode and let one device do the routing. Half the strange faults on small business networks come from two devices both believing they are in charge.</p></div><div class="issue"><h4>&ldquo;We&rsquo;re using the router the provider gave us&rdquo;</h4><p class="cause"><span>Usually</span> equipment supplied to meet a price, adequate for a household and frequently not for a business with staff, VoIP and cloud applications.</p><p class="fix"><span>What we do</span> Assess whether it is genuinely the constraint before replacing it &mdash; sometimes it is fine. Where it is not, a business-grade unit changes far more than an internet plan upgrade would.</p></div><div class="issue"><h4>&ldquo;Devices get a different address every time&rdquo;</h4><p class="cause"><span>Usually</span> no reserved addresses, so printers, terminals and access points move around whenever something restarts and stop being findable.</p><p class="fix"><span>What we do</span> Reserve addresses for anything that needs to be found reliably. This is a ten-minute job that prevents a recurring category of fault nobody ever connects to its cause.</p></div><div class="issue"><h4>&ldquo;The firmware has never been updated&rdquo;</h4><p class="cause"><span>Usually</span> a device installed years ago and never revisited. Routers are directly exposed to the internet and are a genuine target.</p><p class="fix"><span>What we do</span> Update it, and check whether it is still receiving updates at all. A router the manufacturer has stopped supporting is a security problem regardless of how well it is performing.</p></div><div class="issue"><h4>&ldquo;The default password is still on it&rdquo;</h4><p class="cause"><span>Usually</span> an installation that was never finished properly. Frequently the password is printed on a label on the device itself.</p><p class="fix"><span>What we do</span> Change it, disable remote administration from the internet, and record the new credentials somewhere the business controls. This is the shortest and most valuable job on this page.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What router and modem work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>A modem swap that took a business offline for a day</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business lost access to its own systems from outside the office after their internet provider replaced a faulty modem. The provider had done nothing wrong and the replacement was working correctly.</p></div>
+    <div><h4>What we found</h4><p>The original unit had carried port forwards for a remote access arrangement, address reservations for the printers and payment terminal, and a configured guest network. The replacement arrived on factory settings, as replacements do. None of the original configuration had been documented, so it had to be reconstructed from what staff could describe and from what failed.</p></div>
+    <div><h4>What we did</h4><p>Rebuilt the configuration, then exported and stored it so a future replacement is a fifteen-minute restore. Reserved addresses for every device that needs to be found and moved the remote access onto something more appropriate than a port forward.</p></div>
+    <div><h4>The outcome</h4><p>Remote access works and the next modem swap will not repeat this. Provider hardware gets replaced routinely, and a business with no copy of its own configuration loses a day every time it happens.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Two devices both convinced they were in charge</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business had installed a capable business router behind their provider&rsquo;s modem. Browsing and email were fine. Their phone system, remote access and a supplier&rsquo;s ordering integration all behaved strangely, and had done since the day the router was installed.</p></div>
+    <div><h4>What we found</h4><p>Both devices were routing and translating traffic independently. Anything initiating a connection outward worked normally, and anything needing a connection inward reached the first device and stopped. This is a textbook double NAT and it had been diagnosed twice as a problem with the phone system.</p></div>
+    <div><h4>What we did</h4><p>Placed the provider&rsquo;s unit into pass-through so the business router handled routing alone, then rebuilt the forwarding rules once, in one place.</p></div>
+    <div><h4>The outcome</h4><p>All three problems resolved at the same moment, which is what tends to happen when the actual cause is finally addressed rather than the three symptoms it produces.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>A router still carrying the password printed on its label</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business asked us to look at an internet connection that had felt slow for months. The complaint was performance and the expectation was that a faster plan would be recommended.</p></div>
+    <div><h4>What we found</h4><p>The connection itself was delivering close to its rated speed at the boundary. The router had been installed six years earlier and had never had its firmware updated &mdash; the manufacturer had stopped issuing updates for it three years before that. Remote administration was enabled and reachable from the internet, and the administrative password was still the default one printed on a sticker on the underside of the unit. The device&rsquo;s logs, once we could read them, showed sustained automated login attempts going back as far as the logs were retained. Whether any had succeeded could not be established, because the logging retained too little to say.</p></div>
+    <div><h4>What we did</h4><p>Replaced the router with a supported business unit, disabled internet-facing administration entirely, set credentials held in the business&rsquo;s password manager, and rebuilt the configuration properly. Advised the business to treat any credential that had passed through that device as potentially exposed and to reset the important ones.</p></div>
+    <div><h4>The outcome</h4><p>The connection is no longer slow, which was the presenting complaint and by some distance the least important thing we found. The device had been quietly indefensible for three years and nobody had any reason to look at it, because it had never stopped working.</p></div>
+  </div>
+</div>
+  </div>
+</section>
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

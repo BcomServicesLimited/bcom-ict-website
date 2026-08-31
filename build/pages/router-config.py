@@ -1,5 +1,46 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
 
+COMMON_ISSUES = [
+    ("&ldquo;Our remote access stopped after the provider swapped the modem&rdquo;",
+     "a replacement unit delivered on factory settings. Every rule, forward and reservation that had been configured on the old one is gone, and nobody records them because nobody expects the swap.",
+     "Rebuild the configuration and then keep a copy of it. A modem replacement is a routine event that takes a business offline for a day when nothing was documented."),
+    ("&ldquo;Two routers, and half our things don&rsquo;t work&rdquo;",
+     "double NAT &mdash; a business router behind a provider&rsquo;s modem, both handing out addresses and both translating traffic. Ordinary browsing works and anything needing an inbound connection does not.",
+     "Put the provider&rsquo;s unit into a pass-through mode and let one device do the routing. Half the strange faults on small business networks come from two devices both believing they are in charge."),
+    ("&ldquo;We&rsquo;re using the router the provider gave us&rdquo;",
+     "equipment supplied to meet a price, adequate for a household and frequently not for a business with staff, VoIP and cloud applications.",
+     "Assess whether it is genuinely the constraint before replacing it &mdash; sometimes it is fine. Where it is not, a business-grade unit changes far more than an internet plan upgrade would."),
+    ("&ldquo;Devices get a different address every time&rdquo;",
+     "no reserved addresses, so printers, terminals and access points move around whenever something restarts and stop being findable.",
+     "Reserve addresses for anything that needs to be found reliably. This is a ten-minute job that prevents a recurring category of fault nobody ever connects to its cause."),
+    ("&ldquo;The firmware has never been updated&rdquo;",
+     "a device installed years ago and never revisited. Routers are directly exposed to the internet and are a genuine target.",
+     "Update it, and check whether it is still receiving updates at all. A router the manufacturer has stopped supporting is a security problem regardless of how well it is performing."),
+    ("&ldquo;The default password is still on it&rdquo;",
+     "an installation that was never finished properly. Frequently the password is printed on a label on the device itself.",
+     "Change it, disable remote administration from the internet, and record the new credentials somewhere the business controls. This is the shortest and most valuable job on this page."),
+]
+
+EXAMPLE_1 = example(
+    "A modem swap that took a business offline for a day",
+    "A business lost access to its own systems from outside the office after their internet provider replaced a faulty modem. The provider had done nothing wrong and the replacement was working correctly.",
+    "The original unit had carried port forwards for a remote access arrangement, address reservations for the printers and payment terminal, and a configured guest network. The replacement arrived on factory settings, as replacements do. None of the original configuration had been documented, so it had to be reconstructed from what staff could describe and from what failed.",
+    "Rebuilt the configuration, then exported and stored it so a future replacement is a fifteen-minute restore. Reserved addresses for every device that needs to be found and moved the remote access onto something more appropriate than a port forward.",
+    "Remote access works and the next modem swap will not repeat this. Provider hardware gets replaced routinely, and a business with no copy of its own configuration loses a day every time it happens.")
+
+EXAMPLE_2 = example(
+    "Two devices both convinced they were in charge",
+    "A business had installed a capable business router behind their provider&rsquo;s modem. Browsing and email were fine. Their phone system, remote access and a supplier&rsquo;s ordering integration all behaved strangely, and had done since the day the router was installed.",
+    "Both devices were routing and translating traffic independently. Anything initiating a connection outward worked normally, and anything needing a connection inward reached the first device and stopped. This is a textbook double NAT and it had been diagnosed twice as a problem with the phone system.",
+    "Placed the provider&rsquo;s unit into pass-through so the business router handled routing alone, then rebuilt the forwarding rules once, in one place.",
+    "All three problems resolved at the same moment, which is what tends to happen when the actual cause is finally addressed rather than the three symptoms it produces.")
+
+EXAMPLE_3 = example(
+    "A router still carrying the password printed on its label",
+    "A business asked us to look at an internet connection that had felt slow for months. The complaint was performance and the expectation was that a faster plan would be recommended.",
+    "The connection itself was delivering close to its rated speed at the boundary. The router had been installed six years earlier and had never had its firmware updated &mdash; the manufacturer had stopped issuing updates for it three years before that. Remote administration was enabled and reachable from the internet, and the administrative password was still the default one printed on a sticker on the underside of the unit. The device&rsquo;s logs, once we could read them, showed sustained automated login attempts going back as far as the logs were retained. Whether any had succeeded could not be established, because the logging retained too little to say.",
+    "Replaced the router with a supported business unit, disabled internet-facing administration entirely, set credentials held in the business&rsquo;s password manager, and rebuilt the configuration properly. Advised the business to treat any credential that had passed through that device as potentially exposed and to reset the important ones.",
+    "The connection is no longer slow, which was the presenting complaint and by some distance the least important thing we found. The device had been quietly indefensible for three years and nobody had any reason to look at it, because it had never stopped working.")
 FAQS = [   (   'Should we use the router our internet provider supplied?',
         "For a small setup, often yes, once it's properly configured. It typically becomes the bottleneck once you're running VoIP phones, a VPN and thirty or more devices — well before the "
         'connection itself struggles. We measure before recommending a replacement.'),
@@ -61,6 +102,31 @@ PAGE = {
                         'configuration rather than capacity — see <a '
                         'href="/network-troubleshooting-diagnostics-gold-coast">network '
                         'troubleshooting</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The router and modem problems we are actually called to</h2>
+      <p>Six situations. Several of them look like faults in something else entirely.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What router and modem work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+    {EXAMPLE_3}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Mesh WiFi Setup', '/mesh-network-setup-gold-coast'),

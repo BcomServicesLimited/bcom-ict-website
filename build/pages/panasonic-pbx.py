@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body, models
+from layout import cta, faq_block, related, svc_body, models, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Nobody will touch our Panasonic&rdquo;",
+     "the installer retiring or moving on, and the programming knowledge going with them. Panasonic is the most widely installed legacy platform on the Gold Coast, which also means a great many of them are now orphaned.",
+     "We still program these systems. A working platform with nobody to maintain it is a support problem rather than a technical one, and being told to replace it is not the same as needing to."),
+    ("&ldquo;The cordless handsets drop as you walk the building&rdquo;",
+     "cordless base stations positioned for a smaller premises, or one that has since been partitioned. Handover between bases is the part that fails first as a building changes around the system.",
+     "Check coverage along the routes people actually walk and reposition or add a base. Cordless coverage is rarely the reason a business replaces a system, and it is frequently the reason it wants to."),
+    ("&ldquo;We can&rsquo;t change the after-hours greeting&rdquo;",
+     "a system configured by an installer who never handed anything over. The capability is there and the knowledge left with them.",
+     "Make the change, then document the call flow and show whoever will need to alter it next. A phone system only its installer can operate is a dependency rather than an asset."),
+    ("&ldquo;Voicemail has stopped recording&rdquo;",
+     "storage that has filled, or a voicemail component that has failed. On older platforms this happens quietly and callers simply hear the phone ring out.",
+     "Check the storage and the component before assuming the worst. This is one of the more common faults on ageing systems and one of the more straightforward to resolve."),
+    ("&ldquo;Half the extensions died after a blackout&rdquo;",
+     "a card or a power supply that did not survive the event. Legacy systems are more vulnerable to power disturbance than most equipment in a building.",
+     "Identify what failed and whether it is replaceable. Where it is, protect the system properly afterwards &mdash; an unprotected PBX in a building with unreliable power will keep doing this."),
+    ("&ldquo;We&rsquo;ve been told we have to replace it&rdquo;",
+     "sometimes true and sometimes a sales position. Whether it is genuinely finished depends on the platform, what parts are still obtainable and what the business needs it to do.",
+     "Get an honest assessment. We supply new systems and we also keep older ones running, so we have no particular reason to push you either way &mdash; and we will tell you when a system has years left in it."),
+]
+
+EXAMPLE_1 = example(
+    "A system the business had been told was dead",
+    "A business with around thirty extensions had been quoted for a complete replacement after their long-standing installer retired. Two providers had declined to work on the existing system at all.",
+    "The platform was functioning correctly. The actual complaint was that nobody could change the after-hours greeting or add an extension, because the programming credentials had left with the installer and no documentation existed. Nothing was broken &mdash; the business had simply lost the ability to operate what it owned.",
+    "Recovered administrative access, made the changes the business had been waiting months for, and documented the numbering plan, call flow and greetings so the next change does not require anybody at all.",
+    "The replacement was deferred by several years and will happen when the business decides it should, not when it was told. We would have been happy to sell the new system and it was not what the situation called for.")
+
+EXAMPLE_2 = example(
+    "Cordless coverage that a partition wall broke",
+    "A business reported cordless handsets dropping calls in part of their premises. The system had worked without complaint for six years and the problem had begun a few months earlier.",
+    "The tenancy had been partitioned to create two meeting rooms shortly before the problem started. The new walls sat directly between the cordless base and the area now suffering, and the handover to the second base was happening too late to be seamless. The phone system had not changed at all &mdash; the building had.",
+    "Repositioned one base station and added a third to cover the area created by the partitioning, then walked the building with a handset to confirm handover happened cleanly.",
+    "Calls stopped dropping. The business had been considering replacing the whole system over a fault created by its own fit-out, which is worth checking before anyone quotes for a platform.")
 
 FAQS = [   (   'Who services Panasonic phone systems on the Gold Coast?',
         'bcom ICT supplies, installs, programmes and repairs Panasonic PBX systems across the Gold Coast, covering KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms, plus the current and '
@@ -78,6 +113,30 @@ PAGE = {
                         'href="/voip-phone-system-installation-and-support-gold-coast">moving to cloud '
                         'VoIP</a> becomes a planned capital decision rather than a forced one — and we '
                         'test whether your internet is actually ready before recommending it.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The Panasonic problems we are actually called to</h2>
+      <p>Six situations, and the most common one is not a fault at all.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What Panasonic work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('PBX Systems', '/pabx-phone-systems-gold-coast'),
         ('Business Phone Systems', '/business-phone-systems-gold-coast'),

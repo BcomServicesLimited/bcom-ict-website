@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body, models
+from layout import cta, faq_block, related, svc_body, models, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Nobody has the account the network is registered to&rdquo;",
+     "cloud-managed hardware set up under an installer&rsquo;s account or a departed employee&rsquo;s email address. The network runs and the business cannot administer it.",
+     "Establish ownership under an account the business controls. This is worth checking on any cloud-managed equipment, and it is the single most common ownership gap we find."),
+    ("&ldquo;It works but we can&rsquo;t see anything&rdquo;",
+     "management sitting with whoever installed it. The business has a functioning network and no visibility of what is connected or how it is performing.",
+     "Get administrative access into the business&rsquo;s hands. Visibility of your own network is not an advanced feature and you should not need to ask someone for it."),
+    ("&ldquo;Coverage is fine but the network feels slow&rdquo;",
+     "the connection behind the access points rather than the wireless. Wireless is frequently blamed for a constraint that sits between the access point and everything else.",
+     "Test the wired path and the internet service separately from the wireless. Strong signal and slow performance almost always means the bottleneck is somewhere the signal strength indicator cannot see."),
+    ("&ldquo;Guest access has no controls on it&rdquo;",
+     "a guest network switched on without limits, terms or isolation. It works, and it is open in ways nobody intended.",
+     "Configure guest access properly &mdash; isolated, rate-limited, and unable to reach business systems. The feature being enabled is not the same as the feature being configured."),
+    ("&ldquo;We added a second site and it&rsquo;s managed separately&rdquo;",
+     "each location set up independently, so every change has to be made twice and the two drift apart.",
+     "Bring both under one management view. Two sites that are configured alike are dramatically easier to support than two that merely do the same job."),
+    ("&ldquo;Is this the right range for us?&rdquo;",
+     "a fair question. This equipment suits small and medium sites very well and there are situations where something else fits better.",
+     "Choose against the building and the device count rather than the brand. We install more than one range and will say when a different one is the better fit for your premises."),
+]
+
+EXAMPLE_1 = example(
+    "A network registered to somebody who had left",
+    "A business wanted to add access points to cover an area of its premises that had never worked well. The existing equipment was cloud-managed and performing adequately.",
+    "The entire deployment was registered under an account belonging to a former employee, created during the original installation with their work email address. That mailbox had been closed when they left. Nobody could log in, add hardware or change a setting, and the recovery route ran through an address that no longer existed.",
+    "Worked through the vendor&rsquo;s ownership transfer process with the business&rsquo;s documentation, established the network under an account the company itself owns, and added the access points the original request had been about.",
+    "The business owns its own network and the coverage gap is closed. The ownership problem had existed for over a year and would have surfaced eventually &mdash; ideally not during an outage.")
+
+EXAMPLE_2 = example(
+    "Full signal, slow network, nothing to do with the wireless",
+    "A business reported that its wireless had become slow. Coverage was strong everywhere, the access points were modern, and a previous provider had recommended replacing them.",
+    "Signal strength was excellent throughout. Every access point connected back through a single older switch that had a failing port and was passing traffic at a fraction of its rated speed. Every device in the building, wireless or not, crossed that one switch. The wireless was performing perfectly and was carrying the blame for something behind it.",
+    "Replaced the switch, verified the link speeds on every port, and measured throughput before and after so the improvement was demonstrable rather than asserted.",
+    "The network returned to full speed and the access points stayed. A wireless replacement had been quoted for a fault that no new access point would have changed.")
 
 FAQS = [   (   'Do you design and supply new Aruba Instant On systems?',
         "Yes — that's the larger part of what we do with it. bcom ICT surveys the building, specifies access points and switching, supplies the hardware at trade pricing, runs the cabling and "
@@ -108,6 +143,30 @@ PAGE = {
                         'href="/ubiquiti-unifi-wifi-gold-coast">UniFi</a></strong> for deeper control and '
                         'visibility, several sites managed together, or where cameras and door access '
                         'should sit on the same system.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The Aruba Instant On problems we are actually called to</h2>
+      <p>Six situations. Two of them are about who owns the network rather than how it performs.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What Aruba Instant On work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Ubiquiti UniFi WiFi', '/ubiquiti-unifi-wifi-gold-coast'),

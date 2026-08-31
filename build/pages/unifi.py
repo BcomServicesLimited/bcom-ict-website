@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body, models
+from layout import cta, faq_block, related, svc_body, models, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;The controller is on a laptop under someone&rsquo;s desk&rdquo;",
+     "a UniFi network managed from a machine that was convenient at the time. The access points keep working when it is off, and nothing can be changed, monitored or updated.",
+     "Move management somewhere permanent &mdash; a dedicated appliance or a hosted controller. Losing the controller does not take the network down, and it does take away every ability to manage it."),
+    ("&ldquo;An access point won&rsquo;t adopt&rdquo;",
+     "a device still holding a previous controller&rsquo;s details, on a different network segment, or on firmware too far from the controller&rsquo;s.",
+     "Reset the device properly and adopt it from the right segment. Second-hand and previously managed hardware is the usual cause, and it is straightforward once the reason is understood."),
+    ("&ldquo;It all went wrong after a firmware update&rdquo;",
+     "an update applied to everything at once, or a controller and devices now on versions that do not work well together.",
+     "Update deliberately rather than automatically, and keep the controller and devices in step. Applying a firmware update to every access point in a building simultaneously is a decision, not a default worth accepting."),
+    ("&ldquo;We bought the wrong access points&rdquo;",
+     "hardware chosen on price or on a review rather than on the building. Coverage models, antenna patterns and density handling differ substantially across the range.",
+     "Choose against the premises and the number of devices. The long-throw model suited to a warehouse aisle is the wrong choice for a partitioned office, and both are the right choice somewhere."),
+    ("&ldquo;Our second site can&rsquo;t see the first&rdquo;",
+     "a site-to-site link that was never configured, or one broken by an address change at either end.",
+     "Establish what the link is actually doing before rebuilding it. Multi-site setups fail in ways that look like the far site&rsquo;s problem from both directions."),
+    ("&ldquo;Nobody knows what the guest network can reach&rdquo;",
+     "guest access enabled without the isolation and firewall rules that should accompany it. The guest network exists and is not actually separate from anything.",
+     "Verify what a guest device can genuinely reach by testing from one. Assuming isolation is configured because the feature is enabled is one of the more common and more consequential mistakes on these networks."),
+]
+
+EXAMPLE_1 = example(
+    "The controller that left with the laptop",
+    "A business could no longer manage its UniFi network. The wireless still worked, and nothing could be changed, no new device could be added, and nobody could see what was happening on it.",
+    "The controller had been installed on a laptop belonging to a staff member who had left the business eight months earlier. The laptop had gone with them. The access points had continued operating on their last configuration the entire time, which is why nobody had noticed until they needed to add a device. No configuration backup existed anywhere.",
+    "Stood up a dedicated controller, re-adopted every access point, rebuilt the configuration properly with the guest network genuinely isolated this time, and set automatic configuration backups held off the device.",
+    "The network is manageable again and no longer depends on any individual&rsquo;s laptop. The wireless had been running unmanaged and unmonitored for eight months, which is common and only becomes visible the day something needs to change.")
+
+EXAMPLE_2 = example(
+    "The wrong access point for the building",
+    "A business had installed capable access points across a partitioned office and had coverage complaints in several areas. The hardware was well regarded and the installation looked reasonable.",
+    "The model chosen was designed for long-range coverage in open spaces &mdash; an excellent choice in a warehouse. In an office divided into small rooms, its transmit power meant devices held onto distant access points instead of moving to the near one, and the coverage areas overlapped heavily enough to interfere with each other. The equipment was good and the wrong tool for this building.",
+    "Reduced transmit power to suit the partitioning, repositioned two units, and added one in an area the original layout had missed entirely.",
+    "Coverage complaints stopped without new hardware. Turning the access points down improved the network, which is counter-intuitive and is the usual answer in a building full of walls.")
 
 FAQS = [   (   'Do you design and supply new UniFi systems, or only support existing ones?',
         'Both, and design and supply is the larger part. bcom ICT surveys the building, specifies access points, switching and gateway, supplies the hardware at trade pricing, runs the cabling and '
@@ -125,6 +160,30 @@ PAGE = {
                         'walls. That is placement and cabling, and it is what the <a '
                         'href="/business-wifi-gold-coast">survey</a> resolves — sometimes for less than '
                         'the hardware would have cost.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The UniFi problems we are actually called to</h2>
+      <p>Six situations specific to UniFi deployments, and the first one affects a great many of them.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What UniFi work actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Aruba Instant On WiFi', '/aruba-instant-on-wifi-gold-coast'),
