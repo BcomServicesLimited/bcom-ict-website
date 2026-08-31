@@ -40,8 +40,10 @@ BIZ = {
     "on_call":      "After-hours on-call support is available to managed and SLA clients under their agreement.",
 
     # Online booking for on-site IT support.
+    # Confirmed by Royce 2026-08-31. The old site carried two scheduling links;
+    # this is the on-site booking one (79 pages used it, including the homepage).
     "booking":      "https://calendar.google.com/calendar/appointments/schedules/"
-                    "AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true",
+                    "AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true",
     # Remote support tool. Instructions and download link live ONLY on /support.
     "splashtop":    "https://sos.splashtop.com",
 }
