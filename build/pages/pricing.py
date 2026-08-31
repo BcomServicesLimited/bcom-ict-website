@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, ticks, related, trust_note
+from layout import MARK, cta, faq_block, ticks, related, trust_note, price_table
 from site_data import RATES as R
 
 TIERS = [
@@ -36,6 +36,8 @@ tiers = "".join(
     </div>''' for name, label, feat, blurb, items, suits in TIERS)
 
 FAQS = [
+    ("How much do common IT projects cost on the Gold Coast?",
+     "Indicative starting points from bcom ICT: a one-hour on-site visit booked online is $252 inc GST; a small-business cybersecurity health check is $500 inc GST for up to five users; business WiFi for a simple site starts at $1,500 + GST with hardware included; data cabling is around $150 + GST per outlet; a five-extension VoIP phone system is about $2,250 + GST including handsets; a Microsoft 365 migration is around $150 + GST per user; and automatic cloud backup is $10 per user per month. Every project is quoted as a fixed price after scoping."),
     ("How much does business IT support cost on the Gold Coast?",
      "bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, plus a $100 + GST call-out ($110 inc GST) on on-site work — a first hour on site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review, month-to-month with no lock-in. Projects are fixed-price after scoping. Call 07 3041 8993."),
     ("What is bcom ICT's hourly rate?",
@@ -52,6 +54,30 @@ FAQS = [
      "Projects and hardware. A new WiFi install, an office move, a cloud migration or a fleet of laptops are quoted separately — bundling them into a monthly fee just hides the cost. Day-to-day support, monitoring, patching and backup are included with no per-ticket charges."),
     ("Do you mark up hardware?",
      "We source at trade pricing and are transparent about what we charge over it. If you'd rather buy the hardware yourself and have us configure it, that's fine too — some clients do."),
+]
+
+PROJECTS = [
+    ('On-site visit, booked online', '$252', 'inc GST, fixed',
+     ['One hour on site with a technician', 'No call-out charged on top',
+      '<a href="/on-site-technical-support-gold-coast">On-site IT support</a>']),
+    ('Cybersecurity health check', '$500', 'inc GST, fixed',
+     ['Up to five users', 'Written report and prioritised plan, yours to keep',
+      '<a href="/cybersecurity-health-check-for-small-business-gold-coast">Health check</a>']),
+    ('Business WiFi, simple site', '$1,500', '+ GST, hardware included',
+     ['Surveyed, installed, configured and documented', 'Guest network kept separate from business systems',
+      '<a href="/business-wifi-gold-coast">Business WiFi</a>']),
+    ('Data cabling, per outlet', '$150', '+ GST, indicative',
+     ['Cat6 outlet tested, certified and labelled', 'Installed by ACMA registered cabling contractors',
+      '<a href="/network-cabling-for-offices-gold-coast">Network cabling</a>']),
+    ('Phone system, five extensions', '$2,250', '+ GST, handsets included',
+     ['Five handsets at $350 + GST, install at $100 + GST each', 'Monthly call plan quoted separately',
+      '<a href="/business-phone-systems-gold-coast">Phone systems</a>']),
+    ('Microsoft 365 migration, per user', '$150', '+ GST, indicative',
+     ['Mail, calendar and contacts moved intact', 'Scoped first, then quoted as a fixed price',
+      '<a href="/microsoft-365-setup-gold-coast">Microsoft 365</a>']),
+    ('Cloud backup, per user', '$10', 'per month',
+     ['Automatic, held away from your network', 'Restores tested rather than assumed',
+      '<a href="/data-backup-recovery-gold-coast">Backup &amp; recovery</a>']),
 ]
 
 PAGE = {
@@ -132,6 +158,18 @@ PAGE = {
     that. You keep the written report either way, including if you decide not to proceed.</p>
 
     {trust_note('What you get for a managed fee is set out in full on <a href="/service-levels-and-security">our published service levels</a> — response targets, escalation, and exit terms, published rather than negotiated privately per client.')}
+  </div>
+</section>
+
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Project work</span>
+      <h2>What common jobs actually start at</h2>
+      <p>Most providers will not publish these. Here are ours, so you can work out whether it is worth a conversation before you have one.</p>
+    </div>
+    {price_table(PROJECTS, note="These are starting points for straightforward jobs, not quotes. Every project is scoped first and then quoted as a fixed price, so the number you approve is the number you pay &mdash; variations are agreed in writing before they happen, never discovered on the invoice. What moves a figure is almost always the building or the system being left behind rather than the work itself: hard ceilings and long cable runs, a mail platform that will not release its data cleanly, a site that can only be worked on after hours. We would rather tell you the range now and the exact number after we have looked.")}
   </div>
 </section>
 

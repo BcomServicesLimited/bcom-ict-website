@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, steps, related, photo, trust_note, issues, example
+from layout import MARK, cta, faq_block, cards, ticks, steps, related, photo, trust_note, issues, example, price_table
 
 WORK = [
     ("Microsoft 365", None,
@@ -73,6 +73,16 @@ FAQS = [
      "Yes, and this is the most common misunderstanding we run into. Microsoft protects the platform from failing; it does not protect you from someone deleting a mailbox, a ransomware infection encrypting synced files, or a departing staff member wiping a folder. Separate backup of Microsoft 365 is a genuine requirement, not an upsell."),
     ("Can staff work from anywhere once we've moved?",
      "That's usually the main reason businesses move. Email, files and Teams work from the office, from home, or from a phone — with the same security applied wherever people are, rather than security that only exists inside the building."),
+]
+
+PRICING = [
+    ('Migration, per user', '$150', '+ GST, indicative',
+     [
+      'Mailbox moved with mail, calendar and contacts intact',
+      'Licence assigned and multi-factor authentication enforced',
+      'Desktop, laptop and mobile set up and tested',
+      'The old mail system decommissioned once you are satisfied',
+     ]),
 ]
 
 PAGE = {
@@ -158,6 +168,18 @@ PAGE = {
     </div>
     {EXAMPLE_1}
     {EXAMPLE_2}
+  </div>
+</section>
+
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>How much does a Microsoft 365 migration cost?</h2>
+      <p>Indicative per user. Scoped properly first, then quoted as a fixed price.</p>
+    </div>
+    {price_table(PRICING, note='Migrations vary more than anything else we quote, so treat $150 per user as a starting point rather than a price. What moves it: how much mail history is coming across, whether shared mailboxes and public folders are involved, whether files are moving to SharePoint or OneDrive at the same time, and how cooperative the system being left behind turns out to be. We scope first and then quote a fixed price, because a migration billed by the hour is a quote that only ever moves in one direction.')}
   </div>
 </section>
 

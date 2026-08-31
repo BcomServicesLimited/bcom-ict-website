@@ -1,4 +1,4 @@
-from layout import cta, faq_block, related, svc_body, issues, example
+from layout import cta, faq_block, related, svc_body, issues, example, price_table
 
 COMMON_ISSUES = [
     ("“We don’t know what we don’t know”",
@@ -58,6 +58,17 @@ FAQS = [   (   'What is a cybersecurity health check?',
     (   'Is this the same as an Essential Eight assessment?',
         'It covers the Essential Eight and reports where you sit against each control, alongside things the Essential Eight does not address such as email spoofing protection and cloud sharing '
         'settings. If you specifically need a maturity assessment for an insurer or client, say so and we will scope it that way.')]
+
+PRICING = [
+    ('Small business health check', '$500', 'inc GST, fixed fee',
+     [
+      'Up to five users',
+      'Email, identity, accounts, endpoints, backups and network reviewed',
+      'Written report in plain English, not a tool export',
+      'Findings mapped against the ASD Essential Eight',
+      'Prioritised remediation plan &mdash; yours to keep either way',
+     ]),
+]
 
 PAGE = {
     "path": '/cybersecurity-health-check-for-small-business-gold-coast',
@@ -148,6 +159,18 @@ PAGE = {
     {EXAMPLE_1}
     {EXAMPLE_2}
     {EXAMPLE_3}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>What does a cybersecurity health check cost?</h2>
+      <p>A fixed fee for small businesses, agreed before anything starts.</p>
+    </div>
+    {price_table(PRICING, note='Fixed fee, agreed before we start. Larger businesses are quoted on user count and how many systems fall in scope. The report is yours whether or not you ask us to fix anything in it &mdash; you are welcome to hand it to your existing provider, and some clients do exactly that. We would rather be the ones who told you than the ones who sold you something.')}
   </div>
 </section>
 '''

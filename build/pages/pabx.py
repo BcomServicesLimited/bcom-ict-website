@@ -1,4 +1,4 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, price_table
 
 FAQS = [   (   'Who services PBX phone systems on the Gold Coast?',
         'bcom ICT installs, programs and maintains on-premise PBX systems on the Gold Coast, including LG Ericsson iPECS, Panasonic KX-NS, KX-TDA and KX-TDE, NEC UNIVERGE SV9100, SV8100 and SL2100, '
@@ -17,6 +17,30 @@ FAQS = [   (   'Who services PBX phone systems on the Gold Coast?',
         "reliable enough. We'll test the connection and give you a straight answer rather than a default one."),
     (   'Can you move our PBX to a new office?',
         'Yes. PBX relocation, recabling and number porting are handled as part of an office IT relocation, planned around your move date rather than attempted on the day.')]
+
+PRICING = [
+    ('Installation, per handset', '$100', '+ GST',
+     [
+      'Handset provisioned, configured and tested',
+      'Your existing numbers ported across',
+      'Call flow, hunt groups and after-hours routing set up',
+      'Staff shown how to actually use it',
+     ]),
+    ('VoIP handset', '$350', '+ GST each',
+     [
+      'Business-grade desk handset',
+      'Configured before it arrives on your desk',
+      'Works the same from the office or from home',
+      'Warranty handled by us rather than by you',
+     ]),
+    ('Typical five-extension system', '$2,250', '+ GST, hardware included',
+     [
+      'Five handsets at $350 + GST each',
+      'Installation and configuration at $500 + GST',
+      'Numbers ported and call flow configured',
+      'Monthly service and call plan quoted separately',
+     ]),
+]
 
 PAGE = {
     "path": '/pabx-phone-systems-gold-coast',
@@ -83,6 +107,18 @@ PAGE = {
                                  '<a '
                                  "href='/voip-phone-system-installation-and-support-gold-coast'>VoIP</a> "
                                  'when it makes sense']}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>How much does a business phone system cost?</h2>
+      <p>Handsets and installation are fixed price. The monthly plan is quoted alongside it.</p>
+    </div>
+    {price_table(PRICING, note='Hardware and installation are a one-off fixed price, agreed before we start. The monthly service and call plan is separate and depends on how many numbers and concurrent calls you need &mdash; we quote it alongside the install so you are looking at the whole cost rather than the attractive half of it. A business that does not want desk phones can run softphones on the computers and mobiles it already owns, which removes the hardware line entirely and leaves only the installation.')}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business Phone Systems', '/business-phone-systems-gold-coast'),
         ('VoIP Phone Systems', '/voip-phone-system-installation-and-support-gold-coast'),

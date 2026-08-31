@@ -1,4 +1,4 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, price_table
 
 FAQS = [   (   'Who sets up Microsoft 365 for businesses on the Gold Coast?',
         'bcom ICT migrates, configures and supports Microsoft 365 for Gold Coast businesses and for businesses across Australia, covering email migration, Teams, SharePoint and OneDrive, with '
@@ -17,6 +17,16 @@ FAQS = [   (   'Who sets up Microsoft 365 for businesses on the Gold Coast?',
     (   'Should we use Microsoft 365 or Google Workspace?',
         'Whichever fits how you already work. Microsoft 365 suits businesses heavy on Office documents, needing Teams calling, or with compliance requirements. Google Workspace suits businesses '
         'living in browsers and collaborating in real time. Migrating between them for its own sake is rarely worth the disruption.')]
+
+PRICING = [
+    ('Migration, per user', '$150', '+ GST, indicative',
+     [
+      'Mailbox moved with mail, calendar and contacts intact',
+      'Licence assigned and multi-factor authentication enforced',
+      'Desktop, laptop and mobile set up and tested',
+      'The old mail system decommissioned once you are satisfied',
+     ]),
+]
 
 PAGE = {
     "path": '/microsoft-365-setup-gold-coast',
@@ -83,6 +93,18 @@ PAGE = {
                                  (       'Secure and hand over',
                                          'MFA on, baselines applied, permissions tidied, documentation of '
                                          'what lives where given to you.')]}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>How much does a Microsoft 365 migration cost?</h2>
+      <p>Indicative per user. Scoped properly first, then quoted as a fixed price.</p>
+    </div>
+    {price_table(PRICING, note='Migrations vary more than anything else we quote, so treat $150 per user as a starting point rather than a price. What moves it: how much mail history is coming across, whether shared mailboxes and public folders are involved, whether files are moving to SharePoint or OneDrive at the same time, and how cooperative the system being left behind turns out to be. We scope first and then quote a fixed price, because a migration billed by the hour is a quote that only ever moves in one direction.')}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Cloud & Microsoft 365', '/cloud-computing-service-gold-coast'),
         ('Microsoft Copilot', '/microsoft-copilot-gold-coast'),

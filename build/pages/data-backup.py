@@ -1,4 +1,4 @@
-from layout import cta, faq_block, related, svc_body, issues, example
+from layout import cta, faq_block, related, svc_body, issues, example, price_table
 
 COMMON_ISSUES = [
     ("“The backup says it succeeded every night”",
@@ -53,6 +53,16 @@ FAQS = [   (   'How often should a business test its backups?',
     (   'How much data would we lose in a failure?',
         'That is your recovery point objective, and it should be a decision rather than an accident. Nightly backup means up to a day; more frequent replication reduces it at higher cost. We agree '
         'the number with you rather than defaulting to whatever the software does.')]
+
+PRICING = [
+    ('Automatic cloud backup', '$10', 'per user per month',
+     [
+      'Runs on its own, without anyone remembering to start it',
+      'Held away from your network, where ransomware cannot reach it',
+      'Restores tested rather than assumed to work',
+      'Monitored &mdash; we know when a backup fails, and so do you',
+     ]),
+]
 
 PAGE = {
     "path": '/data-backup-recovery-gold-coast',
@@ -146,6 +156,18 @@ PAGE = {
     </div>
     {EXAMPLE_1}
     {EXAMPLE_2}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>How much does business data backup cost?</h2>
+      <p>Per user per month for cloud backup. Server and infrastructure backup is quoted on recovery targets.</p>
+    </div>
+    {price_table(PRICING, note='Per-user cloud backup covers mailboxes, files and the data your staff work on day to day. Servers, line-of-business databases and on-premises infrastructure are quoted separately, because the volume of data and how quickly you need it back are what drive that number. The question that sets the price is never how much data you hold. It is how long the business can afford to be without it.')}
   </div>
 </section>
 '''

@@ -162,11 +162,33 @@ Each chunk ends with a commit and a push. Tick as they land.
 | **Legal review of `/privacy-policy` and `/terms-and-conditions`** — both are reasonable and Australian-law aware (APPs, ACL consumer guarantees explicitly preserved) but have not been reviewed by a lawyer | Before go-live |
 | **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
 | **Is the $100 call-out ex-GST?** Assumed yes for consistency with the hourly rate. Site currently says "$100 + GST ($110 inc GST)" — correct if it is GST-inclusive | `/pricing` and 5 other pages |
-| **GBP from-prices are wrong** — profile says From $182 / $252 / $310; real minimum is $217.80 remote and $327.80 on site, inc GST. Set to $218 / $328 and delete from managed IT + all 6 cybersecurity services | GBP, this week |
+| **Confirm the $252 framing.** Published as *"a simple one-hour on-site job booked online, fixed, no call-out"* — inferred, not stated. It sits 23% under the ad-hoc $327.80 first hour, which reads as a deliberate incentive to self-book. If it is actually something else, `/pricing` and `/on-site-technical-support-gold-coast` both need rewording | 2 pages |
+| **GBP from-prices — partly vindicated.** Royce confirmed (Aug 2026) that $252 inc GST is a real price: a simple one-hour on-site job **booked through the online calendar**, with no call-out on top. The profile was not wrong about that figure. Still unexplained: **From $182** and **From $310** — ask Royce what those correspond to before touching them | GBP |
 | **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
 | Permission to name the national retail chain client | `/case-studies` — written accurately but unnamed, with the reason stated in the FAQ |
 | Cloudflare: confirm **Block AI bots = OFF** and managed robots.txt disabled on the zone | Before go-live — silently 403s every AI crawler |
 | Cloudflare Access on the `.pages.dev` staging domain | Before the site is publicly reachable |
+
+---
+
+## Published pricing (confirmed by Royce, Aug 2026)
+
+| Service | Figure | Framing on the site |
+|---|---|---|
+| On-site, booked online | **$252 inc GST** | Fixed, one hour, no call-out on top. Inferred as an online-booking rate — see blockers |
+| Ad-hoc on site | $298 + GST ($327.80 inc) | $100 + GST call-out plus $198 + GST/hr. Unchanged |
+| Remote | $198 + GST ($217.80 inc) | No call-out. Unchanged |
+| Business WiFi | $1,500 + GST | Simple site, hardware included, fixed price |
+| Cybersecurity health check | **$500 inc GST** | Up to 5 users, fixed fee |
+| Data cabling | **$150 + GST per outlet** | Indicative. ~$1,200 for a typical 8-outlet office. Cabinet, patch panel and switch quoted separately |
+| VoIP install | **$100 + GST per handset** | So $500 + GST for 5 extensions |
+| VoIP handset | **$350 + GST each** | Five-extension system = $2,250 + GST all up |
+| Microsoft 365 migration | **$150 + GST per user** | **Softest number on the site.** Royce's own words were "too hard to give indicative pricing. Maybe $150 per user. Maybe..." — carried with heavy scoping language on 2 pages. Pull it on request |
+| Cloud backup | **$10 per user per month** | Servers and infrastructure quoted separately on recovery targets |
+
+Managed IT deliberately still has **no from-price**. Monthly call plans for VoIP are
+quoted alongside the install rather than published.
+
 
 ---
 

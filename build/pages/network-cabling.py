@@ -1,4 +1,4 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, price_table
 
 FAQS = [   (   'Who installs office data cabling on the Gold Coast?',
         'bcom ICT delivers Cat6 and Cat6A structured cabling for Gold Coast offices, including patch panels, comms racks, cable management, testing and certification. The cabling itself is carried '
@@ -16,6 +16,16 @@ FAQS = [   (   'Who installs office data cabling on the Gold Coast?',
         'Increasingly very little — most modern phone systems run over the same structured cabling as your computers. Older PBX systems may still use separate voice cabling, which we also install. '
         "If you're replacing a phone system, one structured cabling installation usually serves both."),
     ('Will you label it?', 'Yes, at both ends, matched to a floor plan you keep. It is the cheapest thing in the entire installation and the one that saves the most time later.')]
+
+PRICING = [
+    ('Per data outlet', '$150', '+ GST, indicative',
+     [
+      'Cat6 outlet, wall plate and patch panel termination',
+      'Tested and certified, with the results handed to you',
+      'Labelled at both ends and recorded on a port schedule',
+      'Standard commercial ceiling and cavity access',
+     ]),
+]
 
 PAGE = {
     "path": '/network-cabling-for-offices-gold-coast',
@@ -89,6 +99,18 @@ PAGE = {
                         'handover — rather than coordinating three trades yourself. You still get the '
                         'testing and certification documentation on completion, and we would encourage you '
                         'to ask any installer for it.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>How much does office data cabling cost?</h2>
+      <p>Priced per outlet, quoted after a look at the building rather than over the phone.</p>
+    </div>
+    {price_table(PRICING, note='A typical small office of eight outlets is therefore around $1,200 + GST for the cabling itself. Sitting outside that figure: the cabinet, patch panel and switch, which are quoted on what the site actually needs; long runs; hard ceilings and heritage buildings; asbestos; and after-hours access where a landlord or a tenanted building requires it. Cabling is quoted after someone has looked at the building, because a number given over the phone is a number that moves once an installer is on a ladder. All cabling work is carried out by ACMA registered cabling contractors.')}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Computer Networking Service', '/computer-networking-service-gold-coast'),

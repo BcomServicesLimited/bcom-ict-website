@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note, issues, example
+from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note, issues, example, price_table
 
 OPTIONS = [
     ("Cloud VoIP", None,
@@ -71,6 +71,30 @@ FAQS = [
      "Yes, as part of the job. Fixed cabling connected to the telecommunications network legally requires a registered cabler in Australia, so that portion is carried out by ACMA registered cabling contractors we engage and manage. You get testing and certification documentation on handover, and one point of contact for the whole install rather than three."),
     ("Does the phone system connect to Microsoft Teams?",
      "It can. Teams calling suits businesses already living in Microsoft 365 and wanting one app for chat, meetings and calls. It doesn't suit every business — reception-heavy operations often still want proper handsets and queues. We'll walk you through both."),
+]
+
+PRICING = [
+    ('Installation, per handset', '$100', '+ GST',
+     [
+      'Handset provisioned, configured and tested',
+      'Your existing numbers ported across',
+      'Call flow, hunt groups and after-hours routing set up',
+      'Staff shown how to actually use it',
+     ]),
+    ('VoIP handset', '$350', '+ GST each',
+     [
+      'Business-grade desk handset',
+      'Configured before it arrives on your desk',
+      'Works the same from the office or from home',
+      'Warranty handled by us rather than by you',
+     ]),
+    ('Typical five-extension system', '$2,250', '+ GST, hardware included',
+     [
+      'Five handsets at $350 + GST each',
+      'Installation and configuration at $500 + GST',
+      'Numbers ported and call flow configured',
+      'Monthly service and call plan quoted separately',
+     ]),
 ]
 
 PAGE = {
@@ -161,6 +185,18 @@ PAGE = {
     </div>
     {EXAMPLE_1}
     {EXAMPLE_2}
+  </div>
+</section>
+
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>How much does a business phone system cost?</h2>
+      <p>Handsets and installation are fixed price. The monthly plan is quoted alongside it.</p>
+    </div>
+    {price_table(PRICING, note='Hardware and installation are a one-off fixed price, agreed before we start. The monthly service and call plan is separate and depends on how many numbers and concurrent calls you need &mdash; we quote it alongside the install so you are looking at the whole cost rather than the attractive half of it. A business that does not want desk phones can run softphones on the computers and mobiles it already owns, which removes the hardware line entirely and leaves only the installation.')}
   </div>
 </section>
 
