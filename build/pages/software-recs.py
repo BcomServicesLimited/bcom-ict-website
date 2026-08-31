@@ -63,7 +63,7 @@ PAGE = {
     "h1": 'Which software should we actually use?',
     "lede": "Vendor-neutral advice on business software — including the fairly common answer that the tool isn't the problem.",
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['Vendor-neutral', 'No referral fees', 'Consolidation first', '$198 + GST/hr'],
+    "trust": ['Vendor-neutral', 'No referral fees', 'Consolidation first', '$190 + GST/hr'],
     "crumbs": [('Services', '/services'), ('Software Recommendations', '/software-recommendations-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",

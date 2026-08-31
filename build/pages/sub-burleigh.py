@@ -8,7 +8,7 @@ LOCAL_EX = example(
     "Terminal dropouts stopped. Burleigh&rsquo;s converted shopfronts and older buildings are frequently wired for a much smaller operation than the business now running in them.")
 FAQS = [   (   'Do you provide IT support in Burleigh Heads?',
         'Yes. bcom ICT attends Burleigh Heads businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover James Street, the Gold '
-        'Coast Highway frontage, The Pines, and the streets behind the main strip. Most faults are resolved remotely first at $198 + GST per hour with no call-out. Call 07 3041 8993.'),
+        'Coast Highway frontage, The Pines, and the streets behind the main strip. Most faults are resolved remotely first at $190 + GST per hour with no call-out. Call 07 3041 8993.'),
     (   "We're a small cafe. Do we really need an IT provider?",
         'Not necessarily on a monthly arrangement, and we will say so. But two things are worth doing regardless: automatic 4G or 5G failover so card payments continue through an internet outage, '
         'and multi-factor authentication on your email. Both are inexpensive and both prevent expensive days.'),
@@ -104,7 +104,7 @@ PAGE = {
     <p style="margin-top:16px">Burleigh Heads is roughly twenty minutes from our office at 9 Ferny
     Avenue, Surfers Paradise, down the highway or the M1. Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Because most Burleigh jobs are small, we try remote first wherever the fault
-    allows — remote support is $198 + GST per hour with no call-out, against $298 + GST for a first hour on
+    allows — remote support is $190 + GST per hour with no call-out, against $229 + GST for a first hour on
     site. For a two-person studio that difference is worth having, and we will tell you on the phone which it
     is likely to be.</p>
     <p style="margin-top:16px">Parking around James Street is genuinely difficult at peak, which we plan

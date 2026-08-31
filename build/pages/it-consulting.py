@@ -37,7 +37,7 @@ EXAMPLE_2 = example(
 
 FAQS = [
     ("What does an IT consultant do for a small business?",
-     "An IT consultant works out what technology a business actually needs, in what order, and at what cost — independently of who supplies it. bcom ICT provides technology roadmaps, budget planning, vendor selection, system reviews and second opinions for Gold Coast businesses, charged at $198 + GST per hour with no hardware commissions. Call 07 3041 8993."),
+     "An IT consultant works out what technology a business actually needs, in what order, and at what cost — independently of who supplies it. bcom ICT provides technology roadmaps, budget planning, vendor selection, system reviews and second opinions for Gold Coast businesses, charged at $190 + GST per hour with no hardware commissions. Call 07 3041 8993."),
     ("Are you independent, or do you sell what you recommend?",
      "We take no commissions from hardware or software vendors, so a recommendation costs us nothing to make honestly. We do implement what we recommend if you want us to — but you can also take the roadmap and have someone else deliver it, and some clients do exactly that."),
     ("We already have an IT provider. Can you still help?",
@@ -45,7 +45,7 @@ FAQS = [
     ("What does a technology roadmap actually contain?",
      "Where your systems are now, what's ageing or coming out of support and when, what your business plans require of your IT over the next few years, and a sequenced list of what to do with rough costs against it. The point is to replace surprise capital expenditure with a budget line."),
     ("How much does IT consulting cost?",
-     "$198 + GST per hour ($217.80 inc GST). We scope the piece of work first and tell you roughly how many hours it will take, so you're agreeing to a number rather than an open meter."),
+     "$190 + GST per hour ($209.00 inc GST). We scope the piece of work first and tell you roughly how many hours it will take, so you're agreeing to a number rather than an open meter."),
     ("Can you help us decide whether to replace a system?",
      "That's one of the most common things we're asked. We'll look at what the existing system still does well, what it's costing you in workarounds, and what replacement genuinely involves — including the case for keeping it a few more years, which is often the right answer."),
 ]
@@ -56,20 +56,20 @@ PAGE = {
     "service": "IT Consulting & Strategy Gold Coast",
     "also_service": ["IT Strategy & Technology Roadmaps Gold Coast"],
     "title": "IT Consulting & Strategy Gold Coast — Independent | bcom ICT",
-    "description": "Independent IT consulting for Gold Coast businesses — technology roadmaps, budget planning, vendor selection and second opinions. No hardware commissions. $198 + GST per hour.",
+    "description": "Independent IT consulting for Gold Coast businesses — technology roadmaps, budget planning, vendor selection and second opinions. No hardware commissions. $190 + GST per hour.",
     "hero_img": "hero-bg-it-consulting-strategy.webp",
     "hero_alt": "A bcom ICT consultant planning a technology roadmap with a Gold Coast business owner",
     "h1": "Independent advice, with nothing to sell you",
     "lede": "Technology roadmaps, budgets and vendor decisions from a team that takes no commissions — including the advice that you don't need to spend anything yet.",
     "actions": [("Book a conversation", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ["No vendor commissions", "$198 + GST/hr", "Second opinions welcome", "Since 2011"],
+    "trust": ["No vendor commissions", "$190 + GST/hr", "Second opinions welcome", "Since 2011"],
     "crumbs": [("Services", "/services"), ("IT Consulting & Strategy", "/it-consulting-strategy-gold-coast")],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": svc_body(
         answer="bcom ICT provides independent IT consulting to Gold Coast businesses — technology roadmaps, "
                "budget planning, vendor selection, system reviews and second opinions. bcom ICT takes no "
-               "commissions from hardware or software vendors, and consulting is charged at $198 + GST per "
+               "commissions from hardware or software vendors, and consulting is charged at $190 + GST per "
                "hour. Call 07 3041 8993.",
         blocks=[
             {"eyebrow": "What we're asked", "h2": "The four questions businesses bring us",

@@ -8,7 +8,7 @@ LOCAL_EX = example(
     "Refunds for unavailable stock effectively stopped. The setting had been correct on the day it was configured and wrong for about three years afterwards.")
 FAQS = [   (   'Do you provide IT support in Helensvale?',
         'Yes. bcom ICT attends Helensvale businesses from its office at 9 Ferny Avenue, Surfers Paradise — roughly twenty-five minutes away — with same-day attendance usually available. Most faults '
-        'are resolved remotely first at $198 + GST per hour with no call-out. We cover the Westfield Helensvale precinct, Lindfield Road, the station interchange area, and out toward Hope Island and '
+        'are resolved remotely first at $190 + GST per hour with no call-out. We cover the Westfield Helensvale precinct, Lindfield Road, the station interchange area, and out toward Hope Island and '
         'Sanctuary Cove. Call 07 3041 8993.'),
     (   'Is Helensvale too far for same-day support?',
         'No. Same-day attendance is usually available across the whole northern corridor, and remote support often has people working again within minutes of a call — well before anyone could drive '
@@ -115,7 +115,7 @@ PAGE = {
     9 Ferny Avenue, Surfers Paradise, straight up the M1 or the Gold Coast Highway depending on the hour.
     Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Because of the distance, we try remote first wherever the fault allows it —
-    remote support is $198 + GST per hour with no call-out, against $298 + GST for a first hour on site. Most
+    remote support is $190 + GST per hour with no call-out, against $252 inc GST for a first hour on site. Most
     email, Microsoft 365, software, account and printer faults never need anyone to travel. We will tell you
     on the phone which it is likely to be before booking a visit.</p>
     <p style="margin-top:16px">Where a visit is needed, parking at the Westfield precinct and the surrounding

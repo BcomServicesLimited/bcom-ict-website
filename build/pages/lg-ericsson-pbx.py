@@ -46,7 +46,7 @@ FAQS = [   (   'Who services LG Ericsson phone systems on the Gold Coast?',
         "Sometimes, but frequently it reflects who is available rather than the system's condition. If the platform still does what your business needs and parts are obtainable, keeping it is often "
         "the cheaper answer. We'll assess remaining life honestly before you commit to a replacement quote."),
     (   'Can you just make one change without an ongoing contract?',
-        "Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $198 + GST per hour plus a $100 + GST call-out for on-site attendance. There's no "
+        "Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $190 + GST per hour plus a $39 + GST call-out for on-site attendance. There's no "
         'requirement to sign up to anything ongoing.'),
     (   'Can you still get parts and handsets?',
         "For most LG Ericsson platforms listed here, yes — new, refurbished or from stock. Tell us the exact model and we'll tell you honestly what's obtainable and what isn't. Where a part "

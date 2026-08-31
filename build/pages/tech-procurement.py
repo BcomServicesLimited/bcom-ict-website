@@ -47,7 +47,7 @@ FAQS = [   (   'Can you review a quote from another IT provider?',
     (   'Do you earn commission on hardware you recommend?',
         "No. We source at trade pricing and are transparent about what we charge over it, and we're happy for clients to buy directly and have us configure it instead. A recommendation to buy "
         'nothing costs us nothing to make.'),
-    ('What does procurement advice cost?', "$198 + GST per hour ($217.80 inc GST). We scope the piece of work first so you're agreeing to a rough number of hours rather than an open meter."),
+    ('What does procurement advice cost?', "$190 + GST per hour ($209.00 inc GST). We scope the piece of work first so you're agreeing to a rough number of hours rather than an open meter."),
     (   'Will you tell us not to buy something?',
         "Regularly. Common examples: a server that could be retired to cloud instead of replaced, a licence tier above what's needed, and equipment with years of useful life being replaced "
         'unnecessarily.')]
@@ -62,7 +62,7 @@ PAGE = {
     "h1": 'Someone to read the quote before you sign it',
     "lede": 'Independent advice on what to buy, what to skip, and whether the proposal in front of you is reasonable. We take no vendor commissions, so it costs us nothing to say no.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['No vendor commissions', '$198 + GST/hr', 'Second opinions welcome', 'Often the cheapest hour'],
+    "trust": ['No vendor commissions', '$190 + GST/hr', 'Second opinions welcome', 'Often the cheapest hour'],
     "crumbs": [('Services', '/services'), ('Technology Procurement Advice', '/technology-procurement-advice-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",

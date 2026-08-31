@@ -39,7 +39,7 @@ FAQS = [   (   'What size business does bcom ICT work with?',
         'Most clients have between three and sixty staff — businesses too large to keep muddling through and too small to justify a full-time IT employee. bcom ICT has supported Gold Coast small '
         'businesses since 2011, on-site across the Gold Coast and remotely Australia-wide. Call 07 3041 8993.'),
     (   'How much does small business IT support cost?',
-        'Ad-hoc support is $198 + GST per hour ($217.80 inc GST), plus a $100 + GST call-out for on-site work. Managed IT is a flat monthly fee calculated from your business requirements and the '
+        'Ad-hoc support is $190 + GST per hour ($209.00 inc GST), plus a $39 + GST call-out for on-site work. Managed IT is a flat monthly fee calculated from your business requirements and the '
         'services included, quoted after a free review and month-to-month with no lock-in.'),
     (   "We've got someone in the office who handles IT. Is that a problem?",
         'Not necessarily, and plenty of clients keep that arrangement with us behind it — they handle day-to-day questions, we handle infrastructure, security and escalations. It becomes a problem '
@@ -56,17 +56,17 @@ PAGE = {
     "path": '/it-support-small-business-gold-coast',
     "priority": '0.8',
     "title": 'Small Business IT Support Gold Coast | bcom ICT',
-    "description": 'IT support for Gold Coast small businesses — typically 3 to 60 staff with no internal IT. Managed IT, cybersecurity, cloud and support at $198 + GST per hour.',
+    "description": 'IT support for Gold Coast small businesses — typically 3 to 60 staff with no internal IT. Managed IT, cybersecurity, cloud and support at $190 + GST per hour.',
     "hero_img": 'it-support-small-business-gold-coast-hero.webp',
     "hero_alt": 'A Gold Coast small business team supported by bcom ICT',
     "h1": 'Too big to muddle through, too small for an IT person',
     "lede": "Three to sixty staff, nobody whose job this actually is, and a growing dependence on systems that nobody owns. It's the most common shape of business we work with.",
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['3–60 staff typically', '$198 + GST/hr', 'Month-to-month managed', 'Local since 2011'],
+    "trust": ['3–60 staff typically', '$190 + GST/hr', 'Month-to-month managed', 'Local since 2011'],
     "crumbs": [('Industries', '/industries'), ('Small business', '/it-support-small-business-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",
-    "body": svc_body(answer='bcom ICT provides IT support to Gold Coast small businesses, typically between three and sixty staff with no internal IT function. Support is available ad hoc at $198 + GST per hour, or as managed IT for a flat monthly fee calculated from your requirements, month-to-month with no lock-in. Call 07 3041 8993.',
+    "body": svc_body(answer='bcom ICT provides IT support to Gold Coast small businesses, typically between three and sixty staff with no internal IT function. Support is available ad hoc at $190 + GST per hour, or as managed IT for a flat monthly fee calculated from your requirements, month-to-month with no lock-in. Call 07 3041 8993.',
                      blocks=[       {       'cards': [       (       'The staff member who "knows computers"',
                                          None,
                                          'Works fine until the business depends on it. Then someone whose '
@@ -110,7 +110,7 @@ PAGE = {
                                  'ageing fleet or an underlying cause nobody has chased.']},
         {       'h2': 'Ad-hoc or managed',
                 'html': '<p style="max-width:68ch">Both are legitimate and we will tell you honestly which '
-                        'suits you. Ad-hoc at $198 + GST per hour works when your setup is simple and an '
+                        'suits you. Ad-hoc at $190 + GST per hour works when your setup is simple and an '
                         'occasional problem is an annoyance rather than a crisis.</p><p '
                         'style="max-width:68ch;margin-top:16px"><a '
                         'href="/managed-it-services-for-small-businesses-gold-coast">Managed IT</a> makes '

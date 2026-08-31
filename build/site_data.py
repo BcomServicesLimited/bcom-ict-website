@@ -130,13 +130,20 @@ FOOTER = {
 # businesses; the inc-GST figure is shown alongside it everywhere so the
 # number is never ambiguous to a reader.
 RATES = {
-    "hourly_ex":   198,
-    "hourly_inc":  "217.80",
-    "callout_ex":  100,
-    "callout_inc": 110,
-    # First hour on site = call-out + one hour.
-    "onsite_first_ex":  298,
-    "onsite_first_inc": "327.80",
+    "hourly_ex":   190,
+    "hourly_inc":  "209.00",
+    "callout_ex":  39,
+    "callout_inc": "42.90",
+    # A first hour on site is the call-out plus one hour. Published as the
+    # inc-GST price Royce set ($252) rather than the derived $251.90, and
+    # bookable online at that fixed figure.
+    "onsite_first_inc": "252.00",
+    # Remote work has its own rate for a job of up to an hour, with no call-out.
+    "remote_hour_ex":  150,
+    "remote_hour_inc": "165.00",
+    # After the first hour, time is charged in HALF-hour increments at the
+    # hourly rate.
+    "increment": "half-hour",
 }
 
 

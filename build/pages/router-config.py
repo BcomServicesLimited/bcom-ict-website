@@ -51,7 +51,7 @@ FAQS = [   (   'Should we use the router our internet provider supplied?',
         "Voice traffic isn't being prioritised. Without quality-of-service configuration, a large upload competes directly with your phone calls. It's a configuration change rather than a hardware "
         'problem in most cases.'),
     (   'Can you set up a router remotely?',
-        "Frequently yes — remote support is $198 + GST per hour with no call-out. If it needs physical replacement or rewiring, we'll book a visit and tell you the cost first.")]
+        "Frequently yes — remote support is $190 + GST per hour with no call-out. If it needs physical replacement or rewiring, we'll book a visit and tell you the cost first.")]
 
 PAGE = {
     "path": '/router-and-modem-configuration-gold-coast',

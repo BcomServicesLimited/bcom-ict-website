@@ -37,7 +37,7 @@ EXAMPLE_2 = example(
 
 FAQS = [
     ("Who fixes business computers and servers on the Gold Coast?",
-     "bcom ICT diagnoses and repairs business computers, workstations and servers across the Gold Coast, on site or remotely. Faults are diagnosed before quoting, loan equipment is available where a machine has to leave, and work is charged at $198 + GST per hour plus a $100 + GST call-out for on-site attendance. Call 07 3041 8993."),
+     "bcom ICT diagnoses and repairs business computers, workstations and servers across the Gold Coast, on site or remotely. Faults are diagnosed before quoting, loan equipment is available where a machine has to leave, and work is charged at $190 + GST per hour plus a $39 + GST call-out for on-site attendance. Call 07 3041 8993."),
     ("How do you decide whether to repair or replace?",
      "Age, what the repair costs against a replacement, and whether the machine will be adequate for another two years even once fixed. A five-year-old laptop needing a $400 screen is usually not worth it, and we'll say so rather than take the work."),
     ("Will we lose data?",

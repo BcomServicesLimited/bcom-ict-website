@@ -73,10 +73,13 @@ Sitemap: {SITE}/sitemap.xml
 
 ## Pricing (published)
 
-- **Hourly labour:** ${BIZ and '198'} + GST per hour ($217.80 inc GST), billed in hourly increments
-- **On-site call-out:** $100 + GST ($110 inc GST) per attendance
-- **First hour on site:** $298 + GST ($327.80 inc GST)
-- **Remote support:** $198 + GST per hour, no call-out
+- **Hourly labour:** $190 + GST per hour ($209.00 inc GST). After the first hour,
+  time is charged in half-hour increments.
+- **On-site call-out:** $39 + GST ($42.90 inc GST) per attendance
+- **First hour on site:** $252 inc GST — the call-out and the first hour as one
+  figure, bookable online. The same price if booked by phone.
+- **Remote job, up to one hour:** $150 + GST ($165 inc GST), no call-out
+- **Remote support beyond an hour:** $190 + GST per hour, no call-out
 - **Managed IT:** flat monthly fee calculated from business requirements and the
   services included — not per seat. Quoted after a free review. Month-to-month,
   no lock-in, no exit fee.

@@ -8,7 +8,7 @@ LOCAL_EX = example(
     "A street fault some months later cost the practice a slower afternoon rather than a closed day. The equipment cost considerably less than the day would have.")
 FAQS = [   (   'Do you provide IT support in Palm Beach?',
         'Yes. bcom ICT attends Palm Beach businesses from its Surfers Paradise office, roughly twenty-five minutes away, with same-day attendance usually available. We cover the Gold Coast Highway '
-        'strip, Nineteenth Avenue, the streets off the highway, and out through Elanora and Currumbin. Most faults are resolved remotely at $198 + GST per hour with no call-out. Call 07 3041 8993.'),
+        'strip, Nineteenth Avenue, the streets off the highway, and out through Elanora and Currumbin. Most faults are resolved remotely at $190 + GST per hour with no call-out. Call 07 3041 8993.'),
     (   'Is it worth calling you for a small job?',
         'Often the answer is remote support, which carries no call-out and frequently resolves the problem inside an hour. We will tell you on the phone whether it needs a visit before booking one — '
         'at this distance the call-out is a real proportion of a small job and we would rather not add it unnecessarily.'),
@@ -85,8 +85,8 @@ PAGE = {
     point. What is actually installed varies enormously between neighbouring shopfronts, so we survey rather
     than assume.</p>
     <p style="margin-top:16px"><strong>Remote support matters more here than anywhere.</strong> At
-    twenty-five minutes out, a $100 + GST call-out is a real proportion of a small job — sometimes most of it.
-    That is why we genuinely try remote first rather than saying we do: remote is $198 + GST per hour with no
+    twenty-five minutes out, a $39 + GST call-out is a real proportion of a small job — sometimes most of it.
+    That is why we genuinely try remote first rather than saying we do: remote is $190 + GST per hour with no
     call-out, and most email, Microsoft 365, software, account and printer faults never need anyone to travel.
     We will tell you on the phone which yours is likely to be.</p>
     <p style="margin-top:16px"><strong>Most Palm Beach businesses do not need managed IT.</strong> We say that
@@ -113,7 +113,7 @@ PAGE = {
     <p style="margin-top:16px">We attend businesses throughout Palm Beach and the surrounding southern suburbs, including:</p>
     {ticks(['Gold Coast Highway through Palm Beach and the commercial frontage', 'Nineteenth Avenue and Palm Beach Avenue', 'Sixth Avenue, Eleventh Avenue and the streets off the highway strip', 'The Palm Beach Parklands and Tallebudgera Creek frontage', 'Elanora and The Pines shopping precinct', 'Currumbin, Currumbin Waters and Currumbin Valley', 'Tugun, Bilinga and the corridor toward Coolangatta', "Burleigh Waters and toward <a href='/it-support-burleigh-heads-gold-coast'>Burleigh Heads</a>"])}
 
-    {trust_note('We tell more Palm Beach businesses that they do not need managed IT than anywhere else on the coast. Ad-hoc support at $198 + GST per hour suits most operations this size, and we would rather say so than sell a monthly fee that is not warranted.')}
+    {trust_note('We tell more Palm Beach businesses that they do not need managed IT than anywhere else on the coast. Ad-hoc support at $190 + GST per hour suits most operations this size, and we would rather say so than sell a monthly fee that is not warranted.')}
   </div>
 </section>
 

@@ -52,7 +52,7 @@ FAQS = [   (   'What AI can a small business actually use?',
     (   'Do you use this yourselves?',
         "Yes. Our after-hours phone answering is an AI operator — it takes details, triages and escalates, and identifies itself as an AI. We'd rather recommend things we run ourselves."),
     (   'What does it cost?',
-        "Consulting and implementation are charged at $198 + GST per hour, scoped before we start. Ongoing platform costs depend on the tool and volume, and we'll set those out separately so you can "
+        "Consulting and implementation are charged at $190 + GST per hour, scoped before we start. Ongoing platform costs depend on the tool and volume, and we'll set those out separately so you can "
         "see what's a one-off and what's monthly.")]
 
 PAGE = {

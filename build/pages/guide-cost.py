@@ -36,8 +36,8 @@ EXAMPLE_2 = example(
     "Startup went from twelve minutes to under one. The scepticism had been entirely reasonable right up until somebody put a number against it, which is the only way this particular cost ever becomes visible.")
 
 FAQS = [   (   'How much does IT support cost on the Gold Coast?',
-        'bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, plus a $100 + GST call-out ($110 inc GST) for on-site attendance — a first hour on site is $298 + GST '
-        '($327.80 inc GST). Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, quoted after a free review.'),
+        'bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $39 + GST call-out ($42.90 inc GST) for on-site attendance — a first hour on site is $252 inc GST with the call-out '
+        'included. A remote job of up to an hour is $150 + GST ($165 inc GST) and carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, quoted after a free review.'),
     (   'Is managed IT cheaper than paying hourly?',
         "In a quiet month, no. Over a year it usually is — and that's before counting staff hours lost to problems nobody is preventing. The real difference is predictability: a flat monthly fee can "
         "be budgeted, and you're never weighing up whether a problem is worth a call-out."),
@@ -51,7 +51,7 @@ FAQS = [   (   'How much does IT support cost on the Gold Coast?',
         "It varies with experience and what's included. What matters more than the headline rate is whether the provider tries remote first — remote work with no call-out is often cheaper overall "
         'than a lower hourly rate with a call-out attached to every job.'),
     (   'Do we get charged for travel?',
-        "We charge a single $100 + GST call-out for on-site attendance across the Gold Coast rather than billing travel time by distance. It's the same figure whether you're in Broadbeach or "
+        "We charge a single $39 + GST call-out for on-site attendance across the Gold Coast rather than billing travel time by distance. It's the same figure whether you're in Broadbeach or "
         'Coomera.')]
 
 PAGE = {
@@ -67,7 +67,7 @@ PAGE = {
     "crumbs": [("Guides", "/services"), ('What IT support costs', '/it-support-cost-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",
-    "body": svc_body(answer='Business IT support on the Gold Coast is typically charged either hourly or as a flat monthly managed fee. bcom ICT charges $198 + GST per hour ($217.80 inc GST), plus a $100 + GST call-out ($110 inc GST) for on-site attendance — so a first hour on site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from business requirements and services included, quoted after a free review.',
+    "body": svc_body(answer='Business IT support on the Gold Coast is typically charged either hourly or as a flat monthly managed fee. bcom ICT charges $190 + GST per hour ($209.00 inc GST), plus a $39 + GST call-out ($42.90 inc GST) for on-site attendance — so a first hour on site is $252 inc GST. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from business requirements and services included, quoted after a free review.',
                      blocks=[       {       'cards': [       (       'Hourly / break-fix',
                                          None,
                                          'You pay when something goes wrong. Typically an hourly rate plus '
@@ -89,12 +89,12 @@ PAGE = {
                        'depends on what an hour of downtime costs.'},
         {       'h2': 'Our published rates',
                 'html': '<div class="pricecard" style="max-width:none"><div class="grid grid--3" '
-                        'style="margin-top:4px"><div><div class="from">$198 <small>+ GST per hour · '
-                        '$217.80 inc GST</small></div></div><div><div class="from">$100 <small>+ GST '
-                        'on-site call-out · $110 inc GST</small></div></div><div><div class="from">$298 '
-                        '<small>+ GST first hour on site · $327.80 inc GST</small></div></div></div><p '
+                        'style="margin-top:4px"><div><div class="from">$190 <small>+ GST per hour · '
+                        '$209.00 inc GST</small></div></div><div><div class="from">$39 <small>+ GST '
+                        'on-site call-out · $42.90 inc GST</small></div></div><div><div class="from">$252 '
+                        '<small>inc GST · first hour on site</small></div></div></div><p '
                         'style="margin-top:20px;font-size:.9375rem;color:var(--slate)">Billed in hourly '
-                        'increments and agreed before work starts. Remote support carries no call-out, '
+                        'half-hour increments after the first hour, agreed before work starts. Remote support carries no call-out, '
                         'which is why we try remote first wherever the fault allows it.</p></div><p '
                         'style="max-width:68ch;margin-top:20px">We publish these because the alternative — '
                         '"contact us for pricing" — wastes everyone\'s time and tends to mean the number '

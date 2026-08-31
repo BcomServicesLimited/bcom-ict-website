@@ -52,7 +52,7 @@ FAQS = [   (   'Are website chatbots actually useful?',
         'frustrated visitors.'),
     (   'What does it cost to run?',
         "There's an implementation cost and an ongoing platform cost that depends on volume. We set both out separately so you can see what's one-off and what's monthly. Consulting and "
-        'implementation are $198 + GST per hour.'),
+        'implementation are $190 + GST per hour.'),
     (   "What's the most useful thing about having one?",
         'Often the logs rather than the bot. Seeing what people actually ask shows you exactly what your website fails to answer — which is worth fixing regardless of whether you keep the chatbot.')]
 

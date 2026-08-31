@@ -41,10 +41,13 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 
 ## Pricing (published)
 
-- **Hourly labour:** $198 + GST per hour ($217.80 inc GST), billed in hourly increments
-- **On-site call-out:** $100 + GST ($110 inc GST) per attendance
-- **First hour on site:** $298 + GST ($327.80 inc GST)
-- **Remote support:** $198 + GST per hour, no call-out
+- **Hourly labour:** $190 + GST per hour ($209.00 inc GST). After the first hour,
+  time is charged in half-hour increments.
+- **On-site call-out:** $39 + GST ($42.90 inc GST) per attendance
+- **First hour on site:** $252 inc GST — the call-out and the first hour as one
+  figure, bookable online. The same price if booked by phone.
+- **Remote job, up to one hour:** $150 + GST ($165 inc GST), no call-out
+- **Remote support beyond an hour:** $190 + GST per hour, no call-out
 - **Managed IT:** flat monthly fee calculated from business requirements and the
   services included — not per seat. Quoted after a free review. Month-to-month,
   no lock-in, no exit fee.
@@ -247,7 +250,7 @@ or a rotating helpdesk. Escalation reaches a director the same day.
 - [NEC PBX Support Gold Coast](https://www.bcomservices.com/nec-pbx-gold-coast): NEC phone system programming, repair and support on the Gold Coast — UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms
 - [Our Team](https://www.bcomservices.com/our-team): Meet the bcom ICT leadership: Royce Clark (ITIL 4 Foundation), Ollie (ISO/IEC 42001:2023 Lead Implementer, BSI) and Daniel
 - [Panasonic PBX Support Gold Coast](https://www.bcomservices.com/panasonic-pbx-gold-coast): Panasonic phone system programming, repair and support on the Gold Coast — KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms
-- [Pricing](https://www.bcomservices.com/pricing): bcom ICT business IT support is $198 + GST per hour ($217.80 inc GST), plus a $100 + GST on-site call-out
+- [Pricing](https://www.bcomservices.com/pricing): bcom ICT business IT support is $190 + GST per hour ($209.00 inc GST), plus a $39 + GST on-site call-out
 - [Privacy Policy](https://www.bcomservices.com/privacy-policy): How bcom ICT collects, holds, uses and discloses personal information under the Australian Privacy Principles — including remote support access, telecommunications data and overseas disclosure.
 - [Reviews](https://www.bcomservices.com/reviews): bcom ICT is rated 5.0 from 24 verified Google reviews
 - [Business IT Services Gold Coast](https://www.bcomservices.com/services): Every IT service bcom ICT provides to Gold Coast businesses — managed IT, cybersecurity, WiFi and networking, phone systems, cloud and Microsoft 365, cabling and hardware

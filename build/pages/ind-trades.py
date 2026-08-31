@@ -52,7 +52,7 @@ FAQS = [   (   'What IT does a trades business actually need?',
         "We support the environment they run in — accounts, access, mobile devices, connectivity and integrations with your accounting software — and work alongside the vendor's support for the "
         'application itself.'),
     (   "We've only got a small office. Is it worth having a provider?",
-        "Depends on what a lost day costs. Plenty of trades businesses are well served by ad-hoc support at $198 + GST per hour rather than a monthly arrangement, and we'll say so if that's you. The "
+        "Depends on what a lost day costs. Plenty of trades businesses are well served by ad-hoc support at $190 + GST per hour rather than a monthly arrangement, and we'll say so if that's you. The "
         'one thing worth doing regardless is the email security.')]
 
 PAGE = {

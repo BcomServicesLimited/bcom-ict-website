@@ -245,7 +245,30 @@ on each pass. **432 symptom blocks and 172 worked examples, no duplicates.**
 
 ---
 
-## Published pricing (confirmed by Royce, Aug 2026)
+## Rate card (Royce, Sept 2026 — supersedes the Aug figures)
+
+| | Ex GST | Inc GST |
+|---|---|---|
+| Business hourly rate | **$190.00** | $209.00 |
+| On-site call-out | **$39.00** | $42.90 |
+| **First hour on site** (call-out + hour) | $229.00 | **$252.00** |
+| Remote job, up to one hour (no call-out) | **$150.00** | $165.00 |
+| Each half hour after the first hour | $95.00 | $104.50 |
+
+**Increments changed:** time after the first hour is billed in **half-hour**
+increments, not hourly.
+
+**The $252 is no longer a discount.** It was previously published as a cheaper
+online-booking rate against a $327.80 ad-hoc first hour. With the new card,
+$39 + $190 = $229 ex = $251.90 inc, so $252 *is* the standard first hour on
+site — bookable online, and the same price by phone. Every page claiming
+otherwise has been rewritten; do not reintroduce the discount framing.
+
+**Assumption to confirm:** remote work beyond the first hour is published as
+$190 + GST in half-hour increments. Royce specified the half-hour rule for the
+on-site path only.
+
+## Superseded pricing (Aug 2026 — kept for reference)
 
 | Service | Figure | Framing on the site |
 |---|---|---|

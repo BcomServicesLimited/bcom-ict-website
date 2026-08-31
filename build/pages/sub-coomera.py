@@ -108,7 +108,7 @@ PAGE = {
     <h2>Getting to you</h2>
     <p style="margin-top:16px">Coomera is roughly thirty minutes from our office at 9 Ferny Avenue,
     Surfers Paradise, straight up the M1. Same-day attendance is usually available.</p>
-    <p style="margin-top:16px">Given the distance we resolve what we can remotely first — $198 + GST per hour
+    <p style="margin-top:16px">Given the distance we resolve what we can remotely first — $190 + GST per hour
     with no call-out — and book a visit for the work that genuinely needs someone on site, which for Coomera
     is usually coverage, cabling or hardware. We will tell you on the phone which yours is.</p>
     <p style="margin-top:16px">For businesses that need a guaranteed response regardless of distance, managed
