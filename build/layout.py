@@ -94,14 +94,19 @@ def local_business():
 
 def schema(p):
     graph = [local_business()]
-    if p.get("service"):
+    # A page can carry more than one Service node where the Google Business
+    # Profile lists the same offering under two names in two categories — e.g.
+    # "Office Network Cabling" and "Data Cabling". Each GBP service name must
+    # map to a page, and the exact string is what makes the alignment work.
+    svc_names = ([p["service"]] if p.get("service") else []) + list(p.get("also_service", []))
+    for i, name in enumerate(svc_names):
         graph.append({
             "@type": "Service",
-            "@id": f"{SITE}{p['path']}#service",
+            "@id": f"{SITE}{p['path']}#service" + (f"-{i}" if i else ""),
             # Exact Google Business Profile service name, character for character.
-            "name": p["service"],
+            "name": name,
             "description": p["description"],
-            "serviceType": p["service"],
+            "serviceType": name,
             "provider": {"@id": f"{SITE}/#localbusiness"},
             "areaServed": p.get("area", [{"@type": "City", "name": "Gold Coast"}]),
             "url": f"{SITE}{p['path']}",

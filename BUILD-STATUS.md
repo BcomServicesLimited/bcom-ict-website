@@ -87,10 +87,14 @@ Each chunk ends with a commit and a push. Tick as they land.
       networking · mesh WiFi · VoIP · PBX · phone cabling · NBN.
       Written via `build/newpage.py` — a committed spec-to-module writer, so the
       generated page modules stay the source of truth.
-- [ ] **Chunk 5b — Repair family + AI (7)**
+- [x] **Chunk 5b — Repair family + AI (7)**
       Business computer repair · virus & malware removal · Windows/macOS repair ·
       performance optimisation · hardware procurement · AI implementation ·
-      ISO/IEC 42001 AI governance. Completes every GBP service → page mapping.
+      ISO/IEC 42001 AI governance.
+      **All 36 GBP services now map to a page.** Two of them ("IT Strategy &
+      Technology Roadmaps", "Data Cabling") are second names for an existing
+      offering, so `also_service` on a page emits an extra `Service` node —
+      every GBP string has an exact schema match.
 - [ ] **Chunk 6 — Industries (8)** · incl. new professional-services page
 - [ ] **Chunk 7 — Suburbs (10)** · distinct content per suburb, not templated
 - [ ] **Chunk 8 — Guides (7)** · MSP buyer's guide, hacked, office move, NBN,

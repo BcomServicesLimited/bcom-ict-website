@@ -21,6 +21,7 @@ PAGE = {
     "path": '/network-cabling-for-offices-gold-coast',
     "priority": '0.75',
     "service": 'Office Network Cabling Gold Coast',
+    "also_service": ["Data Cabling Gold Coast"],
     "title": 'Office Network & Data Cabling Gold Coast — Cat6 & Cat6A | bcom ICT',
     "description": 'Cat6 and Cat6A structured cabling for Gold Coast offices — patch panels, comms racks and cable management, installed by ACMA registered cabling contractors with testing and certification.',
     "hero_img": 'data-cabling-hero.webp',
