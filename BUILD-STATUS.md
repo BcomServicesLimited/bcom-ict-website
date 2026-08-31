@@ -59,9 +59,12 @@ Each chunk ends with a commit and a push. Tick as they land.
 - [x] **Chunk 1 — Foundation** · repo, design system, generator, homepage
       Self-hosted Manrope + Inter, brand mark SVG derived from the logo, cropped
       logos, hero system, JSON-LD graph, `_headers`, `_redirects`, robots.txt.
-- [ ] **Chunk 2 — Core service pages (6)**
+- [x] **Chunk 2 — Core service pages (6) + Services hub**
       Managed IT · Business IT Support · Cybersecurity · Business WiFi ·
-      Phone Systems · Cloud & Microsoft 365. Plus the Services hub.
+      Phone Systems · Cloud & Microsoft 365 · Services hub. All seven carry an
+      answer block, question-form FAQs with matching FAQPage schema, breadcrumbs,
+      Service schema using the exact GBP service name, and a cross-silo link mesh.
+      `python3 build/build.py` now runs a link + image check on every build.
 - [ ] **Chunk 3 — Trust centre (8)** + the three GBP-backed pages that don't exist yet:
       `/security-operations-centre-gold-coast`, `/cyber-incident-response-gold-coast`,
       `/essential-eight-guide-gold-coast`. All three are now live GBP services, so

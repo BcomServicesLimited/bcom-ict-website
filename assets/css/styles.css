@@ -381,3 +381,33 @@ table{border-collapse:collapse;width:100%;min-width:560px;font-size:.9375rem;}
 th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
 thead th{background:var(--mist);font-family:var(--display);font-weight:700;font-size:.8125rem;color:var(--ink);border-bottom:1px solid var(--line);}
 tbody tr:last-child td{border-bottom:0;}
+
+/* ---------- content components ---------- */
+.ticks--2col{max-width:none;}
+@media (min-width:760px){.ticks--2col{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s3) var(--s7);}}
+
+.photo{margin-block:var(--s7);}
+.photo img{width:100%;border-radius:var(--radius);border:1px solid var(--line);}
+.photo figcaption{font-size:.8125rem;color:var(--slate);margin-top:var(--s3);}
+
+/* Pointer from a surface page down to the trust centre */
+.tnote{
+  display:flex;gap:var(--s4);align-items:flex-start;
+  background:var(--blue-tint);border:1px solid var(--blue-line);
+  border-radius:var(--radius);padding:var(--s5) var(--s6);margin-block:var(--s7);
+  max-width:var(--measure);
+}
+.tnote .mark{width:20px;height:10.5px;flex:none;margin-top:.5em;}
+.tnote p{font-size:.9375rem;color:var(--ink-soft);margin:0;}
+
+.prose-cols{display:grid;gap:var(--s7);align-items:start;}
+@media (min-width:900px){.prose-cols{grid-template-columns:1.15fr 1fr;gap:var(--s8);}}
+.prose-cols .photo{margin:0;}
+
+.pricecard{
+  border:1px solid var(--line);border-radius:var(--radius);padding:var(--s6);
+  background:var(--paper);box-shadow:var(--shadow-sm);
+}
+.pricecard h3{margin-bottom:var(--s3);}
+.pricecard .from{font-family:var(--display);font-size:2rem;font-weight:800;color:var(--ink);letter-spacing:-.03em;}
+.pricecard .from small{font-size:.875rem;font-weight:500;color:var(--slate);letter-spacing:0;}

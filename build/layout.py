@@ -11,7 +11,7 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "1"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "2"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 def head(p):
@@ -291,3 +291,60 @@ def hero(p):
 def render(p):
     return (head(p) + header(p) + hero(p) + crumbs(p)
             + f'<main id="main">\n{p["body"]}\n</main>\n' + footer(p))
+
+
+# ---------------------------------------------------------------------------
+# Content components. Pages stay content; markup lives here.
+# ---------------------------------------------------------------------------
+
+def cards(items, icon=True):
+    """items: (title, href|None, blurb), or (title, blurb) for a plain card.
+    A href makes the whole card a link."""
+    out = ""
+    for item in items:
+        if len(item) == 2:
+            (title, blurb), href = item, None
+        else:
+            title, href, blurb = item
+        ic = f'<div class="card-icon">{MARK}</div>' if icon else ""
+        if href:
+            out += (f'<a class="card" href="{href}">{ic}<h3>{title}</h3><p>{blurb}</p>'
+                    f'<span class="more">Learn more {MARK}</span></a>')
+        else:
+            out += f'<div class="card">{ic}<h3>{title}</h3><p>{blurb}</p></div>'
+    return out
+
+
+def ticks(items):
+    return '<ul class="ticks">' + "".join(f"<li>{MARK}<span>{i}</span></li>" for i in items) + "</ul>"
+
+
+def steps(items):
+    return "".join(
+        f'<div class="card"><div class="card-icon">{MARK}</div><h3>{n}. {t}</h3><p>{b}</p></div>'
+        for n, (t, b) in enumerate(items, 1))
+
+
+def related(items, heading="Related services"):
+    """Cross-silo links. Every service page carries these — the internal link
+    mesh is what carries authority around a static site."""
+    li = "".join(f'<li>{MARK}<a href="{h}">{t}</a></li>' for t, h in items)
+    return f'''<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Keep exploring</span><h2>{heading}</h2></div>
+    <ul class="ticks ticks--2col">{li}</ul>
+  </div>
+</section>
+'''
+
+
+def photo(src, alt, caption=None):
+    cap = f'<figcaption>{caption}</figcaption>' if caption else ""
+    return (f'<figure class="photo"><img src="/assets/img/{src}" alt="{alt}" '
+            f'width="1200" height="675" loading="lazy" decoding="async">{cap}</figure>')
+
+
+def trust_note(text):
+    """Surface-layer pointer down to the depth layer. Keeps frameworks off the
+    marketing pages while still making them findable."""
+    return f'<div class="tnote">{MARK}<p>{text}</p></div>'

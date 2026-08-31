@@ -58,6 +58,34 @@ def main():
         encoding="utf-8")
 
     print(f"\n{len(pages)} pages + sitemap.xml")
+    check(pages)
+
+
+def check(pages):
+    """Every internal link either resolves to a built page or is still to come.
+    Run on every build so a typo never quietly becomes a 404 at cutover."""
+    import re
+    built = {p["path"] for p in pages}
+    missing_img, pending = set(), {}
+    for f in ROOT.glob("*.html"):
+        s = f.read_text(encoding="utf-8")
+        for src in re.findall(r'src="/assets/([^"]+)"', s):
+            if not (ROOT / "assets" / src.split("?")[0]).exists():
+                missing_img.add(src)
+        for h in re.findall(r'href="(/[^"#?]*)"', s):
+            if h.startswith("/assets"):
+                continue
+            if h not in built:
+                pending.setdefault(h, set()).add(f.name)
+    if missing_img:
+        print("\n!! MISSING IMAGES:")
+        for m in sorted(missing_img):
+            print("   ", m)
+    if pending:
+        print(f"\n{len(pending)} links point at pages not built yet "
+              f"(expected until chunk 9 — must be zero before cutover)")
+    if not missing_img and not pending:
+        print("\nlink check: all internal links resolve")
 
 
 if __name__ == "__main__":
