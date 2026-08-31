@@ -95,7 +95,12 @@ Each chunk ends with a commit and a push. Tick as they land.
       Technology Roadmaps", "Data Cabling") are second names for an existing
       offering, so `also_service` on a page emits an extra `Service` node —
       every GBP string has an exact schema match.
-- [ ] **Chunk 6 — Industries (8)** · incl. new professional-services page
+- [x] **Chunk 6 — Industries hub + 8 verticals**
+      Small business · healthcare · professional services · real estate · retail ·
+      restaurants · hospitality · trades. Each page leads with what is genuinely
+      different about that sector rather than swapping the industry name into one
+      template — health providers get no Privacy Act small business exemption,
+      agencies are targeted through trust accounts, venues are judged on guest WiFi.
 - [ ] **Chunk 7 — Suburbs (10)** · distinct content per suburb, not templated
 - [ ] **Chunk 8 — Guides (7)** · MSP buyer's guide, hacked, office move, NBN,
       IT support cost, managed vs break-fix, Essential Eight

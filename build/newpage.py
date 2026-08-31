@@ -25,7 +25,9 @@ def emit(f, d):
            f"FAQS = {pprint.pformat(d['faqs'], width=200, indent=4)}\n\n"
            "PAGE = {\n"
            f"    \"path\": {d['path']!r},\n    \"priority\": {d.get('pri', '0.75')!r},\n"
-           f"    \"service\": {d['service']!r},\n    \"title\": {d['title']!r},\n"
+           + (f"    \"service\": {d['service']!r},\n" if d.get("service") else "")
+           + (f"    \"also_service\": {d['also_service']!r},\n" if d.get("also_service") else "")
+           + f"    \"title\": {d['title']!r},\n"
            f"    \"description\": {d['desc']!r},\n    \"hero_img\": {d['img']!r},\n    \"hero_alt\": {d['alt']!r},\n"
            f"    \"h1\": {d['h1']!r},\n    \"lede\": {d['lede']!r},\n"
            "    \"actions\": [(\"Get a quote\", \"/contact\", \"white\"), (\"Call 07 3041 8993\", \"tel:+61730418993\", \"onink\")],\n"
