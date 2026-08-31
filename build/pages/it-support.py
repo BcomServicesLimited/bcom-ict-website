@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note, issues, example
 from site_data import SUBURBS
 
 FIXES = [
@@ -22,6 +22,42 @@ WHY = [
     ("Remote first when it's faster", "Most faults don't need anyone on site. A secure screen share often has you working again in minutes, and there's no call-out on it."),
     ("Business only", "We work with businesses, so we understand that the real cost of the fault is your staff sitting idle — not the repair itself."),
 ]
+
+COMMON_ISSUES = [
+    ("“My computer won’t start”",
+     "a failed drive, a corrupted boot record after an interrupted update, or a power supply on the way out. The beeping or the point it stops at usually tells you which.",
+     "Get the data off first if the drive is still readable — that is the irreversible part. Then diagnose properly rather than reinstalling and hoping, and tell you honestly whether repair or replacement is the better spend."),
+    ("“Outlook says the server is unavailable”",
+     "a Microsoft 365 authentication problem, a corrupted local profile, or occasionally a genuine service issue. Rarely the thing people first assume.",
+     "Check service health first — it takes a minute and saves an hour. Then rebuild the profile or re-establish authentication, and check the mailbox has not been compromised if the timing is suspicious."),
+    ("“The whole office lost internet”",
+     "a modem or router fault, a carrier outage, or a switch that has failed or looped. Which one it is determines whether it is a five-minute fix or a provider escalation.",
+     "Isolate whether it is inside the building or outside it before anything else. If it is the carrier, we gather the evidence and escalate for you rather than leaving you on hold."),
+    ("“Nobody can access the shared drive”",
+     "a server that has not come back from a restart, a permissions change nobody logged, or a mapped drive pointing at something that has moved.",
+     "Check the server and the share first, then permissions. If it was a change nobody documented, that is the actual problem worth fixing."),
+    ("“It says my licence has expired”",
+     "an auto-renewal that failed on an expired card, a subscription assigned to someone who has left, or a licence count that ran out as staff were added.",
+     "Reconcile what is actually assigned against who is actually there. This audit routinely finds subscriptions for departed staff that more than cover the cost of doing it."),
+    ("“The printer works for everyone except me”",
+     "a driver mismatch, a queue stuck on the local machine, or that person connecting to the printer differently from everyone else.",
+     "Standardise how the printer is connected across all machines rather than fixing the one. Otherwise it recurs on a different desk in a fortnight."),
+]
+
+EXAMPLE_1 = example(
+    "A failed drive on the only machine that mattered",
+    "A Gold Coast business called on a Tuesday morning: the machine running their job scheduling would not boot. It was the only computer with the current version of the file, and six staff could not be dispatched without it.",
+    "A physically failing drive, still readable but throwing errors — every minute it stayed powered on risked losing more. The machine was six years old and there was no backup of the scheduling file, which lived on the desktop.",
+    "Attended within the hour, imaged the drive immediately before attempting anything else, recovered the file, and had it running on a loan machine that morning. Replaced the machine, then set up backup so the file was no longer the single point of failure.",
+    "Dispatch went out that day. The follow-up conversation was about the fact that a six-year-old desktop had been the whole business, which is the problem worth solving rather than the drive.")
+
+EXAMPLE_2 = example(
+    "The provider who could not be reached",
+    "A professional firm rang us not because something was broken, but because their existing provider had stopped returning calls. Two open issues, no documentation, and nobody sure what was actually in place.",
+    "No asset register, no record of licences or credentials, backups running to an unknown destination, and the domain registered to the outgoing provider rather than the business. That last one is the most common thing we find and the most awkward to fix late.",
+    "Documented the whole environment from discovery, recovered the domain into the client’s own account, established where backups were going and tested a restore, then took over day-to-day support.",
+    "The firm now owns its own documentation, domain and credentials. The two open issues turned out to be twenty minutes of work each — they had simply never been picked up.")
+
 
 FAQS = [
     ("Who provides IT support for businesses on the Gold Coast?",
@@ -101,6 +137,29 @@ PAGE = {
     <p style="margin-top:16px">On-site work regularly takes us across the whole Gold Coast — {", ".join(SUBURBS[:14])} and everywhere between. Remote and managed support is available to businesses anywhere in Australia, which matters if your team is spread across more than one state.</p>
 
     {trust_note('Wondering what happens after you call? <a href="/service-levels-and-security">Our published service levels</a> set out response targets by priority, how escalation works, and what happens to your documentation if you ever leave.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The faults we get called about most</h2>
+      <p>Described the way clients describe them, because that is usually all you have when you pick up the phone.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a call actually turns into</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

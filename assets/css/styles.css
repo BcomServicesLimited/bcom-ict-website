@@ -625,3 +625,15 @@ form.enquiry button[disabled]{opacity:.6;cursor:progress;}
 @media (min-width:760px){.ex-grid{grid-template-columns:repeat(2,1fr);gap:var(--s5) var(--s7);}}
 .ex-grid h4{font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
 .ex-grid p{font-size:.9375rem;color:var(--ink-soft);}
+
+/* ---------- indicative project pricing ---------- */
+.ptable{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-block:var(--s6);}
+@media (min-width:760px){.ptable{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}}
+.ptier{background:var(--paper);padding:var(--s6);display:flex;flex-direction:column;gap:var(--s3);}
+.ptier h4{font-size:.9375rem;color:var(--blue);}
+.pprice{font-family:var(--display);font-size:1.875rem;font-weight:800;color:var(--ink);letter-spacing:-.03em;line-height:1.1;}
+.pprice small{display:block;font-size:.8125rem;font-weight:500;color:var(--slate);letter-spacing:0;margin-top:5px;line-height:1.45;}
+.ptier ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:.875rem;color:var(--slate);margin-top:var(--s2);}
+.ptier li{padding-left:15px;position:relative;}
+.ptier li::before{content:'';position:absolute;left:0;top:.6em;width:7px;height:1.5px;background:var(--blue);}
+.pnote{font-size:.875rem;color:var(--slate);max-width:var(--measure);margin-top:calc(var(--s6) * -1 + var(--s4));}

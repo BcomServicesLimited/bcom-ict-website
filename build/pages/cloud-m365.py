@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, steps, related, photo, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, steps, related, photo, trust_note, issues, example
 
 WORK = [
     ("Microsoft 365", None,
@@ -21,6 +21,42 @@ MOVE = [
     ("We migrate and verify", "Data comes across and gets checked before the old system is switched off — not after."),
     ("We secure and hand over", "MFA on, security baselines applied, permissions tidied, and documentation given to you covering what lives where."),
 ]
+
+COMMON_ISSUES = [
+    ("“I keep getting signed out of Teams and Outlook”",
+     "a conditional access or MFA policy applying differently than intended, or a device that is not registered properly against the tenancy.",
+     "Look at the sign-in logs rather than guessing — they show exactly which policy is triggering. Then fix the policy or register the device, instead of exempting the user and leaving a hole."),
+    ("“We’ve run out of mailbox space”",
+     "the licence tier assigned rather than the mailbox itself, or an archive that was never enabled.",
+     "Check what is actually assigned before buying more storage. Enabling archiving or moving one user to the right tier is usually cheaper than the upgrade being proposed."),
+    ("“Someone deleted a folder and it’s gone”",
+     "a SharePoint or OneDrive retention window that has passed. Microsoft’s recycle bins are shorter than people assume and they do expire.",
+     "Attempt recovery from the retention stages first. If the window has closed, this is the conversation about third-party Microsoft 365 backup — which is a genuine requirement rather than an upsell."),
+    ("“Our shared mailbox stopped working for one person”",
+     "a permissions change, an auto-mapping issue after a licence change, or a cached profile holding stale credentials.",
+     "Reset the permission cleanly rather than layering another on top. Shared mailbox permissions accumulate badly over years and eventually contradict each other."),
+    ("“Files are syncing on my laptop but not my desktop”",
+     "OneDrive Known Folder Move applied to one machine and not the other, or sync paused after an update and never resumed.",
+     "Standardise the configuration across all machines rather than fixing the one in front of you. Otherwise it reappears on a different device."),
+    ("“Someone outside the company can see our documents”",
+     "an organisation-wide sharing link created for convenience, often years ago, that nobody has revisited.",
+     "Audit sharing across the tenancy — this routinely surfaces far more than management expects. Then tighten the defaults so it does not quietly rebuild itself."),
+]
+
+EXAMPLE_1 = example(
+    "A migration that was going to lose a folder nobody mentioned",
+    "A Gold Coast business of about forty staff moving off an ageing on-premise server to Microsoft 365, with a cutover already booked by another provider.",
+    "During mapping we found a shared folder nobody had listed — the operations team’s working files, on a second server that was not in scope and had not been backed up in two years. It would have been switched off with the rest of the hardware.",
+    "Paused, brought the folder into scope, migrated it with permissions intact, and staged the cutover across a weekend with the old system left running for a fortnight as a safety net. MFA and security baselines applied during setup rather than afterwards.",
+    "Nothing was lost, and nobody spent a Monday morning locked out. The two-year-old unbacked server was the finding that mattered more than the migration itself.")
+
+EXAMPLE_2 = example(
+    "A tenancy paying for licences nobody used",
+    "A professional firm asked us to look at Microsoft 365 because costs had crept up steadily and nobody could explain why.",
+    "Eleven licences assigned to people who had left, three users on a tier well above what their role required, and a separate file-sharing subscription duplicating something already included in their Microsoft plan. Multi-factor authentication was on for six of nineteen accounts.",
+    "Reconciled every licence against actual staff, moved users to appropriate tiers, retired the duplicate subscription, and completed the MFA rollout across all accounts.",
+    "The licensing reconciliation saved more per year than the work cost, and the security gap that had been sitting open for two years was closed in the same engagement.")
+
 
 FAQS = [
     ("Who sets up Microsoft 365 for businesses on the Gold Coast?",
@@ -99,6 +135,29 @@ PAGE = {
     <p style="margin-top:16px">"Where does our data live?" is now a standard question from insurers, larger clients and anyone in a regulated industry — and a lot of providers answer it vaguely. We don't. Microsoft 365 tenancies are provisioned in Australian regions, and we'll tell you exactly where your backups are held as well. Our <a href="/data-handling-and-sovereignty">data handling and sovereignty page</a> sets all of it out.</p>
 
     {trust_note('bcom ICT is a Microsoft Partner. Cloud environments we manage are maintained against the ASD Essential Eight and aligned with ISO/IEC 27001:2022 practices — <a href="/trust-centre">the trust centre</a> sets out what that alignment does and does not mean.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The Microsoft 365 problems we are actually called about</h2>
+      <p>Most cloud faults are configuration or licensing rather than the platform failing. These are the six we see most.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What these engagements actually look like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

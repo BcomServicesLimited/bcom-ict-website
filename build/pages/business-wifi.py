@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, steps, related, photo, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, steps, related, photo, trust_note, issues, example, price_table
 
 PROBLEMS = [
     ("Dead spots", None,
@@ -18,13 +18,56 @@ INSTALL = [
     ("We hand it over documented", "Passwords, network layout, device inventory and warranty details written down and given to you. It's your network — you should have the keys to it."),
 ]
 
+PRICING = [
+    ("Simple professional setup", "$1,500", "+ GST, fixed price",
+     ["Hardware included", "Straightforward single-office coverage",
+      "Surveyed, installed and configured", "Guest network separated from business systems",
+      "Documented and handed over"]),
+]
+
+COMMON_ISSUES = [
+    ("“It drops out in the back office”",
+     "one access point trying to cover a whole floor. Signal falls off far faster through plasterboard, steel studs and glass partitions than people expect.",
+     "Measure the actual coverage rather than guessing, then position a second access point where it can be cabled. Turning the existing one up does not extend range — it just makes the overlap worse."),
+    ("“It’s fine in the morning and slow by 11am”",
+     "device density rather than coverage. One access point handling forty clients behaves nothing like one handling five, and everyone arrives at once.",
+     "Count what is actually connecting, including phones and devices nobody thinks about. Then add capacity where the people are, rather than upgrading the internet plan that was never the bottleneck."),
+    ("“My laptop stays connected to the far access point”",
+     "transmit power set too high, so a device clings to a distant access point instead of switching to the near one. Extremely common in DIY installs.",
+     "Tune the power levels down so the handover happens where it should. Counter-intuitive, and it fixes roaming complaints without any new hardware."),
+    ("“Guests can see our server”",
+     "guest WiFi on the same network as everything else — the access point has a guest network feature that was never actually configured.",
+     "Put guests on their own VLAN with internet access and no route to anything internal. If you take card payments, put terminals on a third segment too."),
+    ("“EFTPOS drops out when we’re busy”",
+     "the payment terminal competing with staff phones, ordering tablets and guest devices on a saturated wireless network.",
+     "Segment payments onto their own network, and size the wireless for the busy period rather than the quiet one. This is a design problem, not a terminal fault."),
+    ("“We added cameras and the WiFi got worse”",
+     "PoE budget. Cameras draw power from the same switch as the access points, and exceeding the budget causes intermittent faults across everything.",
+     "Check the switch budget against actual draw, then either redistribute across ports or fit a switch with adequate capacity. Very often misdiagnosed as failing access points."),
+]
+
+EXAMPLE_1 = example(
+    "A venue that had bought three range extenders",
+    "A Gold Coast hospitality business with WiFi that worked at the bar and nowhere else. Over two years they had bought three consumer range extenders, each of which helped briefly and then made roaming worse.",
+    "The extenders were all placed at the dead spots rather than partway to them, so each was relaying a signal it could barely hear — and each created a second network name that devices clung to. The original router was also handling the EFTPOS terminal on the same flat network.",
+    "Removed the extenders. Surveyed the venue, ran cable to two positions, fitted two properly placed access points under one network name, and separated staff, guest and payment traffic onto three segments.",
+    "Coverage across the whole venue including the terrace, devices roaming properly, and the EFTPOS drop-outs stopped — which turned out to be the thing that had actually been costing them money.")
+
+EXAMPLE_2 = example(
+    "An office that assumed it needed a faster internet plan",
+    "A professional firm of about thirty staff on the Gold Coast, convinced their internet was too slow and about to upgrade to a substantially more expensive business plan.",
+    "The connection was barely being used. The bottleneck was a single consumer access point serving the whole floor, plus a backup job running at 10am rather than overnight. Speed tests from a desk near the access point looked fine, which is why nobody had suspected the wireless.",
+    "Measured throughput at the desk and at the access point to demonstrate the difference, added two cabled access points sized for the headcount, and rescheduled the backup outside business hours.",
+    "The plan upgrade was cancelled. The fix cost a fraction of what the extra bandwidth would have, and would not have helped at all.")
+
+
 FAQS = [
     ("Who installs business WiFi on the Gold Coast?",
      "bcom ICT designs and installs business WiFi across the Gold Coast using Ubiquiti UniFi and Aruba Instant On systems. Installations include a full-coverage site survey, VLAN and guest-network separation, and structured cabling carried out by ACMA registered cabling contractors. Call 07 3041 8993."),
     ("Why not just use a better consumer router?",
      "Because the problem usually isn't the router — it's that one device is trying to cover a whole building. Business systems use several access points working together with a single network name, so devices hand over cleanly as people move around. They also let us separate guests from your business systems, which a consumer router can't do properly."),
-    ("What does a business WiFi installation cost?",
-     "It depends on the size of the building, how many access points the coverage needs, and how much cabling has to be run. We survey first and quote on the actual building rather than a guess, so there are no surprises once the installer is on site."),
+    ("How much does business WiFi cost on the Gold Coast?",
+     "A simple professional setup starts at around $1,500 + GST, fixed price, with hardware included — surveyed, installed, configured and documented, with the guest network separated from your business systems. Larger or more complex sites are quoted after a survey. What moves the number is building size and construction, how many access points the coverage genuinely needs, how much cabling has to be run, and whether payment terminals need segmenting."),
     ("Which brands do you install?",
      "Primarily Ubiquiti UniFi and Aruba Instant On for business installations — both give central management, proper network segmentation and sensible ongoing costs. For home offices and small premises we also install Eero, Google Nest and Ubiquiti mesh systems."),
     ("We take card payments. Does that change anything?",
@@ -102,6 +145,40 @@ PAGE = {
     <p style="margin-top:16px">We still install mesh WiFi for home offices and small sites — Eero, Google Nest and Ubiquiti systems supplied and configured to remove dead zones and give someone working from home a connection they can actually rely on. See <a href="/mesh-network-setup-gold-coast">mesh WiFi setup</a>. General home computer support isn't something we take on.</p>
 
     {trust_note('Cabling connected to the telecommunications network legally requires a registered cabler in Australia. bcom ICT engages ACMA registered cabling contractors for that work and provides testing and certification documentation on completion — worth asking any installer to show you before they start.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What it costs</span>
+      <h2>How much does business WiFi cost on the Gold Coast?</h2>
+      <p>Most providers will not put a number on this. Here is our starting point, and what actually moves it.</p>
+    </div>
+    {price_table(PRICING, note="Larger or more complex sites are quoted after a survey. What moves the number: the size and construction of the building, how many access points the coverage genuinely needs, how much cabling has to be run, whether payment terminals need segmenting, and whether switching has the PoE capacity for what is being added. We survey first and quote on the actual building, so the figure does not move once an installer is on site.")}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The WiFi faults we are actually called to</h2>
+      <p>Almost every wireless complaint on the Gold Coast is one of these six, and most are fixable without new hardware.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What fixing it actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

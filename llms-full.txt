@@ -428,8 +428,8 @@ A: bcom ICT designs and installs business WiFi across the Gold Coast using Ubiqu
 **Q: Why not just use a better consumer router?**
 A: Because the problem usually isn't the router — it's that one device is trying to cover a whole building. Business systems use several access points working together with a single network name, so devices hand over cleanly as people move around. They also let us separate guests from your business systems, which a consumer router can't do properly.
 
-**Q: What does a business WiFi installation cost?**
-A: It depends on the size of the building, how many access points the coverage needs, and how much cabling has to be run. We survey first and quote on the actual building rather than a guess, so there are no surprises once the installer is on site.
+**Q: How much does business WiFi cost on the Gold Coast?**
+A: A simple professional setup starts at around $1,500 + GST, fixed price, with hardware included — surveyed, installed, configured and documented, with the guest network separated from your business systems. Larger or more complex sites are quoted after a survey. What moves the number is building size and construction, how many access points the coverage genuinely needs, how much cabling has to be run, and whether payment terminals need segmenting.
 
 **Q: Which brands do you install?**
 A: Primarily Ubiquiti UniFi and Aruba Instant On for business installations — both give central management, proper network segmentation and sensible ongoing costs. For home offices and small premises we also install Eero, Google Nest and Ubiquiti mesh systems.

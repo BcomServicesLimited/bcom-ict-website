@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note, issues, example
 
 OPTIONS = [
     ("Cloud VoIP", None,
@@ -19,6 +19,42 @@ FEATURES = [
     "Call recording where you need it for compliance",
     "Full number porting — you keep your existing numbers",
 ]
+
+COMMON_ISSUES = [
+    ("“Callers say we sound choppy”",
+     "voice traffic competing with everything else on the connection — usually a large upload, a backup running in business hours, or cloud file sync.",
+     "Configure quality-of-service so voice gets priority, and move backups out of trading hours. It is a configuration change far more often than it is a bandwidth problem."),
+    ("“Calls drop out after a few minutes”",
+     "a router or firewall timing out the session, often after firmware updated and reset a setting nobody knew was there.",
+     "Adjust the session timers and SIP handling on the edge device. This one is almost always the router rather than the phone system or the carrier, and it gets blamed on both."),
+    ("“Nobody answers reception when Jane’s at lunch”",
+     "no ring group or overflow — calls are going to one handset and then to a voicemail nobody checks.",
+     "Build a proper ring group with overflow and after-hours handling. Straightforward programming, and it usually recovers more revenue than anything else on this page."),
+    ("“We can’t change the after-hours message”",
+     "the original installer set it up and either did not hand over the credentials or has stopped servicing the platform.",
+     "Recover or re-establish administrative access, change the message, and document how to do it so you are not calling anyone next time."),
+    ("“Our new starter has no extension”",
+     "nothing is wrong — the system just needs programming, and on a legacy PBX that means someone who knows the platform.",
+     "Add and configure the extension, handset and voicemail. On the platforms we support this is routine, including the ones other providers have walked away from."),
+    ("“The phones went down with the internet”",
+     "cloud VoIP with no failover configured — the phone system depends on the connection and nothing was set to take over.",
+     "Configure automatic failover to mobiles, and pair it with a 4G or 5G backup connection. Worth doing before an outage rather than after the first one."),
+]
+
+EXAMPLE_1 = example(
+    "A quote to replace a system that did not need replacing",
+    "A Gold Coast business was quoted a full phone system replacement after their provider said the existing on-premise PBX was end of life and could not be changed.",
+    "The platform was well supported, parts were obtainable, and the actual request — reassigning two extensions and changing the after-hours greeting — was twenty minutes of programming. The provider had moved to cloud-only and no longer had anyone who could log into it.",
+    "Recovered administrative access, made the changes, documented the programming so future changes were straightforward, and gave an honest assessment of remaining life with a sensible replacement horizon.",
+    "The replacement was deferred by several years and became a planned capital decision rather than a forced one. When the move does happen it will be to cloud VoIP, at a time of their choosing.")
+
+EXAMPLE_2 = example(
+    "A move to VoIP that would have failed",
+    "A multi-site Gold Coast operator wanted to move to cloud VoIP so staff could work across locations and from home, and had already been sold a plan by a telco.",
+    "Testing the connection at the second site showed jitter and packet loss that would have made calls unusable at peak. The router at the main site had no quality-of-service configured, and the proposed cutover had no plan for number porting from the existing system.",
+    "Fixed the connection issue at the second site, configured voice prioritisation on the network, planned and started number porting weeks ahead of cutover, and staged the move so both sites went live with handsets tested before staff arrived.",
+    "The move happened without a lost call or a lost number. Had it gone ahead as sold, the second site would have had unusable voice quality from day one and no way to go back.")
+
 
 FAQS = [
     ("Who installs business phone systems on the Gold Coast?",
@@ -102,6 +138,29 @@ PAGE = {
     <p style="margin-top:16px">Cloud phone systems are only as good as the connection underneath them. Before any VoIP cutover we check your NBN or business internet service, look at whether your network prioritises voice traffic properly, and talk about failover so an outage doesn't take your phones down with your internet. That's usually a conversation about <a href="/nbn-internet-support-gold-coast">business NBN and internet</a> at the same time.</p>
 
     {trust_note('Internal phone and voice cabling is installed to Australian standards by ACMA registered cabling contractors we engage and manage, with testing and certification documentation provided on handover.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The phone faults we are actually called about</h2>
+      <p>Voice problems get blamed on the phone system, the carrier and the internet in roughly equal measure. It is usually none of those.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What these jobs actually look like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

@@ -11,7 +11,7 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "10"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "11"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 ROBOTS_OK = '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'
@@ -516,3 +516,17 @@ def example(title, situation, found, did, outcome, tag="Representative engagemen
     <div><h4>The outcome</h4><p>{outcome}</p></div>
   </div>
 </div>'''
+
+
+def price_table(rows, note=None):
+    """Indicative project pricing. Every figure here is a real quoted starting
+    point, not an estimate — an invented range is worse than no range, because
+    the first quote that lands above it costs you the client's trust."""
+    out = ""
+    for label, price, sub, includes in rows:
+        li = "".join(f"<li>{i}</li>" for i in includes)
+        out += (f'<div class="ptier"><h4>{label}</h4>'
+                f'<div class="pprice">{price}<small>{sub}</small></div>'
+                f'<ul>{li}</ul></div>')
+    n = f'<p class="pnote">{note}</p>' if note else ""
+    return f'<div class="ptable">{out}</div>{n}'
