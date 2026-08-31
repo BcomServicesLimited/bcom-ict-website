@@ -23,7 +23,7 @@ PAGE = {
     "description": "bcom ICT is the trading name of Bcom Services Pty Ltd (ABN 92 636 893 108), a Gold Coast IT support company established in 2011, based in Surfers Paradise and working with small and medium businesses.",
     "hero_img": "hero-bg-business.webp",
     "hero_alt": "The bcom ICT team working with a client at their Gold Coast business premises",
-    "h1": "A small Gold Coast IT company, since 2011",
+    "h1": "Looking after Gold Coast businesses since 2011",
     "lede": "An office on Ferny Avenue, fifteen years of looking after Gold Coast businesses, and delivery reaching across Australia.",
     "actions": [("Meet the team", "/our-team", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
     "trust": ["Established 2011", "ABN 92 636 893 108", "Surfers Paradise office", "5.0 from 24 reviews"],
@@ -55,8 +55,8 @@ PAGE = {
         <p style="margin-top:16px">We stopped taking general home computer repair and residential IT support.
         It's honest work and there are good people on the Gold Coast who do it — it just isn't what we're
         set up for any more. Home office WiFi and mesh installs we still do.</p>
-        <p style="margin-top:16px">We're also not the biggest IT company on the Gold Coast, and there are
-        jobs we'll tell you we're the wrong fit for. Losing a sale is cheaper than losing a client.</p>
+        <p style="margin-top:16px">There are still jobs we'll tell you we're the wrong fit for. Losing a
+        sale is cheaper than losing a client, and you'd rather hear it now than eight months in.</p>
       </div>
       {photo("hero-bg-consulting.webp", "A bcom ICT consultant meeting with a Gold Coast business owner", "On-site across the Gold Coast; remote and managed support Australia-wide.")}
     </div>

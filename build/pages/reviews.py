@@ -18,7 +18,7 @@ FAQS = [
     ("Are these reviews real?",
      "Yes. They come from bcom ICT's public Google Business Profile, where anyone can read all of them without going through us. We don't publish testimonials that can't be traced back to a verifiable source, which is why there are fewer quotes on this page than on most IT company websites."),
     ("Why aren't there more reviews for a business trading since 2011?",
-     "We've never systematically asked for them. Most of our work comes from referrals and from clients who've been with us for years, and it took us a long time to start requesting reviews at all. Twenty-four honest ones over a long period is a fair reflection of a small team that doesn't run campaigns."),
+     "We've never systematically asked for them. Most of our work comes from referrals and from clients who've been with us for years, and it took us a long time to start requesting reviews at all. Twenty-four honest ones over a long period is a fair reflection of a business that has never run campaigns."),
     ("Can I speak to an existing client before engaging you?",
      "Yes. Ask and we'll arrange a reference call with a client in a similar sector or of a similar size. It's a more useful signal than any review, and we'd rather you did it."),
 ]
@@ -64,7 +64,7 @@ PAGE = {
 <section class="section section--tight">
   <div class="wrap">
     <h2>Worked with us? A review takes about a minute</h2>
-    <p style="margin-top:16px">bcom ICT is a small Gold Coast team. We don't run ad campaigns and we don't
+    <p style="margin-top:16px">bcom ICT is a Gold Coast business that grows on word of mouth. We don't run ad campaigns and we don't
     cold-call — almost every new client finds us through Google, and reviews from businesses like yours are
     the single biggest reason they pick up the phone.</p>
     <p style="margin-top:16px">If we've looked after your IT, networks, phones or security, a short review
