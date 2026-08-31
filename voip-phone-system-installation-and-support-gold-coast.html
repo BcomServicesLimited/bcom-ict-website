@@ -342,6 +342,47 @@
     <div class="ptable"><div class="ptier"><h4>Installation, per handset</h4><div class="pprice">$100<small>+ GST</small></div><ul><li>Handset provisioned, configured and tested</li><li>Your existing numbers ported across</li><li>Call flow, hunt groups and after-hours routing set up</li><li>Staff shown how to actually use it</li></ul></div><div class="ptier"><h4>VoIP handset</h4><div class="pprice">$350<small>+ GST each</small></div><ul><li>Business-grade desk handset</li><li>Configured before it arrives on your desk</li><li>Works the same from the office or from home</li><li>Warranty handled by us rather than by you</li></ul></div><div class="ptier"><h4>Typical five-extension system</h4><div class="pprice">$2,250<small>+ GST, hardware included</small></div><ul><li>Five handsets at $350 + GST each</li><li>Installation and configuration at $500 + GST</li><li>Numbers ported and call flow configured</li><li>Monthly service and call plan quoted separately</li></ul></div></div><p class="pnote">Hardware and installation are a one-off fixed price, agreed before we start. The monthly service and call plan is separate and depends on how many numbers and concurrent calls you need &mdash; we quote it alongside the install so you are looking at the whole cost rather than the attractive half of it. A business that does not want desk phones can run softphones on the computers and mobiles it already owns, which removes the hardware line entirely and leaves only the installation.</p>
   </div>
 </section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The phone faults we are actually called to</h2>
+      <p>VoIP problems have a small number of causes, and almost none of them are solved by buying more internet.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>&ldquo;Callers say we sound robotic&rdquo;</h4><p class="cause"><span>Usually</span> jitter. The voice packets are arriving, but unevenly, and the handset is filling the gaps with guesswork. Usually another device on the network taking capacity without asking.</p><p class="fix"><span>What we do</span> Prioritise voice traffic on the switching and the router so calls are never made to queue behind a file upload. This is a configuration problem, not a bandwidth problem, and adding internet speed rarely fixes it.</p></div><div class="issue"><h4>&ldquo;Calls drop after about fifteen minutes&rdquo;</h4><p class="cause"><span>Usually</span> the router closing the connection because it believes the call has finished. A firewall or NAT timeout expiring mid-conversation, almost always on consumer-grade equipment.</p><p class="fix"><span>What we do</span> Adjust the timers so the session is held open for the length of a real conversation. A fault that reliably occurs at the same elapsed time is a timer somewhere, and it is very fixable once identified.</p></div><div class="issue"><h4>&ldquo;We can hear them but they can&rsquo;t hear us&rdquo;</h4><p class="cause"><span>Usually</span> one-way audio &mdash; the return path is blocked. A firewall permitting the call to be set up while quietly dropping the media coming the other way.</p><p class="fix"><span>What we do</span> Open the correct media path rather than opening the firewall generally. One-way audio has a small number of causes and is usually resolved in a single visit once someone knows to look at the return path.</p></div><div class="issue"><h4>&ldquo;Our numbers didn&rsquo;t come across&rdquo;</h4><p class="cause"><span>Usually</span> a port that was submitted with details not matching the losing provider&rsquo;s records exactly &mdash; a trading name instead of the registered entity, or a service address changed years ago and never updated.</p><p class="fix"><span>What we do</span> Check the account details against the provider&rsquo;s records before submitting, not after rejection. Most porting delays are administrative and entirely avoidable, and they are the single most common cause of a phone cutover running late.</p></div><div class="issue"><h4>&ldquo;It works on the desk phone but not the mobile app&rdquo;</h4><p class="cause"><span>Usually</span> the app moving between the office wireless and the mobile network mid-call, or a phone aggressively sleeping the app to save battery.</p><p class="fix"><span>What we do</span> Configure the app for the way it is actually used and set the handover behaviour deliberately. Mobile softphones work well when set up properly and badly when installed and left at defaults.</p></div><div class="issue"><h4>&ldquo;Nobody knows how to change the after-hours message&rdquo;</h4><p class="cause"><span>Usually</span> a system configured by someone who never handed it over. The capability is there and the knowledge left with the installer.</p><p class="fix"><span>What we do</span> Document the call flow, show the people who will actually need to change it, and leave written instructions. A phone system that only its installer can operate is a dependency, not a service.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a phone cutover actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Porting done properly means nobody notices</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A dental practice was moving off an ageing on-premises system. Their main number had been advertised for nineteen years, appeared on every referral pad in the district, and could not be off for so much as an afternoon.</p></div>
+    <div><h4>What we found</h4><p>The account was registered to a partnership that had been restructured into a company eleven years earlier. The losing provider&rsquo;s records still showed the original entity. Submitting the port as it stood would have been rejected, and each rejection adds days.</p></div>
+    <div><h4>What we did</h4><p>Reconciled the account details with the losing provider before submitting anything, staged the handsets and call flow in advance so the system was fully configured and tested before the cutover, and scheduled the port for a Tuesday morning with the old system still live alongside it.</p></div>
+    <div><h4>The outcome</h4><p>The number moved without a missed call. The practice was on the new system inside two hours, and the only thing patients noticed was that the hold music changed.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Six people, five vehicles, one number</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A trades business was losing work because calls to the office went unanswered while everyone was on site. Their answer had been to publish mobile numbers, which meant customers reached whoever they had called last rather than whoever was available.</p></div>
+    <div><h4>What we found</h4><p>There was no shortage of phones &mdash; there was no call flow. Every incoming call rang one handset in an empty office and then went to a voicemail box nobody checked until the evening.</p></div>
+    <div><h4>What we did</h4><p>Set up a hunt group ringing the office and the mobile app on every phone simultaneously, with a voicemail-to-email fallback and an after-hours message stating when calls would be returned. No desk handsets were purchased, because none were needed.</p></div>
+    <div><h4>The outcome</h4><p>Calls now get answered by whoever is free, from a vehicle or a site, and the customer keeps dialling one number. Hardware cost was nil; the whole change was configuration and a fortnight of getting used to it.</p></div>
+  </div>
+</div>
+  </div>
+</section>
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

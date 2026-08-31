@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body, price_table
+from layout import cta, faq_block, related, svc_body, price_table, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;The port in the meeting room doesn&rsquo;t work&rdquo;",
+     "the outlet was run but never terminated at the cabinet end, or it was terminated and never patched into a switch. Extremely common in fit-outs where the cabling and the network were done by different trades.",
+     "Trace the run, terminate or patch it, and test it. Then record it on a port schedule so the next person does not have to repeat the exercise."),
+    ("&ldquo;It works if you wiggle the cable&rdquo;",
+     "a poor termination at one end &mdash; usually a wall plate that was punched down in a hurry, or a plug crimped on site rather than a proper outlet.",
+     "Re-terminate and certify. A connection that works intermittently is not a connection that mostly works; it is one that will fail at the least convenient moment and be blamed on the computer."),
+    ("&ldquo;We&rsquo;ve run out of ports&rdquo;",
+     "growth. The cabinet was specified for the headcount at fit-out and the business added people, printers, access points and cameras to it since.",
+     "Count what is actually connected and what is coming, then add capacity once with room to spare. Daisy-chaining a desk switch onto a full patch panel works until it very publicly does not."),
+    ("&ldquo;None of the outlets are labelled&rdquo;",
+     "cabling installed without a port schedule, or one that was made and then lost. The information existed for about a week.",
+     "Tone out every run, label both ends, and hand over a written schedule. It takes a day and saves that day back on the first fault after it."),
+    ("&ldquo;The new phones won&rsquo;t power on&rdquo;",
+     "the switch has run out of PoE budget. Each port can supply power, but the switch as a whole has a total wattage limit that new access points and handsets quietly consume.",
+     "Add up what the switch is actually being asked to power rather than assuming per-port capacity is the constraint. Sometimes the answer is a bigger power supply; sometimes it is moving two devices to a different switch."),
+    ("&ldquo;The builder&rsquo;s electrician did the data cabling&rdquo;",
+     "data cabling treated as electrical work. The cable is often correct and the termination often is not, because terminating structured cabling to specification is a different trade with different test equipment.",
+     "Certify it before you rely on it. Testing eleven outlets costs very little at fit-out and a great deal once the ceiling is closed and the tenancy is occupied."),
+]
+
+EXAMPLE_1 = example(
+    "Cat6 cable, Cat5e termination, nobody tested it",
+    "A medical practice completed a fit-out and moved in. Within a fortnight, two consulting rooms were dropping their connection several times a day. The builder had included data cabling in the works and the invoice described it as Cat6.",
+    "The cable was genuinely Cat6. Both ends had been terminated to the older Cat5e pin specification, and nothing had ever been tested. Four of the eleven outlets failed certification outright. The two that were failing daily were simply the two being used hardest.",
+    "Re-terminated every outlet correctly, certified all eleven, and provided the test results and a labelled port schedule. Two runs had been damaged during construction and were replaced.",
+    "Eleven certified outlets with documented results, which is what the practice believed it had paid for. The certification report also settled the question of who was responsible for the rework.")
+
+EXAMPLE_2 = example(
+    "Testing the cabling before the move, not after",
+    "A law firm was relocating to a floor the landlord described as already cabled with Cat6. Forty outlets, and a move scheduled over a single weekend with the firm expected to be working on Monday morning.",
+    "Certification found a mix of Cat5e and Cat6 with no records distinguishing them, and nine runs that failed outright &mdash; two of them serving the room intended for the server cabinet. Had this been discovered on the Monday, the firm would have lost days rather than hours.",
+    "Tested every outlet three weeks before the move, replaced the nine failures, and produced a port schedule the movers and the phone installer could both work from.",
+    "The firm moved on the Saturday and worked on the Monday. The cost of testing forty outlets was a fraction of one day of a law firm not billing, which is the calculation that makes pre-move certification an easy decision.")
 
 FAQS = [   (   'Who installs office data cabling on the Gold Coast?',
         'bcom ICT delivers Cat6 and Cat6A structured cabling for Gold Coast offices, including patch panels, comms racks, cable management, testing and certification. The cabling itself is carried '
@@ -108,6 +143,30 @@ PAGE = {
       <p>Priced per outlet, quoted after a look at the building rather than over the phone.</p>
     </div>
     {price_table(PRICING, note='A typical small office of eight outlets is therefore around $1,200 + GST for the cabling itself. Sitting outside that figure: the cabinet, patch panel and switch, which are quoted on what the site actually needs; long runs; hard ceilings and heritage buildings; asbestos; and after-hours access where a landlord or a tenanted building requires it. Cabling is quoted after someone has looked at the building, because a number given over the phone is a number that moves once an installer is on a ladder. All cabling work is carried out by ACMA registered cabling contractors.')}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What we find in ceilings</h2>
+      <p>Cabling faults are unglamorous and account for a remarkable share of problems blamed on computers.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What proper cabling work looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 '''

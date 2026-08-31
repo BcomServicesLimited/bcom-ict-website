@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;It&rsquo;s just slow&rdquo;",
+     "almost anything, which is why it is the hardest report to act on. Slow can mean the internet, the server, one application, the wireless, or a single failing device flooding the network.",
+     "Establish what is slow, for whom, and when, before changing anything. Half of network troubleshooting is converting a feeling into a measurement, and the measurement usually names the culprit without further argument."),
+    ("&ldquo;It only happens to one person&rdquo;",
+     "the device, its position, or its habits &mdash; not the network. One machine on an old wireless standard, one desk at the edge of coverage, one person who leaves forty browser tabs open.",
+     "Swap the variable rather than debating it. Move the person, or move the machine, and the fault either follows or it does not. That single test eliminates most of the possibilities in about five minutes."),
+    ("&ldquo;It happens every morning at nine&rdquo;",
+     "everyone arriving at once. Forty devices reconnecting, syncing mail and pulling updates in the same ten minutes is a genuine load spike, not a fault.",
+     "Measure the peak and decide whether it needs capacity or scheduling. Moving updates off the morning window is free; adding bandwidth is not, and often is not what the problem needed."),
+    ("&ldquo;It fixed itself&rdquo;",
+     "nothing. Intermittent faults do not heal &mdash; they go quiet. Something that resolves without intervention will return, usually with worse timing.",
+     "Log continuously rather than investigating only while it is broken. Catching the fault in the act is the whole job, and it cannot be done during a visit booked for the following Tuesday."),
+    ("&ldquo;The provider says there&rsquo;s no fault&rdquo;",
+     "a provider testing to the network boundary and finding it healthy. That test is often accurate and still irrelevant, because the fault is intermittent and their test is not.",
+     "Build an evidence pack &mdash; timestamps, line statistics, packet loss over days rather than minutes. Providers respond to data. A support call describing frustration goes to the same queue every time."),
+    ("&ldquo;It started after the power went out&rdquo;",
+     "hardware that did not survive the event, or that came back in the wrong order. Switches, routers and access points are all vulnerable to surges, and a device can be damaged without dying.",
+     "Check whether everything actually came back, in the right sequence, and whether anything is now running degraded. Partial failures after an outage are common and much harder to spot than total ones."),
+]
+
+EXAMPLE_1 = example(
+    "Eighteen months, three providers, one failing injector",
+    "A Gold Coast business had changed internet providers twice in eighteen months chasing intermittent dropouts. Each new provider tested the line, declared it healthy, and each was right. The dropouts continued regardless.",
+    "Continuous monitoring over eleven days showed the outages had nothing to do with the internet connection at all. A power-over-Ethernet injector feeding a wireless bridge was failing under thermal load, dropping the link for between forty seconds and four minutes whenever the plant room warmed up. No provider test would ever have found it, because no provider test looked at that device.",
+    "Replaced the injector, then relocated it out of the plant room so the same failure mode could not recur.",
+    "The dropouts stopped. The business had spent eighteen months and two contract changes on a fault that a $90 part was causing &mdash; and would have kept changing providers, because every provider they tried was telling them the truth.")
+
+EXAMPLE_2 = example(
+    "The 2pm dropout that was doing exactly what it was told",
+    "A real estate agency reported that their internet became unusable at two o&rsquo;clock every weekday afternoon and recovered by about half past three. It had been going on for months and had already survived a modem replacement.",
+    "A cloud backup had been configured years earlier by a previous provider to run at 2pm on weekdays &mdash; presumably intended as a quiet period at the time. It was consuming the entire upload capacity for ninety minutes, which starved every phone call, video meeting and cloud application in the office.",
+    "Moved the backup to overnight, applied traffic shaping so it could never again take the whole connection, and confirmed the backup was still completing and still restorable.",
+    "The afternoon dropouts ended that week at no cost. The backup was not the problem &mdash; the schedule was, and nobody had revisited it since the day it was set.")
 
 FAQS = [   (   'Why is our office internet so slow?',
         'In most Gold Coast offices the connection is not the bottleneck — saturated WiFi, channel interference, a failing cable or switch port, or a device flooding the network usually is. bcom ICT '
@@ -95,6 +130,30 @@ PAGE = {
                         'fault found". We handle the escalation — see <a '
                         'href="/nbn-internet-support-gold-coast">business NBN and internet '
                         'support</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The faults that are never what they look like</h2>
+      <p>Network troubleshooting is mostly the business of disproving the obvious explanation.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a proper diagnosis looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Business NBN & Internet Support', '/nbn-internet-support-gold-coast'),

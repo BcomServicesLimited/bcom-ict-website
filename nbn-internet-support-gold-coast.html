@@ -325,6 +325,47 @@
     <ul class="ticks"><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span><strong>4G or 5G backup</strong> that takes over automatically when the primary connection drops</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span><strong>Phones keep working</strong> — critical if you are on VoIP, where an internet outage otherwise takes your phones with it</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span><strong>EFTPOS keeps working</strong>, which for retail and hospitality is the difference between trading and closing</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span><strong>Automatic, not manual</strong> — nobody should be plugging in a hotspot while customers wait</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span><strong>Tested</strong>, so you know it actually cuts over rather than assuming it will</span></li></ul>
   </div>
 </section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The internet faults we are actually called to</h2>
+      <p>Most business internet complaints are one of these six, and only two of them are solved by paying for more speed.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>&ldquo;It crawls every afternoon&rdquo;</h4><p class="cause"><span>Usually</span> contention. A residential-grade service shares capacity with the neighbourhood, and the neighbourhood comes home at three.</p><p class="fix"><span>What we do</span> Measure the drop across a week to establish the pattern, then decide whether the answer is a business-grade service with a committed rate or simply a better plan. Businesses on a residential service are usually paying for a problem they did not know they had bought.</p></div><div class="issue"><h4>&ldquo;The speed test is fine but our calls break up&rdquo;</h4><p class="cause"><span>Usually</span> jitter and packet loss, not bandwidth. Voice and video need consistency far more than they need speed, and a speed test measures neither.</p><p class="fix"><span>What we do</span> Test the things that actually matter to a call &mdash; latency variation and loss over time. A connection can pass a speed test comfortably and still be unusable for a phone call, which is why the speed test keeps misleading people.</p></div><div class="issue"><h4>&ldquo;It drops out when it rains&rdquo;</h4><p class="cause"><span>Usually</span> copper. On fibre-to-the-node services the last stretch is still copper, and water reaching a joint or a damaged section is a genuine and very common fault.</p><p class="fix"><span>What we do</span> Log the sync events against the weather to build a case, then escalate with that evidence. Weather-correlated faults are provable, and a provable fault is one a provider will act on.</p></div><div class="issue"><h4>&ldquo;We pay for 100/40 and get 45&rdquo;</h4><p class="cause"><span>Usually</span> the line, the plan, or the equipment &mdash; and it is worth knowing which before anyone is blamed. Distance from the node, an ageing router, or a plan that was never what anyone thought it was.</p><p class="fix"><span>What we do</span> Test at the boundary and inside the network separately. If the connection delivers its rate at the wall and not at the desk, the internet service is not the problem and changing it will not help.</p></div><div class="issue"><h4>&ldquo;We&rsquo;ve reported it three times and they keep closing the ticket&rdquo;</h4><p class="cause"><span>Usually</span> an automated test run at a moment when the line was healthy. Intermittent faults are invisible to a test that lasts ninety seconds.</p><p class="fix"><span>What we do</span> Present continuous data rather than a description. We escalate with line statistics, drop timestamps and loss measurements, which moves the conversation from opinion to record.</p></div><div class="issue"><h4>&ldquo;When it goes down, we stop&rdquo;</h4><p class="cause"><span>Usually</span> a single connection with nothing behind it. This is a design decision that was never consciously made &mdash; the business simply never added a second path.</p><p class="fix"><span>What we do</span> Add failover. A 4G or 5G backup that takes over automatically turns a full-day outage into a slower afternoon, and it costs a fraction of what the day would have.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What dealing with a provider actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Three weeks of line statistics, and the provider fixed it in four days</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A caf&eacute; group was losing EFTPOS during the lunch rush at two of its three sites. Both affected sites were on fibre-to-the-node. The provider had tested twice, found nothing, and closed both tickets.</p></div>
+    <div><h4>What we found</h4><p>Continuous logging showed the connection was resynchronising several times an hour at both sites, with the frequency rising sharply in wet weather. The resyncs lasted only seconds &mdash; long enough to kill a card transaction, short enough that no provider test would ever land on one. Both sites traced back to the same street cabinet.</p></div>
+    <div><h4>What we did</h4><p>Compiled three weeks of sync logs, drop timestamps and rainfall correlation into a single escalation rather than another support call, and added 4G failover at both sites while the fault was outstanding.</p></div>
+    <div><h4>The outcome</h4><p>The provider located and repaired a water-affected joint within four days of receiving the evidence. The failover stayed in place afterwards, because the cost of it was less than one lost lunch service.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>The outage that cost an afternoon instead of a day</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A professional services firm of fourteen people had everything in the cloud &mdash; files, email, phones and their practice management system. A single internet connection stood between the business and all of it, which nobody had thought about in those terms.</p></div>
+    <div><h4>What we found</h4><p>Reviewing the setup before anything went wrong, the exposure was total: an outage of any length stopped every function of the business simultaneously, including the phones customers would use to ask what was happening.</p></div>
+    <div><h4>What we did</h4><p>Installed a router with automatic 4G failover, tested it by physically disconnecting the primary service during a quiet period, and confirmed calls stayed up through the switchover.</p></div>
+    <div><h4>The outcome</h4><p>Eight months later a contractor cut the fibre in the street. The office noticed a brief pause, kept working on failover for most of a day at reduced speed, and did not lose a booking or a call. The equipment had cost less than the day would have.</p></div>
+  </div>
+</div>
+  </div>
+</section>
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

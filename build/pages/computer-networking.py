@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Everything is slow, but the speed test is fine&rdquo;",
+     "a bottleneck inside the building rather than on the internet connection. A speed test measures the path to the internet and tells you nothing about the path to your own server.",
+     "Check the negotiated link speed on every port rather than the advertised one. A single damaged run negotiating at 100Mbps instead of 1Gbps will drag an entire office down, and it does not announce itself."),
+    ("&ldquo;It drops out at the same time every afternoon&rdquo;",
+     "something on a schedule &mdash; a backup, a sync, an antivirus update &mdash; saturating a link that has no capacity to spare. Occasionally it is a second device handing out IP addresses alongside the real one.",
+     "Watch the traffic across a full day instead of guessing. A fault that keeps time is nearly always caused by something that also keeps time, which makes it one of the easier faults to pin down once anyone actually looks."),
+    ("&ldquo;We plugged something in and half the office went offline&rdquo;",
+     "a loop. Someone has connected both ends of a patch lead into the same unmanaged switch, or joined two wall ports, and the network is now flooding itself.",
+     "Find and break the loop, then put loop protection on the switching so it cannot happen twice. Cheap unmanaged switches under desks are the usual culprit, and they are worth removing rather than tolerating."),
+    ("&ldquo;One site works and the other doesn&rsquo;t&rdquo;",
+     "the link between sites, not the sites themselves. A wireless bridge that has drifted out of alignment, a VPN dropping and re-establishing, or routing that was never set up symmetrically.",
+     "Test the link in isolation before touching anything at either end. Multi-site faults get blamed on the far site by the near site and vice versa, which is how they survive for years."),
+    ("&ldquo;It was fine until we moved the desks&rdquo;",
+     "outlets that were never live being pressed into service, or a patch panel repatched by whoever moved the furniture. The network did not change &mdash; what it was asked to do changed.",
+     "Trace what is actually connected where and patch it properly. This is the fault most often described as inexplicable, and it is almost always explicable within twenty minutes of opening the cabinet."),
+    ("&ldquo;Nobody knows what any of it does&rdquo;",
+     "a network that grew rather than was designed &mdash; added to by several providers over a decade, none of whom wrote anything down.",
+     "Document it. Ports, VLANs, addresses, what each device is for and who supplied it. Not glamorous, but it converts every future fault from an investigation into a lookup, and it is yours to keep."),
+]
+
+EXAMPLE_1 = example(
+    "Two years of blaming the server, and it was one cable",
+    "An accounting firm of twenty-two staff had been told their file server was undersized. Opening a client file took the best part of a minute, and it had been getting slowly worse for two years. A quote to replace the server was already on the table.",
+    "The server was fine. The single cable running from the server cabinet to the main office switch had been damaged at some point and was negotiating at 100Mbps instead of 1Gbps. Every file the office opened crossed that one link. Nothing reported an error, because from the network&rsquo;s point of view nothing was wrong &mdash; it had simply agreed to run ten times slower.",
+    "Replaced and certified the run, then checked every other link in the building for the same thing and found two more.",
+    "File opens went from roughly forty seconds to under three. The server they were about to replace is still in service. The fault had cost them two years of lost minutes and would have cost them a server on top.")
+
+EXAMPLE_2 = example(
+    "The $28,000 upgrade they didn&rsquo;t need",
+    "A manufacturer running two buildings on one site had been quoted for a complete switching replacement to fix persistent slowness between the office and the factory. They asked for a second opinion before signing.",
+    "The switching was adequate. The two buildings were joined by a wireless bridge mounted on the office roof, and a tree planted after the bridge was installed had grown into the path. Performance had degraded over three years at roughly the rate the tree grew, which is why nobody connected the two.",
+    "Relocated and re-aimed the bridge to a clear line of sight, then measured the link before and after so the improvement was demonstrable rather than asserted.",
+    "Throughput between buildings returned to full. The quoted upgrade was not carried out, because it would not have fixed anything &mdash; new switches at both ends of an obstructed radio link perform exactly as badly as old ones.")
 
 FAQS = [   (   'Who installs business networks on the Gold Coast?',
         'bcom ICT designs, installs and supports business networks across the Gold Coast — switching, routing, firewalls, structured cabling and business WiFi — delivered as one system with a single '
@@ -80,6 +115,30 @@ PAGE = {
                         'before somebody reports them. Which suits you depends on how much a day of '
                         'downtime costs, and we will give you an honest view rather than a default '
                         'answer.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The network faults we are actually called to</h2>
+      <p>Six complaints account for most of what we see. Only one of them usually needs new hardware.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What fixing a network actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Office Network Cabling', '/network-cabling-for-offices-gold-coast'),

@@ -152,6 +152,35 @@ Each chunk ends with a commit and a push. Tick as they land.
       file. Built the 4 PBX brand pages rather than redirecting them.
       **Remaining work is Royce's, in the Cloudflare dashboard — see `CUTOVER.md`.**
 
+### Depth pass — every service page to 1,500+ words
+
+Two new components in `layout.py` carry this: `issues()` renders symptom /
+usual cause / what we do (symptom-first, because that is how people search),
+and `example()` renders a worked engagement labelled **representative** —
+drawn from real work with identifying detail removed, since we do not name
+clients without written permission.
+
+Every symptom heading and every example title is unique site-wide, checked
+on each pass. **126 symptom blocks and 47 worked examples, no duplicates.**
+
+- [x] **Chunk A — 6 core service pages** · 5,004 -> 10,238 words
+- [x] **Chunk B — 8 security & compliance pages** · 7,251 -> 13,132 words
+      Leans on the findings that decide outcomes rather than tidy results: the
+      backup NAS mapped with the server's own admin credentials, the MFA
+      exemption nobody revisited, the firewall rule for a supplier four years
+      gone. The incident response page documents what clients have usually
+      already done before we arrive, and what each of those costs.
+- [x] **Chunk C — 8 networks & telecom pages** · 7,377 -> 13,338 words
+      Now carries real pricing as well as depth. Two examples are deliberately
+      about *not* selling: the $28,000 switching upgrade that was a tree grown
+      into a wireless path, and the server replacement that was one damaged
+      cable. Phone cabling documents the NBN migration casualties — the lift
+      emergency phone and the back-to-base alarm that had both been silently
+      dead for years.
+- [ ] **Chunk D — 8 industry pages** · 6,223 words, ~5,800 to write
+- [ ] **Chunk E — 13 hardware, AI & consulting pages** · 8,548 words, ~11,000 to write
+- [ ] **Chunk F — remaining 45 pages** · ~23,400 to write
+
 ---
 
 ## Blocked / waiting on Royce

@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;The second node shows full signal but it&rsquo;s slow&rdquo;",
+     "the backhaul. The node is showing you how well your device is connected to it, not how well it is connected back to the main unit. Those are entirely different numbers and only one of them is displayed.",
+     "Position nodes by the strength of the link back to the base, not by where the dead spot is. A node placed in the weak area is itself in a weak area, which is the single most common mesh mistake."),
+    ("&ldquo;It&rsquo;s worse than the router it replaced&rdquo;",
+     "nodes placed too far apart, or all three plugged in on the same side of the house because that is where the power points are.",
+     "Survey before placing. Mesh is genuinely good technology and unusually sensitive to positioning &mdash; the same three nodes can be excellent or useless depending on where they sit."),
+    ("&ldquo;My laptop clings to the wrong node&rdquo;",
+     "a device holding a connection it can still technically use rather than moving to the better one nearby. Devices decide when to roam, and they are conservative about it.",
+     "Tune the transmit power so a distant node stops looking viable from across the house. Counter-intuitively, turning the nodes down improves roaming, where turning them up makes it worse."),
+    ("&ldquo;It drops when I walk to the other end of the house&rdquo;",
+     "a coverage gap between nodes, or a handover happening too late to be seamless. On a call the gap is obvious; on email nobody notices.",
+     "Measure the coverage along the paths people actually walk rather than assuming a circle around each node. Building materials decide this, and rendered brick, foil insulation and a double-glazed window all behave very differently."),
+    ("&ldquo;The nodes keep dropping off&rdquo;",
+     "interference, an unstable wireless backhaul, or firmware that has not been updated since the boxes were opened.",
+     "Update the firmware, check what else is transmitting nearby, and where the building allows it, run a cable to the node. A wired node is not really mesh any more, and it is dramatically more reliable."),
+    ("&ldquo;Video calls freeze but streaming is fine&rdquo;",
+     "a connection with enough capacity but not enough consistency. Streaming buffers several seconds ahead and hides the problem; a live call cannot.",
+     "Test for latency variation rather than speed. A home connection that streams flawlessly can still be unusable for a full day of meetings, which is why working from home exposes faults nobody noticed at the weekend."),
+]
+
+EXAMPLE_1 = example(
+    "Three nodes, all in the wrong places",
+    "A senior executive working from home four days a week was dropping out of video meetings from the upstairs study. A three-node mesh system had been bought and installed on the advice of a retailer, and had not helped.",
+    "All three nodes were downstairs, positioned around the power points rather than around the house. The study node was two rooms and a floor away from the base with a tiled bathroom in between, so its backhaul was poor even though it reported full signal to the laptop sitting beside it.",
+    "Surveyed the actual coverage, moved the base unit to a central position, relocated one node to the top of the stairs where it had a clear path back, and ran a cable to the study node using an existing conduit nobody had realised was there.",
+    "Meetings stopped dropping. No new hardware was bought &mdash; the equipment already in the house was adequate and had simply never been positioned by anyone who measured anything.")
+
+EXAMPLE_2 = example(
+    "Small premises, three rooms, one wireless network that had to be right",
+    "An allied health practice operating from three consulting rooms was running practice management software in the cloud. Sessions were dropping mid-appointment, which meant clinical notes being re-entered while a patient waited.",
+    "A consumer mesh kit was covering the premises adequately for signal, but patient devices, staff phones and a smart television in the waiting room were all sharing the same network. The dropouts correlated with the waiting room being busy.",
+    "Separated the practice systems from guest access so patients could not affect clinical traffic, repositioned the nodes to give each consulting room a strong path back to the base, and set the practice network to prioritise the software the clinicians depend on.",
+    "Sessions stopped dropping. The waiting room still has usable WiFi, and it can no longer interfere with a consultation &mdash; which is a separation the practice had assumed it already had.")
 
 FAQS = [   (   'Do you install mesh WiFi on the Gold Coast?',
         'Yes. bcom ICT installs and configures mesh WiFi systems — Eero, Google Nest and Ubiquiti — for Gold Coast home offices and small premises. Node placement is based on measured signal across '
@@ -80,6 +115,30 @@ PAGE = {
                                  'A separate guest network, kept away from your work devices',
                                  'Current security settings, firmware updated, and the default admin '
                                  'password changed']}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>Why the mesh you bought isn&rsquo;t working</h2>
+      <p>Mesh systems are good. Almost every complaint we see about one comes down to where the nodes were put.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a proper mesh installation looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('WiFi Range Extension', '/wifi-range-extension-gold-coast'),

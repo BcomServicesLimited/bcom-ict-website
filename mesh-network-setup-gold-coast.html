@@ -331,6 +331,47 @@
     <ul class="ticks"><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>Signal measured across the space before anything is positioned</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>Nodes placed for coverage and for backhaul between them, not just near power points</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>Wired backhaul where a cable run is practical — always better than wireless between nodes</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>One network name across the whole space, so devices roam instead of clinging</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>A separate guest network, kept away from your work devices</span></li><li><span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/><path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/></svg></span><span>Current security settings, firmware updated, and the default admin password changed</span></li></ul>
   </div>
 </section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>Why the mesh you bought isn&rsquo;t working</h2>
+      <p>Mesh systems are good. Almost every complaint we see about one comes down to where the nodes were put.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>&ldquo;The second node shows full signal but it&rsquo;s slow&rdquo;</h4><p class="cause"><span>Usually</span> the backhaul. The node is showing you how well your device is connected to it, not how well it is connected back to the main unit. Those are entirely different numbers and only one of them is displayed.</p><p class="fix"><span>What we do</span> Position nodes by the strength of the link back to the base, not by where the dead spot is. A node placed in the weak area is itself in a weak area, which is the single most common mesh mistake.</p></div><div class="issue"><h4>&ldquo;It&rsquo;s worse than the router it replaced&rdquo;</h4><p class="cause"><span>Usually</span> nodes placed too far apart, or all three plugged in on the same side of the house because that is where the power points are.</p><p class="fix"><span>What we do</span> Survey before placing. Mesh is genuinely good technology and unusually sensitive to positioning &mdash; the same three nodes can be excellent or useless depending on where they sit.</p></div><div class="issue"><h4>&ldquo;My laptop clings to the wrong node&rdquo;</h4><p class="cause"><span>Usually</span> a device holding a connection it can still technically use rather than moving to the better one nearby. Devices decide when to roam, and they are conservative about it.</p><p class="fix"><span>What we do</span> Tune the transmit power so a distant node stops looking viable from across the house. Counter-intuitively, turning the nodes down improves roaming, where turning them up makes it worse.</p></div><div class="issue"><h4>&ldquo;It drops when I walk to the other end of the house&rdquo;</h4><p class="cause"><span>Usually</span> a coverage gap between nodes, or a handover happening too late to be seamless. On a call the gap is obvious; on email nobody notices.</p><p class="fix"><span>What we do</span> Measure the coverage along the paths people actually walk rather than assuming a circle around each node. Building materials decide this, and rendered brick, foil insulation and a double-glazed window all behave very differently.</p></div><div class="issue"><h4>&ldquo;The nodes keep dropping off&rdquo;</h4><p class="cause"><span>Usually</span> interference, an unstable wireless backhaul, or firmware that has not been updated since the boxes were opened.</p><p class="fix"><span>What we do</span> Update the firmware, check what else is transmitting nearby, and where the building allows it, run a cable to the node. A wired node is not really mesh any more, and it is dramatically more reliable.</p></div><div class="issue"><h4>&ldquo;Video calls freeze but streaming is fine&rdquo;</h4><p class="cause"><span>Usually</span> a connection with enough capacity but not enough consistency. Streaming buffers several seconds ahead and hides the problem; a live call cannot.</p><p class="fix"><span>What we do</span> Test for latency variation rather than speed. A home connection that streams flawlessly can still be unusable for a full day of meetings, which is why working from home exposes faults nobody noticed at the weekend.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a proper mesh installation looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Three nodes, all in the wrong places</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A senior executive working from home four days a week was dropping out of video meetings from the upstairs study. A three-node mesh system had been bought and installed on the advice of a retailer, and had not helped.</p></div>
+    <div><h4>What we found</h4><p>All three nodes were downstairs, positioned around the power points rather than around the house. The study node was two rooms and a floor away from the base with a tiled bathroom in between, so its backhaul was poor even though it reported full signal to the laptop sitting beside it.</p></div>
+    <div><h4>What we did</h4><p>Surveyed the actual coverage, moved the base unit to a central position, relocated one node to the top of the stairs where it had a clear path back, and ran a cable to the study node using an existing conduit nobody had realised was there.</p></div>
+    <div><h4>The outcome</h4><p>Meetings stopped dropping. No new hardware was bought &mdash; the equipment already in the house was adequate and had simply never been positioned by anyone who measured anything.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Small premises, three rooms, one wireless network that had to be right</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>An allied health practice operating from three consulting rooms was running practice management software in the cloud. Sessions were dropping mid-appointment, which meant clinical notes being re-entered while a patient waited.</p></div>
+    <div><h4>What we found</h4><p>A consumer mesh kit was covering the premises adequately for signal, but patient devices, staff phones and a smart television in the waiting room were all sharing the same network. The dropouts correlated with the waiting room being busy.</p></div>
+    <div><h4>What we did</h4><p>Separated the practice systems from guest access so patients could not affect clinical traffic, repositioned the nodes to give each consulting room a strong path back to the base, and set the practice network to prioritise the software the clinicians depend on.</p></div>
+    <div><h4>The outcome</h4><p>Sessions stopped dropping. The waiting room still has usable WiFi, and it can no longer interfere with a consultation &mdash; which is a separation the practice had assumed it already had.</p></div>
+  </div>
+</div>
+  </div>
+</section>
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

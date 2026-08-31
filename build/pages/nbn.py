@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;It crawls every afternoon&rdquo;",
+     "contention. A residential-grade service shares capacity with the neighbourhood, and the neighbourhood comes home at three.",
+     "Measure the drop across a week to establish the pattern, then decide whether the answer is a business-grade service with a committed rate or simply a better plan. Businesses on a residential service are usually paying for a problem they did not know they had bought."),
+    ("&ldquo;The speed test is fine but our calls break up&rdquo;",
+     "jitter and packet loss, not bandwidth. Voice and video need consistency far more than they need speed, and a speed test measures neither.",
+     "Test the things that actually matter to a call &mdash; latency variation and loss over time. A connection can pass a speed test comfortably and still be unusable for a phone call, which is why the speed test keeps misleading people."),
+    ("&ldquo;It drops out when it rains&rdquo;",
+     "copper. On fibre-to-the-node services the last stretch is still copper, and water reaching a joint or a damaged section is a genuine and very common fault.",
+     "Log the sync events against the weather to build a case, then escalate with that evidence. Weather-correlated faults are provable, and a provable fault is one a provider will act on."),
+    ("&ldquo;We pay for 100/40 and get 45&rdquo;",
+     "the line, the plan, or the equipment &mdash; and it is worth knowing which before anyone is blamed. Distance from the node, an ageing router, or a plan that was never what anyone thought it was.",
+     "Test at the boundary and inside the network separately. If the connection delivers its rate at the wall and not at the desk, the internet service is not the problem and changing it will not help."),
+    ("&ldquo;We&rsquo;ve reported it three times and they keep closing the ticket&rdquo;",
+     "an automated test run at a moment when the line was healthy. Intermittent faults are invisible to a test that lasts ninety seconds.",
+     "Present continuous data rather than a description. We escalate with line statistics, drop timestamps and loss measurements, which moves the conversation from opinion to record."),
+    ("&ldquo;When it goes down, we stop&rdquo;",
+     "a single connection with nothing behind it. This is a design decision that was never consciously made &mdash; the business simply never added a second path.",
+     "Add failover. A 4G or 5G backup that takes over automatically turns a full-day outage into a slower afternoon, and it costs a fraction of what the day would have."),
+]
+
+EXAMPLE_1 = example(
+    "Three weeks of line statistics, and the provider fixed it in four days",
+    "A caf&eacute; group was losing EFTPOS during the lunch rush at two of its three sites. Both affected sites were on fibre-to-the-node. The provider had tested twice, found nothing, and closed both tickets.",
+    "Continuous logging showed the connection was resynchronising several times an hour at both sites, with the frequency rising sharply in wet weather. The resyncs lasted only seconds &mdash; long enough to kill a card transaction, short enough that no provider test would ever land on one. Both sites traced back to the same street cabinet.",
+    "Compiled three weeks of sync logs, drop timestamps and rainfall correlation into a single escalation rather than another support call, and added 4G failover at both sites while the fault was outstanding.",
+    "The provider located and repaired a water-affected joint within four days of receiving the evidence. The failover stayed in place afterwards, because the cost of it was less than one lost lunch service.")
+
+EXAMPLE_2 = example(
+    "The outage that cost an afternoon instead of a day",
+    "A professional services firm of fourteen people had everything in the cloud &mdash; files, email, phones and their practice management system. A single internet connection stood between the business and all of it, which nobody had thought about in those terms.",
+    "Reviewing the setup before anything went wrong, the exposure was total: an outage of any length stopped every function of the business simultaneously, including the phones customers would use to ask what was happening.",
+    "Installed a router with automatic 4G failover, tested it by physically disconnecting the primary service during a quiet period, and confirmed calls stayed up through the switchover.",
+    "Eight months later a contractor cut the fibre in the street. The office noticed a brief pause, kept working on failover for most of a day at reduced speed, and did not lose a booking or a call. The equipment had cost less than the day would have.")
 
 FAQS = [   (   'Why is our business internet so slow?',
         'In most cases the connection is not the cause — saturated WiFi, a failing cable or switch port, an underpowered router or a device flooding the network usually is. bcom ICT measures the '
@@ -80,6 +115,30 @@ PAGE = {
                                  'hotspot while customers wait',
                                  '<strong>Tested</strong>, so you know it actually cuts over rather than '
                                  'assuming it will']}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The internet faults we are actually called to</h2>
+      <p>Most business internet complaints are one of these six, and only two of them are solved by paying for more speed.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What dealing with a provider actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Network Troubleshooting', '/network-troubleshooting-diagnostics-gold-coast'),
         ('Business WiFi Installation', '/business-wifi-gold-coast'),
