@@ -74,9 +74,10 @@ Each chunk ends with a commit and a push. Tick as they land.
       onboarding · 24/7 SOC · cyber incident response · Essential Eight.
       `build.py` now runs a **claims guard** that fails loudly on any overstated
       ISO / ACMA / Microsoft-tier claim. It has already caught one live regression.
-- [ ] **Chunk 4 — Company & conversion (7)**
-      About · Our team (Person schema + credentials) · Contact · Reviews ·
-      Case studies · Pricing · Support.
+- [x] **Chunk 4 — Company & conversion (7)**
+      About · Our team · Contact · Reviews · Case studies · Pricing · Support.
+      Person schema with `hasCredential` on Royce (ITIL 4) and Ollie (ISO 42001,
+      BSI) — credentials sit on the Person node, never the Organization.
 - [ ] **Chunk 5 — Remaining services (~22)**
       Remote/on-site support, IT consulting, M365, Copilot, AI services, backup,
       networking, cabling, PBX brands, hardware, repair (business-framed).
@@ -99,7 +100,7 @@ Each chunk ends with a commit and a push. Tick as they land.
 | **Search Console export** — 12 months, page-level, impressions + clicks. *Said "see attached" but no file came through.* | Chunk 11 — decides which of the 11 WiFi brand pages get consolidated vs kept |
 | **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
 | **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
-| Permission to name the national retail chain client | Chunk 4 case studies |
+| Permission to name the national retail chain client | `/case-studies` — written accurately but unnamed, with the reason stated in the FAQ |
 | Cloudflare: confirm **Block AI bots = OFF** and managed robots.txt disabled on the zone | Before go-live — silently 403s every AI crawler |
 | Cloudflare Access on the `.pages.dev` staging domain | Before the site is publicly reachable |
 
@@ -133,6 +134,8 @@ call from the page module:
 
 | Page | What to confirm |
 |---|---|
+| `/pricing` | Current call-out fee, hourly rate and managed IT per-seat pricing. Page explains all three commercial models but publishes **no figures** — a wrong number is worse than none. |
+| `/contact` | Form posts to `FORM_ENDPOINT` in `build/site_data.py`, currently the placeholder `REPLACE_WITH_BCOM_FORM_ID`. Create the form, paste the ID, rebuild. Page leads with phone and email so nothing is broken meanwhile. |
 | `/ransomware-reporting-australia` | Cyber Security Act 2024 — current turnover threshold and reporting window for mandatory ransomware payment reporting (Dept of Home Affairs) |
 | `/notifiable-data-breach-guide-australia` | Small business exemption threshold and the current list of exceptions (OAIC); confirm the 30-day assessment window is unchanged |
 

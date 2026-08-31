@@ -93,5 +93,11 @@ FOOTER = {
 }
 
 
+# Contact form endpoint. REPLACE before go-live — see BUILD-STATUS.md.
+# Royce needs to create the form and paste the ID here; until then the form
+# posts nowhere and the page leads with phone and email instead.
+FORM_ENDPOINT = "REPLACE_WITH_BCOM_FORM_ID"
+
+
 def address_line():
     return f"{BIZ['street']}, {BIZ['suburb']} {BIZ['state']} {BIZ['postcode']}"

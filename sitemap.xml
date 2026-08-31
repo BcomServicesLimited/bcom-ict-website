@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.bcomservices.com/</loc><lastmod>2026-08-31</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.bcomservices.com/about</loc><lastmod>2026-08-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.bcomservices.com/business-phone-systems-gold-coast</loc><lastmod>2026-08-31</lastmod><priority>0.85</priority></url>
   <url><loc>https://www.bcomservices.com/business-wifi-gold-coast</loc><lastmod>2026-08-31</lastmod><priority>0.85</priority></url>
+  <url><loc>https://www.bcomservices.com/case-studies</loc><lastmod>2026-08-31</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.bcomservices.com/cloud-computing-service-gold-coast</loc><lastmod>2026-08-31</lastmod><priority>0.85</priority></url>
+  <url><loc>https://www.bcomservices.com/contact</loc><lastmod>2026-08-31</lastmod><priority>0.85</priority></url>
   <url><loc>https://www.bcomservices.com/cyber-incident-response-gold-coast</loc><lastmod>2026-08-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.bcomservices.com/cybersecurity-services-gold-coast</loc><lastmod>2026-08-31</lastmod><priority>0.9</priority></url>
   <url><loc>https://www.bcomservices.com/data-handling-and-sovereignty</loc><lastmod>2026-08-31</lastmod><priority>0.75</priority></url>
@@ -14,9 +17,13 @@
   <url><loc>https://www.bcomservices.com/managed-it-services-for-small-businesses-gold-coast</loc><lastmod>2026-08-31</lastmod><priority>0.9</priority></url>
   <url><loc>https://www.bcomservices.com/notifiable-data-breach-guide-australia</loc><lastmod>2026-08-31</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.bcomservices.com/onboarding-first-30-days</loc><lastmod>2026-08-31</lastmod><priority>0.75</priority></url>
+  <url><loc>https://www.bcomservices.com/our-team</loc><lastmod>2026-08-31</lastmod><priority>0.75</priority></url>
+  <url><loc>https://www.bcomservices.com/pricing</loc><lastmod>2026-08-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.bcomservices.com/ransomware-reporting-australia</loc><lastmod>2026-08-31</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.bcomservices.com/reviews</loc><lastmod>2026-08-31</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.bcomservices.com/security-operations-centre-gold-coast</loc><lastmod>2026-08-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.bcomservices.com/service-levels-and-security</loc><lastmod>2026-08-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.bcomservices.com/services</loc><lastmod>2026-08-31</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.bcomservices.com/support</loc><lastmod>2026-08-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.bcomservices.com/trust-centre</loc><lastmod>2026-08-31</lastmod><priority>0.85</priority></url>
 </urlset>

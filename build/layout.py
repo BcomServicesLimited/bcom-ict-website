@@ -11,7 +11,7 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "3"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "4"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 def head(p):
@@ -115,6 +115,25 @@ def schema(p):
                 "acceptedAnswer": {"@type": "Answer", "text": a},
             } for q, a in p["faqs"]],
         })
+    for person in p.get("people", []):
+        node = {
+            "@type": "Person",
+            "@id": f"{SITE}{p['path']}#{person['slug']}",
+            "name": person["name"],
+            "jobTitle": person["role"],
+            "worksFor": {"@id": f"{SITE}/#localbusiness"},
+        }
+        if person.get("photo"):
+            node["image"] = f"{SITE}/assets/img/{person['photo']}"
+        if person.get("credentials"):
+            node["hasCredential"] = [{
+                "@type": "EducationalOccupationalCredential",
+                "name": c["name"],
+                "credentialCategory": "certification",
+                **({"recognizedBy": {"@type": "Organization", "name": c["issuer"]}}
+                   if c.get("issuer") else {}),
+            } for c in person["credentials"]]
+        graph.append(node)
     if p.get("crumbs"):
         items = [{"@type": "ListItem", "position": 1, "name": "Home", "item": SITE}]
         for i, (label, href) in enumerate(p["crumbs"], start=2):

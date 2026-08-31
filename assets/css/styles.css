@@ -455,3 +455,65 @@ tbody tr:last-child td{border-bottom:0;}
 .priority--p1{color:var(--alert);}
 .priority--p2{color:var(--warn);}
 .priority--p3,.priority--p4{color:var(--slate);}
+
+/* ---------- team ---------- */
+.people{display:grid;gap:var(--s6);margin-block:var(--s7);}
+@media (min-width:700px){.people{grid-template-columns:repeat(3,1fr);}}
+.person{display:flex;flex-direction:column;gap:var(--s3);}
+.person img{width:104px;height:104px;border-radius:50%;object-fit:cover;border:3px solid var(--blue-tint);}
+.person h3{font-size:1.125rem;}
+.person .role{font-size:.8125rem;font-weight:600;color:var(--blue);letter-spacing:.01em;margin-top:-6px;}
+.person p{font-size:.9375rem;color:var(--slate);}
+.person .certs{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:var(--s3);}
+.person .certs span{
+  font-family:var(--display);font-size:.6875rem;font-weight:700;letter-spacing:.05em;
+  background:var(--good-tint);color:var(--good);border:1px solid currentColor;
+  border-radius:3px;padding:3px 8px;
+}
+
+/* ---------- reviews ---------- */
+.quotes{display:grid;gap:var(--s5);margin-block:var(--s7);}
+@media (min-width:820px){.quotes{grid-template-columns:repeat(2,1fr);}}
+.quote{
+  background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--blue);
+  border-radius:var(--radius);padding:var(--s6);display:flex;flex-direction:column;gap:var(--s3);
+}
+.quote .stars{color:#E8A33D;letter-spacing:2px;font-size:.9375rem;}
+.quote blockquote{font-size:1.0625rem;line-height:1.6;color:var(--ink-soft);}
+.quote cite{font-style:normal;font-size:.875rem;color:var(--slate);font-weight:600;margin-top:auto;}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;gap:var(--s7);align-items:start;}
+@media (min-width:900px){.contact-grid{grid-template-columns:1fr 1.1fr;gap:var(--s8);}}
+.contact-line{display:flex;gap:var(--s4);align-items:flex-start;padding-block:var(--s4);border-bottom:1px solid var(--line-soft);}
+.contact-line:last-child{border-bottom:0;}
+.contact-line .mark{width:18px;height:9.5px;flex:none;margin-top:.55em;}
+.contact-line dt{font-size:.8125rem;color:var(--slate);margin-bottom:2px;}
+.contact-line dd{font-family:var(--display);font-weight:700;font-size:1.0625rem;color:var(--ink);}
+.contact-line dd a{color:var(--ink);}
+.contact-line dd a:hover{color:var(--blue);}
+.contact-line .sub{font-family:var(--text);font-weight:400;font-size:.875rem;color:var(--slate);margin-top:3px;}
+
+form.enquiry{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s6);display:flex;flex-direction:column;gap:var(--s4);}
+form.enquiry label{font-family:var(--display);font-weight:600;font-size:.875rem;color:var(--ink);display:block;margin-bottom:6px;}
+form.enquiry input,form.enquiry select,form.enquiry textarea{
+  width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:var(--radius-sm);
+  background:var(--paper);font-size:1rem;color:var(--ink);
+}
+form.enquiry input:focus,form.enquiry select:focus,form.enquiry textarea:focus{border-color:var(--blue);outline:none;box-shadow:0 0 0 3px var(--blue-tint);}
+form.enquiry textarea{min-height:130px;resize:vertical;}
+form.enquiry .hint{font-size:.8125rem;color:var(--slate);}
+
+/* ---------- pricing ---------- */
+.tiers{display:grid;gap:var(--s5);margin-block:var(--s7);}
+@media (min-width:820px){.tiers{grid-template-columns:repeat(3,1fr);}}
+.tier{border:1px solid var(--line);border-radius:var(--radius);padding:var(--s6);background:var(--paper);display:flex;flex-direction:column;gap:var(--s3);}
+.tier--feature{border-color:var(--blue);box-shadow:var(--shadow);}
+.tier .label{font-family:var(--display);font-size:.6875rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);}
+.tier h3{font-size:1.25rem;}
+.tier .price{font-family:var(--display);font-size:1.75rem;font-weight:800;color:var(--ink);letter-spacing:-.03em;}
+.tier .price small{display:block;font-size:.8125rem;font-weight:500;color:var(--slate);letter-spacing:0;margin-top:3px;}
+.tier ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:.9375rem;color:var(--slate);margin-top:var(--s2);}
+.tier li{display:flex;gap:10px;align-items:flex-start;}
+.tier .mark{width:14px;height:7.5px;flex:none;margin-top:.55em;}
+.tier .btn{margin-top:auto;}

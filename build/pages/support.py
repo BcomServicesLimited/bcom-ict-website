@@ -1,0 +1,127 @@
+from layout import MARK, cta, faq_block, cards, ticks, related, trust_note
+from site_data import BIZ
+
+ROUTES = [
+    ("Call 07 3041 8993", BIZ["phone_href"],
+     "Answered 24/7, including weekends and public holidays. The fastest route for anything urgent, and the only one to use if you think you've been breached."),
+    ("Email support@bcomservices.com", "mailto:support@bcomservices.com",
+     "Best for things that aren't stopping anyone working. Callback within 4 business hours, every time."),
+    ("Send an enquiry", "/contact",
+     "The form on our contact page, if you'd rather write it down than explain it on the phone."),
+]
+
+PRIORITY = [
+    ("Everyone is affected", "Server down, internet out, phones or email down for the whole office, or signs of ransomware. Call — don't email."),
+    ("A team is blocked", "One department can't work, or a core system is down with a painful workaround. Call."),
+    ("One person is stuck", "Someone can't print, an account is locked, an application won't open. Email is fine."),
+    ("You need something new", "A starter set up, a new device, an access change, planned work. Email or the form — these get scheduled rather than responded to."),
+]
+
+FAQS = [
+    ("How do I get IT support from bcom ICT?",
+     "Call 07 3041 8993 for anything urgent — phones are answered 24/7 including weekends and public holidays. Email support@bcomservices.com for non-urgent issues, with a callback within 4 business hours. For remote support we'll send you a one-time link that lets a technician see your screen with your permission. Existing clients don't need to be managed clients to call."),
+    ("What happens when I call after hours?",
+     "Our AI phone operator answers, takes the details, triages and escalates. It identifies itself as an AI rather than pretending to be a person. Work is actioned during business hours, except for managed and SLA clients on a critical fault, where after-hours attendance is included."),
+    ("How does remote support work?",
+     "We send you a one-time link. You open it, you approve the connection, and a technician can see your screen and take control with your permission. You can watch everything that happens and disconnect at any moment. Nothing stays installed afterwards unless you're a managed client with monitoring in place, which is agreed separately."),
+    ("Do I need to be a managed client to get help?",
+     "No. We take support calls from any business, including ones we've never worked with. Managed clients get contracted response targets and after-hours attendance; everyone else gets a callback within 4 business hours."),
+    ("What do you need from me when I report a problem?",
+     "What's affected — one person or everyone. When it started, and whether anything changed just before. Whether there's a workaround. And any error message, word for word or as a photo. None of it is essential, but all of it saves time."),
+    ("I think we've been hacked. What do I do right now?",
+     "Call 07 3041 8993. Disconnect affected machines from the network but don't power them off — shutting down destroys evidence in memory. Don't delete anything, including the ransom note, and don't wipe and rebuild. See cyber incident response for the full first-hour checklist."),
+]
+
+PAGE = {
+    "path": "/support",
+    "priority": "0.8",
+    "title": "Get Support — bcom ICT Gold Coast IT Helpdesk",
+    "description": "How to get IT support from bcom ICT: call 07 3041 8993 (answered 24/7), email support@bcomservices.com, or request remote support. Callback within 4 business hours.",
+    "hero_kind": "doc",
+    "eyebrow": "Support",
+    "h1": "Need help now?",
+    "lede": "Call 07 3041 8993 — answered 24/7, including weekends and public holidays. You don't need to be an existing client.",
+    "crumbs": [("Support", "/support")],
+    "faqs": FAQS,
+    "reviewed": "August 2026",
+    "body": f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <p class="answer">To get IT support from bcom ICT, call 07 3041 8993 — answered 24/7 including weekends
+    and public holidays — or email support@bcomservices.com for non-urgent issues, with a callback within 4
+    business hours. Remote support is provided via a one-time link you approve. bcom ICT takes support calls
+    from businesses that are not existing clients.</p>
+
+    <div class="grid grid--3" style="margin-top:48px">{cards([(t, h, d) for t, h, d in ROUTES])}</div>
+
+    <div class="vnote" style="border-color:#E8A0A0;background:#FBEEEE;margin-top:40px">
+      <strong>If you think you've been breached</strong>
+      <p>Call <strong>07 3041 8993</strong> rather than emailing. Disconnect affected machines from the
+      network but <strong>don't power them off</strong> — that destroys evidence in memory. Don't delete
+      anything and don't rebuild.
+      <a href="/cyber-incident-response-gold-coast">Full first-hour checklist</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--mist section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Which route</span>
+      <h2>Call or email? It depends who's affected</h2>
+      <p>We'll agree the priority with you when you log it, but this is roughly how we'll classify it.</p>
+    </div>
+    <div class="grid grid--4">{cards([(t, None, d) for t, d in PRIORITY], icon=False)}</div>
+    <p style="margin-top:32px">The full priority matrix, with response targets for managed and non-managed
+    clients, is on <a href="/service-levels-and-security">our service levels page</a>.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="prose-cols">
+      <div>
+        <h2>How remote support works</h2>
+        <p style="margin-top:16px">Most faults don't need anyone on site, and remote is both faster and
+        cheaper — there's no call-out on it.</p>
+        {ticks([
+          "We send you a one-time link — nothing to install permanently",
+          "You open it and approve the connection before anyone can see anything",
+          "You watch the whole session and can disconnect at any moment",
+          "Access ends when the session ends, unless you're a managed client with monitoring agreed separately",
+        ])}
+        <p style="margin-top:24px">If it turns out to need hands on hardware, we'll book an on-site visit —
+        same day where we can — and tell you the call-out and hourly rate before anyone gets in a car.</p>
+      </div>
+      <div>
+        <h2>Before you call</h2>
+        <p style="margin-top:16px">None of this is essential. It just saves time.</p>
+        {ticks([
+          "<strong>Who's affected</strong> — one person, one team, or everyone",
+          "<strong>When it started</strong>, and what changed just before",
+          "<strong>Whether there's a workaround</strong>, or work has genuinely stopped",
+          "<strong>The exact error message</strong> — a photo of the screen is perfect",
+          "<strong>What you've already tried</strong>, so we don't repeat it",
+        ])}
+      </div>
+    </div>
+
+    {trust_note('Phones are answered 24/7 — after hours by our AI operator, which takes details and escalates rather than pretending to be a person. What happens at which hour is set out in full on <a href="/service-levels-and-security">service levels</a>.')}
+  </div>
+</section>
+
+{faq_block(FAQS)}
+
+{related([
+  ("Published service levels", "/service-levels-and-security"),
+  ("Cyber incident response", "/cyber-incident-response-gold-coast"),
+  ("Remote IT Support", "/remote-it-support-gold-coast"),
+  ("Business IT Support", "/it-support-and-services-gold-coast"),
+  ("Contact us", "/contact"),
+  ("Pricing", "/pricing"),
+], heading="Related")}
+
+{cta("Call 07 3041 8993",
+     "Answered 24/7. You don't need to be an existing client, and the first conversation costs nothing.")}
+''',
+}

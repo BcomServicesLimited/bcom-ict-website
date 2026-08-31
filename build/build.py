@@ -140,8 +140,12 @@ def claims():
         t = f.read_text(encoding="utf-8")
         for pat, why in BANNED:
             for m in re.finditer(pat, t, re.I):
-                ctx = t[max(0, m.start() - 220):m.end() + 220].lower()
+                ctx = t[max(0, m.start() - 240):m.end() + 240].lower()
                 if any(sf in ctx for sf in SAFE):
+                    continue
+                # A question is not a claim. "Is bcom ICT ISO certified?" is a
+                # legitimate heading; what matters is the answer beneath it.
+                if "?" in t[m.end():m.end() + 90]:
                     continue
                 hits.append((f.name, m.group(0), why))
     if hits:
