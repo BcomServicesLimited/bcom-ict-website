@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, ticks, steps, related, trust_note
+from layout import MARK, cta, faq_block, ticks, steps, related, trust_note, issues, example
 
 WEEKS = [
     ("Week 1 — we find out what you've got",
@@ -20,6 +20,41 @@ FROM_PROVIDER = [
     "Domain names, DNS and Microsoft 365 tenancy ownership get verified as yours, not the provider's. This is the single most common thing we find registered to someone else.",
     "Nothing is switched off until the replacement is verified working.",
 ]
+
+COMMON_ISSUES = [
+    ("&ldquo;How disruptive is changing providers?&rdquo;",
+     "the concern that keeps businesses with arrangements they have outgrown. It is a real risk and it is manageable.",
+     "Nothing changes on day one except who answers the phone. Discovery and documentation happen first; changes come after we understand what we are changing, and each one is agreed with you."),
+    ("&ldquo;Our current provider has all the passwords&rdquo;",
+     "extremely common, and it is why exits get difficult. Credentials frequently sit in a provider&rsquo;s system rather than the client&rsquo;s.",
+     "We recover ownership properly and move everything into accounts you control. Where an account was set up under a provider&rsquo;s own details, there is a process for that, and we run it rather than leaving you to."),
+    ("&ldquo;What if the outgoing provider is unhelpful?&rdquo;",
+     "occasionally the case. Most handovers are professional; a few are not.",
+     "We can rebuild everything from the environment itself if we have to. A difficult handover slows us down and does not stop us, and it is worth knowing that before you feel trapped."),
+    ("&ldquo;When do you start actually changing things?&rdquo;",
+     "a fair thing to want defined. Providers that change a great deal in week one tend to break things nobody knew depended on each other.",
+     "After discovery, and in an order agreed with you. The first fortnight is mostly finding out what exists &mdash; including the things nobody remembers installing."),
+    ("&ldquo;What do we get at the end of it?&rdquo;",
+     "a question worth asking every provider you consider.",
+     "A documented environment: asset register, network diagram, licence position, credentials in a system you control, and a prioritised list of what we found and what we recommend. Yours to keep whatever happens next."),
+    ("&ldquo;What if it isn&rsquo;t working out?&rdquo;",
+     "a question people are often reluctant to ask at the start of a relationship, which is exactly when it should be asked.",
+     "Managed agreements are month-to-month. We would rather earn the next month than hold a business to a term it regrets, and you leave with everything documented rather than having to argue for it."),
+]
+
+EXAMPLE_1 = example(
+    "Two weeks of finding out, before anything changed",
+    "A business of thirty-five staff moved to us from a provider it had used for six years. There was pressure from within the business to fix several visible annoyances immediately.",
+    "Discovery found three things that would have made an immediate fix a mistake. A server everyone described as a file server was also running a licensing service for the industry application, which nobody had mentioned because nobody knew. A scheduled task on a workstation under a desk was the mechanism by which two systems exchanged data nightly. And a firewall rule that looked redundant was the path a supplier used to reach an ordering integration.",
+    "Documented everything before changing anything, then addressed the visible annoyances in an agreed order with each dependency understood. Moved the nightly data exchange off the workstation under the desk, which was the genuinely urgent item nobody had raised.",
+    "Nothing broke. Every one of those three things would have been switched off inside week one by a provider moving quickly to demonstrate value, and each would have caused an outage nobody could immediately explain.")
+
+EXAMPLE_2 = example(
+    "Recovering accounts the business never owned",
+    "A business changing providers found that several of its most important accounts had been created by the outgoing provider under that provider&rsquo;s own details, including the domain registrar and the firewall management portal.",
+    "Nothing had been done maliciously. Accounts had been created in whatever way was convenient at the time, years earlier, and never revisited. The practical effect was that the business did not own the domain its email depended on, and could not have proved ownership to anyone if the relationship had ended badly rather than amicably.",
+    "Worked through each provider&rsquo;s ownership transfer process with the business&rsquo;s documentation, moved every account into the business&rsquo;s own name with billing on the business&rsquo;s own card, and recorded the lot in a password manager the business controls.",
+    "The business owns everything its operation depends on. We would rather do this at the start of a relationship than have a future provider discover we had left it undone.")
 
 FAQS = [
     ("How long does it take to move IT providers?",
@@ -97,6 +132,29 @@ PAGE = {
     <p style="margin-top:16px">You keep the report either way.</p>
 
     {trust_note('Onboarding follows the practices set out in <a href="/how-we-work-itil">how we work</a> — discovery feeds the asset register, the report feeds the improvement plan, and both become the baseline your service reviews measure against.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>What people actually ask before changing providers</h2>
+      <p>Six questions, including the one about what happens if it does not work out.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

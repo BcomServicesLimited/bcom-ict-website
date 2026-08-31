@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Is bcom ICT certified to ISO/IEC 42001?&rdquo;",
+     "a question that needs a precise answer. The standard is certifiable for organisations, and separately there are certifications held by individuals who implement it.",
+     "Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. bcom ICT as an organisation is not certified to the standard. Those are different things and we publish which one applies."),
+    ("&ldquo;We&rsquo;re a small business &mdash; is AI governance really for us?&rdquo;",
+     "a fair question. The full management system described by the standard is aimed at organisations of a scale most Gold Coast businesses are not.",
+     "Take the parts that apply. A written acceptable-use position, a record of which tools touch what data, and a human check on decisions that affect people &mdash; those are proportionate at any size and are where most of the value is."),
+    ("&ldquo;Staff are already using AI tools we never approved&rdquo;",
+     "the most common finding in this work, and it is not misconduct. Nobody told them not to, and the tools are genuinely useful.",
+     "Find out what is actually in use before writing anything. A policy written without knowing that is either ignored or prohibits the only tool doing a necessary job."),
+    ("&ldquo;What&rsquo;s the risk, specifically?&rdquo;",
+     "usually client or personal information being pasted into a public tool, and decisions being made on output nobody verified. Both are ordinary rather than exotic.",
+     "Address the two directly: say what may go into which tool, and require a human check where output affects a person. Most of the exposure closes with those two rules."),
+    ("&ldquo;Does the Privacy Act apply to what we put into these tools?&rdquo;",
+     "it can, and it depends on the information and where it is processed. Personal and health information deserve particular care.",
+     "Establish what each tool touches and where it goes before adopting it. Some tools are appropriate for client information and some plainly are not, and the difference is knowable in advance."),
+    ("&ldquo;Do we need any of this documented?&rdquo;",
+     "increasingly yes, because clients and insurers are starting to ask. A verbal understanding is not evidence.",
+     "Write it down &mdash; one page is usually enough to start. Having something documented and followed is worth considerably more than an elaborate framework nobody reads."),
+]
+
+EXAMPLE_1 = example(
+    "The one page that mattered more than the project",
+    "A professional firm engaged us to identify where AI could reduce administrative time. The expectation was a proposal for tooling and automation.",
+    "Before recommending anything, we asked how staff were already using these tools. Six of nineteen were regularly using public AI services, and three had pasted client material into them &mdash; including one document containing personal information about a third party. Nobody had breached any rule, because no rule existed, and the tools were plainly helpful for the work.",
+    "Wrote a one-page acceptable-use position setting out what may and may not be put into which tools, provided a sanctioned option for the uses that were legitimate, and briefed the whole firm in twenty minutes.",
+    "The firm went on to automate two genuinely useful things. Its own assessment afterwards was that the policy page had been worth more than the automation, which is a fair reading and not the outcome we had been engaged to produce.")
+
+EXAMPLE_2 = example(
+    "Governance sized to the business",
+    "A business of twenty-two staff had been told it needed an AI management system after a client asked about its AI governance in a supplier questionnaire. It had begun looking at what full ISO/IEC 42001 conformance would involve and found it daunting.",
+    "The questionnaire asked four questions: whether the business used AI in delivering its services, what data those tools accessed, whether output affecting clients received human review, and whether any of it was documented. None of those required a management system. All four required the business to know its own position, which it did not.",
+    "Established what was actually in use, wrote a short acceptable-use position and a register of tools and what each touches, and set a rule requiring human review of anything affecting a client. Documented the lot in about four pages.",
+    "The questionnaire was answered accurately and the business did not build a management system it had no use for. If a future contract requires full conformance, the foundations exist and it becomes an extension rather than a start from nothing.")
 
 FAQS = [   (   'What is ISO/IEC 42001?',
         'ISO/IEC 42001:2023 is the international standard for AI management systems. It sets out how an organisation should govern the AI it develops or uses — policy, roles and responsibilities, '
@@ -86,6 +121,30 @@ PAGE = {
                                  'schedule, so the position can be demonstrated rather than asserted',
                                  '<strong>Readiness assessment</strong> if you are genuinely heading for '
                                  'certification']}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>What people actually ask about AI governance</h2>
+      <p>Six questions. The first one has a precise answer and deserves one.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('AI Implementation', '/artificial-intelligence-service-gold-coast'),
         ('Microsoft Copilot', '/microsoft-copilot-gold-coast'),

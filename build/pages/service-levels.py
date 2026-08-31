@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, commitments, ticks, related, trust_note
+from layout import MARK, cta, faq_block, commitments, ticks, related, trust_note, issues, example
 
 MATRIX = [
     ("p1", "P1 — Critical", "Business stopped. Server, internet, phones or email down for everyone; suspected ransomware or an active breach.",
@@ -31,6 +31,41 @@ COMMITS = [
 rows = "".join(
     f'<tr><td class="priority priority--{k}">{n}</td><td>{d}</td><td>{m}</td><td>{o}</td></tr>'
     for k, n, d, m, o in MATRIX)
+
+COMMON_ISSUES = [
+    ("&ldquo;What counts as critical?&rdquo;",
+     "a definition worth agreeing in advance rather than during an outage. Priority set by how loudly a fault is reported is priority set badly.",
+     "Priority is set by business impact and agreed with you when the job is logged. Everyone offline, the server down, phones or email out for the whole office, or signs of a breach &mdash; that is a P1. One person unable to print is not, and treating it as one is how genuine emergencies end up queued."),
+    ("&ldquo;Does response mean fixed?&rdquo;",
+     "no, and providers that blur the two are promising something they cannot control. Response means a person has picked the job up and contacted you.",
+     "We commit to response and not to resolution, because resolution times vary too much by fault to promise honestly. What we do commit to is telling you what we have found and what happens next."),
+    ("&ldquo;You advertise business hours &mdash; what about the rest of the time?&rdquo;",
+     "a fair challenge to any provider. Ours are eight to five weekdays, Brisbane time, and we would rather publish that than imply otherwise.",
+     "Outside those hours a digital assistant answers, identifies itself as an assistant rather than pretending to be a person, takes details and logs the job. Managed and SLA clients have after-hours on-call under their agreement; it is contracted rather than available ad hoc."),
+    ("&ldquo;What if you miss a target?&rdquo;",
+     "a question most service level documents avoid.",
+     "Tell us. Response performance is reviewed with managed clients at their service reviews rather than left for you to discover in a report. If we are consistently missing them the agreement is not working, and it is month-to-month for exactly that reason."),
+    ("&ldquo;Who do we escalate to?&rdquo;",
+     "in many providers, an unclear path through several tiers.",
+     "The first escalation is to Royce, who is a director. There is no call centre structure to climb, and an escalation reaches an owner the same day."),
+    ("&ldquo;Can we see this before we sign?&rdquo;",
+     "a question that should not need asking and frequently does.",
+     "This page is it. The priority matrix, the response targets and the commitments are published rather than negotiated privately, so you can take them to another provider and ask for the same thing in writing."),
+]
+
+EXAMPLE_1 = example(
+    "Agreeing the priority rather than assuming it",
+    "A business logged a fault as critical: a senior staff member could not access a system needed for a client meeting that afternoon. It was genuinely urgent for that person and the business expected an immediate response.",
+    "One person unable to reach one system is not a P1 under the published matrix, and at that moment two other clients had faults affecting entire offices. Handling the loudest report first would have meant two businesses waiting while one person was helped, which is precisely the failure the matrix exists to prevent.",
+    "Explained the position directly, agreed a P2 with a commitment to have someone on it within the hour, and met that. The access issue was resolved with time to spare before the meeting.",
+    "Everyone was handled in the right order, and the business understood why rather than feeling deprioritised. That conversation is possible because the matrix is published and was agreed before there was anything to argue about.")
+
+EXAMPLE_2 = example(
+    "A missed target, raised by us",
+    "A managed client had a P2 fault where our response fell outside the committed window. The business had not noticed &mdash; the fault was resolved the same day and nobody had been watching a clock.",
+    "The delay was ours. A job had been logged through a channel that was not checked promptly during a staffing gap, and the four-hour response commitment was breached by about ninety minutes. It would have been very easy to say nothing, since the outcome was fine and the client had no complaint.",
+    "Raised it at the service review, explained what had happened and what had been changed so it could not recur, and recorded it as a missed target in the client&rsquo;s own record rather than in ours alone.",
+    "The client kept the agreement and said the disclosure had increased rather than reduced their confidence. A commitment nobody audits is not a commitment, and we would rather be the ones who mention it.")
 
 FAQS = [
     ("How quickly does bcom ICT respond to a critical IT fault?",
@@ -130,6 +165,29 @@ PAGE = {
     <a href="/iso-alignment">ISO alignment</a> for exactly what that does and doesn't mean.</p>
 
     {trust_note('Where your data physically lives, who at bcom ICT can reach it, and how long we keep it is set out on <a href="/data-handling-and-sovereignty">data handling and sovereignty</a>.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>What people actually ask about our service levels</h2>
+      <p>Six questions, including two that most service level documents quietly avoid.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

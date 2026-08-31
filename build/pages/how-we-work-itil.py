@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, ticks, related, trust_note
+from layout import MARK, cta, faq_block, ticks, related, trust_note, issues, example
 
 PRACTICES = [
     ("Service desk", "Who do I call, and will a human answer?",
@@ -22,6 +22,41 @@ PRACTICES = [
 rows = "".join(
     f'<tr><td class="slot">{p}</td><td><em>{q}</em></td><td>{a}</td></tr>'
     for p, q, a in PRACTICES)
+
+COMMON_ISSUES = [
+    ("&ldquo;Isn&rsquo;t this just process for its own sake?&rdquo;",
+     "a fair suspicion. Service management frameworks can become bureaucracy, and plenty of providers have made them exactly that.",
+     "Judge it by what it prevents. Every practice we use exists because of a specific failure mode &mdash; changes made without a way back, faults fixed repeatedly without a cause being found, work nobody recorded. If a practice is not preventing something, it should go."),
+    ("&ldquo;We just want it fixed, not a process&rdquo;",
+     "entirely reasonable, and the two are not opposed. The process is what makes the fix stick.",
+     "The visible part should be a fixed fault and a clear explanation. Incident, problem and change handling happen behind that, and if you are noticing the framework rather than the outcome, we are doing it wrong."),
+    ("&ldquo;What&rsquo;s the difference between an incident and a problem?&rdquo;",
+     "a distinction that sounds like jargon and is the single most useful idea in the framework. An incident is the interruption; the problem is the underlying cause.",
+     "Restore service first, then find the cause separately. Businesses that only ever handle incidents fix the same fault indefinitely, which is expensive and completely avoidable."),
+    ("&ldquo;Our last provider changed things without telling us&rdquo;",
+     "no change management. It is one of the most common complaints we hear about incoming clients&rsquo; previous arrangements.",
+     "Changes that could disrupt your business get approved by you, scheduled, and given a documented way back before they start. No silent Friday-afternoon upgrades."),
+    ("&ldquo;Why does everything have to be written down?&rdquo;",
+     "because undocumented knowledge is a dependency on individuals. It works perfectly until somebody is on leave, unwell, or no longer with either business.",
+     "Documentation is yours, not ours &mdash; asset register, network diagrams, licences, credentials and configuration notes, available on request at any time rather than only on the way out."),
+    ("&ldquo;Are you certified in ITIL?&rdquo;",
+     "a question worth answering precisely. Royce holds ITIL 4 certification. bcom ICT as an organisation is not certified in anything, because ITIL certification applies to people rather than to companies.",
+     "Credentials sit on the person who holds them. We publish whose they are, which lets you check rather than take it on trust."),
+]
+
+EXAMPLE_1 = example(
+    "The fault that had been fixed eleven times",
+    "A business had a recurring problem with a shared system that failed every few weeks. Each occurrence was resolved promptly by their previous provider and billed. It had been going on for over a year.",
+    "Reviewing eleven separate tickets, each had been handled correctly as an incident &mdash; service restored, ticket closed, invoice raised. Nobody had ever opened a problem record to ask why it kept happening, because nobody was being paid to. The cause turned out to be a scheduled task that failed under a specific condition roughly monthly and consumed a shared resource on its way down.",
+    "Restored service as an incident, then investigated separately as a problem, found the failing task, and corrected it. Recorded the whole thing so the history exists if anything similar appears.",
+    "It has not recurred. Eleven correct incident responses had produced eleven invoices and no progress, which is what happens when the distinction between an incident and a problem is not made.")
+
+EXAMPLE_2 = example(
+    "A change with a way back",
+    "A business needed a significant upgrade to a system its whole operation depended on. The previous attempt, made by another party two years earlier, had failed and taken the business offline for a day and a half.",
+    "The earlier attempt had been made on a Friday afternoon with no tested rollback and no agreed point at which to abandon it. When it went wrong, the only options were to keep going or to restore from a backup nobody had tested. That is what turned a failed upgrade into a day and a half.",
+    "Scheduled the work outside trading hours with a tested rollback in place, a verified restore, and an agreed cut-off time at which we would revert regardless of progress. Confirmed each step with the business before proceeding to the next.",
+    "The upgrade completed inside the window and the rollback was never needed. Having it ready cost about two hours of preparation, which is the entire difference between the two attempts.")
 
 FAQS = [
     ("Does bcom ICT follow ITIL?",
@@ -104,6 +139,29 @@ PAGE = {
     ])}
 
     {trust_note('Royce Clark holds ITIL 4 Foundation certification. That is an individual credential — it does not make bcom ICT an ITIL-certified or ISO/IEC 20000-1-certified organisation, and we do not describe it that way.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>What people actually ask about how we work</h2>
+      <p>Six questions, including the one about whether any of this is worth the trouble.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

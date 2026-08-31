@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, creds, ticks, related, trust_note
+from layout import MARK, cta, faq_block, creds, ticks, related, trust_note, issues, example
 
 STANDARDS = [
     ("ISO/IEC 27001:2022", "Information security management",
@@ -21,6 +21,41 @@ STANDARDS = [
 rows = "".join(
     f'<tr><td class="slot"><strong>{s}</strong><br><span style="color:var(--slate);font-size:.875rem">{n}</span></td>'
     f'<td>{d}</td><td><strong>{st}</strong></td></tr>' for s, n, d, st in STANDARDS)
+
+COMMON_ISSUES = [
+    ("&ldquo;Does aligned mean certified?&rdquo;",
+     "no, and the distinction matters legally as well as commercially. Certification means an accredited body has audited the management system and issued a certificate. Alignment means operating to the standard&rsquo;s practices without that audit.",
+     "bcom ICT is aligned to ISO/IEC 27001:2022 and is not certified to it. We state that plainly because claiming otherwise would be misleading conduct under Australian Consumer Law, and because a client can verify a certificate in about a minute."),
+    ("&ldquo;Our client is asking whether our provider is certified&rdquo;",
+     "an increasingly common question in tenders and supplier questionnaires, and one that deserves a straight answer rather than a hedge.",
+     "Tell them the truth: your provider is aligned, not certified, and here is what that covers. A hedge discovered later is far more damaging than an accurate answer given at the start."),
+    ("&ldquo;What does alignment actually get us?&rdquo;",
+     "a fair question, since alignment is not independently verified. What it gets you is the practices &mdash; access control, change management, incident handling, documented recovery &mdash; applied consistently.",
+     "Ask what specific practices are in place and how each is evidenced. That is a more useful question than whether a certificate exists, and it is one a provider should be able to answer in detail."),
+    ("&ldquo;Should we be certified ourselves?&rdquo;",
+     "it depends entirely on who you sell to. For most small businesses the cost is not justified; for a business bidding into government or enterprise supply chains it can be a requirement.",
+     "Establish whether anyone is actually asking for it before pursuing it. Certification undertaken speculatively is expensive; certification undertaken because a contract requires it is an investment."),
+    ("&ldquo;Isn&rsquo;t the Essential Eight enough?&rdquo;",
+     "they answer different questions. The Essential Eight is a set of technical mitigations with maturity levels; ISO/IEC 27001 describes a management system for information security as a whole.",
+     "Use both for what each does well. We assess and report against the Essential Eight because it is measurable and specific, and operate our own environment to ISO practices."),
+    ("&ldquo;Who checks that you actually do this?&rdquo;",
+     "for an aligned rather than certified organisation, nobody external does. That is the honest answer and it is worth saying rather than implying otherwise.",
+     "Ask for evidence rather than assurance &mdash; access reviews, change records, incident logs, restore tests. Evidence you can inspect is worth more than a claim you cannot."),
+]
+
+EXAMPLE_1 = example(
+    "Answering a supplier questionnaire accurately, and losing nothing by it",
+    "A client bidding for work with a large enterprise customer was sent a supplier security questionnaire that asked, among many other things, whether its IT provider held ISO/IEC 27001 certification.",
+    "The honest answer was no. There was commercial pressure to answer in a way that did not jeopardise the bid, and a genuine temptation to describe alignment in language that would be read as certification. The questionnaire also asked eleven other questions that had nothing to do with certificates and everything to do with practices, several of which the client could answer very well.",
+    "Answered the certification question as a plain no with a short explanation of what alignment covers, and answered the eleven practice questions in detail with evidence attached. Flagged the two areas where the client&rsquo;s own position was genuinely weak and closed both before submitting.",
+    "The client won the work. The enterprise customer&rsquo;s security team later said the detailed answers had counted for considerably more than the certificate question, and that an unhedged no had been more reassuring than a carefully worded yes would have been.")
+
+EXAMPLE_2 = example(
+    "Deciding not to pursue certification",
+    "A business of forty staff asked us to help it achieve ISO/IEC 27001 certification. A competitor had recently certified and the directors were concerned about being at a disadvantage.",
+    "Working through who actually asked the business about security, the answer was two clients out of roughly two hundred, neither of whom had asked for certification specifically &mdash; both had sent questionnaires about practices. The certification cost, including the internal time to build and maintain the management system, was substantial and recurring. The competitor sold into a different market where certification was a tender requirement.",
+    "Recommended against certifying, and instead closed the gaps the two questionnaires had exposed, documented the practices properly, and prepared standing answers so future questionnaires take an hour rather than a week.",
+    "The business answers security questions confidently and did not spend on a certificate nobody was asking it for. If that changes &mdash; and for some businesses it does &mdash; the practices are already in place and certification becomes an audit rather than a rebuild.")
 
 FAQS = [
     ("Is bcom ICT certified to ISO 27001?",
@@ -118,6 +153,29 @@ PAGE = {
     question.</p>
 
     {trust_note('AI work is delivered under an ISO/IEC 42001-aligned governance framework — policy, risk assessment, acceptable-use controls, human oversight and audit evidence. See <a href="/iso-42001-ai-governance-gold-coast">ISO/IEC 42001 AI governance</a>.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>What people actually ask about this</h2>
+      <p>Six questions, including the two we would rather answer before a client asks you.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

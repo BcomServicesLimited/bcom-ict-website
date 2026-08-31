@@ -161,7 +161,7 @@ drawn from real work with identifying detail removed, since we do not name
 clients without written permission.
 
 Every symptom heading and every example title is unique site-wide, checked
-on each pass. **252 symptom blocks and 99 worked examples, no duplicates.**
+on each pass. **432 symptom blocks and 172 worked examples, no duplicates.**
 
 - [x] **Chunk A — 6 core service pages** · 5,004 -> 10,238 words
 - [x] **Chunk B — 8 security & compliance pages** · 7,251 -> 13,132 words
@@ -196,7 +196,35 @@ on each pass. **252 symptom blocks and 99 worked examples, no duplicates.**
       Copilot deferred four months at a healthcare provider, ten licences
       released, an AI pilot measured honestly enough to stop it, and a review
       that told a business to keep its existing provider.
-- [ ] **Chunk F — remaining 45 pages** · ~23,400 to write
+- [x] **Chunk F — 35 of the remaining 45 pages** · all suburbs, services,
+      guides and trust pages now over 1,500
+      F1 · a local worked example on each of the ten suburb pages, including
+      the five already over 1,500 — a suburb set where half the pages carry
+      proof and half do not is what reads as templated.
+      F2 · the four PBX brand pages were generated from one template, so each
+      is written to what is distinctive about that estate rather than given
+      identical sections.
+      F3 · every service page on the site is now over 1,500.
+      F4 · guides shift pattern — not symptoms and fixes but the assumptions
+      people hold and why each is wrong.
+      F5 · trust pages shift again to questions, including the ones most
+      service level documents avoid.
+
+**Deliberately left under 1,500 — these are not service pages:**
+
+| Page | Words | Why |
+|---|---|---|
+| `/reviews` | 588 | A reviews page. Padding it with prose makes it worse. Grows by getting more reviews |
+| `/contact` | 660 | A contact page. People arrive to find a phone number |
+| `/industries` | 697 | Navigational hub. Its job is to route to the eight vertical pages |
+| `/services` | 940 | Navigational hub, same reasoning |
+| `/trust-centre` | 1,190 | Navigational hub for the eight trust pages, all of which are now 1,800+ |
+| `/` (homepage) | 1,048 | A homepage converts. 1,500 words of body copy would hurt it |
+| `/support` | 946 | Functional — Splashtop SOS instructions. Length is the enemy here |
+| `/about` | 923 | Company page. Could grow with real substance, not with a symptoms block |
+| `/our-team` | 993 | Same. Grows if Royce wants more depth on credentials |
+| `/case-studies` | 925 | **Blocked.** Needs three real named clients with written permission |
+
 
 ---
 

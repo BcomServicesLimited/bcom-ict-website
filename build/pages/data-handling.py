@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, ticks, related, trust_note
+from layout import MARK, cta, faq_block, ticks, related, trust_note, issues, example
 
 HOLDINGS = [
     ("Your credentials", "Administrative logins to your systems, held in a dedicated password management platform with individually named access and multi-factor authentication. Never in spreadsheets, documents or email.", "Password management platform"),
@@ -11,6 +11,41 @@ HOLDINGS = [
 
 rows = "".join(
     f'<tr><td class="slot">{w}</td><td>{d}</td><td>{s}</td></tr>' for w, d, s in HOLDINGS)
+
+COMMON_ISSUES = [
+    ("&ldquo;Where does our data physically sit?&rdquo;",
+     "a question that used to be rare and is now asked in most supplier questionnaires. It matters for the Privacy Act, for some contracts, and for a few sectors specifically.",
+     "Establish it for each system rather than in general. Businesses commonly assume all their data is in Australia, and a service adopted informally by one department is frequently the exception."),
+    ("&ldquo;Who at your company can reach our systems?&rdquo;",
+     "a question every client is entitled to ask their provider and very few do.",
+     "Ask it, and ask how access is controlled. Technician access here is individually named with no shared logins into client environments, multi-factor authentication is enforced on every tool that reaches a client system, and access is revoked on the day someone leaves."),
+    ("&ldquo;Do you keep copies of our data?&rdquo;",
+     "a reasonable concern, particularly for businesses holding client or health information.",
+     "Get the answer in writing and get it specific &mdash; what is held, where, for how long and why. A provider that cannot answer that precisely has not thought about it."),
+    ("&ldquo;What happens to it if we leave?&rdquo;",
+     "the question that separates providers, and the one asked least often at the start.",
+     "Ask before you sign, not afterwards. Documentation, credentials, asset registers and configuration notes should be yours on request at any time, and a clean exit should not require a negotiation."),
+    ("&ldquo;Is data sovereignty actually a legal requirement for us?&rdquo;",
+     "sometimes, and less often than assumed. The Privacy Act regulates disclosure to overseas recipients rather than prohibiting offshore storage outright, and specific sectors carry their own rules.",
+     "Establish your actual obligation rather than adopting a blanket position. Businesses handling health information or working under government contracts most often have a genuine requirement."),
+    ("&ldquo;Our staff use tools we never approved&rdquo;",
+     "shadow adoption. Someone needed to do something and found a tool that worked, which is usually resourcefulness rather than misconduct.",
+     "Find out what is genuinely in use before writing a policy about it. A policy that prohibits the only tool doing a necessary job gets ignored, and then nobody knows anything."),
+]
+
+EXAMPLE_1 = example(
+    "The one system that was not where everyone assumed",
+    "A business completing a client security questionnaire needed to confirm that all client data was held in Australia. The directors were confident it was and asked us to verify it as a formality.",
+    "Nearly everything was. One exception: a file transfer service adopted three years earlier by a team that needed to send large documents to clients, chosen because it worked and never assessed by anyone. It stored data in a region outside Australia, and it had been carrying client material for three years. Nobody had done anything wrong &mdash; the team had a job to do and no sanctioned tool for it.",
+    "Established where every system genuinely held data, moved the file transfer function into the business&rsquo;s own tenancy where it belongs, and recorded the position for each system so the next questionnaire is a lookup rather than an investigation.",
+    "The questionnaire was answered accurately. The useful outcome was the register, because the question is now asked routinely and the answer needs to be available rather than reconstructed each time.")
+
+EXAMPLE_2 = example(
+    "A clean exit, from the other side of it",
+    "A business joining us was leaving a provider it had used for eight years. The relationship had ended reasonably and the handover was expected to be straightforward.",
+    "Very little existed to hand over. There was no asset register, no network documentation and no diagram. Credentials for the firewall, the domain registrar and two cloud services were held only by the outgoing provider, and some had been set up under that provider&rsquo;s own accounts rather than the client&rsquo;s. Nothing had been withheld maliciously &mdash; it had simply never been created or never been transferred.",
+    "Rebuilt the documentation from the environment itself, recovered ownership of each account through the relevant provider&rsquo;s process, and moved everything into accounts the business owns. Then gave the business the complete set, on the basis that it should hold it regardless of who supports it.",
+    "The business owns its own environment for the first time in eight years. This is why we publish what a client gets on the way out &mdash; not because we expect anyone to leave, but because being able to is the point.")
 
 FAQS = [
     ("Where does our data live if bcom ICT manages our systems?",
@@ -104,6 +139,29 @@ PAGE = {
     relationship, not only when leaving. It's yours.</p>
 
     {trust_note('Your business has its own obligations under the Privacy Act and the Notifiable Data Breaches scheme for the personal information you hold. Our role is helping you meet them, not assuming them for you — <a href="/notifiable-data-breach-guide-australia">the NDB guide</a> sets out how that division works when something goes wrong.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>What people actually ask about their data</h2>
+      <p>Six questions worth putting to any provider, including two most businesses never think to ask.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

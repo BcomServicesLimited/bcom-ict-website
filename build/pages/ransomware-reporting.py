@@ -1,4 +1,39 @@
-from layout import MARK, cta, faq_block, ticks, related, trust_note, verify_note
+from layout import MARK, cta, faq_block, ticks, related, trust_note, verify_note, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Reporting the payment is the only obligation, isn&rsquo;t it?&rdquo;",
+     "one obligation among several that a single incident can trigger. They are separate schemes and satisfying one does not satisfy the others.",
+     "Work through each: ransomware payment reporting, notifiable data breach assessment, your insurer&rsquo;s notification requirement, and any sector regulator. They can all apply to the same event."),
+    ("&ldquo;We&rsquo;re under the turnover threshold, so none of this applies&rdquo;",
+     "a conclusion drawn from one scheme and applied to all of them. The payment reporting threshold has nothing to do with whether the Notifiable Data Breaches scheme applies to you.",
+     "Assess each obligation on its own terms. A business below the payment reporting threshold can still have a clear duty to notify the OAIC and affected individuals."),
+    ("&ldquo;Our IT provider will handle the reporting&rdquo;",
+     "a misunderstanding of where the duty sits. It rests with the business, not its suppliers.",
+     "Understand the division. We establish and document the technical facts &mdash; what happened, what was reached, when. The reporting decisions and the reports themselves are yours and your lawyer&rsquo;s."),
+    ("&ldquo;Can we just pay quietly?&rdquo;",
+     "a question that comes from wanting the problem to end. Paying is not itself prohibited for most businesses, and a reporting obligation attaches to it, along with separate risks around sanctioned entities.",
+     "Take legal advice before paying anything. This is a legal question with real consequences rather than an IT decision, and it is not one your IT provider should be answering."),
+    ("&ldquo;Will paying get our data back?&rdquo;",
+     "not reliably. It does not guarantee a working decryption key, does not stop stolen data being published or resold, and marks the business as one that pays.",
+     "The businesses that get through this without paying are almost always the ones whose backups were held where ransomware could not reach them from inside the network &mdash; a decision made months earlier, not during the incident."),
+    ("&ldquo;How long do we have?&rdquo;",
+     "less time than most businesses assume, and the clock starts at discovery rather than when the technical work finishes.",
+     "Start the assessment immediately and in parallel with the technical response. Businesses that sequence these &mdash; fix first, assess later &mdash; frequently find a substantial part of the window has gone."),
+]
+
+EXAMPLE_1 = example(
+    "Three obligations from one incident",
+    "A business suffered a ransomware incident, restored from backup within two days, and considered the matter resolved. It had not paid anything and concluded there was nothing to report.",
+    "The recovery was genuinely good and the conclusion was wrong on two counts. No payment meant no payment reporting obligation, which was correct. It did not address whether personal information had been accessed &mdash; and the attacker had been in the environment for eleven days before deploying the encryption, with access to file shares holding employee records and client contact details. The business&rsquo;s cyber policy also required notification within a period that had nearly elapsed while the technical recovery was under way.",
+    "Established from the available evidence what had been reachable during those eleven days, documented it, and provided the factual account. Advised the business to notify its insurer immediately and to take legal advice on the Notifiable Data Breaches assessment, which it did.",
+    "The insurer was notified inside the policy window with about a day to spare. The business had done the hard part well and had very nearly missed two obligations while doing it, because nobody had run the assessment in parallel with the recovery.")
+
+EXAMPLE_2 = example(
+    "Having a real choice, because of a decision made a year earlier",
+    "A business was hit with ransomware across its file server and every workstation. The attackers demanded payment and had exfiltrated data before encrypting, so the threat included publication as well as loss of access.",
+    "The business had backups held in a system the network could not reach with ordinary credentials, and restores had been tested twice in the preceding year. That single arrangement meant the encryption was survivable. The exfiltration was a separate and genuinely serious matter, and it was a legal and notification problem rather than a technical one.",
+    "Recovered every system from backup without engaging the attackers at all, preserved evidence throughout, and produced the technical account the business&rsquo;s lawyer and insurer needed to work through the disclosure obligations.",
+    "The business did not pay and did not need to consider it. Whether a business has a real choice in this situation is decided long before the attack, by whether its backups are reachable from inside its own network.")
 
 FAQS = [
     ("Does an Australian business have to report a ransomware payment?",
@@ -92,6 +127,29 @@ PAGE = {
     was actually taken. Disconnecting it from the network stops the spread while preserving that.</p>
 
     {trust_note('Prevention is almost entirely three Essential Eight controls: separated and tested backups, multi-factor authentication, and patching that actually happens. See <a href="/essential-eight-guide-gold-coast">Essential Eight assessment and uplift</a>.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>What people actually ask when this happens</h2>
+      <p>Six questions. The first two lead businesses to conclude they have no obligations when they do.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 
