@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note, issues, example
 
 WATCH = [
     ("Endpoints", None, "Every laptop, desktop and server. Unusual process behaviour, known malware signatures, attempts to disable protection, and the early signs of ransomware before encryption starts."),
@@ -13,6 +13,41 @@ WHY = [
     ("Containment in minutes, not Monday", "An isolated machine on Saturday night is an inconvenience. The same machine left running until Monday is often the whole network."),
     ("Evidence for afterwards", "Continuous logging means that if something does happen, you can establish what was reached and when — which is what your insurer and, potentially, a regulator will ask for."),
 ]
+
+COMMON_ISSUES = [
+    ("“We have alerts but nobody reads them”",
+     "tooling generating signals into an inbox with no owner. Coverage on paper, none in practice.",
+     "Put triage in front of the alerts. The value of a SOC is people separating noise from intrusion, not the software producing the alerts."),
+    ("“Something happened over the weekend”",
+     "intrusions are found on weekends and public holidays because that is when nobody is watching. Attackers know the pattern.",
+     "Continuous monitoring closes the gap that business hours leave open. Detection at 2am rather than discovery on Monday is frequently the whole difference."),
+    ("“An account signed in from overseas”",
+     "credential compromise. The sign-in itself is the alert that matters most and the one most businesses never see.",
+     "Detect it in minutes, disable the session, and establish what was reached while the attacker had access — rather than discovering it weeks later."),
+    ("“We only found out because a client told us”",
+     "no monitoring at all. The first indication came from outside, which is the worst way to learn.",
+     "Continuous visibility across endpoints, identities and cloud so the business finds out first and can act before it becomes a client conversation."),
+    ("“We can’t tell what happened”",
+     "logging retained for days rather than months, so the investigation has nothing to work with.",
+     "Retain the right telemetry for long enough to matter. Without it you may have to notify on the assumption of the worst because you cannot prove otherwise."),
+    ("“Our insurer wants 24/7 monitoring”",
+     "an increasingly common requirement, particularly for regulated businesses and those holding sensitive data.",
+     "Provide monitored detection and response with the documentation to evidence it, rather than a tool that technically runs around the clock with nobody attached to it."),
+]
+
+EXAMPLE_1 = example(
+    "Contained at 2am on a Sunday",
+    "A monitored Gold Coast client’s Microsoft 365 tenancy showed a successful sign-in from an unusual location, followed within minutes by the creation of a mailbox forwarding rule.",
+    "Credential compromise from a reused password. The account had been exempted from MFA months earlier for a device compatibility reason nobody had revisited. The attacker was setting up to intercept invoice correspondence.",
+    "Session revoked and account disabled within minutes of the alert. Credential reset, forwarding rule removed, and sign-in logs reviewed to establish exactly what had been accessed in the window — which was nothing beyond the mailbox listing.",
+    "The business was told on Monday morning what had happened and what had already been done about it. Discovered a fortnight later instead, this would have been a redirected payment and a notification decision.")
+
+EXAMPLE_2 = example(
+    "Ransomware stopped before encryption",
+    "Endpoint telemetry on a monitored client flagged a process attempting to delete volume shadow copies on a workstation — a standard precursor to ransomware encryption.",
+    "A user had opened an attachment that afternoon. The payload was preparing the machine by removing local recovery options before beginning encryption. Nothing had been encrypted yet.",
+    "Isolated the machine from the network automatically under the agreed rules of engagement, then investigated. Confirmed no lateral movement, identified the delivery email, removed it from every mailbox, and rebuilt the affected workstation.",
+    "One machine rebuilt instead of an estate encrypted. The rules of engagement — agreed in advance, allowing isolation without waiting for a phone call — are what made the timing possible.")
 
 FAQS = [
     ("What is a security operations centre?",
@@ -99,6 +134,29 @@ PAGE = {
     <p style="margin-top:16px">Rules of engagement — what we isolate without asking, who we call, and at what hour — are agreed with you before the service starts. Nobody should be working that out at 2am.</p>
 
     {trust_note('SOC analysts are Australian-based. Some vendor platforms underpinning the service process telemetry outside Australia — set out in full on <a href="/data-handling-and-sovereignty">data handling and sovereignty</a> rather than left vague.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The gap a SOC actually closes</h2>
+      <p>Most businesses already own security tools. What they lack is anyone reading what those tools produce.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What continuous monitoring catches</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

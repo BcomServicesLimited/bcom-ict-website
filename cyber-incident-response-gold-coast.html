@@ -370,6 +370,47 @@
   </div>
 </section>
 
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What people have usually already done before we arrive</h2>
+      <p>Some of it helps. Some of it removes the evidence that decides your obligations.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>“We powered the machine off”</h4><p class="cause"><span>Usually</span> the instinctive reaction, and the one that costs most. Memory holds the record of what actually ran and what was reached.</p><p class="fix"><span>What we do</span> Work with what remains — disk artefacts, logs, cloud sign-in records. Recoverable in most cases, but the picture is less complete, and that can decide a notification either way.</p></div><div class="issue"><h4>“We wiped it and rebuilt”</h4><p class="cause"><span>Usually</span> an attempt to move fast that removes the evidence of what was accessed.</p><p class="fix"><span>What we do</span> Reconstruct from surviving sources. If nothing survives, the honest position may be to notify on the assumption of the worst, because you cannot prove otherwise.</p></div><div class="issue"><h4>“We replied to the attacker”</h4><p class="cause"><span>Usually</span> an understandable instinct that confirms the mailbox is live and monitored, and can escalate the demand.</p><p class="fix"><span>What we do</span> Stop all contact and take legal advice before anything further. Negotiation is not an IT decision and there are sanctions risks depending on who is being paid.</p></div><div class="issue"><h4>“We don’t know if data left”</h4><p class="cause"><span>Usually</span> the question that determines your obligations, and the hardest to answer without logging.</p><p class="fix"><span>What we do</span> Establish it from firewall, endpoint and cloud audit logs where retention allows. This is the single finding that most affects what you must do next.</p></div><div class="issue"><h4>“Our backups were encrypted too”</h4><p class="cause"><span>Usually</span> backups reachable from the infected network with the same credentials — the most common reason a bad week becomes an existential one.</p><p class="fix"><span>What we do</span> Recover whatever is separated or cloud-synced, rebuild the rest, then redesign backup so it cannot happen again.</p></div><div class="issue"><h4>“Who do we have to tell?”</h4><p class="cause"><span>Usually</span> several parties, and they are separate obligations — satisfying one does not satisfy the others.</p><p class="fix"><span>What we do</span> Provide the factual technical account you need for each. The notification decisions remain yours and your lawyer’s; we give you the facts they rest on.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a response actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Business email compromise caught at the settlement</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A Gold Coast agency called on a Friday afternoon: a client had queried bank details on a settlement email that the agency had not sent.</p></div>
+    <div><h4>What we found</h4><p>A mailbox had been compromised eleven days earlier through a reused password with no MFA. A forwarding rule had been copying correspondence out and deleting the copies. The attacker had been reading, waiting, and had sent one altered email from the real mailbox.</p></div>
+    <div><h4>What we did</h4><p>Contained immediately — sessions revoked, credentials reset from clean devices, forwarding rules removed. Reconstructed the eleven days from sign-in and audit logs to establish exactly what had been read and by whom. Provided the written account for the insurer and the agency’s legal advisers.</p></div>
+    <div><h4>The outcome</h4><p>The payment was stopped. The agency could evidence precisely what had been accessed, which turned a difficult notification assessment into a documented one.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Ransomware with separated backups</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A Gold Coast business discovered ransomware on a Monday morning. Files across the file server were encrypted and a ransom note was on every desktop.</p></div>
+    <div><h4>What we found</h4><p>Entry was through remote desktop exposed to the internet with a weak password. The attacker had been present for four days. Crucially, backups were held on a separated target with distinct credentials — they were intact.</p></div>
+    <div><h4>What we did</h4><p>Contained and isolated, established the entry route and the dwell time, removed persistence including two accounts the attacker had created, then restored from the clean backup. Closed the remote desktop exposure permanently.</p></div>
+    <div><h4>The outcome</h4><p>Trading again in under two days with no payment considered and no data lost. The separated backup was a decision made eighteen months earlier, and it is the entire reason this was recoverable.</p></div>
+  </div>
+</div>
+  </div>
+</section>
+
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

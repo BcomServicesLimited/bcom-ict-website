@@ -1,4 +1,46 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("“Our firewall is on but we’ve never touched it”",
+     "factory defaults. It permits far more than it should, and the admin password may still be the one it shipped with.",
+     "Review the ruleset against how the business actually operates, change the credentials, and remove the permissions nobody needs. Usually a couple of hours with a disproportionate effect."),
+    ("“Guests can reach our server”",
+     "one flat network. The guest WiFi feature exists on the hardware and was never actually configured.",
+     "Segment properly — staff, guests, payment terminals and building devices on VLANs that cannot reach each other. Cheap to build in, awkward to retrofit, and the highest-value network change most businesses can make."),
+    ("“Remote desktop is how we work from home”",
+     "RDP published directly to the internet. One of the most reliably exploited routes into an Australian small business.",
+     "Move it behind a VPN or a controlled access broker with multi-factor authentication. This is worth changing this month rather than adding to a roadmap."),
+    ("“There are firewall rules nobody can explain”",
+     "rules added for a supplier, a project or a staff member who left years ago, and never removed.",
+     "Review each rule against a current business reason. Anything without one goes. Over years a ruleset stops describing how the business works."),
+    ("“The firewall firmware is years old”",
+     "nobody owns patching the edge device, and it does not prompt anyone the way a workstation does.",
+     "Bring it current and keep it there. Edge devices are actively targeted, and an unpatched firewall is worse than none because it is trusted."),
+    ("“We wouldn’t know if someone got in”",
+     "no logging, or logs retained for days rather than months.",
+     "Enable logging and retain it long enough to be useful. After an incident this determines whether you can establish what was reached — or have to assume the worst."),
+]
+
+EXAMPLE_1 = example(
+    "Remote desktop published to the internet",
+    "A Gold Coast business had staff working from home by connecting to office machines over remote desktop, exposed directly to the internet with a port forward. It had worked fine for three years.",
+    "The firewall logs showed continuous automated login attempts against those machines — thousands per day, from everywhere. No account lockout, no MFA, and one account using a password that appeared in a known breach list.",
+    "Closed the exposure, put remote access behind a VPN with multi-factor authentication, reset the affected credentials, and reviewed the logs for any successful access. None had succeeded, which was largely luck.",
+    "Remote working continued unchanged from the users’ point of view. The difference was that the front door stopped being open to the internet.")
+
+EXAMPLE_2 = example(
+    "A flat network in a venue taking card payments",
+    "A Gold Coast hospitality business asked us to look at slow WiFi. The network turned out to be a more pressing problem.",
+    "Everything sat on one flat network — guest WiFi, staff laptops, the point of sale, EFTPOS terminals and a set of cameras installed by a third party with default credentials. Any device on the guest network could reach all of it.",
+    "Rebuilt the network into four segments: staff, guests with internet only, payment terminals isolated, and building devices separated. Changed the camera credentials and firmware. Fixed the wireless capacity issue that had prompted the call in the first place.",
+    "The WiFi complaint was resolved, and a PCI-DSS exposure that nobody had identified was closed at the same time — for materially less than retrofitting it after an incident.")
+
+EXAMPLE_3 = example(
+    "A firewall rule from a supplier who had left",
+    "A Gold Coast business asked for a firewall review before a compliance audit, expecting a formality.",
+    "Eleven rules nobody could explain. One permitted inbound access from a fixed external address belonging to a software supplier the business had stopped using four years earlier. The rule had outlived the relationship, the contract and the person who requested it.",
+    "Traced each rule to a current business reason, removed those without one, documented the remainder, and set an annual review so the ruleset stays a description of how the business works.",
+    "Eleven unnecessary openings closed, including one that had been available to a third party for four years. The audit was a formality after that, rather than before it.")
 
 FAQS = [   (   'Does a small business need a proper firewall?',
         'If you have a server, staff working remotely, payment terminals or client data worth protecting, yes. The router your internet provider supplied is designed to get you online, not to '
@@ -95,6 +137,31 @@ PAGE = {
                         'staff and guest traffic is expected practice under PCI-DSS. We build that '
                         'separation in as standard on <a href="/business-wifi-gold-coast">business WiFi '
                         'installations</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What we find when we look at a business firewall</h2>
+      <p>Five of these six turn up in almost every network we are asked to review.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a network review actually turns up</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+    {EXAMPLE_3}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Computer Networking Service', '/computer-networking-service-gold-coast'),

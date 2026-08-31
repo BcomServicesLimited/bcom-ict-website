@@ -363,6 +363,47 @@
   </div>
 </section>
 
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The gap a SOC actually closes</h2>
+      <p>Most businesses already own security tools. What they lack is anyone reading what those tools produce.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>“We have alerts but nobody reads them”</h4><p class="cause"><span>Usually</span> tooling generating signals into an inbox with no owner. Coverage on paper, none in practice.</p><p class="fix"><span>What we do</span> Put triage in front of the alerts. The value of a SOC is people separating noise from intrusion, not the software producing the alerts.</p></div><div class="issue"><h4>“Something happened over the weekend”</h4><p class="cause"><span>Usually</span> intrusions are found on weekends and public holidays because that is when nobody is watching. Attackers know the pattern.</p><p class="fix"><span>What we do</span> Continuous monitoring closes the gap that business hours leave open. Detection at 2am rather than discovery on Monday is frequently the whole difference.</p></div><div class="issue"><h4>“An account signed in from overseas”</h4><p class="cause"><span>Usually</span> credential compromise. The sign-in itself is the alert that matters most and the one most businesses never see.</p><p class="fix"><span>What we do</span> Detect it in minutes, disable the session, and establish what was reached while the attacker had access — rather than discovering it weeks later.</p></div><div class="issue"><h4>“We only found out because a client told us”</h4><p class="cause"><span>Usually</span> no monitoring at all. The first indication came from outside, which is the worst way to learn.</p><p class="fix"><span>What we do</span> Continuous visibility across endpoints, identities and cloud so the business finds out first and can act before it becomes a client conversation.</p></div><div class="issue"><h4>“We can’t tell what happened”</h4><p class="cause"><span>Usually</span> logging retained for days rather than months, so the investigation has nothing to work with.</p><p class="fix"><span>What we do</span> Retain the right telemetry for long enough to matter. Without it you may have to notify on the assumption of the worst because you cannot prove otherwise.</p></div><div class="issue"><h4>“Our insurer wants 24/7 monitoring”</h4><p class="cause"><span>Usually</span> an increasingly common requirement, particularly for regulated businesses and those holding sensitive data.</p><p class="fix"><span>What we do</span> Provide monitored detection and response with the documentation to evidence it, rather than a tool that technically runs around the clock with nobody attached to it.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What continuous monitoring catches</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Contained at 2am on a Sunday</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A monitored Gold Coast client’s Microsoft 365 tenancy showed a successful sign-in from an unusual location, followed within minutes by the creation of a mailbox forwarding rule.</p></div>
+    <div><h4>What we found</h4><p>Credential compromise from a reused password. The account had been exempted from MFA months earlier for a device compatibility reason nobody had revisited. The attacker was setting up to intercept invoice correspondence.</p></div>
+    <div><h4>What we did</h4><p>Session revoked and account disabled within minutes of the alert. Credential reset, forwarding rule removed, and sign-in logs reviewed to establish exactly what had been accessed in the window — which was nothing beyond the mailbox listing.</p></div>
+    <div><h4>The outcome</h4><p>The business was told on Monday morning what had happened and what had already been done about it. Discovered a fortnight later instead, this would have been a redirected payment and a notification decision.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Ransomware stopped before encryption</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>Endpoint telemetry on a monitored client flagged a process attempting to delete volume shadow copies on a workstation — a standard precursor to ransomware encryption.</p></div>
+    <div><h4>What we found</h4><p>A user had opened an attachment that afternoon. The payload was preparing the machine by removing local recovery options before beginning encryption. Nothing had been encrypted yet.</p></div>
+    <div><h4>What we did</h4><p>Isolated the machine from the network automatically under the agreed rules of engagement, then investigated. Confirmed no lateral movement, identified the delivery email, removed it from every mailbox, and rebuilt the affected workstation.</p></div>
+    <div><h4>The outcome</h4><p>One machine rebuilt instead of an estate encrypted. The rules of engagement — agreed in advance, allowing isolation without waiting for a phone call — are what made the timing possible.</p></div>
+  </div>
+</div>
+  </div>
+</section>
+
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

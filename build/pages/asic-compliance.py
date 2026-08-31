@@ -1,4 +1,46 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("“We’ve had a questionnaire from our licensee”",
+     "an authorised representative being asked to evidence controls they have never documented, often at short notice.",
+     "Assess against the expectations, produce the evidence pack, and close the gaps in priority order. Being able to answer honestly matters more than answering well."),
+    ("“Our PI renewal is asking about cyber”",
+     "professional indemnity and cyber questionnaires have got materially harder, and the answers are no longer obvious.",
+     "Establish the true position first — MFA coverage, patching, backup testing, endpoint protection — then close what is missing so the answers are accurate rather than optimistic."),
+    ("“We outsource IT, so isn’t it their problem?”",
+     "a common and dangerous assumption. Outsourced arrangements form part of your compliance picture; the obligation stays with the licensee.",
+     "Document what your provider does, what they are responsible for, and what remains yours. That oversight is itself part of what is expected."),
+    ("“We don’t hold much client data”",
+     "an underestimate, almost always. Advice practices hold identity documents, financial statements and TFNs — a dense concentration by any measure.",
+     "Inventory what is actually held and where. The volume is usually a surprise, and it is the basis for everything else."),
+    ("“Our adviser works from home two days a week”",
+     "client information on a device outside the office, often unmanaged, sometimes personal.",
+     "Bring those devices under management with encryption and remote wipe, and put access behind MFA. Hybrid working is fine; unmanaged hybrid working is the exposure."),
+    ("“What happens if we have a breach?”",
+     "no incident response plan, so the first fifteen minutes get improvised at the worst possible time.",
+     "Write the plan, name who does what, and know in advance which obligations engage — ASIC, the OAIC under the NDB scheme, your PI insurer. They are separate duties."),
+]
+
+EXAMPLE_1 = example(
+    "An authorised representative asked to evidence controls",
+    "A Gold Coast advice practice operating under a licensee received a compliance questionnaire asking specifically about cyber controls, with a four-week deadline.",
+    "Most controls existed. Almost nothing was documented. MFA was on for four of seven staff, patching was inconsistent across machines, and there was no written record of who had access to what or when it had last been reviewed.",
+    "Ran a gap assessment against ASIC’s expectations and the Essential Eight, closed the MFA and patching gaps, built an access register and a short incident response plan, and produced a written evidence pack with implementation dates.",
+    "The questionnaire was answered with documents rather than assurances. The practice now has an evidence pack that updates rather than being rebuilt each time it is asked for.")
+
+EXAMPLE_2 = example(
+    "A broker whose IT provider was the gap",
+    "A Gold Coast mortgage broking practice was confident about its own controls but had never considered its outsourced arrangements.",
+    "The IT provider had shared administrative access across technicians with a common password, no MFA on their own management tooling, and no documented process for revoking access when their staff changed. The practice had no visibility of any of it and no contractual position on it.",
+    "Documented the supplier arrangement, set out what the practice should require, and — after the practice moved to us — implemented individually named technician access with MFA enforced, plus access reviews on staff change.",
+    "The practice can now evidence oversight of its outsourced IT, which is an explicit part of what is expected and the part most licensees overlook entirely.")
+
+EXAMPLE_3 = example(
+    "An incident plan written before it was needed",
+    "A Gold Coast financial services practice had controls in reasonable shape but no documented incident response plan, and asked whether it mattered.",
+    "It mattered more than they expected. Nobody could say who would make the notification decision, which obligations engaged, or who to call first. Their PI policy required notification before engaging any external party, which nobody had read.",
+    "Wrote a short plan naming responsibilities, the sequence for the first hour, and the separate obligations to ASIC, the OAIC under the NDB scheme, and the insurer. Ran it through with the team so it was not the first time anyone had seen it.",
+    "Four months later a staff member clicked a credential harvesting link. The plan was followed, the insurer was notified in the right order, and the whole thing was contained inside a morning.")
 
 FAQS = [   (   'What does ASIC require for cybersecurity?',
         'ASIC expects Australian financial services licensees to manage cyber risk as part of the adequate risk management systems required under their general licence obligations, and has published '
@@ -90,6 +132,31 @@ PAGE = {
                                  'Insurance brokers handling claims and personal information',
                                  'Any practice whose PI insurer has started asking harder questions at '
                                  'renewal']}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What licensees actually get asked</h2>
+      <p>These six questions come up in nearly every compliance conversation in this sector.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a compliance engagement looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+    {EXAMPLE_3}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
         ('Cybersecurity Risk Assessment', '/cybersecurity-health-check-for-small-business-gold-coast'),

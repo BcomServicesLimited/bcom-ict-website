@@ -1,4 +1,46 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("“The antivirus caught something — are we fine?”",
+     "a detection, not necessarily a resolution. Nobody asks how it arrived or what it did in the window before detection.",
+     "Establish the entry point and check for persistence — accounts, scheduled tasks, mailbox rules, startup entries. Cleaning without closing the route is why businesses get hit twice in a month."),
+    ("“The machine is slow and pops up ads”",
+     "adware or a browser hijack rather than anything more serious. Annoying, low risk, and usually bundled with something a user installed.",
+     "Remove it, then look at how it got there. If software is being installed without approval, that is the actual finding — and it means something worse could arrive the same way."),
+    ("“Files have odd extensions and there’s a note”",
+     "ransomware, mid or post encryption. This is not a malware removal job any more.",
+     "Stop. Disconnect from the network, do not power off, do not delete the note. Call us — this moves to incident response, where evidence and recovery matter more than cleaning."),
+    ("“It keeps coming back after we clean it”",
+     "persistence that was never removed, or reinfection through the same open route — an unpatched application, an account without MFA, exposed remote access.",
+     "Find the persistence and the entry route rather than running the scan again. Repeat infection is a symptom of an incomplete first response."),
+    ("“Our emails are being flagged as spam by clients”",
+     "your domain or IP may be sending mail you do not know about, usually from a compromised mailbox.",
+     "Check for compromise before assuming it is a reputation problem. Then fix SPF, DKIM and DMARC so nobody can send as you, and request delisting once the source is closed."),
+    ("“Should we just wipe and rebuild it?”",
+     "the instinct after any infection. Sometimes right, and often premature.",
+     "Rebuild where a clean removal cannot be assured — but not before evidence is preserved and data is off. Wiping first destroys the record of what was accessed, which may determine your obligations."),
+]
+
+EXAMPLE_1 = example(
+    "Cleaned three times by someone else",
+    "A Gold Coast business had the same machine cleaned by their previous provider three times in two months. Each time it came back clean; each time the infection returned within a fortnight.",
+    "The malware was being removed correctly, but the route in was never closed — an unpatched application with a known vulnerability, plus a local administrator account with a password shared across every machine in the office.",
+    "Removed the infection, patched the application, ended the shared local administrator practice, and checked every other machine for the same exposure — two others were already infected without symptoms.",
+    "It stopped recurring. The billable cycle of clean-and-return had been treating the symptom for two months, which is exactly the incentive problem managed IT removes.")
+
+EXAMPLE_2 = example(
+    "An infection that turned out to be a breach",
+    "A Gold Coast practice reported a machine behaving oddly and asked for a virus clean.",
+    "Not commodity malware. An information stealer had harvested saved browser credentials weeks earlier, and one of those credentials had been used to sign into the practice’s Microsoft 365 from overseas. A mailbox rule was quietly forwarding correspondence out.",
+    "Contained immediately, removed the forwarding rule, reset every credential from clean devices, revoked all sessions, and established from the logs what had been accessed and over what period — which is the question that decides a notification.",
+    "What was booked as a virus clean was a notifiable-breach assessment. The practice could answer what was accessed because logging happened to be adequate, which is not always the case.")
+
+EXAMPLE_3 = example(
+    "Adware that was the least of it",
+    "A Gold Coast business called about pop-ups on a reception machine — irritating rather than alarming, and assumed to be a simple clean.",
+    "The adware was trivial. What sat alongside it was a remote access tool installed the same day through the same bundled download, giving someone outside the business an unattended path onto the machine. It had been there five weeks.",
+    "Removed both, checked every other machine for the same tool, reset credentials that had been entered on the affected machine, and reviewed logs for activity during the five-week window.",
+    "The pop-ups were the visible symptom of something considerably worse. This is why we establish how something arrived rather than just removing what was reported.")
 
 FAQS = [   (   'How do you remove a virus from a business computer?',
         'bcom ICT isolates the affected machines first, identifies what the infection is, establishes what accounts and files were reached, then cleans or rebuilds the machines and resets exposed '
@@ -88,6 +130,31 @@ PAGE = {
                         'scheme</a>, and for anything beyond a single infected machine you are into <a '
                         'href="/cyber-incident-response-gold-coast">incident response</a> rather than '
                         'malware removal.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What people describe, and what it usually is</h2>
+      <p>The gap between the two is why removal alone is rarely the whole job.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>When a clean-up turns out to be something else</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+    {EXAMPLE_3}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Cyber Incident Response', '/cyber-incident-response-gold-coast'),
         ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),

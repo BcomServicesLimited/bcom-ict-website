@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("“The backup says it succeeded every night”",
+     "the job wrote data. That is all a success message proves — not that the data is complete, consistent, or restorable.",
+     "Run an actual restore. It is the only test that means anything, and it is the single most common thing nobody has ever done."),
+    ("“We back up to a drive plugged into the server”",
+     "a backup ransomware can reach from inside the network, using the same credentials. It will be encrypted alongside everything else.",
+     "Move to a target that is separated — different credentials, and not permanently mounted where an infected machine can write to it."),
+    ("“We’re in the cloud so we’re backed up”",
+     "a misunderstanding of what Microsoft and Google actually guarantee. They protect the platform, not your data from deletion or encryption.",
+     "Add proper Microsoft 365 or Google Workspace backup. Retention windows in those platforms are short, and they do expire."),
+    ("“We don’t know how long recovery would take”",
+     "no recovery time objective was ever agreed — backups were set up as a task rather than as part of a plan.",
+     "Agree how much data you can afford to lose and how long you can afford to be down, then design backwards from those two numbers."),
+    ("“A file from last quarter is gone”",
+     "retention set too short, or a backup rotation overwriting older copies faster than anyone realised.",
+     "Check every retention stage before concluding it is unrecoverable. Then set retention to match how long your business actually needs to look back."),
+    ("“Nobody checks whether it ran”",
+     "backup monitoring that emails a report nobody reads, or alerts to an address belonging to someone who left.",
+     "Put failures in front of someone who will act, and verify the alerting works by deliberately failing a job."),
+]
+
+EXAMPLE_1 = example(
+    "The restore that took four days instead of four hours",
+    "A Gold Coast business lost a server to a hardware failure. They had backups, had been paying for them for years, and expected to be trading the next morning.",
+    "The backup was complete but stored offsite with an upload-optimised, download-throttled connection. Restoring the full data set would take four days at the available speed. Nobody had ever calculated the recovery time, only the backup time.",
+    "Recovered the business-critical subset first to get them trading, then restored the remainder in the background over the following days. Afterwards, redesigned the arrangement with a local copy for speed and an offsite copy for safety.",
+    "They trade again within a day now rather than four. The lesson was that a backup is not a recovery until someone has worked out how long the recovery takes.")
+
+EXAMPLE_2 = example(
+    "Ransomware that reached the backups too",
+    "A Gold Coast business was hit with ransomware overnight. Files across the server were encrypted, and so was the NAS the backups were written to.",
+    "The NAS was permanently mapped and used the same administrator credentials as the server. Anything with those credentials could write to it, which is exactly what the ransomware did. There was no separated copy of any kind.",
+    "Recovered what could be recovered from a handful of individual machines and cloud-synced folders. Rebuilt the rest. Then implemented separated backup with distinct credentials, an immutable retention window, and scheduled restore testing.",
+    "The recovery was painful and incomplete, and it did not need to be. Separated backups would have made it a bad week rather than a permanent loss — which is why we now check for this before anything else when taking on a client.")
 
 FAQS = [   (   'How often should a business test its backups?',
         'Restores should be tested on a schedule and the result recorded — quarterly is a reasonable baseline for most small businesses, and more often for systems the business cannot trade without. '
@@ -90,6 +125,30 @@ PAGE = {
                         'tested backups usually recover without engaging the attacker at all — see <a '
                         'href="/cyber-incident-response-gold-coast">cyber incident response</a> and <a '
                         'href="/ransomware-reporting-australia">ransomware reporting obligations</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>Why backups fail when you need them</h2>
+      <p>Almost every business we assess has a backup. Far fewer have a recovery.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What happens when a backup is actually tested</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Cyber Incident Response', '/cyber-incident-response-gold-coast'),
         ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),

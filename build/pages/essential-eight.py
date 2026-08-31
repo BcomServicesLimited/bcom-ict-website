@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, ticks, related, photo, trust_note
+from layout import MARK, cta, faq_block, ticks, related, photo, trust_note, issues, example
 
 EIGHT = [
     ("Application control", "Only approved software can run. Stops a staff member's download executing something malicious."),
@@ -20,6 +20,41 @@ LEVELS = [
 
 grid = "".join(f'<div class="commit"><h4>{i}. {t}</h4><p>{d}</p></div>' for i, (t, d) in enumerate(EIGHT, 1))
 levels = "".join(f'<div class="cred cred--{"note" if i==0 else "aligned"}"><span class="cred-tag">ML{i}</span><div><h4>{t}</h4><p>{d}</p></div></div>' for i, (t, d) in enumerate(LEVELS))
+
+COMMON_ISSUES = [
+    ("“Our client says we need to be Essential Eight compliant”",
+     "there is no formal certification scheme — nobody can certify you against it. What is being asked for is evidence of maturity.",
+     "Assess your current level against each of the eight controls individually and produce a written report. That document is what the client actually wants."),
+    ("“We think we’re already doing most of it”",
+     "partial implementation, which is the norm. MFA on some accounts, patching on some machines, backups without tested restores.",
+     "Measure each control separately, because maturity is per-control rather than overall. Most businesses sit unevenly and are surprised by which one is weakest."),
+    ("“Application control sounds impossible for us”",
+     "the reputation is deserved — it is the hardest of the eight and needs a proper picture of what staff actually run.",
+     "Start with the seven that are achievable. Application control is usually the last one to attempt and should not block progress on the rest."),
+    ("“We patch when we remember”",
+     "no schedule and no verification, so patching is happening on the machines someone thought of.",
+     "Automate it and report on coverage. Patching applications and operating systems is two of the eight, and it is where the fastest maturity gains usually are."),
+    ("“We have MFA — isn’t that enough?”",
+     "MFA is one control of eight, and it is often incomplete. Service accounts, admin accounts and exempted users are the usual gaps.",
+     "Verify actual coverage rather than assuming, then address the exemptions. Nearly every business we assess has more exemptions than management knew about."),
+    ("“What level should we be at?”",
+     "no one has explained that maturity levels are a choice matched to risk rather than a ladder to climb.",
+     "Recommend a target based on what you hold and who is asking. Maturity Level 1 is the realistic target for most Gold Coast businesses and stops the great majority of what actually happens."),
+]
+
+EXAMPLE_1 = example(
+    "Assessed for a supply chain requirement",
+    "A Gold Coast business supplying a larger organisation was told it needed to demonstrate Essential Eight alignment to stay on the panel.",
+    "Assessed at Maturity Level 0 or 1 across the eight. MFA was strong, backups were running but never restored, patching was inconsistent, admin rights were on every user’s daily account, and application control had never been considered.",
+    "Produced the maturity report, then prioritised by effort against risk: removed daily admin rights, automated patching, tested restores and set a schedule, and hardened Office macro settings. Application control was scoped but deferred as a later phase.",
+    "Reached a defensible Level 1 across seven controls within a quarter. The written assessment satisfied the panel requirement, and the daily-admin-rights change alone materially reduced their exposure.")
+
+EXAMPLE_2 = example(
+    "The control that turned out to be missing entirely",
+    "A Gold Coast professional firm believed it was in reasonable shape and asked for an assessment to confirm it before an insurance renewal.",
+    "Seven controls were at a reasonable Level 1. The eighth — regular backups — was rated Level 0, not because backups were absent but because no restore had ever been tested and the backup target was reachable from the network with the same credentials as the server.",
+    "Moved the backup to a separated target, ran a test restore, and set a testing schedule with results recorded. The other seven were tidied rather than rebuilt.",
+    "The renewal was answered accurately. The finding that mattered was in the control the firm was most confident about, which is more common than not.")
 
 FAQS = [
     ("What is the ASD Essential Eight?",
@@ -117,6 +152,29 @@ PAGE = {
     standards fit alongside it.</p>
 
     {trust_note('There is no formal certification against the Essential Eight — nobody can certify you and anyone claiming to is overstating. What exists is assessment and evidence of maturity, which is what the people asking actually want.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What businesses actually ask about the Essential Eight</h2>
+      <p>Six recurring conversations, and the answers are usually less daunting than expected.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What an assessment turns up</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

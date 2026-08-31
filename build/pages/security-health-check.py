@@ -1,4 +1,46 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("“We don’t know what we don’t know”",
+     "no one has ever looked at the whole picture — security has been handled reactively, one fix at a time, by whoever was available.",
+     "Assess all five areas at once — email and identity, endpoints, backups, network and cloud tenancy — so you get a single ranked list rather than six separate opinions."),
+    ("“Our insurer is asking questions we can’t answer”",
+     "the controls may well exist, but nothing is documented, so even the parts that are fine cannot be evidenced.",
+     "Produce a written report mapped to the ASD Essential Eight that you can attach to the renewal. Documenting what already works is often half the value."),
+    ("“A client wants to know how we protect their data”",
+     "no written position. \"We take security seriously\" does not survive a procurement questionnaire.",
+     "Give you a document that answers it — what controls you operate, how access is managed, where data sits, and what happens in an incident."),
+    ("“We had a near miss and want to know if there are others”",
+     "one incident is rarely isolated. The gap that allowed it usually exists in several places.",
+     "Look for the same class of weakness everywhere, not just where it surfaced — dormant accounts, MFA exemptions, unpatched machines, shared credentials."),
+    ("“We’ve just been told we need to be Essential Eight compliant”",
+     "a client or an insurer has asked, and nobody internally knows where the business currently sits.",
+     "Measure the current maturity level for each of the eight controls individually, then give you a costed plan to reach the level being asked for."),
+    ("“We’re about to spend money and don’t know where”",
+     "a proposal has landed and there is no independent basis for judging whether it addresses the real risks.",
+     "Rank findings by what they would actually cost you if they happened, so the spend goes to what matters rather than what was quoted."),
+]
+
+EXAMPLE_1 = example(
+    "A health check that paid for itself in licensing",
+    "A Gold Coast professional firm booked a health check because a major client had begun asking suppliers how they protect information.",
+    "Multi-factor authentication on nine of twenty-two accounts. Four mailboxes belonging to departed staff still active and licensed. An organisation-wide sharing link on a folder containing client financial records, created three years earlier. Backups running, never tested.",
+    "Produced the written report, closed the MFA gap, removed the dormant accounts and their licences, tightened sharing defaults across the tenancy, and ran a test restore in front of the practice manager.",
+    "The dormant licences alone covered most of the engagement. The firm now has a document it sends when a client asks, rather than composing an answer each time.")
+
+EXAMPLE_2 = example(
+    "The gap that would have decided a notification",
+    "A Gold Coast allied health practice wanted a health check ahead of a practice sale, expecting a clean result.",
+    "Security was reasonable. What was missing was logging — sign-in and audit logs were retained for a fraction of the useful period. Had a breach occurred, the practice could not have established what was accessed, and as a health service provider it would have faced a notification decision with no evidence either way.",
+    "Extended log retention, enabled the auditing that was switched off by default, and documented what could and could not be established from the current configuration.",
+    "The practice can now answer the question that actually determines a notifiable data breach assessment: what was reached. Without it, the honest answer would have been to assume the worst.")
+
+EXAMPLE_3 = example(
+    "A health check booked because nothing had happened",
+    "A Gold Coast business booked an assessment with no trigger at all — no incident, no questionnaire, no renewal. The owner simply wanted to know where they stood before something forced the question.",
+    "A former contractor still held access to the file server and the cloud tenancy eighteen months after the engagement ended. Two machines were running an operating system no longer receiving security updates. Backups were sound and tested, which was genuinely unusual.",
+    "Revoked the contractor access, planned replacement for the two unsupported machines against a budget rather than an emergency, and documented the position so it could be re-checked annually.",
+    "Nothing dramatic, which was the point. The contractor access had been open for eighteen months and would have been discovered the hard way.")
 
 FAQS = [   (   'What is a cybersecurity health check?',
         "A cybersecurity health check is a point-in-time review of a business's security position across email and identity, endpoints, backups, network and cloud tenancy. bcom ICT delivers it for a "
@@ -84,6 +126,31 @@ PAGE = {
                         'something happens.</p><p style="max-width:68ch;margin-top:16px">There is no '
                         'obligation to have us do the remediation. Take the report to whoever you like; it '
                         'is written to be useful on its own.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>Why businesses book a health check</h2>
+      <p>Six versions of the same conversation. Yours is probably one of them.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a health check actually turns up</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+    {EXAMPLE_3}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
         ('Essential Eight assessment', '/essential-eight-guide-gold-coast'),

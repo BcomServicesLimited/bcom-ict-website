@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, ticks, steps, related, trust_note
+from layout import MARK, cta, faq_block, ticks, steps, related, trust_note, issues, example
 
 PHASES = [
     ("Contain", "Stop it spreading. Affected machines come off the network, compromised accounts are disabled, and attacker access is cut. Speed matters more than tidiness at this stage."),
@@ -17,6 +17,41 @@ FIRST = [
     "Change passwords from a device you know is clean, not from the affected machine.",
     "Notify your cyber insurer early — many policies require it before you engage anyone.",
 ]
+
+COMMON_ISSUES = [
+    ("“We powered the machine off”",
+     "the instinctive reaction, and the one that costs most. Memory holds the record of what actually ran and what was reached.",
+     "Work with what remains — disk artefacts, logs, cloud sign-in records. Recoverable in most cases, but the picture is less complete, and that can decide a notification either way."),
+    ("“We wiped it and rebuilt”",
+     "an attempt to move fast that removes the evidence of what was accessed.",
+     "Reconstruct from surviving sources. If nothing survives, the honest position may be to notify on the assumption of the worst, because you cannot prove otherwise."),
+    ("“We replied to the attacker”",
+     "an understandable instinct that confirms the mailbox is live and monitored, and can escalate the demand.",
+     "Stop all contact and take legal advice before anything further. Negotiation is not an IT decision and there are sanctions risks depending on who is being paid."),
+    ("“We don’t know if data left”",
+     "the question that determines your obligations, and the hardest to answer without logging.",
+     "Establish it from firewall, endpoint and cloud audit logs where retention allows. This is the single finding that most affects what you must do next."),
+    ("“Our backups were encrypted too”",
+     "backups reachable from the infected network with the same credentials — the most common reason a bad week becomes an existential one.",
+     "Recover whatever is separated or cloud-synced, rebuild the rest, then redesign backup so it cannot happen again."),
+    ("“Who do we have to tell?”",
+     "several parties, and they are separate obligations — satisfying one does not satisfy the others.",
+     "Provide the factual technical account you need for each. The notification decisions remain yours and your lawyer’s; we give you the facts they rest on."),
+]
+
+EXAMPLE_1 = example(
+    "Business email compromise caught at the settlement",
+    "A Gold Coast agency called on a Friday afternoon: a client had queried bank details on a settlement email that the agency had not sent.",
+    "A mailbox had been compromised eleven days earlier through a reused password with no MFA. A forwarding rule had been copying correspondence out and deleting the copies. The attacker had been reading, waiting, and had sent one altered email from the real mailbox.",
+    "Contained immediately — sessions revoked, credentials reset from clean devices, forwarding rules removed. Reconstructed the eleven days from sign-in and audit logs to establish exactly what had been read and by whom. Provided the written account for the insurer and the agency’s legal advisers.",
+    "The payment was stopped. The agency could evidence precisely what had been accessed, which turned a difficult notification assessment into a documented one.")
+
+EXAMPLE_2 = example(
+    "Ransomware with separated backups",
+    "A Gold Coast business discovered ransomware on a Monday morning. Files across the file server were encrypted and a ransom note was on every desktop.",
+    "Entry was through remote desktop exposed to the internet with a weak password. The attacker had been present for four days. Crucially, backups were held on a separated target with distinct credentials — they were intact.",
+    "Contained and isolated, established the entry route and the dwell time, removed persistence including two accounts the attacker had created, then restored from the clean backup. Closed the remote desktop exposure permanently.",
+    "Trading again in under two days with no payment considered and no data lost. The separated backup was a decision made eighteen months earlier, and it is the entire reason this was recoverable.")
 
 FAQS = [
     ("What is cyber incident response?",
@@ -115,6 +150,29 @@ PAGE = {
     your business and your legal advisers.</p>
 
     {trust_note('Businesses on our <a href="/security-operations-centre-gold-coast">24/7 SOC</a> are usually contained before an incident becomes a crisis — detection at 2am rather than discovery on Monday is often the whole difference.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What people have usually already done before we arrive</h2>
+      <p>Some of it helps. Some of it removes the evidence that decides your obligations.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a response actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 
