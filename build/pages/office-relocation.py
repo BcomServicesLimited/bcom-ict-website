@@ -1,5 +1,46 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
 
+COMMON_ISSUES = [
+    ("&ldquo;We move in three weeks and haven&rsquo;t ordered the internet&rdquo;",
+     "lead times nobody checked. A new service at a new address can take considerably longer than a fit-out, and it is the item most often discovered late.",
+     "Order services the moment the lease is signed. This is the constraint on almost every office move, and it is the one thing that cannot be solved by working a weekend."),
+    ("&ldquo;The new building says it&rsquo;s already cabled&rdquo;",
+     "cabling of unknown age, standard and condition, frequently modified by previous tenants and documented by nobody.",
+     "Test and certify it before relying on it. Discovering that nine outlets fail on the Monday morning is a very different situation from discovering it three weeks out."),
+    ("&ldquo;Nobody knows what&rsquo;s in the comms room&rdquo;",
+     "equipment accumulated over a tenancy, some of it live, some of it abandoned by previous occupants, none of it labelled.",
+     "Document what exists and what it does before anything is unplugged. The move is when undocumented dependencies surface, and the middle of a move is the worst moment to find them."),
+    ("&ldquo;We&rsquo;ll just move the phones ourselves&rdquo;",
+     "an underestimate. Numbers, services and cabling all have to align at the new site, and phones are typically left until last.",
+     "Treat phones as a lead item rather than a moving-day task. It is the part of a relocation with the least tolerance for running late and the most external dependencies."),
+    ("&ldquo;Can the server just go in the boot?&rdquo;",
+     "an understandable question and a genuine risk. Servers are heavy, delicate, and hold everything the business runs on.",
+     "Move it deliberately, with a verified backup taken first and a tested way back. The backup before a move is not a formality &mdash; it is the only thing standing between a bad journey and a lost business."),
+    ("&ldquo;Staff arrive Monday and nothing works&rdquo;",
+     "a cutover completed but never tested, or tested only by the people who did it.",
+     "Test as a user before anyone arrives &mdash; log in, print, call out, open a file, reach the internet. The gap between it is connected and it works is where lost trading days live."),
+]
+
+EXAMPLE_1 = example(
+    "Testing the new building three weeks out instead of on the Monday",
+    "A firm was relocating over a single weekend to a floor the landlord described as cabled and ready. Forty positions, and staff expected to be working on Monday morning.",
+    "Certification three weeks before the move found a mix of cable standards with no records distinguishing them and nine runs that failed outright, two of them serving the room intended for the comms cabinet. The internet service, ordered a fortnight earlier, had a connection date four days after the move. Both problems were entirely solvable with three weeks in hand and neither was solvable on a Sunday night.",
+    "Replaced the nine failed runs, escalated the service order with the provider and arranged a temporary mobile broadband service as cover, then configured and tested everything before the move weekend.",
+    "The firm moved on Saturday and worked on Monday. The permanent service connected on the Thursday as revised, by which point nobody had noticed, because the cover had been arranged rather than improvised.")
+
+EXAMPLE_2 = example(
+    "The dependency that surfaced when a cable was unplugged",
+    "A business was moving premises and had documented what it believed was in the comms room &mdash; the server, the switching, the router and the phone system.",
+    "Tracing everything before disconnection found a small unlabelled device that turned out to be a monitored alarm dialler, and a second connection feeding a card reader on the front door of a part of the building the business shared with another tenant. Neither appeared in any documentation and neither belonged to anything anyone had thought about. Unplugging the rack without tracing it first would have disabled a monitored alarm and locked a shared entrance.",
+    "Identified every connection and what it served before anything was touched, arranged the alarm and door access separately with their own providers, and moved the rest as planned.",
+    "Nothing was discovered by failing. The tracing added half a day to the preparation and removed two problems that would have appeared on a Sunday evening with nobody available to resolve them.")
+
+EXAMPLE_3 = example(
+    "Testing as a user rather than as an installer",
+    "A business completed a weekend relocation. Everything had been connected, powered and confirmed working by the team doing the move before they left on Sunday evening.",
+    "Staff arrived Monday and could not print, and half of them could not reach a shared drive. Nothing had been done incorrectly. The testing had confirmed that each device was connected and responding, which was true, and had not confirmed that an ordinary person sitting at an ordinary desk could log in, open a file, print it and make a call. The printers were reachable and the print queues on the workstations still pointed at addresses from the old premises. The shared drive was online and the mapping used a server name resolved by a system that had not yet been repointed.",
+    "Worked through the office desk by desk on the Monday morning to restore normal working, then rebuilt the checklist so a relocation ends with somebody sitting at a real desk performing the five things staff do first, rather than with a list of devices confirmed as responding.",
+    "The business lost most of a morning rather than a day. Every subsequent move we have run finishes with that user-level test, because the gap between it is connected and it works is precisely where a lost trading day lives.")
 FAQS = [   (   'How far ahead should we plan an office IT move?',
         'Start at least six to eight weeks out, and earlier if the new site needs carrier services provisioned. NBN, fibre and phone line lead times are the most common reason an office move slips — '
         'the physical work is the easy part. bcom ICT surveys both sites and orders carrier services against your move date rather than after it.'),
@@ -82,6 +123,31 @@ PAGE = {
                                  'Workstations, printers, scanners and EFTPOS moved, reconnected and '
                                  'verified',
                                  'Updated documentation and asset register handed to you at the end']}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The relocation problems we are actually called to</h2>
+      <p>Six situations. Five of them are decided weeks before the move, and one of them cannot be fixed on the weekend.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a planned relocation looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+    {EXAMPLE_3}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Office Network Cabling', '/network-cabling-for-offices-gold-coast'),
         ('Business Phone Systems', '/business-phone-systems-gold-coast'),

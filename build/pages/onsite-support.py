@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, steps, related, svc_body, trust_note, price_table
+from layout import MARK, cta, faq_block, cards, ticks, steps, related, svc_body, trust_note, price_table, issues, example
 
 PRICING = [
     ('Simple job, booked online', '$252', 'inc GST, fixed price',
@@ -10,6 +10,41 @@ PRICING = [
       'Anything beyond the hour continues at the standard rate',
      ]),
 ]
+
+COMMON_ISSUES = [
+    ("&ldquo;How soon can someone actually get here?&rdquo;",
+     "the question behind most on-site calls. Same-day attendance is usually available across the Gold Coast, and honesty about it matters more than an optimistic answer.",
+     "We give you a window rather than a day, and tell you if we are running late rather than leaving you wondering. Managed clients have a contracted response; everyone else gets a booked visit, most often same or next business day."),
+    ("&ldquo;Can this be done remotely instead?&rdquo;",
+     "often yes, and it is faster and cheaper when it can. Remote work carries no call-out.",
+     "We check whether the fault needs a visit before booking one. Where it is clearly physical &mdash; a dead machine, a failed drive, a network that is down &mdash; we book straight away rather than billing an hour of trying."),
+    ("&ldquo;The building makes it difficult to get in&rdquo;",
+     "induction requirements, lift access cards, loading dock bookings and building management sign-in. Common in Gold Coast towers and frequently a larger part of response time than the fault.",
+     "Tell us the access arrangements when you book, and we record them so no future visit rediscovers them. This is the difference between attending today and attending tomorrow."),
+    ("&ldquo;Do we have to be there?&rdquo;",
+     "usually not, though someone needs to let us in and there are jobs where a decision has to be made on the spot.",
+     "Agree beforehand what we can proceed with unattended and what needs a call. Nobody should return to find work done that they would not have authorised."),
+    ("&ldquo;What if it turns out to be bigger than we thought?&rdquo;",
+     "a real risk on any diagnosis. A fault described over the phone is a fault described by its symptom.",
+     "We tell you before continuing rather than afterwards. If the job grows, you approve the additional work before it happens &mdash; there is no invoice for anything you did not agree to."),
+    ("&ldquo;What if the machine has to go away?&rdquo;",
+     "sometimes necessary for a hardware repair or a data recovery attempt.",
+     "We leave a loan device so nobody sits idle, and tell you the expected turnaround before anything is taken. A machine leaving the building without a replacement is a day of somebody&rsquo;s work."),
+]
+
+EXAMPLE_1 = example(
+    "Attending today because the building details were already on file",
+    "A business in a Gold Coast tower had a server that would not come back after a building power interruption. Their previous provider had quoted a next-business-day visit.",
+    "The delay was not technical capacity. Reaching the tenancy required building management sign-in, a lift access card programmed for that floor, and a loading dock booking for anything larger than a laptop bag. The previous provider had no standing arrangement and was beginning that process from scratch each time they attended.",
+    "Attended the same afternoon, holding the building&rsquo;s contractor induction from other work in the tower, and restored the server from backup. Recorded the access requirements against the client afterwards.",
+    "Trading again that day rather than the next. In multi-tenanted buildings the access arrangements are routinely a larger component of response time than the fault itself.")
+
+EXAMPLE_2 = example(
+    "Saying it was bigger before continuing, not after",
+    "A business booked a visit for a workstation that would not start. A straightforward job on the description, and quoted as one.",
+    "The machine had a failed drive, which was expected. It also held the only copy of several years of records for a part of the business, because a folder had been excluded from the backup during a change eighteen months earlier and nobody had checked since. Continuing with a routine repair would have completed the job as booked and lost the data.",
+    "Stopped, explained what had been found and what recovery would involve, and let the business decide before doing anything further. Recovery was authorised, the data came back, and the backup exclusion was corrected across every machine afterwards.",
+    "The records were recovered and the gap in the backup was closed. The job cost more than the booking &mdash; and the alternative was completing a cheap repair correctly while destroying what the business actually needed.")
 
 PAGE = {
     "path": '/on-site-technical-support-gold-coast',
@@ -36,6 +71,30 @@ PAGE = {
       <p>Book a simple job online and it is a fixed price, with no call-out fee on top.</p>
     </div>
     {price_table(PRICING, note='Booked online, a straightforward one-hour on-site job is a fixed $252 inc GST. Work arranged ad hoc by phone is charged at the standard rate instead &mdash; $198 + GST per hour plus a $100 + GST call-out, so $327.80 inc GST for a first hour on site. If a job is clearly larger than a single visit we will say so before the hour is up rather than after it. Full rates are on the <a href="/pricing">pricing page</a>.')}
+  </div>
+</section>
+'''
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The questions we are actually asked about on-site visits</h2>
+      <p>Six things worth answering plainly before anyone gets in a car.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What an on-site visit actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 '''

@@ -325,6 +325,47 @@
     <p style="max-width:68ch">If the same machine keeps failing, or the same fault keeps returning across different machines, the useful question stops being "how do we fix it" and becomes "why does this keep happening". That is usually an ageing fleet, an under-specified machine doing work it was never bought for, or something environmental like power or heat.</p><p style="max-width:68ch;margin-top:16px">Chasing that down is included for <a href="/managed-it-services-for-small-businesses-gold-coast">managed IT</a> clients, because a provider who only earns from repeat visits has no reason to look. For everyone else we will still tell you what the underlying cause is, rather than billing the symptom repeatedly.</p>
   </div>
 </section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The situations we are actually called into</h2>
+      <p>Six of them. The hardest are not technically difficult &mdash; they are the ones nobody reports.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>&ldquo;It&rsquo;s been like this for months&rdquo;</h4><p class="cause"><span>Usually</span> a fault everyone has adapted around. Staff have invented workarounds, the workarounds became habit, and nobody reports it any more.</p><p class="fix"><span>What we do</span> Ask what people work around rather than what they report. Long-standing faults are usually cheap to fix and expensive to have tolerated, and they surface only if somebody asks the right question.</p></div><div class="issue"><h4>&ldquo;Three people looked at it and found nothing&rdquo;</h4><p class="cause"><span>Usually</span> a fault that is not present when anyone attends, or one being investigated in the wrong place because the symptom appears somewhere other than the cause.</p><p class="fix"><span>What we do</span> Change the method rather than repeating it. If attending has failed three times, the fourth attendance will fail too &mdash; what is needed is evidence gathered while nobody is watching.</p></div><div class="issue"><h4>&ldquo;It happens to everyone but only sometimes&rdquo;</h4><p class="cause"><span>Usually</span> something shared &mdash; the network, a server, a connection &mdash; failing intermittently rather than a problem with any individual machine.</p><p class="fix"><span>What we do</span> Establish what the affected people have in common. A fault crossing several machines has ruled out every one of those machines, which is genuinely useful information.</p></div><div class="issue"><h4>&ldquo;It started after&hellip; something, we think&rdquo;</h4><p class="cause"><span>Usually</span> a change nobody recorded. An update, a new device, a provider swap, a staff departure &mdash; there is nearly always a starting point and it is nearly always undocumented.</p><p class="fix"><span>What we do</span> Pin the date down as precisely as possible and work back to what changed. Establishing when a fault began is frequently the fastest route to establishing what caused it.</p></div><div class="issue"><h4>&ldquo;We rebooted and it came good&rdquo;</h4><p class="cause"><span>Usually</span> a temporary state cleared rather than a fault resolved. Restarting fixes the symptom and destroys the evidence.</p><p class="fix"><span>What we do</span> Where the business can tolerate it, capture the state before restarting. A restart is a perfectly reasonable response to a stopped business and it does end the investigation for that occurrence.</p></div><div class="issue"><h4>&ldquo;We just want it to stop&rdquo;</h4><p class="cause"><span>Usually</span> entirely fair, and sometimes at odds with finding the cause. There is a real tension between the fastest fix and the permanent one.</p><p class="fix"><span>What we do</span> We will tell you which we are doing. Sometimes the right answer is to restore service now and investigate afterwards; what matters is that the choice is explicit rather than presented as a fix.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a real diagnosis looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>The workaround nobody had mentioned in two years</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business engaged us for general support and mentioned no significant problems. Sitting with staff during onboarding, three separate people were observed saving a file, closing the application, and reopening it before continuing.</p></div>
+    <div><h4>What we found</h4><p>Asked about it, the answer was that the application lost work if left open too long, and it had been that way for as long as anyone could remember. Nobody had reported it because it had stopped feeling like a fault. The cause was a session timeout on the server, set during an installation years earlier and never revisited, which was disconnecting idle sessions after fifteen minutes.</p></div>
+    <div><h4>What we did</h4><p>Changed the timeout to a sensible value for the way the application is actually used, and confirmed with staff over the following fortnight that the habit was no longer necessary.</p></div>
+    <div><h4>The outcome</h4><p>The workaround disappeared. Three people had been performing a small ritual dozens of times a day for two years, and it never reached us because it had long since stopped being described as a problem.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Restoring service first, and saying so</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business lost access to a shared system on a Friday afternoon during their busiest period. The immediate need was to keep trading; the cause was unknown.</p></div>
+    <div><h4>What we found</h4><p>The fastest route to working was to restart the affected server, which would have cleared whatever state was causing the problem and destroyed any evidence of what it had been. That would have restored the business within minutes and made a recurrence very likely and equally undiagnosable.</p></div>
+    <div><h4>What we did</h4><p>Explained the trade-off to the business directly, captured what could be captured in about ten minutes, then restarted and restored service. Investigated from the captured evidence over the following week and found a scheduled task that had failed in a way that consumed a shared resource.</p></div>
+    <div><h4>The outcome</h4><p>The business traded through the afternoon and the underlying cause was fixed the following week. The decision to spend ten minutes capturing evidence first was the business&rsquo;s to make, and it could only make it because somebody explained what the alternative cost.</p></div>
+  </div>
+</div>
+  </div>
+</section>
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>
