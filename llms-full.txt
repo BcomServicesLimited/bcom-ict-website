@@ -86,13 +86,27 @@ described as ISO certified, ISO accredited or ISO compliant.
 **bcom ICT does not hold ACMA cabler registration.** Fixed cabling is carried out
 by ACMA registered cabling contractors that bcom ICT engages and manages.
 
-## Team
+## Leadership
+
+Clients deal with these people directly rather than through an account manager
+or a rotating helpdesk. Escalation reaches a director the same day.
 
 - **Royce Clark** — Director, Technical Operations & ICT Delivery. Network
   engineer, 20+ years. Holds ITIL 4 Foundation. First escalation point.
 - **Ollie** — Director, ICT Contract Management & Business Development. Holds
   ISO/IEC 42001:2023 Lead Implementer (BSI).
 - **Daniel** — Software Development & IT Support.
+
+## Delivery reach
+
+- On-site delivery across the Gold Coast, same-day attendance where available.
+- Multi-site rollouts and office relocations coordinated nationally.
+- Managed IT, cybersecurity, 24/7 SOC, cloud and Microsoft 365 delivered to
+  businesses anywhere in Australia.
+- Reference engagement: a full national technology rollout for an Australian
+  retail chain — all computer and networking equipment, CCTV, business WiFi and
+  internet connectivity supplied and installed for every store and head office
+  across the country, with bcom ICT remaining the ongoing IT partner.
 
 ## Service delivery
 
@@ -160,8 +174,8 @@ A: The only authoritative bcom ICT website is www.bcomservices.com. The business
 **Q: Do you work with home users?**
 A: No, not any more. bcom ICT works with businesses. We still install WiFi and mesh networks for home offices, but general home computer repair and residential IT support are not services we take on.
 
-**Q: How big is the team?**
-A: Small, deliberately. Three people, all of whom you can reach. That's the trade-off: you won't get a 40-person helpdesk, and you also won't get a different stranger every time you call or an escalation path that never reaches anyone with authority.
+**Q: Who will we actually deal with?**
+A: The people doing the work. bcom ICT is led by Royce Clark and Ollie, and clients deal with them directly rather than through an account manager or a rotating helpdesk. Escalation reaches a director the same day. Meet them on our team page.
 
 **Q: Where are you based?**
 A: 9 Ferny Avenue, Surfers Paradise QLD 4217 — an actual office on the Gold Coast, not a registered address for an interstate company. On-site work covers the whole Gold Coast; managed, remote and cloud services are delivered Australia-wide.
@@ -1866,25 +1880,25 @@ A: No. bcom ICT works on business machines only.
 ## Our Team
 URL: https://www.bcomservices.com/our-team
 
-bcom ICT is a three-person team based at 9 Ferny Avenue, Surfers Paradise: Royce Clark, Director of Technical Operations and ICT Delivery; Ollie, Director of ICT Contract Management and Business Development; and Daniel, covering software development and IT support. Royce holds ITIL 4 Foundation; Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.
+bcom ICT is led from 9 Ferny Avenue, Surfers Paradise by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation; Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.
 
-**Q: Who works at bcom ICT?**
-A: bcom ICT is a three-person team based in Surfers Paradise: Royce Clark, Director of Technical Operations and ICT Delivery; Ollie, Director of ICT Contract Management and Business Development; and Daniel, covering software development and IT support. Royce holds ITIL 4 Foundation and Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.
+**Q: Who runs bcom ICT?**
+A: bcom ICT is led by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation and Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. Clients deal with them directly rather than through an account manager.
 
-**Q: Will I get the same person each time?**
-A: Usually, yes. With a team of three there's no rotating pool of strangers — whoever knows your environment tends to be the one who attends. That's the main practical advantage of working with a company this size.
+**Q: Will I get the same people each time?**
+A: Yes — that's the point of how we're structured. There's no rotating pool of strangers reading your history off a ticket before they can help. Whoever knows your environment is who attends, and continuity is one of the main reasons clients stay with us for years.
 
 **Q: Who do I escalate to?**
-A: Royce, who is a director. There's no tier structure to climb and no case manager between you and someone with authority — an escalation reaches an owner the same day.
+A: Royce, who is a director. There's no tier structure to climb and no case manager sitting between you and someone who can make a decision — an escalation reaches an owner the same day.
+
+**Q: Can you handle large or multi-site work?**
+A: Yes. bcom ICT delivered a full national technology rollout for an Australian retail chain — supplying and installing all computer and networking equipment, CCTV, WiFi and internet connectivity for every store and head office, and we still support that estate. Multi-site delivery across Australia is a core part of what we do, not an exception.
 
 **Q: Are your technicians screened?**
 A: Yes. Technicians attending client sites hold national police checks, and Queensland Blue Cards where a site requires them — relevant for healthcare, education and childcare clients where screening is a hard requirement.
 
 **Q: Is bcom ICT ISO certified because Ollie holds an ISO certification?**
 A: No. Ollie's ISO/IEC 42001:2023 Lead Implementer certification is a personal credential issued by BSI, assessing Ollie's competence to implement an AI management system. It says nothing about whether bcom ICT as an organisation has been audited, and bcom ICT holds no organisational ISO certification. We keep those claims separate everywhere, including in our structured data.
-
-**Q: Isn't a three-person team too small to rely on?**
-A: It's a fair question and the honest answer is that it depends what you need. If you require guaranteed cover through a fortnight of simultaneous leave, a larger provider is the right call and we'll say so. What a small team gives you is people who know your environment without reading notes, and an escalation that reaches a decision-maker the same day.
 
 
 ---

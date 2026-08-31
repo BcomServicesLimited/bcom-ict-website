@@ -86,13 +86,27 @@ described as ISO certified, ISO accredited or ISO compliant.
 **bcom ICT does not hold ACMA cabler registration.** Fixed cabling is carried out
 by ACMA registered cabling contractors that bcom ICT engages and manages.
 
-## Team
+## Leadership
+
+Clients deal with these people directly rather than through an account manager
+or a rotating helpdesk. Escalation reaches a director the same day.
 
 - **Royce Clark** — Director, Technical Operations & ICT Delivery. Network
   engineer, 20+ years. Holds ITIL 4 Foundation. First escalation point.
 - **Ollie** — Director, ICT Contract Management & Business Development. Holds
   ISO/IEC 42001:2023 Lead Implementer (BSI).
 - **Daniel** — Software Development & IT Support.
+
+## Delivery reach
+
+- On-site delivery across the Gold Coast, same-day attendance where available.
+- Multi-site rollouts and office relocations coordinated nationally.
+- Managed IT, cybersecurity, 24/7 SOC, cloud and Microsoft 365 delivered to
+  businesses anywhere in Australia.
+- Reference engagement: a full national technology rollout for an Australian
+  retail chain — all computer and networking equipment, CCTV, business WiFi and
+  internet connectivity supplied and installed for every store and head office
+  across the country, with bcom ICT remaining the ongoing IT partner.
 
 ## Service delivery
 
@@ -230,7 +244,7 @@ by ACMA registered cabling contractors that bcom ICT engages and manages.
 - [Contact bcom ICT](https://www.bcomservices.com/contact): Contact bcom ICT on 07 3041 8993 or support@bcomservices.com
 - [LG Ericsson PBX Support Gold Coast](https://www.bcomservices.com/lg-ericsson-pbx-gold-coast): LG Ericsson phone system programming, repair and support on the Gold Coast — iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms
 - [NEC PBX Support Gold Coast](https://www.bcomservices.com/nec-pbx-gold-coast): NEC phone system programming, repair and support on the Gold Coast — UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms
-- [Our Team](https://www.bcomservices.com/our-team): Meet the bcom ICT team: Royce Clark (ITIL 4 Foundation), Ollie (ISO/IEC 42001:2023 Lead Implementer, BSI) and Daniel
+- [Our Team](https://www.bcomservices.com/our-team): Meet the bcom ICT leadership: Royce Clark (ITIL 4 Foundation), Ollie (ISO/IEC 42001:2023 Lead Implementer, BSI) and Daniel
 - [Panasonic PBX Support Gold Coast](https://www.bcomservices.com/panasonic-pbx-gold-coast): Panasonic phone system programming, repair and support on the Gold Coast — KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms
 - [Pricing](https://www.bcomservices.com/pricing): bcom ICT business IT support is $198 + GST per hour ($217.80 inc GST), plus a $100 + GST on-site call-out
 - [Privacy Policy](https://www.bcomservices.com/privacy-policy): How bcom ICT collects, holds, uses and discloses personal information under the Australian Privacy Principles — including remote support access, telecommunications data and overseas disclosure.

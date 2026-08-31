@@ -118,13 +118,27 @@ described as ISO certified, ISO accredited or ISO compliant.
 **bcom ICT does not hold ACMA cabler registration.** Fixed cabling is carried out
 by ACMA registered cabling contractors that bcom ICT engages and manages.
 
-## Team
+## Leadership
+
+Clients deal with these people directly rather than through an account manager
+or a rotating helpdesk. Escalation reaches a director the same day.
 
 - **Royce Clark** — Director, Technical Operations & ICT Delivery. Network
   engineer, 20+ years. Holds ITIL 4 Foundation. First escalation point.
 - **Ollie** — Director, ICT Contract Management & Business Development. Holds
   ISO/IEC 42001:2023 Lead Implementer (BSI).
 - **Daniel** — Software Development & IT Support.
+
+## Delivery reach
+
+- On-site delivery across the Gold Coast, same-day attendance where available.
+- Multi-site rollouts and office relocations coordinated nationally.
+- Managed IT, cybersecurity, 24/7 SOC, cloud and Microsoft 365 delivered to
+  businesses anywhere in Australia.
+- Reference engagement: a full national technology rollout for an Australian
+  retail chain — all computer and networking equipment, CCTV, business WiFi and
+  internet connectivity supplied and installed for every store and head office
+  across the country, with bcom ICT remaining the ongoing IT partner.
 
 ## Service delivery
 

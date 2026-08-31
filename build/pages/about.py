@@ -10,8 +10,8 @@ FAQS = [
      "The only authoritative bcom ICT website is www.bcomservices.com. The business does not operate at the domain \"bcom.services\" — that is a separate and unrelated registration, and anything appearing there has nothing to do with this company."),
     ("Do you work with home users?",
      "No, not any more. bcom ICT works with businesses. We still install WiFi and mesh networks for home offices, but general home computer repair and residential IT support are not services we take on."),
-    ("How big is the team?",
-     "Small, deliberately. Three people, all of whom you can reach. That's the trade-off: you won't get a 40-person helpdesk, and you also won't get a different stranger every time you call or an escalation path that never reaches anyone with authority."),
+    ("Who will we actually deal with?",
+     "The people doing the work. bcom ICT is led by Royce Clark and Ollie, and clients deal with them directly rather than through an account manager or a rotating helpdesk. Escalation reaches a director the same day. Meet them on our team page."),
     ("Where are you based?",
      "9 Ferny Avenue, Surfers Paradise QLD 4217 — an actual office on the Gold Coast, not a registered address for an interstate company. On-site work covers the whole Gold Coast; managed, remote and cloud services are delivered Australia-wide."),
 ]
@@ -24,7 +24,7 @@ PAGE = {
     "hero_img": "hero-bg-business.webp",
     "hero_alt": "The bcom ICT team working with a client at their Gold Coast business premises",
     "h1": "A small Gold Coast IT company, since 2011",
-    "lede": "Three people, an office on Ferny Avenue, and fifteen years of looking after businesses between Coomera and Coolangatta.",
+    "lede": "An office on Ferny Avenue, fifteen years of looking after Gold Coast businesses, and delivery reaching across Australia.",
     "actions": [("Meet the team", "/our-team", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
     "trust": ["Established 2011", "ABN 92 636 893 108", "Surfers Paradise office", "5.0 from 24 reviews"],
     "crumbs": [("About", "/about")],
@@ -41,12 +41,16 @@ PAGE = {
     <div class="prose-cols" style="margin-top:64px">
       <div>
         <h2>What we are</h2>
-        <p style="margin-top:16px">A three-person IT company on the Gold Coast that has been doing this since
-        2011. We look after small and medium businesses — typically between three and sixty staff — with
-        managed IT, cybersecurity, networks, phone systems and cloud.</p>
+        <p style="margin-top:16px">A Gold Coast IT company that has been doing this since 2011. We look after
+        small and medium businesses — typically between three and sixty staff — with managed IT,
+        cybersecurity, networks, phone systems and cloud.</p>
         <p style="margin-top:16px">We're not a national helpdesk with a Gold Coast phone number, and we're
-        not a franchise. The office is on Ferny Avenue in Surfers Paradise, the technicians live here, and
-        when you call 07 3041 8993 you reach someone who can actually do something about it.</p>
+        not a franchise. The office is on Ferny Avenue in Surfers Paradise, and when you call 07 3041 8993
+        you reach someone who can actually do something about it rather than someone who has to ask.</p>
+        <p style="margin-top:16px">That direct access doesn't mean limited capacity. We delivered a full
+        national rollout for an Australian retail chain — every store and head office across the country
+        equipped, connected and still supported — and we deliver managed IT, cybersecurity and cloud to
+        businesses anywhere in Australia.</p>
         <h3 style="margin-top:40px">What we're not</h3>
         <p style="margin-top:16px">We stopped taking general home computer repair and residential IT support.
         It's honest work and there are good people on the Gold Coast who do it — it just isn't what we're
