@@ -101,13 +101,25 @@ Each chunk ends with a commit and a push. Tick as they land.
       different about that sector rather than swapping the industry name into one
       template — health providers get no Privacy Act small business exemption,
       agencies are targeted through trust accounts, venues are judged on guest WiFi.
-- [ ] **Chunk 7 — Suburbs (10)** · distinct content per suburb, not templated
+- [x] **Chunk 7 — Suburbs (10)**
+      Surfers Paradise · Southport · Broadbeach · Robina · Burleigh Heads ·
+      Varsity Lakes · Palm Beach · Nerang · Helensvale · Coomera.
+      Written distinctly: all 40 FAQ questions are unique across the ten pages
+      and every answer block differs. Each leads with what is genuinely local —
+      high-rise access in Surfers, the legal/medical concentration in Southport,
+      warehouse coverage in Coomera and Nerang, converted shopfronts in Burleigh.
+      `nearby()` in layout.py cross-links them so none is an orphan.
 - [ ] **Chunk 8 — Guides (7)** · MSP buyer's guide, hacked, office move, NBN,
       IT support cost, managed vs break-fix, Essential Eight
 - [ ] **Chunk 9 — Legal & utility** · privacy, terms, sitemap page, 404
 - [ ] **Chunk 10 — LLM layer** · `llms.txt`, `llms-full.txt`, internal link mesh,
       og:image cards, IndexNow
-- [ ] **Chunk 11 — Parity check & cutover** · 301 map, every old URL resolves,
+- [ ] **Chunk 11 — Parity check & cutover**
+      > **DO NOT carry these three rules across from the old `_redirects`:**
+      > `/it-support-burleigh-heads-gold-coast.html`, `/it-support-robina-gold-coast.html`
+      > and `/it-support-southport-gold-coast.html` currently 301 to the generic
+      > IT support page. Chunk 7 rebuilds all three as real pages — carrying the
+      > redirects across would silently 301 them away again. · 301 map, every old URL resolves,
       raw-curl crawl, schema validation, then repoint the domain
 
 ---

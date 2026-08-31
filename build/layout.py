@@ -426,3 +426,19 @@ def svc_body(*, answer, blocks):
         out.append(f'<section class="section section--tight{tint}">\n  <div class="wrap">\n'
                    f'    {head}\n    {inner}\n  </div>\n</section>\n')
     return "\n".join(out)
+
+
+def nearby(current_path, limit=5):
+    """Cross-link the suburb pages to each other. A local page with no links to
+    its neighbours is an orphan; the mesh is what carries authority between them."""
+    from site_data import SUBURB_PAGES
+    others = [(n, h) for n, h in SUBURB_PAGES if h != current_path][:limit]
+    li = "".join(f'<li>{MARK}<a href="{h}">IT support in {n}</a></li>' for n, h in others)
+    return f'''<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Nearby</span><h2>We cover the whole Gold Coast</h2>
+    <p>On-site attendance across every suburb between Coomera and Coolangatta. Managed and remote support extends Australia-wide.</p></div>
+    <ul class="ticks ticks--2col">{li}</ul>
+  </div>
+</section>
+'''

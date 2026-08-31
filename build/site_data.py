@@ -42,6 +42,21 @@ SUBURBS = [
     "Pacific Pines", "Oxenford", "Pimpama", "Ormeau", "Paradise Point",
 ]
 
+# Suburb pages — the local organic play. Each is written distinctly rather
+# than templated; the list drives the cross-link mesh between them.
+SUBURB_PAGES = [
+    ("Surfers Paradise", "/it-support-surfers-paradise-gold-coast"),
+    ("Southport",        "/it-support-southport-gold-coast"),
+    ("Broadbeach",       "/it-support-broadbeach-gold-coast"),
+    ("Robina",           "/it-support-robina-gold-coast"),
+    ("Burleigh Heads",   "/it-support-burleigh-heads-gold-coast"),
+    ("Varsity Lakes",    "/it-support-varsity-lakes-gold-coast"),
+    ("Palm Beach",       "/it-support-palm-beach-gold-coast"),
+    ("Nerang",           "/it-support-nerang-gold-coast"),
+    ("Helensvale",       "/it-support-helensvale-gold-coast"),
+    ("Coomera",          "/it-support-coomera-gold-coast"),
+]
+
 # Credentials — all confirmed held by Royce 2026-08-31.
 # NOTE: cabler registration number itself still needs to be supplied before
 # the registration line goes live on the cabling pages.
