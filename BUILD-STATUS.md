@@ -68,13 +68,12 @@ Each chunk ends with a commit and a push. Tick as they land.
       answer block, question-form FAQs with matching FAQPage schema, breadcrumbs,
       Service schema using the exact GBP service name, and a cross-silo link mesh.
       `python3 build/build.py` now runs a link + image check on every build.
-- [ ] **Chunk 3 — Trust centre (8)** + the three GBP-backed pages that don't exist yet:
-      `/security-operations-centre-gold-coast`, `/cyber-incident-response-gold-coast`,
-      `/essential-eight-guide-gold-coast`. All three are now live GBP services, so
-      they need pages before the profile points at them.
-      Trust centre hub · published SLA · ISO alignment · ITIL service model ·
-      data handling & sovereignty · NDB guide · ransomware reporting · onboarding.
-      **This is the differentiator — the depth layer nothing else on the Gold Coast has.**
+- [x] **Chunk 3 — Trust centre (8) + 3 GBP-backed service pages**
+      Trust centre hub · published SLA (P1-P4 matrix) · ISO alignment · ITIL service
+      model · data handling & sovereignty · NDB guide · ransomware reporting ·
+      onboarding · 24/7 SOC · cyber incident response · Essential Eight.
+      `build.py` now runs a **claims guard** that fails loudly on any overstated
+      ISO / ACMA / Microsoft-tier claim. It has already caught one live regression.
 - [ ] **Chunk 4 — Company & conversion (7)**
       About · Our team (Person schema + credentials) · Contact · Reviews ·
       Case studies · Pricing · Support.
@@ -98,7 +97,7 @@ Each chunk ends with a commit and a push. Tick as they land.
 | Item | Needed for |
 |---|---|
 | **Search Console export** — 12 months, page-level, impressions + clicks. *Said "see attached" but no file came through.* | Chunk 11 — decides which of the 11 WiFi brand pages get consolidated vs kept |
-| **Insurer names and cover limits** for PI / cyber / public liability | Chunk 3 |
+| **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
 | **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
 | Permission to name the national retail chain client | Chunk 4 case studies |
 | Cloudflare: confirm **Block AI bots = OFF** and managed robots.txt disabled on the zone | Before go-live — silently 403s every AI crawler |
@@ -123,6 +122,22 @@ cannot be indexed as a duplicate of the live site. **Always re-run
 
 This is for design approval only — the real staging target is a Cloudflare Pages
 project behind Cloudflare Access (chunk 11).
+
+---
+
+## Compliance content that needs verifying before go-live
+
+Two guides carry a visible amber **Under review** banner because their specifics
+could not be verified from source. Confirm, then remove the `verify_note(...)`
+call from the page module:
+
+| Page | What to confirm |
+|---|---|
+| `/ransomware-reporting-australia` | Cyber Security Act 2024 — current turnover threshold and reporting window for mandatory ransomware payment reporting (Dept of Home Affairs) |
+| `/notifiable-data-breach-guide-australia` | Small business exemption threshold and the current list of exceptions (OAIC); confirm the 30-day assessment window is unchanged |
+
+Both pages also carry standard "general information, not legal advice" framing,
+which is appropriate for compliance content regardless.
 
 ---
 

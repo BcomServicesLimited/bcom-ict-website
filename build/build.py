@@ -113,6 +113,43 @@ def check(pages):
               f"(expected until chunk 9 — must be zero before cutover)")
     if not missing_img and not pending:
         print("\nlink check: all internal links resolve")
+    claims()
+
+
+# Claims that would overstate what bcom ICT holds. Confirmed 2026-08-31:
+# no organisational ISO certification, no ACMA cabler registration (cabling is
+# subcontracted), and "Silver Partner" is a retired Microsoft tier.
+BANNED = [
+    (r'ISO[\s/A-Z0-9:-]{0,20}\bcertified\b', 'implies organisational ISO certification'),
+    (r'\bISO[- ]?(compliant|accredited)\b', 'ISO compliant/accredited is never accurate'),
+    (r'bcom ICT is ACMA', 'bcom ICT holds no cabler registration'),
+    (r'\ban ACMA registered cabler\b', 'singular implies bcom ICT holds it'),
+    (r'\b(Silver|Gold) Partner\b', 'retired Microsoft tier'),
+]
+# Sentences that legitimately contain the words while denying the claim.
+SAFE = ('not certified', 'not currently certified', 'no organisational iso',
+        'holds no organisational', 'not describe', 'does not make',
+        'is bcom ict iso certified?', "doesn't that make",
+        'not iso certified', 'nobody can', 'retired', 'no formal certification')
+
+
+def claims():
+    import re
+    hits = []
+    for f in ROOT.glob("*.html"):
+        t = f.read_text(encoding="utf-8")
+        for pat, why in BANNED:
+            for m in re.finditer(pat, t, re.I):
+                ctx = t[max(0, m.start() - 220):m.end() + 220].lower()
+                if any(sf in ctx for sf in SAFE):
+                    continue
+                hits.append((f.name, m.group(0), why))
+    if hits:
+        print("\n!! OVERSTATED CLAIMS — fix before publishing:")
+        for f, txt, why in hits:
+            print(f"   {f}: {txt!r} — {why}")
+    else:
+        print("claims check: no overstated certification or credential claims")
 
 
 if __name__ == "__main__":

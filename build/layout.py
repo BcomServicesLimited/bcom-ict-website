@@ -11,7 +11,7 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "2"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "3"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 def head(p):
@@ -348,3 +348,29 @@ def trust_note(text):
     """Surface-layer pointer down to the depth layer. Keeps frameworks off the
     marketing pages while still making them findable."""
     return f'<div class="tnote">{MARK}<p>{text}</p></div>'
+
+
+def verify_note(text):
+    """Amber banner for compliance content whose specifics have not yet been
+    verified against the source. Deliberately visible: a confidently stated
+    wrong threshold is worse for a client relying on it than no page at all."""
+    return f'<div class="vnote"><strong>Under review</strong><p>{text}</p></div>'
+
+
+def commitments(items):
+    """A published commitment: what we do / what that means for you."""
+    rows = "".join(
+        f'<div class="commit"><h4>{h}</h4><p>{b}</p></div>' for h, b in items)
+    return f'<div class="commits">{rows}</div>'
+
+
+def creds(items):
+    """items: (label, detail, kind) — kind is 'held', 'aligned' or 'note'.
+    The held/aligned split is the whole point: it keeps certification claims
+    and alignment claims visually distinct so they can never be read as one."""
+    out = ""
+    for label, detail, kind in items:
+        out += (f'<div class="cred cred--{kind}"><span class="cred-tag">'
+                f'{"Held" if kind == "held" else "Aligned" if kind == "aligned" else "Note"}</span>'
+                f'<div><h4>{label}</h4><p>{detail}</p></div></div>')
+    return f'<div class="credlist">{out}</div>'
