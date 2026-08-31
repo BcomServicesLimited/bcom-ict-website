@@ -111,6 +111,22 @@ def schema(p):
             "areaServed": p.get("area", [{"@type": "City", "name": "Gold Coast"}]),
             "url": f"{SITE}{p['path']}",
         })
+    if p.get("article"):
+        # Guides get Article schema. These are the pages written to be cited —
+        # a dated, attributed article is far more quotable than a bare page.
+        graph.append({
+            "@type": "Article",
+            "@id": f"{SITE}{p['path']}#article",
+            "headline": p.get("headline", p["h1"]),
+            "description": p["description"],
+            "url": f"{SITE}{p['path']}",
+            "datePublished": p.get("published", "2026-08-31"),
+            "dateModified": p.get("modified", "2026-08-31"),
+            "inLanguage": "en-AU",
+            "author": {"@id": f"{SITE}/#localbusiness"},
+            "publisher": {"@id": f"{SITE}/#localbusiness"},
+            "mainEntityOfPage": {"@type": "WebPage", "@id": f"{SITE}{p['path']}"},
+        })
     if p.get("faqs"):
         graph.append({
             "@type": "FAQPage",

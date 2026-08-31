@@ -109,8 +109,14 @@ Each chunk ends with a commit and a push. Tick as they land.
       high-rise access in Surfers, the legal/medical concentration in Southport,
       warehouse coverage in Coomera and Nerang, converted shopfronts in Burleigh.
       `nearby()` in layout.py cross-links them so none is an orphan.
-- [ ] **Chunk 8 — Guides (7)** · MSP buyer's guide, hacked, office move, NBN,
-      IT support cost, managed vs break-fix, Essential Eight
+- [x] **Chunk 8 — Guides (7)**
+      How to choose an MSP · hacked: first 60 minutes · what IT support costs ·
+      managed IT vs break-fix · computer replacement cycle · office move checklist ·
+      business NBN guide. (Essential Eight shipped in chunk 3.)
+      All seven carry `Article` schema — added `article: True` support to
+      `layout.schema()`. These are the pages written to be cited, so they stay
+      neutral: the MSP guide names criteria that count against us, and the NBN
+      guide says plainly we earn nothing from plan choice.
 - [ ] **Chunk 9 — Legal & utility** · privacy, terms, sitemap page, 404
 - [ ] **Chunk 10 — LLM layer** · `llms.txt`, `llms-full.txt`, internal link mesh,
       og:image cards, IndexNow
