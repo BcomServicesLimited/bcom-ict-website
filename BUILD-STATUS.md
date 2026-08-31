@@ -36,7 +36,8 @@ Preview: `bcom-ict` server on port 4400.
 | Tone | Two-layer: surface pages plain English, trust centre carries ISO/ITIL/compliance depth |
 | GBP name | Trim to **bcom ICT** — drop the keyword suffix (redressal risk) |
 | GBP prices | Remove from-prices on managed IT + cybersecurity; keep on transactional services |
-| GBP category | Keep Computer repair service, reframe to business hardware. Add Computer security service. |
+| GBP categories | 6 total. Keep Computer repair service (reframed to business hardware). **Add IT security service** — all 6 cybersecurity services move there out of Computer consultant so the two stop competing. |
+| GBP services | 36 across the six categories, all <=300 chars. Confirmed credentials worked in: ACMA registered cabler on cabling, police checks on on-site attendance, Microsoft Partner on M365. |
 | Suburb pages | Rebuild 10, genuinely distinct content — not templated |
 | ISO | **Aligned, NOT certified.** Never write "certified/compliant/accredited" for the org. |
 | Credentials | All four confirmed held — cabler registration, PI + cyber + public liability, police checks + Blue Cards, Microsoft Partner |
@@ -61,7 +62,10 @@ Each chunk ends with a commit and a push. Tick as they land.
 - [ ] **Chunk 2 — Core service pages (6)**
       Managed IT · Business IT Support · Cybersecurity · Business WiFi ·
       Phone Systems · Cloud & Microsoft 365. Plus the Services hub.
-- [ ] **Chunk 3 — Trust centre (8)**
+- [ ] **Chunk 3 — Trust centre (8)** + the three GBP-backed pages that don't exist yet:
+      `/security-operations-centre-gold-coast`, `/cyber-incident-response-gold-coast`,
+      `/essential-eight-guide-gold-coast`. All three are now live GBP services, so
+      they need pages before the profile points at them.
       Trust centre hub · published SLA · ISO alignment · ITIL service model ·
       data handling & sovereignty · NDB guide · ransomware reporting · onboarding.
       **This is the differentiator — the depth layer nothing else on the Gold Coast has.**
