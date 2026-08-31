@@ -517,3 +517,12 @@ form.enquiry .hint{font-size:.8125rem;color:var(--slate);}
 .tier li{display:flex;gap:10px;align-items:flex-start;}
 .tier .mark{width:14px;height:7.5px;flex:none;margin-top:.55em;}
 .tier .btn{margin-top:auto;}
+
+/* ---------- generated sitemap ---------- */
+.silos{display:grid;gap:var(--s7) var(--s6);}
+@media (min-width:700px){.silos{grid-template-columns:repeat(2,1fr);}}
+@media (min-width:1050px){.silos{grid-template-columns:repeat(3,1fr);}}
+.silo h4{font-size:.8125rem;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin-bottom:var(--s4);padding-bottom:var(--s3);border-bottom:1px solid var(--line);}
+.silo .ticks{gap:9px;}
+.silo .ticks li{font-size:.9375rem;}
+.silo .ticks .mark{margin-top:.5em;}

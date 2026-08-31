@@ -117,7 +117,15 @@ Each chunk ends with a commit and a push. Tick as they land.
       `layout.schema()`. These are the pages written to be cited, so they stay
       neutral: the MSP guide names criteria that count against us, and the NBN
       guide says plainly we earn nothing from plan choice.
-- [ ] **Chunk 9 — Legal & utility** · privacy, terms, sitemap page, 404
+- [x] **Chunk 9 — Legal, utility + the last 11 service pages**
+      Privacy policy · terms and conditions · generated HTML sitemap · 404
+      (noindex, excluded from sitemap.xml). Plus Copilot, AI phone agents, AI
+      chatbots, UniFi, Aruba, IT needs assessment, telecommunications contractor,
+      router config, WiFi range extension, software installation, software
+      recommendations and technology procurement.
+      **`build.py` now reports "all internal links resolve" — zero broken links.**
+      The HTML sitemap is generated from the pages actually built, so it cannot
+      fall out of step.
 - [ ] **Chunk 10 — LLM layer** · `llms.txt`, `llms-full.txt`, internal link mesh,
       og:image cards, IndexNow
 - [ ] **Chunk 11 — Parity check & cutover**
@@ -135,6 +143,7 @@ Each chunk ends with a commit and a push. Tick as they land.
 | Item | Needed for |
 |---|---|
 | **Search Console export** — 12 months, page-level, impressions + clicks. *Said "see attached" but no file came through.* | Chunk 11 — decides which of the 11 WiFi brand pages get consolidated vs kept |
+| **Legal review of `/privacy-policy` and `/terms-and-conditions`** — both are reasonable and Australian-law aware (APPs, ACL consumer guarantees explicitly preserved) but have not been reviewed by a lawyer | Before go-live |
 | **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
 | **Is the $100 call-out ex-GST?** Assumed yes for consistency with the hourly rate. Site currently says "$100 + GST ($110 inc GST)" — correct if it is GST-inclusive | `/pricing` and 5 other pages |
 | **GBP from-prices are wrong** — profile says From $182 / $252 / $310; real minimum is $217.80 remote and $327.80 on site, inc GST. Set to $218 / $328 and delete from managed IT + all 6 cybersecurity services | GBP, this week |

@@ -74,11 +74,15 @@ def main(staging_base=None):
         pages.append(p)
         print(f"  {p['path']:<62} {dest.stat().st_size/1024:6.1f} KB")
 
+    html_sitemap(pages)
+    pages.append({"path": "/sitemap", "priority": "0.3"})
+
     today = datetime.date.today().isoformat()
     urls = "\n".join(
         f"  <url><loc>{SITE}{p['path']}</loc><lastmod>{today}</lastmod>"
         f"<priority>{p.get('priority', '0.7')}</priority></url>"
-        for p in sorted(pages, key=lambda x: x["path"]))
+        for p in sorted(pages, key=lambda x: x["path"])
+        if not p.get("noindex"))
     (ROOT / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n',
@@ -86,6 +90,87 @@ def main(staging_base=None):
 
     print(f"\n{len(pages)} pages + sitemap.xml")
     check(pages)
+
+
+# Groups for the human-readable sitemap. First matching prefix wins, so order
+# matters. Anything unmatched falls into "More".
+SILOS = [
+    ("Support &amp; managed IT", ("/managed-it-services", "/it-support-and-services", "/remote-it-support",
+                                  "/on-site-technical", "/hardware-software", "/it-consulting",
+                                  "/it-needs-assessment", "/office-it-relocation", "/support")),
+    ("Cybersecurity", ("/cybersecurity", "/security-operations", "/cyber-incident", "/essential-eight",
+                       "/asic-cyber", "/virus-and-malware")),
+    ("Cloud, Microsoft 365 &amp; AI", ("/cloud-computing", "/microsoft-365", "/microsoft-copilot",
+                                       "/artificial-intelligence", "/ai-", "/iso-42001", "/data-backup")),
+    ("Networks &amp; WiFi", ("/business-wifi", "/computer-networking", "/network-", "/mesh-network",
+                             "/ubiquiti", "/aruba", "/wifi-range", "/router-and-modem",
+                             "/home-wifi")),
+    ("Phones &amp; telecommunications", ("/business-phone", "/voip-", "/pabx-", "/phone-line",
+                                         "/nbn-internet", "/telecommunications")),
+    ("Hardware &amp; repair", ("/on-site-computer-repair", "/os-troubleshooting", "/performance-optimisation",
+                               "/hardware-procurement", "/software-installation", "/software-recommendations",
+                               "/technology-procurement", "/computer-repairs")),
+    ("Industries", ("/industries", "/it-support-small-business", "/it-support-healthcare",
+                    "/it-support-professional", "/it-support-real-estate", "/it-support-retail",
+                    "/it-support-restaurants", "/it-support-hospitality", "/it-support-trades")),
+    ("Gold Coast suburbs", ("/it-support-surfers", "/it-support-southport", "/it-support-broadbeach",
+                            "/it-support-robina", "/it-support-burleigh", "/it-support-varsity",
+                            "/it-support-palm-beach", "/it-support-nerang", "/it-support-helensvale",
+                            "/it-support-coomera")),
+    ("Guides", ("/how-to-choose", "/what-to-do-when-hacked", "/it-support-cost", "/managed-it-vs",
+                "/business-computer-replacement", "/office-move", "/business-nbn-guide")),
+    ("Trust centre", ("/trust-centre", "/service-levels", "/iso-alignment", "/how-we-work",
+                      "/data-handling", "/notifiable-data-breach", "/ransomware-reporting",
+                      "/onboarding-")),
+    ("Company", ("/about", "/our-team", "/contact", "/reviews", "/case-studies", "/pricing",
+                 "/services", "/privacy-policy", "/terms-and-conditions", "/sitemap", "/")),
+]
+
+
+def html_sitemap(pages):
+    """Render the human-readable sitemap from the pages actually built, so it
+    can never fall out of step with the site."""
+    import layout
+    by_path = {p["path"]: p for p in pages}
+    used, groups = set(), []
+    for title, prefixes in SILOS:
+        items = []
+        for path in sorted(by_path):
+            if path in used:
+                continue
+            if any(path.startswith(pre) for pre in prefixes) or path == "/" and "/" in prefixes:
+                items.append(path)
+                used.add(path)
+        if items:
+            groups.append((title, items))
+    leftover = sorted(set(by_path) - used)
+    if leftover:
+        groups.append(("More", leftover))
+
+    def label(path):
+        p = by_path[path]
+        t = p["title"].split(" | ")[0].split(" — ")[0].strip()
+        return t
+
+    cols = ""
+    for title, items in groups:
+        li = "".join(f'<li>{layout.MARK}<a href="{h}">{label(h)}</a></li>' for h in items)
+        cols += f'<div class="silo"><h4>{title}</h4><ul class="ticks">{li}</ul></div>'
+
+    page = {
+        "path": "/sitemap", "priority": "0.3",
+        "title": "Sitemap | bcom ICT",
+        "description": f"Every page on the bcom ICT website — {len(pages) + 1} pages covering business IT services, industries, Gold Coast suburbs, guides and the trust centre.",
+        "hero_kind": "doc", "eyebrow": "Sitemap",
+        "h1": "Every page on this site",
+        "lede": f"All {len(pages) + 1} pages, grouped. Generated from the site itself, so it cannot fall out of date.",
+        "crumbs": [("Sitemap", "/sitemap")],
+        "reviewed": "August 2026",
+        "body": ('<section class="section section--tight"><div class="wrap">'
+                 '<div class="silos" style="margin-top:0">' + cols + '</div></div></section>'),
+    }
+    (ROOT / "sitemap.html").write_text(layout.render(page), encoding="utf-8")
+    print(f"  {'/sitemap':<62} {(ROOT / 'sitemap.html').stat().st_size/1024:6.1f} KB  (generated)")
 
 
 def check(pages):

@@ -11,11 +11,16 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "4"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "5"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+
+
+ROBOTS_OK = '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'
+ROBOTS_NO = '<meta name="robots" content="noindex, follow">'
 
 
 def head(p):
     url = SITE + p["path"]
+    robots = ROBOTS_NO if p.get("noindex") else ROBOTS_OK
     preload = ""
     if p.get("hero_img"):
         preload = f'\n  <link rel="preload" as="image" href="/assets/img/{p["hero_img"]}" fetchpriority="high">'
@@ -27,7 +32,7 @@ def head(p):
 <title>{p["title"]}</title>
 <meta name="description" content="{p["description"]}">
 <link rel="canonical" href="{url}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+{robots}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{BIZ['brand']}">
 <meta property="og:title" content="{p["title"]}">
