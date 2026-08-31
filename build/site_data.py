@@ -29,8 +29,21 @@ BIZ = {
     "wikidata":     "https://www.wikidata.org/wiki/Q140075131",
     "rating":       "5.0",
     "reviews":      "24",
-    "hours":        "Open 24/7, including weekends and public holidays",
+    # HOURS — corrected by Royce 2026-08-31. The site previously overstated this.
+    # We are open normal business hours. The digital assistant answers the phone
+    # around the clock, but phone enquiries are NOT responded to after hours and
+    # callbacks are processed in business hours only.
+    "hours":        "8:00am – 5:00pm, Monday to Friday (Brisbane time)",
+    "hours_short":  "Mon–Fri, 8am–5pm",
     "callback":     "within 4 business hours",
+    "after_hours":  "After hours our digital assistant takes your details and we call back the next business day.",
+    "on_call":      "After-hours on-call support is available to managed and SLA clients under their agreement.",
+
+    # Online booking for on-site IT support.
+    "booking":      "https://calendar.google.com/calendar/appointments/schedules/"
+                    "AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true",
+    # Remote support tool. Instructions and download link live ONLY on /support.
+    "splashtop":    "https://sos.splashtop.com",
 }
 
 # Suburbs served on-site — used in copy, schema areaServed and the suburb silo.

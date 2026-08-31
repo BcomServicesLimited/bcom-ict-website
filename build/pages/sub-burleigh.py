@@ -1,7 +1,7 @@
 from layout import cta, faq_block, related, svc_body, nearby
 
 FAQS = [   (   'Do you provide IT support in Burleigh Heads?',
-        'Yes. bcom ICT attends Burleigh Heads businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available and phones answered 24/7. Call 07 '
+        'Yes. bcom ICT attends Burleigh Heads businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available and Mon–Fri 8am–5pm. Call 07 '
         '3041 8993.'),
     (   "We're a small café. Do we really need an IT provider?",
         "Not necessarily on a monthly arrangement, and we'll say so. But two things are worth doing regardless: automatic 4G or 5G failover so card payments continue through an internet outage, and "

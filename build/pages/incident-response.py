@@ -9,7 +9,7 @@ PHASES = [
 ]
 
 FIRST = [
-    "<strong>Call 07 3041 8993.</strong> Answered 24/7, including weekends and public holidays.",
+    "<strong>Call 07 3041 8993.</strong> Our digital assistant answers any time; calls are returned in business hours.",
     "Disconnect affected machines from the network — unplug the cable or turn off WiFi.",
     "<strong>Do not power them off.</strong> Shutting down destroys evidence in memory that helps establish what was actually taken.",
     "Do not delete anything, including ransom notes, suspicious emails or unfamiliar files.",
@@ -24,7 +24,7 @@ FAQS = [
     ("What should we do in the first ten minutes?",
      "Call us, and disconnect affected machines from the network without powering them off. Powering down destroys evidence held in memory that helps establish what was actually accessed. Don't delete the ransom note, don't wipe the machine, and change passwords from a device you know is clean."),
     ("Do we have to be an existing client?",
-     "No. Incident response is available to any business, and a significant share of the calls we take are from businesses we've never worked with. Phones are answered 24/7."),
+     "No. Incident response is available to any business, and a significant share of the calls we take are from businesses we've never worked with. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time."),
     ("How long does recovery take?",
      "It depends almost entirely on your backups. A business with separated, tested backups is often trading again within days. A business whose backups were reachable from the infected network — or never tested — can be looking at weeks, and sometimes at data that isn't coming back. That's decided long before the incident."),
     ("Will you tell us whether to pay a ransom?",
@@ -39,14 +39,14 @@ PAGE = {
     "path": "/cyber-incident-response-gold-coast",
     "priority": "0.8",
     "service": "Cyber Incident Response Gold Coast",
-    "title": "Cyber Incident Response Gold Coast — 24/7 | bcom ICT",
+    "title": "Cyber Incident Response Gold Coast | bcom ICT",
     "description": "Rapid cyber incident response for Gold Coast and Australian businesses — containment, forensic investigation, eradication, recovery and reporting for insurers and regulators. Call 07 3041 8993.",
     "hero_img": "hero-bg-network-security.webp",
     "hero_alt": "A bcom ICT engineer responding to a cyber security incident for an Australian business",
     "h1": "Been breached? Start here.",
-    "lede": "Containment, investigation, recovery and the written account your insurer and regulators will ask for. Phones answered 24/7 — you don't need to be an existing client.",
-    "actions": [("Call 07 3041 8993 now", "tel:+61730418993", "white"), ("Contact us", "/contact", "onink")],
-    "trust": ["Answered 24/7", "Non-clients welcome", "Evidence preserved", "Insurer-ready reporting"],
+    "lede": "Containment, investigation, recovery and the written account your insurer and regulators will ask for. Mon–Fri 8am–5pm — you don't need to be an existing client.",
+    "actions": [("Call 07 3041 8993", "tel:+61730418993", "white"), ("Contact us", "/contact", "onink")],
+    "trust": ["Digital assistant after hours", "Non-clients welcome", "Evidence preserved", "Insurer-ready reporting"],
     "crumbs": [("Services", "/services"), ("Cybersecurity", "/cybersecurity-services-gold-coast"), ("Cyber Incident Response", "/cyber-incident-response-gold-coast")],
     "faqs": FAQS,
     "reviewed": "August 2026",
@@ -55,7 +55,7 @@ PAGE = {
   <div class="wrap">
     <p class="answer">bcom ICT provides rapid cyber incident response for Gold Coast and Australian businesses
     — containment, forensic investigation, eradication, recovery and written reporting, including the factual
-    account needed for insurer claims and regulatory notifications. bcom ICT answers phones 24/7 and takes
+    account needed for insurer claims and regulatory notifications. bcom ICT is open 8am to 5pm Monday to Friday and takes
     incident calls from businesses that are not existing clients. Call 07 3041 8993.</p>
 
     <div class="vnote" style="border-color:#E8A0A0;background:#FBEEEE">
@@ -130,6 +130,6 @@ PAGE = {
 ])}
 
 {cta("Call 07 3041 8993",
-     "Answered 24/7, including weekends and public holidays. You don't need to be an existing client, and the first conversation costs nothing.")}
+     "Our digital assistant answers any time; calls are returned in business hours. You don't need to be an existing client, and the first conversation costs nothing.")}
 ''',
 }

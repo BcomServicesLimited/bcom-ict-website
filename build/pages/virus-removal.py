@@ -30,7 +30,7 @@ PAGE = {
     "h1": 'Removing it is the easy part',
     "lede": 'Cleaning the machine is straightforward. Working out what was reached, resetting what was exposed and closing the way in is the part that matters.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['Credentials reset', 'Hardened afterwards', 'Evidence preserved', 'Answered 24/7'],
+    "trust": ['Credentials reset', 'Hardened afterwards', 'Evidence preserved', 'Digital assistant after hours'],
     "crumbs": [('Services', '/services'), ('Cybersecurity', '/cybersecurity-services-gold-coast'), ('Virus & Malware Removal', '/virus-and-malware-removal-services-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",
@@ -95,5 +95,5 @@ PAGE = {
         ('Data Backup & Disaster Recovery', '/data-backup-recovery-gold-coast'),
         ('Notifiable Data Breaches guide', '/notifiable-data-breach-guide-australia'),
         ("What to do when you've been hacked", '/what-to-do-when-hacked')])
-            + cta('Call 07 3041 8993', "Answered 24/7. Disconnect the machine from the network but leave it running — and don't delete anything."),
+            + cta('Call 07 3041 8993', "Open 8am–5pm Mon–Fri. Disconnect the machine from the network but leave it running — and don't delete anything."),
 }

@@ -76,10 +76,10 @@ PAGE = {
     "hero_kind": "home",
     "hero_img": "hero-bg.webp",
     "hero_alt": "A bcom ICT client working at a dual-screen desk in a Gold Coast office, with the Surfers Paradise skyline and beach visible through the window",
-    "badge": "Open now · phones answered 24/7",
+    "badge": "Open now · Mon–Fri 8am–5pm",
     "h1": "Business IT support on the <em>Gold Coast</em>",
     "lede": "Managed IT, cybersecurity, WiFi, phone systems and Microsoft 365 for small and medium businesses. On-site across the Gold Coast, remote and managed support Australia-wide.",
-    "actions": [("Get a quote", "/contact", "white"),
+    "actions": [("Book an on-site tech", BIZ["booking"], "white"),
                 ("Call 07 3041 8993", BIZ["phone_href"], "onink")],
     "trust": ["Local since 2011", "5.0 from 24 Google reviews", "Month-to-month, no lock-in", "Callback within 4 business hours"],
     "faqs": FAQS,
@@ -89,8 +89,8 @@ PAGE = {
   <div class="wrap">
     <p class="answer">bcom ICT is a Gold Coast IT support company that has looked after small and medium
     businesses since 2011. bcom ICT provides managed IT, cybersecurity, business WiFi, phone systems and
-    Microsoft 365 support — on-site across the Gold Coast and remotely Australia-wide. Phones are answered
-    24/7 and callbacks come within 4 business hours. Call 07 3041 8993.</p>
+    Microsoft 365 support — on-site across the Gold Coast and remotely Australia-wide. Business hours are 8:00am to 5:00pm Monday to
+    Friday, Brisbane time, with callbacks within 4 business hours. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">What we do</span>
@@ -121,9 +121,34 @@ PAGE = {
     <dl class="stats">
       <div class="stat"><dt>Supporting businesses since</dt><dd>2011</dd></div>
       <div class="stat"><dt>Google rating</dt><dd>5.0 / 24</dd></div>
-      <div class="stat"><dt>Phones answered</dt><dd>24/7</dd></div>
+      <div class="stat"><dt>Business hours</dt><dd>Mon–Fri 8–5</dd></div>
       <div class="stat"><dt>Callback promise</dt><dd>4 business hrs</dd></div>
     </dl>
+  </div>
+</section>
+
+<section class="section section--mist">
+  <div class="wrap">
+    <div class="booking">
+      <div>
+        <span class="eyebrow">Book online</span>
+        <h2>Book an on-site technician</h2>
+        <p style="margin-top:16px">Pick a time that suits and we'll come to you. On-site attendance is a
+        $100 + GST call-out plus $198 + GST per hour, agreed before anyone gets in a car.</p>
+        <p style="margin-top:16px">Booking runs on our live calendar, so the times you see are times we
+        actually have. If nothing suits, <a href="/contact">send us a message</a> or call
+        <a href="{BIZ['phone_href']}">{BIZ['phone']}</a> during business hours.</p>
+        <div class="hero-actions" style="margin-top:28px">
+          <a class="btn btn--primary btn--lg" href="{BIZ['booking']}" target="_blank" rel="noopener">Book a time {MARK}</a>
+          <a class="btn btn--ghost btn--lg" href="/contact">Rather talk first?</a>
+        </div>
+      </div>
+      <div class="booking-embed">
+        <iframe src="{BIZ['booking']}" title="Book an on-site IT technician with bcom ICT"
+                loading="lazy" style="border:0" width="100%" height="620"
+                frameborder="0"></iframe>
+      </div>
+    </div>
   </div>
 </section>
 

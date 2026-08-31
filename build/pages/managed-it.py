@@ -39,7 +39,7 @@ FAQS = [
     ("What's the difference between managed IT and just calling someone when it breaks?",
      "Break-fix means you pay each time something goes wrong, and the provider only earns when it does. Managed IT means someone is watching your systems continuously, patching and backing them up, and fixing causes rather than symptoms. In practice most businesses switch because the running total of break-fix callouts stopped being predictable."),
     ("How fast do you respond?",
-     "Managed IT clients have a contracted 4-hour response for critical faults during business hours, with after-hours emergency attendance included. Phones are answered 24/7 — after hours by our AI operator, who takes the details and escalates. Our published service levels set out the full priority matrix."),
+     "Managed IT clients have a contracted 4-hour response for critical faults during business hours, with after-hours emergency attendance included. Phones are returned in business hours — after hours by our AI operator, who takes the details and escalates. Our published service levels set out the full priority matrix."),
     ("Do we have to sign a long contract?",
      "No. bcom ICT's managed IT is month-to-month. We'd rather earn the next month than hold you to a three-year agreement."),
     ("Can you work with the IT person we already have?",

@@ -82,7 +82,7 @@ PAGE = {
 
     <h2>Right now, if it's happening</h2>
     {ticks([
-      "<strong>Call 07 3041 8993.</strong> Phones are answered 24/7.",
+      "<strong>Call 07 3041 8993.</strong> Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time.",
       "Disconnect affected machines from the network — unplug the cable or disable WiFi. Do not power them off.",
       "Do not delete the ransom note, and don't wipe or rebuild anything. That's the evidence.",
       "Don't pay or respond to the attacker before you've had legal advice.",
@@ -107,6 +107,6 @@ PAGE = {
 ], heading="Related")}
 
 {cta("Under attack right now?",
-     "Call 07 3041 8993 — answered 24/7. Disconnect affected machines from the network, but don't power them off and don't delete anything.")}
+     "Call 07 3041 8993 — returned in business hours. Disconnect affected machines from the network, but don't power them off and don't delete anything.")}
 ''',
 }

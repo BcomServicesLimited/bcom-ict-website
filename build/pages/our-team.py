@@ -85,7 +85,7 @@ PAGE = {
       "Deep bench cover through simultaneous leave — if guaranteed redundancy of people is a hard requirement, a larger provider is the honest recommendation",
       "In-house specialists in every niche. Where something sits outside what we do well, we say so and point you somewhere better",
     ])}
-    <p style="margin-top:24px">Phones are answered 24/7 regardless — after hours by our AI operator, which
+    <p style="margin-top:24px">Phones are returned in business hours regardless — after hours by our AI operator, which
     takes details and escalates. See <a href="/service-levels-and-security">service levels</a> for exactly
     what happens at which hour.</p>
   </div>

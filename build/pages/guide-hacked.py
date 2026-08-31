@@ -3,7 +3,7 @@ from layout import cta, faq_block, related, svc_body
 FAQS = [   (   "What should a business do first when it's been hacked?",
         'Disconnect affected machines from the network but do not switch them off — powering down destroys evidence in memory that establishes what was accessed. Then change your email password from '
         "a device you know is clean, check for mailbox forwarding rules you didn't create, and call your IT provider and your bank. Write down what you saw and when. Call bcom ICT on 07 3041 8993, "
-        'answered 24/7.'),
+        'returned in business hours.'),
     (   "Why shouldn't we turn the computer off?",
         "Because memory holds evidence of what actually ran and what was reached, and it's lost on shutdown. That evidence determines whether personal information was accessed, which determines "
         "whether you have to notify anyone. Without it you may have to notify on the assumption of the worst, because you can't prove otherwise."),
@@ -16,7 +16,7 @@ FAQS = [   (   "What should a business do first when it's been hacked?",
     (   "How do we know they're really out?",
         'Because someone establishes how they got in and removes the persistence they left behind — accounts, scheduled tasks, mailbox rules, backdoors. Skipping that step is why businesses get hit '
         'twice in a month. A clean antivirus scan is not the same as being sure.'),
-    ("Can you help if we're not your client?", "Yes. bcom ICT takes incident calls from any business, and a significant share come from businesses we've never worked with. Phones are answered 24/7.")]
+    ("Can you help if we're not your client?", "Yes. bcom ICT takes incident calls from any business, and a significant share come from businesses we've never worked with. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time.")]
 
 PAGE = {
     "path": '/what-to-do-when-hacked',
@@ -31,7 +31,7 @@ PAGE = {
     "crumbs": [("Guides", "/services"), ('Hacked? First 60 minutes', '/what-to-do-when-hacked')],
     "faqs": FAQS,
     "reviewed": "August 2026",
-    "body": svc_body(answer='If your business has been hacked: disconnect affected machines from the network but do not switch them off, because shutting down destroys evidence held in memory. Do not delete anything or rebuild the machine. Change critical passwords from a device you know is clean, starting with email. Call your IT provider and your bank. Write down what you saw and when. Do not communicate with the attacker before taking advice. Call bcom ICT on 07 3041 8993 — answered 24/7.',
+    "body": svc_body(answer='If your business has been hacked: disconnect affected machines from the network but do not switch them off, because shutting down destroys evidence held in memory. Do not delete anything or rebuild the machine. Change critical passwords from a device you know is clean, starting with email. Call your IT provider and your bank. Write down what you saw and when. Do not communicate with the attacker before taking advice. Call bcom ICT on 07 3041 8993 — returned in business hours.',
                      blocks=[       {       'h2': 'Minutes 0–5 — isolate',
                 'html': '<div class="vnote" style="border-color:#E8A0A0;background:#FBEEEE"><strong>Do '
                         'this first</strong><p><strong>Unplug the network cable or turn off WiFi on '
@@ -58,7 +58,7 @@ PAGE = {
                 'steps': [       (       'Your IT provider',
                                          'Call rather than email — if the mailbox is compromised, an email '
                                          'announcing the breach goes straight to the attacker. bcom ICT '
-                                         "answers 24/7 on 07 3041 8993, including for businesses we've "
+                                         "is on 07 3041 8993, open 8am to 5pm Monday to Friday, including for businesses we've "
                                          'never worked with.'),
                                  (       'Your bank',
                                          'If any financial account or payment detail may be involved, or '
@@ -123,5 +123,5 @@ PAGE = {
         ('Virus & Malware Removal', '/virus-and-malware-removal-services-gold-coast'),
         ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
         ('24/7 Security Operations Centre', '/security-operations-centre-gold-coast')])
-            + cta('Call 07 3041 8993', "Answered 24/7, including for businesses we've never worked with. Disconnect from the network — but leave the machine on."),
+            + cta('Call 07 3041 8993', "Open 8am–5pm Mon–Fri, including for businesses we've never worked with. Disconnect from the network — but leave the machine on."),
 }

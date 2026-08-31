@@ -1,7 +1,7 @@
 from layout import cta, faq_block, related, svc_body, nearby
 
 FAQS = [   (   'Do you provide IT support in Broadbeach?',
-        'Yes. bcom ICT is based at 9 Ferny Avenue, Surfers Paradise, roughly five minutes from Broadbeach, with same-day attendance usually available and phones answered 24/7 including weekends and '
+        'Yes. bcom ICT is based at 9 Ferny Avenue, Surfers Paradise, roughly five minutes from Broadbeach, with same-day attendance usually available and Mon–Fri 8am–5pm including weekends and '
         'public holidays. Call 07 3041 8993.'),
     (   "Our WiFi struggles when we're busy. Can that be fixed?",
         "Usually yes, and it's a design problem rather than an internet problem. One access point serving forty devices behaves nothing like one serving five. It needs surveying and properly "
@@ -9,7 +9,7 @@ FAQS = [   (   'Do you provide IT support in Broadbeach?',
     (   'What happens to our payments if the internet drops?',
         "With automatic 4G or 5G failover, card payments keep working and the changeover needs nobody's attention. Without it you stop trading. For a Broadbeach retailer or venue it usually pays for "
         "itself the first time it's used."),
-    ('Can you attend during trading hours?', "Yes, and we'll work around service where it matters. Disruptive work gets scheduled outside trading. For anything urgent, phones are answered 24/7.")]
+    ('Can you attend during trading hours?', "Yes, and we'll work around service where it matters. Disruptive work gets scheduled outside trading. For anything urgent, business hours are 8am to 5pm Monday to Friday.")]
 
 PAGE = {
     "path": '/it-support-broadbeach-gold-coast',
@@ -21,7 +21,7 @@ PAGE = {
     "h1": 'IT support for Broadbeach retail and venues',
     "lede": 'Convention traffic, a major shopping centre and a dense restaurant strip. Broadbeach businesses live and die on payments working and WiFi holding up under load.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~5 min from our office', 'Retail & venue focus', 'EFTPOS failover', 'Answered 24/7'],
+    "trust": ['~5 min from our office', 'Retail & venue focus', 'EFTPOS failover', 'Digital assistant after hours'],
     "crumbs": [("Industries", "/industries"), ('Broadbeach', '/it-support-broadbeach-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",

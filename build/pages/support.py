@@ -3,7 +3,7 @@ from site_data import BIZ
 
 ROUTES = [
     ("Call 07 3041 8993", BIZ["phone_href"],
-     "Answered 24/7, including weekends and public holidays. The fastest route for anything urgent, and the only one to use if you think you've been breached."),
+     "Our digital assistant answers any time; calls are returned in business hours. The fastest route for anything urgent, and the only one to use if you think you've been breached."),
     ("Email support@bcomservices.com", "mailto:support@bcomservices.com",
      "Best for things that aren't stopping anyone working. Callback within 4 business hours, every time."),
     ("Send an enquiry", "/contact",
@@ -19,11 +19,11 @@ PRIORITY = [
 
 FAQS = [
     ("How do I get IT support from bcom ICT?",
-     "Call 07 3041 8993 for anything urgent — phones are answered 24/7 including weekends and public holidays. Email support@bcomservices.com for non-urgent issues, with a callback within 4 business hours. For remote support we'll send you a one-time link that lets a technician see your screen with your permission. Existing clients don't need to be managed clients to call."),
+     "Call 07 3041 8993 for anything urgent — business hours are 8am to 5pm Monday to Friday including weekends and public holidays. Email support@bcomservices.com for non-urgent issues, with a callback within 4 business hours. For remote support we'll send you a one-time link that lets a technician see your screen with your permission. Existing clients don't need to be managed clients to call."),
     ("What happens when I call after hours?",
      "Our AI phone operator answers, takes the details, triages and escalates. It identifies itself as an AI rather than pretending to be a person. Work is actioned during business hours, except for managed and SLA clients on a critical fault, where after-hours attendance is included."),
     ("How does remote support work?",
-     "We send you a one-time link. You open it, you approve the connection, and a technician can see your screen and take control with your permission. You can watch everything that happens and disconnect at any moment. Nothing stays installed afterwards unless you're a managed client with monitoring in place, which is agreed separately."),
+     "bcom ICT uses Splashtop SOS. Call or email first so a technician is ready, then download the small SOS application from sos.splashtop.com and run it — it shows a 9-digit session code. Read that code to your technician and approve the connection. Nothing is permanently installed, you can watch the whole session on your own screen, and access ends when the session does."),
     ("Do I need to be a managed client to get help?",
      "No. We take support calls from any business, including ones we've never worked with. Managed clients get contracted response targets and after-hours attendance; everyone else gets a callback within 4 business hours."),
     ("What do you need from me when I report a problem?",
@@ -36,18 +36,18 @@ PAGE = {
     "path": "/support",
     "priority": "0.8",
     "title": "Get Support — bcom ICT Gold Coast IT Helpdesk",
-    "description": "How to get IT support from bcom ICT: call 07 3041 8993 (answered 24/7), email support@bcomservices.com, or request remote support. Callback within 4 business hours.",
+    "description": "How to get IT support from bcom ICT: call 07 3041 8993 (returned in business hours), email support@bcomservices.com, or request remote support. Callback within 4 business hours.",
     "hero_kind": "doc",
     "eyebrow": "Support",
     "h1": "Need help now?",
-    "lede": "Call 07 3041 8993 — answered 24/7, including weekends and public holidays. You don't need to be an existing client.",
+    "lede": "Call 07 3041 8993 — returned during business hours, Monday to Friday. You don't need to be an existing client.",
     "crumbs": [("Support", "/support")],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": f'''
 <section class="section section--tight">
   <div class="wrap">
-    <p class="answer">To get IT support from bcom ICT, call 07 3041 8993 — answered 24/7 including weekends
+    <p class="answer">To get IT support from bcom ICT, call 07 3041 8993 — returned in business hours including weekends
     and public holidays — or email support@bcomservices.com for non-urgent issues, with a callback within 4
     business hours. Remote support is provided via a one-time link you approve. bcom ICT takes support calls
     from businesses that are not existing clients.</p>
@@ -81,14 +81,22 @@ PAGE = {
   <div class="wrap">
     <div class="prose-cols">
       <div>
-        <h2>How remote support works</h2>
-        <p style="margin-top:16px">Most faults don't need anyone on site, and remote is both faster and
-        cheaper — there's no call-out on it.</p>
+        <h2>Remote support — Splashtop SOS</h2>
+        <p style="margin-top:16px">We use <strong>Splashtop SOS</strong>. It runs as a temporary application
+        for the length of the session and installs nothing permanent on your machine.</p>
+        <ol class="steps-ol">
+          <li>Call or email us first, so a technician is ready — a session needs a code you give us.</li>
+          <li>Go to <a href="{BIZ['splashtop']}" target="_blank" rel="noopener"><strong>sos.splashtop.com</strong></a> and download the small SOS application.</li>
+          <li>Run it. It shows you a <strong>9-digit session code</strong>.</li>
+          <li>Read that code to your technician. Nothing happens until you do.</li>
+          <li>Approve the connection when prompted. You can watch the whole session and end it at any moment.</li>
+        </ol>
+        <p style="margin-top:20px"><a class="btn btn--primary" href="{BIZ['splashtop']}" target="_blank" rel="noopener">Download Splashtop SOS {MARK}</a></p>
         {ticks([
-          "We send you a one-time link — nothing to install permanently",
-          "You open it and approve the connection before anyone can see anything",
-          "You watch the whole session and can disconnect at any moment",
-          "Access ends when the session ends, unless you're a managed client with monitoring agreed separately",
+          "Nothing is permanently installed — the application closes with the session",
+          "You give us the code; we cannot connect without it",
+          "You see everything on your own screen and can disconnect instantly",
+          "Access ends when the session ends, unless you're a managed client with monitoring agreed separately in writing",
         ])}
         <p style="margin-top:24px">If it turns out to need hands on hardware, we'll book an on-site visit —
         same day where we can. On-site is a $100 + GST call-out plus $198 + GST per hour; remote is $198 + GST
@@ -107,7 +115,7 @@ PAGE = {
       </div>
     </div>
 
-    {trust_note('Phones are answered 24/7 — after hours by our AI operator, which takes details and escalates rather than pretending to be a person. What happens at which hour is set out in full on <a href="/service-levels-and-security">service levels</a>.')}
+    {trust_note('Phones are returned in business hours — after hours by our AI operator, which takes details and escalates rather than pretending to be a person. What happens at which hour is set out in full on <a href="/service-levels-and-security">service levels</a>.')}
   </div>
 </section>
 
@@ -123,6 +131,6 @@ PAGE = {
 ], heading="Related")}
 
 {cta("Call 07 3041 8993",
-     "Answered 24/7. You don't need to be an existing client, and the first conversation costs nothing.")}
+     "Open 8am–5pm Monday to Friday. You don't need to be an existing client, and the first conversation costs nothing.")}
 ''',
 }

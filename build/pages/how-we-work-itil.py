@@ -2,7 +2,7 @@ from layout import MARK, cta, faq_block, ticks, related, trust_note
 
 PRACTICES = [
     ("Service desk", "Who do I call, and will a human answer?",
-     "One number and one email address. Phones answered 24/7 — after hours by our AI operator, which triages and escalates. Every request is logged, so nothing depends on someone remembering a corridor conversation."),
+     "One number and one email address, answered 8am to 5pm Monday to Friday. Outside those hours our digital assistant takes the details and logs the job for the next business day. Every request is logged, so nothing depends on someone remembering a corridor conversation."),
     ("Incident management", "Something's broken. How fast do you come?",
      "Faults are prioritised P1 to P4 by business impact and worked to published response targets. Restoring service comes first; understanding why comes after, as a separate piece of work."),
     ("Service request management", "How do I get a new starter set up?",

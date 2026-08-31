@@ -14,8 +14,8 @@ MATRIX = [
 ]
 
 COMMITS = [
-    ("Someone answers the phone",
-     "24/7, including weekends and public holidays. Outside business hours that's our AI operator, which takes the details, triages and escalates — it does not pretend to be a person. Work is actioned during business hours, except for managed and SLA clients on a P1."),
+    ("Someone picks up during business hours",
+     "8:00am to 5:00pm, Monday to Friday, Brisbane time. Outside those hours our digital assistant answers, takes the details and logs the job — it identifies itself as an assistant rather than pretending to be a person. Calls are returned the next business day. Managed and SLA clients have after-hours on-call cover under their agreement."),
     ("You'll know before we change anything",
      "Changes that could disrupt your business are approved by you, scheduled, and have a documented way back out before we start. No silent Friday-afternoon upgrades."),
     ("Recurring faults are our cost, not your invoice",
@@ -34,11 +34,11 @@ rows = "".join(
 
 FAQS = [
     ("How quickly does bcom ICT respond to a critical IT fault?",
-     "Managed IT clients have a contracted 4-hour response for P1 critical faults during business hours, with after-hours emergency attendance included. All other clients receive a callback within 4 business hours and on-site attendance the next business day. Phones are answered 24/7. Call 07 3041 8993."),
+     "Managed IT clients have a contracted 4-hour response for P1 critical faults during business hours, with after-hours emergency attendance included. All other clients receive a callback within 4 business hours and on-site attendance the next business day. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time. Call 07 3041 8993."),
     ("What counts as a P1?",
      "Your business has stopped. Everyone is offline, the server is down, phones or email are out for the whole office, or there are signs of ransomware or an active breach. One person unable to print is not a P1, and treating it as one is how genuine emergencies end up in a queue."),
-    ("Are you open 24/7 or not?",
-     "Phones are answered 24/7 and always have been. What happens next depends on the hour and your agreement: during business hours a technician picks the work up; after hours our AI operator takes the details and escalates, and for managed and SLA clients a P1 triggers emergency attendance. We won't claim a 24/7 human response we don't provide."),
+    ("Are you available after hours?",
+     "Not for general enquiries. bcom ICT is open 8:00am to 5:00pm, Monday to Friday, Brisbane time. Outside those hours our digital assistant answers the phone, takes your details and logs the job, and we call back the next business day. Managed and SLA clients have after-hours on-call cover under their agreement, which is a contracted arrangement rather than something available ad hoc. We won't claim a 24/7 human response we don't provide."),
     ("What if you miss a response target?",
      "Tell us. Response performance is reviewed with managed clients at their service reviews, and a missed target is a conversation rather than something you have to discover in a report. If we're consistently missing them, the agreement isn't working and you can leave — it's month-to-month for exactly that reason."),
     ("Who do we escalate to if we're not getting anywhere?",
@@ -66,7 +66,7 @@ PAGE = {
   <div class="wrap">
     <p class="answer">bcom ICT publishes a four-level priority matrix. Managed IT clients have a contracted
     4-hour response for P1 critical faults with after-hours emergency attendance included; all other clients
-    receive a callback within 4 business hours and next-business-day attendance. Phones are answered 24/7.
+    receive a callback within 4 business hours and next-business-day attendance. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time.
     Call 07 3041 8993.</p>
 
     <h2 style="margin-top:56px">Priority matrix</h2>
@@ -88,13 +88,13 @@ PAGE = {
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">Hours</span>
-      <h2>What "open 24/7" actually means</h2>
-      <p>Plenty of providers advertise 24/7 and mean an answering machine. Here's ours in full.</p>
+      <h2>When we're actually available</h2>
+      <p>Plenty of providers advertise 24/7 and mean an answering machine. We'd rather state ours plainly.</p>
     </div>
     {ticks([
-      "<strong>Phones answered 24/7</strong>, including weekends and public holidays.",
-      "<strong>After hours</strong> calls are handled by our AI phone operator, which takes details, triages and escalates. It identifies itself as an AI — it doesn't pretend to be a person.",
-      "<strong>Business hours</strong> is when work is actioned for standard clients.",
+      "<strong>Business hours are 8:00am to 5:00pm, Monday to Friday</strong>, Brisbane time. That is when calls are answered by a person and when work is actioned.",
+      "<strong>Outside those hours</strong> our digital assistant answers, takes your details and logs the job. It identifies itself as an assistant rather than pretending to be a person.",
+      "<strong>We do not respond to phone enquiries after hours.</strong> Details taken overnight or at the weekend are actioned the next business day. We would rather say that than imply otherwise.",
       "<strong>After-hours emergency attendance</strong> is included for managed and SLA clients on a P1, and is not available ad hoc.",
       "<strong>Callback within 4 business hours</strong> applies to every enquiry, from any channel.",
     ])}

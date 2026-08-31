@@ -45,7 +45,7 @@ PAGE = {
                                          None,
                                          'Who answers, what they can actually do, and whether after-hours '
                                          'attendance is included or extra. Many providers advertise 24/7 '
-                                         'and mean an answering service. <em>We answer 24/7; after hours '
+                                         'and mean an answering service. <em>We are open 8am to 5pm Monday to Friday; after hours '
                                          "it's an AI operator that takes details and escalates, and it "
                                          'says so.</em>'),
                                  (       '3. Is it month-to-month, or locked in?',

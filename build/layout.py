@@ -11,7 +11,7 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "5"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "6"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 ROBOTS_OK = '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'
@@ -81,8 +81,8 @@ def local_business():
                       + [{"@type": "Country", "name": "Australia"}],
         "openingHoursSpecification": [{
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "00:00", "closes": "23:59",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00", "closes": "17:00",
         }],
         "sameAs": [BIZ["wikidata"], BIZ["gmaps"], BIZ["abn_lookup"]],
         "identifier": {"@type": "PropertyValue", "propertyID": "ABN", "value": BIZ["abn"]},
@@ -179,7 +179,7 @@ def header(p):
     return f'''<div class="utility">
   <div class="wrap">
     <div class="utility-left">
-      <span class="utility-open"><span class="dot"></span> Open 24/7 · phones answered</span>
+      <span class="utility-open"><span class="dot"></span> {BIZ['hours_short']} · Brisbane time</span>
       <span class="u-hide">{address_line()}</span>
     </div>
     <span class="u-hide">Callback {BIZ['callback']}</span>

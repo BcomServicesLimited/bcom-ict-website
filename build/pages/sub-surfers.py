@@ -1,7 +1,7 @@
 from layout import cta, faq_block, related, svc_body, nearby
 
 FAQS = [   (   'Do you provide IT support in Surfers Paradise?',
-        "Yes — bcom ICT's office is at 9 Ferny Avenue, Surfers Paradise. Attendance within the suburb is usually available within the hour during business hours, and phones are answered 24/7 "
+        "Yes — bcom ICT's office is at 9 Ferny Avenue, Surfers Paradise. Attendance within the suburb is usually available within the hour during business hours, and business hours are 8am to 5pm Monday to Friday "
         'including weekends and public holidays. Call 07 3041 8993.'),
     (   'How quickly can you get to a Surfers Paradise business?',
         "Usually within the hour during business hours, since we're based in the suburb. Building access in high-rise towers occasionally adds time — service lift bookings and building management "
@@ -22,7 +22,7 @@ PAGE = {
     "h1": "We're on Ferny Avenue",
     "lede": 'Our office is in Surfers Paradise, so this is the one suburb where "local IT support" means we can walk.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['Office at 9 Ferny Ave', 'High-rise experience', 'Venue & accommodation', 'Answered 24/7'],
+    "trust": ['Office at 9 Ferny Ave', 'High-rise experience', 'Venue & accommodation', 'Digital assistant after hours'],
     "crumbs": [("Industries", "/industries"), ('Surfers Paradise', '/it-support-surfers-paradise-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",

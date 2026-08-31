@@ -33,6 +33,6 @@ PAGE = {
 </section>
 
 {cta("Rather just talk to someone?",
-     "Call 07 3041 8993 — answered 24/7, including weekends and public holidays.")}
+     "Call 07 3041 8993 — returned during business hours, Monday to Friday.")}
 ''',
 }

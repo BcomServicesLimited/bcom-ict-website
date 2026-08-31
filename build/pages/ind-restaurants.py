@@ -3,7 +3,7 @@ from layout import cta, faq_block, related, svc_body
 FAQS = [   (   'What IT support does a restaurant need?',
         'Keeping point of sale and EFTPOS running through service is the priority — which means a reliable network, automatic 4G or 5G failover, payment terminals segmented from other traffic, and '
         'WiFi that covers the whole venue including outdoor areas. Online ordering integrations and kitchen printers matter next. bcom ICT supports Gold Coast restaurants and cafés and answers '
-        'phones 24/7.'),
+        '8am to 5pm Monday to Friday.'),
     (   'Our EFTPOS drops out at busy times. Why?',
         "Usually the network rather than the terminal — WiFi saturated by staff phones, ordering tablets and guest devices all competing, or an access point that cannot cover the whole venue. It's "
         "measurable, and it's almost never fixed by replacing the terminal."),
@@ -14,7 +14,7 @@ FAQS = [   (   'What IT support does a restaurant need?',
         "We support the environment and connectivity it depends on, and work with your POS vendor on the integration itself. Broken integrations tend to fail silently — orders simply don't arrive — "
         'so monitoring them matters more than people expect.'),
     (   'Do you work outside business hours?',
-        'Phones are answered 24/7, including weekends and public holidays. After hours our AI operator takes details and escalates. Managed and SLA clients have after-hours emergency attendance '
+        'Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time. After hours our AI operator takes details and escalates. Managed and SLA clients have after-hours emergency attendance '
         'included, which for a venue trading at night is usually the arrangement that makes sense.'),
     (   'How quickly can you get to us?',
         'Same-day attendance is usually available across the Gold Coast, and many faults are diagnosed remotely within minutes. For a venue, the more useful conversation is what we can prevent '
@@ -30,7 +30,7 @@ PAGE = {
     "h1": 'Nothing can break during service',
     "lede": "A restaurant's IT has a two-hour window where failure is unacceptable, and margins that don't absorb a lost night. That shapes everything.",
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['Built for service hours', 'EFTPOS failover', 'Ordering integrations', 'Answered 24/7'],
+    "trust": ['Built for service hours', 'EFTPOS failover', 'Ordering integrations', 'Digital assistant after hours'],
     "crumbs": [('Industries', '/industries'), ('Restaurants & cafés', '/it-support-restaurants-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",
@@ -72,7 +72,7 @@ PAGE = {
                                  '<strong>Kitchen display and printer reliability</strong> — a docket '
                                  'printer that stops mid-service is a genuine emergency',
                                  '<strong>Guest WiFi isolated</strong> from everything operational',
-                                 '<strong>Phones answered 24/7</strong>, which matters when your trading '
+                                 '<strong>Mon–Fri 8am–5pm</strong>, which matters when your trading '
                                  'hours are not office hours']},
         {       'h2': 'Prevention is the whole game',
                 'html': '<p style="max-width:68ch">Most of what we do for hospitality happens before '

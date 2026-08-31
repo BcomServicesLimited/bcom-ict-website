@@ -2,7 +2,7 @@ from layout import cta, faq_block, related, svc_body, nearby
 
 FAQS = [   (   'Do you provide IT support in Southport?',
         'Yes. bcom ICT attends Southport businesses from its office at 9 Ferny Avenue, Surfers Paradise — roughly ten minutes away — with same-day attendance usually available. Phones are answered '
-        '24/7. Call 07 3041 8993.'),
+        '8am to 5pm Monday to Friday. Call 07 3041 8993.'),
     (   'Do you work with medical practices in Southport?',
         'Yes. Health service providers are covered by the Privacy Act regardless of turnover, which changes what their IT has to do. Our technicians hold national police checks and Queensland Blue '
         'Cards where the practice requires them.'),

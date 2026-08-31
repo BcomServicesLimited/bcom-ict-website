@@ -42,6 +42,9 @@ Preview: `bcom-ict` server on port 4400.
 | ISO | **Aligned, NOT certified.** Never write "certified/compliant/accredited" for the org. |
 | Credentials | PI + cyber + public liability insured. Police checks + QLD Blue Cards held. **No ACMA cabler registration** — cabling is subcontracted to ACMA registered contractors; never imply bcom ICT holds it. Microsoft: says "Silver Partner", but Silver/Gold are retired tiers — site says **"Microsoft Partner"** until Partner Center is checked. |
 | SLA | Draft P1–P4 matrix approved as-is |
+| Booking | Google Calendar appointment booking embedded on the homepage — `BIZ["booking"]` in site_data. |
+| Remote support | **Splashtop SOS**, instructions and download link on **`/support` only** (Royce's instruction). `BIZ["splashtop"]`. |
+| Legal pages | Ported from the old site and updated — they were far more thorough than a generic template (VoIP 000 disclaimer, carrier dependency, number porting, fair-use policies, right to refuse insecure systems). |
 | Managed IT pricing | **Not per-seat.** Calculated from business requirements and the services provided; quoted after the free review. Never write "based on staff and device numbers". |
 | Rates | **$198 + GST per hour** ($217.80 inc). **$100 + GST on-site call-out** ($110 inc). First hour on site $298 + GST ($327.80 inc). Remote has no call-out. Single source of truth: `RATES` in `build/site_data.py`. Site quotes ex-GST with inc-GST alongside — audience is GST-registered businesses. |
 
@@ -49,7 +52,12 @@ Preview: `bcom-ict` server on port 4400.
 - Organisation: *"aligned to ISO/IEC 27001:2022 … not currently certified"*. Never "ISO certified".
 - Individuals: Royce = ITIL 4 Foundation. Ollie = ISO/IEC 42001:2023 Lead Implementer, issued by BSI.
 - Callback promise is **"within 4 business hours"** everywhere. Never "1 hour".
-- Hours: phones answered 24/7, after hours by the AI operator, work actioned in business hours.
+- **Hours (corrected 2026-08-31 — the site had overstated this):** business hours are
+  **8:00am – 5:00pm, Monday to Friday, Brisbane time**. The digital assistant answers the
+  phone at any hour and logs the job, but **we do not respond to phone enquiries after
+  hours** — calls are returned the next business day. After-hours **on-call** support is
+  for managed/SLA clients under their agreement only. Never write "open 24/7" or
+  "phones answered 24/7". The only legitimate 24/7 claim is the **SOC service**.
 - No residential/home-user copy. Home-office WiFi and mesh is fine; general home computer repair is not.
 - **Cabling:** "installed by ACMA registered cabling contractors" — bcom ICT engages and manages them.
   Never "bcom ICT is ACMA registered" or "an ACMA registered cabler".
@@ -144,6 +152,7 @@ Each chunk ends with a commit and a push. Tick as they land.
 |---|---|
 | **Search Console export** — 12 months, page-level, impressions + clicks. *Said "see attached" but no file came through.* | Chunk 11 — decides which of the 11 WiFi brand pages get consolidated vs kept |
 | **Legal review of `/privacy-policy` and `/terms-and-conditions`** — both are reasonable and Australian-law aware (APPs, ACL consumer guarantees explicitly preserved) but have not been reviewed by a lawyer | Before go-live |
+| **Formspree form ID** — the contact form is fully wired (`_subject`, `_next` → /thank-you, `_gotcha` honeypot) but posts to the placeholder `REPLACE_WITH_BCOM_FORM_ID` in `build/site_data.py`. Create the form, paste the ID, rebuild — then it can be tested end to end. | `/contact` |
 | **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
 | **Is the $100 call-out ex-GST?** Assumed yes for consistency with the hourly rate. Site currently says "$100 + GST ($110 inc GST)" — correct if it is GST-inclusive | `/pricing` and 5 other pages |
 | **GBP from-prices are wrong** — profile says From $182 / $252 / $310; real minimum is $217.80 remote and $327.80 on site, inc GST. Set to $218 / $328 and delete from managed IT + all 6 cybersecurity services | GBP, this week |

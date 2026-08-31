@@ -67,12 +67,12 @@ PAGE = {
                                  '<strong>Deployed under a governance framework</strong> covering what '
                                  'data it may take and what it must never do — see AI governance.']},
         {       'h2': 'We use one, which is why we recommend it',
-                'html': '<p style="max-width:68ch">bcom ICT answers phones 24/7. Outside business hours '
+                'html': '<p style="max-width:68ch">bcom ICT is open 8am to 5pm Monday to Friday. Outside those hours '
                         'that is an AI operator — it takes the details, triages, and escalates a genuine '
                         'emergency to a person. It says it is an AI when it answers.</p><p '
                         'style="max-width:68ch;margin-top:16px">We say this on our <a '
                         'href="/service-levels-and-security">service levels page</a> too, because claiming '
-                        '24/7 human response we do not provide would be the sort of thing this whole site '
+                        'a 24/7 human response we do not provide would be the sort of thing this whole site '
                         'exists to avoid. It is a genuinely useful tool, and it is not a person.</p><p '
                         'style="max-width:68ch;margin-top:16px">It also means when we implement one for '
                         'you, we are recommending something we live with rather than something we read '

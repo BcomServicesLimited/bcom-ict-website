@@ -17,7 +17,7 @@ FAQS = [   (   'What IT support does a retail business need?',
         "Only if it isn't isolated. Guest WiFi should be internet-only with no route to your stock system, back office or payment devices. Done properly it's a genuine amenity; done as an "
         "afterthought it's a way into your business."),
     (   'How fast can you get to a store?',
-        'Same-day attendance is usually available across the Gold Coast, and many POS and network faults can be diagnosed remotely within minutes of a call. Phones are answered 24/7, which for '
+        'Same-day attendance is usually available across the Gold Coast, and many POS and network faults can be diagnosed remotely within minutes of a call. Phones are returned in business hours, which for '
         'retail trading hours matters.')]
 
 PAGE = {
