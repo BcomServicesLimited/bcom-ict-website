@@ -37,7 +37,7 @@ tiers = "".join(
 
 FAQS = [
     ("How much do common IT projects cost on the Gold Coast?",
-     "Indicative starting points from bcom ICT: a one-hour on-site visit booked online is $252 inc GST; a small-business cybersecurity health check is $500 inc GST for up to five users; business WiFi for a simple site starts at $1,500 + GST with hardware included; data cabling is around $150 + GST per outlet; a five-extension VoIP phone system is about $2,250 + GST including handsets; a Microsoft 365 migration is around $150 + GST per user; and automatic cloud backup is $10 per user per month. Every project is quoted as a fixed price after scoping."),
+     "Indicative starting points from bcom ICT: a one-hour on-site visit booked online is $252 inc GST; a small-business cybersecurity health check is $500 inc GST for up to five users; business WiFi for a simple site starts at $1,500 + GST with hardware included; data cabling is around $150 + GST per outlet; a five-extension VoIP phone system is about $2,250 + GST including handsets; a Microsoft 365 migration is around $150 + GST per user; and automatic cloud backup is $10 + GST per user per month. Every project is quoted as a fixed price after scoping."),
     ("How much does business IT support cost on the Gold Coast?",
      "bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, plus a $100 + GST call-out ($110 inc GST) on on-site work — a first hour on site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review, month-to-month with no lock-in. Projects are fixed-price after scoping. Call 07 3041 8993."),
     ("What is bcom ICT's hourly rate?",
@@ -75,7 +75,7 @@ PROJECTS = [
     ('Microsoft 365 migration, per user', '$150', '+ GST, indicative',
      ['Mail, calendar and contacts moved intact', 'Scoped first, then quoted as a fixed price',
       '<a href="/microsoft-365-setup-gold-coast">Microsoft 365</a>']),
-    ('Cloud backup, per user', '$10', 'per month',
+    ('Cloud backup, per user', '$10', '+ GST per month',
      ['Automatic, held away from your network', 'Restores tested rather than assumed',
       '<a href="/data-backup-recovery-gold-coast">Backup &amp; recovery</a>']),
 ]

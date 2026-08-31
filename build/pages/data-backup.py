@@ -55,7 +55,7 @@ FAQS = [   (   'How often should a business test its backups?',
         'the number with you rather than defaulting to whatever the software does.')]
 
 PRICING = [
-    ('Automatic cloud backup', '$10', 'per user per month',
+    ('Automatic cloud backup', '$10', '+ GST, per user per month',
      [
       'Runs on its own, without anyone remembering to start it',
       'Held away from your network, where ransomware cannot reach it',

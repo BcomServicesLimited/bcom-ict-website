@@ -236,8 +236,7 @@ on each pass. **432 symptom blocks and 172 worked examples, no duplicates.**
 | **Legal review of `/privacy-policy` and `/terms-and-conditions`** — both are reasonable and Australian-law aware (APPs, ACL consumer guarantees explicitly preserved) but have not been reviewed by a lawyer | Before go-live |
 | **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
 | **Is the $100 call-out ex-GST?** Assumed yes for consistency with the hourly rate. Site currently says "$100 + GST ($110 inc GST)" — correct if it is GST-inclusive | `/pricing` and 5 other pages |
-| **Confirm the $252 framing.** Published as *"a simple one-hour on-site job booked online, fixed, no call-out"* — inferred, not stated. It sits 23% under the ad-hoc $327.80 first hour, which reads as a deliberate incentive to self-book. If it is actually something else, `/pricing` and `/on-site-technical-support-gold-coast` both need rewording | 2 pages |
-| **GBP from-prices — partly vindicated.** Royce confirmed (Aug 2026) that $252 inc GST is a real price: a simple one-hour on-site job **booked through the online calendar**, with no call-out on top. The profile was not wrong about that figure. Still unexplained: **From $182** and **From $310** — ask Royce what those correspond to before touching them | GBP |
+| **GBP from-prices — resolved (Aug 2026).** $252 inc GST is current: a simple one-hour on-site job booked through the online calendar. **$182 and $310 are old rates** and must be removed from the profile — Royce confirmed current standard rates are $198 + GST/hr with a $100 call-out. Nothing on the site ever carried $182 or $310; the stale figures exist only in GBP. See the GBP price table below | **GBP — action outstanding** |
 | **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
 | Permission to name the national retail chain client | `/case-studies` — written accurately but unnamed, with the reason stated in the FAQ |
 | Cloudflare: confirm **Block AI bots = OFF** and managed robots.txt disabled on the zone | Before go-live — silently 403s every AI crawler |
@@ -258,10 +257,29 @@ on each pass. **432 symptom blocks and 172 worked examples, no duplicates.**
 | VoIP install | **$100 + GST per handset** | So $500 + GST for 5 extensions |
 | VoIP handset | **$350 + GST each** | Five-extension system = $2,250 + GST all up |
 | Microsoft 365 migration | **$150 + GST per user** | **Softest number on the site.** Royce's own words were "too hard to give indicative pricing. Maybe $150 per user. Maybe..." — carried with heavy scoping language on 2 pages. Pull it on request |
-| Cloud backup | **$10 per user per month** | Servers and infrastructure quoted separately on recovery targets |
+| Cloud backup | **$10 + GST per user per month** | Servers and infrastructure quoted separately on recovery targets. GST treatment was unstated by Royce; published as ex-GST to match every other unmarked figure he supplied |
 
 Managed IT deliberately still has **no from-price**. Monthly call plans for VoIP are
 quoted alongside the install rather than published.
+
+
+### Google Business Profile — prices to correct
+
+Royce maintains GBP himself. Current site figures, converted to inc GST for the profile:
+
+| GBP service | Set to | Note |
+|---|---|---|
+| On-site / technician attendance | **From $252** | Book-online rate. Already on the profile and correct |
+| Remote IT support | **From $218** | $217.80 inc GST, first hour, no call-out |
+| Cybersecurity health check | **From $500** | Up to 5 users |
+| Business WiFi | **From $1,650** | $1,500 + GST |
+| Data cabling | **From $165** | per outlet, $150 + GST |
+| VoIP / phone systems | **From $2,475** | 5-extension system, $2,250 + GST |
+| Microsoft 365 migration | **From $165** | per user, $150 + GST |
+| Managed IT | **no price** | Quoted from requirements, never per seat |
+| The other 5 cybersecurity services | **no price** | Only the health check has a fixed fee |
+
+**Remove From $182 and From $310 wherever they appear** — both are old rates.
 
 
 ---
