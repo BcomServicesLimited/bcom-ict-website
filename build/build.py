@@ -30,10 +30,19 @@ def load(path):
     return mod.PAGE
 
 
-def out_path(url_path):
+STAGE_DIR = ROOT / "_staging"
+
+
+def out_path(url_path, staging=False):
     """'/' -> index.html ; '/foo' -> foo.html  (Cloudflare Pages serves both
-    /foo and /foo.html from foo.html, so URLs stay extensionless)."""
-    return ROOT / ("index.html" if url_path == "/" else url_path.lstrip("/") + ".html")
+    /foo and /foo.html from foo.html, so URLs stay extensionless).
+
+    Staging builds write to _staging/ rather than the repo root. A staging build
+    sets noindex on every page; if that ever overwrote the production files and
+    got committed, the live site would deindex itself. Separate directories make
+    that impossible rather than merely unlikely."""
+    base = STAGE_DIR if staging else ROOT
+    return base / ("index.html" if url_path == "/" else url_path.lstrip("/") + ".html")
 
 
 STAGING_NOINDEX = ('<meta name="robots" content="noindex, nofollow">\n'
@@ -65,7 +74,7 @@ def main(staging_base=None):
         if f.name.startswith("_"):
             continue
         p = load(f)
-        dest = out_path(p["path"])
+        dest = out_path(p["path"], bool(staging_base))
         dest.parent.mkdir(parents=True, exist_ok=True)
         out = layout.render(p)
         rendered[p["path"]] = out
@@ -74,6 +83,23 @@ def main(staging_base=None):
         dest.write_text(out, encoding="utf-8")
         pages.append(p)
         print(f"  {p['path']:<62} {dest.stat().st_size/1024:6.1f} KB")
+
+    if staging_base:
+        import shutil
+        for extra in ("assets", "favicon.ico", "favicon.png"):
+            src = ROOT / extra
+            if src.exists():
+                dst = STAGE_DIR / extra
+                if dst.exists():
+                    shutil.rmtree(dst) if dst.is_dir() else dst.unlink()
+                shutil.copytree(src, dst) if src.is_dir() else shutil.copy2(src, dst)
+        (STAGE_DIR / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
+        (STAGE_DIR / ".nojekyll").write_text("")
+        for f in ("llms.txt", "llms-full.txt"):
+            if (ROOT / f).exists():
+                shutil.copy2(ROOT / f, STAGE_DIR / f)
+        print(f"\nSTAGING build in {STAGE_DIR}/ — production files untouched")
+        return
 
     html_sitemap(pages)
     pages.append({"path": "/sitemap", "priority": "0.3",
@@ -248,6 +274,24 @@ def claims():
             print(f"   {f}: {txt!r} — {why}")
     else:
         print("claims check: no overstated certification or credential claims")
+    noindex_gate()
+
+
+# Pages that are meant to carry noindex. Anything else carrying it in a
+# production build is a mistake serious enough to stop the build.
+NOINDEX_OK = {"404.html", "thank-you.html"}
+
+
+def noindex_gate():
+    leaked = [f.name for f in ROOT.glob("*.html")
+              if f.name not in NOINDEX_OK and "noindex" in f.read_text(encoding="utf-8")]
+    if leaked:
+        print("\n!! ABORT — production build contains noindex pages:")
+        for f in leaked:
+            print("   ", f)
+        print("   This would deindex the live site. Rebuild without --staging.")
+        raise SystemExit(1)
+    print("noindex gate: production build is indexable")
 
 
 if __name__ == "__main__":

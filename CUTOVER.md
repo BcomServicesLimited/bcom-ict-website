@@ -1,5 +1,13 @@
 # Cutover runbook — bcom ICT
 
+**Readable version:** https://claude.ai/code/artifact/45b0d3dc-83b4-4de7-a30b-d88b1b8a1d2e
+
+**Do not take the old site down first.** A gap is the single most damaging thing
+available during a cutover — every hour the domain 404s is an hour crawlers are
+told those pages are gone, and the 301s only work if something answers at the
+other end. There is no SEO upside to a window. The domain-swap gap of 1–5
+minutes is unavoidable and harmless.
+
 Everything below is either **a step Royce takes in a browser** or **a check to run
 afterwards**. The build itself is done and the parity gate passes.
 
