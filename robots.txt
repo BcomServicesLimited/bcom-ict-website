@@ -1,9 +1,11 @@
 User-agent: *
-Disallow: /book.html
-Disallow: /search.html
-Disallow: /tech-tips-template.html
+Allow: /
 Allow: /llms.txt
+Allow: /llms-full.txt
 Sitemap: https://www.bcomservices.com/sitemap.xml
+
+# /404 and /thank-you carry a noindex meta tag rather than being blocked here,
+# so crawlers can still follow links through them.
 
 # AI search and citation bots — ALLOW for live citations in ChatGPT, Perplexity, Bing Copilot
 User-agent: OAI-SearchBot

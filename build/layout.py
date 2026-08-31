@@ -39,7 +39,12 @@ def head(p):
 <meta property="og:description" content="{p["description"]}">
 <meta property="og:url" content="{url}">
 <meta property="og:locale" content="en_AU">
+<meta property="og:image" content="{SITE}/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="bcom ICT — business IT support on the Gold Coast">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITE}/assets/img/og-image.jpg">
 <meta name="geo.region" content="AU-QLD">
 <meta name="geo.placename" content="{BIZ['suburb']}, {BIZ['region']}">
 <link rel="icon" href="/assets/logo/favicon.svg" type="image/svg+xml">

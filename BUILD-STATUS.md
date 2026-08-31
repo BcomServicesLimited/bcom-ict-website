@@ -135,8 +135,15 @@ Each chunk ends with a commit and a push. Tick as they land.
       **`build.py` now reports "all internal links resolve" — zero broken links.**
       The HTML sitemap is generated from the pages actually built, so it cannot
       fall out of step.
-- [ ] **Chunk 10 — LLM layer** · `llms.txt`, `llms-full.txt`, internal link mesh,
-      og:image cards, IndexNow
+- [x] **Chunk 10 — LLM layer**
+      `llms.txt` (26 KB, indexes all 93 pages) and `llms-full.txt` (204 KB, every
+      answer block plus **513 Q&A pairs**) — both **generated from the pages
+      actually built** by `build/llms.py`, so they cannot drift out of step.
+      og:image share card generated on-brand at `assets/img/og-image.jpg`, wired
+      into og + twitter tags on every page. `indexnow_submit.py` and the key file
+      are in place — **do not run it until cutover**, since it would submit the
+      old site's URLs. robots.txt cleaned (removed 3 disallows for pages that no
+      longer exist; added llms-full.txt).
 - [ ] **Chunk 11 — Parity check & cutover**
       > **DO NOT carry these three rules across from the old `_redirects`:**
       > `/it-support-burleigh-heads-gold-coast.html`, `/it-support-robina-gold-coast.html`

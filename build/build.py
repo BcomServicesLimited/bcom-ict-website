@@ -60,7 +60,7 @@ def stage(html, base):
 
 
 def main(staging_base=None):
-    pages = []
+    pages, rendered = [], {}
     for f in sorted(PAGES.glob("*.py")):
         if f.name.startswith("_"):
             continue
@@ -68,6 +68,7 @@ def main(staging_base=None):
         dest = out_path(p["path"])
         dest.parent.mkdir(parents=True, exist_ok=True)
         out = layout.render(p)
+        rendered[p["path"]] = out
         if staging_base:
             out = stage(out, staging_base)
         dest.write_text(out, encoding="utf-8")
@@ -75,7 +76,15 @@ def main(staging_base=None):
         print(f"  {p['path']:<62} {dest.stat().st_size/1024:6.1f} KB")
 
     html_sitemap(pages)
-    pages.append({"path": "/sitemap", "priority": "0.3"})
+    pages.append({"path": "/sitemap", "priority": "0.3",
+                  "title": "Sitemap", "description": "Every page on the site."})
+
+    import llms as llms_mod
+    a, b = llms_mod.build(pages, rendered, SILOS)
+    (ROOT / "llms.txt").write_text(a, encoding="utf-8")
+    (ROOT / "llms-full.txt").write_text(b, encoding="utf-8")
+    print(f"  {'/llms.txt':<62} {len(a)/1024:6.1f} KB  (generated)")
+    print(f"  {'/llms-full.txt':<62} {len(b)/1024:6.1f} KB  (generated)")
 
     today = datetime.date.today().isoformat()
     urls = "\n".join(
