@@ -145,7 +145,7 @@ by ACMA registered cabling contractors that bcom ICT engages and manages.
 
 ### Networks & WiFi
 
-- [Aruba Instant On Support Gold Coast](https://www.bcomservices.com/aruba-instant-on-wifi-gold-coast): Aruba Instant On installation and support across the Gold Coast — AP11, AP12, AP15, AP22, AP25, AP32 and 1830/1930/1960 switches
+- [Aruba Instant On Installation Gold Coast](https://www.bcomservices.com/aruba-instant-on-wifi-gold-coast): Aruba Instant On networks designed, supplied and installed across the Gold Coast — survey, AP and switch specification, guest separation and documented handover
 - [Business WiFi Installation Gold Coast](https://www.bcomservices.com/business-wifi-gold-coast): Business WiFi design and installation across the Gold Coast using Ubiquiti UniFi and Aruba Instant On
 - [Business Computer Networking Gold Coast](https://www.bcomservices.com/computer-networking-service-gold-coast): Design, installation and support of business networks on the Gold Coast — switching, routing, WiFi, cabling and firewalls, built as one system by one team
 - [Mesh WiFi & Home Office Setup Gold Coast](https://www.bcomservices.com/mesh-network-setup-gold-coast): Mesh WiFi installation for Gold Coast home offices and small premises
@@ -153,14 +153,14 @@ by ACMA registered cabling contractors that bcom ICT engages and manages.
 - [Business Firewall & Network Security Gold Coast](https://www.bcomservices.com/network-security-and-firewall-configuration-gold-coast): Business firewall and network security for Gold Coast offices — next-generation firewall setup, VLAN segmentation, secure remote access, guest isolation and WPA3
 - [Business Network Troubleshooting Gold Coast](https://www.bcomservices.com/network-troubleshooting-diagnostics-gold-coast): Slow network, dropouts or devices that won't connect? bcom ICT diagnoses and fixes business network faults across the Gold Coast — interference, congestion, cabling, switching and ISP problems.
 - [Router & Modem Configuration Gold Coast](https://www.bcomservices.com/router-and-modem-configuration-gold-coast): Router and modem configuration for Gold Coast businesses and home offices — set up securely, with voice traffic prioritised and default passwords changed.
-- [Ubiquiti UniFi Support Gold Coast](https://www.bcomservices.com/ubiquiti-unifi-wifi-gold-coast): Ubiquiti UniFi installation and support across the Gold Coast — UAP-AC-Pro, U6 Pro, U7, Dream Machine, Cloud Gateway, USW switches and UniFi Protect
+- [Ubiquiti UniFi Installation Gold Coast](https://www.bcomservices.com/ubiquiti-unifi-wifi-gold-coast): UniFi networks designed, supplied and installed across the Gold Coast — site survey, hardware specified for your building, VLAN segmentation and documented handover
 - [WiFi Range Extension Gold Coast](https://www.bcomservices.com/wifi-range-extension-gold-coast): Extending WiFi coverage for Gold Coast businesses and home offices — measured rather than guessed, with wired access points where a cable run is possible.
 
 ### Phones & telecommunications
 
 - [Business Phone Systems Gold Coast](https://www.bcomservices.com/business-phone-systems-gold-coast): Business phone systems installed and supported across the Gold Coast — cloud VoIP, hosted and on-premise PBX, number porting
 - [Business NBN & Internet Support Gold Coast](https://www.bcomservices.com/nbn-internet-support-gold-coast): NBN and business internet support on the Gold Coast — modem and router configuration, line testing, ISP escalation and 4G/5G failover so an outage doesn't stop you trading.
-- [PBX Phone System Support Gold Coast](https://www.bcomservices.com/pabx-phone-systems-gold-coast): On-premise PBX installation, programming and support on the Gold Coast — LG Ericsson iPECS, Panasonic KX, NEC UNIVERGE and Alcatel-Lucent OmniPCX
+- [PBX Phone Systems Gold Coast](https://www.bcomservices.com/pabx-phone-systems-gold-coast): On-premise PBX systems supplied, installed, programmed and supported on the Gold Coast — LG Ericsson iPECS, Panasonic KX, NEC UNIVERGE and Alcatel-Lucent OmniPCX
 - [Phone Line Installation & Voice Cabling Gold Coast](https://www.bcomservices.com/phone-line-installation-cabling-gold-coast): Internal phone line and voice cabling for Gold Coast offices and commercial premises
 - [Telecommunications Contractor Gold Coast](https://www.bcomservices.com/telecommunications-contractor-gold-coast): Business telecommunications on the Gold Coast — phone systems, voice and data cabling, NBN and internet, number porting and legacy PBX support, from one contractor.
 - [VoIP Phone Systems Gold Coast](https://www.bcomservices.com/voip-phone-system-installation-and-support-gold-coast): Cloud VoIP phone systems for Gold Coast businesses — lower call costs, remote extensions, call queues, IVR menus, voicemail-to-email and full number porting

@@ -1,7 +1,7 @@
 from layout import cta, faq_block, related, svc_body, models
 
 FAQS = [   (   'Who services Panasonic phone systems on the Gold Coast?',
-        'bcom ICT programmes, repairs and supports Panasonic PBX systems across the Gold Coast, covering KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms, plus the current and '
+        'bcom ICT supplies, installs, programmes and repairs Panasonic PBX systems across the Gold Coast, covering KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms, plus the current and '
         'legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 '
         '8993.'),
     (   'Do you support older Panasonic systems, not just current models?',
@@ -29,14 +29,14 @@ PAGE = {
     "description": 'Panasonic phone system programming, repair and support on the Gold Coast — KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms. Extension changes, call flows, handset replacement and parts. Call 07 3041 8993.',
     "hero_img": 'panasonic-pbx-gold-coast-hero.webp',
     "hero_alt": 'A Panasonic PBX phone system being programmed by bcom ICT on the Gold Coast',
-    "h1": 'Panasonic phone systems, still supported',
-    "lede": 'KX-NS700 · KX-TDA200 · KX-TES824 · KX-DT546. A working system nobody will programme is a genuinely frustrating position — we service, programme and source parts for the lot.',
+    "h1": 'Panasonic systems, supplied and supported',
+    "lede": 'KX-NS700 · KX-TDA200 · KX-TES824 · KX-DT546. New systems specified and installed, existing ones programmed and repaired — including the platforms most providers have walked away from.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['Current + legacy models', 'Programming & moves', 'Parts sourced', 'Honest replacement advice'],
+    "trust": ['New systems supplied', 'Current + legacy models', 'Parts sourced', 'Honest advice'],
     "crumbs": [('Services', '/services'), ('PBX Systems', '/pabx-phone-systems-gold-coast'), ('Panasonic', '/panasonic-pbx-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",
-    "body": svc_body(answer='bcom ICT programmes, repairs and supports Panasonic PBX phone systems across the Gold Coast, covering KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.',
+    "body": svc_body(answer='bcom ICT supplies, installs, programmes and repairs Panasonic PBX phone systems across the Gold Coast, covering KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.',
                      blocks=[       {       'eyebrow': 'Models',
                 'h2': 'Every Panasonic system and handset we work on',
                 'html': models([('Current systems', 'The current NS and NSX ranges.', ['KX-NS700', 'KX-NS1000', 'KX-NSX1000', 'KX-NSX2000']), ('Legacy systems — still serviced', 'TDA, TDE and the analogue TES/TA range. Extremely common in older Gold Coast small business sites.', ['KX-TDA15', 'KX-TDA30', 'KX-TDA100', 'KX-TDA100D', 'KX-TDA200', 'KX-TDA600', 'KX-TDE100', 'KX-TDE200', 'KX-TDE600', 'KX-TES824', 'KX-TEM824', 'KX-TEB308', 'KX-TA308', 'KX-TA616', 'KX-TA824', 'KX-TVM50', 'KX-TVM200']), ('Current handsets — DT500 & NT500', 'The current digital and IP desk range.', ['KX-DT521', 'KX-DT543', 'KX-DT546', 'KX-NT511', 'KX-NT551', 'KX-NT553', 'KX-NT556', 'KX-NT560']), ('Legacy handsets — DT300, NT300, T7600', 'Older sets. Usually what is actually on the desk in a TDA or TES site.', ['KX-DT321', 'KX-DT333', 'KX-DT343', 'KX-DT346', 'KX-NT321', 'KX-NT343', 'KX-NT346', 'KX-NT366', 'KX-T7630', 'KX-T7633', 'KX-T7636', 'KX-T7665', 'KX-T7730', 'KX-T7735']), ('SIP handsets and DECT', 'SIP desk phones and the cordless range.', ['KX-HDV130', 'KX-HDV230', 'KX-HDV330', 'KX-HDV430', 'KX-TGP600', 'KX-TCA175', 'KX-TCA185', 'KX-TCA285', 'KX-TCA385', 'KX-UDT111', 'KX-UDT121', 'KX-UDT131'])]),

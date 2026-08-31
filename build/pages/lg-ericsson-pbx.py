@@ -1,7 +1,7 @@
 from layout import cta, faq_block, related, svc_body, models
 
 FAQS = [   (   'Who services LG Ericsson phone systems on the Gold Coast?',
-        'bcom ICT programmes, repairs and supports LG Ericsson PBX systems across the Gold Coast, covering iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms, plus the current and '
+        'bcom ICT supplies, installs, programmes and repairs LG Ericsson PBX systems across the Gold Coast, covering iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms, plus the current and '
         'legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 '
         '8993.'),
     (   'Do you support older LG Ericsson systems, not just current models?',
@@ -29,14 +29,14 @@ PAGE = {
     "description": 'LG Ericsson phone system programming, repair and support on the Gold Coast — iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms. Extension changes, call flows, handset replacement and parts. Call 07 3041 8993.',
     "hero_img": 'lg-ericsson-pbx-gold-coast-hero.webp',
     "hero_alt": 'A LG Ericsson PBX phone system being programmed by bcom ICT on the Gold Coast',
-    "h1": 'LG Ericsson phone systems, still supported',
-    "lede": 'eMG80 · UCP600 · LIP-9030 · ipLDK. A working system nobody will programme is a genuinely frustrating position — we service, programme and source parts for the lot.',
+    "h1": 'LG Ericsson systems, supplied and supported',
+    "lede": 'eMG80 · UCP600 · LIP-9030 · ipLDK. New systems specified and installed, existing ones programmed and repaired — including the platforms most providers have walked away from.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['Current + legacy models', 'Programming & moves', 'Parts sourced', 'Honest replacement advice'],
+    "trust": ['New systems supplied', 'Current + legacy models', 'Parts sourced', 'Honest advice'],
     "crumbs": [('Services', '/services'), ('PBX Systems', '/pabx-phone-systems-gold-coast'), ('LG Ericsson', '/lg-ericsson-pbx-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",
-    "body": svc_body(answer='bcom ICT programmes, repairs and supports LG Ericsson PBX phone systems across the Gold Coast, covering iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.',
+    "body": svc_body(answer='bcom ICT supplies, installs, programmes and repairs LG Ericsson PBX phone systems across the Gold Coast, covering iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.',
                      blocks=[       {       'eyebrow': 'Models',
                 'h2': 'Every LG Ericsson system and handset we work on',
                 'html': models([('Current systems', 'The current iPECS range, on-premise and cloud.', ['iPECS eMG80', 'iPECS eMG100', 'iPECS UCP100', 'iPECS UCP600', 'iPECS UCP2400', 'iPECS ONE', 'iPECS Cloud']), ('Legacy systems — still serviced', 'Earlier Ericsson-LG and LG-Nortel platforms. Common across older Gold Coast installs.', ['iPECS LIK-100', 'LIK-300', 'LIK-600', 'LIK-1200', 'iPECS MG100', 'MG300', 'ipLDK-20', 'ipLDK-60', 'ipLDK-100', 'ipLDK-300', 'GDK-100', 'GDK-162']), ('Current handsets — 1000i & LIP-9000', 'The current desk range.', ['1010i', '1020i', '1030i', '1040i', '1050i', 'LIP-9002', 'LIP-9008', 'LIP-9010', 'LIP-9020', 'LIP-9030', 'LIP-9040', 'LIP-9070']), ('Legacy handsets — LIP-8000 & LDP', 'Older IP and digital sets. Frequently what is actually on the desk.', ['LIP-8002', 'LIP-8004', 'LIP-8008', 'LIP-8012', 'LIP-8024', 'LIP-8040', 'LDP-7004', 'LDP-7008', 'LDP-7016', 'LDP-7024', 'LDP-9008', 'LDP-9030', 'LDP-9240']), ('DECT and wireless', 'Cordless handsets and repeaters.', ['GDC-450H', 'GDC-480H', 'GDC-500H', 'GDC-800H', 'W-SOHO', 'WIT-400HE'])]),

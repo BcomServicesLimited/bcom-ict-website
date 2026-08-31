@@ -218,10 +218,10 @@ A: Usually. It sits in front of or alongside your existing system rather than re
 ## Alcatel-Lucent PBX Support Gold Coast
 URL: https://www.bcomservices.com/alcatel-lucent-pbx-gold-coast
 
-bcom ICT programmes, repairs and supports Alcatel-Lucent PBX phone systems across the Gold Coast, covering OXO Connect, OmniPCX Office and OmniPCX Enterprise, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+bcom ICT supplies, installs, programmes and repairs Alcatel-Lucent PBX phone systems across the Gold Coast, covering OXO Connect, OmniPCX Office and OmniPCX Enterprise, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
 
 **Q: Who services Alcatel-Lucent phone systems on the Gold Coast?**
-A: bcom ICT programmes, repairs and supports Alcatel-Lucent PBX systems across the Gold Coast, covering OXO Connect, OmniPCX Office and OmniPCX Enterprise, plus the current and legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+A: bcom ICT supplies, installs, programmes and repairs Alcatel-Lucent PBX systems across the Gold Coast, covering OXO Connect, OmniPCX Office and OmniPCX Enterprise, plus the current and legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
 
 **Q: Do you support older Alcatel-Lucent systems, not just current models?**
 A: Yes — the legacy platforms are a large part of what we do. As providers move to cloud-only, plenty of Gold Coast businesses are left with a working system and nobody willing to attend. If your model is listed on this page, we service it.
@@ -270,28 +270,28 @@ A: Consulting and implementation are charged at $198 + GST per hour, scoped befo
 
 ---
 
-## Aruba Instant On Support Gold Coast
+## Aruba Instant On Installation Gold Coast
 URL: https://www.bcomservices.com/aruba-instant-on-wifi-gold-coast
 
-bcom ICT installs, configures and supports Aruba Instant On across the Gold Coast — access points from AP11, AP12 and AP15 through the Wi-Fi 6 range (AP21, AP22, AP25) and AP32, plus 1830, 1930 and 1960 series switches. Work includes site survey, guest network separation and documented handover. Call 07 3041 8993.
+bcom ICT designs, supplies and installs Aruba Instant On networks for Gold Coast businesses — surveying the building, specifying access points and switching, running the cabling, configuring guest separation and handing over documentation. bcom ICT also supports existing Instant On installations including earlier AP generations. Call 07 3041 8993.
 
-**Q: Who supports Aruba Instant On on the Gold Coast?**
-A: bcom ICT installs, configures and supports Aruba Instant On across the Gold Coast — AP11, AP11D, AP12, AP15 and AP17 through the Wi-Fi 6 range AP21, AP22, AP22D, AP25, AP27 and AP32, plus 1430, 1830, 1930 and 1960 series switches. Call 07 3041 8993.
+**Q: Do you design and supply new Aruba Instant On systems?**
+A: Yes — that's the larger part of what we do with it. bcom ICT surveys the building, specifies access points and switching, supplies the hardware at trade pricing, runs the cabling and commissions the system, then hands over documentation. We also support existing Instant On installations including earlier AP generations.
 
-**Q: Should we upgrade from AP11 or AP12 to AP22?**
-A: If the complaint is speed when the office is full, yes — device density is where the newer hardware genuinely helps, and an AP11 handling forty clients struggles in a way an AP22 doesn't. If the complaint is coverage or dead spots, no. That's placement and cabling, and newer access points don't travel further through walls.
+**Q: What does an Instant On installation cost?**
+A: It depends on the building — how many access points the coverage genuinely needs, switch capacity and PoE budget, and how much cabling is involved. We survey first and quote on the actual building, so the figure doesn't move once work starts.
 
-**Q: Our Instant On access point keeps going offline. Why?**
-A: Most often PoE budget on the switch or a marginal cable run — Instant On is less tolerant of borderline power than people expect. Adding cameras or phones to the same switch is a common trigger. Both are quick to test before anyone suggests new hardware.
+**Q: Can we buy the hardware ourselves?**
+A: Yes. We source at trade pricing and are transparent about the margin, but plenty of clients purchase directly and have us specify, install and configure. Either is fine.
 
-**Q: We've lost access to the Instant On cloud account. Can you help?**
-A: Usually, yes. It's a common situation when the original installer has moved on. We recover or re-establish access and hand back credentials documented and belonging to you.
+**Q: Should we choose Instant On or UniFi?**
+A: Instant On for a single office that wants reliable wireless with minimal management overhead. UniFi for deeper control and visibility, multiple sites managed together, or where you also want cameras and door access on the same system. We design and install both.
 
-**Q: Do you support enterprise Aruba as well as Instant On?**
+**Q: Our AP keeps going offline. Why?**
+A: Most often PoE budget on the switch or a marginal cable run — Instant On is less tolerant of borderline power than people expect. Adding cameras or phones to the same switch is a common trigger. Both test quickly before anyone suggests new hardware.
+
+**Q: Do you support enterprise Aruba as well?**
 A: Yes — the Instant AP range (IAP-205 through IAP-335) and the AP-500 series. These turn up in larger Gold Coast sites and are sometimes inherited during an office move.
-
-**Q: Do we need a subscription?**
-A: Core Instant On functionality doesn't require one, which keeps ongoing cost predictable. We'll tell you clearly what carries a recurring cost before you commit to anything.
 
 
 ---
@@ -1395,10 +1395,10 @@ A: Yes. Ad-hoc support is $198 + GST per hour with no ongoing commitment. We'll 
 ## LG Ericsson PBX Support Gold Coast
 URL: https://www.bcomservices.com/lg-ericsson-pbx-gold-coast
 
-bcom ICT programmes, repairs and supports LG Ericsson PBX phone systems across the Gold Coast, covering iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+bcom ICT supplies, installs, programmes and repairs LG Ericsson PBX phone systems across the Gold Coast, covering iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
 
 **Q: Who services LG Ericsson phone systems on the Gold Coast?**
-A: bcom ICT programmes, repairs and supports LG Ericsson PBX systems across the Gold Coast, covering iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms, plus the current and legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+A: bcom ICT supplies, installs, programmes and repairs LG Ericsson PBX systems across the Gold Coast, covering iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms, plus the current and legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
 
 **Q: Do you support older LG Ericsson systems, not just current models?**
 A: Yes — the legacy platforms are a large part of what we do. As providers move to cloud-only, plenty of Gold Coast businesses are left with a working system and nobody willing to attend. If your model is listed on this page, we service it.
@@ -1580,10 +1580,10 @@ A: Same-day attendance is usually available across the Gold Coast, and many conn
 ## NEC PBX Support Gold Coast
 URL: https://www.bcomservices.com/nec-pbx-gold-coast
 
-bcom ICT programmes, repairs and supports NEC PBX phone systems across the Gold Coast, covering UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+bcom ICT supplies, installs, programmes and repairs NEC PBX phone systems across the Gold Coast, covering UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
 
 **Q: Who services NEC phone systems on the Gold Coast?**
-A: bcom ICT programmes, repairs and supports NEC PBX systems across the Gold Coast, covering UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms, plus the current and legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+A: bcom ICT supplies, installs, programmes and repairs NEC PBX systems across the Gold Coast, covering UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms, plus the current and legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
 
 **Q: Do you support older NEC systems, not just current models?**
 A: Yes — the legacy platforms are a large part of what we do. As providers move to cloud-only, plenty of Gold Coast businesses are left with a working system and nobody willing to attend. If your model is listed on this page, we service it.
@@ -1889,10 +1889,10 @@ A: It's a fair question and the honest answer is that it depends what you need. 
 
 ---
 
-## PBX Phone System Support Gold Coast
+## PBX Phone Systems Gold Coast
 URL: https://www.bcomservices.com/pabx-phone-systems-gold-coast
 
-bcom ICT installs, programs and maintains on-premise PBX phone systems across the Gold Coast, including LG Ericsson iPECS, Panasonic KX-NS, KX-TDA and KX-TDE, NEC UNIVERGE SV9100, SV8100 and SL2100, and Alcatel-Lucent OmniPCX and OXO Connect. bcom ICT continues to support legacy systems that many providers no longer service. Call 07 3041 8993.
+bcom ICT supplies, installs, programs and maintains on-premise PBX phone systems across the Gold Coast — including new system design, handset supply and commissioning — covering LG Ericsson iPECS, Panasonic KX-NS, KX-TDA and KX-TDE, NEC UNIVERGE SV9100, SV8100 and SL2100, and Alcatel-Lucent OmniPCX and OXO Connect. bcom ICT continues to support legacy systems that many providers no longer service. Call 07 3041 8993.
 
 **Q: Who services PBX phone systems on the Gold Coast?**
 A: bcom ICT installs, programs and maintains on-premise PBX systems on the Gold Coast, including LG Ericsson iPECS, Panasonic KX-NS, KX-TDA and KX-TDE, NEC UNIVERGE SV9100, SV8100 and SL2100, and Alcatel-Lucent OmniPCX and OXO Connect — including legacy systems many providers no longer service. Call 07 3041 8993.
@@ -1918,10 +1918,10 @@ A: Yes. PBX relocation, recabling and number porting are handled as part of an o
 ## Panasonic PBX Support Gold Coast
 URL: https://www.bcomservices.com/panasonic-pbx-gold-coast
 
-bcom ICT programmes, repairs and supports Panasonic PBX phone systems across the Gold Coast, covering KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+bcom ICT supplies, installs, programmes and repairs Panasonic PBX phone systems across the Gold Coast, covering KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms, along with the current and legacy handset ranges. Work includes extension adds and changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
 
 **Q: Who services Panasonic phone systems on the Gold Coast?**
-A: bcom ICT programmes, repairs and supports Panasonic PBX systems across the Gold Coast, covering KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms, plus the current and legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+A: bcom ICT supplies, installs, programmes and repairs Panasonic PBX systems across the Gold Coast, covering KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms, plus the current and legacy handset ranges. That includes extension changes, call flow and hunt group programming, voicemail and auto-attendant configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
 
 **Q: Do you support older Panasonic systems, not just current models?**
 A: Yes — the legacy platforms are a large part of what we do. As providers move to cloud-only, plenty of Gold Coast businesses are left with a working system and nobody willing to attend. If your model is listed on this page, we service it.
@@ -2382,28 +2382,31 @@ A: Not currently. Alignment work is internal and documented, but no accredited b
 
 ---
 
-## Ubiquiti UniFi Support Gold Coast
+## Ubiquiti UniFi Installation Gold Coast
 URL: https://www.bcomservices.com/ubiquiti-unifi-wifi-gold-coast
 
-bcom ICT installs, configures and supports Ubiquiti UniFi across the Gold Coast — access points from the UAP-AC range through U6 and U7, Dream Machine and Cloud Gateway controllers, USW PoE switches and UniFi Protect cameras. Work includes site survey, VLAN segmentation, controller setup and documented handover. Call 07 3041 8993.
+bcom ICT designs, supplies and installs Ubiquiti UniFi networks for businesses across the Gold Coast — surveying the building, specifying access points, switching and gateway, running the cabling, configuring VLAN segmentation and handing over documentation. bcom ICT also supports existing UniFi installations, including earlier generations. Call 07 3041 8993.
 
-**Q: Who supports Ubiquiti UniFi on the Gold Coast?**
-A: bcom ICT installs, configures and supports UniFi across the Gold Coast — UAP-AC-Lite, UAP-AC-Pro and UAP-AC-LR through the U6 range (U6 Lite, U6 Pro, U6 LR, U6 Mesh, U6 In-Wall) and U7, plus Dream Machine and Cloud Gateway controllers, USW PoE switches, Cloud Key and UniFi Protect. Call 07 3041 8993.
+**Q: Do you design and supply new UniFi systems, or only support existing ones?**
+A: Both, and design and supply is the larger part. bcom ICT surveys the building, specifies access points, switching and gateway, supplies the hardware at trade pricing, runs the cabling and commissions the system, then hands over documentation. We also support existing UniFi installations including earlier generations. Call 07 3041 8993.
 
-**Q: Why does our UAP-AC-Pro keep dropping off the network?**
-A: The three usual causes are exceeding the PoE budget on the switch, a marginal or too-long cable run, and the access point being unable to reach its controller after a network change. All three are quick to test, and none of them need new hardware. Adding cameras or phones to the same switch is a very common trigger.
+**Q: What does a UniFi installation cost?**
+A: It depends on the building — how many access points the coverage genuinely needs, switch capacity and PoE budget, and how much cabling has to be run. We survey first and quote on the actual building rather than a guess, so the number doesn't move once an installer is on site.
+
+**Q: Can we buy the hardware ourselves?**
+A: Yes, and some clients do. We source at trade pricing and are transparent about what we charge over it, but if you'd rather purchase directly we'll still specify exactly what to buy and install and configure it for you.
+
+**Q: Why does our UAP-AC-Pro keep dropping off?**
+A: The usual causes are exceeding the PoE budget on the switch, a marginal or over-length cable run, and the access point being unable to reach its controller after a network change. Adding cameras or phones to the same switch is a very common trigger. All three test quickly, and none need new hardware.
 
 **Q: Do we need to upgrade from UAP-AC to U6 or U7?**
-A: Usually not. A UAP-AC-Pro serving fifteen devices in an office is not the bottleneck. Upgrading is worth it for genuine device density — thirty or more clients per access point — or where hardware has reached end of software support. If the complaint is coverage, newer access points won't help; that's placement and cabling.
+A: Often not. Upgrading is worth it for genuine device density, for large file transfers over wireless, or where hardware has reached end of software support. If the complaint is coverage or dead spots, newer access points won't help — that's placement and cabling.
 
 **Q: Can you take over a UniFi network someone else installed?**
-A: Yes, and it's common — often when the original installer has moved on and nobody has the controller login. That's usually recoverable, and we hand back documented credentials, network layout and VLAN structure that belong to you.
-
-**Q: Which controller do we need — Cloud Key, Dream Machine or Cloud Gateway?**
-A: It depends on throughput and whether you want the controller on-site. A Dream Machine or Cloud Gateway combines router, firewall and controller in one unit and suits most single-site businesses. A Cloud Key alongside an existing gateway suits sites where the routing is already handled. We'll specify for your setup rather than defaulting.
+A: Yes, and it's common — frequently when nobody has the controller login any more. That's usually recoverable, and we hand back documented credentials, network layout and VLAN structure belonging to you.
 
 **Q: Does UniFi cover cameras and door access too?**
-A: Yes — UniFi Protect for cameras and UniFi Access for doors, on the same controller. It's a genuine advantage over alternatives, but it does mean planning PoE budget and switch capacity for all of it up front rather than discovering the limit later.
+A: Yes — UniFi Protect for cameras and UniFi Access for doors, on the same controller. It's a real advantage of choosing UniFi for a new system, but it means planning PoE budget and switch capacity for all of it at design stage rather than discovering the limit later.
 
 
 ---
