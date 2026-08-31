@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "bcom-ict", "runtimeExecutable": "python3", "runtimeArgs": ["-m","http.server","4400"], "port": 4400 }
+  ]
+}

@@ -1,0 +1,26 @@
+# bcom ICT — Cloudflare Pages headers. Last matching rule wins.
+
+/*
+  Cache-Control: public, max-age=300, s-maxage=3600, stale-while-revalidate=86400
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Fonts are content-hashed by name and never change — cache hard.
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/img/*
+  Cache-Control: public, max-age=2592000
+
+/assets/logo/*
+  Cache-Control: public, max-age=2592000
+
+# CSS/JS use a ?v= cache-bust, so they must revalidate rather than freeze.
+# See BUILD-STATUS.md — bump ASSET_V in build/layout.py when either changes.
+/assets/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/js/*
+  Cache-Control: public, max-age=0, must-revalidate
