@@ -2070,10 +2070,16 @@ A: Yes. Testing and certification results, labelling at both ends, and a plan yo
 ## Pricing
 URL: https://www.bcomservices.com/pricing
 
-bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, billed in hourly increments, plus a $100 + GST call-out ($110 inc GST) for on-site work — so a first hour on site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, month-to-month with no lock-in. Call 07 3041 8993.
+bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, billed in hourly increments, plus a $100 + GST call-out ($110 inc GST) for on-site work — so a first hour on site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, month-to-month with no lock-in. Project work is quoted as a fixed price after scoping rather than estimated in advance. Call 07 3041 8993.
 
-**Q: How much do common IT projects cost on the Gold Coast?**
-A: Indicative starting points from bcom ICT: a one-hour on-site visit booked online is $252 inc GST; a small-business cybersecurity health check is $500 inc GST for up to five users; business WiFi for a simple site starts at $1,500 + GST with hardware included; data cabling is around $150 + GST per outlet; a five-extension VoIP phone system is about $2,250 + GST including handsets; a Microsoft 365 migration is around $150 + GST per user; and automatic cloud backup is $10 + GST per user per month. Every project is quoted as a fixed price after scoping.
+**Q: How does bcom ICT charge for project work?**
+A: Projects are quoted as a fixed price after the work has been scoped, not estimated over the phone. bcom ICT publishes indicative starting points for a few common jobs so you can judge whether a conversation is worth having, but those are planning aids rather than quotes and each one is published alongside what it assumes and what sits outside it. Once a project is scoped, the fixed price is agreed in writing before work starts and variations are agreed before they happen rather than appearing on the invoice.
+
+**Q: Why won't you give me a price over the phone?**
+A: Because a number given before anyone has looked is a guess, and a guess given confidently becomes something you reasonably expect us to honour. Most project costs are driven by the building or by the system being replaced rather than by the work itself — ceiling access, cable routes, whether an old mail platform will release its data cleanly, whether a site can only be worked on after hours. We would rather tell you the range of possibilities now and the actual number after we have looked at your site.
+
+**Q: Do you publish per-outlet or per-user rates?**
+A: No, and we removed them deliberately. A published unit price invites a business to multiply it by its own headcount or outlet count and arrive at a figure bcom ICT never quoted, which is the most common way a published price ends in a disagreement. Cabling, migrations and phone systems are quoted on the actual site and the actual requirement.
 
 **Q: How much does business IT support cost on the Gold Coast?**
 A: bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, plus a $100 + GST call-out ($110 inc GST) on on-site work — a first hour on site is $298 + GST. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review, month-to-month with no lock-in. Projects are fixed-price after scoping. Call 07 3041 8993.
