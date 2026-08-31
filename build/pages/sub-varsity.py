@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example
+from layout import MARK, cta, faq_block, cards, ticks, related, nearby, trust_note, example, booking_cta
 
 LOCAL_EX = example(
     "A Varsity Lakes business park tenancy with nobody holding the keys",
@@ -38,6 +38,7 @@ PAGE = {
     "trust": ['~20 min from our office', 'Business park precinct', 'Modern infrastructure', 'Same-day attendance'],
     "crumbs": [("Industries", "/industries"), ('Varsity Lakes', '/it-support-varsity-lakes-gold-coast')],
     "faqs": FAQS,
+    "booking": True,
     "reviewed": "August 2026",
     "body": f'''
 <section class="section">
@@ -141,6 +142,9 @@ PAGE = {
     {LOCAL_EX}
   </div>
 </section>
+'''
+            + f'''
+{booking_cta()}
 '''
             + faq_block(FAQS)
             + nearby('/it-support-varsity-lakes-gold-coast')

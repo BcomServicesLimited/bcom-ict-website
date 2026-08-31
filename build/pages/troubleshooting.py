@@ -1,4 +1,4 @@
-from layout import cta, faq_block, related, svc_body, issues, example
+from layout import cta, faq_block, related, svc_body, issues, example, booking_cta
 
 COMMON_ISSUES = [
     ("&ldquo;It&rsquo;s been like this for months&rdquo;",
@@ -64,6 +64,7 @@ PAGE = {
     "trust": ["Diagnosed before quoting", "Loan machines available", "Business hardware only", "Since 2011"],
     "crumbs": [("Services", "/services"), ("Troubleshooting", "/hardware-software-troubleshooting-gold-coast")],
     "faqs": FAQS,
+    "booking": True,
     "reviewed": "August 2026",
     "body": svc_body(
         answer="bcom ICT diagnoses and repairs hardware and software faults on business computers, "
@@ -113,6 +114,8 @@ PAGE = {
     {EXAMPLE_2}
   </div>
 </section>
+''' + f'''
+{booking_cta()}
 ''' + faq_block(FAQS) + related([
             ("Business Computer Repair", "/on-site-computer-repair-gold-coast"),
             ("Windows & macOS Repair", "/os-troubleshooting-repair-gold-coast"),

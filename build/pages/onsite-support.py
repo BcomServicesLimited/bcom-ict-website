@@ -1,4 +1,5 @@
-from layout import MARK, cta, faq_block, cards, ticks, steps, related, svc_body, trust_note, price_table, issues, example
+from site_data import BIZ
+from layout import booking_embed, booking_button, MARK, cta, faq_block, cards, ticks, steps, related, svc_body, trust_note, price_table, issues, example
 
 PRICING = [
     ('First hour on site, booked online', '$252', 'inc GST &middot; fixed price',
@@ -61,6 +62,7 @@ PAGE = {
     "trust": ['Same-day where available', '$100 + GST call-out', 'Police-checked technicians', 'Local since 2011'],
     "crumbs": [('Services', '/services'), ('On-site IT Support', '/on-site-technical-support-gold-coast')],
     "faqs": [('How quickly can you get someone on site on the Gold Coast?', 'Same-day attendance is usually available across the Gold Coast. Managed IT clients have a contracted 4-hour response for critical faults with after-hours emergency attendance included. All other clients receive a best-effort response — usually the same business day — and a booked visit, most often the same or next business day.'), ('What does an on-site visit cost?', 'A first hour on site is $290 + GST ($319.00 inc GST) — the $100 + GST call-out ($110.00 inc GST) plus the $190 + GST hour ($209.00 inc GST). Book the visit through our online calendar instead and it is a fixed $252 inc GST, which is $67 less for the same hour. Time past the first hour is $190 + GST in half-hour increments. Remote support carries no call-out, and a remote job of up to an hour is $150 + GST ($165 inc GST).'), ('Which Gold Coast suburbs do you attend?', 'All of them — Surfers Paradise, Southport, Robina, Burleigh Heads, Broadbeach, Coomera, Nerang, Helensvale, Varsity Lakes, Palm Beach and everywhere between. Remote and managed support extends Australia-wide.'), ('Are your technicians screened?', 'Yes. Technicians attending client sites hold national police checks, and Queensland Blue Cards where a site requires them — relevant for healthcare, education and childcare clients.'), ('Will you try remote first?', "Where the fault allows it, yes, and we'll tell you why. Remote is faster and has no call-out. If the problem is clearly physical — a dead machine, a failed drive, a network that's down — we book the visit straight away rather than billing you for an hour of trying."), ('What if the machine needs to go away?', 'We leave you a loan device so nobody sits idle, and tell you the expected turnaround before we take anything.')],
+    "booking": True,
     "reviewed": "August 2026",
     "body": svc_body(answer='bcom ICT provides on-site IT support to businesses across the Gold Coast, attending offices to resolve workstation, server, network, printer and connectivity faults in person. Same-day attendance is usually available. On-site work is charged at a $100 + GST call-out plus $190 + GST per hour. Call 07 3041 8993.', blocks=[{'eyebrow': 'When you need someone there', 'h2': 'What genuinely requires a visit', 'sub': "We try remote first because it's faster and cheaper. These are the jobs where that isn't an option.", 'cols': 3, 'cards': [('Hardware failures', None, 'Dead machines, failed drives, power supply faults, and anything that needs opening up. We bring a loan device if yours has to leave.'), ('Server problems', None, 'Physical server faults, storage failures, and the migrations businesses defer until something breaks.'), ('Network faults', None, "Cabling problems, failed switches, dead ports and the faults that don't show up until someone traces a cable."), ('New installations', None, 'Setting up workstations, servers, switches and access points — configured and tested in place rather than shipped and hoped for.'), ('Connectivity outages', None, "When the internet is down, remote support isn't available by definition. Someone has to come."), ('Office moves', None, 'Relocating an estate is inherently on-site work. See office IT relocation for how we plan those.')]}, {'h2': 'What it costs', 'ticks': ['<strong>Book online and a first hour on site is a fixed $252 inc GST</strong> — $67 less than the same visit arranged by phone, which is $290 + GST ($319.00 inc GST).', '<strong>$100 + GST call-out</strong> ($110.00 inc GST), charged once per attendance.', '<strong>$190 + GST per hour</strong> ($209.00 inc GST), billed in half-hour increments after the first hour.', '<strong>First hour on site: $290 + GST</strong> ($319.00 inc GST) — or <strong>$252 inc GST booked online</strong>. Agreed with you before anyone leaves.', '<strong>Remote is $190 + GST with no call-out</strong>, which is why we check whether the fault needs a visit before booking one.', 'Managed IT clients have on-site attendance covered under their agreement rather than billed per visit.']}, {'eyebrow': 'Attending your site', 'h2': 'What to expect when we turn up', 'cols': 4, 'steps': [('We confirm the window', "You get a time, not a day. If we're running late you hear from us rather than wondering."), ('We diagnose before quoting more', 'If the job turns out bigger than described, you approve the extra before we continue.'), ('We work around your business', 'Disruptive work gets scheduled outside trading hours where it can be.'), ('We leave it documented', "What we found, what we did, and anything you should plan for. Added to your asset register if you're a managed client.")]}])
             + f'''
@@ -72,6 +74,25 @@ PAGE = {
       <p>Book a simple job online and it is a fixed price, with no call-out fee on top.</p>
     </div>
     {price_table(PRICING, note='A first hour on site is $290 + GST ($319.00 inc GST) &mdash; the $100 + GST call-out plus the $190 + GST hour. Book the visit through our online calendar instead and it is a fixed $252 inc GST, which is $67 less for exactly the same hour. Booking online costs us less to schedule and we pass that on rather than keeping it. Time past the first hour is charged at $190 + GST in half-hour increments, and if a job is clearly larger than a single visit we will say so before the hour is up rather than after it. Full rates are on the <a href="/pricing">pricing page</a>.')}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="booking">
+      <div>
+        <span class="eyebrow">Book online</span>
+        <h2>Pick a time and we&rsquo;ll come to you</h2>
+        <p style="margin-top:16px"><strong>A first hour booked here is a fixed $252 inc GST</strong> &mdash;
+        $67 less than the same visit arranged by phone. The calendar is live, so the times shown are times we
+        actually have.</p>
+        <p style="margin-top:16px">If nothing suits, <a href="/contact">send us a message</a> or call
+        <a href="{BIZ['phone_href']}">{BIZ['phone']}</a> during business hours. We will tell you honestly
+        whether the fault needs a visit at all &mdash; remote carries no call-out.</p>
+        <div style="margin-top:28px">{booking_button("Book a technician")}</div>
+      </div>
+      {booking_embed()}
+    </div>
   </div>
 </section>
 '''

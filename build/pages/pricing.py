@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, ticks, related, trust_note, price_table
+from layout import MARK, cta, faq_block, ticks, related, trust_note, price_table, booking_cta
 from site_data import RATES as R
 
 TIERS = [
@@ -130,6 +130,7 @@ PAGE = {
     "lede": "$190 + GST an hour, $100 + GST call-out for on-site. Published, not negotiated per client — and everything is agreed before work starts.",
     "crumbs": [("Pricing", "/pricing")],
     "faqs": FAQS,
+    "booking": True,
     "reviewed": "August 2026",
     "body": f'''
 <section class="section section--tight">
@@ -264,6 +265,8 @@ PAGE = {
     a disagreement. If you want a number for your site, we will look at your site.</p>
   </div>
 </section>
+
+{booking_cta()}
 
 {faq_block(FAQS)}
 

@@ -1,4 +1,4 @@
-from layout import cta, faq_block, related, svc_body, issues, example
+from layout import cta, faq_block, related, svc_body, issues, example, booking_cta
 
 COMMON_ISSUES = [
     ("&ldquo;It won&rsquo;t turn on at all&rdquo;",
@@ -63,6 +63,7 @@ PAGE = {
     "trust": ['Repaired on site', 'Loan machines available', 'Data off first', 'Business hardware only'],
     "crumbs": [('Services', '/services'), ('Business Computer Repair', '/on-site-computer-repair-gold-coast')],
     "faqs": FAQS,
+    "booking": True,
     "reviewed": "August 2026",
     "body": svc_body(answer='bcom ICT repairs business laptops, desktops and workstations on site across the Gold Coast, diagnosing and repairing in place where possible and supplying a loan machine where a device has to leave. Data is recovered before any invasive work begins. bcom ICT repairs business hardware only. Call 07 3041 8993.',
                      blocks=[       {       'cards': [       (       "Won't power on",
@@ -143,6 +144,9 @@ PAGE = {
     {EXAMPLE_2}
   </div>
 </section>
+'''
+            + f'''
+{booking_cta()}
 '''
             + faq_block(FAQS)
             + related([       ('Troubleshooting', '/hardware-software-troubleshooting-gold-coast'),

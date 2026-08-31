@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note, issues, example
+from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note, issues, example, booking_cta
 from site_data import SUBURBS
 
 FIXES = [
@@ -90,6 +90,7 @@ PAGE = {
     "trust": ["Mon–Fri 8am–5pm", "Same-day on-site", "Local since 2011", "5.0 from 24 reviews"],
     "crumbs": [("Services", "/services"), ("Business IT Support", "/it-support-and-services-gold-coast")],
     "faqs": FAQS,
+    "booking": True,
     "reviewed": "August 2026",
     "body": f'''
 <section class="section">
@@ -162,6 +163,8 @@ PAGE = {
     {EXAMPLE_2}
   </div>
 </section>
+
+{booking_cta()}
 
 {faq_block(FAQS)}
 

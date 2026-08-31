@@ -637,3 +637,21 @@ form.enquiry button[disabled]{opacity:.6;cursor:progress;}
 .ptier li{padding-left:15px;position:relative;}
 .ptier li::before{content:'';position:absolute;left:0;top:.6em;width:7px;height:1.5px;background:var(--blue);}
 .pnote{font-size:.875rem;color:var(--slate);max-width:var(--measure);margin-top:calc(var(--s6) * -1 + var(--s4));}
+
+/* Google's scheduling button, restyled to match .btn--primary. Google injects a
+   <button class="qxCTlb"> with inline colour, so the overrides need !important
+   for the properties it sets inline. Everything else is ordinary specificity. */
+.bookbtn{display:inline-block;}
+.bookbtn button{
+  display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--display)!important;font-weight:700!important;
+  font-size:.9375rem!important;letter-spacing:-.005em!important;
+  padding:14px 26px!important;border-radius:var(--radius-sm)!important;
+  border:1.5px solid transparent!important;
+  background-color:var(--blue)!important;color:#fff!important;
+  box-shadow:var(--shadow-sm);cursor:pointer;line-height:1.2!important;
+  height:auto!important;min-height:0!important;text-transform:none!important;
+  transition:background-color .16s ease,box-shadow .16s ease;
+}
+.bookbtn button:hover{background-color:var(--blue-deep)!important;box-shadow:var(--shadow);}
+.bookbtn button:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}

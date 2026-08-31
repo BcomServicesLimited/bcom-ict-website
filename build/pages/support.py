@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, trust_note, booking_cta
 from site_data import BIZ
 
 ROUTES = [
@@ -55,6 +55,7 @@ PAGE = {
     "lede": "Call 07 3041 8993 — returned during business hours, Monday to Friday. You don't need to be an existing client.",
     "crumbs": [("Support", "/support")],
     "faqs": FAQS,
+    "booking": True,
     "reviewed": "August 2026",
     "body": f'''
 <section class="section section--tight">
@@ -122,6 +123,8 @@ PAGE = {
     {trust_note('Phones are returned in business hours — after hours by our AI operator, which takes details and escalates rather than pretending to be a person. What happens at which hour is set out in full on <a href="/service-levels-and-security">service levels</a>.')}
   </div>
 </section>
+
+{booking_cta()}
 
 {faq_block(FAQS)}
 

@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block
+from layout import booking_embed, MARK, cta, faq_block
 from site_data import BIZ
 
 SERVICES = [
@@ -133,8 +133,10 @@ PAGE = {
       <div>
         <span class="eyebrow">Book online</span>
         <h2>Book an on-site technician</h2>
-        <p style="margin-top:16px">Pick a time that suits and we'll come to you. On-site attendance is a
-        $100 + GST call-out plus $190 + GST per hour, agreed before anyone gets in a car.</p>
+        <p style="margin-top:16px">Pick a time that suits and we&rsquo;ll come to you. <strong>Booking here is a
+        fixed $252 inc GST for the first hour on site</strong> &mdash; $67 less than the same visit arranged by
+        phone, which is $290 + GST ($319.00 inc GST). Time past the first hour is $190 + GST in half-hour
+        increments, agreed with you before it starts.</p>
         <p style="margin-top:16px">Booking runs on our live calendar, so the times you see are times we
         actually have. If nothing suits, <a href="/contact">send us a message</a> or call
         <a href="{BIZ['phone_href']}">{BIZ['phone']}</a> during business hours.</p>
@@ -143,11 +145,7 @@ PAGE = {
           <a class="btn btn--ghost btn--lg" href="/contact">Rather talk first?</a>
         </div>
       </div>
-      <div class="booking-embed">
-        <iframe src="{BIZ['booking']}" title="Book an on-site IT technician with bcom ICT"
-                loading="lazy" style="border:0" width="100%" height="620"
-                frameborder="0"></iframe>
-      </div>
+      {booking_embed()}
     </div>
   </div>
 </section>

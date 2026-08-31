@@ -1,4 +1,4 @@
-from layout import MARK, faq_block, ticks, related, trust_note
+from layout import MARK, faq_block, ticks, related, trust_note, booking_cta
 from site_data import BIZ, FORM_ENDPOINT, address_line
 
 LINES = [
@@ -42,6 +42,7 @@ PAGE = {
     "lede": "Mon–Fri 8am–5pm. Callback usually the same business day. The first conversation and the systems review that follows are both free.",
     "crumbs": [("Contact", "/contact")],
     "faqs": FAQS,
+    "booking": True,
     "reviewed": "August 2026",
     "body": f'''
 <section class="section section--tight">
@@ -107,6 +108,8 @@ PAGE = {
     <a href="/service-levels-and-security">our priority matrix</a> explains how we classify it once we know.</p>
   </div>
 </section>
+
+{booking_cta()}
 
 {faq_block(FAQS)}
 

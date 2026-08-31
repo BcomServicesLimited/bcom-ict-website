@@ -245,6 +245,30 @@ on each pass. **432 symptom blocks and 172 worked examples, no duplicates.**
 
 ---
 
+## Online booking (Google Calendar appointment scheduling)
+
+Two components in `layout.py`, both fed from `BIZ["booking"]`:
+
+- `booking_embed()` — the inline iframe. Used where booking IS the point:
+  the homepage panel and `/on-site-technical-support-gold-coast`. Lazy-loaded,
+  which Google's stock snippet is not.
+- `booking_button()` / `booking_cta()` — Google's pop-up button. Used on 16
+  pages where a 620px calendar would be too heavy.
+
+**The external CSS/JS loads only on pages that set `"booking": True`** — 17 of
+98 pages. Do not put the loader in the global head.
+
+Google injects `<button class="qxCTlb">` with inline colour. `.bookbtn button`
+in styles.css restyles it to match `.btn--primary` (Manrope, bcom blue, 14px 26px,
+`--radius-sm`). The `!important` flags are needed only for what Google sets inline.
+
+**Outstanding — Royce's, in Google Calendar (not the site):**
+
+| Issue | Currently reads | Should be |
+|---|---|---|
+| Service description | "1 Hour IT Support for **Gold Coast Home Users** — $252.00 inc GST" | The whole site targets **business**. "Home Users" contradicts every page it appears on |
+| Calendar owner name | "**B**com ICT" | Trading name is **bcom ICT**, lowercase b |
+
 ## Rate card (Royce, Sept 2026 — current)
 
 | | Ex GST | Inc GST |
