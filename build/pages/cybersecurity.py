@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note, issues, example
 
 THREATS = [
     ("Invoice and payment scams", None,
@@ -19,6 +19,41 @@ WHAT = [
     ("Firewall and network hardening", None, "Guest WiFi kept away from your business systems, remote access locked down, and the default passwords nobody ever changed sorted out."),
     ("Staff awareness", None, "Short, practical sessions on what a real scam looks like. Your people are the control that catches what the technology misses."),
 ]
+
+COMMON_ISSUES = [
+    ("“We got an invoice with different bank details”",
+     "either a spoofed sender, or a genuinely compromised mailbox somewhere in the chain — yours, your client’s, or your supplier’s.",
+     "Establish which immediately, because a compromised mailbox is still being read. Check for forwarding rules, review sign-in activity, reset credentials from a clean device, then close the gap with MFA and email authentication records."),
+    ("“Someone clicked a link and entered their password”",
+     "a credential harvesting page. The password is gone; the question is whether anything has been done with it yet.",
+     "Reset the password and revoke all active sessions immediately — a password change alone leaves existing tokens working. Check for mailbox rules created since, then review what that account could reach."),
+    ("“Our emails are going to clients’ junk folders”",
+     "missing or misconfigured SPF, DKIM and DMARC records — the same records that let anyone send email pretending to be you.",
+     "Publish and align all three properly. It fixes deliverability and closes a spoofing route at the same time, which is why it is worth doing even when deliverability is the only complaint."),
+    ("“The antivirus says it cleaned something”",
+     "a detection, not necessarily a resolution. The question nobody asks is how it arrived and what it did before detection.",
+     "Establish the entry point and check for persistence — accounts, scheduled tasks, mailbox rules. Cleaning without closing the route is why businesses get hit twice in a month."),
+    ("“We can’t answer our insurer’s renewal questions”",
+     "no documented position on MFA coverage, patching, backup testing or endpoint protection — not necessarily an absence of controls.",
+     "Assess against the ASD Essential Eight, produce a written report you can attach to the form, and close the gaps that matter most first."),
+    ("“A staff member’s account was logging in from overseas”",
+     "credential compromise, usually a reused password on an account without multi-factor authentication.",
+     "Disable the session, reset from a clean device, audit what was accessed while the attacker had it, and check whether data left. Then enforce MFA on every account rather than most of them."),
+]
+
+EXAMPLE_1 = example(
+    "A near-miss on a settlement payment",
+    "A Gold Coast professional services firm received an email, apparently from a long-standing supplier, advising changed bank details ahead of a scheduled payment. The email was in an existing thread and read entirely normally.",
+    "The supplier’s mailbox had been compromised weeks earlier. A forwarding rule was quietly copying correspondence out and deleting the evidence. Our client had no MFA on two mailboxes and no verbal verification process for bank detail changes.",
+    "Confirmed the compromise, advised the client to verify by phone on a number already held — which stopped the payment. Then rolled MFA across every account, published SPF, DKIM and DMARC, and put a written verification rule in place for any change of payment details.",
+    "The payment was not made. The firm now treats bank detail changes as a phone call rather than an email, which is the control that would have caught it regardless of the technology.")
+
+EXAMPLE_2 = example(
+    "An insurance renewal that could not be answered",
+    "A Gold Coast business received a cyber insurance renewal questionnaire noticeably harder than the previous year’s — asking specifically about MFA coverage, patch cadence, backup testing and endpoint protection.",
+    "Multi-factor authentication was on for the directors but not for eight other staff. Patching was happening on some machines and not others. Backups ran but had never been restored. None of it was documented, so even the parts that were fine could not be evidenced.",
+    "Ran a fixed-fee health check against the Essential Eight, closed the MFA gap, standardised patching, tested a restore in front of them, and produced a written report they could attach to the renewal.",
+    "The questionnaire was answered honestly rather than optimistically, and the business now has a document it can reuse when a client asks the same questions during procurement.")
 
 FAQS = [
     ("Who provides cybersecurity services on the Gold Coast?",
@@ -104,6 +139,29 @@ PAGE = {
     <p style="margin-top:16px">Some Gold Coast businesses have obligations beyond good practice. Financial planners, mortgage brokers, accountants and insurance brokers operating under an AFS licence carry cyber resilience obligations that ASIC has been increasingly willing to enforce — we cover that on our <a href="/asic-cybersecurity-compliance-gold-coast">ASIC compliance page</a>. Healthcare and allied health clients typically need to demonstrate Essential Eight alignment and understand their obligations under the Notifiable Data Breaches scheme.</p>
 
     {trust_note('We state what we are aligned to and what we are not. bcom ICT operates to the ASD Essential Eight and aligns with ISO/IEC 27001:2022, but is <strong>not certified</strong> to it. <a href="/trust-centre">The trust centre</a> sets out the frameworks, the credentials our people hold, and who issued them.')}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The security calls we actually take</h2>
+      <p>Not hypotheticals. These are what Gold Coast businesses ring about, and what is usually behind them.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
   </div>
 </section>
 

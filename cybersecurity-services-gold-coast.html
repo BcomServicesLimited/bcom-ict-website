@@ -26,7 +26,7 @@
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-800-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-400-latin.woff2" crossorigin>
   <link rel="preload" as="image" href="/assets/img/cybersecurity-assessment-hero.webp" fetchpriority="high">
-<link rel="stylesheet" href="/assets/css/styles.css?v=9">
+<link rel="stylesheet" href="/assets/css/styles.css?v=10">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -357,6 +357,47 @@
   </div>
 </section>
 
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The security calls we actually take</h2>
+      <p>Not hypotheticals. These are what Gold Coast businesses ring about, and what is usually behind them.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>“We got an invoice with different bank details”</h4><p class="cause"><span>Usually</span> either a spoofed sender, or a genuinely compromised mailbox somewhere in the chain — yours, your client’s, or your supplier’s.</p><p class="fix"><span>What we do</span> Establish which immediately, because a compromised mailbox is still being read. Check for forwarding rules, review sign-in activity, reset credentials from a clean device, then close the gap with MFA and email authentication records.</p></div><div class="issue"><h4>“Someone clicked a link and entered their password”</h4><p class="cause"><span>Usually</span> a credential harvesting page. The password is gone; the question is whether anything has been done with it yet.</p><p class="fix"><span>What we do</span> Reset the password and revoke all active sessions immediately — a password change alone leaves existing tokens working. Check for mailbox rules created since, then review what that account could reach.</p></div><div class="issue"><h4>“Our emails are going to clients’ junk folders”</h4><p class="cause"><span>Usually</span> missing or misconfigured SPF, DKIM and DMARC records — the same records that let anyone send email pretending to be you.</p><p class="fix"><span>What we do</span> Publish and align all three properly. It fixes deliverability and closes a spoofing route at the same time, which is why it is worth doing even when deliverability is the only complaint.</p></div><div class="issue"><h4>“The antivirus says it cleaned something”</h4><p class="cause"><span>Usually</span> a detection, not necessarily a resolution. The question nobody asks is how it arrived and what it did before detection.</p><p class="fix"><span>What we do</span> Establish the entry point and check for persistence — accounts, scheduled tasks, mailbox rules. Cleaning without closing the route is why businesses get hit twice in a month.</p></div><div class="issue"><h4>“We can’t answer our insurer’s renewal questions”</h4><p class="cause"><span>Usually</span> no documented position on MFA coverage, patching, backup testing or endpoint protection — not necessarily an absence of controls.</p><p class="fix"><span>What we do</span> Assess against the ASD Essential Eight, produce a written report you can attach to the form, and close the gaps that matter most first.</p></div><div class="issue"><h4>“A staff member’s account was logging in from overseas”</h4><p class="cause"><span>Usually</span> credential compromise, usually a reused password on an account without multi-factor authentication.</p><p class="fix"><span>What we do</span> Disable the session, reset from a clean device, audit what was accessed while the attacker had it, and check whether data left. Then enforce MFA on every account rather than most of them.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>A near-miss on a settlement payment</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A Gold Coast professional services firm received an email, apparently from a long-standing supplier, advising changed bank details ahead of a scheduled payment. The email was in an existing thread and read entirely normally.</p></div>
+    <div><h4>What we found</h4><p>The supplier’s mailbox had been compromised weeks earlier. A forwarding rule was quietly copying correspondence out and deleting the evidence. Our client had no MFA on two mailboxes and no verbal verification process for bank detail changes.</p></div>
+    <div><h4>What we did</h4><p>Confirmed the compromise, advised the client to verify by phone on a number already held — which stopped the payment. Then rolled MFA across every account, published SPF, DKIM and DMARC, and put a written verification rule in place for any change of payment details.</p></div>
+    <div><h4>The outcome</h4><p>The payment was not made. The firm now treats bank detail changes as a phone call rather than an email, which is the control that would have caught it regardless of the technology.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>An insurance renewal that could not be answered</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A Gold Coast business received a cyber insurance renewal questionnaire noticeably harder than the previous year’s — asking specifically about MFA coverage, patch cadence, backup testing and endpoint protection.</p></div>
+    <div><h4>What we found</h4><p>Multi-factor authentication was on for the directors but not for eight other staff. Patching was happening on some machines and not others. Backups ran but had never been restored. None of it was documented, so even the parts that were fine could not be evidenced.</p></div>
+    <div><h4>What we did</h4><p>Ran a fixed-fee health check against the Essential Eight, closed the MFA gap, standardised patching, tested a restore in front of them, and produced a written report they could attach to the renewal.</p></div>
+    <div><h4>The outcome</h4><p>The questionnaire was answered honestly rather than optimistically, and the business now has a document it can reuse when a client asks the same questions during procurement.</p></div>
+  </div>
+</div>
+  </div>
+</section>
+
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>
@@ -412,6 +453,6 @@
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=9" defer></script>
+<script src="/assets/js/main.js?v=10" defer></script>
 </body>
 </html>

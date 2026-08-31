@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, cards, ticks, steps, related, photo, trust_note
+from layout import MARK, cta, faq_block, cards, ticks, steps, related, photo, trust_note, issues, example
 
 INCLUDED = [
     ("Monitoring that runs all the time", None,
@@ -32,6 +32,42 @@ ONBOARD = [
     ("We fix the urgent things", "The gaps that would actually cost you — missing backups, no MFA, unsupported systems, expired warranties — get closed first."),
     ("We take over the day-to-day", "Monitoring goes live, your team gets our number, and we start running it. Most businesses are fully onboarded within 30 days."),
 ]
+
+COMMON_ISSUES = [
+    ("“Outlook keeps asking for my password”",
+     "a token or credential problem after a security change, a licence that lapsed, or an account that has been compromised and had its sessions revoked.",
+     "Check for the compromise first, because that is the expensive answer. Then repair the profile or re-establish the credential — and if MFA was the trigger, finish the rollout properly rather than exempting the user."),
+    ("“The server is running out of space again”",
+     "log files, shadow copies, an old backup target nobody removed, or a database that has grown for years without anyone watching it.",
+     "Find what is actually consuming the space rather than deleting the first large folder. Then set monitoring thresholds so it is caught at 80% on a Tuesday rather than at 100% on a Friday afternoon."),
+    ("“Everything is slow this morning”",
+     "a backup job that overran into business hours, a Windows update cycle, or a failing drive quietly retrying reads.",
+     "Correlate the slowdown against scheduled jobs and disk health before touching anything. Reschedule what should not be running in business hours, and replace the drive if that is what it turns out to be."),
+    ("“We can’t print again”",
+     "a driver that updated itself, a print spooler that has stopped, or a printer that grabbed a new IP address because nobody reserved one.",
+     "Reserve the address properly, standardise the driver across machines, and stop it recurring — rather than clearing the queue again every fortnight."),
+    ("“A staff member left and we don’t know what they had access to”",
+     "no documented account inventory, and permissions granted ad hoc over several years by several people.",
+     "Build the register, revoke everything on the day they leave, and transfer mailbox and file ownership properly. Then make offboarding a checklist rather than a memory exercise."),
+    ("“Someone got an email from the boss asking for a payment”",
+     "a spoofed sender, or a genuinely compromised mailbox. The second is far more serious and far more common than people expect.",
+     "Establish which it is immediately — check for mailbox forwarding rules and unusual sign-ins. Then close the underlying gap: MFA everywhere, and SPF, DKIM and DMARC records so nobody can send as your domain."),
+]
+
+EXAMPLE_BACKUP = example(
+    "A professional practice with backups that had never been restored",
+    "A Gold Coast practice of around 25 staff on break-fix support, calling their previous provider when things broke. Backups had run nightly for years and reported success every morning.",
+    "The backup was writing to a NAS on the same network, reachable with the same credentials as the file server — so ransomware would have encrypted both. No restore had ever been tested. Two staff who had left eighteen months earlier still had active accounts and mailbox access.",
+    "Moved backups to a separated target, ran a full test restore in front of the practice manager, closed the dormant accounts, rolled multi-factor authentication out across every mailbox, and built the asset and account register that did not exist.",
+    "The practice can now answer its insurer’s renewal questions honestly. The first real restore — a partner who deleted a matter folder — took twenty minutes instead of becoming a crisis.")
+
+EXAMPLE_MULTISITE = example(
+    "A multi-site operator paying twice for the same problem",
+    "A business running three Gold Coast sites, each with equipment bought at different times by different people. Recurring faults at every location, each billed separately by the hour.",
+    "Three different router models, three different wireless systems, no documentation for any of them — and the same underlying fault at two sites: an undersized switch exceeding its PoE budget, misdiagnosed at both as a faulty access point.",
+    "Standardised all three sites on one centrally managed platform. Fixed the PoE problem properly rather than replacing access points again. Documented every device, licence and credential, and handed the register over.",
+    "Support calls dropped substantially because the recurring fault was gone rather than being re-fixed each month. Adding a fourth site later was a change rather than a project.")
+
 
 FAQS = [
     ("What do managed IT services cost on the Gold Coast?",
@@ -121,6 +157,31 @@ PAGE = {
       </div>
       {photo("managed-it-services-monitoring.webp", "Monitoring dashboards used by bcom ICT to watch Gold Coast client systems around the clock", "Monitoring runs continuously, so most faults are handled before anyone reports them.")}
     </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What managed clients stop having to think about</h2>
+      <p>These are the faults we see most across Gold Coast businesses. Under a managed agreement most of them
+      are prevented rather than fixed, which is the whole difference.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What taking on a managed client actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed \u2014 we don\u2019t name
+      clients without written permission.</p>
+    </div>
+    {EXAMPLE_BACKUP}
+    {EXAMPLE_MULTISITE}
   </div>
 </section>
 

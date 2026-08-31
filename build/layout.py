@@ -11,7 +11,7 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "9"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "10"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 ROBOTS_OK = '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'
@@ -485,3 +485,34 @@ def models(groups):
         out += (f'<div class="model"><h4>{heading}</h4><p>{blurb}</p>'
                 f'<div class="sku">{chips}</div></div>')
     return f'<div class="models">{out}</div>'
+
+
+def issues(items):
+    """Common technical problems, written as the symptom a client would
+    describe followed by what actually causes it and what we do. Symptom-first
+    because that is how people search — "outlook keeps asking for password",
+    not "authentication token renewal failure"."""
+    rows = ""
+    for symptom, cause, fix in items:
+        rows += (f'<div class="issue">'
+                 f'<h4>{symptom}</h4>'
+                 f'<p class="cause"><span>Usually</span> {cause}</p>'
+                 f'<p class="fix"><span>What we do</span> {fix}</p>'
+                 f'</div>')
+    return f'<div class="issues">{rows}</div>'
+
+
+def example(title, situation, found, did, outcome, tag="Representative engagement"):
+    """A worked example. Labelled as representative — drawn from real work with
+    identifying detail removed — because naming a client without written
+    permission is not something we do."""
+    return f'''<div class="example">
+  <span class="ex-tag">{tag}</span>
+  <h3>{title}</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>{situation}</p></div>
+    <div><h4>What we found</h4><p>{found}</p></div>
+    <div><h4>What we did</h4><p>{did}</p></div>
+    <div><h4>The outcome</h4><p>{outcome}</p></div>
+  </div>
+</div>'''

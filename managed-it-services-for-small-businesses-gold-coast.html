@@ -26,7 +26,7 @@
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-800-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-400-latin.woff2" crossorigin>
   <link rel="preload" as="image" href="/assets/img/hero-bg-managed-it-services.webp" fetchpriority="high">
-<link rel="stylesheet" href="/assets/css/styles.css?v=9">
+<link rel="stylesheet" href="/assets/css/styles.css?v=10">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -358,6 +358,49 @@
   </div>
 </section>
 
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What managed clients stop having to think about</h2>
+      <p>These are the faults we see most across Gold Coast businesses. Under a managed agreement most of them
+      are prevented rather than fixed, which is the whole difference.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>“Outlook keeps asking for my password”</h4><p class="cause"><span>Usually</span> a token or credential problem after a security change, a licence that lapsed, or an account that has been compromised and had its sessions revoked.</p><p class="fix"><span>What we do</span> Check for the compromise first, because that is the expensive answer. Then repair the profile or re-establish the credential — and if MFA was the trigger, finish the rollout properly rather than exempting the user.</p></div><div class="issue"><h4>“The server is running out of space again”</h4><p class="cause"><span>Usually</span> log files, shadow copies, an old backup target nobody removed, or a database that has grown for years without anyone watching it.</p><p class="fix"><span>What we do</span> Find what is actually consuming the space rather than deleting the first large folder. Then set monitoring thresholds so it is caught at 80% on a Tuesday rather than at 100% on a Friday afternoon.</p></div><div class="issue"><h4>“Everything is slow this morning”</h4><p class="cause"><span>Usually</span> a backup job that overran into business hours, a Windows update cycle, or a failing drive quietly retrying reads.</p><p class="fix"><span>What we do</span> Correlate the slowdown against scheduled jobs and disk health before touching anything. Reschedule what should not be running in business hours, and replace the drive if that is what it turns out to be.</p></div><div class="issue"><h4>“We can’t print again”</h4><p class="cause"><span>Usually</span> a driver that updated itself, a print spooler that has stopped, or a printer that grabbed a new IP address because nobody reserved one.</p><p class="fix"><span>What we do</span> Reserve the address properly, standardise the driver across machines, and stop it recurring — rather than clearing the queue again every fortnight.</p></div><div class="issue"><h4>“A staff member left and we don’t know what they had access to”</h4><p class="cause"><span>Usually</span> no documented account inventory, and permissions granted ad hoc over several years by several people.</p><p class="fix"><span>What we do</span> Build the register, revoke everything on the day they leave, and transfer mailbox and file ownership properly. Then make offboarding a checklist rather than a memory exercise.</p></div><div class="issue"><h4>“Someone got an email from the boss asking for a payment”</h4><p class="cause"><span>Usually</span> a spoofed sender, or a genuinely compromised mailbox. The second is far more serious and far more common than people expect.</p><p class="fix"><span>What we do</span> Establish which it is immediately — check for mailbox forwarding rules and unusual sign-ins. Then close the underlying gap: MFA everywhere, and SPF, DKIM and DMARC records so nobody can send as your domain.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What taking on a managed client actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed — we don’t name
+      clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>A professional practice with backups that had never been restored</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A Gold Coast practice of around 25 staff on break-fix support, calling their previous provider when things broke. Backups had run nightly for years and reported success every morning.</p></div>
+    <div><h4>What we found</h4><p>The backup was writing to a NAS on the same network, reachable with the same credentials as the file server — so ransomware would have encrypted both. No restore had ever been tested. Two staff who had left eighteen months earlier still had active accounts and mailbox access.</p></div>
+    <div><h4>What we did</h4><p>Moved backups to a separated target, ran a full test restore in front of the practice manager, closed the dormant accounts, rolled multi-factor authentication out across every mailbox, and built the asset and account register that did not exist.</p></div>
+    <div><h4>The outcome</h4><p>The practice can now answer its insurer’s renewal questions honestly. The first real restore — a partner who deleted a matter folder — took twenty minutes instead of becoming a crisis.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>A multi-site operator paying twice for the same problem</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business running three Gold Coast sites, each with equipment bought at different times by different people. Recurring faults at every location, each billed separately by the hour.</p></div>
+    <div><h4>What we found</h4><p>Three different router models, three different wireless systems, no documentation for any of them — and the same underlying fault at two sites: an undersized switch exceeding its PoE budget, misdiagnosed at both as a faulty access point.</p></div>
+    <div><h4>What we did</h4><p>Standardised all three sites on one centrally managed platform. Fixed the PoE problem properly rather than replacing access points again. Documented every device, licence and credential, and handed the register over.</p></div>
+    <div><h4>The outcome</h4><p>Support calls dropped substantially because the recurring fault was gone rather than being re-fixed each month. Adding a fourth site later was a change rather than a project.</p></div>
+  </div>
+</div>
+  </div>
+</section>
+
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>
@@ -413,6 +456,6 @@
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=9" defer></script>
+<script src="/assets/js/main.js?v=10" defer></script>
 </body>
 </html>

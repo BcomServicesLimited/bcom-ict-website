@@ -596,3 +596,32 @@ form.enquiry button[disabled]{opacity:.6;cursor:progress;}
   font-family:var(--display);font-weight:700;font-size:.6875rem;
 }
 .hero-aside .after{font-size:.8125rem;color:var(--slate);margin-top:var(--s4);padding-top:var(--s4);border-top:1px solid var(--line);}
+
+/* ---------- common technical issues ---------- */
+.issues{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-block:var(--s6);}
+@media (min-width:820px){.issues{grid-template-columns:repeat(2,1fr);}}
+.issue{background:var(--paper);padding:var(--s5) var(--s6);}
+.issue h4{font-size:1rem;margin-bottom:var(--s3);color:var(--ink);}
+.issue p{font-size:.9375rem;margin-bottom:var(--s2);color:var(--slate);}
+.issue p:last-child{margin-bottom:0;}
+.issue p span{
+  font-family:var(--display);font-size:.6875rem;font-weight:700;letter-spacing:.09em;
+  text-transform:uppercase;display:block;margin-bottom:3px;
+}
+.issue .cause span{color:var(--warn);}
+.issue .fix span{color:var(--good);}
+
+/* ---------- worked examples ---------- */
+.example{
+  border:1px solid var(--blue-line);border-radius:var(--radius);background:var(--blue-tint);
+  padding:var(--s6);margin-block:var(--s6);
+}
+.ex-tag{
+  font-family:var(--display);font-size:.6875rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--blue);display:block;margin-bottom:var(--s2);
+}
+.example h3{font-size:1.1875rem;margin-bottom:var(--s5);}
+.ex-grid{display:grid;gap:var(--s5);}
+@media (min-width:760px){.ex-grid{grid-template-columns:repeat(2,1fr);gap:var(--s5) var(--s7);}}
+.ex-grid h4{font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
+.ex-grid p{font-size:.9375rem;color:var(--ink-soft);}
