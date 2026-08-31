@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;We keep spending and nothing gets better&rdquo;",
+     "money going into symptoms. Each individual purchase was defensible and none of them addressed the thing actually causing the problems.",
+     "Work out what is generating the recurring cost before authorising more spend. A business fixing the same category of problem three times a year has a design issue, not a bad-luck issue."),
+    ("&ldquo;Our provider and our software vendor blame each other&rdquo;",
+     "a genuine gap in responsibility rather than either party being unreasonable. Nobody owns the space between two suppliers.",
+     "Establish the facts independently and assign the problem to whoever it belongs to. Most of these disputes resolve quickly once somebody with no stake in the answer looks at the evidence."),
+    ("&ldquo;We&rsquo;re told we need to move to the cloud&rdquo;",
+     "advice that is sometimes right and sometimes a reflex. It suits some workloads well and some very poorly, and the answer depends on the specific business.",
+     "Assess it against your actual applications, connection and cost profile. We have said no to this more than once, including where a business had already decided to proceed."),
+    ("&ldquo;Nobody can tell us what things cost&rdquo;",
+     "technology spend spread across several suppliers, subscriptions and capital purchases with no consolidated view.",
+     "Build the whole picture in one place. Businesses are routinely surprised by the total, and the surprise is the useful part &mdash; it is the number that makes decisions possible."),
+    ("&ldquo;Everything depends on one person&rdquo;",
+     "knowledge that lives in somebody&rsquo;s head. Often that person is capable and conscientious, which is precisely what has allowed the dependency to grow unnoticed.",
+     "Document it and distribute it. This is not a comment on the individual &mdash; it is that a business should be able to survive a resignation, a holiday or an illness without a crisis."),
+    ("&ldquo;We don&rsquo;t know what to do first&rdquo;",
+     "a list of everything that should be done, with no sequence and no sense of relative urgency. It usually produces paralysis.",
+     "Order the work by risk and by what unblocks other things. A ranked list of six items is actionable in a way that an unranked list of thirty is not."),
+]
+
+EXAMPLE_1 = example(
+    "Advising a business not to move to the cloud",
+    "A manufacturer had been advised to move its main production system into the cloud and had largely accepted the recommendation. We were engaged to help plan the migration.",
+    "The system in question ran a machine control application with a hard latency requirement, connected directly to equipment on the factory floor. Moving it would have introduced network dependency into a process that could not tolerate any, at a running cost higher than the on-premises arrangement. Two other systems the business ran &mdash; email and file storage &mdash; were genuinely well suited to moving and were not part of the proposal.",
+    "Recommended against migrating the production system, and recommended migrating the two systems nobody had proposed moving. Set out the reasoning in writing so the directors could weigh it against the advice they already had.",
+    "The production system stayed where it is and still runs. We were engaged to plan a migration and advised against most of it, which cost us the larger piece of work and is the reason the client still calls.")
+
+EXAMPLE_2 = example(
+    "The same problem, three times a year, for four years",
+    "A business had replaced its server twice in four years and was being quoted for a third. Each replacement had been justified at the time, and the same symptoms returned within months.",
+    "The server had never been the problem. The building&rsquo;s electrical supply was delivering frequent brief interruptions, and the server had no protection beyond a basic power board. Each new server had been damaged the same way as the last. A cheap uninterruptible power supply had been quoted twice and removed from the scope both times as an optional extra.",
+    "Recommended power conditioning and a properly sized uninterruptible supply before any hardware, and had the electrical supply investigated by a licensed electrician, who found a genuine fault in the building&rsquo;s distribution.",
+    "The existing server was repaired and has run since without incident. Two servers had been bought to solve an electrical problem, and the item that would have prevented all of it had been treated as an optional extra each time.")
 
 FAQS = [
     ("What does an IT consultant do for a small business?",
@@ -63,7 +98,30 @@ PAGE = {
                 ("The work", "Reviewing systems, reading quotes, talking to your people, checking what's actually in use rather than what's assumed."),
                 ("A written recommendation", "Plain English, sequenced, with rough costs. Yours to act on, shop around with, or ignore."),
              ]},
-        ]) + faq_block(FAQS) + related([
+        ]) + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What businesses actually come to us with</h2>
+      <p>Six situations where an independent view tends to change the answer.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What independent advice looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+''' + faq_block(FAQS) + related([
             ("IT Needs Assessment", "/it-needs-assessment-gold-coast"),
             ("Managed IT Services", "/managed-it-services-for-small-businesses-gold-coast"),
             ("Cloud & Microsoft 365", "/cloud-computing-service-gold-coast"),

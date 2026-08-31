@@ -161,7 +161,7 @@ drawn from real work with identifying detail removed, since we do not name
 clients without written permission.
 
 Every symptom heading and every example title is unique site-wide, checked
-on each pass. **174 symptom blocks and 63 worked examples, no duplicates.**
+on each pass. **252 symptom blocks and 99 worked examples, no duplicates.**
 
 - [x] **Chunk A — 6 core service pages** · 5,004 -> 10,238 words
 - [x] **Chunk B — 8 security & compliance pages** · 7,251 -> 13,132 words
@@ -186,7 +186,16 @@ on each pass. **174 symptom blocks and 63 worked examples, no duplicates.**
       settlement email, the contractor's duplicate progress invoice, the
       accounting firm's contractor still holding the file server eighteen
       months on.
-- [ ] **Chunk E — 13 hardware, AI & consulting pages** · 8,548 words, ~11,000 to write
+- [x] **Chunk E — 13 hardware, AI & consulting pages** · 8,548 -> 21,102 words
+      The three overlapping repair pages are kept sharply apart: hardware repair
+      is power, drives, heat and liquid; OS repair is profiles, updates,
+      BitLocker and licensing; performance is the payroll arithmetic of a slow
+      machine. Ten of the thirteen carry a third worked example.
+      Six examples in this chunk end in us recommending less: nine machines kept
+      instead of eleven replaced, a production system advised against migrating,
+      Copilot deferred four months at a healthcare provider, ten licences
+      released, an AI pilot measured honestly enough to stop it, and a review
+      that told a business to keep its existing provider.
 - [ ] **Chunk F — remaining 45 pages** · ~23,400 to write
 
 ---

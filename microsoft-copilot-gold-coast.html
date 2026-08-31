@@ -306,6 +306,57 @@
     <p style="max-width:68ch">Sometimes, and we would rather tell you when it is not. Copilot earns its cost for people who spend a lot of time in documents, email and meetings — summarising long threads, drafting from existing material, catching up on a meeting they missed.</p><p style="max-width:68ch;margin-top:16px">It earns considerably less for people who work mostly in a line-of-business application, on a shop floor, or in the field. Licensing an entire business when a third of it would actually use the thing is a common and expensive mistake.</p><p style="max-width:68ch;margin-top:16px">Start with a pilot group, measure whether they keep using it after the novelty, then decide. Governance for AI use generally is covered on <a href="/iso-42001-ai-governance-gold-coast">ISO/IEC 42001 AI governance</a>.</p>
   </div>
 </section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>How Copilot rollouts actually go wrong</h2>
+      <p>Six issues. The first one is not really about Copilot at all, which is exactly what makes it dangerous.</p>
+    </div>
+    <div class="issues"><div class="issue"><h4>&ldquo;It surfaced a document nobody should have seen&rdquo;</h4><p class="cause"><span>Usually</span> permissions that were always too open. Copilot did not grant access to anything &mdash; it made existing access discoverable, which is a very different problem wearing the same clothes.</p><p class="fix"><span>What we do</span> Review sharing and permissions before enabling it, not after. Nearly every alarming Copilot story is a permissions story that predates Copilot by years.</p></div><div class="issue"><h4>&ldquo;Everyone has access to everything&rdquo;</h4><p class="cause"><span>Usually</span> years of files shared broadly for convenience, plus &ldquo;anyone with the link&rdquo; sharing that was never revisited. Invisible until something makes it searchable.</p><p class="fix"><span>What we do</span> Audit what is shared with whom, and tighten it. This work is worth doing whether or not Copilot is ever enabled, which is the honest way to look at the cost.</p></div><div class="issue"><h4>&ldquo;Staff tried it twice and stopped&rdquo;</h4><p class="cause"><span>Usually</span> a licence assigned with no guidance. It is genuinely useful for a handful of tasks and unremarkable for the rest, and people who start with the wrong ones conclude it is not worth it.</p><p class="fix"><span>What we do</span> Show people the two or three things it does well for their actual role. Adoption is almost entirely a training problem, and untrained licences are the most common source of wasted spend here.</p></div><div class="issue"><h4>&ldquo;Is it worth the licence cost?&rdquo;</h4><p class="cause"><span>Usually</span> a fair question and often the answer is not for everyone. It suits some roles considerably better than others.</p><p class="fix"><span>What we do</span> Pilot it with a small group and measure. Rolling it out to every user because it is available is how businesses end up paying for capability nobody uses.</p></div><div class="issue"><h4>&ldquo;It summarised a meeting incorrectly&rdquo;</h4><p class="cause"><span>Usually</span> a transcript being interpreted, not a record being reproduced. Summaries are useful and they are not minutes.</p><p class="fix"><span>What we do</span> Treat output as a draft that a person checks. This is worth stating explicitly, because a confidently written summary reads as authoritative regardless of its accuracy.</p></div><div class="issue"><h4>&ldquo;Where does our data actually go?&rdquo;</h4><p class="cause"><span>Usually</span> a question worth asking of any tool. Copilot operates within your Microsoft 365 tenancy under its existing controls, which is different from a public AI service and is the main reason it is often the appropriate choice.</p><p class="fix"><span>What we do</span> Understand the boundary and set expectations from it. For businesses handling client or health information this is usually the deciding factor between Copilot and a public tool.</p></div></div>
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a Copilot rollout looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>The salary spreadsheet Copilot found in about four seconds</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business of sixty staff enabled Copilot for a pilot group of eight. Within the first week, a participant asked it a general question about staff costs and received a precise answer drawn from a spreadsheet they should never have been able to open.</p></div>
+    <div><h4>What we found</h4><p>The file had been placed in a SharePoint site shared with all staff four years earlier, during a reorganisation, by someone who no longer worked there. Every employee had been able to open it for four years. Nobody had, because nobody knew it was there. Copilot had not been given access to anything &mdash; it had made four years of misconfigured access instantly discoverable.</p></div>
+    <div><h4>What we did</h4><p>Paused the pilot, audited sharing across the tenancy, which found a further eleven locations containing material shared far more broadly than intended, corrected the permissions, and reviewed link-sharing defaults.</p></div>
+    <div><h4>The outcome</h4><p>The pilot resumed a fortnight later. The permissions problem had existed for four years and would have continued indefinitely &mdash; enabling Copilot was, in effect, an unusually fast audit.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Twenty-two licences, six people who benefited</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A business had licensed Copilot for everyone on the reasoning that it should be available to all. Six months later, usage was concentrated in a handful of people and the finance director was questioning the spend.</p></div>
+    <div><h4>What we found</h4><p>Measuring actual use, six roles were using it daily and getting real value &mdash; those writing documents, summarising long threads and preparing reports. The remainder had roles that involved little of that, had tried it briefly and had no ongoing use for it. Nobody had been shown what it was good at; licences had simply appeared.</p></div>
+    <div><h4>What we did</h4><p>Ran short role-specific sessions showing each group the two or three tasks it genuinely helps with, then re-measured after a month and reduced the licence count to the roles where use had held up.</p></div>
+    <div><h4>The outcome</h4><p>Twelve licences retained, ten released, and adoption among the twelve considerably higher than before. The recommendation to buy fewer licences was the useful part of the engagement.</p></div>
+  </div>
+</div>
+    <div class="example">
+  <span class="ex-tag">Representative engagement</span>
+  <h3>Deciding it was not the right tool yet</h3>
+  <div class="ex-grid">
+    <div><h4>The situation</h4><p>A healthcare provider wanted Copilot for its administrative staff, principally for correspondence and summarising long documents. The use case was genuine and the time saving would have been real.</p></div>
+    <div><h4>What we found</h4><p>The tenancy held clinical correspondence and patient information alongside general administrative material, in shared locations with permissions that had never been formally reviewed. Copilot would have operated within the tenancy and under its existing controls, which is the correct architecture &mdash; but those controls were not in a state anyone could vouch for, and the information involved was health information.</p></div>
+    <div><h4>What we did</h4><p>Recommended deferring Copilot, and doing the permissions and information architecture work first: separating clinical from administrative material, reviewing access against roles, and establishing who should be able to reach what. Then reassessing.</p></div>
+    <div><h4>The outcome</h4><p>The provider did the underlying work over about four months and enabled Copilot afterwards for a defined group. The recommendation cost us a licence sale and several months, and it was the only defensible advice &mdash; enabling a discovery tool across information nobody had mapped is a decision that only looks bad afterwards.</p></div>
+  </div>
+</div>
+  </div>
+</section>
 <section class="section section--tight" id="faq">
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">Common questions</span><h2>Questions Gold Coast businesses ask us</h2></div>

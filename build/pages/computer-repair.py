@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;It won&rsquo;t turn on at all&rdquo;",
+     "the power supply, the board, or something as ordinary as a wall switch. No lights and no fans is a different fault from lights but no picture, and the two get reported identically.",
+     "Establish whether the machine is receiving power and getting through its startup checks before anything is opened. Half of these are resolved without a part; the other half are diagnosed correctly rather than replaced hopefully."),
+    ("&ldquo;It powers up but the screen stays black&rdquo;",
+     "memory, graphics, or the display itself. The machine is often running perfectly and simply cannot show you.",
+     "Test with an external screen first, then reseat and test memory. Laptop screens and cables fail regularly, and replacing a machine because its display died is an expensive way to solve a cheap problem."),
+    ("&ldquo;It&rsquo;s making a clicking or grinding noise&rdquo;",
+     "a mechanical hard drive failing. This is the one fault where what you do in the first ten minutes decides whether the data comes back.",
+     "Stop using it and call us before trying anything else. Every restart of a failing drive costs recoverable data, and a machine that clicks has already started telling you it is on borrowed time."),
+    ("&ldquo;It shuts itself down after twenty minutes&rdquo;",
+     "heat. Dust in the cooling path, a failed fan, or a machine sitting somewhere with no airflow &mdash; and it always gets worse in summer.",
+     "Clean it out, verify the fans, and check where it lives. Machines under desks against a wall and machines in workshops are the two we see most, and both are usually fixable rather than terminal."),
+    ("&ldquo;Someone spilled a drink on it&rdquo;",
+     "liquid, which does its damage over days through corrosion rather than instantly. A laptop that still works after a spill is not a laptop that survived one.",
+     "Power it off, do not attempt to dry it with heat, and get it looked at quickly. Acting the same day changes the outcome; waiting until it starts misbehaving usually does not."),
+    ("&ldquo;The laptop only runs when it&rsquo;s plugged in&rdquo;",
+     "a battery at the end of its life or a charging circuit fault. Batteries are consumable and three to four years is a normal working life.",
+     "Check the battery&rsquo;s actual health rather than its age. A replacement battery in a machine that is otherwise fine is one of the better value repairs available."),
+]
+
+EXAMPLE_1 = example(
+    "Every restart cost them another piece of the file",
+    "A business called about a machine that had started clicking and would no longer open a critical spreadsheet. Before calling, staff had restarted it eleven times over two days hoping it would come good, and had run a disk repair utility twice.",
+    "The drive was mechanically failing. The repair utility had been writing to a disk with failing heads, which had damaged data that was still readable when the clicking started. The spreadsheet was recoverable in part; a folder of scanned records was not.",
+    "Stopped all access, imaged what could still be read to a healthy drive before attempting anything else, then recovered from the image rather than the failing hardware. Replaced the drive and restored the machine.",
+    "Most of the data came back. The part that did not was lost during those two days of trying, not during the failure itself &mdash; which is why a clicking drive is the one fault where the right first move is to stop.")
+
+EXAMPLE_2 = example(
+    "Six machines that only failed in January",
+    "A business operating from a workshop and adjoining office reported computers shutting down without warning. It had happened the previous summer, stopped over winter, and returned. A previous provider had replaced two machines.",
+    "The workshop machines were dense with dust drawn in from the workspace, and their cooling was effectively blocked. In cooler months the reduced airflow was still sufficient; above about thirty degrees ambient it was not, and the machines were protecting themselves by shutting down. The two replaced machines had begun doing exactly the same thing.",
+    "Cleaned and serviced every machine, fitted filtered enclosures for the two in the worst position, and moved one off the floor where it had been drawing dust directly.",
+    "No shutdowns the following summer. Two machines had already been replaced for a fault that a service and a change of position resolved on the remaining four.")
 
 FAQS = [   (   'Do you repair computers on site on the Gold Coast?',
         'Yes. bcom ICT attends Gold Coast business premises and repairs laptops, desktops and workstations in place where possible. Where a machine has to leave, a loan device is supplied so nobody '
@@ -85,6 +120,30 @@ PAGE = {
                         'cheaper conversation.</p><p style="max-width:68ch;margin-top:16px"><strong>We '
                         "repair business machines only.</strong> General home computer repair isn't "
                         'something we take on.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The hardware faults we are actually called to</h2>
+      <p>Six faults account for most business machine failures, and only two of them usually need a new machine.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a repair actually looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Troubleshooting', '/hardware-software-troubleshooting-gold-coast'),
         ('Windows & macOS Repair', '/os-troubleshooting-repair-gold-coast'),

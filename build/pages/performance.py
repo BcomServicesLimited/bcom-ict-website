@@ -1,5 +1,46 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
 
+COMMON_ISSUES = [
+    ("&ldquo;It takes fifteen minutes to be usable in the morning&rdquo;",
+     "everything starting at once &mdash; the operating system, the security software, the sync client and whatever else was installed over the years and set to launch at login.",
+     "Measure what is actually running at startup and remove what nobody needs. This is usually free and frequently returns most of the fifteen minutes, which is worth doing before anyone quotes for hardware."),
+    ("&ldquo;It slows down through the day and a restart fixes it&rdquo;",
+     "an application leaking memory, or a machine with too little to begin with for the number of things now open on it.",
+     "Watch memory over a working day rather than at a single moment. A pattern that resets on restart points at consumption rather than capacity, and the two have very different fixes."),
+    ("&ldquo;We added more memory and it made no difference&rdquo;",
+     "the wrong bottleneck. Memory was upgraded because that is the familiar answer, when the constraint was a mechanical hard drive the whole time.",
+     "Identify the actual constraint before spending. On machines more than about five years old the storage is the usual culprit, and moving to solid state transforms them where more memory does nothing."),
+    ("&ldquo;Only one program is slow&rdquo;",
+     "not the machine. A single slow application points at that application, its data file, or the path between it and its server.",
+     "Test the same application on another machine. If it is slow everywhere, the machine is exonerated and the investigation moves somewhere far more productive."),
+    ("&ldquo;It&rsquo;s fine until the browser is open&rdquo;",
+     "browser tabs and extensions, which consume more than almost anything else on a modern machine. Forty open tabs is a genuine workload.",
+     "Look at what the browser is carrying before condemning the hardware. Some of this is habit and some is a legitimate need for more memory, but the diagnosis has to come first."),
+    ("&ldquo;It was fine when we bought it&rdquo;",
+     "accumulation. Nothing broke &mdash; the machine has three more security agents, two sync clients and six years of software on it than it did when it was fast.",
+     "Assess whether the machine is recoverable or genuinely finished, and say which. We would rather tell you a machine has years left than sell a replacement it does not need."),
+]
+
+EXAMPLE_1 = example(
+    "Twelve minutes a day, fourteen people, and the arithmetic that followed",
+    "A business asked us to look at machines that staff described as slow. The owner was sceptical, viewing it as people complaining about something unavoidable, and was reluctant to spend on it.",
+    "Timed from power button to genuinely usable, the worst six machines averaged just over twelve minutes each morning, plus repeated pauses through the day. Fourteen staff at that rate came to roughly forty hours a month of people waiting &mdash; considerably more than the cost of fixing it, and entirely invisible because it was spread thinly across every day.",
+    "Cleaned up startup on every machine, which recovered several minutes for free, then replaced the storage in the six worst with solid state drives rather than replacing the machines.",
+    "Startup went from twelve minutes to under one. The hardware spend was a fraction of a replacement cycle, and the owner&rsquo;s scepticism was reasonable until somebody put a number against it.")
+
+EXAMPLE_2 = example(
+    "More memory, twice, for a problem memory could not fix",
+    "A business had upgraded memory on four machines a year earlier on a previous provider&rsquo;s recommendation, seen no improvement, and been advised to upgrade the memory again.",
+    "The machines had ample memory and were never running short of it. All four had original mechanical hard drives approaching seven years old, and the drives were saturated whenever the machines were asked to do anything. Adding memory to a machine waiting on its disk changes nothing, and doing it twice changes nothing twice.",
+    "Moved all four to solid state storage, transferred the installations rather than rebuilding them, and returned each machine the same day.",
+    "The machines are quick and remain in service. The business had spent twice on a component that was never the constraint, which is what happens when a familiar answer is applied before a measurement.")
+
+EXAMPLE_3 = example(
+    "Telling a business its machines were fine",
+    "A business asked for a quote to replace eleven computers, having concluded from staff complaints that the fleet was at the end of its life. The expectation was a proposal for eleven machines.",
+    "Nine of the eleven were four years old, well specified, and already running solid state storage. Their problem was a security product configured to scan every file access in real time with no exclusions for the database the business used all day. Two machines genuinely were finished, being older and considerably weaker than the rest.",
+    "Configured appropriate exclusions on the security product without weakening its coverage, cleaned up startup items, and quoted for the two machines that actually needed replacing.",
+    "Nine machines stayed in service and are still in service. We wrote a quote for two instead of eleven, which is the version of this conversation that keeps a client rather than a sale.")
 FAQS = [   (   'Why are our office computers so slow?',
         "In most Gold Coast offices the cause is a mechanical hard drive in a machine that should have an SSD, insufficient memory for what's now being run, or accumulated software nobody "
         "uninstalled. bcom ICT assesses each machine and reports what's actually causing it, with the cost of fixing it against the cost of replacement. Call 07 3041 8993."),
@@ -80,6 +121,31 @@ PAGE = {
                         'Where replacement is the call, we source at trade pricing and hand the machine '
                         'over ready to use; see <a href="/hardware-procurement-setup-gold-coast">hardware '
                         'procurement and setup</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>The performance complaints we are actually called to</h2>
+      <p>A slow machine is a payroll cost. Six causes account for nearly all of it, and half are fixable for nothing.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a performance assessment looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+    {EXAMPLE_3}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Hardware Procurement & Setup', '/hardware-procurement-setup-gold-coast'),
         ('Business Computer Repair', '/on-site-computer-repair-gold-coast'),

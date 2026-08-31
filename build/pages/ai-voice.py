@@ -1,5 +1,46 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
 
+COMMON_ISSUES = [
+    ("&ldquo;We miss calls after hours and never hear from them again&rdquo;",
+     "callers reaching voicemail and simply ringing the next business. Most people will not leave a message, and for some trades the majority of enquiries arrive outside business hours.",
+     "Have something answer, take the details properly and log the job. A caller who has been heard will usually wait until the morning; one who reached a beep will not."),
+    ("&ldquo;Our voicemail box is full and nobody checks it&rdquo;",
+     "a message store rather than a process. Messages accumulate and get triaged eventually, which is not the same as being handled.",
+     "Route what comes in to somewhere it will actually be seen &mdash; email, a ticket, a job record. The failure here is almost never the recording; it is what happens next."),
+    ("&ldquo;It answers but it can&rsquo;t do anything&rdquo;",
+     "a system that takes a message and stops. Useful, but well short of what is achievable.",
+     "Decide deliberately what it should handle end to end &mdash; taking details, answering common questions, booking &mdash; and what it should escalate. Scope is what separates a useful assistant from a fancy answering machine."),
+    ("&ldquo;It won&rsquo;t recognise what people say&rdquo;",
+     "accents, background noise, place names and trade terminology. Australian suburb names in particular defeat a lot of systems.",
+     "Test with real callers and real vocabulary before going live, including the local place names people will actually say. This is the part most implementations skip and the part callers notice first."),
+    ("&ldquo;It sounds like it&rsquo;s pretending to be a person&rdquo;",
+     "a deliberate design choice by whoever built it. Callers work it out, and they mind.",
+     "Have it say what it is at the start. Ours does. It costs nothing in usefulness and it avoids the moment where a caller feels they have been handled rather than helped."),
+    ("&ldquo;What happens in an emergency call?&rdquo;",
+     "the question that matters most and gets asked least. Some calls must reach a person and must not sit in a queue.",
+     "Define the escalation path before anything goes live. For businesses where an after-hours call can be urgent, knowing which calls break through is the design decision that everything else follows."),
+]
+
+EXAMPLE_1 = example(
+    "The calls a business did not know it was losing",
+    "A trades business believed it received very few after-hours enquiries, because very few voicemail messages were left. On that basis, an after-hours answering arrangement seemed hard to justify.",
+    "Call records showed a substantial volume of after-hours calls that connected, held for a few seconds and disconnected without leaving a message. The business had been measuring messages left, not calls received. The two numbers were not remotely similar, and evenings and Sunday afternoons were among the busiest periods for enquiry.",
+    "Put an assistant on the line that identifies itself, takes the caller&rsquo;s details and the nature of the job, and delivers it as a job record before the office opens. Genuine emergencies are escalated on a defined path rather than queued.",
+    "The business now starts each morning with the evening&rsquo;s enquiries already recorded. The calls had always been arriving &mdash; they had simply been arriving somewhere nobody was counting.")
+
+EXAMPLE_2 = example(
+    "Suburb names the system could not hear",
+    "An assistant had been deployed by a business and was performing poorly. Callers were repeating themselves and abandoning calls, and the business was close to switching it off.",
+    "The system handled names and phone numbers well and failed consistently on locations. Callers saying Mudgeeraba, Tallebudgera and Currumbin were being misheard, and the confirmation step would read something wrong back, which callers found more irritating than not being asked. It had been tested by the people who built it, none of whom were saying those words.",
+    "Retrained the recognition on the local place names the business actually serves, and changed the confirmation step to offer likely matches rather than assert a single wrong one. Tested with staff and then with a small volume of real calls before full deployment.",
+    "Abandonment dropped and the business kept it. The technology had been adequate throughout &mdash; it had been tested against the wrong vocabulary, which is a very ordinary implementation failure rather than a limitation of the tool.")
+
+EXAMPLE_3 = example(
+    "Deciding which calls must reach a person",
+    "A business providing a service where some after-hours calls are genuinely urgent wanted an assistant on the line overnight. The concern, reasonably, was that an urgent call would be handled politely and go nowhere until morning.",
+    "Reviewing a year of after-hours calls, roughly one in fourteen needed a person that night. They were identifiable &mdash; they used a small and consistent set of words, and they came from existing clients far more often than from new enquiries.",
+    "Defined an escalation path before anything went live: the assistant identifies itself, takes details, and where the call matches the urgent criteria or the caller asks for a person, it escalates immediately to the on-call phone rather than logging the job. Everything else is recorded and waiting at eight in the morning. The escalation was tested repeatedly before the assistant answered a single real call.",
+    "Urgent calls reach a person and the rest stop waking one. The design decision that mattered was made before the technology was chosen, which is the right order and not the usual one.")
 FAQS = [   (   'What is an AI phone agent?',
         'An AI phone agent answers calls, captures caller details, works out how urgent the matter is and escalates to a person where needed. bcom ICT implements them for Australian businesses and '
         'operates one for its own after-hours calls — it identifies itself as an AI rather than presenting as a person.'),
@@ -77,6 +118,31 @@ PAGE = {
                         'style="max-width:68ch;margin-top:16px">It also means when we implement one for '
                         'you, we are recommending something we live with rather than something we read '
                         'about.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>How phone assistants actually go wrong</h2>
+      <p>Six issues. The most common is a business that does not know how many calls it is already missing.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What a voice assistant engagement looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+    {EXAMPLE_3}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('AI Implementation', '/artificial-intelligence-service-gold-coast'),
         ('AI Chatbots', '/ai-chatbot-gold-coast'),

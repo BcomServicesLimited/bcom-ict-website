@@ -1,5 +1,46 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
 
+COMMON_ISSUES = [
+    ("&ldquo;We don&rsquo;t know what we&rsquo;ve got&rdquo;",
+     "systems built up over a decade by several people, none of whom documented anything. Everything works and nobody can describe it.",
+     "Document what exists before deciding what to change. Every recommendation we could make is worth less than an accurate picture of the starting point, which is why this comes first."),
+    ("&ldquo;We&rsquo;re not sure if we&rsquo;re exposed&rdquo;",
+     "genuine uncertainty. Most businesses have some things done well and some things not done at all, and without looking there is no way to know which is which.",
+     "Assess against a recognised baseline rather than an opinion. We map findings to the ASD Essential Eight so the result is a position you can measure again later rather than a list of our preferences."),
+    ("&ldquo;Our provider says everything is fine&rdquo;",
+     "possibly true. It is also an assessment by the party responsible for the thing being assessed, which is worth noting regardless of how good they are.",
+     "Get an independent look. If your provider is doing well, a review says so in writing and that is worth having. We have no interest in manufacturing problems to win work we would rather earn honestly."),
+    ("&ldquo;We&rsquo;re about to spend a lot and want a second opinion&rdquo;",
+     "a sensible instinct before a server replacement, an office move or a major migration.",
+     "Establish what the business actually needs before the money is committed. The cheapest moment to change a plan is before anyone has ordered anything."),
+    ("&ldquo;We&rsquo;re growing and it&rsquo;s starting to creak&rdquo;",
+     "arrangements that suited eight people being asked to carry twenty-five. Nothing has failed; everything has become slightly harder.",
+     "Identify what breaks next at the size you are heading for. Growth exposes the weakest part of a setup, and it is considerably cheaper to find it deliberately."),
+    ("&ldquo;A client is asking questions we can&rsquo;t answer&rdquo;",
+     "a security questionnaire, an insurer, or a tender requiring evidence of how information is protected.",
+     "Establish your real position, then close the gaps. Answering accurately is not optional, and a review gives you something defensible to answer from."),
+]
+
+EXAMPLE_1 = example(
+    "A review that told a business to keep its provider",
+    "A business of forty staff had been with the same IT provider for six years and had begun to wonder whether it was getting value. It commissioned an independent review with a half-expectation of being told to move.",
+    "The provider was doing a competent job. Patching was current, backups were tested, multi-factor authentication was enforced and documentation existed and was accurate &mdash; which is more than we find most of the time. Two genuine gaps existed: no formal restore testing schedule, and a firewall configuration carrying rules nobody could account for.",
+    "Reported exactly that, including the parts that reflected well on the incumbent, and set out the two gaps with what each would take to close. Provided the report to the business to hand to its provider.",
+    "The business kept its provider, who closed both gaps within a month. We did not win the account and were not trying to &mdash; a review that always concludes the incumbent is failing is not a review, it is a sales process.")
+
+EXAMPLE_2 = example(
+    "Finding what breaks at forty people",
+    "A business of eighteen staff was planning to roughly double over two years. Everything worked. The directors wanted to know what would stop working, and when, before it did.",
+    "Three things would not survive the growth. The server had capacity for perhaps a year of additional data. The internet connection had no failover and the business was moving more of its work into the cloud each quarter. And every administrative function &mdash; onboarding, access changes, password resets &mdash; depended on one person&rsquo;s knowledge with nothing written down, which was already a single point of failure and would become a bottleneck.",
+    "Set out a staged plan with each item costed and sequenced against the growth rather than all at once, starting with documentation because it was the cheapest and the most urgent.",
+    "The business grew into the plan rather than through a series of failures. Two of the three items were addressed well before they became urgent, which is the only time technology spending is comfortable.")
+
+EXAMPLE_3 = example(
+    "The assessment that found nothing dramatic",
+    "A business commissioned a review largely because a director had read about a competitor being hit by ransomware. There was no specific concern &mdash; it was a general unease that something might be wrong.",
+    "Most things were in reasonable order. Backups ran and had been restored from within the year, multi-factor authentication was in place, and machines were patched. Three things were not: a former employee&rsquo;s account was still active five months after departure, the wireless network had a single password shared with guests and staff alike, and nobody had ever confirmed whether the backup covered the accounting file, which sat on a workstation rather than the server.",
+    "Reported the three findings with the effort each required &mdash; two of them under an hour, one about half a day &mdash; and reported plainly that the rest was in good shape.",
+    "All three were closed within a fortnight. The accounting file had genuinely never been backed up, which nobody had known and which would have been discovered at the worst possible time. An assessment that finds three things and says so is more useful than one that manufactures thirty.")
 FAQS = [   (   'Is the IT assessment really free?',
         "Yes. bcom ICT provides the initial systems review at no charge, and you keep the written report whether or not you engage us. It's how both sides work out whether there's a fit — and "
         "sometimes the honest conclusion is that you don't need a monthly arrangement yet."),
@@ -72,6 +113,31 @@ PAGE = {
                         'style="max-width:68ch;margin-top:16px">What we need from you is access, whatever '
                         'documentation exists, and about an hour of someone who knows how the business '
                         'actually operates. The rest is our work.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What an assessment usually finds</h2>
+      <p>Six situations that bring a business to an assessment, and what tends to be sitting underneath each.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What an assessment looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+    {EXAMPLE_3}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Managed IT Services', '/managed-it-services-for-small-businesses-gold-coast'),
         ('Cybersecurity Risk Assessment', '/cybersecurity-health-check-for-small-business-gold-coast'),

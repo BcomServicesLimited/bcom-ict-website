@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;The board wants an AI strategy&rdquo;",
+     "pressure rather than a defined problem. It usually produces a search for somewhere to apply AI, which is the wrong direction to travel.",
+     "Start from the tasks that consume the most time and work out which of them suit it. Some will; several will not, and saying so is more useful than finding something to automate."),
+    ("&ldquo;Staff are already pasting client information into public AI tools&rdquo;",
+     "no guidance, so people use what they find helpful. It is not misconduct &mdash; nobody told them not to, and the tools are genuinely useful.",
+     "Write a one-page acceptable-use position and tell people what is and is not appropriate. This is consistently the highest-value hour in any AI engagement, and it costs nothing."),
+    ("&ldquo;It gives confident answers that are wrong&rdquo;",
+     "a general-purpose tool answering from general knowledge rather than from your information. It has no way to know what it does not know.",
+     "Ground it in your own documented material and have it decline rather than guess. A tool that says it does not know is far more valuable in a business than one that always produces an answer."),
+    ("&ldquo;We tried it and quietly stopped&rdquo;",
+     "a pilot with no defined success measure, so nobody could say whether it worked. Enthusiasm carries these for about six weeks.",
+     "Define what saving looks like before starting and measure it. An honest measurement that says this did not help is a good outcome &mdash; it stops the spending."),
+    ("&ldquo;Is any of this allowed under the Privacy Act?&rdquo;",
+     "a reasonable question that depends on what information is involved and where it goes. Personal and health information deserve particular care.",
+     "Establish what data the tool touches, where it is processed and what the vendor does with it, before adopting it. Some tools are appropriate for client information and some plainly are not."),
+    ("&ldquo;We don&rsquo;t want to sound like a robot to our customers&rdquo;",
+     "a legitimate concern, and one we share. Customers notice, and they mind more about being deceived than about the technology itself.",
+     "Have anything automated identify itself as such. Our own after-hours assistant says it is an assistant rather than pretending to be a person, which is the standard we would apply to yours."),
+]
+
+EXAMPLE_1 = example(
+    "The hour that mattered more than the project",
+    "A professional firm engaged us to look at where AI could reduce administrative time. The expectation was a proposal for tooling.",
+    "Before recommending anything, we asked how staff were already using these tools. Six of nineteen were regularly using public AI services, and three had pasted client material into them &mdash; including one document containing personal information about a third party. Nobody had done anything they had been told not to do, because there was no policy and the tools were plainly helpful.",
+    "Wrote a one-page acceptable-use position setting out what may and may not be put into which tools, provided a sanctioned tool for the uses that were legitimate, and briefed the whole firm in twenty minutes.",
+    "The firm went on to automate two genuinely useful things. Its own view was that the policy page had been worth more than the automation, which is a fair assessment and not the one we were engaged to produce.")
+
+EXAMPLE_2 = example(
+    "Measuring a pilot honestly enough to stop it",
+    "A business wanted to automate the drafting of a category of routine customer correspondence. It looked like an obvious candidate &mdash; high volume, formulaic, and consuming real hours.",
+    "Building a small pilot and measuring it properly, drafting time fell by about forty per cent. Checking and correcting time rose enough to consume most of that, because the correspondence carried commitments that had to be verified regardless of who drafted them. Net saving was around eight per cent, against a subscription and ongoing oversight.",
+    "Reported the measurement as it stood and recommended not proceeding for that use. Identified a different task &mdash; summarising long inbound documents for triage, where an error costs a re-read rather than a commitment &mdash; and piloted that instead.",
+    "The second use saved several hours a week and was adopted. The first was not, and would have been had nobody insisted on measuring it before scaling it.")
 
 FAQS = [   (   'What AI can a small business actually use?',
         'The four that reliably pay for themselves are AI phone agents for after-hours calls, website chatbots grounded in your own content, workflow automation between systems that currently need '
@@ -83,6 +118,30 @@ PAGE = {
                                  '<strong>Records</strong> of what was deployed, why, and who approved it',
                                  '<strong>Risk assessment</strong> before deployment rather than after an '
                                  'incident']}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What businesses actually ask us about AI</h2>
+      <p>Six situations. The most valuable thing we do in this area is frequently to say no.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What an AI engagement looks like</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('AI Voice Agents', '/ai-voice-agent-gold-coast'),
         ('AI Chatbots', '/ai-chatbot-gold-coast'),
