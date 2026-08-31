@@ -393,3 +393,31 @@ def creds(items):
                 f'{"Held" if kind == "held" else "Aligned" if kind == "aligned" else "Note"}</span>'
                 f'<div><h4>{label}</h4><p>{detail}</p></div></div>')
     return f'<div class="credlist">{out}</div>'
+
+
+def svc_body(*, answer, blocks):
+    """Assemble a service page body from content blocks, alternating white and
+    tinted sections. Each block is a dict:
+        {"eyebrow","h2","sub","cards"|"ticks"|"steps"|"html", "icon","cols"}
+    Keeps the 25 service pages as content rather than 25 copies of the markup.
+    """
+    out = [f'<section class="section">\n  <div class="wrap">\n'
+           f'    <p class="answer">{answer}</p>\n  </div>\n</section>\n']
+    for i, b in enumerate(blocks):
+        tint = " section--mist" if i % 2 == 0 else ""
+        head = ""
+        if b.get("h2"):
+            eb = f'<span class="eyebrow">{b["eyebrow"]}</span>' if b.get("eyebrow") else ""
+            sub = f'<p>{b["sub"]}</p>' if b.get("sub") else ""
+            head = f'<div class="section-head">{eb}<h2>{b["h2"]}</h2>{sub}</div>'
+        if "cards" in b:
+            inner = f'<div class="grid grid--{b.get("cols", 3)}">{cards(b["cards"], icon=b.get("icon", True))}</div>'
+        elif "steps" in b:
+            inner = f'<div class="grid grid--{b.get("cols", 4)}">{steps(b["steps"])}</div>'
+        elif "ticks" in b:
+            inner = ticks(b["ticks"])
+        else:
+            inner = b.get("html", "")
+        out.append(f'<section class="section section--tight{tint}">\n  <div class="wrap">\n'
+                   f'    {head}\n    {inner}\n  </div>\n</section>\n')
+    return "\n".join(out)

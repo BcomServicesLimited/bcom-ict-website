@@ -80,9 +80,17 @@ Each chunk ends with a commit and a push. Tick as they land.
       About · Our team · Contact · Reviews · Case studies · Pricing · Support.
       Person schema with `hasCredential` on Royce (ITIL 4) and Ollie (ISO 42001,
       BSI) — credentials sit on the Person node, never the Organization.
-- [ ] **Chunk 5 — Remaining services (~22)**
-      Remote/on-site support, IT consulting, M365, Copilot, AI services, backup,
-      networking, cabling, PBX brands, hardware, repair (business-framed).
+- [x] **Chunk 5a — Core remaining services (14)**
+      Remote support · on-site support · IT consulting · troubleshooting · office
+      relocation · security health check · ASIC compliance · Microsoft 365 ·
+      backup & DR · office cabling · firewall · network troubleshooting ·
+      networking · mesh WiFi · VoIP · PBX · phone cabling · NBN.
+      Written via `build/newpage.py` — a committed spec-to-module writer, so the
+      generated page modules stay the source of truth.
+- [ ] **Chunk 5b — Repair family + AI (7)**
+      Business computer repair · virus & malware removal · Windows/macOS repair ·
+      performance optimisation · hardware procurement · AI implementation ·
+      ISO/IEC 42001 AI governance. Completes every GBP service → page mapping.
 - [ ] **Chunk 6 — Industries (8)** · incl. new professional-services page
 - [ ] **Chunk 7 — Suburbs (10)** · distinct content per suburb, not templated
 - [ ] **Chunk 8 — Guides (7)** · MSP buyer's guide, hacked, office move, NBN,
