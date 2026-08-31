@@ -1001,19 +1001,25 @@ A: Yes, and it is where the biggest gains are. Standardising equipment and confi
 ## IT Support Burleigh Heads
 URL: https://www.bcomservices.com/it-support-burleigh-heads-gold-coast
 
-bcom ICT supports businesses in Burleigh Heads — cafés and restaurants, creative studios, boutique agencies and the professional practices increasingly occupying converted shopfronts around James Street and the Gold Coast Highway. Attendance is roughly twenty minutes from bcom ICT's Surfers Paradise office. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Burleigh Heads — cafes and restaurants, creative studios, boutique agencies and the professional practices increasingly occupying converted premises around James Street and the Gold Coast Highway. Attendance is roughly twenty minutes from our Surfers Paradise office, with most faults resolved remotely first. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Burleigh Heads?**
-A: Yes. bcom ICT attends Burleigh Heads businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available and Mon–Fri 8am–5pm. Call 07 3041 8993.
+A: Yes. bcom ICT attends Burleigh Heads businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover James Street, the Gold Coast Highway frontage, The Pines, and the streets behind the main strip. Most faults are resolved remotely first at $198 + GST per hour with no call-out. Call 07 3041 8993.
 
-**Q: We're a small café. Do we really need an IT provider?**
-A: Not necessarily on a monthly arrangement, and we'll say so. But two things are worth doing regardless: automatic 4G or 5G failover so card payments continue through an internet outage, and multi-factor authentication on your email. Both are inexpensive and both prevent expensive days.
+**Q: We're a small cafe. Do we really need an IT provider?**
+A: Not necessarily on a monthly arrangement, and we will say so. But two things are worth doing regardless: automatic 4G or 5G failover so card payments continue through an internet outage, and multi-factor authentication on your email. Both are inexpensive and both prevent expensive days.
+
+**Q: Our WiFi won't reach the outdoor seating. Can that be fixed?**
+A: Usually, and it is a smaller job than people expect. A single consumer router covering a James Street venue and its terrace is not realistic — original brick, added partitions and outdoor areas all fight coverage. It typically needs a second properly placed access point and a cable run, which we can quote after measuring rather than guessing.
 
 **Q: Do you work with businesses in older Burleigh buildings?**
-A: Frequently. Converted premises usually have improvised cabling and awkward equipment placement. We survey rather than assume, because what's actually in the walls determines what's possible.
+A: Frequently — most commercial space here started as something else. Converted premises usually have improvised cabling and awkward equipment placement, and what is actually in the walls varies enormously from one shopfront to the next. We survey rather than assume, because that determines what is possible.
+
+**Q: Are we too small to be a target for cyber attacks?**
+A: No, and being small is not protective. Almost everything that happens to small businesses is automated and indiscriminate — it finds whoever is reachable, and smaller operations are reachable precisely because the basics are missing. The invoice scam that redirects a payment does not care how many staff you have.
 
 **Q: Do you do home office setups in Burleigh?**
-A: WiFi and mesh network installation for home offices, yes. General home computer repair isn't something we take on.
+A: WiFi and mesh network installation for home offices, yes — including through Burleigh Waters and Miami. General home computer repair is not something we take on.
 
 
 ---
@@ -1021,19 +1027,25 @@ A: WiFi and mesh network installation for home offices, yes. General home comput
 ## IT Support Coomera
 URL: https://www.bcomservices.com/it-support-coomera-gold-coast
 
-bcom ICT supports businesses in Coomera — warehousing, logistics, light industrial operations and retail across the northern growth corridor. Attendance is roughly thirty minutes from bcom ICT's Surfers Paradise office, with most faults resolved remotely and multi-site operations supported as a single estate. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Coomera — marine, warehousing, logistics, light industrial and retail across the northern growth corridor. Attendance is roughly thirty minutes from our Surfers Paradise office, with most faults resolved remotely and multi-site operations supported as a single estate. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Coomera?**
-A: Yes. bcom ICT attends Coomera businesses — including the industrial and logistics estates — from its Surfers Paradise office, roughly thirty minutes away. Same-day attendance is usually available and most faults are resolved remotely first. Call 07 3041 8993.
+A: Yes. bcom ICT attends Coomera businesses — including the marine precinct and the industrial and logistics estates through Corporation Circuit and Millennium Circuit — from its Surfers Paradise office, roughly thirty minutes away. Same-day attendance is usually available and most faults are resolved remotely first. Call 07 3041 8993.
 
-**Q: Can you get WiFi coverage across a warehouse?**
-A: Yes, but it needs surveying rather than estimating. Steel framing, high ceilings and racking block signal in ways a floor plan won't show. We measure the space and specify access point placement and cabling for what's actually there — consumer equipment won't cover it however it's positioned.
+**Q: Can you get WiFi coverage across a warehouse or marine shed?**
+A: Yes, but it needs surveying rather than estimating. Steel framing, high ceilings, racking and vessels block signal in ways a floor plan will not show. We measure the space and specify access point placement and cabling for what is actually there — consumer equipment will not cover it however it is positioned, and adding more in the wrong places makes it worse.
 
 **Q: Is Coomera too far for on-site support?**
-A: No. Same-day attendance is usually available, and remote support resolves most faults far faster than anyone could drive. For businesses that need guaranteed response, managed IT carries a contracted 4-hour target on critical faults.
+A: No. Same-day attendance is usually available, and remote support resolves most faults far faster than anyone could drive. For businesses that need a guaranteed response regardless of distance, managed IT carries a contracted 4-hour target on critical faults with after-hours attendance included.
 
 **Q: Can you support us across several sites?**
-A: Yes, and it's where we do our best work. Standardised equipment and configuration across sites, centrally managed and remotely supported — the same model as the national retail chain rollout in our case studies.
+A: Yes, and it is where the biggest gains are. Standardised equipment and configuration across locations, centrally managed and remotely supported, makes support dramatically faster than each site running whatever it accumulated. It is the same model as the national retail chain rollout in our case studies.
+
+**Q: Do you work with marine industry businesses?**
+A: Yes. The precinct has coverage requirements unlike anything else on the coast — very large sheds, steel construction and vessels in the way — alongside specialised operational systems. The wireless design is the hard part and it is genuinely a measuring job.
+
+**Q: We're moving into a new Coomera industrial premises. When should we involve you?**
+A: As early as possible, and before signing if you can. What connectivity is actually available at the address, where the comms room can go, and how many data points the operation needs are all cheap to establish beforehand and expensive to discover afterwards. Carrier lead times are the most common reason a move slips.
 
 
 ---
@@ -1145,19 +1157,25 @@ A: Same considerations as any venue — payment terminals segmented, automatic i
 ## IT Support Nerang
 URL: https://www.bcomservices.com/it-support-nerang-gold-coast
 
-bcom ICT supports businesses in Nerang — trades, workshops, automotive and light industrial operations across the industrial estates, along with the offices behind them. Attendance is roughly twenty minutes from bcom ICT's Surfers Paradise office. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Nerang — trades, workshops, automotive, warehousing and light industrial operations across the industrial estates, along with the offices behind them. Attendance is roughly twenty minutes from our Surfers Paradise office. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Nerang?**
-A: Yes. bcom ICT attends Nerang businesses — including the industrial estates — from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. Call 07 3041 8993.
+A: Yes. bcom ICT attends Nerang businesses — including the industrial estates through Lawrence Drive, Spencer Road and Rudman Parade — from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. Call 07 3041 8993.
 
 **Q: Can you get WiFi working across a warehouse or shed?**
-A: Usually, but it needs surveying rather than guessing. Steel construction, high ceilings and racking all block signal, and consumer equipment won't cover it regardless of how it's positioned. We measure the space and specify access points for what's actually there.
+A: Usually, but it needs surveying rather than guessing. Steel construction, high ceilings and racking block signal in ways a floor plan will not show, and consumer equipment will not cover it however it is positioned. We measure the space and specify access points for the actual racking layout — adding more consumer gear in the wrong places makes it worse.
+
+**Q: Our handheld scanners keep dropping off. Why?**
+A: Almost always a coverage shadow created by racking rather than a fault with the devices. Stock moves, the shadows move with it, and a network that worked when the warehouse was half empty stops working when it is full. It is measurable and fixable with proper access point placement.
 
 **Q: Our team is always on the road. What do they need?**
-A: Job management software that works offline at sites with poor reception, mobile devices that can be replaced and configured the same day, and a phone system that follows people rather than sitting on a desk. See our trades and field services page.
+A: Job management software that works offline at sites with no reception and syncs when signal returns, mobile devices that can be replaced and configured the same day, and a phone system that follows people rather than sitting on a desk. See our trades and field services page.
 
 **Q: Someone changed our bank details on an invoice. What do we do?**
-A: Contact your bank immediately, then call us on 07 3041 8993. Going forward, multi-factor authentication on every mailbox and a rule that bank detail changes are verified by phone on a number you already hold.
+A: Contact your bank immediately, then call us on 07 3041 8993. Going forward: multi-factor authentication on every mailbox, and a rule that any change of bank details is verified by phone on a number you already hold — never one supplied in the email. This fraud hits trades and construction hardest because progress payments are large.
+
+**Q: Do you work with businesses out toward the hinterland?**
+A: Yes, though connectivity gets genuinely harder past Advancetown and Gilston. That is worth knowing before assuming a cloud-first setup will work — sometimes the honest answer is a different design, and we will tell you rather than deploying something that will frustrate you.
 
 
 ---
@@ -1165,19 +1183,25 @@ A: Contact your bank immediately, then call us on 07 3041 8993. Going forward, m
 ## IT Support Palm Beach
 URL: https://www.bcomservices.com/it-support-palm-beach-gold-coast
 
-bcom ICT supports businesses in Palm Beach — cafés, retail, creative studios and small professional practices along the southern Gold Coast Highway. Attendance is roughly twenty-five minutes from bcom ICT's Surfers Paradise office, and most faults are resolved remotely without a visit. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Palm Beach — cafes and food operators, retail, creative studios and small professional practices along the Gold Coast Highway and the surrounding streets. Attendance is roughly twenty-five minutes from our Surfers Paradise office, and most faults are resolved remotely without a visit. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Palm Beach?**
-A: Yes. bcom ICT attends Palm Beach businesses from its Surfers Paradise office, roughly twenty-five minutes away, with same-day attendance usually available. Most faults are resolved remotely at $198 + GST per hour with no call-out. Call 07 3041 8993.
+A: Yes. bcom ICT attends Palm Beach businesses from its Surfers Paradise office, roughly twenty-five minutes away, with same-day attendance usually available. We cover the Gold Coast Highway strip, Nineteenth Avenue, the streets off the highway, and out through Elanora and Currumbin. Most faults are resolved remotely at $198 + GST per hour with no call-out. Call 07 3041 8993.
 
 **Q: Is it worth calling you for a small job?**
-A: Often the answer is remote support, which carries no call-out and frequently resolves the problem in under an hour. We'll tell you on the phone whether it needs a visit before booking one.
+A: Often the answer is remote support, which carries no call-out and frequently resolves the problem inside an hour. We will tell you on the phone whether it needs a visit before booking one — at this distance the call-out is a real proportion of a small job and we would rather not add it unnecessarily.
 
 **Q: We're only a few people. Do we need managed IT?**
-A: Probably not, and we'll say so. Ad-hoc support suits most businesses this size. The two things worth doing regardless are multi-factor authentication on your email and a backup you've actually seen restore.
+A: Probably not, and we say that to more Palm Beach businesses than anywhere else. With a handful of laptops, everything in the cloud and no compliance obligations, a monthly fee buys very little. Two things are worth doing regardless: multi-factor authentication on every mailbox, and a backup you have actually watched restore.
+
+**Q: Our WiFi doesn't cover the whole shop. Can that be fixed?**
+A: Usually, and often for less than people expect. Most Palm Beach premises were converted from something else, so coverage has to fight original construction and added partitions. It typically needs one properly placed access point and a cable run rather than a whole new system — we measure before quoting.
+
+**Q: What happens to our card payments if the internet drops?**
+A: Without failover, you stop taking card. With an automatic 4G or 5G backup connection, payments continue and the changeover needs nobody's attention. For a food or retail business on the strip it usually pays for itself the first time it is needed.
 
 **Q: Do you do home office WiFi in Palm Beach?**
-A: Yes — mesh WiFi and home office network setup. General home computer repair isn't something we take on.
+A: Yes — mesh WiFi and home office network setup through Palm Beach, Elanora and Currumbin Waters. General home computer repair is not something we take on.
 
 
 ---
