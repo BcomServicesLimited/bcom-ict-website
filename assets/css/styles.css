@@ -558,3 +558,16 @@ form.enquiry .hint{font-size:.8125rem;color:var(--slate);}
   padding:var(--s4);font-size:.875rem;color:var(--ink-soft);
 }
 form.enquiry button[disabled]{opacity:.6;cursor:progress;}
+
+/* ---------- product / model listings ---------- */
+.models{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-block:var(--s6);}
+@media (min-width:760px){.models{grid-template-columns:repeat(2,1fr);}}
+.model{background:var(--paper);padding:var(--s5) var(--s6);}
+.model h4{font-size:.9375rem;color:var(--blue);margin-bottom:var(--s2);}
+.model p{font-size:.9375rem;color:var(--slate);margin-bottom:var(--s3);}
+.model .sku{display:flex;flex-wrap:wrap;gap:6px;}
+.model .sku span{
+  font-family:var(--display);font-size:.75rem;font-weight:600;letter-spacing:.01em;
+  background:var(--mist);border:1px solid var(--line);border-radius:3px;
+  padding:3px 8px;color:var(--ink-soft);white-space:nowrap;
+}
