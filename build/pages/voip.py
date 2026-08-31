@@ -53,26 +53,13 @@ FAQS = [   (   'How much does a VoIP phone system cost for a small business?',
         "handsets and queues usually win. We'll walk you through both.")]
 
 PRICING = [
-    ('Installation, per handset', '$100', '+ GST',
+    ('Five-handset system', 'from around $2,250', '+ GST &middot; indicative only',
      [
-      'Handset provisioned, configured and tested',
+      'Five business-grade handsets supplied, configured and installed',
       'Your existing numbers ported across',
       'Call flow, hunt groups and after-hours routing set up',
       'Staff shown how to actually use it',
-     ]),
-    ('VoIP handset', '$350', '+ GST each',
-     [
-      'Business-grade desk handset',
-      'Configured before it arrives on your desk',
-      'Works the same from the office or from home',
-      'Warranty handled by us rather than by you',
-     ]),
-    ('Typical five-extension system', '$2,250', '+ GST, hardware included',
-     [
-      'Five handsets at $350 + GST each',
-      'Installation and configuration at $500 + GST',
-      'Numbers ported and call flow configured',
-      'Monthly service and call plan quoted separately',
+      'Monthly service and call plan quoted alongside, not included',
      ]),
 ]
 
@@ -151,9 +138,9 @@ PAGE = {
     <div class="section-head">
       <span class="eyebrow">Pricing</span>
       <h2>How much does a business phone system cost?</h2>
-      <p>Handsets and installation are fixed price. The monthly plan is quoted alongside it.</p>
+      <p>An indicative figure for a described system, so you can judge whether to have the conversation. The quote comes after we know what you need and what is being replaced.</p>
     </div>
-    {price_table(PRICING, note='Hardware and installation are a one-off fixed price, agreed before we start. The monthly service and call plan is separate and depends on how many numbers and concurrent calls you need &mdash; we quote it alongside the install so you are looking at the whole cost rather than the attractive half of it. A business that does not want desk phones can run softphones on the computers and mobiles it already owns, which removes the hardware line entirely and leaves only the installation.')}
+    {price_table(PRICING, note='This is an indicative planning figure for the system described above, not a quote and not a per-handset rate. Hardware and installation are quoted as a one-off fixed price once we know how many extensions you need and what is being replaced, and that price is agreed before we start. The monthly service and call plan is separate and depends on how many numbers and concurrent calls you need &mdash; we quote it alongside the install so you are looking at the whole cost rather than the attractive half of it. A business that does not want desk phones can run softphones on the computers and mobiles it already owns, which removes the hardware line entirely and leaves only the installation.')}
   </div>
 </section>
 '''

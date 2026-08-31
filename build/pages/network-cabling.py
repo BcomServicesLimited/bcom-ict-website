@@ -53,12 +53,12 @@ FAQS = [   (   'Who installs office data cabling on the Gold Coast?',
     ('Will you label it?', 'Yes, at both ends, matched to a floor plan you keep. It is the cheapest thing in the entire installation and the one that saves the most time later.')]
 
 PRICING = [
-    ('Per data outlet', '$150', '+ GST, indicative',
+    ('Small office fit-out', 'from around $1,200', '+ GST &middot; indicative only',
      [
-      'Cat6 outlet, wall plate and patch panel termination',
-      'Tested and certified, with the results handed to you',
+      'Around eight Cat6 outlets, terminated to a patch panel',
+      'Every run tested and certified, results handed to you',
       'Labelled at both ends and recorded on a port schedule',
-      'Standard commercial ceiling and cavity access',
+      'Assumes standard commercial ceiling and cavity access',
      ]),
 ]
 
@@ -140,9 +140,9 @@ PAGE = {
     <div class="section-head">
       <span class="eyebrow">Pricing</span>
       <h2>How much does office data cabling cost?</h2>
-      <p>Priced per outlet, quoted after a look at the building rather than over the phone.</p>
+      <p>An indicative figure for a described job, quoted properly after a look at the building rather than over the phone.</p>
     </div>
-    {price_table(PRICING, note='A typical small office of eight outlets is therefore around $1,200 + GST for the cabling itself. Sitting outside that figure: the cabinet, patch panel and switch, which are quoted on what the site actually needs; long runs; hard ceilings and heritage buildings; asbestos; and after-hours access where a landlord or a tenanted building requires it. Cabling is quoted after someone has looked at the building, because a number given over the phone is a number that moves once an installer is on a ladder. All cabling work is carried out by ACMA registered cabling contractors.')}
+    {price_table(PRICING, note='This is an indicative planning figure for the job described above &mdash; not a quote, and not a per-outlet rate to multiply by your own outlet count. Sitting outside it: the cabinet, patch panel and switch, which are quoted on what the site actually needs; long runs; hard ceilings and heritage buildings; asbestos; and after-hours access where a landlord or a tenanted building requires it. Cabling is quoted after someone has looked at the building, because a number given over the phone is a number that moves once an installer is on a ladder. All cabling work is carried out by ACMA registered cabling contractors.')}
   </div>
 </section>
 '''

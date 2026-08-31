@@ -55,7 +55,7 @@ PAGE = {
     "hero_img": 'hero-bg-onsite-technical-support.webp',
     "hero_alt": 'A bcom ICT technician working on site at a Gold Coast business',
     "h1": 'Someone at your office, usually today',
-    "lede": 'When it genuinely needs hands on the hardware. Same-day attendance across the Gold Coast, with the rate agreed before anyone gets in a car.',
+    "lede": 'When it genuinely needs hands on the hardware. Same-day attendance across the Gold Coast where available, with the rate agreed before anyone gets in a car.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
     "trust": ['Same-day where available', '$100 + GST call-out', 'Police-checked technicians', 'Local since 2011'],
     "crumbs": [('Services', '/services'), ('On-site IT Support', '/on-site-technical-support-gold-coast')],
