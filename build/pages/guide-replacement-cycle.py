@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;It still works, so why replace it?&rdquo;",
+     "a reasonable position that ignores what the machine costs while it works. A computer does not have to fail to be expensive.",
+     "Time the machine from power button to genuinely usable, multiply by the person using it, and compare that to a replacement. The arithmetic frequently settles an argument that opinion cannot."),
+    ("&ldquo;We&rsquo;ll replace them when they die&rdquo;",
+     "a strategy that guarantees every replacement happens at the worst possible moment, at retail prices, with someone idle while it is arranged.",
+     "Replace on a schedule instead. The same machines get bought either way; the difference is whether they are budgeted or bought in a panic on a Tuesday morning."),
+    ("&ldquo;They&rsquo;re only three years old&rdquo;",
+     "age used as the sole measure. A well-specified three-year-old machine may have years left; a cheap one bought at retail may already be finished.",
+     "Judge on what the machine is being asked to do rather than on its birthday. Replacement cycles are a planning tool, not a rule, and applying one blindly wastes money in both directions."),
+    ("&ldquo;We&rsquo;ll just add more memory&rdquo;",
+     "the familiar answer applied before a measurement. On older machines the constraint is usually storage rather than memory.",
+     "Identify the actual bottleneck first. A solid state upgrade transforms a machine that more memory does nothing for, and it costs considerably less than a replacement."),
+    ("&ldquo;Nobody told us it stopped getting updates&rdquo;",
+     "an operating system past its supported life on hardware that cannot take the current one. Nothing announces this and the machine keeps working perfectly.",
+     "Check what is still receiving security updates. This is the one condition that turns replace-when-convenient into replace-now, and it is invisible from the desk."),
+    ("&ldquo;We don&rsquo;t know what we&rsquo;ve got&rdquo;",
+     "no asset register, so age, specification, warranty and holder all live in individual memories.",
+     "Build the register. It converts replacement from a series of surprises into a forecast, and tells you instantly whether a failed machine is still under warranty."),
+]
+
+EXAMPLE_1 = example(
+    "Nine machines that were told they were fine",
+    "A business asked for a quote to replace eleven computers, having concluded from staff complaints that the fleet was finished. It expected a proposal for eleven machines.",
+    "Nine were four years old, well specified and already running solid state storage. Their problem was a security product configured to scan every file access in real time with no exclusions for the database the business used all day. Two machines genuinely were finished &mdash; older, considerably weaker, and past economic repair.",
+    "Configured appropriate exclusions without weakening the security product&rsquo;s coverage, cleaned up startup items across the fleet, and quoted for the two machines that actually needed replacing.",
+    "Nine machines stayed in service and remain there. A quote for two instead of eleven is the version of this conversation that keeps a client rather than closes a sale.")
+
+EXAMPLE_2 = example(
+    "The two machines nobody knew were unsupported",
+    "A business with thirty staff had no record of what it owned. Machines were replaced on failure and purchasing was reactive. The finance director could not forecast technology spend at all.",
+    "Building an asset register found machines spanning eight model years and five manufacturers, eleven still under warranty that nobody had realised, and two running an operating system that had stopped receiving security updates over a year earlier. Two previously failed machines had been replaced at retail prices while under warranty, because nobody had checked.",
+    "Recorded the fleet with age, specification, warranty status and holder, prioritised the two unsupported machines, set a replacement horizon for the rest, and standardised future purchases onto two models covering the two kinds of work in the business.",
+    "Technology spend became a forecast rather than a sequence of surprises. The warranty claims alone recovered more than the register cost to build.")
 
 FAQS = [   (   'How long should a business computer last?',
         'Typically three to five years depending on the work it does — four to five for office and admin machines, three to four for design or CAD workstations, and two to three for field laptops '
@@ -100,6 +135,30 @@ PAGE = {
                         'suggests: longer warranties, on-site service options and standardised parts. See '
                         '<a href="/hardware-procurement-setup-gold-coast">hardware procurement and '
                         'setup</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What people get wrong about replacement</h2>
+      <p>Six positions that cost money, in both directions.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Performance Optimisation', '/performance-optimisation-gold-coast'),
         ('Hardware Procurement & Setup', '/hardware-procurement-setup-gold-coast'),

@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;We&rsquo;ll just get the fastest plan&rdquo;",
+     "speed treated as the only variable. For a business running phones, video calls and cloud applications, consistency matters far more than peak speed.",
+     "Match the service to what the business actually does. A slower connection that never wavers beats a faster one that degrades every afternoon, and the second is usually cheaper."),
+    ("&ldquo;Business and residential plans are the same service&rdquo;",
+     "the same physical connection with very different terms behind it &mdash; contention, support priority, fault response and whether anything is guaranteed.",
+     "Understand what you are buying beyond the number. A business on a residential plan is usually paying for a problem it does not know it has bought."),
+    ("&ldquo;The speed test says we&rsquo;re fine&rdquo;",
+     "a measurement of peak throughput at one moment, which tells you very little about whether a phone call will hold together.",
+     "Measure latency variation and packet loss over time. A connection can pass every speed test and be unusable for voice, which is why the speed test keeps misleading people."),
+    ("&ldquo;Our provider says there&rsquo;s no fault&rdquo;",
+     "an automated test run at a moment the line was healthy. Intermittent faults are invisible to a test lasting ninety seconds.",
+     "Present continuous evidence instead of a description. Line statistics, drop timestamps and loss measured over days move a provider in a way that a phone call does not."),
+    ("&ldquo;We don&rsquo;t need a backup connection&rdquo;",
+     "a decision that was usually never actually made. The business simply never added a second path and has not thought about what a full day offline costs.",
+     "Work out what a day without connectivity costs the business, then compare it to a failover service. For most businesses the arithmetic is not close."),
+    ("&ldquo;Our IT provider makes money on the plan&rdquo;",
+     "a fair thing to wonder about, and it changes whose advice you can trust.",
+     "Ask directly. bcom ICT earns nothing on your choice of internet plan, which means our recommendation costs you nothing to discount and nothing to follow."),
+]
+
+EXAMPLE_1 = example(
+    "Three weeks of evidence, and the provider fixed it in four days",
+    "A business was losing card transactions during its busiest period at two of its three sites. The provider had tested twice, found nothing, and closed both tickets. Both affected sites were on fibre-to-the-node.",
+    "Continuous logging showed the connections resynchronising several times an hour at both sites, with frequency rising sharply in wet weather. Each resync lasted only seconds &mdash; long enough to kill a transaction, far too short for any provider test to land on one. Both sites traced back to the same street cabinet.",
+    "Compiled three weeks of sync logs, drop timestamps and rainfall correlation into a single escalation rather than another support call, and added mobile failover at both sites while the fault remained open.",
+    "The provider located and repaired a water-affected joint within four days of receiving the evidence. The failover stayed, because it cost less than one lost trading period.")
+
+EXAMPLE_2 = example(
+    "Paying less for a connection that worked better",
+    "A business was on the fastest plan available at its address and still had unusable video calls every afternoon. It had upgraded twice, each time expecting the problem to resolve, and was considering upgrading again.",
+    "The connection delivered its rated speed comfortably at every test. What it did not deliver was consistency &mdash; latency varied enough during afternoon peak to break a call while leaving file transfers and browsing feeling perfectly normal. Speed had never been the constraint, so buying more of it had changed nothing twice.",
+    "Moved the business to a service with a committed rate rather than a higher peak, which cost slightly less per month, and prioritised voice traffic on the router so calls could not queue behind anything else.",
+    "Afternoon calls became reliable. The business had spent two upgrades buying more of the thing it already had enough of, which is the most common mistake made with business internet.")
 
 FAQS = [   (   'Is business NBN worth it over a residential plan?',
         'It depends what an hour offline costs you. A business plan typically buys a faster fault response commitment from the provider and, on some plan types, guaranteed rather than best-effort '
@@ -116,6 +151,30 @@ PAGE = {
                         'or outside the building, and handle the provider escalation with evidence when '
                         'the fault is theirs. See <a href="/nbn-internet-support-gold-coast">business NBN '
                         'and internet support</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What people get wrong about business internet</h2>
+      <p>Six assumptions. Two of them lead businesses to spend more for a worse result.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business NBN & Internet Support', '/nbn-internet-support-gold-coast'),
         ('Network Troubleshooting', '/network-troubleshooting-diagnostics-gold-coast'),

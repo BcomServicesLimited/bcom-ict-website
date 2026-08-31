@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;Nobody will give us a number&rdquo;",
+     "an industry habit of quoting only after a meeting. It is sometimes justified and it is mostly a sales technique.",
+     "Ask for indicative starting points before agreeing to a meeting. We publish ours on the <a href=\"/pricing\">pricing page</a> so a business can work out whether a conversation is worth having before having one."),
+    ("&ldquo;Per-seat pricing sounds fair&rdquo;",
+     "a headcount-based figure applied to businesses that differ enormously underneath. Two businesses with fifteen staff can differ by a factor of three in what they actually need supported.",
+     "Price on the environment rather than the headcount. A business with a server, ageing machines and a compliance obligation is a different proposition from fifteen people on modern laptops in the cloud."),
+    ("&ldquo;The hourly rate is all we need to compare&rdquo;",
+     "one number from a larger picture. A lower rate on jobs that take twice as long is not cheaper, and a call-out fee changes the arithmetic on short visits.",
+     "Compare the cost of the whole job, including call-out and how work is billed in increments. The rate is the most visible number and rarely the decisive one."),
+    ("&ldquo;What don&rsquo;t we know we&rsquo;re paying for?&rdquo;",
+     "hardware margin, licence markup and project variations &mdash; the parts of technology spending that are hardest to see.",
+     "Ask directly what a provider earns on hardware and licences. We source at trade pricing and are transparent about what we charge over it, and clients who prefer to buy their own hardware are welcome to."),
+    ("&ldquo;Managed IT quotes vary wildly&rdquo;",
+     "genuinely different scopes described with the same words. What is and is not included varies more between providers than the price does.",
+     "Get the inclusions and the exclusions in writing before comparing anything. Projects and hardware sitting outside a monthly fee is normal; discovering that after signing is not."),
+    ("&ldquo;What does it cost to leave?&rdquo;",
+     "the number nobody asks about at the start and everybody cares about later.",
+     "Ask before you sign. Our agreements are month-to-month with documentation and credentials handed over on request, which means the answer is nothing &mdash; and it is a fair question to put to anyone."),
+]
+
+EXAMPLE_1 = example(
+    "Nine hundred dollars a month for software nobody opened",
+    "A services business asked for a review of its technology spend before a budget cycle. Nothing was wrong; the directors simply wanted to know whether the total was reasonable.",
+    "Licence counts had never been reduced as people left, so the business was paying for nineteen more subscriptions than it had staff. Two separate products were being paid for that did substantially the same job, one adopted by a department unaware the other existed. A trial from two years earlier had converted to a paid plan nobody had noticed.",
+    "Reconciled every subscription against the current staff list and actual usage, consolidated the duplicated products onto the one people preferred, and set a quarterly review so the count cannot drift again.",
+    "Recurring spend fell by a little over nine hundred dollars a month with no loss of capability. The review took a few hours and had never been done because nobody owned the question.")
+
+EXAMPLE_2 = example(
+    "The cost that was not on any invoice",
+    "A business owner was sceptical that slow computers were worth spending money on, viewing the complaints as staff grumbling about something unavoidable.",
+    "Timed properly, the worst six machines averaged just over twelve minutes each morning from power button to genuinely usable, with repeated pauses through the day. Across fourteen staff that came to roughly forty hours a month of people waiting &mdash; considerably more than the cost of fixing it, and entirely invisible because it was spread thinly across every single day and appeared on no invoice anywhere.",
+    "Cleaned up startup on every machine, which recovered several minutes for nothing, then replaced the storage in the six worst with solid state drives rather than replacing the machines themselves.",
+    "Startup went from twelve minutes to under one. The scepticism had been entirely reasonable right up until somebody put a number against it, which is the only way this particular cost ever becomes visible.")
 
 FAQS = [   (   'How much does IT support cost on the Gold Coast?',
         'bcom ICT charges $198 + GST per hour ($217.80 inc GST) for business IT support, plus a $100 + GST call-out ($110 inc GST) for on-site attendance — a first hour on site is $298 + GST '
@@ -113,6 +148,30 @@ PAGE = {
                         'which model you choose: multi-factor authentication on every account, and a '
                         'backup you have actually watched restore. Between them they prevent most of what '
                         'genuinely damages a small business, and neither is expensive.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What makes IT cost hard to compare</h2>
+      <p>Six things that obscure the real number, and the questions that reveal each.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Pricing', '/pricing'),
         ('Managed IT vs break-fix', '/managed-it-vs-break-fix'),

@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;We hardly ever have problems, so managed would be a waste&rdquo;",
+     "counting the problems that got reported. Most businesses have no visibility of what their staff work around daily and never mention.",
+     "Count the time actually lost rather than the tickets raised. Businesses convinced they have few problems are frequently the ones with the most unreported ones, because nobody has ever asked."),
+    ("&ldquo;Managed is more expensive&rdquo;",
+     "true in a quiet month and usually not over a year. The comparison people make is against what they spent on support, not against what the problems cost.",
+     "Compare a full year including the hours staff lost. The honest answer is sometimes that managed is not worth it yet, and we would rather say so than sell it."),
+    ("&ldquo;Pay-as-you-go means we only pay when something breaks&rdquo;",
+     "accurate, and it also means nobody is being paid to stop things breaking. Patching, monitoring and backup verification do not happen on their own.",
+     "Recognise what is not being done rather than only what is not being billed. The cheapest arrangement is the one where nobody is watching, right up until the moment that matters."),
+    ("&ldquo;We&rsquo;d be locked in&rdquo;",
+     "a fair concern given how this industry has often worked. Long terms with exit fees are common and they are not universal.",
+     "Read the term and the exit. Our managed agreements are month-to-month, because we would rather earn the next month than hold a business to a three-year contract it regrets."),
+    ("&ldquo;We&rsquo;ll get slower service if we&rsquo;re not managed&rdquo;",
+     "partly true and worth stating honestly. Managed clients have a contracted response and after-hours cover; everyone else has a callback within four business hours and a booked visit.",
+     "Know what you are getting either way. We publish both so the difference is visible before you choose rather than discovered during an outage."),
+    ("&ldquo;We have someone here who handles it&rdquo;",
+     "often true, and the question is what happens when that person is on leave, unwell or leaves. It is usually a dependency rather than an arrangement.",
+     "Work out whether the business survives that person&rsquo;s absence. A capable internal person and a support arrangement are complementary, not alternatives."),
+]
+
+EXAMPLE_1 = example(
+    "Telling a business it did not need managed IT yet",
+    "A business of nine people asked to move onto a managed agreement, having been told by another provider that it was overdue. Everything was in the cloud, there was no server, and the machines were three years old.",
+    "There was very little to manage. No server, no on-premises infrastructure, a well-configured Microsoft 365 tenancy and nine modern laptops. Their actual support consumption over the previous year, reconstructed from invoices, was around eleven hours. A managed fee would have cost roughly three times that for capability the business did not currently need.",
+    "Recommended staying on hourly support, with three specific pieces of one-off work: multi-factor authentication everywhere, backup for the Microsoft 365 data, and documentation of the environment. Set out the point at which managed would start making sense &mdash; a server, more staff, or a compliance obligation.",
+    "The business stayed on hourly support for two more years and moved to managed when it took on a server and grew past twenty people. It moved to us, which is the part that makes the original advice worth having given.")
+
+EXAMPLE_2 = example(
+    "The arithmetic that went the other way",
+    "A business of twenty-six people was on hourly support and sceptical of a monthly fee. The directors asked us to justify the difference, expecting the answer to be about convenience.",
+    "Reconstructing twelve months of invoices showed the support spend itself was already close to a managed fee. The larger number was elsewhere: the same three categories of fault had recurred throughout the year, each time fixed and never traced to a cause, and staff time lost to them ran to several days a month. Nobody had been engaged to find root causes, so nobody had.",
+    "Set out both figures &mdash; the support spend and the estimated lost time &mdash; alongside a managed fee, and named the three recurring faults with what it would take to eliminate each.",
+    "The business moved to managed and the three recurring faults were resolved within the first quarter. The decision was made on a number rather than on a promise, which is the only basis on which it should be made.")
 
 FAQS = [   (   "What's the difference between managed IT and break-fix?",
         'Break-fix means paying per job when something goes wrong; managed IT means a flat monthly fee covering monitoring, helpdesk, patching and backup. The structural difference is incentive — a '
@@ -82,6 +117,30 @@ PAGE = {
                         'and patching.</p><p style="max-width:68ch;margin-top:16px">That covers most of '
                         'what actually damages a small business without a full managed agreement. If a '
                         'monthly fee looks like more than you need, it is worth asking about.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What people get wrong about this decision</h2>
+      <p>Six assumptions that push businesses into the wrong arrangement in both directions.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Managed IT Services', '/managed-it-services-for-small-businesses-gold-coast'),
         ('Business IT Support', '/it-support-and-services-gold-coast'),

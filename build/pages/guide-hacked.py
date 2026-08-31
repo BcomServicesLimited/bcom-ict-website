@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;We turned the machine off straight away&rdquo;",
+     "an instinct to stop the harm, which also destroys volatile evidence that helps establish what was actually taken.",
+     "Disconnect from the network instead &mdash; unplug the cable or switch off the wireless. That stops the spread while preserving what is needed to work out the scope."),
+    ("&ldquo;We wiped it and started fresh&rdquo;",
+     "an understandable urge to be rid of it. It also removes any ability to determine what was accessed, which is precisely what your insurer and any regulator will ask.",
+     "Preserve the machine until the scope is established. Rebuilding is usually part of the answer and it belongs after the investigation rather than instead of it."),
+    ("&ldquo;We replied to the attacker&rdquo;",
+     "a reasonable-seeming attempt to understand or negotiate. It confirms the account is live and being read, and it is a decision with legal dimensions.",
+     "Do not engage before you have legal advice. There are separate obligations around payment and around dealing with sanctioned entities, and they are not IT questions."),
+    ("&ldquo;We changed the password, so it&rsquo;s handled&rdquo;",
+     "a necessary step and rarely a sufficient one. Attackers commonly leave forwarding rules, additional sign-in methods or authorised applications that survive a password change.",
+     "Revoke active sessions, check for forwarding rules and review authorised applications as well. The forwarding rule is the part most often missed, and it is how they come back."),
+    ("&ldquo;No personal information was involved&rdquo;",
+     "an assessment made quickly and often wrongly. Mailboxes contain far more personal information than people remember putting in them.",
+     "Establish what was actually reachable before concluding anything. Whether the Notifiable Data Breaches scheme applies depends on that, and getting it wrong is its own problem."),
+    ("&ldquo;We&rsquo;ll tell the insurer once we know more&rdquo;",
+     "a sensible-sounding delay that frequently breaches the policy. Most cyber policies require prompt notification and some require it before you engage anyone.",
+     "Notify early, even with an incomplete picture. Late notice is one of the more common reasons a claim is reduced or refused, and the notification is not an admission of anything."),
+]
+
+EXAMPLE_1 = example(
+    "The forwarding rule that survived the password change",
+    "A business discovered a compromised mailbox, reset the password immediately, and considered the matter closed. Two weeks later the same mailbox sent a fraudulent invoice to a client.",
+    "The password change had been correct and insufficient. The attacker had created an inbox rule forwarding a copy of everything to an external address and quietly deleting the forwarded messages from the sent items, and had registered an additional sign-in method against the account. Both survived the password reset. The attacker had continued reading the mailbox throughout the fortnight the business believed it was secure.",
+    "Revoked every active session, removed the forwarding rule and the additional sign-in method, audited every other mailbox in the business for the same artefacts &mdash; which found one more &mdash; and enforced multi-factor authentication across the tenancy.",
+    "Access was genuinely ended, two weeks later than the business thought. A password change alone leaves an attacker in place more often than not, and the business had done what it reasonably believed was the fix.")
+
+EXAMPLE_2 = example(
+    "Two days of trying, and what it cost",
+    "A business called about ransomware two days after discovering it. In the intervening period staff had powered affected machines off and on repeatedly, run a disk repair utility, and deleted the ransom note because it was distressing to look at.",
+    "The repeated restarts and the repair utility had damaged data that was recoverable when the encryption was first noticed. The deleted note contained the identifier needed to establish which variant was involved, which affects whether a decryption tool exists. The business had also replied to the attacker&rsquo;s email address before taking any advice, confirming the mailbox was monitored.",
+    "Recovered what remained from backup, established the scope from what evidence survived, and produced the factual technical account the business&rsquo;s insurer and lawyer required &mdash; including, honestly, what could no longer be determined.",
+    "Most systems were restored. The two days of well-intentioned effort had cost recoverable data and narrowed the options, which is why the order of the steps on this page matters more than the speed of them.")
 
 FAQS = [   (   "What should a business do first when it's been hacked?",
         'Disconnect affected machines from the network but do not switch them off — powering down destroys evidence in memory that establishes what was accessed. Then change your email password from '
@@ -116,6 +151,30 @@ PAGE = {
                         'style="max-width:68ch;margin-top:16px">We provide the factual technical account '
                         'you need for all of them. The notification decisions remain yours — see <a '
                         'href="/cyber-incident-response-gold-coast">incident response</a>.</p>'}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What people do first, and what it costs</h2>
+      <p>Six instincts that are entirely reasonable and make the situation worse.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Cyber Incident Response', '/cyber-incident-response-gold-coast'),
         ('Notifiable Data Breaches guide', '/notifiable-data-breach-guide-australia'),

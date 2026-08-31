@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;We&rsquo;ll sort the internet closer to the date&rdquo;",
+     "the belief that a connection can be arranged quickly. A new service at a new address frequently takes longer than the entire fit-out, and no amount of weekend work compensates for it.",
+     "Order it the day the lease is signed. This is the only item on a move that cannot be solved by working harder later, and it is the one most often left until it is too late."),
+    ("&ldquo;The new place is already cabled&rdquo;",
+     "a statement from a landlord or agent about cabling of unknown age, standard and condition, almost always modified by previous tenants and documented by nobody.",
+     "Have it tested and certified weeks out. Finding nine failed outlets three weeks before a move is an inconvenience; finding them on the Monday morning is a lost trading day."),
+    ("&ldquo;The removalists will handle the computers&rdquo;",
+     "an assumption about scope. Removalists move furniture competently and are not being engaged to disconnect a server, label a rack or preserve a configuration.",
+     "Separate the IT move from the furniture move and treat it as its own project. They happen on the same weekend and they are not the same job."),
+    ("&ldquo;The phones can just be redirected&rdquo;",
+     "an underestimate of what phones need. Numbers, services and cabling must all align at the new site, and each has its own lead time.",
+     "Treat phones as a lead item, not a moving-day task. It is the part of a relocation with the least tolerance for delay and the most external dependencies."),
+    ("&ldquo;We&rsquo;ll work out what&rsquo;s in the comms room on the day&rdquo;",
+     "equipment accumulated across a tenancy, some live, some abandoned by previous occupants, none labelled. The day of the move is when undocumented dependencies surface.",
+     "Trace and document everything before anything is unplugged. Alarms, door access and monitored services hide in racks and are discovered by being switched off."),
+    ("&ldquo;We&rsquo;ll test it on Monday&rdquo;",
+     "the difference between connected and working. Confirming that devices respond is not the same as confirming that a person can do their job.",
+     "Test as a user before staff arrive &mdash; log in, open a file, print it, make a call, reach the internet. That five-minute check is where lost trading days are prevented."),
+]
+
+EXAMPLE_1 = example(
+    "The service order that decided the whole timeline",
+    "A firm signed a lease with eight weeks before occupation and a fit-out scheduled to take six. The internet service was noted as an action item and picked up in week four, which felt comfortable at the time.",
+    "The connection date offered for the new address was eleven weeks out &mdash; three weeks after the business was due to be trading there. Nothing had gone wrong; the address simply had a lead time, which is normal and is not something a business finds out until it asks. Had the order been placed in week one, the date would have fallen comfortably before the move.",
+    "Escalated the order with the provider, which recovered some time but not all of it, and arranged a temporary mobile broadband service sized for the office to cover the gap.",
+    "The firm traded from day one on temporary connectivity and transitioned to the permanent service three weeks later without incident. It cost a few hundred dollars and a fortnight of mild inconvenience, all of which was avoidable by making one phone call in week one.")
+
+EXAMPLE_2 = example(
+    "What was actually in the rack",
+    "A business documented its comms room before a move &mdash; server, switching, router, phone system &mdash; and considered the inventory complete. It was accurate as far as it went.",
+    "Tracing every connection before disconnection found two devices nobody could account for. One was a monitored alarm dialler. The other fed a card reader on a shared entrance used by another tenant in the building, installed years earlier under an arrangement neither party could now explain. Both would have been switched off on Friday evening with nobody aware until something needed them.",
+    "Identified what every connection served before anything was touched, arranged the alarm and the door access separately with their own providers, and moved the rest as planned.",
+    "Nothing was discovered by failing. Half a day of tracing removed two problems that would otherwise have appeared on a Sunday night with nobody available to fix them.")
 
 FAQS = [   (   'How far in advance should we plan an office IT move?',
         'Six to eight weeks, and earlier if the new site needs carrier services provisioned. NBN, fibre and phone line lead times are the most common reason an office move slips — the physical '
@@ -94,6 +129,30 @@ PAGE = {
                 'cols': 2,
                 'h2': 'The five that catch people out',
                 'icon': False}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What people get wrong about moving an office</h2>
+      <p>Six assumptions that turn a planned move into a lost trading day.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Office IT Relocation', '/office-it-relocation-gold-coast'),
         ('Office Network Cabling', '/network-cabling-for-offices-gold-coast'),

@@ -1,4 +1,39 @@
-from layout import cta, faq_block, related, svc_body
+from layout import cta, faq_block, related, svc_body, issues, example
+
+COMMON_ISSUES = [
+    ("&ldquo;They all say the same things&rdquo;",
+     "marketing language that is identical across the industry. Proactive, trusted, partner and 24/7 appear on nearly every provider&rsquo;s website including, in places, ours.",
+     "Ask for the specifics behind each claim in writing. A provider that publishes its response targets, its hours and its exit terms is making a commitment; one that describes itself as proactive is not."),
+    ("&ldquo;They advertise 24/7 support&rdquo;",
+     "frequently an answering service or a voicemail box. It is a claim worth testing rather than accepting.",
+     "Ring the number at nine on a Sunday evening before you sign anything. We do not advertise 24/7 for general enquiries, because we are open eight to five weekdays and would rather say so."),
+    ("&ldquo;The quote is much cheaper than the others&rdquo;",
+     "usually a different scope rather than a better price. What has been excluded is rarely visible in the headline number.",
+     "Normalise the quotes to one scope before comparing. Most of the price difference between providers turns out to be inclusions, and the cheapest quote frequently is not."),
+    ("&ldquo;They want a three-year term&rdquo;",
+     "an arrangement that protects the provider. Long terms with exit fees are common in this industry and are not a requirement of doing the work well.",
+     "Read the term and the exit clause before anything else. Ask what happens to your documentation and credentials if you leave &mdash; the answer to that question is revealing."),
+    ("&ldquo;How do we know they&rsquo;re any good?&rdquo;",
+     "the hardest thing to assess from outside, since every provider produces satisfied references.",
+     "Ask for something specific: their response targets in writing, an example of documentation they hand over, and what they will do that the incumbent is not. Vague answers to specific questions are the signal."),
+    ("&ldquo;What happens to our passwords if we leave?&rdquo;",
+     "the question that separates providers most sharply, and the one businesses ask least often.",
+     "Ask it in the first meeting. Credentials, asset registers, network documentation and licence details should be yours on request at any time, not only on the way out."),
+]
+
+EXAMPLE_1 = example(
+    "The three quotes that were three different projects",
+    "A business gathered three proposals for the same work and received figures ranging from $19,000 to $61,000. The spread was wide enough that the directors assumed someone was overcharging and asked which.",
+    "None of them were. The cheapest covered hardware supply with installation billed hourly and no data migration. The most expensive included migration, an out-of-hours cutover, three years of warranty, network remediation and documentation. Normalised to a common scope the three sat within about eleven per cent of each other, and the cheapest became the second most expensive.",
+    "Rewrote the requirement as a single written scope, sent it back to all three, and compared the revised responses against it.",
+    "The business chose on merit rather than on a headline. Had it accepted the cheapest as presented, the omitted work would have arrived later as variations, which is how a $19,000 project becomes a dispute.")
+
+EXAMPLE_2 = example(
+    "An assessment that recommended keeping the incumbent",
+    "A business of forty staff had used the same provider for six years and had begun to wonder whether it was still getting value. It commissioned an independent review with a half-expectation of being told to move.",
+    "The provider was doing a competent job. Patching was current, backups had been restored from within the year, multi-factor authentication was enforced, and documentation existed and was accurate &mdash; which is more than we find most of the time. Two genuine gaps existed: no formal restore testing schedule, and firewall rules nobody could account for.",
+    "Reported exactly that, including the parts that reflected well on the incumbent, set out the two gaps and what closing each would take, and gave the report to the business to hand to its provider.",
+    "The business kept its provider, who closed both gaps within a month. We did not win the account and were not trying to &mdash; a review that always concludes the incumbent is failing is not a review, it is a sales process.")
 
 FAQS = [   (   'How do you choose a managed IT provider?',
         'Judge on criteria rather than marketing. Ask for a written response target by priority, month-to-month terms rather than a lock-in contract, evidence that client restores are actually '
@@ -110,6 +145,30 @@ PAGE = {
                         'href="/service-levels-and-security">published</a> rather than given on request, '
                         'which is the only way a comparison like this is worth doing. Take this list to '
                         "whoever else you're considering.</p>"}])
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common problems</span>
+      <h2>What makes this decision hard</h2>
+      <p>Six things that obscure the comparison, and the questions that cut through each.</p>
+    </div>
+    {issues(COMMON_ISSUES)}
+  </div>
+</section>
+
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In practice</span>
+      <h2>What this looks like in practice</h2>
+      <p>Representative engagements, drawn from real work with identifying detail removed &mdash; we don&rsquo;t name clients without written permission.</p>
+    </div>
+    {EXAMPLE_1}
+    {EXAMPLE_2}
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Published service levels', '/service-levels-and-security'),
         ('Trust centre', '/trust-centre'),
