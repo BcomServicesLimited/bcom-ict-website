@@ -22,7 +22,7 @@ FAQS = [   (   'Do you provide IT support in Robina?',
         'Yes, and it is standard for professional tenants here. The principle is that security travels with the device rather than living in the office — managed laptops with encryption and remote '
         'wipe, MFA everywhere, and document access through a controlled system rather than files copied to a desktop.'),
     (   'How much does IT support cost in Robina?',
-        '$190 + GST per hour ($209.00 inc GST) plus a $39 + GST call-out ($42.90 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from '
+        '$190 + GST per hour ($209.00 inc GST) plus a $100 + GST call-out ($110.00 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from '
         'your business requirements and the services included, quoted after a free review.')]
 
 PAGE = {
@@ -106,7 +106,7 @@ PAGE = {
     <p style="margin-top:16px">Robina is roughly twenty minutes from our office at 9 Ferny Avenue,
     Surfers Paradise, via the M1 or the Gold Coast Highway. Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Most faults are resolved remotely first — $190 + GST per hour with no call-out
-    against $252 inc GST for a first hour on site. Email, Microsoft 365, software, account and printer problems
+    against $290 + GST for a first hour on site. Email, Microsoft 365, software, account and printer problems
     rarely need anyone to travel, and we will say so on the phone rather than booking a visit by default.</p>
     <p style="margin-top:16px">Managed IT clients have a contracted 4-hour response on critical faults with
     after-hours attendance included under their agreement.</p>

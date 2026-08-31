@@ -43,9 +43,11 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 
 - **Hourly labour:** $190 + GST per hour ($209.00 inc GST). After the first hour,
   time is charged in half-hour increments.
-- **On-site call-out:** $39 + GST ($42.90 inc GST) per attendance
-- **First hour on site:** $252 inc GST — the call-out and the first hour as one
-  figure, bookable online. The same price if booked by phone.
+- **On-site call-out:** $100 + GST ($110.00 inc GST) per attendance
+- **First hour on site:** $290 + GST ($319.00 inc GST) — the call-out plus the
+  first hour.
+- **First hour on site, booked online:** a fixed **$252 inc GST**, which is $67
+  less than the same hour arranged by phone. Booked through the online calendar.
 - **Remote job, up to one hour:** $150 + GST ($165 inc GST), no call-out
 - **Remote support beyond an hour:** $190 + GST per hour, no call-out
 - **Managed IT:** flat monthly fee calculated from business requirements and the
@@ -144,7 +146,7 @@ bcom ICT is a Gold Coast IT support company that has looked after small and medi
 A: bcom ICT provides IT support to small and medium businesses across the Gold Coast, and has done since 2011. The team is based at 9 Ferny Avenue, Surfers Paradise, and attends sites from Coomera to Coolangatta — with remote and managed support available to businesses anywhere in Australia. Call 07 3041 8993.
 
 **Q: How much does business IT support cost on the Gold Coast?**
-A: bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $39 + GST call-out ($42.90 inc GST) on on-site work — so a first hour on site is $252 inc GST. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your business requirements and the services included, quoted after a free review and month-to-month with no lock-in. Rates are published in full on our pricing page.
+A: bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $100 + GST call-out ($110.00 inc GST) on on-site work — so a first hour on site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your business requirements and the services included, quoted after a free review and month-to-month with no lock-in. Rates are published in full on our pricing page.
 
 **Q: Do you only work with businesses on the Gold Coast?**
 A: On-site work is Gold Coast based — that's where we can get to you the same day. Managed IT, cybersecurity, Microsoft 365 and cloud work don't need anyone on site, so we support businesses across Australia remotely. If you have staff in several states, that's normal for us.
@@ -248,7 +250,7 @@ A: Yes — the legacy platforms are a large part of what we do. As providers mov
 A: Sometimes, but frequently it reflects who is available rather than the system's condition. If the platform still does what your business needs and parts are obtainable, keeping it is often the cheaper answer. We'll assess remaining life honestly before you commit to a replacement quote.
 
 **Q: Can you just make one change without an ongoing contract?**
-A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $190 + GST per hour plus a $39 + GST call-out for on-site attendance. There's no requirement to sign up to anything ongoing.
+A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $190 + GST per hour plus a $100 + GST call-out for on-site attendance. There's no requirement to sign up to anything ongoing.
 
 **Q: Can you still get parts and handsets?**
 A: For most Alcatel-Lucent platforms listed here, yes — new, refurbished or from stock. Tell us the exact model and we'll tell you honestly what's obtainable and what isn't. Where a part genuinely can't be sourced, that's the point at which replacement stops being optional and becomes a planning exercise.
@@ -534,13 +536,13 @@ bcom ICT can be reached on 07 3041 8993 or at support@bcomservices.com. Phones a
 A: Call 07 3041 8993, email support@bcomservices.com, or use the enquiry form on this page. Our digital assistant answers the phone at any hour, but calls are returned during business hours — 8:00am to 5:00pm, Monday to Friday, Brisbane time — usually the same business day. Managed and SLA clients have contracted response targets under their agreement; every other enquiry receives a best-effort response. The office is at 9 Ferny Avenue, Surfers Paradise QLD 4217.
 
 **Q: What happens after I get in touch?**
-A: We call you back to understand the problem — usually the same business day, and generally within one business day. If it can be fixed remotely we'll often start there and then, at $190 + GST per hour with no call-out. If it needs someone on site, we book a visit — same day where we can — at a $39 + GST call-out plus the hourly rate, agreed before anyone gets in a car.
+A: We call you back to understand the problem — usually the same business day, and generally within one business day. If it can be fixed remotely we'll often start there and then, at $190 + GST per hour with no call-out. If it needs someone on site, we book a visit — same day where we can — at a $100 + GST call-out plus the hourly rate, agreed before anyone gets in a car.
 
 **Q: Is the first conversation free?**
 A: Yes, and so is the systems review that usually follows it. You get a plain-English report on what's working and what isn't, and you keep it whether or not you engage us.
 
 **Q: Do you charge to quote?**
-A: No. Quoting is free, and we quote before starting work rather than invoicing afterwards. Business IT support is $190 + GST per hour ($209.00 inc GST), with a $39 + GST call-out on on-site work. Remote support carries no call-out.
+A: No. Quoting is free, and we quote before starting work rather than invoicing afterwards. Business IT support is $190 + GST per hour ($209.00 inc GST), with a $100 + GST call-out on on-site work. Remote support carries no call-out.
 
 **Q: What if it's an emergency?**
 A: Call rather than email. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time. If you think you've been breached, don't turn anything off or delete anything — see cyber incident response for what to do in the first hour.
@@ -751,7 +753,7 @@ URL: https://www.bcomservices.com/hardware-software-troubleshooting-gold-coast
 bcom ICT diagnoses and repairs hardware and software faults on business computers, workstations and servers across the Gold Coast. Faults are diagnosed before a repair is quoted, and loan equipment is available where a machine has to leave the site. Call 07 3041 8993.
 
 **Q: Who fixes business computers and servers on the Gold Coast?**
-A: bcom ICT diagnoses and repairs business computers, workstations and servers across the Gold Coast, on site or remotely. Faults are diagnosed before quoting, loan equipment is available where a machine has to leave, and work is charged at $190 + GST per hour plus a $39 + GST call-out for on-site attendance. Call 07 3041 8993.
+A: bcom ICT diagnoses and repairs business computers, workstations and servers across the Gold Coast, on site or remotely. Faults are diagnosed before quoting, loan equipment is available where a machine has to leave, and work is charged at $190 + GST per hour plus a $100 + GST call-out for on-site attendance. Call 07 3041 8993.
 
 **Q: How do you decide whether to repair or replace?**
 A: Age, what the repair costs against a replacement, and whether the machine will be adequate for another two years even once fixed. A five-year-old laptop needing a $400 screen is usually not worth it, and we'll say so rather than take the work.
@@ -959,7 +961,7 @@ A: bcom ICT has provided IT support to Gold Coast businesses since 2011, from an
 A: Same-day on-site attendance is usually available across the Gold Coast, and remote support often starts within minutes of your call. Managed IT clients have a contracted 4-hour response for critical faults plus after-hours emergency attendance. For everyone else the response is best effort — usually the same business day, and generally within one business day — and we book the visit then.
 
 **Q: Do you charge a call-out fee?**
-A: On-site work carries a $39 + GST call-out ($42.90 inc GST) plus $190 + GST per hour ($209.00 inc GST), so a first hour on site is $252 inc GST. A remote job of up to an hour is $150 + GST ($165 inc GST) with no call-out, which is why we try remote first when the fault allows it. Rates are agreed before we start, not after. Full detail on our pricing page.
+A: On-site work carries a $100 + GST call-out ($110.00 inc GST) plus $190 + GST per hour ($209.00 inc GST), so a first hour on site is $290 + GST ($319.00 inc GST) — or a fixed $252 inc GST if you book it online. A remote job of up to an hour is $150 + GST ($165 inc GST) with no call-out, which is why we try remote first when the fault allows it. Rates are agreed before we start, not after. Full detail on our pricing page.
 
 **Q: Can you help if we already have an IT provider?**
 A: Yes. Some businesses use us for a second opinion, for work their provider doesn't cover, or when they simply can't get hold of them. We'll be straight with you about whether the problem is the technology or the relationship.
@@ -1057,10 +1059,10 @@ A: As early as possible, and before signing if you can. What connectivity is act
 ## What Does IT Support Cost on the Gold Coast?
 URL: https://www.bcomservices.com/it-support-cost-gold-coast
 
-Business IT support on the Gold Coast is typically charged either hourly or as a flat monthly managed fee. bcom ICT charges $190 + GST per hour ($209.00 inc GST), plus a $39 + GST call-out ($42.90 inc GST) for on-site attendance — so a first hour on site is $252 inc GST. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from business requirements and services included, quoted after a free review.
+Business IT support on the Gold Coast is typically charged either hourly or as a flat monthly managed fee. bcom ICT charges $190 + GST per hour ($209.00 inc GST), plus a $100 + GST call-out ($110.00 inc GST) for on-site attendance — so a first hour on site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from business requirements and services included, quoted after a free review.
 
 **Q: How much does IT support cost on the Gold Coast?**
-A: bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $39 + GST call-out ($42.90 inc GST) for on-site attendance — a first hour on site is $252 inc GST with the call-out included. A remote job of up to an hour is $150 + GST ($165 inc GST) and carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, quoted after a free review.
+A: bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $100 + GST call-out ($110.00 inc GST) for on-site attendance — a first hour on site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. A remote job of up to an hour is $150 + GST ($165 inc GST) and carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, quoted after a free review.
 
 **Q: Is managed IT cheaper than paying hourly?**
 A: In a quiet month, no. Over a year it usually is — and that's before counting staff hours lost to problems nobody is preventing. The real difference is predictability: a flat monthly fee can be budgeted, and you're never weighing up whether a problem is worth a call-out.
@@ -1075,7 +1077,7 @@ A: Quoting should be free. A detailed security or systems assessment reasonably 
 A: It varies with experience and what's included. What matters more than the headline rate is whether the provider tries remote first — remote work with no call-out is often cheaper overall than a lower hourly rate with a call-out attached to every job.
 
 **Q: Do we get charged for travel?**
-A: We charge a single $39 + GST call-out for on-site attendance across the Gold Coast rather than billing travel time by distance. It's the same figure whether you're in Broadbeach or Coomera.
+A: We charge a single $100 + GST call-out for on-site attendance across the Gold Coast rather than billing travel time by distance. It's the same figure whether you're in Broadbeach or Coomera.
 
 
 ---
@@ -1335,7 +1337,7 @@ A: That is the most common pattern in Robina. Usually the network, specified whe
 A: Yes, and it is standard for professional tenants here. The principle is that security travels with the device rather than living in the office — managed laptops with encryption and remote wipe, MFA everywhere, and document access through a controlled system rather than files copied to a desktop.
 
 **Q: How much does IT support cost in Robina?**
-A: $190 + GST per hour ($209.00 inc GST) plus a $39 + GST call-out ($42.90 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your business requirements and the services included, quoted after a free review.
+A: $190 + GST per hour ($209.00 inc GST) plus a $100 + GST call-out ($110.00 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your business requirements and the services included, quoted after a free review.
 
 
 ---
@@ -1349,7 +1351,7 @@ bcom ICT provides IT support to Gold Coast small businesses, typically between t
 A: Most clients have between three and sixty staff — businesses too large to keep muddling through and too small to justify a full-time IT employee. bcom ICT has supported Gold Coast small businesses since 2011, on-site across the Gold Coast and remotely Australia-wide. Call 07 3041 8993.
 
 **Q: How much does small business IT support cost?**
-A: Ad-hoc support is $190 + GST per hour ($209.00 inc GST), plus a $39 + GST call-out for on-site work. Managed IT is a flat monthly fee calculated from your business requirements and the services included, quoted after a free review and month-to-month with no lock-in.
+A: Ad-hoc support is $190 + GST per hour ($209.00 inc GST), plus a $100 + GST call-out for on-site work. Managed IT is a flat monthly fee calculated from your business requirements and the services included, quoted after a free review and month-to-month with no lock-in.
 
 **Q: We've got someone in the office who handles IT. Is that a problem?**
 A: Not necessarily, and plenty of clients keep that arrangement with us behind it — they handle day-to-day questions, we handle infrastructure, security and escalations. It becomes a problem when the business depends on one person, nothing is documented, and that person could resign.
@@ -1413,7 +1415,7 @@ A: Almost always coverage design rather than the internet service. Concrete floo
 A: Regularly. Many were built before anyone was running PoE access points, cameras or IP phones, so riser space is tight and existing cabling is often the wrong category or length. We test what is actually installed rather than trusting a floor plan, and arrange building access in advance.
 
 **Q: What does IT support cost in Surfers Paradise?**
-A: $190 + GST per hour ($209.00 inc GST) plus a $39 + GST call-out ($42.90 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, quoted after a free review.
+A: $190 + GST per hour ($209.00 inc GST) plus a $100 + GST call-out ($110.00 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, quoted after a free review.
 
 
 ---
@@ -1465,7 +1467,7 @@ A: A documented position rather than an assurance — what controls you operate,
 A: Yes, through the precinct and along the corridor toward the Robina hospitals. Health service providers are covered by the Privacy Act regardless of annual turnover, which changes what a practice's IT has to do. Our attending technicians hold national police checks and Queensland Blue Cards where required.
 
 **Q: Do you support businesses that only need occasional help?**
-A: Yes. Ad-hoc support is $190 + GST per hour with no ongoing commitment, plus a $39 + GST call-out for on-site work. We will tell you honestly if a monthly managed arrangement is not worth it for you yet.
+A: Yes. Ad-hoc support is $190 + GST per hour with no ongoing commitment, plus a $100 + GST call-out for on-site work. We will tell you honestly if a monthly managed arrangement is not worth it for you yet.
 
 
 ---
@@ -1485,7 +1487,7 @@ A: Yes — the legacy platforms are a large part of what we do. As providers mov
 A: Sometimes, but frequently it reflects who is available rather than the system's condition. If the platform still does what your business needs and parts are obtainable, keeping it is often the cheaper answer. We'll assess remaining life honestly before you commit to a replacement quote.
 
 **Q: Can you just make one change without an ongoing contract?**
-A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $190 + GST per hour plus a $39 + GST call-out for on-site attendance. There's no requirement to sign up to anything ongoing.
+A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $190 + GST per hour plus a $100 + GST call-out for on-site attendance. There's no requirement to sign up to anything ongoing.
 
 **Q: Can you still get parts and handsets?**
 A: For most LG Ericsson platforms listed here, yes — new, refurbished or from stock. Tell us the exact model and we'll tell you honestly what's obtainable and what isn't. Where a part genuinely can't be sourced, that's the point at which replacement stops being optional and becomes a planning exercise.
@@ -1670,7 +1672,7 @@ A: Yes — the legacy platforms are a large part of what we do. As providers mov
 A: Sometimes, but frequently it reflects who is available rather than the system's condition. If the platform still does what your business needs and parts are obtainable, keeping it is often the cheaper answer. We'll assess remaining life honestly before you commit to a replacement quote.
 
 **Q: Can you just make one change without an ongoing contract?**
-A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $190 + GST per hour plus a $39 + GST call-out for on-site attendance. There's no requirement to sign up to anything ongoing.
+A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $190 + GST per hour plus a $100 + GST call-out for on-site attendance. There's no requirement to sign up to anything ongoing.
 
 **Q: Can you still get parts and handsets?**
 A: For most NEC platforms listed here, yes — new, refurbished or from stock. Tell us the exact model and we'll tell you honestly what's obtainable and what isn't. Where a part genuinely can't be sourced, that's the point at which replacement stops being optional and becomes a planning exercise.
@@ -1754,7 +1756,7 @@ A: Yes, and it is often the most useful part of the job. We run line tests and g
 A: Most faults are identified within a single on-site visit. Intermittent ones that only occur at certain times can need monitoring left in place for a few days, which we will tell you up front rather than billing repeat visits.
 
 **Q: What does it cost?**
-A: $190 + GST per hour ($209.00 inc GST) plus a $39 + GST call-out for on-site attendance. We scope roughly how long we expect it to take before starting.
+A: $190 + GST per hour ($209.00 inc GST) plus a $100 + GST call-out for on-site attendance. We scope roughly how long we expect it to take before starting.
 
 **Q: Will you tell us if the fix is expensive?**
 A: Yes, and we will tell you if it is not needed. Sometimes the answer is a channel change and a cable replacement rather than the new equipment someone else quoted.
@@ -1843,7 +1845,7 @@ URL: https://www.bcomservices.com/on-site-computer-repair-gold-coast
 bcom ICT repairs business laptops, desktops and workstations on site across the Gold Coast, diagnosing and repairing in place where possible and supplying a loan machine where a device has to leave. Data is recovered before any invasive work begins. bcom ICT repairs business hardware only. Call 07 3041 8993.
 
 **Q: Do you repair computers on site on the Gold Coast?**
-A: Yes. bcom ICT attends Gold Coast business premises and repairs laptops, desktops and workstations in place where possible. Where a machine has to leave, a loan device is supplied so nobody sits idle. On-site attendance is a $39 + GST call-out plus $190 + GST per hour. Call 07 3041 8993.
+A: Yes. bcom ICT attends Gold Coast business premises and repairs laptops, desktops and workstations in place where possible. Where a machine has to leave, a loan device is supplied so nobody sits idle. On-site attendance is a $100 + GST call-out plus $190 + GST per hour. Call 07 3041 8993.
 
 **Q: Will we lose our data?**
 A: Not if we can avoid it. Data is recovered before any invasive work begins, provided the drive is still readable. Where a drive has physically failed we'll tell you honestly what specialist recovery involves and roughly what it costs before you commit to it.
@@ -1866,13 +1868,13 @@ A: Most software and configuration faults are resolved in the same visit. Hardwa
 ## On-site IT Support Gold Coast
 URL: https://www.bcomservices.com/on-site-technical-support-gold-coast
 
-bcom ICT provides on-site IT support to businesses across the Gold Coast, attending offices to resolve workstation, server, network, printer and connectivity faults in person. Same-day attendance is usually available. On-site work is charged at a $39 + GST call-out plus $190 + GST per hour. Call 07 3041 8993.
+bcom ICT provides on-site IT support to businesses across the Gold Coast, attending offices to resolve workstation, server, network, printer and connectivity faults in person. Same-day attendance is usually available. On-site work is charged at a $100 + GST call-out plus $190 + GST per hour. Call 07 3041 8993.
 
 **Q: How quickly can you get someone on site on the Gold Coast?**
 A: Same-day attendance is usually available across the Gold Coast. Managed IT clients have a contracted 4-hour response for critical faults with after-hours emergency attendance included. All other clients receive a best-effort response — usually the same business day — and a booked visit, most often the same or next business day.
 
 **Q: What does an on-site visit cost?**
-A: A first hour on site is $252 inc GST, which is the $39 + GST call-out ($42.90 inc GST) plus the $190 + GST hour ($209.00 inc GST) as one figure. You can book that online so it is settled before anyone sets off, and it is the same price if you ring instead. Time past the first hour is $190 + GST in half-hour increments. Remote support carries no call-out, and a remote job of up to an hour is $150 + GST ($165 inc GST).
+A: A first hour on site is $290 + GST ($319.00 inc GST) — the $100 + GST call-out ($110.00 inc GST) plus the $190 + GST hour ($209.00 inc GST). Book the visit through our online calendar instead and it is a fixed $252 inc GST, which is $67 less for the same hour. Time past the first hour is $190 + GST in half-hour increments. Remote support carries no call-out, and a remote job of up to an hour is $150 + GST ($165 inc GST).
 
 **Q: Which Gold Coast suburbs do you attend?**
 A: All of them — Surfers Paradise, Southport, Robina, Burleigh Heads, Broadbeach, Coomera, Nerang, Helensvale, Varsity Lakes, Palm Beach and everywhere between. Remote and managed support extends Australia-wide.
@@ -2008,7 +2010,7 @@ A: Yes — the legacy platforms are a large part of what we do. As providers mov
 A: Sometimes, but frequently it reflects who is available rather than the system's condition. If the platform still does what your business needs and parts are obtainable, keeping it is often the cheaper answer. We'll assess remaining life honestly before you commit to a replacement quote.
 
 **Q: Can you just make one change without an ongoing contract?**
-A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $190 + GST per hour plus a $39 + GST call-out for on-site attendance. There's no requirement to sign up to anything ongoing.
+A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — at $190 + GST per hour plus a $100 + GST call-out for on-site attendance. There's no requirement to sign up to anything ongoing.
 
 **Q: Can you still get parts and handsets?**
 A: For most Panasonic platforms listed here, yes — new, refurbished or from stock. Tell us the exact model and we'll tell you honestly what's obtainable and what isn't. Where a part genuinely can't be sourced, that's the point at which replacement stops being optional and becomes a planning exercise.
@@ -2074,7 +2076,7 @@ A: Yes. Testing and certification results, labelling at both ends, and a plan yo
 ## Pricing
 URL: https://www.bcomservices.com/pricing
 
-bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, billed in half-hour increments after the first hour, plus a $39 + GST call-out ($42.90 inc GST) for on-site work — so a first hour on site is $252 inc GST with the call-out included. A remote job of up to an hour is $150 + GST ($165 inc GST) and carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, month-to-month with no lock-in. Project work is quoted as a fixed price after scoping rather than estimated in advance. Call 07 3041 8993.
+bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, billed in half-hour increments after the first hour, plus a $100 + GST call-out ($110.00 inc GST) for on-site work — so a first hour on site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. A remote job of up to an hour is $150 + GST ($165 inc GST) and carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, month-to-month with no lock-in. Project work is quoted as a fixed price after scoping rather than estimated in advance. Call 07 3041 8993.
 
 **Q: How does bcom ICT charge for project work?**
 A: Projects are quoted as a fixed price after the work has been scoped, not estimated over the phone. bcom ICT publishes indicative starting points for a few common jobs so you can judge whether a conversation is worth having, but those are planning aids rather than quotes and each one is published alongside what it assumes and what sits outside it. Once a project is scoped, the fixed price is agreed in writing before work starts and variations are agreed before they happen rather than appearing on the invoice.
@@ -2086,10 +2088,10 @@ A: Because a number given before anyone has looked is a guess, and a guess given
 A: No, and we removed them deliberately. A published unit price invites a business to multiply it by its own headcount or outlet count and arrive at a figure bcom ICT never quoted, which is the most common way a published price ends in a disagreement. Cabling, migrations and phone systems are quoted on the actual site and the actual requirement.
 
 **Q: How much does business IT support cost on the Gold Coast?**
-A: bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $39 + GST call-out ($42.90 inc GST) on on-site work — a first hour on site is $252 inc GST. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review, month-to-month with no lock-in. Projects are fixed-price after scoping. Call 07 3041 8993.
+A: bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $100 + GST call-out ($110.00 inc GST) on on-site work — a first hour on site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review, month-to-month with no lock-in. Projects are fixed-price after scoping. Call 07 3041 8993.
 
 **Q: What is bcom ICT's hourly rate?**
-A: bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, billed in half-hour increments after the first hour. On-site work adds a $39 + GST call-out ($42.90 inc GST), so a first hour on site is $252 inc GST. Remote support carries no call-out. Rates are agreed before work starts.
+A: bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, billed in half-hour increments after the first hour. On-site work adds a $100 + GST call-out ($110.00 inc GST), so a first hour on site is $290 + GST ($319.00 inc GST) — or a fixed $252 inc GST booked online. Remote support carries no call-out. Rates are agreed before work starts.
 
 **Q: How is managed IT priced?**
 A: Managed IT is calculated from your business requirements and the services provided — not per seat. Two businesses with the same headcount can differ by a factor of three depending on whether they run a server, how old the machines are, how many sites there are, what has to stay available and what compliance obligations apply. bcom ICT quotes it after the free review, so the figure reflects your actual environment and the scope you've asked us to cover.
@@ -2176,7 +2178,7 @@ A: Most business IT faults can. bcom ICT resolves the majority of support reques
 A: Yes, and you control it. We send a one-time link, you approve the connection before anyone can see your screen, you watch the entire session, and you can disconnect at any moment. Nothing stays installed afterwards unless you're a managed client with monitoring agreed separately in writing.
 
 **Q: How much does remote IT support cost?**
-A: $190 + GST per hour ($209.00 inc GST), billed in half-hour increments after the first hour, with no call-out fee. That's the main reason we try remote first — an on-site visit adds a $39 + GST call-out before anyone has looked at the problem.
+A: $190 + GST per hour ($209.00 inc GST), billed in half-hour increments after the first hour, with no call-out fee. That's the main reason we try remote first — an on-site visit adds a $100 + GST call-out before anyone has looked at the problem.
 
 **Q: Do you support staff working from home?**
 A: Yes, and it's routine. A remote worker gets the same support as someone in the office. If your team is spread across several sites or states, remote support is how that works in practice.
@@ -2420,10 +2422,10 @@ A: Very likely. We maintain LG Ericsson iPECS, Panasonic KX, NEC UNIVERGE and Al
 ## Terms & Conditions
 URL: https://www.bcomservices.com/terms-and-conditions
 
-These terms apply to services provided by Bcom Services Pty Ltd, ABN 92 636 893 108, trading as bcom ICT. Work is quoted before it starts. Hourly labour is $190 + GST, with a $39 + GST call-out for on-site attendance; remote support carries no call-out. Support hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time. Managed IT agreements are month-to-month with no exit fee.
+These terms apply to services provided by Bcom Services Pty Ltd, ABN 92 636 893 108, trading as bcom ICT. Work is quoted before it starts. Hourly labour is $190 + GST, with a $100 + GST call-out for on-site attendance; remote support carries no call-out. Support hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time. Managed IT agreements are month-to-month with no exit fee.
 
 **Q: What are bcom ICT's rates?**
-A: Hourly labour is $190 + GST ($209.00 inc GST), billed in half-hour increments after the first hour. On-site attendance adds a $39 + GST call-out ($42.90 inc GST). Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included. All pricing is exclusive of GST unless stated otherwise.
+A: Hourly labour is $190 + GST ($209.00 inc GST), billed in half-hour increments after the first hour. On-site attendance adds a $100 + GST call-out ($110.00 inc GST). Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included. All pricing is exclusive of GST unless stated otherwise.
 
 **Q: What are your support hours?**
 A: 8:00am to 5:00pm, Monday to Friday, Brisbane time, excluding public holidays. Outside those hours our digital assistant answers the phone and takes your details, but bcom ICT does not respond to phone enquiries after hours — calls are returned the next business day. After-hours on-call support is available to managed and SLA clients under their agreement.

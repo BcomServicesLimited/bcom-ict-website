@@ -27,7 +27,7 @@ S = [
  ("4. Pricing and fees", [
   "All pricing is quoted in Australian dollars and is <strong>exclusive of GST unless stated otherwise</strong>. GST is applied at the prevailing rate.",
   "<strong>Hourly labour:</strong> $190 + GST per hour ($209.00 inc GST), billed in half-hour increments after the first hour.",
-  "<strong>On-site call-out:</strong> $39 + GST ($42.90 inc GST) per attendance. Remote support carries no call-out.",
+  "<strong>On-site call-out:</strong> $100 + GST ($110.00 inc GST) per attendance. Remote support carries no call-out.",
   "<strong>Managed IT</strong> is a flat monthly fee calculated from your business requirements and the services included, set out in a separate agreement.",
   "<strong>Projects</strong> are quoted as a fixed price after scoping. Variations are agreed in writing before the additional work is carried out.",
   "Time spent on consultation, discovery, planning and scope alignment forms part of service delivery and is charged at standard hourly rates or allocated against prepaid project amounts.",
@@ -115,7 +115,7 @@ body = "".join(f'<h2 style="margin-top:48px">{h}</h2>{ticks(items)}' for h, item
 
 FAQS = [
     ("What are bcom ICT's rates?",
-     "Hourly labour is $190 + GST ($209.00 inc GST), billed in half-hour increments after the first hour. On-site attendance adds a $39 + GST call-out ($42.90 inc GST). Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included. All pricing is exclusive of GST unless stated otherwise."),
+     "Hourly labour is $190 + GST ($209.00 inc GST), billed in half-hour increments after the first hour. On-site attendance adds a $100 + GST call-out ($110.00 inc GST). Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included. All pricing is exclusive of GST unless stated otherwise."),
     ("What are your support hours?",
      "8:00am to 5:00pm, Monday to Friday, Brisbane time, excluding public holidays. Outside those hours our digital assistant answers the phone and takes your details, but bcom ICT does not respond to phone enquiries after hours — calls are returned the next business day. After-hours on-call support is available to managed and SLA clients under their agreement."),
     ("Can we call 000 from a VoIP phone?",
@@ -144,7 +144,7 @@ PAGE = {
 <section class="section section--tight">
   <div class="wrap">
     <p class="answer">These terms apply to services provided by Bcom Services Pty Ltd, ABN 92 636 893 108,
-    trading as bcom ICT. Work is quoted before it starts. Hourly labour is $190 + GST, with a $39 + GST
+    trading as bcom ICT. Work is quoted before it starts. Hourly labour is $190 + GST, with a $100 + GST
     call-out for on-site attendance; remote support carries no call-out. Support hours are 8:00am to 5:00pm,
     Monday to Friday, Brisbane time. Managed IT agreements are month-to-month with no exit fee.</p>
 

@@ -22,7 +22,7 @@ FAQS = [   (   'Do you provide IT support in Surfers Paradise?',
         'Regularly. Many were built before anyone was running PoE access points, cameras or IP phones, so riser space is tight and existing cabling is often the wrong category or length. We test '
         'what is actually installed rather than trusting a floor plan, and arrange building access in advance.'),
     (   'What does IT support cost in Surfers Paradise?',
-        '$190 + GST per hour ($209.00 inc GST) plus a $39 + GST call-out ($42.90 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from '
+        '$190 + GST per hour ($209.00 inc GST) plus a $100 + GST call-out ($110.00 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from '
         'your requirements and the services included, quoted after a free review.')]
 
 PAGE = {

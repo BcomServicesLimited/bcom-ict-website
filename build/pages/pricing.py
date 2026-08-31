@@ -3,8 +3,8 @@ from site_data import RATES as R
 
 TIERS = [
     ("Ad-hoc support", "$190 + GST per hour", False,
-     "Charged at $190 + GST per hour ($209.00 inc GST), in half-hour increments after the first hour. On-site work adds a $39 + GST call-out ($42.90 inc GST). Remote support is time only — no call-out.",
-     ["First hour on site: $252 inc GST. Remote job up to an hour: $150 + GST ($165 inc GST), no call-out",
+     "Charged at $190 + GST per hour ($209.00 inc GST), in half-hour increments after the first hour. On-site work adds a $100 + GST call-out ($110.00 inc GST). Remote support is time only — no call-out.",
+     ["First hour on site: $290 + GST ($319.00 inc GST), or $252 inc GST booked online. Remote job up to an hour: $150 + GST ($165 inc GST), no call-out",
       "Remote first where the fault allows it — it's faster and cheaper",
       "No retainer, no minimum, no contract",
       "Same technicians as managed clients get"],
@@ -43,9 +43,9 @@ FAQS = [
     ("Do you publish per-outlet or per-user rates?",
      "No, and we removed them deliberately. A published unit price invites a business to multiply it by its own headcount or outlet count and arrive at a figure bcom ICT never quoted, which is the most common way a published price ends in a disagreement. Cabling, migrations and phone systems are quoted on the actual site and the actual requirement."),
     ("How much does business IT support cost on the Gold Coast?",
-     "bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $39 + GST call-out ($42.90 inc GST) on on-site work — a first hour on site is $252 inc GST. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review, month-to-month with no lock-in. Projects are fixed-price after scoping. Call 07 3041 8993."),
+     "bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $100 + GST call-out ($110.00 inc GST) on on-site work — a first hour on site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review, month-to-month with no lock-in. Projects are fixed-price after scoping. Call 07 3041 8993."),
     ("What is bcom ICT's hourly rate?",
-     "bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, billed in half-hour increments after the first hour. On-site work adds a $39 + GST call-out ($42.90 inc GST), so a first hour on site is $252 inc GST. Remote support carries no call-out. Rates are agreed before work starts."),
+     "bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, billed in half-hour increments after the first hour. On-site work adds a $100 + GST call-out ($110.00 inc GST), so a first hour on site is $290 + GST ($319.00 inc GST) — or a fixed $252 inc GST booked online. Remote support carries no call-out. Rates are agreed before work starts."),
     ("How is managed IT priced?",
      "Managed IT is calculated from your business requirements and the services provided — not per seat. Two businesses with the same headcount can differ by a factor of three depending on whether they run a server, how old the machines are, how many sites there are, what has to stay available and what compliance obligations apply. bcom ICT quotes it after the free review, so the figure reflects your actual environment and the scope you've asked us to cover."),
     ("Is managed IT more expensive than paying by the hour?",
@@ -72,7 +72,8 @@ FAQS = [
 
 STANDARD = [
     ('First hour on site, booked online', '$252', 'inc GST &middot; fixed price',
-     ['The call-out and the first hour with a technician, as one figure',
+     ['<strong>$67 less than the same hour arranged by phone</strong>, which is $290 + GST ($319.00 inc GST)',
+      'The call-out and the first hour with a technician, as one figure',
       'Booked through our calendar, so the price is settled before anyone sets off',
       'Beyond the first hour, $190 + GST in half-hour increments, agreed with you first',
       '<a href="/on-site-technical-support-gold-coast">On-site IT support</a>']),
@@ -122,11 +123,11 @@ PAGE = {
     "path": "/pricing",
     "priority": "0.8",
     "title": "Pricing — $190 + GST per Hour | bcom ICT Gold Coast",
-    "description": "bcom ICT business IT support is $190 + GST per hour ($209.00 inc GST), plus a $39 + GST on-site call-out. Remote support has no call-out. Managed IT is quoted to your requirements, month-to-month with no lock-in.",
+    "description": "bcom ICT business IT support is $190 + GST per hour ($209.00 inc GST), plus a $100 + GST on-site call-out. Remote support has no call-out. Managed IT is quoted to your requirements, month-to-month with no lock-in.",
     "hero_kind": "doc",
     "eyebrow": "Pricing",
     "h1": "How we charge, and why we quote first",
-    "lede": "$190 + GST an hour, $39 + GST call-out for on-site. Published, not negotiated per client — and everything is agreed before work starts.",
+    "lede": "$190 + GST an hour, $100 + GST call-out for on-site. Published, not negotiated per client — and everything is agreed before work starts.",
     "crumbs": [("Pricing", "/pricing")],
     "faqs": FAQS,
     "reviewed": "August 2026",
@@ -134,8 +135,8 @@ PAGE = {
 <section class="section section--tight">
   <div class="wrap">
     <p class="answer">bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, billed
-    in half-hour increments after the first hour, plus a $39 + GST call-out ($42.90 inc GST) for on-site work — so a first hour on
-    site is $252 inc GST with the call-out included. A remote job of up to an hour is $150 + GST
+    in half-hour increments after the first hour, plus a $100 + GST call-out ($110.00 inc GST) for on-site work — so a first hour on
+    site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. A remote job of up to an hour is $150 + GST
     ($165 inc GST) and carries no call-out. Managed IT is a flat monthly fee calculated from
     your requirements and the services included, month-to-month with no lock-in. Project work is quoted as a
     fixed price after scoping rather than estimated in advance. Call 07 3041 8993.</p>
@@ -144,8 +145,8 @@ PAGE = {
       <h3>Published rates</h3>
       <div class="grid grid--2" style="margin-top:20px">
         <div><div class="from">$190 <small>+ GST per hour · $209.00 inc GST</small></div></div>
-        <div><div class="from">$39 <small>+ GST on-site call-out · $42.90 inc GST</small></div></div>
-        <div><div class="from">$252 <small>inc GST · first hour on site, call-out included</small></div></div>
+        <div><div class="from">$100 <small>+ GST on-site call-out · $110.00 inc GST</small></div></div>
+        <div><div class="from">$290 <small>+ GST first hour on site · $319.00 inc GST</small></div></div>
         <div><div class="from">$150 <small>+ GST remote job up to an hour · $165.00 inc GST</small></div></div>
       </div>
       <p style="margin-top:20px;font-size:.9375rem;color:var(--slate)">Charged in half-hour increments after the first hour and

@@ -22,7 +22,7 @@ FAQS = [   (   'Do you provide IT support in Varsity Lakes?',
         'Yes, through the precinct and along the corridor toward the Robina hospitals. Health service providers are covered by the Privacy Act regardless of annual turnover, which changes what a '
         "practice's IT has to do. Our attending technicians hold national police checks and Queensland Blue Cards where required."),
     (   'Do you support businesses that only need occasional help?',
-        'Yes. Ad-hoc support is $190 + GST per hour with no ongoing commitment, plus a $39 + GST call-out for on-site work. We will tell you honestly if a monthly managed arrangement is not worth '
+        'Yes. Ad-hoc support is $190 + GST per hour with no ongoing commitment, plus a $100 + GST call-out for on-site work. We will tell you honestly if a monthly managed arrangement is not worth '
         'it for you yet.')]
 
 PAGE = {
@@ -107,7 +107,7 @@ PAGE = {
     <p style="margin-top:16px">Varsity Lakes is roughly twenty minutes from our office at 9 Ferny
     Avenue, Surfers Paradise, via the M1. Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Most faults are resolved remotely first at $190 + GST per hour with no
-    call-out, against $252 inc GST for a first hour on site. Given the distance we will tell you honestly on the
+    call-out, against $290 + GST for a first hour on site. Given the distance we will tell you honestly on the
     phone whether a visit is actually needed rather than booking one by default.</p>
     <p style="margin-top:16px">Parking through the business park precinct is straightforward, which keeps
     attendance time predictable.</p>

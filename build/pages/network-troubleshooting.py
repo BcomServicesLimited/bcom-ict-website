@@ -47,7 +47,7 @@ FAQS = [   (   'Why is our office internet so slow?',
     (   'How long does a network diagnosis take?',
         'Most faults are identified within a single on-site visit. Intermittent ones that only occur at certain times can need monitoring left in place for a few days, which we will tell you up '
         'front rather than billing repeat visits.'),
-    ('What does it cost?', '$190 + GST per hour ($209.00 inc GST) plus a $39 + GST call-out for on-site attendance. We scope roughly how long we expect it to take before starting.'),
+    ('What does it cost?', '$190 + GST per hour ($209.00 inc GST) plus a $100 + GST call-out for on-site attendance. We scope roughly how long we expect it to take before starting.'),
     (   'Will you tell us if the fix is expensive?',
         'Yes, and we will tell you if it is not needed. Sometimes the answer is a channel change and a cable replacement rather than the new equipment someone else quoted.')]
 

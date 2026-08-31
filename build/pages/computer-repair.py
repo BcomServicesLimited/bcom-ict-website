@@ -37,7 +37,7 @@ EXAMPLE_2 = example(
 
 FAQS = [   (   'Do you repair computers on site on the Gold Coast?',
         'Yes. bcom ICT attends Gold Coast business premises and repairs laptops, desktops and workstations in place where possible. Where a machine has to leave, a loan device is supplied so nobody '
-        'sits idle. On-site attendance is a $39 + GST call-out plus $190 + GST per hour. Call 07 3041 8993.'),
+        'sits idle. On-site attendance is a $100 + GST call-out plus $190 + GST per hour. Call 07 3041 8993.'),
     (   'Will we lose our data?',
         "Not if we can avoid it. Data is recovered before any invasive work begins, provided the drive is still readable. Where a drive has physically failed we'll tell you honestly what specialist "
         'recovery involves and roughly what it costs before you commit to it.'),

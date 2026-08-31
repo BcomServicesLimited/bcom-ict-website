@@ -132,17 +132,19 @@ FOOTER = {
 RATES = {
     "hourly_ex":   190,
     "hourly_inc":  "209.00",
-    "callout_ex":  39,
-    "callout_inc": "42.90",
-    # A first hour on site is the call-out plus one hour. Published as the
-    # inc-GST price Royce set ($252) rather than the derived $251.90, and
-    # bookable online at that fixed figure.
-    "onsite_first_inc": "252.00",
+    "callout_ex":  100,
+    "callout_inc": "110.00",
+    # Standard first hour on site = call-out + one hour.
+    "onsite_first_ex":  290,
+    "onsite_first_inc": "319.00",
+    # Booking the visit through the online calendar is a fixed price and is
+    # genuinely cheaper — $67 inc GST less than the same hour arranged by phone.
+    "onsite_online_inc": "252.00",
+    "onsite_online_saving_inc": "67.00",
     # Remote work has its own rate for a job of up to an hour, with no call-out.
     "remote_hour_ex":  150,
     "remote_hour_inc": "165.00",
-    # After the first hour, time is charged in HALF-hour increments at the
-    # hourly rate.
+    # After the first hour, time is charged in HALF-hour increments.
     "increment": "half-hour",
 }
 

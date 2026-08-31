@@ -110,7 +110,7 @@ PAGE = {
     Surfers Paradise — straight up the Gold Coast Highway or via the light rail corridor. It is one of the
     quickest suburbs on the coast for us to reach, and same-day attendance is almost always available.</p>
     <p style="margin-top:16px">We still try remote first where the fault allows it, because remote support is
-    $190 + GST per hour with no call-out against $252 inc GST for a first hour on site. Most email, Microsoft 365,
+    $190 + GST per hour with no call-out against $290 + GST for a first hour on site. Most email, Microsoft 365,
     software and account faults never need anyone to travel.</p>
     <p style="margin-top:16px">Managed IT clients have a contracted 4-hour response on critical faults, with
     after-hours attendance included under their agreement.</p>

@@ -65,7 +65,7 @@ FAQS = [
     ("How quickly can you get to us?",
      "Same-day on-site attendance is usually available across the Gold Coast, and remote support often starts within minutes of your call. Managed IT clients have a contracted 4-hour response for critical faults plus after-hours emergency attendance. For everyone else the response is best effort — usually the same business day, and generally within one business day — and we book the visit then."),
     ("Do you charge a call-out fee?",
-     "On-site work carries a $39 + GST call-out ($42.90 inc GST) plus $190 + GST per hour ($209.00 inc GST), so a first hour on site is $252 inc GST. A remote job of up to an hour is $150 + GST ($165 inc GST) with no call-out, which is why we try remote first when the fault allows it. Rates are agreed before we start, not after. Full detail on our pricing page."),
+     "On-site work carries a $100 + GST call-out ($110.00 inc GST) plus $190 + GST per hour ($209.00 inc GST), so a first hour on site is $290 + GST ($319.00 inc GST) — or a fixed $252 inc GST if you book it online. A remote job of up to an hour is $150 + GST ($165 inc GST) with no call-out, which is why we try remote first when the fault allows it. Rates are agreed before we start, not after. Full detail on our pricing page."),
     ("Can you help if we already have an IT provider?",
      "Yes. Some businesses use us for a second opinion, for work their provider doesn't cover, or when they simply can't get hold of them. We'll be straight with you about whether the problem is the technology or the relationship."),
     ("What areas of the Gold Coast do you cover?",

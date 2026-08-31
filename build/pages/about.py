@@ -70,7 +70,7 @@ PAGE = {
       <h2>Four things we'll hold to</h2>
     </div>
     {ticks([
-      "<strong>We quote before we start.</strong> $190 + GST an hour, plus a $39 + GST call-out on site — <a href='/pricing'>published rates</a>, agreed up front. You never get an invoice for something you didn't approve.",
+      "<strong>We quote before we start.</strong> $190 + GST an hour, plus a $100 + GST call-out on site — <a href='/pricing'>published rates</a>, agreed up front. You never get an invoice for something you didn't approve.",
       "<strong>We tell you when it isn't worth it.</strong> Including when a repair costs more than a replacement, or when you don't need managed IT yet.",
       "<strong>We fix causes, not symptoms.</strong> If the same fault keeps coming back, chasing it down is our problem.",
       "<strong>You own your documentation.</strong> Asset register, credentials and network notes belong to you and are handed over on request — not held as leverage.",

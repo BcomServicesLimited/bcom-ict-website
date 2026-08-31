@@ -39,7 +39,7 @@ FAQS = [   (   'What size business does bcom ICT work with?',
         'Most clients have between three and sixty staff — businesses too large to keep muddling through and too small to justify a full-time IT employee. bcom ICT has supported Gold Coast small '
         'businesses since 2011, on-site across the Gold Coast and remotely Australia-wide. Call 07 3041 8993.'),
     (   'How much does small business IT support cost?',
-        'Ad-hoc support is $190 + GST per hour ($209.00 inc GST), plus a $39 + GST call-out for on-site work. Managed IT is a flat monthly fee calculated from your business requirements and the '
+        'Ad-hoc support is $190 + GST per hour ($209.00 inc GST), plus a $100 + GST call-out for on-site work. Managed IT is a flat monthly fee calculated from your business requirements and the '
         'services included, quoted after a free review and month-to-month with no lock-in.'),
     (   "We've got someone in the office who handles IT. Is that a problem?",
         'Not necessarily, and plenty of clients keep that arrangement with us behind it — they handle day-to-day questions, we handle infrastructure, security and escalations. It becomes a problem '

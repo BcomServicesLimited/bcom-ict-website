@@ -47,8 +47,8 @@ FAQS = [
      "The team is based at 9 Ferny Avenue, Surfers Paradise, and attends sites from Coomera to Coolangatta — "
      "with remote and managed support available to businesses anywhere in Australia. Call 07 3041 8993."),
     ("How much does business IT support cost on the Gold Coast?",
-     "bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $39 + GST call-out "
-     "($42.90 inc GST) on on-site work — so a first hour on site is $252 inc GST. Remote support carries no call-out. "
+     "bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $100 + GST call-out "
+     "($110.00 inc GST) on on-site work — so a first hour on site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. Remote support carries no call-out. "
      "Managed IT is a flat monthly fee calculated from your business requirements and the services included, "
      "quoted after a free review and month-to-month with no lock-in. Rates are published in full on our pricing page."),
     ("Do you only work with businesses on the Gold Coast?",
@@ -134,7 +134,7 @@ PAGE = {
         <span class="eyebrow">Book online</span>
         <h2>Book an on-site technician</h2>
         <p style="margin-top:16px">Pick a time that suits and we'll come to you. On-site attendance is a
-        $39 + GST call-out plus $190 + GST per hour, agreed before anyone gets in a car.</p>
+        $100 + GST call-out plus $190 + GST per hour, agreed before anyone gets in a car.</p>
         <p style="margin-top:16px">Booking runs on our live calendar, so the times you see are times we
         actually have. If nothing suits, <a href="/contact">send us a message</a> or call
         <a href="{BIZ['phone_href']}">{BIZ['phone']}</a> during business hours.</p>

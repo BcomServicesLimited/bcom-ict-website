@@ -26,7 +26,7 @@ PAGE = {
     <h2>While you're here</h2>
     {ticks([
       '<a href="/service-levels-and-security">What we commit to</a> — response targets, hours and escalation, published',
-      '<a href="/pricing">Pricing</a> — $190 + GST per hour, $39 + GST on-site call-out',
+      '<a href="/pricing">Pricing</a> — $190 + GST per hour, $100 + GST on-site call-out',
       '<a href="/trust-centre">Trust centre</a> — what we hold, what we align to, and where the line is',
       '<a href="/how-to-choose-an-msp-gold-coast">Eight questions to ask any IT provider</a> — including us',
     ])}
