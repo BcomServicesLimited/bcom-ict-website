@@ -136,10 +136,8 @@ RATES = {
 }
 
 
-# Contact form endpoint. REPLACE before go-live — see BUILD-STATUS.md.
-# Royce needs to create the form and paste the ID here; until then the form
-# posts nowhere and the page leads with phone and email instead.
-FORM_ENDPOINT = "REPLACE_WITH_BCOM_FORM_ID"
+# Contact form endpoint (Formspree). Confirmed working 2026-08-31.
+FORM_ENDPOINT = "xreoqepk"
 
 
 def address_line():

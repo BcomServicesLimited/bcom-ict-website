@@ -544,3 +544,17 @@ form.enquiry .hint{font-size:.8125rem;color:var(--slate);}
   display:grid;place-items:center;border-radius:50%;background:var(--blue);color:#fff;
   font-family:var(--display);font-weight:700;font-size:.8125rem;
 }
+
+/* ---------- contact form states ---------- */
+.form-done{
+  background:var(--good-tint);border:1px solid var(--good);border-radius:var(--radius);
+  padding:var(--s6);
+}
+.form-done h3{color:var(--good);margin-bottom:var(--s3);}
+.form-done p{font-size:.9375rem;color:var(--ink-soft);}
+.form-done p + p{margin-top:var(--s3);}
+.form-error{
+  background:#FBEEEE;border:1px solid #E8A0A0;border-radius:var(--radius-sm);
+  padding:var(--s4);font-size:.875rem;color:var(--ink-soft);
+}
+form.enquiry button[disabled]{opacity:.6;cursor:progress;}
