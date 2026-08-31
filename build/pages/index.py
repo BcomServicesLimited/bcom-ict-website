@@ -17,7 +17,7 @@ SERVICES = [
 ]
 
 WHY = [
-    ("We answer the phone", "Day, night, weekend or public holiday, a call to bcom ICT gets answered. Out of hours it's our AI operator taking the details, and we come back to you within 4 business hours."),
+    ("We answer the phone", "Day, night, weekend or public holiday, a call to bcom ICT gets answered. Out of hours it's our AI operator taking the details, and we come back to you in business hours — usually the same business day."),
     ("We fix causes, not symptoms", "If the same fault keeps coming back, that's our problem to solve — not a new invoice every time. Chasing root causes is the difference between managed IT and a repair bill."),
     ("We're local, and we come to you", "We're based on Ferny Avenue in Surfers Paradise. Same-day on-site visits across the Gold Coast, and remote support anywhere in Australia."),
     ("No lock-in contracts", "Our managed IT is month-to-month. If we're not worth the money, you should be able to leave — and you should get your documentation and passwords on the way out."),
@@ -81,7 +81,7 @@ PAGE = {
     "lede": "Managed IT, cybersecurity, WiFi, phone systems and Microsoft 365 for small and medium businesses. On-site across the Gold Coast, remote and managed support Australia-wide.",
     "actions": [("Book an on-site tech", BIZ["booking"], "white"),
                 ("Call 07 3041 8993", BIZ["phone_href"], "onink")],
-    "trust": ["Local since 2011", "5.0 from 24 Google reviews", "Month-to-month, no lock-in", "Callback within 4 business hours"],
+    "trust": ["Local since 2011", "5.0 from 24 Google reviews", "Month-to-month, no lock-in", "Callback usually the same business day"],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": f'''
@@ -90,7 +90,7 @@ PAGE = {
     <p class="answer">bcom ICT is a Gold Coast IT support company that has looked after small and medium
     businesses since 2011. bcom ICT provides managed IT, cybersecurity, business WiFi, phone systems and
     Microsoft 365 support — on-site across the Gold Coast and remotely Australia-wide. Business hours are 8:00am to 5:00pm Monday to
-    Friday, Brisbane time, with callbacks within 4 business hours. Call 07 3041 8993.</p>
+    Friday, Brisbane time. Managed and SLA clients have contracted response targets; every other enquiry receives a best-effort response, usually the same business day. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">What we do</span>

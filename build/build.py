@@ -253,6 +253,38 @@ SAFE = ('not certified', 'not currently certified', 'no organisational iso',
         'not iso certified', 'nobody can', 'retired', 'no formal certification')
 
 
+# The contracted 4-hour response target applies to managed / SLA clients ONLY.
+# Ad-hoc clients get a best-effort response. Publishing the 4-hour figure as a
+# general promise commits us to an SLA nobody has signed, so the build refuses
+# it unless the surrounding text scopes it to a contracted client.
+SLA_SCOPE = ('managed', 'sla', 'contracted', 'agreement', 'under their')
+
+
+def sla_gate():
+    import re
+    hits = []
+    for f in ROOT.glob("*.html"):
+        t = f.read_text(encoding="utf-8")
+        # Only a response/callback promise matters here. "four hours a week" and
+        # "four days instead of four hours" are not commitments.
+        pats = (r'(callback|call back|respond(?:s|ed)?|response|come back to you|'
+                r'get back to you|reply|returned)[^.<]{0,90}?\b(4|four)[- ](business )?hours?',
+                r'\b(4|four)[- ]hour\b[^.<]{0,40}?(response|callback|sla|target)')
+        for pat in pats:
+          for m in re.finditer(pat, t, re.I):
+            ctx = t[max(0, m.start() - 600):m.end() + 600].lower()
+            if any(w in ctx for w in SLA_SCOPE):
+                continue
+            hits.append((f.name, t[max(0, m.start() - 70):m.end() + 40].strip()))
+    if hits:
+        print("\n!! UNSCOPED 4-HOUR RESPONSE PROMISE — this is a contracted target,")
+        print("   not a general one. Scope it to managed / SLA clients or remove it:")
+        for f, ctx in hits:
+            print(f"   {f}: ...{' '.join(ctx.split())}...")
+        raise SystemExit(1)
+    print("SLA gate: the 4-hour response target is scoped to contracted clients only")
+
+
 def claims():
     import re
     hits = []
@@ -274,6 +306,7 @@ def claims():
             print(f"   {f}: {txt!r} — {why}")
     else:
         print("claims check: no overstated certification or credential claims")
+    sla_gate()
     noindex_gate()
 
 

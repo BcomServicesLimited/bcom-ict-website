@@ -5,11 +5,11 @@ PAGE = {
     "priority": "0.1",
     "noindex": True,
     "title": "Thanks — we've got your message | bcom ICT",
-    "description": "Your enquiry has reached bcom ICT. We'll come back to you within 4 business hours.",
+    "description": "Your enquiry has reached bcom ICT. We'll come back to you, usually the same business day.",
     "hero_kind": "doc",
     "eyebrow": "Message sent",
     "h1": "Thanks — that's reached us",
-    "lede": "We'll come back to you within 4 business hours, during business hours: 8:00am to 5:00pm, Monday to Friday, Brisbane time.",
+    "lede": "We'll come back to you during business hours — 8:00am to 5:00pm, Monday to Friday, Brisbane time — usually the same business day.",
     "reviewed": "August 2026",
     "body": f'''
 <section class="section section--tight">

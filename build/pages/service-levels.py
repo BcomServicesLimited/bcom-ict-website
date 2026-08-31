@@ -3,12 +3,12 @@ from layout import MARK, cta, faq_block, commitments, ticks, related, trust_note
 MATRIX = [
     ("p1", "P1 — Critical", "Business stopped. Server, internet, phones or email down for everyone; suspected ransomware or an active breach.",
      "Response within 4 business hours (contracted). After-hours emergency attendance included.",
-     "Callback within 4 business hours; attendance next business day."),
+     "Best effort &mdash; usually the same business day, and attendance next business day."),
     ("p2", "P2 — High", "A team or a core system is down. A workaround exists but it's painful.",
      "Response within 4 business hours; target resolution same business day.",
-     "Callback within 4 business hours."),
+     "Best effort &mdash; usually the same business day."),
     ("p3", "P3 — Medium", "One person blocked, or noticeable degradation with a workaround available.",
-     "Next business day.", "Next business day."),
+     "Next business day.", "Best effort, generally within one business day."),
     ("p4", "P4 — Request", "New user, new device, access change or planned work. Not a fault.",
      "Scheduled — target within 3 business days.", "Quoted on request."),
 ]
@@ -69,7 +69,7 @@ EXAMPLE_2 = example(
 
 FAQS = [
     ("How quickly does bcom ICT respond to a critical IT fault?",
-     "Managed IT clients have a contracted 4-hour response for P1 critical faults during business hours, with after-hours emergency attendance included. All other clients receive a callback within 4 business hours and on-site attendance the next business day. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time. Call 07 3041 8993."),
+     "The 4-hour response target is contracted and applies to managed and SLA clients only — for P1 critical faults during business hours, with after-hours emergency attendance included. All other clients receive a best-effort response, usually the same business day and generally within one business day, with on-site attendance the next business day. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time. Call 07 3041 8993."),
     ("What counts as a P1?",
      "Your business has stopped. Everyone is offline, the server is down, phones or email are out for the whole office, or there are signs of ransomware or an active breach. One person unable to print is not a P1, and treating it as one is how genuine emergencies end up in a queue."),
     ("Are you available after hours?",
@@ -101,7 +101,8 @@ PAGE = {
   <div class="wrap">
     <p class="answer">bcom ICT publishes a four-level priority matrix. Managed IT clients have a contracted
     4-hour response for P1 critical faults with after-hours emergency attendance included; all other clients
-    receive a callback within 4 business hours and next-business-day attendance. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time.
+    receive a best-effort response &mdash; usually the same business day and generally within one business
+    day &mdash; with next-business-day attendance. Business hours are 8:00am to 5:00pm, Monday to Friday, Brisbane time.
     Call 07 3041 8993.</p>
 
     <h2 style="margin-top:56px">Priority matrix</h2>
@@ -131,7 +132,7 @@ PAGE = {
       "<strong>Outside those hours</strong> our digital assistant answers, takes your details and logs the job. It identifies itself as an assistant rather than pretending to be a person.",
       "<strong>We do not respond to phone enquiries after hours.</strong> Details taken overnight or at the weekend are actioned the next business day. We would rather say that than imply otherwise.",
       "<strong>After-hours emergency attendance</strong> is included for managed and SLA clients on a P1, and is not available ad hoc.",
-      "<strong>Callback within 4 business hours</strong> applies to every enquiry, from any channel.",
+      "<strong>The 4-hour response target is contracted and applies to managed and SLA clients only.</strong> Every other enquiry gets a best-effort response &mdash; usually the same business day, and generally within one business day. We would rather publish the distinction than let it be discovered.",
     ])}
   </div>
 </section>

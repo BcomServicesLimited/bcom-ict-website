@@ -32,10 +32,12 @@ BIZ = {
     # HOURS — corrected by Royce 2026-08-31. The site previously overstated this.
     # We are open normal business hours. The digital assistant answers the phone
     # around the clock, but phone enquiries are NOT responded to after hours and
-    # callbacks are processed in business hours only.
+    # callbacks are processed in business hours only. The 4-hour response target is
+    # CONTRACTED and applies ONLY to managed / SLA clients. Everyone else gets a
+    # best-effort response — never publish the 4-hour figure as a general promise.
     "hours":        "8:00am – 5:00pm, Monday to Friday (Brisbane time)",
     "hours_short":  "Mon–Fri, 8am–5pm",
-    "callback":     "within 4 business hours",
+    "callback":     "usually the same business day",
     "after_hours":  "After hours our digital assistant takes your details and we call back the next business day.",
     "on_call":      "After-hours on-call support is available to managed and SLA clients under their agreement.",
 

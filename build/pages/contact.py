@@ -5,7 +5,7 @@ LINES = [
     ("Phone", f'<a href="{BIZ["phone_href"]}">{BIZ["phone"]}</a>',
      "Our digital assistant answers any time; calls are returned in business hours. After hours our AI operator takes the details and escalates."),
     ("Email", f'<a href="mailto:{BIZ["email"]}">{BIZ["email"]}</a>',
-     "Callback within 4 business hours."),
+     "Managed and SLA clients have contracted response targets. Every other enquiry receives a best-effort response &mdash; usually the same business day, and generally within one business day."),
     ("Office", address_line(),
      "An actual Gold Coast office, not a registered address for an interstate company."),
     ("Hours", "Mon–Fri, 8am – 5pm",
@@ -18,9 +18,9 @@ lines = "".join(
 
 FAQS = [
     ("How do I contact bcom ICT?",
-     "Call 07 3041 8993, email support@bcomservices.com, or use the enquiry form on this page. Our digital assistant answers the phone at any hour, but calls are returned during business hours — 8:00am to 5:00pm, Monday to Friday, Brisbane time — within 4 business hours. The office is at 9 Ferny Avenue, Surfers Paradise QLD 4217."),
+     "Call 07 3041 8993, email support@bcomservices.com, or use the enquiry form on this page. Our digital assistant answers the phone at any hour, but calls are returned during business hours — 8:00am to 5:00pm, Monday to Friday, Brisbane time — usually the same business day. Managed and SLA clients have contracted response targets under their agreement; every other enquiry receives a best-effort response. The office is at 9 Ferny Avenue, Surfers Paradise QLD 4217."),
     ("What happens after I get in touch?",
-     "We call you back within 4 business hours to understand the problem. If it can be fixed remotely we'll often start there and then, at $198 + GST per hour with no call-out. If it needs someone on site, we book a visit — same day where we can — at a $100 + GST call-out plus the hourly rate, agreed before anyone gets in a car."),
+     "We call you back to understand the problem — usually the same business day, and generally within one business day. If it can be fixed remotely we'll often start there and then, at $198 + GST per hour with no call-out. If it needs someone on site, we book a visit — same day where we can — at a $100 + GST call-out plus the hourly rate, agreed before anyone gets in a car."),
     ("Is the first conversation free?",
      "Yes, and so is the systems review that usually follows it. You get a plain-English report on what's working and what isn't, and you keep it whether or not you engage us."),
     ("Do you charge to quote?",
@@ -35,11 +35,11 @@ PAGE = {
     "path": "/contact",
     "priority": "0.85",
     "title": "Contact bcom ICT — Gold Coast Business IT Support",
-    "description": "Contact bcom ICT on 07 3041 8993 or support@bcomservices.com. Callback within 4 business hours, Mon–Fri 8am–5pm. Office at 9 Ferny Avenue, Surfers Paradise.",
+    "description": "Contact bcom ICT on 07 3041 8993 or support@bcomservices.com. Callback usually the same business day, Mon–Fri 8am–5pm. Office at 9 Ferny Avenue, Surfers Paradise.",
     "hero_kind": "doc",
     "eyebrow": "Contact",
     "h1": "Talk to someone who can actually help",
-    "lede": "Mon–Fri 8am–5pm. Callback within 4 business hours. The first conversation and the systems review that follows are both free.",
+    "lede": "Mon–Fri 8am–5pm. Callback usually the same business day. The first conversation and the systems review that follows are both free.",
     "crumbs": [("Contact", "/contact")],
     "faqs": FAQS,
     "reviewed": "August 2026",
@@ -87,7 +87,7 @@ PAGE = {
         </div>
         <div><label for="message">What's going on?</label><textarea id="message" name="message" required></textarea></div>
         <button class="btn btn--primary btn--lg" type="submit">Send enquiry</button>
-        <p class="hint">We'll come back to you within 4 business hours during business hours — 8:00am to
+        <p class="hint">We&rsquo;ll come back to you during business hours, usually the same business day — 8:00am to
         5:00pm, Monday to Friday, Brisbane time. We don't share your details with anyone.</p>
       </form>
     </div>

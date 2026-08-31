@@ -5,7 +5,7 @@ ROUTES = [
     ("Call 07 3041 8993", BIZ["phone_href"],
      "Our digital assistant answers any time; calls are returned in business hours. The fastest route for anything urgent, and the only one to use if you think you've been breached."),
     ("Email support@bcomservices.com", "mailto:support@bcomservices.com",
-     "Best for things that aren't stopping anyone working. Callback within 4 business hours, every time."),
+     "Best for things that aren't stopping anyone working. Managed and SLA clients have contracted response targets; every other enquiry receives a best-effort response &mdash; usually the same business day, and generally within one business day."),
     ("Send an enquiry", "/contact",
      "The form on our contact page, if you'd rather write it down than explain it on the phone."),
 ]
@@ -19,13 +19,13 @@ PRIORITY = [
 
 FAQS = [
     ("How do I get IT support from bcom ICT?",
-     "Call 07 3041 8993 for anything urgent — business hours are 8am to 5pm Monday to Friday including weekends and public holidays. Email support@bcomservices.com for non-urgent issues, with a callback within 4 business hours. For remote support we'll send you a one-time link that lets a technician see your screen with your permission. Existing clients don't need to be managed clients to call."),
+     "Call 07 3041 8993 for anything urgent — business hours are 8am to 5pm Monday to Friday, Brisbane time. Outside those hours our digital assistant takes the details and the job is logged, including at weekends and on public holidays. Email support@bcomservices.com for non-urgent issues, with a best-effort callback — usually the same business day. For remote support we'll send you a one-time link that lets a technician see your screen with your permission. Existing clients don't need to be managed clients to call."),
     ("What happens when I call after hours?",
      "Our AI phone operator answers, takes the details, triages and escalates. It identifies itself as an AI rather than pretending to be a person. Work is actioned during business hours, except for managed and SLA clients on a critical fault, where after-hours attendance is included."),
     ("How does remote support work?",
      "bcom ICT uses Splashtop SOS. Call or email first so a technician is ready, then download the small SOS application from sos.splashtop.com and run it — it shows a 9-digit session code. Read that code to your technician and approve the connection. Nothing is permanently installed, you can watch the whole session on your own screen, and access ends when the session does."),
     ("Do I need to be a managed client to get help?",
-     "No. We take support calls from any business, including ones we've never worked with. Managed clients get contracted response targets and after-hours attendance; everyone else gets a callback within 4 business hours."),
+     "No. We take support calls from any business, including ones we've never worked with. Managed and SLA clients have contracted response targets and after-hours attendance under their agreement. Everyone else gets a best-effort response — usually the same business day, and generally within one business day."),
     ("What do you need from me when I report a problem?",
      "What's affected — one person or everyone. When it started, and whether anything changed just before. Whether there's a workaround. And any error message, word for word or as a photo. None of it is essential, but all of it saves time."),
     ("I think we've been hacked. What do I do right now?",
@@ -36,7 +36,7 @@ PAGE = {
     "path": "/support",
     "priority": "0.8",
     "title": "Get Support — bcom ICT Gold Coast IT Helpdesk",
-    "description": "How to get IT support from bcom ICT: call 07 3041 8993 (returned in business hours), email support@bcomservices.com, or request remote support. Callback within 4 business hours.",
+    "description": "How to get IT support from bcom ICT: call 07 3041 8993 (returned in business hours), email support@bcomservices.com, or request remote support. Callback usually the same business day.",
     "hero_kind": "doc",
     "eyebrow": "Support",
     "aside": f'''

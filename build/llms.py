@@ -64,7 +64,8 @@ Sitemap: {SITE}/sitemap.xml
 - A digital assistant answers the phone outside those hours and logs the job,
   but **{BIZ['brand']} does not respond to phone enquiries after hours** — calls are
   returned the next business day.
-- **Callback promise:** {BIZ['callback']}.
+- **Callback:** managed and SLA clients have contracted response targets; all other
+  enquiries receive a best-effort response, {BIZ['callback']}.
 - After-hours on-call support is available to managed and SLA clients under
   their agreement only. It is not available ad hoc.
 - The one continuously staffed service is the **24/7 Security Operations Centre**,

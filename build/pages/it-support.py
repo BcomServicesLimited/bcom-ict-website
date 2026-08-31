@@ -61,9 +61,9 @@ EXAMPLE_2 = example(
 
 FAQS = [
     ("Who provides IT support for businesses on the Gold Coast?",
-     "bcom ICT has provided IT support to Gold Coast businesses since 2011, from an office at 9 Ferny Avenue, Surfers Paradise. The team attends sites from Coomera down to Coolangatta, with remote support available to businesses anywhere in Australia. Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time, and callbacks come within 4 business hours. Call 07 3041 8993."),
+     "bcom ICT has provided IT support to Gold Coast businesses since 2011, from an office at 9 Ferny Avenue, Surfers Paradise. The team attends sites from Coomera down to Coolangatta, with remote support available to businesses anywhere in Australia. Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time, and callbacks usually come the same business day. Call 07 3041 8993."),
     ("How quickly can you get to us?",
-     "Same-day on-site attendance is usually available across the Gold Coast, and remote support often starts within minutes of your call. Managed IT clients have a contracted 4-hour response for critical faults plus after-hours emergency attendance. For everyone else we call back within 4 business hours and book the visit."),
+     "Same-day on-site attendance is usually available across the Gold Coast, and remote support often starts within minutes of your call. Managed IT clients have a contracted 4-hour response for critical faults plus after-hours emergency attendance. For everyone else the response is best effort — usually the same business day, and generally within one business day — and we book the visit then."),
     ("Do you charge a call-out fee?",
      "On-site work carries a $100 + GST call-out ($110 inc GST) plus $198 + GST per hour ($217.80 inc GST), so a first hour on site is $298 + GST. Remote support is $198 + GST per hour with no call-out, which is why we try remote first when the fault allows it. Rates are agreed before we start, not after. Full detail on our pricing page."),
     ("Can you help if we already have an IT provider?",
@@ -81,7 +81,7 @@ PAGE = {
     "priority": "0.9",
     "service": "Business IT Support Gold Coast",
     "title": "Business IT Support Gold Coast — Same-Day On-Site | bcom ICT",
-    "description": "Business IT support across the Gold Coast — same-day on-site visits and remote help for small and medium businesses. Callback within 4 business hours, Mon–Fri 8am–5pm. Call 07 3041 8993.",
+    "description": "Business IT support across the Gold Coast — same-day on-site visits and remote help for small and medium businesses. Callback usually the same business day, Mon–Fri 8am–5pm. Call 07 3041 8993.",
     "hero_img": "hero-bg-it-support.webp",
     "hero_alt": "A bcom ICT technician providing on-site IT support to staff in a Gold Coast business office",
     "h1": "Business IT support across the Gold Coast",
@@ -97,7 +97,7 @@ PAGE = {
     <p class="answer">bcom ICT provides IT support to businesses across the Gold Coast, with same-day on-site
     attendance and remote support for small and medium businesses. Based at 9 Ferny Avenue, Surfers Paradise,
     bcom ICT has supported Gold Coast businesses since 2011. Business hours are 8:00am to 5:00pm Monday to
-    Friday, Brisbane time, with callbacks within 4 business hours. Call 07 3041 8993.</p>
+    Friday, Brisbane time. Managed and SLA clients have contracted response targets; every other enquiry receives a best-effort response, usually the same business day. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">What we fix</span>
