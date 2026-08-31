@@ -975,19 +975,25 @@ A: You'll get a straight answer about what's wrong, what it costs to fix, and wh
 ## IT Support Broadbeach
 URL: https://www.bcomservices.com/it-support-broadbeach-gold-coast
 
-bcom ICT supports businesses in Broadbeach — retail, restaurants, venues and professional offices around Pacific Fair, the convention precinct and Oracle Boulevard. Broadbeach is roughly five minutes from bcom ICT's Surfers Paradise office. Call 07 3041 8993.
+bcom ICT provides IT support to businesses across Broadbeach — retail, restaurants, venues, accommodation and the professional offices around Pacific Fair, the convention precinct and Oracle Boulevard. Broadbeach is roughly five minutes from our Surfers Paradise office, so attendance is usually same-day and often much sooner. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Broadbeach?**
-A: Yes. bcom ICT is based at 9 Ferny Avenue, Surfers Paradise, roughly five minutes from Broadbeach, with same-day attendance usually available and Mon–Fri 8am–5pm including weekends and public holidays. Call 07 3041 8993.
+A: Yes. bcom ICT is based at 9 Ferny Avenue, Surfers Paradise — roughly five minutes from Broadbeach — so attendance is effectively always same-day and often much sooner. We cover Pacific Fair and the surrounding retail, the Oracle towers, the Surf Parade and Victoria Avenue dining strip, and the convention centre precinct. Call 07 3041 8993.
 
 **Q: Our WiFi struggles when we're busy. Can that be fixed?**
-A: Usually yes, and it's a design problem rather than an internet problem. One access point serving forty devices behaves nothing like one serving five. It needs surveying and properly specified equipment — adding a consumer extender generally makes it worse.
+A: Usually, and it is a capacity design problem rather than an internet one. One access point serving forty devices behaves nothing like one serving five, and Broadbeach's event and holiday peaks make that visible in a way a quiet Tuesday never will. It needs surveying and properly specified equipment — adding a consumer extender generally makes it worse.
 
 **Q: What happens to our payments if the internet drops?**
-A: With automatic 4G or 5G failover, card payments keep working and the changeover needs nobody's attention. Without it you stop trading. For a Broadbeach retailer or venue it usually pays for itself the first time it's used.
+A: With automatic 4G or 5G failover, card payments keep working and the changeover needs nobody's attention. Without it you stop trading. For a Broadbeach retailer or venue it typically pays for itself the first time it is used, and it is cheaper than a premium internet plan.
+
+**Q: Do we need to separate our payment terminals from the rest of the network?**
+A: Yes, and it is expected practice under PCI-DSS. Payment devices should sit on their own network segment that staff machines and guest WiFi cannot reach. It costs almost nothing to build in at installation and is genuinely awkward to retrofit later — but we do retrofit it, and it is one of the more common jobs here.
 
 **Q: Can you attend during trading hours?**
-A: Yes, and we'll work around service where it matters. Disruptive work gets scheduled outside trading. For anything urgent, business hours are 8am to 5pm Monday to Friday.
+A: Yes, and we work around service where it matters. Disruptive work is scheduled outside trading — early mornings, Mondays or genuinely quiet periods. For anything urgent, call during business hours and we will usually be there quickly given the distance.
+
+**Q: Can you support us across several Gold Coast sites?**
+A: Yes, and it is where the biggest gains are. Standardising equipment and configuration across locations makes support far faster and problems far rarer than each site running whatever it accumulated. Our largest engagement is a national retail chain supported as a single estate.
 
 
 ---
@@ -1283,19 +1289,25 @@ A: Same-day attendance is usually available across the Gold Coast, and many POS 
 ## IT Support Robina
 URL: https://www.bcomservices.com/it-support-robina-gold-coast
 
-bcom ICT supports businesses in Robina — corporate offices, professional services firms, financial services and medical practices concentrated around Robina Town Centre and the surrounding business precinct. Attendance is roughly twenty minutes from bcom ICT's Surfers Paradise office. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Robina — corporate offices, financial services, legal and accounting practices and medical suites concentrated around Robina Town Centre, the hospital precinct and the surrounding business parks. Attendance is roughly twenty minutes from our Surfers Paradise office. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Robina?**
-A: Yes. bcom ICT attends Robina businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. Many faults are resolved remotely within minutes. Call 07 3041 8993.
+A: Yes. bcom ICT attends Robina businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover Robina Town Centre, Robina Town Centre Drive, Laver Drive, Cheltenham Drive, Robina Quays and the hospital precinct. Most faults are resolved remotely first. Call 07 3041 8993.
 
 **Q: Can you answer supplier security questionnaires?**
-A: Yes, and Robina's corporate tenants ask more often than most. Our published service levels and trust centre set out response targets, framework alignment, credentials and insurance — most questionnaires can be answered directly from them.
+A: Yes, and Robina's corporate tenants send them more often than anywhere else on the coast. Our published service levels and trust centre set out response targets, framework alignment, credentials, insurance and data handling — most questionnaires can be answered directly from those. Where something is missing, we will write it.
 
 **Q: Do you work with AFS licensees in Robina?**
-A: Yes. Cyber resilience falls within the general obligations of a financial services licence, which means implemented controls plus documented evidence. See our ASIC cybersecurity compliance page.
+A: Yes. Cyber resilience falls within the general obligations of a financial services licence, which means implemented controls plus documented evidence and oversight of outsourced arrangements including your IT provider. We deliver gap assessment, remediation and an evidence pack — see our ASIC cybersecurity compliance page.
+
+**Q: Our business has grown and the IT hasn't kept up. Where do we start?**
+A: That is the most common pattern in Robina. Usually the network, specified when the firm was much smaller and never revisited — plus backups nobody has watched restore and multi-factor authentication on some accounts but not all. The initial review is free and you keep the written report either way.
+
+**Q: Do you support hybrid and remote working?**
+A: Yes, and it is standard for professional tenants here. The principle is that security travels with the device rather than living in the office — managed laptops with encryption and remote wipe, MFA everywhere, and document access through a controlled system rather than files copied to a desktop.
 
 **Q: How much does IT support cost in Robina?**
-A: $198 + GST per hour ($217.80 inc GST) plus a $100 + GST call-out for on-site attendance. Remote support has no call-out. Managed IT is quoted after a free review.
+A: $198 + GST per hour ($217.80 inc GST) plus a $100 + GST call-out ($110 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your business requirements and the services included, quoted after a free review.
 
 
 ---
@@ -1355,19 +1367,25 @@ A: Most of it, yes — and Southport's government-adjacent and professional clie
 ## IT Support Surfers Paradise
 URL: https://www.bcomservices.com/it-support-surfers-paradise-gold-coast
 
-bcom ICT is based at 9 Ferny Avenue, Surfers Paradise, and supports businesses throughout the suburb — accommodation, venues, hospitality, retail and professional offices in the high-rise towers. Attendance in Surfers Paradise is usually within the hour during business hours. Call 07 3041 8993.
+bcom ICT is based at 9 Ferny Avenue, Surfers Paradise, and supports businesses throughout the suburb — accommodation operators, venues, hospitality, retail and the professional offices in the Esplanade and Ferny Avenue towers. Attendance within Surfers Paradise is usually available within the hour during business hours. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Surfers Paradise?**
-A: Yes — bcom ICT's office is at 9 Ferny Avenue, Surfers Paradise. Attendance within the suburb is usually available within the hour during business hours, and business hours are 8am to 5pm Monday to Friday including weekends and public holidays. Call 07 3041 8993.
+A: Yes — bcom ICT's office is at 9 Ferny Avenue, Surfers Paradise, so this is our home suburb. Attendance within Surfers Paradise is usually available within the hour during business hours, which are 8:00am to 5:00pm Monday to Friday, Brisbane time. Call 07 3041 8993.
 
 **Q: How quickly can you get to a Surfers Paradise business?**
-A: Usually within the hour during business hours, since we're based in the suburb. Building access in high-rise towers occasionally adds time — service lift bookings and building management approvals — which we arrange in advance where the work needs it.
+A: Usually within the hour during business hours, since we are based in the suburb. Building access in the towers occasionally adds time — service lift bookings and building management approvals — which we arrange in advance where the work requires it rather than turning up and being turned away.
 
-**Q: Do you work with hotels and accommodation here?**
-A: Yes, and it's a substantial part of what we do in Surfers. Guest WiFi across whole properties, property management system connectivity, payment terminal segmentation and account management for seasonal staff.
+**Q: Do you work with hotels and accommodation operators here?**
+A: Yes, and it is a substantial part of what we do in Surfers. Guest WiFi across whole properties, property management system connectivity, payment terminal segmentation across outlets, function space connectivity and account management for seasonal staff. Guests review the WiFi, which makes coverage a commercial decision rather than a technical one.
+
+**Q: Our guest WiFi works in the lobby but not the rooms. Why?**
+A: Almost always coverage design rather than the internet service. Concrete floors, tiled bathrooms, lift shafts and long corridors block signal, and equipment placed on a guess will not reach. It needs a survey and properly positioned access points — adding range extenders generally makes roaming worse rather than better.
+
+**Q: Can you work in the older Esplanade and Ferny Avenue towers?**
+A: Regularly. Many were built before anyone was running PoE access points, cameras or IP phones, so riser space is tight and existing cabling is often the wrong category or length. We test what is actually installed rather than trusting a floor plan, and arrange building access in advance.
 
 **Q: What does IT support cost in Surfers Paradise?**
-A: $198 + GST per hour ($217.80 inc GST), plus a $100 + GST call-out for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee quoted after a free review.
+A: $198 + GST per hour ($217.80 inc GST) plus a $100 + GST call-out ($110 inc GST) for on-site attendance. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your requirements and the services included, quoted after a free review.
 
 
 ---
@@ -1401,19 +1419,25 @@ A: Depends on what a lost day costs. Plenty of trades businesses are well served
 ## IT Support Varsity Lakes
 URL: https://www.bcomservices.com/it-support-varsity-lakes-gold-coast
 
-bcom ICT supports businesses in Varsity Lakes — professional services firms, medical practices and technology businesses in the business park precinct near Bond University. Attendance is roughly twenty minutes from bcom ICT's Surfers Paradise office. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Varsity Lakes — professional services firms, medical and allied health practices, and technology and consulting businesses across the business park precinct and the Bond University corridor. Attendance is roughly twenty minutes from our Surfers Paradise office. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Varsity Lakes?**
-A: Yes. bcom ICT attends Varsity Lakes businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. Managed, cloud and cybersecurity work is delivered remotely. Call 07 3041 8993.
+A: Yes. bcom ICT attends Varsity Lakes businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover the business park precinct through Varsity Parade and Lakeview Boulevard, Scottsdale Drive, the Bond University corridor and Varsity Central. Call 07 3041 8993.
 
 **Q: We've grown and our IT hasn't kept up. Where do we start?**
-A: With a review of what you're actually running — usually a consumer router doing a job it was never specified for, backups nobody has tested, and multi-factor authentication on some accounts but not others. The review is free and you keep the report.
+A: That is the most common situation in Varsity Lakes. Usually a consumer-grade router doing a job it was never specified for behind a much larger business, plus backups nobody has tested and multi-factor authentication on some accounts but not others. The initial review is free and you keep the written report.
 
 **Q: Can you support staff working from home?**
-A: Yes, and it's routine here. Remote workers get the same support and the same security settings as anyone in the office — the security travels with the device rather than sitting in the building.
+A: Yes, and it is standard here. The principle is that security travels with the device rather than living in the office — managed laptops with encryption and remote wipe, MFA on everything, and document access through a controlled system rather than files copied to a desktop.
+
+**Q: A client is asking how we protect their information. What do we send them?**
+A: A documented position rather than an assurance — what controls you operate, how access is managed, where data is held and what happens in an incident. If none of that is written down, a security health check produces most of it and is the fastest route to being able to answer.
+
+**Q: Do you work with medical practices here?**
+A: Yes, through the precinct and along the corridor toward the Robina hospitals. Health service providers are covered by the Privacy Act regardless of annual turnover, which changes what a practice's IT has to do. Our attending technicians hold national police checks and Queensland Blue Cards where required.
 
 **Q: Do you support businesses that only need occasional help?**
-A: Yes. Ad-hoc support is $198 + GST per hour with no ongoing commitment. We'll tell you honestly if a monthly arrangement isn't worth it for you yet.
+A: Yes. Ad-hoc support is $198 + GST per hour with no ongoing commitment, plus a $100 + GST call-out for on-site work. We will tell you honestly if a monthly managed arrangement is not worth it for you yet.
 
 
 ---
