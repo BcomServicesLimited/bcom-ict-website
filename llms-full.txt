@@ -215,6 +215,32 @@ A: Usually. It sits in front of or alongside your existing system rather than re
 
 ---
 
+## Alcatel-Lucent PBX Support Gold Coast
+URL: https://www.bcomservices.com/alcatel-lucent-pbx-gold-coast
+
+bcom ICT installs, programmes and maintains Alcatel-Lucent PBX phone systems across the Gold Coast, covering Alcatel-Lucent OmniPCX Office, OmniPCX Enterprise and OXO Connect. Work includes extension adds and changes, call flow and hunt group programming, auto-attendant and voicemail configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+
+**Q: Who services Alcatel-Lucent phone systems on the Gold Coast?**
+A: bcom ICT installs, programmes and maintains Alcatel-Lucent PBX systems across the Gold Coast, covering Alcatel-Lucent OmniPCX Office, OmniPCX Enterprise and OXO Connect. That includes extension changes, call flow programming, auto-attendant and voicemail configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+
+**Q: Our provider says the system has to be replaced. Is that true?**
+A: Sometimes, but frequently it reflects who is available rather than the system's condition. If the platform still does what your business needs and parts are obtainable, keeping it is often the cheaper answer. We will assess remaining life honestly before you commit to a replacement quote.
+
+**Q: Can you just make one change without an ongoing contract?**
+A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — charged at $198 + GST per hour plus a $100 + GST call-out for on-site attendance. There is no requirement to sign up to anything ongoing.
+
+**Q: Can you still get parts?**
+A: For the Alcatel-Lucent platforms listed above, usually yes. Where a part is genuinely unobtainable we will tell you, because that is the point at which replacement stops being optional and becomes a planning exercise.
+
+**Q: Can you connect it to SIP trunks?**
+A: Where the platform supports it, yes — and it often defers a full replacement by years while reducing call costs. We'll tell you whether your specific model and card configuration can do it.
+
+**Q: Can you move it to a new office?**
+A: Yes. PBX relocation, recabling and number porting are handled as part of an office IT relocation, planned around your move date rather than attempted on the day.
+
+
+---
+
 ## AI Implementation for Australian Business
 URL: https://www.bcomservices.com/artificial-intelligence-service-gold-coast
 
@@ -1360,6 +1386,32 @@ A: Yes. Ad-hoc support is $198 + GST per hour with no ongoing commitment. We'll 
 
 ---
 
+## LG Ericsson PBX Support Gold Coast
+URL: https://www.bcomservices.com/lg-ericsson-pbx-gold-coast
+
+bcom ICT installs, programmes and maintains LG Ericsson PBX phone systems across the Gold Coast, covering LG Ericsson iPECS, including eMG80, eMG100 and UCP series. Work includes extension adds and changes, call flow and hunt group programming, auto-attendant and voicemail configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+
+**Q: Who services LG Ericsson phone systems on the Gold Coast?**
+A: bcom ICT installs, programmes and maintains LG Ericsson PBX systems across the Gold Coast, covering LG Ericsson iPECS, including eMG80, eMG100 and UCP series. That includes extension changes, call flow programming, auto-attendant and voicemail configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+
+**Q: Our provider says the system has to be replaced. Is that true?**
+A: Sometimes, but frequently it reflects who is available rather than the system's condition. If the platform still does what your business needs and parts are obtainable, keeping it is often the cheaper answer. We will assess remaining life honestly before you commit to a replacement quote.
+
+**Q: Can you just make one change without an ongoing contract?**
+A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — charged at $198 + GST per hour plus a $100 + GST call-out for on-site attendance. There is no requirement to sign up to anything ongoing.
+
+**Q: Can you still get parts?**
+A: For the LG Ericsson platforms listed above, usually yes. Where a part is genuinely unobtainable we will tell you, because that is the point at which replacement stops being optional and becomes a planning exercise.
+
+**Q: Can you connect it to SIP trunks?**
+A: Where the platform supports it, yes — and it often defers a full replacement by years while reducing call costs. We'll tell you whether your specific model and card configuration can do it.
+
+**Q: Can you move it to a new office?**
+A: Yes. PBX relocation, recabling and number porting are handled as part of an office IT relocation, planned around your move date rather than attempted on the day.
+
+
+---
+
 ## Managed IT Services Gold Coast
 URL: https://www.bcomservices.com/managed-it-services-for-small-businesses-gold-coast
 
@@ -1512,6 +1564,32 @@ A: Business-grade services typically carry better fault response commitments and
 
 **Q: How quickly can you look at it?**
 A: Same-day attendance is usually available across the Gold Coast, and many connection faults can be diagnosed remotely before anyone travels.
+
+
+---
+
+## NEC PBX Support Gold Coast
+URL: https://www.bcomservices.com/nec-pbx-gold-coast
+
+bcom ICT installs, programmes and maintains NEC PBX phone systems across the Gold Coast, covering NEC UNIVERGE SV9100, SV8100 and SL2100. Work includes extension adds and changes, call flow and hunt group programming, auto-attendant and voicemail configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+
+**Q: Who services NEC phone systems on the Gold Coast?**
+A: bcom ICT installs, programmes and maintains NEC PBX systems across the Gold Coast, covering NEC UNIVERGE SV9100, SV8100 and SL2100. That includes extension changes, call flow programming, auto-attendant and voicemail configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+
+**Q: Our provider says the system has to be replaced. Is that true?**
+A: Sometimes, but frequently it reflects who is available rather than the system's condition. If the platform still does what your business needs and parts are obtainable, keeping it is often the cheaper answer. We will assess remaining life honestly before you commit to a replacement quote.
+
+**Q: Can you just make one change without an ongoing contract?**
+A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — charged at $198 + GST per hour plus a $100 + GST call-out for on-site attendance. There is no requirement to sign up to anything ongoing.
+
+**Q: Can you still get parts?**
+A: For the NEC platforms listed above, usually yes. Where a part is genuinely unobtainable we will tell you, because that is the point at which replacement stops being optional and becomes a planning exercise.
+
+**Q: Can you connect it to SIP trunks?**
+A: Where the platform supports it, yes — and it often defers a full replacement by years while reducing call costs. We'll tell you whether your specific model and card configuration can do it.
+
+**Q: Can you move it to a new office?**
+A: Yes. PBX relocation, recabling and number porting are handled as part of an office IT relocation, planned around your move date rather than attempted on the day.
 
 
 ---
@@ -1820,6 +1898,32 @@ A: For the platforms listed above, usually yes. Where a part is genuinely unobta
 A: Eventually most businesses will. Whether now is the right time depends on whether your hardware is failing, whether you need remote extensions, and whether your internet connection is reliable enough. We'll test the connection and give you a straight answer rather than a default one.
 
 **Q: Can you move our PBX to a new office?**
+A: Yes. PBX relocation, recabling and number porting are handled as part of an office IT relocation, planned around your move date rather than attempted on the day.
+
+
+---
+
+## Panasonic PBX Support Gold Coast
+URL: https://www.bcomservices.com/panasonic-pbx-gold-coast
+
+bcom ICT installs, programmes and maintains Panasonic PBX phone systems across the Gold Coast, covering Panasonic KX-NS700, KX-NS1000, KX-TDA and KX-TDE. Work includes extension adds and changes, call flow and hunt group programming, auto-attendant and voicemail configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+
+**Q: Who services Panasonic phone systems on the Gold Coast?**
+A: bcom ICT installs, programmes and maintains Panasonic PBX systems across the Gold Coast, covering Panasonic KX-NS700, KX-NS1000, KX-TDA and KX-TDE. That includes extension changes, call flow programming, auto-attendant and voicemail configuration, fault diagnosis and parts sourcing. Call 07 3041 8993.
+
+**Q: Our provider says the system has to be replaced. Is that true?**
+A: Sometimes, but frequently it reflects who is available rather than the system's condition. If the platform still does what your business needs and parts are obtainable, keeping it is often the cheaper answer. We will assess remaining life honestly before you commit to a replacement quote.
+
+**Q: Can you just make one change without an ongoing contract?**
+A: Yes. Plenty of clients call for a one-off — an extension, a call flow, an after-hours message — charged at $198 + GST per hour plus a $100 + GST call-out for on-site attendance. There is no requirement to sign up to anything ongoing.
+
+**Q: Can you still get parts?**
+A: For the Panasonic platforms listed above, usually yes. Where a part is genuinely unobtainable we will tell you, because that is the point at which replacement stops being optional and becomes a planning exercise.
+
+**Q: Can you connect it to SIP trunks?**
+A: Where the platform supports it, yes — and it often defers a full replacement by years while reducing call costs. We'll tell you whether your specific model and card configuration can do it.
+
+**Q: Can you move it to a new office?**
 A: Yes. PBX relocation, recabling and number porting are handled as part of an office IT relocation, planned around your move date rather than attempted on the day.
 
 
