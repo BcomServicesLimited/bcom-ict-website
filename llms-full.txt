@@ -2195,31 +2195,28 @@ A: No. We take support calls from any business. Business hours are 8:00am to 5:0
 ## Retail Store Technology Fit-Out
 URL: https://www.bcomservices.com/retail-store-technology-fitout-case-study
 
-bcom ICT delivered the technology fit-out for two new retail stores, at Pacific Fair on the Gold Coast and Chermside in Brisbane — a Ubiquiti UniFi network, business WiFi, UniFi Protect CCTV, a wall-mounted data cabinet, primary and backup internet, in-store audio, and the network foundation for RFID stock scanning, Shopify point of sale and traffic counting. Both sites took identical hardware and configuration. Call 07 3041 8993.
+bcom ICT delivered the complete technology fit-out for two new retail stores, at Pacific Fair on the Gold Coast and Chermside in Brisbane — a Ubiquiti UniFi network, business WiFi, UniFi Protect CCTV, a wall-mounted data cabinet, primary and backup internet with telco liaison, in-store audio, RFID stock scanning, Shopify point of sale and traffic analytics. Both stores took identical hardware and configuration, and both opened on schedule. Call 07 3041 8993.
 
-**Q: Who does the cabling on a retail store fit-out?**
-A: On this project the electrician did, and that is the usual arrangement. bcom ICT supplied the network, CCTV and audio hardware and did the configuration and commissioning; the electrician installed, terminated, labelled and tested every cable run and mounted the devices. Fixed cabling connected to the telecommunications network is licensed work in Australia, and bcom ICT engages ACMA registered cabling contractors where it falls to us rather than a builder's trades.
-
-**Q: What does an IT fit-out for a new retail store actually include?**
-A: For these two stores: the network and WiFi, CCTV, a wall-mounted data cabinet, a business internet service with a backup connection, in-store audio, and the network side of RFID stock scanning, Shopify point of sale and traffic counting. bcom ICT supplied the hardware, configured and commissioned it, and coordinated the parts other vendors owned so the store opened working.
-
-**Q: Can you work alongside our builder and shopfitter?**
-A: Yes, and the coordination is most of the job. Six parties worked in each of these tenancies — bcom ICT, the builder, the electrician, the RFID vendor, the point-of-sale vendor and the analytics vendor. Before anyone started we wrote a scope and responsibility alignment document naming who owned each item, including the things we were explicitly not responsible for. That document, rather than any piece of hardware, is what kept both stores on schedule.
-
-**Q: Who is responsible if the RFID or POS system doesn't work?**
-A: Their vendors, and we say so in writing before the project starts. bcom ICT installed the RFID hardware and gave it a working network; configuration, integration and sign-off stayed with the client's RFID vendor. Point of sale and traffic analytics were the same. Taking responsibility for a system we do not control would be a promise we could not keep.
-
-**Q: Do you provide support on opening day?**
-A: On these stores, yes — booked in advance as a defined block of on-site time, alongside a separate contingency allowance for the installation itself. A new store opening is the one day where a fault costs the most and nobody has time to explain it, so it is worth having someone there rather than reachable.
-
-**Q: Can you repeat the same build across multiple stores?**
-A: That is what the two stores were built to prove. Both sites took the same hardware and the same configuration, so the second was a repeat of a known build rather than a fresh design. That repeatability is what makes a multi-site rollout predictable in cost and timeline.
+**Q: Can bcom ICT deliver a complete retail store fit-out?**
+A: Yes. For these two stores bcom ICT supplied and delivered the entire technology environment — a Ubiquiti UniFi network and WiFi, UniFi Protect CCTV, a wall-mounted data cabinet, primary and backup internet with telco liaison, in-store audio, RFID stock scanning, Shopify point of sale and traffic analytics — configured, commissioned and supported through opening day. One supplier, one point of accountability, across two states.
 
 **Q: What hardware did you use in the stores?**
-A: The network, WiFi and CCTV were all Ubiquiti UniFi, including UniFi Protect for the cameras, managed from a single controller. The internet gateway was a DrayTek VDSL router handling a primary and a backup service. In-store audio used a Yamaha four-zone streaming amplifier with Monitor Audio in-ceiling speakers, controlled from a tablet. Point of sale was Shopify, supplied and run by the client. Both stores took the same hardware and the same configuration.
+A: The network, WiFi and CCTV were all Ubiquiti UniFi, including UniFi Protect for the cameras, managed from a single controller. The internet gateway was a DrayTek VDSL router running a primary and a backup service. In-store audio used a Yamaha four-zone streaming amplifier with Monitor Audio in-ceiling speakers, controlled from a tablet. Point of sale was Shopify. Both stores took the same hardware and the same configuration.
 
-**Q: How long does the hardware take to arrive?**
-A: Procurement ran three to four weeks from the point the timeline was confirmed. On a fit-out with a fixed opening date, hardware lead time is one of the few things that cannot be recovered by working harder later, so it is ordered against the construction programme rather than the install date.
+**Q: Can you work alongside our builder, shopfitter and other vendors?**
+A: It is most of what makes a fit-out succeed. On these stores bcom ICT worked alongside the builder, the electrician and three separate technology vendors. We set out the scope for every party before work started and coordinated the sequence, so each trade arrived to find what it needed already in place.
+
+**Q: Can you roll the same build out across multiple stores?**
+A: Yes, and it is what these two stores were built to prove. Both took identical hardware and configuration, so the second store was a repeat of a known build rather than a fresh design. Standard hardware, one controller and a scope document reissued per site is what makes a multi-site rollout predictable in both cost and timeline.
+
+**Q: Do you provide support on opening day?**
+A: Yes. On-site technical support was booked in advance for the first trading day as a defined block of hours, with a separate contingency allowance for the installation. Opening day is when a fault costs the most, and it is worth having someone in the building rather than reachable by phone.
+
+**Q: Do you handle the internet connection and the telco?**
+A: Yes. bcom ICT coordinated the ISP deployment for both a primary and a backup service at each store and dealt with the telecommunications provider directly, so the client did not have to project-manage a carrier alongside a fit-out.
+
+**Q: Do you work outside the Gold Coast?**
+A: Yes. These stores were at Pacific Fair on the Gold Coast and Chermside in Brisbane, delivered to the same standard with different builders and different trades in each state. Remote and managed support extends Australia-wide.
 
 
 ---

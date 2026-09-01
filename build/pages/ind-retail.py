@@ -154,8 +154,8 @@ PAGE = {
     <div class="section-head">
       <span class="eyebrow">Case study</span>
       <h2>Two store fit-outs, start to finish</h2>
-      <p>Network, CCTV, WiFi, audio and connectivity for new stores at Pacific Fair and Chermside &mdash; and the
-      scope document that kept six parties on the same schedule.
+      <p>The complete technology fit-out for new stores at Pacific Fair and Chermside &mdash; UniFi network and
+      CCTV, audio, connectivity, RFID and Shopify POS, with bcom ICT on site for opening day.
       <a href="/retail-store-technology-fitout-case-study">Read it</a>.</p>
     </div>
   </div>
