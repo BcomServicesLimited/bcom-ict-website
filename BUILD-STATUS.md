@@ -231,17 +231,19 @@ on each pass. **432 symptom blocks and 172 worked examples, no duplicates.**
 
 ## Blocked / waiting on Royce
 
+*Resolved and removed Sept 2026: GBP prices and descriptions (Royce updated the profile);
+the $100 call-out confirmed ex-GST by the $252 arithmetic; both Cloudflare items, which
+were pre-cutover and are verified live — AI crawlers return 200 and our own robots.txt
+serves.*
+
+
 | Item | Needed for |
 |---|---|
 | **Search Console export** — 12 months, page-level, impressions + clicks. *Said "see attached" but no file came through.* | Chunk 11 — decides which of the 11 WiFi brand pages get consolidated vs kept |
 | **Legal review of `/privacy-policy` and `/terms-and-conditions`** — both are reasonable and Australian-law aware (APPs, ACL consumer guarantees explicitly preserved) but have not been reviewed by a lawyer | Before go-live |
 | **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
-| **Is the $100 call-out ex-GST?** Assumed yes for consistency with the hourly rate. Site currently says "$100 + GST ($110 inc GST)" — correct if it is GST-inclusive | `/pricing` and 5 other pages |
-| **GBP from-prices — resolved (Aug 2026).** $252 inc GST is current: a simple one-hour on-site job booked through the online calendar. **$182 and $310 are old rates** and must be removed from the profile — Royce confirmed current standard rates are $198 + GST/hr with a $100 call-out. Nothing on the site ever carried $182 or $310; the stale figures exist only in GBP. See the GBP price table below | **GBP — action outstanding** |
 | **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
 | Permission to name the national retail chain client | `/case-studies` — written accurately but unnamed, with the reason stated in the FAQ |
-| Cloudflare: confirm **Block AI bots = OFF** and managed robots.txt disabled on the zone | Before go-live — silently 403s every AI crawler |
-| Cloudflare Access on the `.pages.dev` staging domain | Before the site is publicly reachable |
 
 ---
 
