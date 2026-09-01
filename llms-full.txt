@@ -2192,6 +2192,35 @@ A: No. We take support calls from any business. Business hours are 8:00am to 5:0
 
 ---
 
+## Retail Store Technology Fit-Out
+URL: https://www.bcomservices.com/retail-store-technology-fitout-case-study
+
+bcom ICT delivered the technology fit-out for two new retail stores, at Pacific Fair on the Gold Coast and Chermside in Brisbane — network, business WiFi, CCTV, a wall-mounted data cabinet, primary and backup internet, in-store audio, and the network foundation for RFID stock scanning, Shopify point of sale and traffic counting. Both sites took identical hardware and configuration. Call 07 3041 8993.
+
+**Q: Who does the cabling on a retail store fit-out?**
+A: On this project the electrician did, and that is the usual arrangement. bcom ICT supplied the network, CCTV and audio hardware and did the configuration and commissioning; the electrician installed, terminated, labelled and tested every cable run and mounted the devices. Fixed cabling connected to the telecommunications network is licensed work in Australia, and bcom ICT engages ACMA registered cabling contractors where it falls to us rather than a builder's trades.
+
+**Q: What does an IT fit-out for a new retail store actually include?**
+A: For these two stores: the network and WiFi, CCTV, a wall-mounted data cabinet, a business internet service with a backup connection, in-store audio, and the network side of RFID stock scanning, Shopify point of sale and traffic counting. bcom ICT supplied the hardware, configured and commissioned it, and coordinated the parts other vendors owned so the store opened working.
+
+**Q: Can you work alongside our builder and shopfitter?**
+A: Yes, and the coordination is most of the job. Six parties worked in each of these tenancies — bcom ICT, the builder, the electrician, the RFID vendor, the point-of-sale vendor and the analytics vendor. Before anyone started we wrote a scope and responsibility alignment document naming who owned each item, including the things we were explicitly not responsible for. That document, rather than any piece of hardware, is what kept both stores on schedule.
+
+**Q: Who is responsible if the RFID or POS system doesn't work?**
+A: Their vendors, and we say so in writing before the project starts. bcom ICT installed the RFID hardware and gave it a working network; configuration, integration and sign-off stayed with the client's RFID vendor. Point of sale and traffic analytics were the same. Taking responsibility for a system we do not control would be a promise we could not keep.
+
+**Q: Do you provide support on opening day?**
+A: On these stores, yes — booked in advance as a defined block of on-site time, alongside a separate contingency allowance for the installation itself. A new store opening is the one day where a fault costs the most and nobody has time to explain it, so it is worth having someone there rather than reachable.
+
+**Q: Can you repeat the same build across multiple stores?**
+A: That is what the two stores were built to prove. Both sites took the same hardware and the same configuration, so the second was a repeat of a known build rather than a fresh design. That repeatability is what makes a multi-site rollout predictable in cost and timeline.
+
+**Q: How long does the hardware take to arrive?**
+A: Procurement ran three to four weeks from the point the timeline was confirmed. On a fit-out with a fixed opening date, hardware lead time is one of the few things that cannot be recovered by working harder later, so it is ordered against the construction programme rather than the install date.
+
+
+---
+
 ## Reviews
 URL: https://www.bcomservices.com/reviews
 

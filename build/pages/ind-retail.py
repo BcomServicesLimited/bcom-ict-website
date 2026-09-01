@@ -148,6 +148,19 @@ PAGE = {
   </div>
 </section>
 '''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Case study</span>
+      <h2>Two store fit-outs, start to finish</h2>
+      <p>Network, CCTV, WiFi, audio and connectivity for new stores at Pacific Fair and Chermside &mdash; and the
+      scope document that kept six parties on the same schedule.
+      <a href="/retail-store-technology-fitout-case-study">Read it</a>.</p>
+    </div>
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Business NBN & Internet', '/nbn-internet-support-gold-coast'),
