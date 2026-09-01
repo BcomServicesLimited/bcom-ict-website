@@ -184,6 +184,19 @@ PAGE = {
   </div>
 </section>
 '''
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Case study</span>
+      <h2>Two retail stores, one UniFi stack</h2>
+      <p>Network, WiFi and UniFi Protect CCTV on a single controller across new stores at Pacific Fair and
+      Chermside &mdash; and why the second store was a copy rather than a fresh design.
+      <a href="/retail-store-technology-fitout-case-study">Read the case study</a>.</p>
+    </div>
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Aruba Instant On WiFi', '/aruba-instant-on-wifi-gold-coast'),

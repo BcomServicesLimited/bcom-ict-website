@@ -5,10 +5,10 @@ from layout import MARK, cta, faq_block, cards, ticks, steps, related, trust_not
 # commercial information and we have no permission to publish it.
 
 OURS = [
-    "Supplied all network and CCTV equipment, and the wall-mounted data cabinet delivered fully assembled",
+    "Supplied the whole network and CCTV stack as <a href=\"/ubiquiti-unifi-wifi-gold-coast\">Ubiquiti UniFi</a> &mdash; access points, switching and UniFi Protect cameras on one controller &mdash; plus the wall-mounted data cabinet, delivered fully assembled",
     "Set the positions for every access point and camera, so coverage was designed rather than discovered",
     "Installed and configured everything inside the cabinet, and patched every device from panel to switch",
-    "Configured the network, the WiFi and the CCTV, then tested and commissioned all of it",
+    "Configured the network, the WiFi and UniFi Protect, then tested and commissioned all of it",
     "Coordinated the ISP for both a primary and a backup internet service, and dealt with the telco directly",
     "Supplied and configured the DrayTek VDSL router as the gateway",
     "Rack-mounted the Yamaha four-zone streaming amplifier and connected the Monitor Audio in-ceiling speakers",
@@ -45,6 +45,8 @@ FAQS = [
      "On these stores, yes — booked in advance as a defined block of on-site time, alongside a separate contingency allowance for the installation itself. A new store opening is the one day where a fault costs the most and nobody has time to explain it, so it is worth having someone there rather than reachable."),
     ("Can you repeat the same build across multiple stores?",
      "That is what the two stores were built to prove. Both sites took the same hardware and the same configuration, so the second was a repeat of a known build rather than a fresh design. That repeatability is what makes a multi-site rollout predictable in cost and timeline."),
+    ("What hardware did you use in the stores?",
+     "The network, WiFi and CCTV were all Ubiquiti UniFi, including UniFi Protect for the cameras, managed from a single controller. The internet gateway was a DrayTek VDSL router handling a primary and a backup service. In-store audio used a Yamaha four-zone streaming amplifier with Monitor Audio in-ceiling speakers, controlled from a tablet. Point of sale was Shopify, supplied and run by the client. Both stores took the same hardware and the same configuration."),
     ("How long does the hardware take to arrive?",
      "Procurement ran three to four weeks from the point the timeline was confirmed. On a fit-out with a fixed opening date, hardware lead time is one of the few things that cannot be recovered by working harder later, so it is ordered against the construction programme rather than the install date."),
 ]
@@ -65,8 +67,8 @@ PAGE = {
 <section class="section section--tight">
   <div class="wrap">
     <p class="answer">bcom ICT delivered the technology fit-out for two new retail stores, at Pacific Fair on
-    the Gold Coast and Chermside in Brisbane — network, business WiFi, CCTV, a wall-mounted data cabinet,
-    primary and backup internet, in-store audio, and the network foundation for RFID stock scanning, Shopify
+    the Gold Coast and Chermside in Brisbane — a Ubiquiti UniFi network, business WiFi, UniFi Protect CCTV, a wall-mounted data
+    cabinet, primary and backup internet, in-store audio, and the network foundation for RFID stock scanning, Shopify
     point of sale and traffic counting. Both sites took identical hardware and configuration. Call
     07 3041 8993.</p>
 
@@ -111,6 +113,23 @@ PAGE = {
 
 <section class="section section--tight section--mist">
   <div class="wrap">
+    <h2>One stack, deliberately</h2>
+    <p style="margin-top:16px">Network, WiFi and CCTV were all
+    <a href="/ubiquiti-unifi-wifi-gold-coast">Ubiquiti UniFi</a>, managed from a single controller rather than
+    three separate systems with three separate logins. On a store that matters more than it does in an office:
+    the people who work there are retail staff, not IT staff, and the person who needs to check a camera at
+    nine on a Saturday should not have to learn a second platform to do it.</p>
+    <p style="margin-top:16px">It also makes the second store cheap. One vendor, one controller and one
+    configuration means the Chermside build was a copy of the Pacific Fair build rather than a fresh design
+    &mdash; and it means a fault at either site looks the same to whoever picks it up.</p>
+    <p style="margin-top:16px">The gateway is the deliberate exception. A DrayTek VDSL router handles the
+    primary and backup internet services, because the connection type at the site called for it and matching
+    the badge on the box was never the point.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">The readiness gate</span>
       <h2>Five things that had to be true before we attended</h2>
@@ -128,7 +147,7 @@ PAGE = {
     <h2>Then the scope grew</h2>
     <p style="margin-top:16px">The original document put RFID configuration, point of sale and traffic
     analytics outside our scope, with their vendors. During the build the client asked us to take on the
-    configuration and testing of the RFID scanners and ticket printers, the Shopify point-of-sale setup, and
+    configuration and testing of the RFID scanners and ticket printers, collection, setup and testing of the Shopify point-of-sale equipment, and
     the commissioning of the traffic counting system &mdash; each quoted and approved as a variation before any
     work started, alongside additional hardware including a change-room speaker, a router, a printer and the
     audio control tablet.</p>
@@ -163,6 +182,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ("Ubiquiti UniFi WiFi & Protect", "/ubiquiti-unifi-wifi-gold-coast"),
   ("IT Support for Retail", "/it-support-retail-gold-coast"),
   ("Business WiFi Installation", "/business-wifi-gold-coast"),
   ("Office Network Cabling", "/network-cabling-for-offices-gold-coast"),
