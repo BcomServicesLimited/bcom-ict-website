@@ -174,6 +174,8 @@ PAGE = {
         ('Business NBN & Internet', '/nbn-internet-support-gold-coast'),
         ('Phone Line Installation & Cabling', '/phone-line-installation-cabling-gold-coast'),
         ('Business WiFi', '/business-wifi-gold-coast'),
-        ('Managed IT Services', '/managed-it-services-for-small-businesses-gold-coast')])
+        ('Managed IT Services', '/managed-it-services-for-small-businesses-gold-coast'),
+        ('Panasonic PBX', '/panasonic-pbx-gold-coast'),
+        ('NEC PBX', '/nec-pbx-gold-coast')])
             + cta('Thinking about moving your phones?', "We'll test your connection first and tell you honestly whether it's ready — that's the part that decides how this goes."),
 }

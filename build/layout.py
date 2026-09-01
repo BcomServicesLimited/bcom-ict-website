@@ -463,7 +463,13 @@ def nearby(current_path, limit=5):
     """Cross-link the suburb pages to each other. A local page with no links to
     its neighbours is an orphan; the mesh is what carries authority between them."""
     from site_data import SUBURB_PAGES
-    others = [(n, h) for n, h in SUBURB_PAGES if h != current_path][:limit]
+    # Rotate through the list from the current page rather than always taking the
+    # first five. Slicing the top of the list gave every suburb page the same five
+    # links, which left the last five in the list with zero inbound and made them
+    # orphans — the exact failure this function exists to prevent.
+    n = len(SUBURB_PAGES)
+    idx = next((i for i, (_, h) in enumerate(SUBURB_PAGES) if h == current_path), 0)
+    others = [SUBURB_PAGES[(idx + k) % n] for k in range(1, min(limit, n - 1) + 1)]
     li = "".join(f'<li>{MARK}<a href="{h}">IT support in {n}</a></li>' for n, h in others)
     return f'''<section class="section section--tight section--mist">
   <div class="wrap">

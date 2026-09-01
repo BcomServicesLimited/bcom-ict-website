@@ -196,6 +196,10 @@ PAGE = {
   ("Business NBN & Internet Support", "/nbn-internet-support-gold-coast"),
   ("Office Network Cabling", "/network-cabling-for-offices-gold-coast"),
   ("Business WiFi & Networks", "/business-wifi-gold-coast"),
+  ("Panasonic PBX", "/panasonic-pbx-gold-coast"),
+  ("NEC PBX", "/nec-pbx-gold-coast"),
+  ("LG Ericsson PBX", "/lg-ericsson-pbx-gold-coast"),
+  ("Alcatel-Lucent PBX", "/alcatel-lucent-pbx-gold-coast"),
 ])}
 
 {cta("Talk to us about your phones",

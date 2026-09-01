@@ -166,6 +166,18 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
+            + f'''
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Brands</span>
+      <h2>The platforms we actually program</h2>
+      <p>Each of these has its own page covering the faults specific to that estate, because they do not fail in the same ways.</p>
+    </div>
+    <div class="grid grid--2"><div class="card"><h3><a href="/panasonic-pbx-gold-coast">Panasonic PBX</a></h3></div><div class="card"><h3><a href="/nec-pbx-gold-coast">NEC PBX</a></h3></div><div class="card"><h3><a href="/lg-ericsson-pbx-gold-coast">LG Ericsson PBX</a></h3></div><div class="card"><h3><a href="/alcatel-lucent-pbx-gold-coast">Alcatel-Lucent PBX</a></h3></div></div>
+  </div>
+</section>
+'''
             + related([       ('Business Phone Systems', '/business-phone-systems-gold-coast'),
         ('VoIP Phone Systems', '/voip-phone-system-installation-and-support-gold-coast'),
         ('Phone Line Installation & Cabling', '/phone-line-installation-cabling-gold-coast'),
