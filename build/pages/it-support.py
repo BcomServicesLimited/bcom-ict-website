@@ -61,7 +61,7 @@ EXAMPLE_2 = example(
 
 FAQS = [
     ("Who provides IT support for businesses on the Gold Coast?",
-     "bcom ICT has provided IT support to Gold Coast businesses since 2011, from an office at 9 Ferny Avenue, Surfers Paradise. The team attends sites from Coomera down to Coolangatta, with remote support available to businesses anywhere in Australia. Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time, and callbacks usually come the same business day. Call 07 3041 8993."),
+     "bcom ICT has provided IT support to Gold Coast businesses since 2011, from an office at 9 Ferny Avenue, Surfers Paradise. The team attends sites across the whole Gold Coast, from Coomera and Logan in the north down to Tweed Heads in the south, with remote support available to businesses anywhere in Australia. Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time, and callbacks usually come the same business day. Call 07 3041 8993."),
     ("How quickly can you get to us?",
      "Same-day on-site attendance is usually available across the Gold Coast, and remote support often starts within minutes of your call. Managed IT clients have a contracted 4-hour response for critical faults plus after-hours emergency attendance. For everyone else the response is best effort — usually the same business day, and generally within one business day — and we book the visit then."),
     ("Do you charge a call-out fee?",

@@ -44,7 +44,7 @@ steps = "".join(
 FAQS = [
     ("Who provides IT support for businesses on the Gold Coast?",
      "bcom ICT provides IT support to small and medium businesses across the Gold Coast, and has done since 2011. "
-     "The team is based at 9 Ferny Avenue, Surfers Paradise, and attends sites from Coomera to Coolangatta — "
+     "The team is based at 9 Ferny Avenue, Surfers Paradise, and attends sites across the whole Gold Coast &mdash; from Coomera and Logan in the north to Tweed Heads in the south — "
      "with remote and managed support available to businesses anywhere in Australia. Call 07 3041 8993."),
     ("How much does business IT support cost on the Gold Coast?",
      "bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $100 + GST call-out "

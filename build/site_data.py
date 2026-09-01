@@ -57,6 +57,8 @@ SUBURBS = [
     "Main Beach", "Bundall", "Ashmore", "Labrador", "Runaway Bay",
     "Mermaid Beach", "Miami", "Currumbin", "Coolangatta", "Upper Coomera",
     "Pacific Pines", "Oxenford", "Pimpama", "Ormeau", "Paradise Point",
+    # Boundaries of the actual service area, not suburb pages.
+    "Tweed Heads", "Beenleigh", "Logan",
 ]
 
 # Suburb pages — the local organic play. Each is written distinctly rather

@@ -82,7 +82,7 @@ def local_business():
             "addressCountry": "AU",
         },
         "geo": {"@type": "GeoCoordinates", "latitude": BIZ["lat"], "longitude": BIZ["lon"]},
-        "areaServed": [{"@type": "City", "name": s} for s in SUBURBS[:12]]
+        "areaServed": [{"@type": "City", "name": s} for s in SUBURBS]
                       + [{"@type": "Country", "name": "Australia"}],
         "openingHoursSpecification": [{
             "@type": "OpeningHoursSpecification",
