@@ -250,6 +250,7 @@ or a rotating helpdesk. Escalation reaches a director the same day.
 - [Contact bcom ICT](https://www.bcomservices.com/contact): Contact bcom ICT on 07 3041 8993 or support@bcomservices.com
 - [LG Ericsson PBX Support Gold Coast](https://www.bcomservices.com/lg-ericsson-pbx-gold-coast): LG Ericsson phone system programming, repair and support on the Gold Coast — iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms
 - [NEC PBX Support Gold Coast](https://www.bcomservices.com/nec-pbx-gold-coast): NEC phone system programming, repair and support on the Gold Coast — UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms
+- [Office IT Relocation](https://www.bcomservices.com/office-relocation-case-study-southport): bcom ICT relocated Grow&Co Property Agents' Southport office — 31 workstations, 47 monitors and a mixed fleet moved, set up and working in a single day by two technicians.
 - [Our Team](https://www.bcomservices.com/our-team): Meet the bcom ICT leadership: Royce Clark (ITIL 4 Foundation), Ollie (ISO/IEC 42001:2023 Lead Implementer, BSI) and Daniel
 - [Panasonic PBX Support Gold Coast](https://www.bcomservices.com/panasonic-pbx-gold-coast): Panasonic phone system programming, repair and support on the Gold Coast — KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms
 - [Pricing](https://www.bcomservices.com/pricing): bcom ICT business IT support is $190 + GST per hour ($209.00 inc GST), plus a $100 + GST on-site call-out

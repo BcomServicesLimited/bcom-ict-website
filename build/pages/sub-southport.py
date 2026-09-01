@@ -149,6 +149,19 @@ PAGE = {
             + f'''
 {booking_cta()}
 '''
+            + f'''
+<section class="section section--tight section--mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Case study</span>
+      <h2>31 workstations, one day</h2>
+      <p>How bcom ICT relocated Grow&amp;Co Property Agents&rsquo; Southport office &mdash; the whole fleet moved,
+      built to their seating plan and working the next business day.
+      <a href="/office-relocation-case-study-southport">Read the case study</a>.</p>
+    </div>
+  </div>
+</section>
+'''
             + faq_block(FAQS)
             + nearby('/it-support-southport-gold-coast')
             + related([('Business IT Support', '/it-support-and-services-gold-coast'), ('Managed IT Services', '/managed-it-services-for-small-businesses-gold-coast'), ('Business WiFi Installation', '/business-wifi-gold-coast'), ('Cybersecurity Services', '/cybersecurity-services-gold-coast'), ('Business Phone Systems', '/business-phone-systems-gold-coast'), ('Pricing', '/pricing'), ('Professional services', '/it-support-professional-services-gold-coast')])

@@ -54,6 +54,13 @@ PAGE = {
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Written up in full</span>
+      <h2>Office relocation &mdash; Grow&amp;Co Property Agents, Southport</h2>
+      <p>31 workstations moved, set up and working in a single day with two technicians.
+      <a href="/office-relocation-case-study-southport">Read the case study</a>.</p>
+    </div>
+
+    <div class="section-head" style="margin-top:64px">
+      <span class="eyebrow">Written up in full</span>
       <h2>Retail store technology fit-out &mdash; Pacific Fair and Chermside</h2>
       <p>The complete technology environment for two new stores &mdash; UniFi network, WiFi and CCTV, audio,
       connectivity, RFID and Shopify POS &mdash; delivered across two states and trading from day one.
