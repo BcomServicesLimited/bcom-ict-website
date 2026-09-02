@@ -60,8 +60,8 @@ FAQS = [   (   'Do you design and supply new UniFi systems, or only support exis
 PAGE = {
     "path": '/ubiquiti-unifi-wifi-gold-coast',
     "priority": '0.7',
-    "title": 'Ubiquiti UniFi Installation Gold Coast — Design & Supply | bcom ICT',
-    "description": 'UniFi networks designed, supplied and installed across the Gold Coast — site survey, hardware specified for your building, VLAN segmentation and documented handover. Existing UniFi supported too.',
+    "title": "Ubiquiti UniFi Installation Gold Coast | bcom ICT",
+    "description": "UniFi networks designed, supplied and installed across the Gold Coast — site survey, hardware specified for your building.",
     "hero_img": 'aruba-instant-on-wifi-gold-coast-hero.webp',
     "hero_alt": 'A Ubiquiti UniFi network designed and installed by bcom ICT in a Gold Coast business',
     "h1": 'UniFi networks, designed and installed',

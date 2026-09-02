@@ -145,7 +145,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Managed IT Services', '/managed-it-services-for-small-businesses-gold-coast'),
+            + related([('IT Support for Healthcare', '/it-support-healthcare-gold-coast'),
+               ('Managed IT Services', '/managed-it-services-for-small-businesses-gold-coast'),
         ('Business IT Support', '/it-support-and-services-gold-coast'),
         ('Cybersecurity Risk Assessment', '/cybersecurity-health-check-for-small-business-gold-coast'),
         ('Pricing', '/pricing'),

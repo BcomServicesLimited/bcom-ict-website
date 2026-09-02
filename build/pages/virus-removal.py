@@ -66,7 +66,7 @@ PAGE = {
     "priority": '0.8',
     "service": 'Virus & Malware Removal Gold Coast',
     "title": 'Virus & Malware Removal Gold Coast — Business | bcom ICT',
-    "description": "Virus, ransomware and malware removal for Gold Coast business computers. Full clean-up, credential reset and security hardening so it doesn't happen again. Call 07 3041 8993.",
+    "description": "Virus, ransomware and malware removal for Gold Coast business computers. Full clean-up. Call 07 3041 8993.",
     "hero_img": 'hero-bg-network-security.webp',
     "hero_alt": 'Malware removal and system hardening being carried out by bcom ICT for a Gold Coast business',
     "h1": 'Removing it is the easy part',

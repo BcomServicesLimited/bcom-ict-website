@@ -36,7 +36,7 @@ PAGE = {
     "path": "/support",
     "priority": "0.8",
     "title": "Get Support — bcom ICT Gold Coast IT Helpdesk",
-    "description": "How to get IT support from bcom ICT: call 07 3041 8993 (returned in business hours), email support@bcomservices.com, or request remote support. Callback usually the same business day.",
+    "description": "How to get IT support from bcom ICT: call 07 3041 8993 (returned in business hours), email support@bcomservices.com, or request remote support.",
     "hero_kind": "doc",
     "eyebrow": "Support",
     "aside": f'''

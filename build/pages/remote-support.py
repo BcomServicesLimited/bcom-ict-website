@@ -40,7 +40,7 @@ PAGE = {
     "priority": "0.8",
     "service": 'Remote IT Support Gold Coast',
     "title": 'Remote IT Support Gold Coast & Australia-Wide | bcom ICT',
-    "description": 'Remote IT support for Gold Coast businesses and distributed teams Australia-wide. Secure screen-share diagnosis, usually same day, at $190 + GST per hour with no call-out. Call 07 3041 8993.',
+    "description": "Remote IT support for Gold Coast businesses and distributed teams Australia-wide. Call 07 3041 8993.",
     "hero_img": 'hero-bg-remote-it-support.webp',
     "hero_alt": 'A bcom ICT technician providing remote IT support to a business client',
     "h1": 'Remote IT support, usually the same day',

@@ -28,7 +28,7 @@ PAGE = {
     "path": '/it-support-palm-beach-gold-coast',
     "priority": "0.7",
     "title": 'IT Support Palm Beach — Small Business | bcom ICT',
-    "description": 'IT support for Palm Beach businesses — the Gold Coast Highway strip, Nineteenth Avenue, cafes, retail, creative studios and small professional practices on the southern Gold Coast.',
+    "description": "IT support for Palm Beach businesses — the Gold Coast Highway strip, Nineteenth Avenue, cafes, retail.",
     "hero_img": 'hero-bg-consulting.webp',
     "hero_alt": 'A Palm Beach small business supported by bcom ICT',
     "h1": 'IT support for Palm Beach businesses',

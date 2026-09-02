@@ -59,7 +59,7 @@ PAGE = {
     "priority": '0.7',
     "article": True,
     "title": 'Business NBN Guide — Gold Coast Businesses | bcom ICT',
-    "description": 'A plain-English guide to business NBN for Gold Coast businesses — connection types, business versus residential plans, what speed you actually need, and why failover matters.',
+    "description": "A plain-English guide to business NBN for Gold Coast businesses — connection types, business versus residential plans, what speed you actually need.",
     "hero_kind": 'page',
     "eyebrow": "Guide",
     "hero_img": 'nbn-internet-support-hero.webp',

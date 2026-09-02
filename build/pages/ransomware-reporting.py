@@ -53,8 +53,8 @@ FAQS = [
 PAGE = {
     "path": "/ransomware-reporting-australia",
     "priority": "0.7",
-    "title": "Ransomware Payment Reporting in Australia — Business Guide | bcom ICT",
-    "description": "Australia's mandatory ransomware payment reporting obligation under the Cyber Security Act 2024 — who it applies to, what must be reported, and how it interacts with the NDB scheme.",
+    "title": "Ransomware Payment Reporting in Australia | bcom ICT",
+    "description": "Australia's mandatory ransomware payment reporting under the Cyber Security Act 2024 — who it applies to, and how it sits alongside the NDB scheme.",
     "hero_kind": "doc",
     "eyebrow": "Trust centre · guide",
     "h1": "Ransomware payment reporting in Australia",

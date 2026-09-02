@@ -62,8 +62,8 @@ FAQS = [
 PAGE = {
     "path": "/notifiable-data-breach-guide-australia",
     "priority": "0.7",
-    "title": "Notifiable Data Breaches — An Australian Business Guide | bcom ICT",
-    "description": "What the Notifiable Data Breaches scheme requires of Australian businesses: the eligible breach test, the 30-day assessment window, who must notify, and what your IT provider can and can't do.",
+    "title": "Notifiable Data Breaches — Australian Guide | bcom ICT",
+    "description": "What the Notifiable Data Breaches scheme requires of Australian businesses: the eligible breach test, the 30-day assessment window, who must notify.",
     "hero_kind": "doc",
     "eyebrow": "Trust centre · guide",
     "h1": "Notifiable data breaches, explained for Australian businesses",

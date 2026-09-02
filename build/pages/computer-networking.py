@@ -55,7 +55,7 @@ PAGE = {
     "priority": '0.75',
     "service": 'Computer Networking Service Gold Coast',
     "title": 'Business Computer Networking Gold Coast | bcom ICT',
-    "description": 'Design, installation and support of business networks on the Gold Coast — switching, routing, WiFi, cabling and firewalls, built as one system by one team. Call 07 3041 8993.',
+    "description": "Business networks designed, installed and supported on the Gold Coast — switching, routing, WiFi, cabling and firewalls built as one system, not four.",
     "hero_img": 'hero-bg-networking.webp',
     "hero_alt": 'Business network switching and infrastructure installed by bcom ICT on the Gold Coast',
     "h1": 'One network, one team, one number to call',

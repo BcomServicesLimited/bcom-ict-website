@@ -29,7 +29,7 @@ PAGE = {
     "path": '/it-support-broadbeach-gold-coast',
     "priority": "0.7",
     "title": 'IT Support Broadbeach — Retail, Venues & Offices | bcom ICT',
-    "description": 'IT support for Broadbeach businesses — Pacific Fair, the convention centre precinct, Oracle Boulevard and the Surf Parade dining strip. Five minutes from our office.',
+    "description": "IT support for Broadbeach businesses — Pacific Fair, the convention centre precinct, Oracle Boulevard and the Surf Parade dining strip.",
     "hero_img": 'hero-bg-business.webp',
     "hero_alt": 'A Broadbeach business supported by bcom ICT',
     "h1": 'IT support for Broadbeach retail and venues',

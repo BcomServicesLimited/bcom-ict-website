@@ -61,7 +61,7 @@ PAGE = {
     "path": '/nec-pbx-gold-coast',
     "priority": '0.7',
     "title": 'NEC PBX Support Gold Coast — SV9100, SL2100 | bcom ICT',
-    "description": 'NEC phone system programming, repair and support on the Gold Coast — UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms. Extension changes, call flows, handset replacement and parts. Call 07 3041 8993.',
+    "description": "NEC phone system programming, repair and support on the Gold Coast — UNIVERGE SV9100, SL2100 and the earlier SV8100. Call 07 3041 8993.",
     "hero_img": 'nec-pbx-gold-coast-hero.webp',
     "hero_alt": 'A NEC PBX phone system being programmed by bcom ICT on the Gold Coast',
     "h1": 'NEC systems, supplied and supported',

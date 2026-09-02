@@ -56,7 +56,7 @@ FAQS = [   (   'Should we use the router our internet provider supplied?',
 PAGE = {
     "path": '/router-and-modem-configuration-gold-coast',
     "priority": '0.65',
-    "title": 'Router & Modem Configuration Gold Coast — Business | bcom ICT',
+    "title": "Router & Modem Configuration Gold Coast | bcom ICT",
     "description": 'Router and modem configuration for Gold Coast businesses and home offices — set up securely, with voice traffic prioritised and default passwords changed.',
     "hero_img": 'hero-bg-router-modem.webp',
     "hero_alt": 'A business router being configured by bcom ICT on the Gold Coast',

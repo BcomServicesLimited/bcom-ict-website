@@ -56,7 +56,7 @@ PAGE = {
     "priority": '0.75',
     "service": 'Network Troubleshooting & Diagnostics Gold Coast',
     "title": 'Business Network Troubleshooting Gold Coast | bcom ICT',
-    "description": "Slow network, dropouts or devices that won't connect? bcom ICT diagnoses and fixes business network faults across the Gold Coast — interference, congestion, cabling, switching and ISP problems.",
+    "description": "Slow network, dropouts or devices that won't connect? bcom ICT diagnoses and fixes business network faults across the Gold Coast.",
     "hero_img": 'hero-bg-network-troubleshooting.webp',
     "hero_alt": 'A bcom ICT technician diagnosing a business network fault on the Gold Coast',
     "h1": "Find out what's actually causing it",

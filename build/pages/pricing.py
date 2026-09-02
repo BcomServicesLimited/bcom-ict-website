@@ -123,7 +123,7 @@ PAGE = {
     "path": "/pricing",
     "priority": "0.8",
     "title": "Pricing — $190 + GST per Hour | bcom ICT Gold Coast",
-    "description": "bcom ICT business IT support is $190 + GST per hour ($209.00 inc GST), plus a $100 + GST on-site call-out. Remote support has no call-out. Managed IT is quoted to your requirements, month-to-month with no lock-in.",
+    "description": "bcom ICT business IT support is $190 + GST per hour ($209.00 inc GST), plus a $100 + GST on-site call-out. Remote support has no call-out.",
     "hero_kind": "doc",
     "eyebrow": "Pricing",
     "h1": "How we charge, and why we quote first",

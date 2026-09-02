@@ -112,7 +112,7 @@ PAGE = {
     "path": "/privacy-policy",
     "priority": "0.3",
     "title": "Privacy Policy | bcom ICT",
-    "description": "How bcom ICT collects, holds, uses and discloses personal information under the Australian Privacy Principles — including remote support access, telecommunications data and overseas disclosure.",
+    "description": "How bcom ICT collects, holds, uses and discloses personal information under the Australian Privacy Principles.",
     "hero_kind": "doc",
     "eyebrow": "Legal",
     "h1": "Privacy policy",

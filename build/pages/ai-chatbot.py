@@ -60,7 +60,7 @@ PAGE = {
     "path": '/ai-chatbot-gold-coast',
     "priority": '0.7',
     "title": 'AI Chatbots for Australian Business Websites | bcom ICT',
-    "description": 'Website chatbots grounded in your own content — answering the questions your staff answer daily and capturing enquiries out of hours. Useful when built properly, irritating when not.',
+    "description": "Website chatbots grounded in your own content — answering the questions your staff answer daily and capturing enquiries out of hours.",
     "hero_img": 'ai-chatbot-hero.webp',
     "hero_alt": 'An AI chatbot implemented by bcom ICT on an Australian business website',
     "h1": 'A chatbot worth having on your site',

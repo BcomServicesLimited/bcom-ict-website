@@ -57,7 +57,7 @@ PAGE = {
     "path": '/software-recommendations-gold-coast',
     "priority": '0.65',
     "title": 'Business Software Recommendations Gold Coast | bcom ICT',
-    "description": 'Independent advice on business software for Gold Coast businesses — what to use, what to consolidate, and when the answer is to fix the process rather than buy a tool.',
+    "description": "Independent advice on business software for Gold Coast businesses — what to use, what to consolidate.",
     "hero_img": 'hero-bg-software-installation.webp',
     "hero_alt": 'Business software being evaluated with a Gold Coast client by bcom ICT',
     "h1": 'Which software should we actually use?',

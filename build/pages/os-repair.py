@@ -59,7 +59,7 @@ PAGE = {
     "priority": '0.75',
     "service": 'Windows & macOS Repair Gold Coast',
     "title": 'Windows & macOS Repair Gold Coast — Business | bcom ICT',
-    "description": 'Operating system troubleshooting and repair for Gold Coast business machines. Boot failures, crashes, profile corruption and failed updates fixed on site. Call 07 3041 8993.',
+    "description": "Operating system troubleshooting and repair for Gold Coast business machines. Boot failures, crashes. Call 07 3041 8993.",
     "hero_img": 'hero-bg-hardware-software-troubleshooting.webp',
     "hero_alt": 'Windows repair being carried out on a business machine by bcom ICT',
     "h1": 'When the operating system is the problem',

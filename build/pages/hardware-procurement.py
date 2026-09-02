@@ -64,7 +64,7 @@ PAGE = {
     "priority": '0.75',
     "service": 'Hardware Procurement & Setup Gold Coast',
     "title": 'Business Hardware Procurement & Setup Gold Coast | bcom ICT',
-    "description": 'Business hardware supply and setup on the Gold Coast — laptops, desktops, servers, switches and monitors at trade pricing, imaged, configured and deployed ready to use.',
+    "description": "Business hardware supply and setup on the Gold Coast — laptops, desktops, servers, switches and monitors at trade pricing, imaged.",
     "hero_img": 'hardware-procurement-setup-gold-coast-hero.webp',
     "hero_alt": 'New business computers being configured by bcom ICT before deployment to a Gold Coast client',
     "h1": 'Delivered configured, not delivered in a box',

@@ -57,7 +57,7 @@ FAQS = [   (   "What's the best way to extend WiFi range?",
 PAGE = {
     "path": '/wifi-range-extension-gold-coast',
     "priority": '0.65',
-    "title": 'WiFi Range Extension Gold Coast — Business & Home Office | bcom ICT',
+    "title": "WiFi Range Extension Gold Coast | bcom ICT",
     "description": 'Extending WiFi coverage for Gold Coast businesses and home offices — measured rather than guessed, with wired access points where a cable run is possible.',
     "hero_img": 'hero-bg-wifi-range-extension.webp',
     "hero_alt": 'WiFi coverage being extended by bcom ICT at a Gold Coast premises',

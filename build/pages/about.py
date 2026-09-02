@@ -20,7 +20,7 @@ PAGE = {
     "path": "/about",
     "priority": "0.8",
     "title": "About bcom ICT — Gold Coast Business IT Since 2011",
-    "description": "bcom ICT is the trading name of Bcom Services Pty Ltd (ABN 92 636 893 108), a Gold Coast IT support company established in 2011, based in Surfers Paradise and working with small and medium businesses.",
+    "description": "bcom ICT is the trading name of Bcom Services Pty Ltd (ABN 92 636 893 108), a Gold Coast IT support company established in 2011.",
     "hero_img": "hero-bg-business.webp",
     "hero_alt": "The bcom ICT team working with a client at their Gold Coast business premises",
     "h1": "Looking after Gold Coast businesses since 2011",

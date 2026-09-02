@@ -88,7 +88,7 @@ PAGE = {
     "path": "/service-levels-and-security",
     "priority": "0.8",
     "title": "Service Levels — Response Targets & Commitments | bcom ICT",
-    "description": "bcom ICT's published service levels: P1–P4 priority matrix, response targets, escalation path, hours of operation and what happens to your documentation if you leave.",
+    "description": "bcom ICT's published service levels — the P1 to P4 priority matrix, response targets, escalation path and what happens to your documentation if you leave.",
     "hero_kind": "doc",
     "eyebrow": "Trust centre",
     "h1": "What we actually commit to",

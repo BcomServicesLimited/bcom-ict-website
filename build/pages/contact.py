@@ -35,7 +35,7 @@ PAGE = {
     "path": "/contact",
     "priority": "0.85",
     "title": "Contact bcom ICT — Gold Coast Business IT Support",
-    "description": "Contact bcom ICT on 07 3041 8993 or support@bcomservices.com. Callback usually the same business day, Mon–Fri 8am–5pm. Office at 9 Ferny Avenue, Surfers Paradise.",
+    "description": "Contact bcom ICT on 07 3041 8993 or support@bcomservices.com. Callback usually the same business day, Mon–Fri 8am–5pm.",
     "hero_kind": "doc",
     "eyebrow": "Contact",
     "h1": "Talk to someone who can actually help",

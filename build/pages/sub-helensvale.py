@@ -31,7 +31,7 @@ PAGE = {
     "path": '/it-support-helensvale-gold-coast',
     "priority": "0.7",
     "title": 'IT Support Helensvale — Business & Professional | bcom ICT',
-    "description": 'IT support for Helensvale businesses — Westfield Helensvale, the Helensvale transport interchange, Hope Island and Sanctuary Cove. Same-day attendance, remote support with no call-out.',
+    "description": "IT support for Helensvale businesses — Westfield Helensvale, the Helensvale transport interchange, Hope Island and Sanctuary Cove.",
     "hero_img": 'hero-bg-business.webp',
     "hero_alt": 'A Helensvale business supported by bcom ICT on the northern Gold Coast',
     "h1": 'IT support for Helensvale businesses',

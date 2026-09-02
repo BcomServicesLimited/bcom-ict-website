@@ -56,8 +56,8 @@ FAQS = [   (   'Does the Privacy Act apply to a small medical practice?',
 PAGE = {
     "path": '/it-support-healthcare-gold-coast',
     "priority": '0.75',
-    "title": 'IT Support for Gold Coast Healthcare & Allied Health | bcom ICT',
-    "description": 'IT support for Gold Coast medical, dental and allied health practices. Privacy Act obligations apply regardless of turnover — patient records, practice software and screened technicians.',
+    "title": "IT Support for Healthcare Gold Coast | bcom ICT",
+    "description": "IT support for Gold Coast medical, dental and allied health practices. Privacy Act obligations apply regardless of turnover.",
     "hero_img": 'it-support-healthcare-gold-coast-hero.webp',
     "hero_alt": 'IT support being provided to a Gold Coast healthcare practice by bcom ICT',
     "h1": "Health practices don't get the small business exemption",
@@ -147,7 +147,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
+            + related([('IT Support for Small Business', '/it-support-small-business-gold-coast'),
+               ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
         ('Notifiable Data Breaches guide', '/notifiable-data-breach-guide-australia'),
         ('Essential Eight assessment', '/essential-eight-guide-gold-coast'),
         ('Data Backup & Disaster Recovery', '/data-backup-recovery-gold-coast'),

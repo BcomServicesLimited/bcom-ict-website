@@ -50,8 +50,8 @@ FAQS = [
 PAGE = {
     "path": "/microsoft-365-vs-google-workspace",
     "priority": "0.8",
-    "title": "Microsoft 365 vs Google Workspace for Australian Business | bcom ICT",
-    "description": "An honest comparison for Australian small business — where Microsoft 365 genuinely wins, where Google Workspace does, and the costs that matter more than the licence price.",
+    "title": "Microsoft 365 vs Google Workspace | bcom ICT",
+    "description": "An honest comparison for Australian small business — where Microsoft 365 genuinely wins, where Google Workspace does.",
     "hero_img": "compare-m365-google-hero.webp",
     "hero_alt": "A Gold Coast business team working across Microsoft 365 applications",
     "eyebrow": "Comparison",

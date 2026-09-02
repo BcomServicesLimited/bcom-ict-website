@@ -56,7 +56,7 @@ PAGE = {
     "priority": "0.8",
     "service": "DrayTek Router Support Gold Coast",
     "title": "DrayTek Router Setup & Support Gold Coast — Vigor | bcom ICT",
-    "description": "DrayTek Vigor configuration and support for Gold Coast businesses — NBN and FTTN, 4G/5G failover, site-to-site VPN, multi-WAN and firmware management. Call 07 3041 8993.",
+    "description": "DrayTek Vigor configuration and support for Gold Coast businesses — NBN and FTTN, 4G/5G failover, site-to-site VPN. Call 07 3041 8993.",
     "hero_img": "draytek-hero.webp",
     "hero_alt": "Business router and network equipment in a Gold Coast office data cabinet",
     "eyebrow": "Routers",

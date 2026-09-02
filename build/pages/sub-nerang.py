@@ -29,7 +29,7 @@ PAGE = {
     "path": '/it-support-nerang-gold-coast',
     "priority": "0.7",
     "title": 'IT Support Nerang — Trades & Light Industrial | bcom ICT',
-    "description": 'IT support for Nerang businesses — the industrial estates along Lawrence Drive and Spencer Road, trades, workshops, automotive and warehousing, plus the offices behind them.',
+    "description": "IT support for Nerang businesses — the industrial estates along Lawrence Drive and Spencer Road, trades, workshops, automotive and warehousing.",
     "hero_img": 'it-support-trades-gold-coast-hero.webp',
     "hero_alt": 'A Nerang light industrial business supported by bcom ICT',
     "h1": "IT support for Nerang's industrial estates",

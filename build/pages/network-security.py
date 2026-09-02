@@ -66,7 +66,7 @@ PAGE = {
     "priority": '0.75',
     "service": 'Network Security & Firewall Gold Coast',
     "title": 'Business Firewall & Network Security Gold Coast | bcom ICT',
-    "description": 'Business firewall and network security for Gold Coast offices — next-generation firewall setup, VLAN segmentation, secure remote access, guest isolation and WPA3. Call 07 3041 8993.',
+    "description": "Business firewall and network security for Gold Coast offices — next-generation firewall setup, VLAN segmentation, secure remote access. Call 07 3041 8993.",
     "hero_img": 'hero-bg-network-security.webp',
     "hero_alt": 'Network firewall and security equipment configured by bcom ICT for a Gold Coast business',
     "h1": "A firewall that's actually configured",

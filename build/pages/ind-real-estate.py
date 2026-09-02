@@ -59,7 +59,7 @@ PAGE = {
     "path": '/it-support-real-estate-gold-coast',
     "priority": '0.75',
     "title": 'IT Support for Gold Coast Real Estate Agencies | bcom ICT',
-    "description": 'IT support for Gold Coast real estate agencies. Trust accounts make agencies a specific target for payment redirection fraud — plus CRM, portals and a mobile workforce.',
+    "description": "IT support for Gold Coast real estate agencies. Trust accounts make agencies a specific target for payment redirection fraud.",
     "hero_img": 'it-support-real-estate-gold-coast-hero.webp',
     "hero_alt": 'IT support being provided to a Gold Coast real estate agency by bcom ICT',
     "h1": "Your trust account is why you're a target",

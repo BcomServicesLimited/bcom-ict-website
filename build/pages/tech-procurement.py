@@ -56,7 +56,7 @@ PAGE = {
     "path": '/technology-procurement-advice-gold-coast',
     "priority": '0.65',
     "title": 'Technology Procurement Advice Gold Coast | bcom ICT',
-    "description": 'Independent advice on what technology to buy, from a provider that takes no vendor commissions. Read the quote, check the spec, and hear when the answer is to buy nothing.',
+    "description": "Independent technology buying advice for Gold Coast businesses — quote reviews, licence audits, renewal dates and vendor selection with no hardware margin.",
     "hero_img": 'hardware-procurement-setup-gold-coast-hero.webp',
     "hero_alt": 'Technology procurement advice being provided to a Gold Coast business by bcom ICT',
     "h1": 'Someone to read the quote before you sign it',

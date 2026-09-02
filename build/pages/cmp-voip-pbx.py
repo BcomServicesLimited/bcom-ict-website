@@ -50,8 +50,8 @@ FAQS = [
 PAGE = {
     "path": "/voip-vs-pbx-phone-systems",
     "priority": "0.8",
-    "title": "Cloud VoIP vs On-Premises PBX — Which Should You Choose? | bcom ICT",
-    "description": "An honest comparison of cloud VoIP and on-premises PBX for Australian business — when each genuinely wins, what the internet connection decides, and why a hybrid is often the right answer.",
+    "title": "Cloud VoIP vs On-Premises PBX | bcom ICT",
+    "description": "Cloud VoIP or keep the PBX? An honest comparison from a provider that sells both — where each genuinely wins, and why a hybrid is often the right answer.",
     "hero_img": "compare-voip-pbx-hero.webp",
     "hero_alt": "A bcom ICT technician working on a business phone system cabinet on the Gold Coast",
     "eyebrow": "Comparison",

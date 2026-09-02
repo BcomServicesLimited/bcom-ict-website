@@ -90,7 +90,7 @@ PAGE = {
     "priority": "0.85",
     "service": "Cloud Migration Gold Coast",
     "title": "Cloud & Microsoft 365 for Gold Coast Business | bcom ICT",
-    "description": "Cloud migration and Microsoft 365 for Gold Coast businesses — email migration, Teams, SharePoint, Azure and Google Workspace, with Australian data residency. Call 07 3041 8993.",
+    "description": "Cloud migration and Microsoft 365 for Gold Coast businesses — email migration, Teams, SharePoint, Azure and Google Workspace. Call 07 3041 8993.",
     "hero_img": "cloud-migration-hero.webp",
     "hero_alt": "A bcom ICT consultant planning a Microsoft 365 cloud migration with a Gold Coast business team",
     "h1": "Cloud and Microsoft 365, set up properly",

@@ -60,7 +60,7 @@ PAGE = {
     "priority": '0.7',
     "article": True,
     "title": 'When Should a Business Replace Its Computers? | bcom ICT',
-    "description": 'How long business computers should last, when repairing stops being worth it, and how to turn replacement into a budgeted schedule rather than a series of emergencies.',
+    "description": "When is a business computer past it? How to judge replacement on what a machine costs you while it works, not on its age — and when an SSD beats a new PC.",
     "hero_kind": 'doc',
     "eyebrow": "Guide",
     "h1": 'When is a business computer past it?',

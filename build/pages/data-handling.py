@@ -67,8 +67,8 @@ FAQS = [
 PAGE = {
     "path": "/data-handling-and-sovereignty",
     "priority": "0.75",
-    "title": "Data Handling & Sovereignty — Where Your Data Lives | bcom ICT",
-    "description": "What data bcom ICT holds on behalf of clients, where it is stored, who can access it and how long it is kept. Australian data residency for Microsoft 365 and backup.",
+    "title": "Data Handling & Sovereignty | bcom ICT",
+    "description": "What data bcom ICT holds on behalf of clients, where it is stored, who can access it and how long it is kept.",
     "hero_kind": "doc",
     "eyebrow": "Trust centre",
     "h1": "What we hold, where it lives, and who can reach it",

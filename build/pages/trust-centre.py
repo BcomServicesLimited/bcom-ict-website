@@ -43,7 +43,7 @@ PAGE = {
     "path": "/trust-centre",
     "priority": "0.85",
     "title": "Trust Centre — Standards, Credentials & Insurance | bcom ICT",
-    "description": "What bcom ICT is certified to, what we align to, and where the line sits. Credentials, insurance, service levels, data handling and Australian compliance — set out plainly.",
+    "description": "What bcom ICT is certified to, what we align to, and where the line sits. Credentials, insurance, service levels, data handling and Australian compliance.",
     "hero_kind": "doc",
     "eyebrow": "Trust centre",
     "h1": "What we're certified to, what we're aligned to, and where the line is",

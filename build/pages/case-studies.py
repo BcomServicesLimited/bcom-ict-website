@@ -34,7 +34,7 @@ PAGE = {
     "path": "/case-studies",
     "priority": "0.7",
     "title": "Case Studies — bcom ICT at Work | Gold Coast & Australia",
-    "description": "A national retail chain technology rollout delivered by bcom ICT, plus representative engagements covering multi-site WiFi, managed IT, legacy PBX and office relocations.",
+    "description": "A national retail chain technology rollout delivered by bcom ICT, plus representative engagements covering multi-site WiFi, managed IT.",
     "hero_img": "hero-bg-business.webp",
     "hero_alt": "bcom ICT equipment installed across a national Australian retail chain rollout",
     "h1": "What the work actually looks like",

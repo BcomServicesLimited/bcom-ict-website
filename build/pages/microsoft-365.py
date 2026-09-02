@@ -68,7 +68,7 @@ PAGE = {
     "priority": '0.8',
     "service": 'Microsoft 365 Setup & Support Gold Coast',
     "title": 'Microsoft 365 Setup & Support Gold Coast | bcom ICT',
-    "description": 'Microsoft 365 migration, setup and support for Gold Coast businesses. Email migration, Teams, SharePoint and OneDrive configured with security baselines and MFA from day one. Microsoft Partner.',
+    "description": "Microsoft 365 migration, setup and support for Gold Coast businesses — mail moved intact, MFA enforced, licences matched to what people actually need.",
     "hero_img": 'microsoft-365-setup-gold-coast-hero.webp',
     "hero_alt": 'Microsoft 365 being configured for a Gold Coast business by bcom ICT',
     "h1": 'Microsoft 365, set up the way a business should have it',

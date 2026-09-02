@@ -59,7 +59,7 @@ PAGE = {
     "path": '/it-support-trades-gold-coast',
     "priority": '0.75',
     "title": 'IT Support for Gold Coast Trades & Field Services | bcom ICT',
-    "description": 'IT support for Gold Coast trades and field service businesses. Job management software, quoting on site, mobile devices, patchy connectivity and phones that are the business.',
+    "description": "IT support for Gold Coast trades and field service businesses. Job management software, quoting on site, mobile devices.",
     "hero_img": 'it-support-trades-gold-coast-hero.webp',
     "hero_alt": 'A Gold Coast trades business using job management software supported by bcom ICT',
     "h1": 'The office is a ute',

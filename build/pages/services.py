@@ -65,8 +65,8 @@ FAQS = [
 PAGE = {
     "path": "/services",
     "priority": "0.9",
-    "title": "Business IT Services Gold Coast — Full Service List | bcom ICT",
-    "description": "Every IT service bcom ICT provides to Gold Coast businesses — managed IT, cybersecurity, WiFi and networking, phone systems, cloud and Microsoft 365, cabling and hardware. Call 07 3041 8993.",
+    "title": "Business IT Services Gold Coast | bcom ICT",
+    "description": "Every IT service bcom ICT provides to Gold Coast businesses — managed IT, cybersecurity, WiFi and networking, phone systems. Call 07 3041 8993.",
     "hero_img": "hero-bg-business.webp",
     "hero_alt": "The bcom ICT team meeting with a Gold Coast business client to plan their IT services",
     "h1": "Everything we do for Gold Coast businesses",

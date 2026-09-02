@@ -75,7 +75,7 @@ FAQS = [
 PAGE = {
     "path": "/iso-alignment",
     "priority": "0.75",
-    "title": "ISO Alignment — What We're Aligned To, and What We're Not | bcom ICT",
+    "title": "ISO Alignment — Aligned, Not Certified | bcom ICT",
     "description": "bcom ICT aligns with ISO/IEC 27001, 20000-1, 42001 and 22301 but holds no organisational ISO certification. The distinction, set out in full.",
     "hero_kind": "doc",
     "eyebrow": "Trust centre",

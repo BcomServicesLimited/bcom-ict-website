@@ -60,7 +60,7 @@ PAGE = {
     "path": '/microsoft-copilot-gold-coast',
     "priority": '0.75',
     "title": 'Microsoft Copilot Rollout for Australian Business | bcom ICT',
-    "description": "Microsoft Copilot deployed with the permissions work done first. Copilot surfaces whatever a user can already reach — in most tenancies that's more than anyone realises.",
+    "description": "Microsoft Copilot deployed with the permissions work done first. Copilot surfaces whatever a user can already reach.",
     "hero_img": 'microsoft-copilot-hero.webp',
     "hero_alt": 'Microsoft Copilot being configured for an Australian business by bcom ICT',
     "h1": 'Copilot shows people what they can already reach',

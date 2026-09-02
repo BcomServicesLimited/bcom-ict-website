@@ -53,7 +53,7 @@ PAGE = {
     "priority": "0.8",
     "service": "Microsoft Teams Phone Gold Coast",
     "title": "Microsoft Teams Phone & Direct Routing | bcom ICT Gold Coast",
-    "description": "Make and take business calls inside Microsoft Teams. bcom ICT provides Direct Routing through its own cloud PBX — numbers, call flow and support in one place. Call 07 3041 8993.",
+    "description": "Make and take business calls inside Microsoft Teams. bcom ICT provides Direct Routing through its own cloud PBX. Call 07 3041 8993.",
     "hero_img": "teams-phone-hero.webp",
     "hero_alt": "A Gold Coast business team taking phone calls inside Microsoft Teams",
     "eyebrow": "Microsoft",

@@ -92,7 +92,7 @@ PAGE = {
     # Exact GBP service name — matched in <title> and Service schema.
     "service": "Managed IT Services Gold Coast",
     "title": "Managed IT Services Gold Coast — Month-to-Month, No Lock-in",
-    "description": "Fully managed IT for Gold Coast small and medium businesses. Monitoring, unlimited helpdesk, patching, backup and Microsoft 365 management. Flat monthly fee, 4-hour response SLA, no lock-in. Call 07 3041 8993.",
+    "description": "Fully managed IT for Gold Coast small and medium businesses. Monitoring, unlimited helpdesk, patching, backup and Microsoft 365 management. Call 07 3041 8993.",
     "hero_img": "hero-bg-managed-it-services.webp",
     "hero_alt": "A bcom ICT engineer reviewing monitoring dashboards for a Gold Coast managed IT client",
     "h1": "Managed IT for Gold Coast businesses",
@@ -188,6 +188,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('IT Support for Small Business', '/it-support-small-business-gold-coast'),
   ("Business IT Support", "/it-support-and-services-gold-coast"),
   ("Cybersecurity Services", "/cybersecurity-services-gold-coast"),
   ("Cloud & Microsoft 365", "/cloud-computing-service-gold-coast"),

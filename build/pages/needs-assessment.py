@@ -58,7 +58,7 @@ PAGE = {
     "path": '/it-needs-assessment-gold-coast',
     "priority": '0.7',
     "title": 'Free IT Needs Assessment — Gold Coast Business | bcom ICT',
-    "description": "A free review of what your business actually runs, what's at risk and what to fix first. Plain-English written report, yours to keep whether or not you engage us.",
+    "description": "An independent review of what you actually have — asset register, network documentation and a prioritised list of findings mapped to the Essential Eight.",
     "hero_img": 'it-needs-assessment-hero.webp',
     "hero_alt": 'An IT needs assessment being carried out for a Gold Coast business by bcom ICT',
     "h1": "Find out what you've actually got",

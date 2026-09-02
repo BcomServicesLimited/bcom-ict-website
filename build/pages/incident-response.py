@@ -75,7 +75,7 @@ PAGE = {
     "priority": "0.8",
     "service": "Cyber Incident Response Gold Coast",
     "title": "Cyber Incident Response Gold Coast | bcom ICT",
-    "description": "Rapid cyber incident response for Gold Coast and Australian businesses — containment, forensic investigation, eradication, recovery and reporting for insurers and regulators. Call 07 3041 8993.",
+    "description": "Rapid cyber incident response for Gold Coast and Australian businesses — containment, forensic investigation, eradication. Call 07 3041 8993.",
     "hero_img": "hero-bg-network-security.webp",
     "hero_alt": "A bcom ICT engineer responding to a cyber security incident for an Australian business",
     "h1": "Been breached? Start here.",

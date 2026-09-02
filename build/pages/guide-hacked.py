@@ -58,7 +58,7 @@ PAGE = {
     "priority": '0.75',
     "article": True,
     "title": 'Hacked? What To Do in the First 60 Minutes | bcom ICT',
-    "description": 'An emergency guide for Australian business owners. The steps that protect your business in the first hour after a breach, in order — and the ones that destroy evidence.',
+    "description": "An emergency guide for Australian business owners. The steps that protect your business in the first hour after a breach, in order.",
     "hero_kind": 'doc',
     "eyebrow": "Guide",
     "h1": 'Hacked? Do these things, in this order',

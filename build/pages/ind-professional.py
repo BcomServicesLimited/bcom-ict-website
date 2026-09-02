@@ -58,7 +58,7 @@ PAGE = {
     "path": '/it-support-professional-services-gold-coast',
     "priority": '0.75',
     "title": 'IT Support for Gold Coast Professional Services | bcom ICT',
-    "description": 'IT support for Gold Coast accountants, lawyers, financial planners and consultants. Client confidentiality, document management, regulatory obligations and hybrid working.',
+    "description": "IT support for Gold Coast accounting, legal and advisory firms — client confidentiality, secure remote work and answering client security questionnaires.",
     "hero_img": 'hero-bg-consulting.webp',
     "hero_alt": 'IT support being provided to a Gold Coast professional services firm by bcom ICT',
     "h1": "You hold other people's confidential information",

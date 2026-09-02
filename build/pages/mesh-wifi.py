@@ -57,7 +57,7 @@ PAGE = {
     "priority": '0.75',
     "service": 'Mesh WiFi & Home Office Setup Gold Coast',
     "title": 'Mesh WiFi & Home Office Setup Gold Coast | bcom ICT',
-    "description": 'Mesh WiFi installation for Gold Coast home offices and small premises. Eero, Google Nest and Ubiquiti systems supplied and configured to remove dead zones. Call 07 3041 8993.',
+    "description": "Mesh WiFi for Gold Coast home offices and small premises — surveyed and positioned properly, because where the nodes go decides whether it works.",
     "hero_img": 'hero-bg-mesh-wifi.webp',
     "hero_alt": 'A mesh WiFi system installed by bcom ICT for a Gold Coast home office',
     "h1": 'A connection your home office can rely on',

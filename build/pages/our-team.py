@@ -46,7 +46,7 @@ PAGE = {
     "path": "/our-team",
     "priority": "0.75",
     "title": "Our Team — The People Behind bcom ICT | Gold Coast",
-    "description": "Meet the bcom ICT leadership: Royce Clark (ITIL 4 Foundation), Ollie (ISO/IEC 42001:2023 Lead Implementer, BSI) and Daniel. Direct access, no account managers, national delivery.",
+    "description": "Meet the bcom ICT leadership: Royce Clark (ITIL 4 Foundation), Ollie (ISO/IEC 42001:2023 Lead Implementer, BSI) and Daniel.",
     "hero_kind": "doc",
     "eyebrow": "About",
     "h1": "The people you'll actually be dealing with",

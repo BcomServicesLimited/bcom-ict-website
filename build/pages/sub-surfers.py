@@ -29,7 +29,7 @@ PAGE = {
     "path": '/it-support-surfers-paradise-gold-coast',
     "priority": "0.7",
     "title": "IT Support Surfers Paradise — We're Based Here | bcom ICT",
-    "description": 'IT support for Surfers Paradise businesses from an office at 9 Ferny Avenue. High-rise access, accommodation and venue systems, guest WiFi and seasonal staff turnover.',
+    "description": "IT support for Surfers Paradise businesses from an office at 9 Ferny Avenue. High-rise access, accommodation and venue systems.",
     "hero_img": 'hero-bg.webp',
     "hero_alt": 'A Surfers Paradise office supported by bcom ICT, with the skyline visible through the window',
     "h1": "We're on Ferny Avenue",

@@ -57,7 +57,7 @@ PAGE = {
     "priority": '0.7',
     "article": True,
     "title": 'Office Move IT Checklist — Australian Business | bcom ICT',
-    "description": 'A practical IT checklist for an office move, in order and by timeline. Carrier lead times, number porting, cabling, cutover and testing — the things that actually cause moves to slip.',
+    "description": "A practical IT checklist for an office move, in order and by timeline. Carrier lead times, number porting, cabling, cutover and testing.",
     "hero_kind": 'page',
     "eyebrow": "Guide",
     "hero_img": 'hero-bg-business.webp',

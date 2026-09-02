@@ -56,7 +56,7 @@ PAGE = {
     "path": "/retail-store-technology-fitout-case-study",
     "priority": "0.8",
     "title": "Retail Store Technology Fit-Out — Case Study | bcom ICT",
-    "description": "bcom ICT delivered the complete technology fit-out for two new retail stores at Pacific Fair and Chermside — UniFi network, WiFi and CCTV, audio, connectivity, RFID and Shopify POS. Both opened on schedule.",
+    "description": "bcom ICT delivered the complete technology fit-out for two new retail stores at Pacific Fair and Chermside.",
     "hero_kind": "doc",
     "eyebrow": "Case study",
     "h1": "Two new stores, two states, trading from day one",

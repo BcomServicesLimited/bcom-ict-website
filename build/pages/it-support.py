@@ -81,7 +81,7 @@ PAGE = {
     "priority": "0.9",
     "service": "Business IT Support Gold Coast",
     "title": "Business IT Support Gold Coast — Same-Day On-Site | bcom ICT",
-    "description": "Business IT support across the Gold Coast — same-day on-site visits and remote help for small and medium businesses. Callback usually the same business day, Mon–Fri 8am–5pm. Call 07 3041 8993.",
+    "description": "Business IT support across the Gold Coast — same-day on-site visits and remote help for small and medium businesses. Call 07 3041 8993.",
     "hero_img": "hero-bg-it-support.webp",
     "hero_alt": "A bcom ICT technician providing on-site IT support to staff in a Gold Coast business office",
     "h1": "Business IT support across the Gold Coast",

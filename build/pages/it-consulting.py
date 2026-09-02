@@ -56,7 +56,7 @@ PAGE = {
     "service": "IT Consulting & Strategy Gold Coast",
     "also_service": ["IT Strategy & Technology Roadmaps Gold Coast"],
     "title": "IT Consulting & Strategy Gold Coast — Independent | bcom ICT",
-    "description": "Independent IT consulting for Gold Coast businesses — technology roadmaps, budget planning, vendor selection and second opinions. No hardware commissions. $190 + GST per hour.",
+    "description": "Independent IT consulting for Gold Coast businesses — technology roadmaps, budget planning, vendor selection and second opinions. No hardware commissions.",
     "hero_img": "hero-bg-it-consulting-strategy.webp",
     "hero_alt": "A bcom ICT consultant planning a technology roadmap with a Gold Coast business owner",
     "h1": "Independent advice, with nothing to sell you",
@@ -121,7 +121,8 @@ PAGE = {
     {EXAMPLE_2}
   </div>
 </section>
-''' + faq_block(FAQS) + related([
+''' + faq_block(FAQS) + related([('Software Recommendations', '/software-recommendations-gold-coast'),
+        
             ("IT Needs Assessment", "/it-needs-assessment-gold-coast"),
             ("Managed IT Services", "/managed-it-services-for-small-businesses-gold-coast"),
             ("Cloud & Microsoft 365", "/cloud-computing-service-gold-coast"),

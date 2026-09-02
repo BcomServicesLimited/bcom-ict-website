@@ -89,7 +89,7 @@ PAGE = {
     "priority": "0.85",
     "service": "Business Phone System Installation Gold Coast",
     "title": "Business Phone Systems Gold Coast — VoIP & PBX | bcom ICT",
-    "description": "Business phone systems installed and supported across the Gold Coast — cloud VoIP, hosted and on-premise PBX, number porting. Legacy PBX support included. Call 07 3041 8993.",
+    "description": "Business phone systems installed and supported across the Gold Coast — cloud VoIP, hosted and on-premise PBX, number porting. Call 07 3041 8993.",
     "hero_img": "business-phone-systems-hero.webp",
     "hero_alt": "Business VoIP handsets installed by bcom ICT at a Gold Coast office reception",
     "h1": "Business phone systems, installed and supported",

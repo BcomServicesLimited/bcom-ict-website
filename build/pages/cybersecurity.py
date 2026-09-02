@@ -77,7 +77,7 @@ PAGE = {
     "priority": "0.9",
     "service": "Cybersecurity Services Gold Coast",
     "title": "Cybersecurity Services Gold Coast for Business | bcom ICT",
-    "description": "Cybersecurity for Gold Coast businesses — endpoint protection, email security, MFA, ransomware defence and staff training, aligned to the ASD Essential Eight. Call 07 3041 8993.",
+    "description": "Cybersecurity for Gold Coast businesses — endpoint protection, email security, MFA, ransomware defence and staff training. Call 07 3041 8993.",
     "hero_img": "cybersecurity-assessment-hero.webp",
     "hero_alt": "A bcom ICT consultant reviewing security posture with a Gold Coast business owner",
     "h1": "Cybersecurity for Gold Coast businesses",

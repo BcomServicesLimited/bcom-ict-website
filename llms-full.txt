@@ -290,7 +290,7 @@ A: Consulting and implementation are charged at $190 + GST per hour, scoped befo
 
 ---
 
-## Aruba Instant On Installation Gold Coast
+## Aruba Instant On WiFi Gold Coast
 URL: https://www.bcomservices.com/aruba-instant-on-wifi-gold-coast
 
 bcom ICT designs, supplies and installs Aruba Instant On networks for Gold Coast businesses — surveying the building, specifying access points and switching, running the cabling, configuring guest separation and handing over documentation. bcom ICT also supports existing Instant On installations including earlier AP generations. Call 07 3041 8993.
@@ -637,7 +637,7 @@ A: Incident response is charged for the work done, and we'll give you a scope an
 
 ---
 
-## Cybersecurity Health Check for Gold Coast Small Business
+## Cybersecurity Health Check Gold Coast
 URL: https://www.bcomservices.com/cybersecurity-health-check-for-small-business-gold-coast
 
 bcom ICT provides a fixed-fee cybersecurity health check for Gold Coast small businesses, reviewing email, identity and accounts, endpoints, backups and network security. You receive a plain-English written report with findings mapped against the ASD Essential Eight and a prioritised remediation plan. The report is yours regardless of what you do next. Call 07 3041 8993.
@@ -692,7 +692,7 @@ A: No, and we won't imply otherwise. bcom ICT aligns its practices with ISO/IEC 
 
 ---
 
-## Business Data Backup & Disaster Recovery Gold Coast
+## Data Backup & Disaster Recovery Gold Coast
 URL: https://www.bcomservices.com/data-backup-recovery-gold-coast
 
 bcom ICT designs, implements and monitors backup and disaster recovery for Gold Coast businesses — automated cloud and local backup, restores tested on a schedule rather than assumed, documented recovery times, and reports suitable for an insurer after an incident. Australian-hosted backup is available. Call 07 3041 8993.
@@ -773,7 +773,7 @@ A: Usually. Where the credentials are genuinely lost the unit can be reset and r
 
 ---
 
-## Essential Eight Assessment & Uplift for Australian Business
+## Essential Eight Assessment & Uplift
 URL: https://www.bcomservices.com/essential-eight-guide-gold-coast
 
 The ASD Essential Eight is the Australian Signals Directorate's set of eight baseline mitigation strategies, with maturity measured from Level 0 to Level 3. bcom ICT assesses Australian businesses against all eight controls, reports the current maturity level in plain English, and implements the controls needed to reach the level a client or insurer expects. Call 07 3041 8993.
@@ -854,7 +854,7 @@ A: Usually a few days from delivery to deployment for a small batch, most of whi
 
 ---
 
-## Business Computer & Server Troubleshooting Gold Coast
+## Computer & Server Troubleshooting Gold Coast
 URL: https://www.bcomservices.com/hardware-software-troubleshooting-gold-coast
 
 bcom ICT diagnoses and repairs hardware and software faults on business computers, workstations and servers across the Gold Coast. Faults are diagnosed before a repair is quoted, and loan equipment is available where a machine has to leave the site. Call 07 3041 8993.
@@ -952,7 +952,7 @@ A: On-site work is Gold Coast based. Managed IT, cybersecurity, Microsoft 365 an
 
 ---
 
-## ISO/IEC 42001 AI Governance for Australian Business
+## ISO/IEC 42001 AI Governance
 URL: https://www.bcomservices.com/iso-42001-ai-governance-gold-coast
 
 bcom ICT delivers AI governance work for Australian businesses aligned to ISO/IEC 42001:2023, the international standard for AI management systems — covering policy, risk assessment, acceptable-use controls, human oversight and audit evidence. The work is led by Ollie, who holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. Call 07 3041 8993.
@@ -1189,7 +1189,7 @@ A: We charge a single $100 + GST call-out for on-site attendance across the Gold
 
 ---
 
-## IT Support for Gold Coast Healthcare & Allied Health
+## IT Support for Healthcare Gold Coast
 URL: https://www.bcomservices.com/it-support-healthcare-gold-coast
 
 bcom ICT supports medical, dental and allied health practices across the Gold Coast. Health service providers are covered by the Privacy Act regardless of annual turnover — the small business exemption does not apply to them — so practices carry obligations around patient information and notifiable data breaches that most businesses their size do not. Call 07 3041 8993.
@@ -1241,7 +1241,7 @@ A: Yes, and it is where the biggest gains are. A business running Helensvale plu
 
 ---
 
-## IT Support for Gold Coast Hospitality & Accommodation
+## IT Support for Hospitality Gold Coast
 URL: https://www.bcomservices.com/it-support-hospitality-gold-coast
 
 bcom ICT supports hotels, venues and accommodation businesses across the Gold Coast — guest WiFi designed for whole-property coverage and high device density, booking and property management system uptime, payment terminal segmentation, and account management for high seasonal staff turnover. Call 07 3041 8993.
@@ -1715,7 +1715,7 @@ A: Whichever fits how you already work. Microsoft 365 suits businesses heavy on 
 
 ---
 
-## Microsoft 365 vs Google Workspace for Australian Business
+## Microsoft 365 vs Google Workspace
 URL: https://www.bcomservices.com/microsoft-365-vs-google-workspace
 
 Microsoft 365 suits most Australian small businesses, largely because the desktop Office applications remain better for real document and spreadsheet work and because Australian industry software integrates with Outlook and Microsoft first. Google Workspace is the better choice where everyone works in a browser, collaboration is constant and there is no legacy software to satisfy. bcom ICT migrates businesses to and from both. Call 07 3041 8993.
@@ -1871,7 +1871,7 @@ A: Yes. PBX relocation, recabling and number porting are handled as part of an o
 
 ---
 
-## Office Network & Data Cabling Gold Coast
+## Office Data Cabling Gold Coast
 URL: https://www.bcomservices.com/network-cabling-for-offices-gold-coast
 
 bcom ICT delivers Cat6 and Cat6A structured cabling for Gold Coast offices and commercial premises — patch panels, comms racks, cable management, testing and certification documentation. Fixed cabling is a licensed trade in Australia, so the cabling itself is carried out by ACMA registered cabling contractors that bcom ICT engages and manages. Call 07 3041 8993.
@@ -2229,7 +2229,7 @@ A: Yes. PBX relocation, recabling and number porting are handled as part of an o
 
 ---
 
-## Business Computer Performance & Fleet Assessment Gold Coast
+## Computer Performance Optimisation Gold Coast
 URL: https://www.bcomservices.com/performance-optimisation-gold-coast
 
 bcom ICT assesses business computer fleets across the Gold Coast, identifying why machines are slow and recommending whether to upgrade or replace each one. Common fixes include SSD and memory upgrades, startup and software clean-up, and identifying machines beyond economic repair. Call 07 3041 8993.
@@ -2255,7 +2255,7 @@ A: No. bcom ICT works on business machines and office fleets.
 
 ---
 
-## Phone Line Installation & Voice Cabling Gold Coast
+## Phone Line & Voice Cabling Gold Coast
 URL: https://www.bcomservices.com/phone-line-installation-cabling-gold-coast
 
 bcom ICT installs internal phone line and voice cabling for Gold Coast offices and commercial premises. The cabling is carried out to Australian standards by ACMA registered cabling contractors that bcom ICT engages and manages, with testing and certification documentation provided on handover. Call 07 3041 8993.
@@ -2466,7 +2466,7 @@ A: Frequently yes — remote support is $190 + GST per hour with no call-out. If
 
 ---
 
-## 24/7 Security Operations Centre for Australian Business
+## 24/7 Security Operations Centre
 URL: https://www.bcomservices.com/security-operations-centre-gold-coast
 
 bcom ICT operates a 24/7 security operations centre for Australian businesses, monitoring endpoints, identities and cloud tenancies continuously. The bcom ICT SOC investigates alerts, separates noise from genuine intrusion, and contains confirmed threats — day, night, weekends and public holidays. Call 07 3041 8993.
@@ -2544,7 +2544,7 @@ A: No. bcom ICT works with businesses. We still install WiFi and mesh networks f
 
 ---
 
-## Business Software Installation & Configuration Gold Coast
+## Software Installation & Configuration
 URL: https://www.bcomservices.com/software-installation-configuration-gold-coast
 
 bcom ICT installs, licenses and configures business software across the Gold Coast — deploying consistently across machines, handling activation, and recording licences in an asset register so renewals and entitlements stay visible. Call 07 3041 8993.

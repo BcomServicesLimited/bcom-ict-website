@@ -60,7 +60,7 @@ PAGE = {
     "priority": '0.8',
     "service": 'AI Implementation for Business',
     "title": 'AI Implementation for Australian Business | bcom ICT',
-    "description": 'Practical AI implementation for Australian SMEs — AI phone agents, chatbots, workflow automation and Microsoft Copilot, delivered under an ISO/IEC 42001-aligned governance framework.',
+    "description": "Practical AI implementation for Australian SMEs — AI phone agents, chatbots, workflow automation and Microsoft Copilot.",
     "hero_img": 'ai-integration-hero.webp',
     "hero_alt": 'AI workflow automation being implemented by bcom ICT for an Australian business',
     "h1": 'AI that saves actual hours',

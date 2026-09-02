@@ -58,7 +58,7 @@ PAGE = {
     "path": '/managed-it-vs-break-fix',
     "priority": '0.75',
     "article": True,
-    "title": 'Managed IT vs Break-Fix — Which Does Your Business Need? | bcom ICT',
+    "title": "Managed IT vs Break-Fix — Which Do You Need? | bcom ICT",
     "description": 'The real difference between managed IT and paying by the hour, what each costs, and an honest guide to which one an Australian small business actually needs.',
     "hero_kind": 'doc',
     "eyebrow": "Guide",

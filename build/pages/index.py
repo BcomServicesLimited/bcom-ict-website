@@ -71,8 +71,8 @@ FAQS = [
 PAGE = {
     "path": "/",
     "priority": "1.0",
-    "title": "IT Support Gold Coast for Business — Same-Day On-Site | bcom ICT",
-    "description": "Business IT support on the Gold Coast since 2011. Managed IT, cybersecurity, WiFi, phone systems and Microsoft 365 for small and medium businesses. Call 07 3041 8993.",
+    "title": "IT Support Gold Coast for Business | bcom ICT",
+    "description": "Business IT support on the Gold Coast since 2011. Managed IT, cybersecurity, WiFi. Call 07 3041 8993.",
     "hero_kind": "home",
     "hero_img": "hero-bg.webp",
     "hero_alt": "A bcom ICT client working at a dual-screen desk in a Gold Coast office, with the Surfers Paradise skyline and beach visible through the window",

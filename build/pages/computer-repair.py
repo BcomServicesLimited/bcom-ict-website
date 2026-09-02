@@ -54,7 +54,7 @@ PAGE = {
     "priority": '0.8',
     "service": 'Business Computer Repair Gold Coast',
     "title": 'Business Computer Repair Gold Coast — On-Site | bcom ICT',
-    "description": 'On-site repair of business laptops, desktops and workstations across the Gold Coast. Diagnosed in place, with a loan machine if the repair takes longer. Call 07 3041 8993.',
+    "description": "On-site repair of business laptops, desktops and workstations across the Gold Coast. Call 07 3041 8993.",
     "hero_img": 'hero-bg-computer-repair.webp',
     "hero_alt": 'A bcom ICT technician repairing a business laptop on site at a Gold Coast office',
     "h1": 'We come to the office and fix it there',

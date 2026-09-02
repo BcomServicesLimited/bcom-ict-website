@@ -49,8 +49,8 @@ FAQS = [
 PAGE = {
     "path": "/nas-vs-cloud-backup",
     "priority": "0.8",
-    "title": "NAS vs Cloud Backup — Which Does Your Business Need? | bcom ICT",
-    "description": "Local NAS or cloud backup for an Australian business? What each genuinely protects against, why the answer is usually both, and the recovery-time question almost nobody asks.",
+    "title": "NAS vs Cloud Backup — Which Do You Need? | bcom ICT",
+    "description": "Local NAS or cloud backup for an Australian business? What each genuinely protects against, why the answer is usually both.",
     "hero_img": "compare-nas-cloud-hero.webp",
     "hero_alt": "Business data backup equipment installed in a Gold Coast office comms cabinet",
     "eyebrow": "Comparison",

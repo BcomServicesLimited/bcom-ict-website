@@ -82,8 +82,8 @@ PAGE = {
     "path": "/business-wifi-gold-coast",
     "priority": "0.85",
     "service": "Business WiFi Installation Gold Coast",
-    "title": "Business WiFi Installation Gold Coast — UniFi & Aruba | bcom ICT",
-    "description": "Business WiFi design and installation across the Gold Coast using Ubiquiti UniFi and Aruba Instant On. Coverage surveys, guest network separation and certified structured cabling. Call 07 3041 8993.",
+    "title": "Business WiFi Installation Gold Coast | bcom ICT",
+    "description": "Business WiFi design and installation across the Gold Coast using Ubiquiti UniFi and Aruba Instant On. Call 07 3041 8993.",
     "hero_img": "business-wifi-gold-coast-hero.webp",
     "hero_alt": "A Ubiquiti UniFi access point installed in the ceiling of a Gold Coast business office by bcom ICT",
     "h1": "Business WiFi that works everywhere in your building",
@@ -185,6 +185,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('WiFi Range Extension', '/wifi-range-extension-gold-coast'),
   ('UniFi vs Aruba Instant On', '/unifi-vs-aruba-instant-on'),
   ("Office Network Cabling", "/network-cabling-for-offices-gold-coast"),
   ("Network Security & Firewall", "/network-security-and-firewall-configuration-gold-coast"),

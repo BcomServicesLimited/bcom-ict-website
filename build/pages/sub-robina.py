@@ -29,7 +29,7 @@ PAGE = {
     "path": '/it-support-robina-gold-coast',
     "priority": "0.7",
     "title": 'IT Support Robina — Corporate & Professional | bcom ICT',
-    "description": 'IT support for Robina businesses — Robina Town Centre, the hospital precinct, Robina Quays and the surrounding corporate offices. Same-day attendance across the Gold Coast.',
+    "description": "IT support for Robina businesses — Robina Town Centre, the hospital precinct, Robina Quays and the surrounding corporate offices.",
     "hero_img": 'hero-bg-business.webp',
     "hero_alt": 'A Robina corporate office supported by bcom ICT',
     "h1": "IT support for Robina's business precinct",

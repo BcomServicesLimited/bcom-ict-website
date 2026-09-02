@@ -66,7 +66,7 @@ PAGE = {
     "priority": '0.8',
     "service": 'ASIC Cybersecurity Compliance',
     "title": 'ASIC Cybersecurity Compliance for AFS Licensees | bcom ICT',
-    "description": 'ASIC cyber resilience compliance for AFS licensees, financial planners, mortgage brokers, accountants and insurance brokers. Gap assessment, remediation and documented evidence. Call 07 3041 8993.',
+    "description": "ASIC cyber resilience compliance for AFS licensees, financial planners, mortgage brokers, accountants and insurance brokers. Call 07 3041 8993.",
     "hero_img": 'cybersecurity-assessment-hero.webp',
     "hero_alt": 'A compliance review being carried out for an Australian financial services licensee',
     "h1": 'Cyber resilience evidence an ASIC reviewer will accept',
@@ -158,7 +158,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
+            + related([('IT Support for Healthcare', '/it-support-healthcare-gold-coast'),
+               ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
         ('Cybersecurity Risk Assessment', '/cybersecurity-health-check-for-small-business-gold-coast'),
         ('Essential Eight assessment', '/essential-eight-guide-gold-coast'),
         ('Notifiable Data Breaches guide', '/notifiable-data-breach-guide-australia'),

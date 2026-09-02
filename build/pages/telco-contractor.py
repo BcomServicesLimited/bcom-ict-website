@@ -58,8 +58,8 @@ FAQS = [   (   'What does a telecommunications contractor do?',
 PAGE = {
     "path": '/telecommunications-contractor-gold-coast',
     "priority": '0.7',
-    "title": 'Telecommunications Contractor Gold Coast — Business | bcom ICT',
-    "description": 'Business telecommunications on the Gold Coast — phone systems, voice and data cabling, NBN and internet, number porting and legacy PBX support, from one contractor.',
+    "title": "Telecommunications Contractor Gold Coast | bcom ICT",
+    "description": "Business telecommunications on the Gold Coast — phone systems, voice and data cabling, NBN and internet, number porting and legacy PBX support.",
     "hero_img": 'phone-line-installation-hero.webp',
     "hero_alt": 'Telecommunications and cabling work carried out by bcom ICT for a Gold Coast business',
     "h1": 'One contractor for phones, cabling and connectivity',
@@ -129,7 +129,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Business Phone Systems', '/business-phone-systems-gold-coast'),
+            + related([('Business NBN guide', '/business-nbn-guide-gold-coast'),
+               ('Business Phone Systems', '/business-phone-systems-gold-coast'),
         ('VoIP Phone Systems', '/voip-phone-system-installation-and-support-gold-coast'),
         ('PBX Systems', '/pabx-phone-systems-gold-coast'),
         ('Phone Line Installation & Cabling', '/phone-line-installation-cabling-gold-coast'),

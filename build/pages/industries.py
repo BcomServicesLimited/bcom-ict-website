@@ -34,7 +34,7 @@ PAGE = {
     "path": "/industries",
     "priority": "0.8",
     "title": "Industries We Support — Gold Coast Business IT | bcom ICT",
-    "description": "IT support for Gold Coast healthcare, professional services, real estate, retail, restaurants, hospitality, trades and small business — with the compliance and uptime each sector actually needs.",
+    "description": "IT support for Gold Coast healthcare, professional services, real estate, retail, restaurants, hospitality, trades and small business.",
     "hero_img": "industries-hero.webp",
     "hero_alt": "bcom ICT working with businesses across a range of Gold Coast industries",
     "h1": "What breaks your business isn't what breaks theirs",

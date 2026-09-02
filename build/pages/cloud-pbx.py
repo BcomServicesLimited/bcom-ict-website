@@ -64,7 +64,7 @@ PAGE = {
     "priority": "0.9",
     "service": "Cloud PBX Gold Coast",
     "title": "Cloud PBX Gold Coast — We Own the Platform | bcom ICT",
-    "description": "bcom ICT runs its own AI-powered cloud PBX, built and operated in-house rather than resold. $25 + GST per user per month, Australian-hosted, no lock-in. Call 07 3041 8993.",
+    "description": "bcom ICT runs its own AI-powered cloud PBX, built and operated in-house rather than resold. Call 07 3041 8993.",
     "hero_img": "cloud-pbx-hero.webp",
     "hero_alt": "A Gold Coast business team using a cloud phone system on desk phones, laptops and mobiles",
     "h1": "Most IT providers resell a phone system. We built one.",

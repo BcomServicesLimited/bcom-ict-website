@@ -57,8 +57,8 @@ FAQS = [
 PAGE = {
     "path": "/unifi-vs-aruba-instant-on",
     "priority": "0.8",
-    "title": "UniFi vs Aruba Instant On — Which Suits Your Business? | bcom ICT",
-    "description": "An honest comparison of Ubiquiti UniFi and Aruba Instant On for Australian small business WiFi — what each is genuinely better at, and the four questions that decide it. bcom ICT installs both.",
+    "title": "UniFi vs Aruba Instant On — Which Suits You? | bcom ICT",
+    "description": "UniFi or Aruba Instant On for business WiFi? An honest comparison from an installer of both — what each is genuinely better at, and what decides it.",
     "hero_img": "compare-unifi-aruba-hero.webp",
     "hero_alt": "A bcom ICT technician explaining business WiFi options to a Gold Coast business owner",
     "eyebrow": "Comparison",

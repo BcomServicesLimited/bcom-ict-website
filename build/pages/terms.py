@@ -132,7 +132,7 @@ PAGE = {
     "path": "/terms-and-conditions",
     "priority": "0.3",
     "title": "Terms & Conditions | bcom ICT",
-    "description": "bcom ICT's terms of service — services, pricing, payment, fair use, carrier dependency, VoIP emergency calling, support hours, liability under Australian Consumer Law and termination.",
+    "description": "bcom ICT's terms of service — services, pricing, payment, fair use, carrier dependency, VoIP emergency calling, support hours.",
     "hero_kind": "doc",
     "eyebrow": "Legal",
     "h1": "Terms and conditions",

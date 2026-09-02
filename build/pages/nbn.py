@@ -57,7 +57,7 @@ PAGE = {
     "priority": '0.75',
     "service": 'Business NBN & Internet Support Gold Coast',
     "title": 'Business NBN & Internet Support Gold Coast | bcom ICT',
-    "description": "NBN and business internet support on the Gold Coast — modem and router configuration, line testing, ISP escalation and 4G/5G failover so an outage doesn't stop you trading.",
+    "description": "Business NBN and internet support on the Gold Coast — line testing, provider escalation with evidence, and 4G failover so an outage is not a lost day.",
     "hero_img": 'nbn-internet-support-hero.webp',
     "hero_alt": 'Business NBN and internet connection being tested by bcom ICT on the Gold Coast',
     "h1": 'When the internet goes down, so does the business',

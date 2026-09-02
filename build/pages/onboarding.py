@@ -74,8 +74,8 @@ FAQS = [
 PAGE = {
     "path": "/onboarding-first-30-days",
     "priority": "0.75",
-    "title": "Switching IT Providers — What the First 30 Days Look Like | bcom ICT",
-    "description": "Exactly what happens when a business moves to bcom ICT: discovery, an honest report, closing urgent gaps, monitoring going live and full handover — typically within 30 days.",
+    "title": "Switching IT Providers — First 30 Days | bcom ICT",
+    "description": "Exactly what happens when a business moves to bcom ICT: discovery, an honest report, closing urgent gaps, monitoring going live and full handover.",
     "hero_kind": "doc",
     "eyebrow": "Trust centre",
     "h1": "What actually happens in the first 30 days",
