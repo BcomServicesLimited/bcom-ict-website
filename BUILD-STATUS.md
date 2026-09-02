@@ -241,7 +241,6 @@ serves.*
 
 | Item | Needed for |
 |---|---|
-| **Search Console export** — 12 months, page-level, impressions + clicks. *Said "see attached" but no file came through.* | Chunk 11 — decides which of the 11 WiFi brand pages get consolidated vs kept |
 | **Legal review of `/privacy-policy` and `/terms-and-conditions`** — both are reasonable and Australian-law aware (APPs, ACL consumer guarantees explicitly preserved) but have not been reviewed by a lawyer | Before go-live |
 | **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
 | **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
@@ -334,6 +333,30 @@ in styles.css restyles it to match `.btn--primary` (Manrope, bcom blue, 14px 26p
 |---|---|---|
 | Service description | "1 Hour IT Support for **Gold Coast Home Users** — $252.00 inc GST" | The whole site targets **business**. "Home Users" contradicts every page it appears on |
 | Calendar owner name | "**B**com ICT" | Trading name is **bcom ICT**, lowercase b |
+
+## Search Console baseline — 12 months to 31 Aug 2026 (pre-relaunch)
+
+Supplied 3 Sept 2026. **119,711 impressions, 532 clicks, 0.44% CTR.** This is the
+old site; treat it as the baseline the rebuild is measured against.
+
+- **Half the impressions sat on a duplicate host.** Non-www carried 108 indexed
+  URLs and 58,457 impressions against www's 170 / 86,096. On top of that, 76
+  paths were indexed both with and without `.html`. The old site was splitting
+  its own authority three and four ways. Both are fixed by the current
+  `_redirects`; this is the largest single upside of the relaunch.
+- **Redirect coverage is complete.** Of 234 old paths carrying impressions,
+  zero with 100+ impressions lack a destination.
+- **The WiFi consolidation is vindicated.** The nine retired brand pages
+  (TP-Link, Linksys, Netgear, Asus, D-Link, Synology, Google Nest, Aruba
+  Business, Grandstream) earned ~344 impressions and **zero clicks** across the
+  whole year. The UniFi pages earned 566 impressions and 16 clicks — the best
+  click-through in the WiFi set, and the reason that page was kept. Aruba
+  Instant On is the weakest of the kept pages: 56 impressions, no clicks.
+- **Biggest single opportunity:** "it support gold coast" — 6,814 impressions at
+  average position 11.5, i.e. page two, returning 7 clicks.
+- `portal.` and `admin.` subdomains are indexed (635 impressions). They should
+  carry noindex.
+- AI features: 1,318 impressions, but only since 18 May 2026 (106 days).
 
 ## Rate card (Royce, Sept 2026 — current)
 
