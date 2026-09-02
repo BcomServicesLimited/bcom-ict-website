@@ -18,10 +18,7 @@ BIZ = {
     "phone_intl":   "+61730418993",
     "phone_href":   "tel:+61730418993",
     "email":        "support@bcomservices.com",
-    "street":       "9 Ferny Avenue",
-    "suburb":       "Surfers Paradise",
     "state":        "QLD",
-    "postcode":     "4217",
     "region":       "Gold Coast",
     "lat":          "-27.9986",
     "lon":          "153.4295",
@@ -156,4 +153,7 @@ FORM_ENDPOINT = "xreoqepk"
 
 
 def address_line():
-    return f"{BIZ['street']}, {BIZ['suburb']} {BIZ['state']} {BIZ['postcode']}"
+    """Where we work, not a place to visit. bcom ICT attends the customer's
+    site — there is no counter for anyone to walk up to, so no street address
+    is published anywhere on the site or in the structured data."""
+    return f"{BIZ['region']} {BIZ['state']}, Australia"

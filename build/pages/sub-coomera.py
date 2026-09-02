@@ -35,7 +35,7 @@ PAGE = {
     "h1": "IT support for Coomera's industrial and marine precincts",
     "lede": 'The fastest-growing part of the coast, with large-footprint premises where covering the floor is the actual problem.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~30 min from our office', 'Warehouse coverage', 'Multi-site capable', 'Remote-first where we can'],
+    "trust": ['Growth corridor', 'Warehouse coverage', 'Multi-site capable', 'Remote-first where we can'],
     "crumbs": [("Industries", "/industries"), ('Coomera', '/it-support-coomera-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -43,7 +43,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT provides IT support to businesses in Coomera — marine, warehousing, logistics, light industrial and retail across the northern growth corridor. Attendance is roughly thirty minutes from our Surfers Paradise office, with most faults resolved remotely and multi-site operations supported as a single estate. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT provides IT support to businesses in Coomera — marine, warehousing, logistics, light industrial and retail across the northern growth corridor. Attendance is available across the northern corridor, with most faults resolved remotely and multi-site operations supported as a single estate. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -107,7 +107,7 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">Coomera is roughly thirty minutes from our office at 9 Ferny Avenue,
+    <p style="margin-top:16px">Coomera is about thirty minutes north of the centre of our coverage,
     Surfers Paradise, straight up the M1. Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Given the distance we resolve what we can remotely first — $190 + GST per hour
     with no call-out — and book a visit for the work that genuinely needs someone on site, which for Coomera

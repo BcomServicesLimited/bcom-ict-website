@@ -129,14 +129,14 @@ PAGE = {
     support@bcomservices.com or 07 3041 8993 to access or correct what we hold.</p>
 
     <p style="margin-top:32px">This policy applies to Bcom Services Pty Ltd (ABN 92 636 893 108), trading as
-    bcom ICT, of 9 Ferny Avenue, Surfers Paradise QLD 4217, and is written to comply with the Privacy Act
+    bcom ICT, of the Gold Coast, Queensland, and is written to comply with the Privacy Act
     1988 (Cth) and the Australian Privacy Principles.</p>
 
     {body}
 
     <h2 style="margin-top:48px">Contact</h2>
     <p style="margin-top:16px">Privacy enquiries: <a href="mailto:support@bcomservices.com">support@bcomservices.com</a>
-    · 07 3041 8993 · 9 Ferny Avenue, Surfers Paradise QLD 4217. Business hours 8:00am – 5:00pm,
+    · 07 3041 8993 · Gold Coast QLD, Australia. Business hours 8:00am – 5:00pm,
     Monday to Friday, Brisbane time.</p>
   </div>
 </section>

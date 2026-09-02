@@ -35,7 +35,7 @@ PAGE = {
     "h1": "IT support for Nerang's industrial estates",
     "lede": 'Workshops, yards and trade businesses where the IT is a small office, a job management system, and phones that have to follow people into the field.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~20 min from our office', 'Trades & industrial', 'Warehouse coverage', 'Same-day attendance'],
+    "trust": ['Industrial estates', 'Trades & industrial', 'Warehouse coverage', 'Same-day attendance'],
     "crumbs": [("Industries", "/industries"), ('Nerang', '/it-support-nerang-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -43,7 +43,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT provides IT support to businesses in Nerang — trades, workshops, automotive, warehousing and light industrial operations across the industrial estates, along with the offices behind them. Attendance is roughly twenty minutes from our Surfers Paradise office. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT provides IT support to businesses in Nerang — trades, workshops, automotive, warehousing and light industrial operations across the industrial estates, along with the offices behind them. Same-day attendance is usually available. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -107,7 +107,7 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">Nerang is roughly twenty minutes from our office at 9 Ferny Avenue,
+    <p style="margin-top:16px">Nerang is about twenty minutes inland from the centre of our coverage,
     Surfers Paradise, via Nerang-Broadbeach Road or the M1. Same-day attendance is usually available across
     the estates and the town centre.</p>
     <p style="margin-top:16px">Access is generally easy — parking and vehicle access at industrial premises is

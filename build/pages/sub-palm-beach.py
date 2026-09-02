@@ -34,7 +34,7 @@ PAGE = {
     "h1": 'IT support for Palm Beach businesses',
     "lede": 'A strip that has changed a great deal in a few years — and a lot of premises whose infrastructure has not changed with it.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~25 min from our office', 'Small independents', 'Remote-first where we can', 'Same-day attendance'],
+    "trust": ['Southern beaches', 'Small independents', 'Remote-first where we can', 'Same-day attendance'],
     "crumbs": [("Industries", "/industries"), ('Palm Beach', '/it-support-palm-beach-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -42,7 +42,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT provides IT support to businesses in Palm Beach — cafes and food operators, retail, creative studios and small professional practices along the Gold Coast Highway and the surrounding streets. Attendance is roughly twenty-five minutes from our Surfers Paradise office, and most faults are resolved remotely without a visit. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT provides IT support to businesses in Palm Beach — cafes and food operators, retail, creative studios and small professional practices along the Gold Coast Highway and the surrounding streets. Same-day attendance is usually available, and most faults are resolved remotely without a visit. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -102,7 +102,7 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">Palm Beach is roughly twenty-five minutes from our office at 9 Ferny
+    <p style="margin-top:16px">Palm Beach is about twenty-five minutes south of the centre of our coverage
     Avenue, Surfers Paradise, down the highway or the M1. Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Given the distance and the size of most jobs here, we resolve what we can
     remotely and book a visit only when the fault genuinely needs someone on site — dead hardware, a failed

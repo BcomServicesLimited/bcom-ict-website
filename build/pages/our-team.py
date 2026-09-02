@@ -58,7 +58,7 @@ PAGE = {
     "body": f'''
 <section class="section section--tight">
   <div class="wrap">
-    <p class="answer">bcom ICT is led from 9 Ferny Avenue, Surfers Paradise by Royce Clark, Director of
+    <p class="answer">bcom ICT is led by Royce Clark, Director of
     Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business
     Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation;
     Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.</p>

@@ -7,7 +7,7 @@ LOCAL_EX = example(
     "Created named accounts for every person with multi-factor authentication, removed saved credentials from the shared machine, and set out a short written position on access that the practice could give to a client who asks.",
     "The practice can now answer the question it was asked. Southport&rsquo;s concentration of legal, medical and accounting practices means client-driven security questions arrive here earlier than in most parts of the coast.")
 FAQS = [   (   'Do you provide IT support in Southport?',
-        'Yes. bcom ICT attends Southport businesses from its office at 9 Ferny Avenue, Surfers Paradise — roughly ten minutes away — with same-day attendance almost always available. We cover the '
+        'Yes. Southport is one of the quickest suburbs on the coast for us to reach, and same-day attendance is almost always available. We cover the '
         'courts precinct, Nerang and Scarborough Streets, Australia Fair, Chinatown, the health precinct around the Gold Coast University Hospital, and the Broadwater frontage. Call 07 3041 8993.'),
     (   "Do you work with law firms and barristers' chambers?",
         'Yes — the courts precinct means Southport has one of the densest concentrations of legal practices on the coast. Professional confidentiality obligations change how the IT has to be set up: '
@@ -36,7 +36,7 @@ PAGE = {
     "h1": 'IT support in the Gold Coast CBD',
     "lede": 'Southport carries the legal, medical and civic weight of the Gold Coast — and the confidentiality and compliance obligations that come with it.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~10 min from our office', 'Legal & medical experience', 'Police-checked techs', 'Same-day attendance'],
+    "trust": ['Gold Coast CBD', 'Legal & medical experience', 'Police-checked techs', 'Same-day attendance'],
     "crumbs": [("Industries", "/industries"), ('Southport', '/it-support-southport-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -44,7 +44,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT provides IT support to businesses across Southport, the Gold Coast's commercial and civic centre, roughly ten minutes from our Surfers Paradise office. Southport carries a dense concentration of legal, medical and professional practices with specific confidentiality and compliance obligations. Same-day attendance is usually available. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT provides IT support to businesses across Southport, the Gold Coast's commercial and civic centre. Southport carries a dense concentration of legal, medical and professional practices with specific confidentiality and compliance obligations. Same-day attendance is usually available. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -107,9 +107,9 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">Southport is roughly ten minutes from our office at 9 Ferny Avenue,
-    Surfers Paradise — straight up the Gold Coast Highway or via the light rail corridor. It is one of the
-    quickest suburbs on the coast for us to reach, and same-day attendance is almost always available.</p>
+    <p style="margin-top:16px">Southport sits on the Gold Coast Highway and the light rail corridor, which
+    makes it one of the quickest suburbs on the coast for us to reach. Same-day attendance is almost always
+    available.</p>
     <p style="margin-top:16px">We still try remote first where the fault allows it, because remote support is
     $190 + GST per hour with no call-out against $290 + GST for a first hour on site. Most email, Microsoft 365,
     software and account faults never need anyone to travel.</p>

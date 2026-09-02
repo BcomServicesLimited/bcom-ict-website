@@ -34,7 +34,7 @@ PAGE = {
     "h1": "IT support for Burleigh's independent operators",
     "lede": 'James Street, the highway strip and the converted premises behind them — small businesses in buildings that were never designed for what they now hold.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~20 min from our office', 'Small independents', 'Older shopfronts', 'Remote-first where we can'],
+    "trust": ['James Street precinct', 'Small independents', 'Older shopfronts', 'Remote-first where we can'],
     "crumbs": [("Industries", "/industries"), ('Burleigh Heads', '/it-support-burleigh-heads-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -42,7 +42,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT provides IT support to businesses in Burleigh Heads — cafes and restaurants, creative studios, boutique agencies and the professional practices increasingly occupying converted premises around James Street and the Gold Coast Highway. Attendance is roughly twenty minutes from our Surfers Paradise office, with most faults resolved remotely first. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT provides IT support to businesses in Burleigh Heads — cafes and restaurants, creative studios, boutique agencies and the professional practices increasingly occupying converted premises around James Street and the Gold Coast Highway. Same-day attendance is usually available, with most faults resolved remotely first. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -102,7 +102,7 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">Burleigh Heads is roughly twenty minutes from our office at 9 Ferny
+    <p style="margin-top:16px">Burleigh Heads is about twenty minutes from the centre of our coverage
     Avenue, Surfers Paradise, down the highway or the M1. Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Because most Burleigh jobs are small, we try remote first wherever the fault
     allows — remote support is $190 + GST per hour with no call-out, against $229 + GST for a first hour on

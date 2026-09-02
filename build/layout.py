@@ -46,7 +46,7 @@ def head(p):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{SITE}/assets/img/og-image.jpg">
 <meta name="geo.region" content="AU-QLD">
-<meta name="geo.placename" content="{BIZ['suburb']}, {BIZ['region']}">
+<meta name="geo.placename" content="{BIZ['region']}, Queensland">
 <link rel="icon" href="/assets/logo/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/logo/favicon.webp">
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-800-latin.woff2" crossorigin>
@@ -75,10 +75,8 @@ def local_business():
         "logo": f"{SITE}/assets/logo/bcom-ict-logo.webp",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": BIZ["street"],
-            "addressLocality": BIZ["suburb"],
+            "addressLocality": BIZ["region"],
             "addressRegion": BIZ["state"],
-            "postalCode": BIZ["postcode"],
             "addressCountry": "AU",
         },
         "geo": {"@type": "GeoCoordinates", "latitude": BIZ["lat"], "longitude": BIZ["lon"]},

@@ -156,7 +156,7 @@ PAGE = {
 
     <h2 style="margin-top:48px">Contact</h2>
     <p style="margin-top:16px">Bcom Services Pty Ltd, ABN 92 636 893 108, trading as bcom ICT ·
-    9 Ferny Avenue, Surfers Paradise QLD 4217 ·
+    Gold Coast QLD, Australia ·
     <a href="mailto:support@bcomservices.com">support@bcomservices.com</a> · 07 3041 8993 ·
     Jurisdiction: Queensland, Australia.</p>
   </div>

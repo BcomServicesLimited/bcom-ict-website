@@ -3,7 +3,7 @@ from site_data import SUBURBS
 
 FAQS = [
     ("Who is bcom ICT?",
-     "bcom ICT is the trading name of Bcom Services Pty Ltd, ABN 92 636 893 108, a Gold Coast IT support company established in 2011 and based at 9 Ferny Avenue, Surfers Paradise. bcom ICT supports small and medium businesses on-site across the Gold Coast and remotely Australia-wide. Call 07 3041 8993."),
+     "bcom ICT is the trading name of Bcom Services Pty Ltd, ABN 92 636 893 108, a Gold Coast IT support company established in 2011. bcom ICT supports small and medium businesses on-site across the Gold Coast and remotely Australia-wide. Call 07 3041 8993."),
     ("Is bcom ICT the same business as Bcom IT Solutions?",
      "Yes. \"Bcom IT Solutions\" is an earlier trading name for the same business. The current trading name is bcom ICT, and the legal entity has always been Bcom Services Pty Ltd, ABN 92 636 893 108. Older references you find online to Bcom IT Solutions refer to this company."),
     ("What is the official bcom ICT website?",
@@ -13,7 +13,7 @@ FAQS = [
     ("Who will we actually deal with?",
      "The people doing the work. bcom ICT is led by Royce Clark and Ollie, and clients deal with them directly rather than through an account manager or a rotating helpdesk. Escalation reaches a director the same day. Meet them on our team page."),
     ("Where are you based?",
-     "9 Ferny Avenue, Surfers Paradise QLD 4217 — an actual office on the Gold Coast, not a registered address for an interstate company. On-site work covers the whole Gold Coast; managed, remote and cloud services are delivered Australia-wide."),
+     "On the Gold Coast, and we come to you. Our technicians and sales team attend your site rather than asking you to bring anything to us, so on-site work covers the whole Gold Coast from Coomera to Coolangatta. Managed, remote and cloud services are delivered Australia-wide."),
 ]
 
 PAGE = {
@@ -24,9 +24,9 @@ PAGE = {
     "hero_img": "hero-bg-business.webp",
     "hero_alt": "The bcom ICT team working with a client at their Gold Coast business premises",
     "h1": "Looking after Gold Coast businesses since 2011",
-    "lede": "An office on Ferny Avenue, fifteen years of looking after Gold Coast businesses, and delivery reaching across Australia.",
+    "lede": "Fifteen years of looking after Gold Coast businesses, on site wherever you are, with delivery reaching across Australia.",
     "actions": [("Meet the team", "/our-team", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ["Established 2011", "ABN 92 636 893 108", "Surfers Paradise office", "5.0 from 24 reviews"],
+    "trust": ["Established 2011", "ABN 92 636 893 108", "We come to you", "5.0 from 24 reviews"],
     "crumbs": [("About", "/about")],
     "faqs": FAQS,
     "reviewed": "August 2026",
@@ -34,7 +34,7 @@ PAGE = {
 <section class="section">
   <div class="wrap">
     <p class="answer">bcom ICT is the trading name of Bcom Services Pty Ltd, ABN 92 636 893 108, a Gold Coast
-    IT support company established in 2011 and based at 9 Ferny Avenue, Surfers Paradise. bcom ICT works with
+    IT support company established in 2011. bcom ICT works with
     small and medium businesses, on-site across the Gold Coast and remotely Australia-wide. Call
     07 3041 8993.</p>
 
@@ -45,7 +45,7 @@ PAGE = {
         small and medium businesses — typically between three and sixty staff — with managed IT,
         cybersecurity, networks, phone systems and cloud.</p>
         <p style="margin-top:16px">We're not a national helpdesk with a Gold Coast phone number, and we're
-        not a franchise. The office is on Ferny Avenue in Surfers Paradise, and when you call 07 3041 8993
+        not a franchise. Our technicians and sales team are on the Gold Coast and come to you, and when you call 07 3041 8993
         you reach someone who can actually do something about it rather than someone who has to ask.</p>
         <p style="margin-top:16px">That direct access doesn't mean limited capacity. We delivered a full
         national rollout for an Australian retail chain — every store and head office across the country
@@ -89,7 +89,7 @@ PAGE = {
       "<strong>Trading name:</strong> bcom ICT. Previously traded as <strong>Bcom IT Solutions</strong> — same company, older name.",
       "<strong>Legal entity:</strong> Bcom Services Pty Ltd, <a href='https://abr.business.gov.au/ABN/View?abn=92636893108' rel='nofollow'>ABN 92 636 893 108</a>.",
       "<strong>Established:</strong> 2011. Fifteen years trading on the Gold Coast.",
-      "<strong>Address:</strong> 9 Ferny Avenue, Surfers Paradise QLD 4217.",
+      "<strong>Where we work:</strong> on site across the Gold Coast, from Coomera to Coolangatta. Managed, remote and cloud services are delivered Australia-wide.",
       "<strong>Our only website is www.bcomservices.com.</strong> We do not operate at <em>bcom.services</em> — that is a separate, unrelated registration.",
     ])}
 

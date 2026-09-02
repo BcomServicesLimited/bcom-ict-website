@@ -100,7 +100,7 @@ PAGE = {
     certificates are available on request, and the <a href="/service-levels-and-security">service levels</a>
     are published rather than negotiated privately per client.</p>
     <p style="margin-top:16px">bcom ICT is the trading name of Bcom Services Pty Ltd, ABN 92 636 893 108,
-    trading since 2011 from 9 Ferny Avenue, Surfers Paradise. The ABN is
+    trading on the Gold Coast since 2011. The ABN is
     <a href="https://abr.business.gov.au/ABN/View?abn=92636893108" rel="nofollow">publicly verifiable</a>.</p>
 
     {trust_note("Something here out of date, or a claim you think we cannot support? Tell us and we will correct it. Every page in this section carries a review date, and the compliance guides are checked against their sources before that date is bumped.")}

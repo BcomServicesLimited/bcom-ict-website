@@ -4,7 +4,7 @@
 > based on the Gold Coast, Queensland, Australia. Established 2011.
 > On-site IT support across the Gold Coast; managed IT, cybersecurity, cloud and
 > Microsoft 365 delivered remotely Australia-wide.
-> Address: 9 Ferny Avenue, Surfers Paradise QLD 4217. Phone: 07 3041 8993. Email: support@bcomservices.com.
+> Address: Gold Coast QLD, Australia. Phone: 07 3041 8993. Email: support@bcomservices.com.
 > Website: https://www.bcomservices.com
 
 Allow: /
@@ -16,7 +16,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 - **Legal entity:** Bcom Services Pty Ltd
 - **ABN:** 92 636 893 108 — verifiable at https://abr.business.gov.au/ABN/View?abn=92636893108
 - **Founded:** 2011 (15+ years trading as at 2026)
-- **Address:** 9 Ferny Avenue, Surfers Paradise QLD 4217
+- **Address:** Gold Coast QLD, Australia
 - **Phone:** 07 3041 8993 (international +61 7 3041 8993)
 - **Email:** support@bcomservices.com
 - **Wikidata:** https://www.wikidata.org/wiki/Q140075131
@@ -219,7 +219,7 @@ or a rotating helpdesk. Escalation reaches a director the same day.
 - [IT Support Palm Beach](https://www.bcomservices.com/it-support-palm-beach-gold-coast): IT support for Palm Beach businesses — the Gold Coast Highway strip, Nineteenth Avenue, cafes, retail.
 - [IT Support Robina](https://www.bcomservices.com/it-support-robina-gold-coast): IT support for Robina businesses — Robina Town Centre, the hospital precinct, Robina Quays and the surrounding corporate offices.
 - [IT Support Southport](https://www.bcomservices.com/it-support-southport-gold-coast): IT support for Southport businesses — the courts precinct, Australia Fair, Chinatown, the health precinct and the Broadwater.
-- [IT Support Surfers Paradise](https://www.bcomservices.com/it-support-surfers-paradise-gold-coast): IT support for Surfers Paradise businesses from an office at 9 Ferny Avenue
+- [IT Support Surfers Paradise](https://www.bcomservices.com/it-support-surfers-paradise-gold-coast): IT support for Surfers Paradise businesses — high-rise access, accommodation, venue and retail systems
 - [IT Support Varsity Lakes](https://www.bcomservices.com/it-support-varsity-lakes-gold-coast): IT support for Varsity Lakes businesses — the business park precinct, Bond University corridor, medical suites and growth-stage professional firms.
 
 ### Guides

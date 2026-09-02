@@ -7,10 +7,10 @@ LOCAL_EX = example(
     "Attended the same afternoon, having already held the building&rsquo;s contractor induction from other work in the tower, and restored the server from backup. Afterwards, we recorded the building&rsquo;s access requirements against the client so no future visit has to rediscover them.",
     "Back trading that day rather than the next. In Surfers Paradise the access arrangements are frequently a larger part of the response time than the fault, which is why we keep the induction and dock details on file.")
 FAQS = [   (   'Do you provide IT support in Surfers Paradise?',
-        "Yes — bcom ICT's office is at 9 Ferny Avenue, Surfers Paradise, so this is our home suburb. Attendance within Surfers Paradise is usually available within the hour during business hours, "
+        "Yes — Surfers Paradise is central to the area we cover, and attendance here is usually available within the hour during business hours. "
         'which are 8:00am to 5:00pm Monday to Friday, Brisbane time. Call 07 3041 8993.'),
     (   'How quickly can you get to a Surfers Paradise business?',
-        'Usually within the hour during business hours, since we are based in the suburb. Building access in the towers occasionally adds time — service lift bookings and building management '
+        'Usually within the hour during business hours, since Surfers Paradise is central to the area we cover. Building access in the towers occasionally adds time — service lift bookings and building management '
         'approvals — which we arrange in advance where the work requires it rather than turning up and being turned away.'),
     (   'Do you work with hotels and accommodation operators here?',
         'Yes, and it is a substantial part of what we do in Surfers. Guest WiFi across whole properties, property management system connectivity, payment terminal segmentation across outlets, '
@@ -28,14 +28,14 @@ FAQS = [   (   'Do you provide IT support in Surfers Paradise?',
 PAGE = {
     "path": '/it-support-surfers-paradise-gold-coast',
     "priority": "0.7",
-    "title": "IT Support Surfers Paradise — We're Based Here | bcom ICT",
-    "description": "IT support for Surfers Paradise businesses from an office at 9 Ferny Avenue. High-rise access, accommodation and venue systems.",
+    "title": 'IT Support Surfers Paradise — Towers & Venues | bcom ICT',
+    "description": "IT support for Surfers Paradise businesses — high-rise access, accommodation, venue and retail systems. Call 07 3041 8993.",
     "hero_img": 'hero-bg.webp',
     "hero_alt": 'A Surfers Paradise office supported by bcom ICT, with the skyline visible through the window',
-    "h1": "We're on Ferny Avenue",
-    "lede": 'Our office is in Surfers Paradise, so this is the one suburb where local IT support means we can genuinely walk.',
+    "h1": 'IT support for Surfers Paradise towers and venues',
+    "lede": 'Accommodation, venues and the professional offices in the towers — the densest mix of business types on the coast, and the trickiest to get a technician into.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['Office at 9 Ferny Ave', 'High-rise experience', 'Venue & accommodation', 'Usually within the hour'],
+    "trust": ['Local since 2011', 'High-rise experience', 'Venue & accommodation', 'Usually within the hour'],
     "crumbs": [("Industries", "/industries"), ('Surfers Paradise', '/it-support-surfers-paradise-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -43,7 +43,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT is based at 9 Ferny Avenue, Surfers Paradise, and supports businesses throughout the suburb — accommodation operators, venues, hospitality, retail and the professional offices in the Esplanade and Ferny Avenue towers. Attendance within Surfers Paradise is usually available within the hour during business hours. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT supports businesses throughout Surfers Paradise — accommodation operators, venues, hospitality, retail and the professional offices in the Esplanade and Ferny Avenue towers. Attendance within Surfers Paradise is usually available within the hour during business hours. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -106,7 +106,7 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">We are at 9 Ferny Avenue, in the suburb. Attendance within Surfers
+    <p style="margin-top:16px">Surfers Paradise is central to the area we cover. Attendance within Surfers
     Paradise is usually available within the hour during business hours — this is the one place on the coast
     where a technician can be walking rather than driving.</p>
     <p style="margin-top:16px">Building access occasionally adds time. Where a job needs a service lift
@@ -117,7 +117,7 @@ PAGE = {
 
     <h2 style="margin-top:48px">Streets and precincts we regularly attend</h2>
     <p style="margin-top:16px">We attend businesses throughout Surfers Paradise and immediately around it, including:</p>
-    {ticks(['Ferny Avenue and the surrounding commercial towers — where our own office is', 'The Esplanade and the beachfront accommodation strip', 'Cavill Avenue, Orchid Avenue and the Surfers Paradise dining and venue precinct', 'Surfers Paradise Boulevard and the Chevron Renaissance precinct', 'Gold Coast Highway through Surfers and the light rail corridor', "Northcliffe, Cypress Avenue and the southern end toward <a href='/it-support-broadbeach-gold-coast'>Broadbeach</a>", 'Main Beach, Tedder Avenue and the Marina Mirage precinct', 'Bundall and the commercial stretch inland along Bundall Road'])}
+    {ticks(['Ferny Avenue and the surrounding commercial towers', 'The Esplanade and the beachfront accommodation strip', 'Cavill Avenue, Orchid Avenue and the Surfers Paradise dining and venue precinct', 'Surfers Paradise Boulevard and the Chevron Renaissance precinct', 'Gold Coast Highway through Surfers and the light rail corridor', "Northcliffe, Cypress Avenue and the southern end toward <a href='/it-support-broadbeach-gold-coast'>Broadbeach</a>", 'Main Beach, Tedder Avenue and the Marina Mirage precinct', 'Bundall and the commercial stretch inland along Bundall Road'])}
 
     {trust_note('Working in a tower usually means building management approvals and a booked service lift. We arrange those before the visit rather than discovering them at reception, and our technicians hold national police checks where a building or client requires them.')}
   </div>

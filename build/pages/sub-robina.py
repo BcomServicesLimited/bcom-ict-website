@@ -35,7 +35,7 @@ PAGE = {
     "h1": "IT support for Robina's business precinct",
     "lede": 'Robina was planned rather than accumulated, and it shows. Purpose-built premises, corporate tenants, and procurement processes that expect documented answers.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~20 min from our office', 'Corporate & professional', 'Modern buildings', 'Same-day attendance'],
+    "trust": ['Town Centre precinct', 'Corporate & professional', 'Modern buildings', 'Same-day attendance'],
     "crumbs": [("Industries", "/industries"), ('Robina', '/it-support-robina-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -43,7 +43,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT provides IT support to businesses in Robina — corporate offices, financial services, legal and accounting practices and medical suites concentrated around Robina Town Centre, the hospital precinct and the surrounding business parks. Attendance is roughly twenty minutes from our Surfers Paradise office. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT provides IT support to businesses in Robina — corporate offices, financial services, legal and accounting practices and medical suites concentrated around Robina Town Centre, the hospital precinct and the surrounding business parks. Same-day attendance is usually available. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -104,7 +104,7 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">Robina is roughly twenty minutes from our office at 9 Ferny Avenue,
+    <p style="margin-top:16px">Robina is about twenty minutes down the M1 from the centre of our coverage,
     Surfers Paradise, via the M1 or the Gold Coast Highway. Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Most faults are resolved remotely first — $190 + GST per hour with no call-out
     against $290 + GST for a first hour on site. Email, Microsoft 365, software, account and printer problems

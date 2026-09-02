@@ -60,9 +60,11 @@ PAGE = {
     "body": f'''
 <section class="section section--tight">
   <div class="wrap">
-    <p class="answer">To get IT support from bcom ICT, call 07 3041 8993 — returned in business hours including weekends
-    and public holidays — or email support@bcomservices.com for non-urgent issues, with a callback within 4
-    business hours. Remote support is provided via a one-time link you approve. bcom ICT takes support calls
+    <p class="answer">To get IT support from bcom ICT, call 07 3041 8993 &mdash; calls are returned during
+    business hours, 8:00am to 5:00pm Monday to Friday, Brisbane time &mdash; or email support@bcomservices.com
+    for non-urgent issues. Managed and SLA clients have contracted response targets under their agreement;
+    every other enquiry receives a best-effort response, usually the same business day. Remote support is
+    provided via a one-time link you approve. bcom ICT takes support calls
     from businesses that are not existing clients.</p>
 
     <div class="grid grid--3" style="margin-top:48px">{cards([(t, h, d) for t, h, d in ROUTES])}</div>

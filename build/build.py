@@ -265,7 +265,9 @@ def _strip_tags(html):
     """The gate matches on prose, not markup: a claim split across <dt>/<dd>
     reads as one promise to a human and to a crawler, and used to slip the
     gate because the gap pattern excluded "<"."""
-    return re.sub(r"<[^>]+>", " ", html)
+    # Whitespace is collapsed too: a promise wrapped across two source lines
+    # reads as one sentence but used to slip a pattern matching a single space.
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
 
 
 def sla_gate():

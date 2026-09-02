@@ -35,7 +35,7 @@ PAGE = {
     "h1": 'IT support for the Varsity Lakes business precinct',
     "lede": 'Modern premises, professional tenants, and a lot of firms that grew out of somewhere smaller without updating the network they brought with them.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~20 min from our office', 'Business park precinct', 'Modern infrastructure', 'Same-day attendance'],
+    "trust": ['Bond University corridor', 'Business park precinct', 'Modern infrastructure', 'Same-day attendance'],
     "crumbs": [("Industries", "/industries"), ('Varsity Lakes', '/it-support-varsity-lakes-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -43,7 +43,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT provides IT support to businesses in Varsity Lakes — professional services firms, medical and allied health practices, and technology and consulting businesses across the business park precinct and the Bond University corridor. Attendance is roughly twenty minutes from our Surfers Paradise office. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT provides IT support to businesses in Varsity Lakes — professional services firms, medical and allied health practices, and technology and consulting businesses across the business park precinct and the Bond University corridor. Same-day attendance is usually available. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -105,7 +105,7 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">Varsity Lakes is roughly twenty minutes from our office at 9 Ferny
+    <p style="margin-top:16px">Varsity Lakes is about twenty minutes from the centre of our coverage
     Avenue, Surfers Paradise, via the M1. Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Most faults are resolved remotely first at $190 + GST per hour with no
     call-out, against $290 + GST for a first hour on site. Given the distance we will tell you honestly on the

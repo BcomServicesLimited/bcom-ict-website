@@ -4,7 +4,7 @@
 > based on the Gold Coast, Queensland, Australia. Established 2011.
 > On-site IT support across the Gold Coast; managed IT, cybersecurity, cloud and
 > Microsoft 365 delivered remotely Australia-wide.
-> Address: 9 Ferny Avenue, Surfers Paradise QLD 4217. Phone: 07 3041 8993. Email: support@bcomservices.com.
+> Address: Gold Coast QLD, Australia. Phone: 07 3041 8993. Email: support@bcomservices.com.
 > Website: https://www.bcomservices.com
 
 Allow: /
@@ -16,7 +16,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 - **Legal entity:** Bcom Services Pty Ltd
 - **ABN:** 92 636 893 108 — verifiable at https://abr.business.gov.au/ABN/View?abn=92636893108
 - **Founded:** 2011 (15+ years trading as at 2026)
-- **Address:** 9 Ferny Avenue, Surfers Paradise QLD 4217
+- **Address:** Gold Coast QLD, Australia
 - **Phone:** 07 3041 8993 (international +61 7 3041 8993)
 - **Email:** support@bcomservices.com
 - **Wikidata:** https://www.wikidata.org/wiki/Q140075131
@@ -143,7 +143,7 @@ URL: https://www.bcomservices.com/
 bcom ICT is a Gold Coast IT support company that has looked after small and medium businesses since 2011. bcom ICT provides managed IT, cybersecurity, business WiFi, phone systems and Microsoft 365 support — on-site across the Gold Coast and remotely Australia-wide. Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time. Managed and SLA clients have contracted response targets; every other enquiry receives a best-effort response, usually the same business day. Call 07 3041 8993.
 
 **Q: Who provides IT support for businesses on the Gold Coast?**
-A: bcom ICT provides IT support to small and medium businesses across the Gold Coast, and has done since 2011. The team is based at 9 Ferny Avenue, Surfers Paradise, and attends sites from Coomera to Coolangatta — with remote and managed support available to businesses anywhere in Australia. Call 07 3041 8993.
+A: bcom ICT provides IT support to small and medium businesses across the Gold Coast, and has done since 2011. The team is on the Gold Coast and attends sites from Coomera to Coolangatta — with remote and managed support available to businesses anywhere in Australia. Call 07 3041 8993.
 
 **Q: How much does business IT support cost on the Gold Coast?**
 A: bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $100 + GST call-out ($110.00 inc GST) on on-site work — so a first hour on site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from your business requirements and the services included, quoted after a free review and month-to-month with no lock-in. Rates are published in full on our pricing page.
@@ -166,10 +166,10 @@ A: We work to recognised standards without overstating it. bcom ICT operates to 
 ## About bcom ICT
 URL: https://www.bcomservices.com/about
 
-bcom ICT is the trading name of Bcom Services Pty Ltd, ABN 92 636 893 108, a Gold Coast IT support company established in 2011 and based at 9 Ferny Avenue, Surfers Paradise. bcom ICT works with small and medium businesses, on-site across the Gold Coast and remotely Australia-wide. Call 07 3041 8993.
+bcom ICT is the trading name of Bcom Services Pty Ltd, ABN 92 636 893 108, a Gold Coast IT support company established in 2011. bcom ICT works with small and medium businesses, on-site across the Gold Coast and remotely Australia-wide. Call 07 3041 8993.
 
 **Q: Who is bcom ICT?**
-A: bcom ICT is the trading name of Bcom Services Pty Ltd, ABN 92 636 893 108, a Gold Coast IT support company established in 2011 and based at 9 Ferny Avenue, Surfers Paradise. bcom ICT supports small and medium businesses on-site across the Gold Coast and remotely Australia-wide. Call 07 3041 8993.
+A: bcom ICT is the trading name of Bcom Services Pty Ltd, ABN 92 636 893 108, a Gold Coast IT support company established in 2011. bcom ICT supports small and medium businesses on-site across the Gold Coast and remotely Australia-wide. Call 07 3041 8993.
 
 **Q: Is bcom ICT the same business as Bcom IT Solutions?**
 A: Yes. "Bcom IT Solutions" is an earlier trading name for the same business. The current trading name is bcom ICT, and the legal entity has always been Bcom Services Pty Ltd, ABN 92 636 893 108. Older references you find online to Bcom IT Solutions refer to this company.
@@ -184,7 +184,7 @@ A: No, not any more. bcom ICT works with businesses. We still install WiFi and m
 A: The people doing the work. bcom ICT is led by Royce Clark and Ollie, and clients deal with them directly rather than through an account manager or a rotating helpdesk. Escalation reaches a director the same day. Meet them on our team page.
 
 **Q: Where are you based?**
-A: 9 Ferny Avenue, Surfers Paradise QLD 4217 — an actual office on the Gold Coast, not a registered address for an interstate company. On-site work covers the whole Gold Coast; managed, remote and cloud services are delivered Australia-wide.
+A: On the Gold Coast, and we come to you. Our technicians and sales team attend your site rather than asking you to bring anything to us, so on-site work covers the whole Gold Coast from Coomera to Coolangatta. Managed, remote and cloud services are delivered Australia-wide.
 
 
 ---
@@ -585,10 +585,10 @@ A: Yes — diagrams, labelling at both ends, credentials and an asset register, 
 ## Contact bcom ICT
 URL: https://www.bcomservices.com/contact
 
-bcom ICT can be reached on 07 3041 8993 or at support@bcomservices.com. Phones are returned in business hours including weekends and public holidays, and every enquiry receives a callback within 4 business hours. The office is at 9 Ferny Avenue, Surfers Paradise QLD 4217. Call 07 3041 8993.
+bcom ICT can be reached on 07 3041 8993 or at support@bcomservices.com. Calls are returned during business hours — 8:00am to 5:00pm, Monday to Friday, Brisbane time. Managed and SLA clients have contracted response targets under their agreement; every other enquiry receives a best-effort response, usually the same business day. We attend sites across the Gold Coast and support businesses remotely Australia-wide. Call 07 3041 8993.
 
 **Q: How do I contact bcom ICT?**
-A: Call 07 3041 8993, email support@bcomservices.com, or use the enquiry form on this page. Our digital assistant answers the phone at any hour, but calls are returned during business hours — 8:00am to 5:00pm, Monday to Friday, Brisbane time — usually the same business day. Managed and SLA clients have contracted response targets under their agreement; every other enquiry receives a best-effort response. The office is at 9 Ferny Avenue, Surfers Paradise QLD 4217.
+A: Call 07 3041 8993, email support@bcomservices.com, or use the enquiry form on this page. Our digital assistant answers the phone at any hour, but calls are returned during business hours — 8:00am to 5:00pm, Monday to Friday, Brisbane time — usually the same business day. Managed and SLA clients have contracted response targets under their agreement; every other enquiry receives a best-effort response. We attend sites across the Gold Coast and support businesses remotely Australia-wide.
 
 **Q: What happens after I get in touch?**
 A: We call you back to understand the problem — usually the same business day, and generally within one business day. If it can be fixed remotely we'll often start there and then, at $190 + GST per hour with no call-out. If it needs someone on site, we book a visit — same day where we can — at a $100 + GST call-out plus the hourly rate, agreed before anyone gets in a car.
@@ -1059,10 +1059,10 @@ A: No. The needs assessment is broader and free — systems, licensing, hardware
 ## Business IT Support Gold Coast
 URL: https://www.bcomservices.com/it-support-and-services-gold-coast
 
-bcom ICT provides IT support to businesses across the Gold Coast, with same-day on-site attendance and remote support for small and medium businesses. Based at 9 Ferny Avenue, Surfers Paradise, bcom ICT has supported Gold Coast businesses since 2011. Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time. Managed and SLA clients have contracted response targets; every other enquiry receives a best-effort response, usually the same business day. Call 07 3041 8993.
+bcom ICT provides IT support to businesses across the Gold Coast, with same-day on-site attendance and remote support for small and medium businesses. bcom ICT has supported Gold Coast businesses since 2011. Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time. Managed and SLA clients have contracted response targets; every other enquiry receives a best-effort response, usually the same business day. Call 07 3041 8993.
 
 **Q: Who provides IT support for businesses on the Gold Coast?**
-A: bcom ICT has provided IT support to Gold Coast businesses since 2011, from an office at 9 Ferny Avenue, Surfers Paradise. The team attends sites from Coomera down to Coolangatta, with remote support available to businesses anywhere in Australia. Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time, and callbacks usually come the same business day. Call 07 3041 8993.
+A: bcom ICT has provided IT support to Gold Coast businesses since 2011. The team attends sites from Coomera down to Coolangatta, with remote support available to businesses anywhere in Australia. Business hours are 8:00am to 5:00pm Monday to Friday, Brisbane time, and callbacks usually come the same business day. Call 07 3041 8993.
 
 **Q: How quickly can you get to us?**
 A: Same-day on-site attendance is usually available across the Gold Coast, and remote support often starts within minutes of your call. Managed IT clients have a contracted 4-hour response for critical faults plus after-hours emergency attendance. For everyone else the response is best effort — usually the same business day, and generally within one business day — and we book the visit then.
@@ -1088,10 +1088,10 @@ A: You'll get a straight answer about what's wrong, what it costs to fix, and wh
 ## IT Support Broadbeach
 URL: https://www.bcomservices.com/it-support-broadbeach-gold-coast
 
-bcom ICT provides IT support to businesses across Broadbeach — retail, restaurants, venues, accommodation and the professional offices around Pacific Fair, the convention precinct and Oracle Boulevard. Broadbeach is roughly five minutes from our Surfers Paradise office, so attendance is usually same-day and often much sooner. Call 07 3041 8993.
+bcom ICT provides IT support to businesses across Broadbeach — retail, restaurants, venues, accommodation and the professional offices around Pacific Fair, the convention precinct and Oracle Boulevard. Attendance in Broadbeach is usually same-day and often much sooner. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Broadbeach?**
-A: Yes. bcom ICT is based at 9 Ferny Avenue, Surfers Paradise — roughly five minutes from Broadbeach — so attendance is effectively always same-day and often much sooner. We cover Pacific Fair and the surrounding retail, the Oracle towers, the Surf Parade and Victoria Avenue dining strip, and the convention centre precinct. Call 07 3041 8993.
+A: Yes. Broadbeach is a few minutes from the centre of our coverage, so attendance is effectively always same-day and often much sooner. We cover Pacific Fair and the surrounding retail, the Oracle towers, the Surf Parade and Victoria Avenue dining strip, and the convention centre precinct. Call 07 3041 8993.
 
 **Q: Our WiFi struggles when we're busy. Can that be fixed?**
 A: Usually, and it is a capacity design problem rather than an internet one. One access point serving forty devices behaves nothing like one serving five, and Broadbeach's event and holiday peaks make that visible in a way a quiet Tuesday never will. It needs surveying and properly specified equipment — adding a consumer extender generally makes it worse.
@@ -1114,7 +1114,7 @@ A: Yes, and it is where the biggest gains are. Standardising equipment and confi
 ## IT Support Burleigh Heads
 URL: https://www.bcomservices.com/it-support-burleigh-heads-gold-coast
 
-bcom ICT provides IT support to businesses in Burleigh Heads — cafes and restaurants, creative studios, boutique agencies and the professional practices increasingly occupying converted premises around James Street and the Gold Coast Highway. Attendance is roughly twenty minutes from our Surfers Paradise office, with most faults resolved remotely first. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Burleigh Heads — cafes and restaurants, creative studios, boutique agencies and the professional practices increasingly occupying converted premises around James Street and the Gold Coast Highway. Same-day attendance is usually available, with most faults resolved remotely first. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Burleigh Heads?**
 A: Yes. bcom ICT attends Burleigh Heads businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover James Street, the Gold Coast Highway frontage, The Pines, and the streets behind the main strip. Most faults are resolved remotely first at $190 + GST per hour with no call-out. Call 07 3041 8993.
@@ -1140,7 +1140,7 @@ A: WiFi and mesh network installation for home offices, yes — including throug
 ## IT Support Coomera
 URL: https://www.bcomservices.com/it-support-coomera-gold-coast
 
-bcom ICT provides IT support to businesses in Coomera — marine, warehousing, logistics, light industrial and retail across the northern growth corridor. Attendance is roughly thirty minutes from our Surfers Paradise office, with most faults resolved remotely and multi-site operations supported as a single estate. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Coomera — marine, warehousing, logistics, light industrial and retail across the northern growth corridor. Attendance is available across the northern corridor, with most faults resolved remotely and multi-site operations supported as a single estate. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Coomera?**
 A: Yes. bcom ICT attends Coomera businesses — including the marine precinct and the industrial and logistics estates through Corporation Circuit and Millennium Circuit — from its Surfers Paradise office, roughly thirty minutes away. Same-day attendance is usually available and most faults are resolved remotely first. Call 07 3041 8993.
@@ -1218,10 +1218,10 @@ A: Yes — physiotherapy, psychology, dental, podiatry, optometry and similar pr
 ## IT Support Helensvale
 URL: https://www.bcomservices.com/it-support-helensvale-gold-coast
 
-bcom ICT provides IT support to businesses in Helensvale and the surrounding northern Gold Coast — professional practices, medical suites, retail and service businesses around Westfield Helensvale and the transport interchange, and operators out toward Hope Island and Sanctuary Cove. Attendance is roughly twenty-five minutes from our Surfers Paradise office, and most faults are resolved remotely first. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Helensvale and the surrounding northern Gold Coast — professional practices, medical suites, retail and service businesses around Westfield Helensvale and the transport interchange, and operators out toward Hope Island and Sanctuary Cove. Same-day attendance is usually available, and most faults are resolved remotely first. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Helensvale?**
-A: Yes. bcom ICT attends Helensvale businesses from its office at 9 Ferny Avenue, Surfers Paradise — roughly twenty-five minutes away — with same-day attendance usually available. Most faults are resolved remotely first at $190 + GST per hour with no call-out. We cover the Westfield Helensvale precinct, Lindfield Road, the station interchange area, and out toward Hope Island and Sanctuary Cove. Call 07 3041 8993.
+A: Yes. bcom ICT attends Helensvale businesses with same-day attendance usually available. Most faults are resolved remotely first at $190 + GST per hour with no call-out. We cover the Westfield Helensvale precinct, Lindfield Road, the station interchange area, and out toward Hope Island and Sanctuary Cove. Call 07 3041 8993.
 
 **Q: Is Helensvale too far for same-day support?**
 A: No. Same-day attendance is usually available across the whole northern corridor, and remote support often has people working again within minutes of a call — well before anyone could drive anywhere. Managed IT clients have a contracted 4-hour response on critical faults regardless of where they are on the Gold Coast.
@@ -1270,7 +1270,7 @@ A: Same considerations as any venue — payment terminals segmented, automatic i
 ## IT Support Nerang
 URL: https://www.bcomservices.com/it-support-nerang-gold-coast
 
-bcom ICT provides IT support to businesses in Nerang — trades, workshops, automotive, warehousing and light industrial operations across the industrial estates, along with the offices behind them. Attendance is roughly twenty minutes from our Surfers Paradise office. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Nerang — trades, workshops, automotive, warehousing and light industrial operations across the industrial estates, along with the offices behind them. Same-day attendance is usually available. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Nerang?**
 A: Yes. bcom ICT attends Nerang businesses — including the industrial estates through Lawrence Drive, Spencer Road and Rudman Parade — from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. Call 07 3041 8993.
@@ -1296,7 +1296,7 @@ A: Yes, though connectivity gets genuinely harder past Advancetown and Gilston. 
 ## IT Support Palm Beach
 URL: https://www.bcomservices.com/it-support-palm-beach-gold-coast
 
-bcom ICT provides IT support to businesses in Palm Beach — cafes and food operators, retail, creative studios and small professional practices along the Gold Coast Highway and the surrounding streets. Attendance is roughly twenty-five minutes from our Surfers Paradise office, and most faults are resolved remotely without a visit. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Palm Beach — cafes and food operators, retail, creative studios and small professional practices along the Gold Coast Highway and the surrounding streets. Same-day attendance is usually available, and most faults are resolved remotely without a visit. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Palm Beach?**
 A: Yes. bcom ICT attends Palm Beach businesses from its Surfers Paradise office, roughly twenty-five minutes away, with same-day attendance usually available. We cover the Gold Coast Highway strip, Nineteenth Avenue, the streets off the highway, and out through Elanora and Currumbin. Most faults are resolved remotely at $190 + GST per hour with no call-out. Call 07 3041 8993.
@@ -1426,7 +1426,7 @@ A: Same-day attendance is usually available across the Gold Coast, and many POS 
 ## IT Support Robina
 URL: https://www.bcomservices.com/it-support-robina-gold-coast
 
-bcom ICT provides IT support to businesses in Robina — corporate offices, financial services, legal and accounting practices and medical suites concentrated around Robina Town Centre, the hospital precinct and the surrounding business parks. Attendance is roughly twenty minutes from our Surfers Paradise office. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Robina — corporate offices, financial services, legal and accounting practices and medical suites concentrated around Robina Town Centre, the hospital precinct and the surrounding business parks. Same-day attendance is usually available. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Robina?**
 A: Yes. bcom ICT attends Robina businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover Robina Town Centre, Robina Town Centre Drive, Laver Drive, Cheltenham Drive, Robina Quays and the hospital precinct. Most faults are resolved remotely first. Call 07 3041 8993.
@@ -1478,10 +1478,10 @@ A: Yes, and it happens. Sometimes the review concludes that ad-hoc support is en
 ## IT Support Southport
 URL: https://www.bcomservices.com/it-support-southport-gold-coast
 
-bcom ICT provides IT support to businesses across Southport, the Gold Coast's commercial and civic centre, roughly ten minutes from our Surfers Paradise office. Southport carries a dense concentration of legal, medical and professional practices with specific confidentiality and compliance obligations. Same-day attendance is usually available. Call 07 3041 8993.
+bcom ICT provides IT support to businesses across Southport, the Gold Coast's commercial and civic centre. Southport carries a dense concentration of legal, medical and professional practices with specific confidentiality and compliance obligations. Same-day attendance is usually available. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Southport?**
-A: Yes. bcom ICT attends Southport businesses from its office at 9 Ferny Avenue, Surfers Paradise — roughly ten minutes away — with same-day attendance almost always available. We cover the courts precinct, Nerang and Scarborough Streets, Australia Fair, Chinatown, the health precinct around the Gold Coast University Hospital, and the Broadwater frontage. Call 07 3041 8993.
+A: Yes. Southport is one of the quickest suburbs on the coast for us to reach, and same-day attendance is almost always available. We cover the courts precinct, Nerang and Scarborough Streets, Australia Fair, Chinatown, the health precinct around the Gold Coast University Hospital, and the Broadwater frontage. Call 07 3041 8993.
 
 **Q: Do you work with law firms and barristers' chambers?**
 A: Yes — the courts precinct means Southport has one of the densest concentrations of legal practices on the coast. Professional confidentiality obligations change how the IT has to be set up: file access structured by role rather than open to everyone, managed devices for anything leaving the office, secure remote access rather than something published to the internet, and backups with tested restores.
@@ -1504,13 +1504,13 @@ A: Most of it, yes — and Southport's government-adjacent and professional clie
 ## IT Support Surfers Paradise
 URL: https://www.bcomservices.com/it-support-surfers-paradise-gold-coast
 
-bcom ICT is based at 9 Ferny Avenue, Surfers Paradise, and supports businesses throughout the suburb — accommodation operators, venues, hospitality, retail and the professional offices in the Esplanade and Ferny Avenue towers. Attendance within Surfers Paradise is usually available within the hour during business hours. Call 07 3041 8993.
+bcom ICT supports businesses throughout Surfers Paradise — accommodation operators, venues, hospitality, retail and the professional offices in the Esplanade and Ferny Avenue towers. Attendance within Surfers Paradise is usually available within the hour during business hours. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Surfers Paradise?**
-A: Yes — bcom ICT's office is at 9 Ferny Avenue, Surfers Paradise, so this is our home suburb. Attendance within Surfers Paradise is usually available within the hour during business hours, which are 8:00am to 5:00pm Monday to Friday, Brisbane time. Call 07 3041 8993.
+A: Yes — Surfers Paradise is central to the area we cover, and attendance here is usually available within the hour during business hours. which are 8:00am to 5:00pm Monday to Friday, Brisbane time. Call 07 3041 8993.
 
 **Q: How quickly can you get to a Surfers Paradise business?**
-A: Usually within the hour during business hours, since we are based in the suburb. Building access in the towers occasionally adds time — service lift bookings and building management approvals — which we arrange in advance where the work requires it rather than turning up and being turned away.
+A: Usually within the hour during business hours, since Surfers Paradise is central to the area we cover. Building access in the towers occasionally adds time — service lift bookings and building management approvals — which we arrange in advance where the work requires it rather than turning up and being turned away.
 
 **Q: Do you work with hotels and accommodation operators here?**
 A: Yes, and it is a substantial part of what we do in Surfers. Guest WiFi across whole properties, property management system connectivity, payment terminal segmentation across outlets, function space connectivity and account management for seasonal staff. Guests review the WiFi, which makes coverage a commercial decision rather than a technical one.
@@ -1556,7 +1556,7 @@ A: Depends on what a lost day costs. Plenty of trades businesses are well served
 ## IT Support Varsity Lakes
 URL: https://www.bcomservices.com/it-support-varsity-lakes-gold-coast
 
-bcom ICT provides IT support to businesses in Varsity Lakes — professional services firms, medical and allied health practices, and technology and consulting businesses across the business park precinct and the Bond University corridor. Attendance is roughly twenty minutes from our Surfers Paradise office. Call 07 3041 8993.
+bcom ICT provides IT support to businesses in Varsity Lakes — professional services firms, medical and allied health practices, and technology and consulting businesses across the business park precinct and the Bond University corridor. Same-day attendance is usually available. Call 07 3041 8993.
 
 **Q: Do you provide IT support in Varsity Lakes?**
 A: Yes. bcom ICT attends Varsity Lakes businesses from its Surfers Paradise office, roughly twenty minutes away, with same-day attendance usually available. We cover the business park precinct through Varsity Parade and Lakeview Boulevard, Scottsdale Drive, the Bond University corridor and Varsity Central. Call 07 3041 8993.
@@ -2151,7 +2151,7 @@ A: No. bcom ICT works on business machines only.
 ## Our Team
 URL: https://www.bcomservices.com/our-team
 
-bcom ICT is led from 9 Ferny Avenue, Surfers Paradise by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation; Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.
+bcom ICT is led by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation; Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.
 
 **Q: Who runs bcom ICT?**
 A: bcom ICT is led by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation and Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. Clients deal with them directly rather than through an account manager.
@@ -2613,7 +2613,7 @@ A: Yes, and where a client runs both we configure them as a pair so the isolatio
 ## Get Support
 URL: https://www.bcomservices.com/support
 
-To get IT support from bcom ICT, call 07 3041 8993 — returned in business hours including weekends and public holidays — or email support@bcomservices.com for non-urgent issues, with a callback within 4 business hours. Remote support is provided via a one-time link you approve. bcom ICT takes support calls from businesses that are not existing clients.
+To get IT support from bcom ICT, call 07 3041 8993 — calls are returned during business hours, 8:00am to 5:00pm Monday to Friday, Brisbane time — or email support@bcomservices.com for non-urgent issues. Managed and SLA clients have contracted response targets under their agreement; every other enquiry receives a best-effort response, usually the same business day. Remote support is provided via a one-time link you approve. bcom ICT takes support calls from businesses that are not existing clients.
 
 **Q: How do I get IT support from bcom ICT?**
 A: Call 07 3041 8993 for anything urgent — business hours are 8am to 5pm Monday to Friday, Brisbane time. Outside those hours our digital assistant takes the details and the job is logged, including at weekends and on public holidays. Email support@bcomservices.com for non-urgent issues, with a best-effort callback — usually the same business day. For remote support we'll send you a one-time link that lets a technician see your screen with your permission. Existing clients don't need to be managed clients to call.

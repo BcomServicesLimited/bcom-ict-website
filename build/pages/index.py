@@ -19,7 +19,7 @@ SERVICES = [
 WHY = [
     ("We answer the phone", "Day, night, weekend or public holiday, a call to bcom ICT gets answered. Out of hours it's our AI operator taking the details, and we come back to you in business hours — usually the same business day."),
     ("We fix causes, not symptoms", "If the same fault keeps coming back, that's our problem to solve — not a new invoice every time. Chasing root causes is the difference between managed IT and a repair bill."),
-    ("We're local, and we come to you", "We're based on Ferny Avenue in Surfers Paradise. Same-day on-site visits across the Gold Coast, and remote support anywhere in Australia."),
+    ("We're local, and we come to you", "Our technicians and sales team are on the Gold Coast and attend your site. Same-day on-site visits across the Gold Coast, and remote support anywhere in Australia."),
     ("No lock-in contracts", "Our managed IT is month-to-month. If we're not worth the money, you should be able to leave — and you should get your documentation and passwords on the way out."),
 ]
 
@@ -44,7 +44,7 @@ steps = "".join(
 FAQS = [
     ("Who provides IT support for businesses on the Gold Coast?",
      "bcom ICT provides IT support to small and medium businesses across the Gold Coast, and has done since 2011. "
-     "The team is based at 9 Ferny Avenue, Surfers Paradise, and attends sites from Coomera to Coolangatta — "
+     "The team is on the Gold Coast and attends sites from Coomera to Coolangatta — "
      "with remote and managed support available to businesses anywhere in Australia. Call 07 3041 8993."),
     ("How much does business IT support cost on the Gold Coast?",
      "bcom ICT charges $190 + GST per hour ($209.00 inc GST) for business IT support, plus a $100 + GST call-out "

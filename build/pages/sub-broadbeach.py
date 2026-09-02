@@ -7,7 +7,7 @@ LOCAL_EX = example(
     "Redesigned the function space for full occupancy, put the event network on its own segment away from venue systems and point-of-sale, and load-tested the room before the next booking rather than during it.",
     "Events now run at capacity without incident. Around Broadbeach and the convention precinct, guest connectivity is part of the product rather than a back-office concern, and it is assessed publicly.")
 FAQS = [   (   'Do you provide IT support in Broadbeach?',
-        'Yes. bcom ICT is based at 9 Ferny Avenue, Surfers Paradise — roughly five minutes from Broadbeach — so attendance is effectively always same-day and often much sooner. We cover Pacific Fair '
+        'Yes. Broadbeach is a few minutes from the centre of our coverage, so attendance is effectively always same-day and often much sooner. We cover Pacific Fair '
         'and the surrounding retail, the Oracle towers, the Surf Parade and Victoria Avenue dining strip, and the convention centre precinct. Call 07 3041 8993.'),
     (   "Our WiFi struggles when we're busy. Can that be fixed?",
         "Usually, and it is a capacity design problem rather than an internet one. One access point serving forty devices behaves nothing like one serving five, and Broadbeach's event and holiday "
@@ -35,7 +35,7 @@ PAGE = {
     "h1": 'IT support for Broadbeach retail and venues',
     "lede": 'Convention traffic, a major shopping centre and one of the densest dining strips on the coast. Broadbeach businesses live on payments working and WiFi holding up under load.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~5 min from our office', 'Retail & venue focus', 'EFTPOS failover', 'Same-day attendance'],
+    "trust": ['Pacific Fair precinct', 'Retail & venue focus', 'EFTPOS failover', 'Same-day attendance'],
     "crumbs": [("Industries", "/industries"), ('Broadbeach', '/it-support-broadbeach-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -43,7 +43,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT provides IT support to businesses across Broadbeach — retail, restaurants, venues, accommodation and the professional offices around Pacific Fair, the convention precinct and Oracle Boulevard. Broadbeach is roughly five minutes from our Surfers Paradise office, so attendance is usually same-day and often much sooner. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT provides IT support to businesses across Broadbeach — retail, restaurants, venues, accommodation and the professional offices around Pacific Fair, the convention precinct and Oracle Boulevard. Attendance in Broadbeach is usually same-day and often much sooner. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -101,7 +101,7 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">Broadbeach is roughly five minutes from our office at 9 Ferny
+    <p style="margin-top:16px">Broadbeach is a few minutes from the centre of our coverage
     Avenue, Surfers Paradise — one of the fastest suburbs on the coast for us to reach. Same-day attendance is
     effectively always available, and often much sooner than that.</p>
     <p style="margin-top:16px">Many faults are diagnosed remotely within minutes at $190 + GST per hour with

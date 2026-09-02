@@ -7,7 +7,7 @@ LOCAL_EX = example(
     "Moved the integration to near real-time, added an alert for a failed sync, and set a stock buffer on the fastest-moving lines so the counter and the website could not strand a customer.",
     "Refunds for unavailable stock effectively stopped. The setting had been correct on the day it was configured and wrong for about three years afterwards.")
 FAQS = [   (   'Do you provide IT support in Helensvale?',
-        'Yes. bcom ICT attends Helensvale businesses from its office at 9 Ferny Avenue, Surfers Paradise — roughly twenty-five minutes away — with same-day attendance usually available. Most faults '
+        'Yes. bcom ICT attends Helensvale businesses with same-day attendance usually available. Most faults '
         'are resolved remotely first at $190 + GST per hour with no call-out. We cover the Westfield Helensvale precinct, Lindfield Road, the station interchange area, and out toward Hope Island and '
         'Sanctuary Cove. Call 07 3041 8993.'),
     (   'Is Helensvale too far for same-day support?',
@@ -37,7 +37,7 @@ PAGE = {
     "h1": 'IT support for Helensvale businesses',
     "lede": 'From the professional suites around Westfield Helensvale to the marine and hospitality operators out at Hope Island and Sanctuary Cove.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ['~25 min from our office', 'Northern corridor', 'Remote-first where we can', 'Same-day attendance'],
+    "trust": ['Westfield precinct', 'Northern corridor', 'Remote-first where we can', 'Same-day attendance'],
     "crumbs": [("Industries", "/industries"), ('Helensvale', '/it-support-helensvale-gold-coast')],
     "faqs": FAQS,
     "booking": True,
@@ -45,7 +45,7 @@ PAGE = {
     "body": f'''
 <section class="section">
   <div class="wrap">
-    <p class="answer">bcom ICT provides IT support to businesses in Helensvale and the surrounding northern Gold Coast — professional practices, medical suites, retail and service businesses around Westfield Helensvale and the transport interchange, and operators out toward Hope Island and Sanctuary Cove. Attendance is roughly twenty-five minutes from our Surfers Paradise office, and most faults are resolved remotely first. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT provides IT support to businesses in Helensvale and the surrounding northern Gold Coast — professional practices, medical suites, retail and service businesses around Westfield Helensvale and the transport interchange, and operators out toward Hope Island and Sanctuary Cove. Same-day attendance is usually available, and most faults are resolved remotely first. Call 07 3041 8993.</p>
 
     <div class="section-head" style="margin-top:64px">
       <span class="eyebrow">Local landscape</span>
@@ -112,8 +112,8 @@ PAGE = {
     <div class="rule">{MARK}</div>
 
     <h2>Getting to you</h2>
-    <p style="margin-top:16px">Helensvale is roughly twenty-five minutes from our office at
-    9 Ferny Avenue, Surfers Paradise, straight up the M1 or the Gold Coast Highway depending on the hour.
+    <p style="margin-top:16px">Helensvale is about twenty-five minutes north of the centre of our
+    coverage, straight up the M1 or the Gold Coast Highway depending on the hour.
     Same-day attendance is usually available.</p>
     <p style="margin-top:16px">Because of the distance, we try remote first wherever the fault allows it —
     remote support is $190 + GST per hour with no call-out, against $290 + GST for a first hour on site. Most

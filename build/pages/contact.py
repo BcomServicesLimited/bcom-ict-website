@@ -6,8 +6,8 @@ LINES = [
      "Our digital assistant answers any time; calls are returned in business hours. After hours our AI operator takes the details and escalates."),
     ("Email", f'<a href="mailto:{BIZ["email"]}">{BIZ["email"]}</a>',
      "Managed and SLA clients have contracted response targets. Every other enquiry receives a best-effort response &mdash; usually the same business day, and generally within one business day."),
-    ("Office", address_line(),
-     "An actual Gold Coast office, not a registered address for an interstate company."),
+    ("Where we work", address_line(),
+     "Our technicians and sales team come to you. On-site across the Gold Coast; managed, remote and cloud services Australia-wide."),
     ("Hours", "Mon–Fri, 8am – 5pm",
      "Phones always answered. Work is actioned during business hours, except for managed and SLA clients on a critical fault."),
 ]
@@ -18,7 +18,7 @@ lines = "".join(
 
 FAQS = [
     ("How do I contact bcom ICT?",
-     "Call 07 3041 8993, email support@bcomservices.com, or use the enquiry form on this page. Our digital assistant answers the phone at any hour, but calls are returned during business hours — 8:00am to 5:00pm, Monday to Friday, Brisbane time — usually the same business day. Managed and SLA clients have contracted response targets under their agreement; every other enquiry receives a best-effort response. The office is at 9 Ferny Avenue, Surfers Paradise QLD 4217."),
+     "Call 07 3041 8993, email support@bcomservices.com, or use the enquiry form on this page. Our digital assistant answers the phone at any hour, but calls are returned during business hours — 8:00am to 5:00pm, Monday to Friday, Brisbane time — usually the same business day. Managed and SLA clients have contracted response targets under their agreement; every other enquiry receives a best-effort response. We attend sites across the Gold Coast and support businesses remotely Australia-wide."),
     ("What happens after I get in touch?",
      "We call you back to understand the problem — usually the same business day, and generally within one business day. If it can be fixed remotely we'll often start there and then, at $190 + GST per hour with no call-out. If it needs someone on site, we book a visit — same day where we can — at a $100 + GST call-out plus the hourly rate, agreed before anyone gets in a car."),
     ("Is the first conversation free?",
@@ -47,9 +47,11 @@ PAGE = {
     "body": f'''
 <section class="section section--tight">
   <div class="wrap">
-    <p class="answer">bcom ICT can be reached on 07 3041 8993 or at support@bcomservices.com. Phones are
-    returned in business hours including weekends and public holidays, and every enquiry receives a callback within 4
-    business hours. The office is at 9 Ferny Avenue, Surfers Paradise QLD 4217. Call 07 3041 8993.</p>
+    <p class="answer">bcom ICT can be reached on 07 3041 8993 or at support@bcomservices.com. Calls are
+    returned during business hours &mdash; 8:00am to 5:00pm, Monday to Friday, Brisbane time. Managed and SLA
+    clients have contracted response targets under their agreement; every other enquiry receives a best-effort
+    response, usually the same business day. We attend sites across the Gold Coast and support businesses
+    remotely Australia-wide. Call 07 3041 8993.</p>
 
     <div class="contact-grid" style="margin-top:56px">
       <div>
