@@ -150,6 +150,15 @@ RATES = {
 FORM_ENDPOINT = "xreoqepk"
 
 
+# Google Business Profile map embed. This is the GBP place entity, not a street
+# address — it renders the service area. Whatever GBP shows is what appears here,
+# so the listing and the site have to agree about location.
+MAP_EMBED = ("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451109.88017319166"
+             "!2d153.3693615!3d-27.9542216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
+             "!3m3!1m2!1s0x2bf15c9da94c225d%3A0x9a906dab1cca3727!2sbcom%20ICT"
+             "!5e0!3m2!1sen!2sau!4v1788388814412!5m2!1sen!2sau")
+
+
 def address_line():
     """Where we work, not a place to visit. bcom ICT attends the customer's
     site — there is no counter for anyone to walk up to, so no street address

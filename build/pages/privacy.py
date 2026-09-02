@@ -31,7 +31,7 @@ S = [
  ("5. Website data and cookies", [
   "This website does not run advertising or third-party behavioural tracking.",
   "Standard server logs are kept for security and operational purposes.",
-  "Where a page embeds a third-party service — such as our online booking calendar — that service may set its own cookies under its own privacy terms.",
+  "Where a page embeds a third-party service — our online booking calendar, or the Google map on the contact and about pages — that service may set its own cookies under its own privacy terms.",
  ]),
  ("6. How we collect it", [
   "<strong>Directly</strong> — when you call, email, submit an enquiry form, book an appointment or engage us for work.",
@@ -105,7 +105,7 @@ FAQS = [
     ("How do we request access to our information?",
      "Email support@bcomservices.com or call 07 3041 8993. There is no charge and we will respond within a reasonable period. If you are not satisfied with our handling, you may contact the Office of the Australian Information Commissioner."),
     ("Does this website track us?",
-     "This website runs no advertising and no third-party behavioural tracking. Standard server logs are kept for security and operational purposes. Embedded third-party services, such as our online booking calendar, may set their own cookies under their own terms."),
+     "This website runs no advertising and no third-party behavioural tracking. Standard server logs are kept for security and operational purposes. Embedded third-party services — the online booking calendar and the Google map — may set their own cookies under their own terms."),
 ]
 
 PAGE = {

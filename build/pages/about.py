@@ -1,4 +1,4 @@
-from layout import MARK, cta, faq_block, ticks, related, photo, trust_note
+from layout import MARK, cta, faq_block, ticks, related, photo, trust_note, map_embed
 from site_data import SUBURBS
 
 FAQS = [
@@ -99,6 +99,8 @@ PAGE = {
     <p style="margin-top:16px">On-site across the Gold Coast — {", ".join(SUBURBS[:12])} and everywhere
     between. Managed IT, cybersecurity, cloud and Microsoft 365 are delivered remotely to businesses anywhere
     in Australia, which matters if your team is spread across more than one state.</p>
+
+    <div style="margin-top:32px">{map_embed()}</div>
 
     {trust_note("What we hold, what we are aligned to, and where we stop short of a certification claim is all set out in <a href='/trust-centre'>the trust centre</a>.")}
   </div>

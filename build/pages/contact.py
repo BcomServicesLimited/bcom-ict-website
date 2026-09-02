@@ -1,4 +1,4 @@
-from layout import MARK, faq_block, ticks, related, trust_note, booking_cta
+from layout import MARK, faq_block, ticks, related, trust_note, booking_cta, map_embed
 from site_data import BIZ, FORM_ENDPOINT, address_line
 
 LINES = [
@@ -94,6 +94,16 @@ PAGE = {
         5:00pm, Monday to Friday, Brisbane time. We don't share your details with anyone.</p>
       </form>
     </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <h2>Where we work</h2>
+    <p style="margin-top:16px;max-width:var(--measure)">We come to you. On-site attendance covers the whole
+    Gold Coast, from Coomera in the north to Coolangatta and Tweed Heads in the south, with managed, remote
+    and cloud services delivered Australia-wide.</p>
+    <div style="margin-top:28px">{map_embed()}</div>
   </div>
 </section>
 

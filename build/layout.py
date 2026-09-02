@@ -4,14 +4,14 @@ single edit rather than 86. Output is plain static HTML — no client-side
 rendering, because AI crawlers largely do not execute JavaScript.
 """
 import json
-from site_data import SITE, BIZ, NAV, FOOTER, SUBURBS, address_line
+from site_data import SITE, BIZ, NAV, FOOTER, SUBURBS, MAP_EMBED, address_line
 
 MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="http://www.w3.org/2000/svg">'
         '<path fill="currentColor" d="M0 0 L66 36.5 L0 73 L0 53 L29.8 36.5 L0 20 Z"/>'
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "14"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "15"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 ROBOTS_OK = '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'
@@ -532,6 +532,17 @@ def example(title, situation, found, did, outcome, tag="Representative engagemen
 
 
 SB_PHONE = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L7.9 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>')
+
+
+
+def map_embed(title="bcom ICT on Google Maps"):
+    """Google Business Profile map. Lazy-loaded and given a title — Google's
+    stock snippet ships without one, which leaves a screen reader announcing an
+    unlabelled frame, and with fixed 600x450 pixel dimensions that overflow a
+    phone."""
+    return (f'<div class="map-embed"><iframe src="{MAP_EMBED}" title="{title}" '
+            'loading="lazy" allowfullscreen '
+            'referrerpolicy="strict-origin-when-cross-origin"></iframe></div>')
 
 
 def sticky_bar(p):
