@@ -1842,28 +1842,19 @@ A: Test rather than assume. Existing points are frequently the wrong category, i
 ## Office IT Relocation
 URL: https://www.bcomservices.com/office-relocation-case-study-southport
 
-bcom ICT delivered the IT relocation for Grow&Co Property Agents' move within Southport — collecting, transporting and setting up 31 workstations in a single day with two technicians. Around 16 desktops, 8 laptops, 2 Macs and 47 monitors were moved, 42 monitors fitted to dual arms, every machine placed to the client's seating plan, and all cabling routed, secured and labelled. Call 07 3041 8993.
+bcom ICT relocated Grow&Co Property Agents’ Southport office — 31 workstations collected, transported and set up in a single day by two technicians, with 47 monitors, 42 of them fitted to dual arms. Call 07 3041 8993.
 
 **Q: Can bcom ICT relocate our office IT?**
-A: Yes. For Grow&Co Property Agents' Southport move, bcom ICT collected, transported and set up 31 workstations in a single day with two technicians — around 16 desktops, 8 laptops, 2 Macs and 47 monitors, 42 of them fitted to dual monitor arms — with every machine placed against the client's seating plan and the cabling routed and labelled. Staff worked from the new office the next business day.
+A: Yes. For Grow&Co Property Agents' Southport move, bcom ICT collected, transported and set up 31 workstations in a single day with two technicians — around 16 desktops, 8 laptops, 2 Macs and 47 monitors, 42 of them fitted to dual monitor arms. Every machine went to its allocated desk and the team worked from the new office the next business day.
 
 **Q: How long does an office IT relocation take?**
-A: This one was a single day for 31 workstations using two technicians, which is a realistic rate for a move where the cabling and outlets are already installed and the equipment is labelled and ready. The planning ran across several weeks beforehand; the physical move was one Friday.
+A: This one was a single day for 31 workstations with two technicians, which is a realistic rate where the cabling and outlets are already in and the equipment is labelled. The planning ran across several weeks beforehand; the move itself was one Friday.
 
-**Q: Do you inspect the new office before the move?**
-A: Yes, and we ask for it early. Before this relocation bcom ICT walked the new floor to confirm the data outlets, power and cable-management provisions were ready for the setup. It takes about fifteen minutes and it is the cheapest possible insurance — a problem found three weeks out is an email, and the same problem found on moving day is a lost trading day.
-
-**Q: What if our workstations are only ready in stages?**
-A: That is normal and it is planned around. On this move 19 desks could be cleared in the morning and 12 more became available at lunchtime, so the collection was split across the day and sequenced so neither team was waiting on the other.
-
-**Q: Can you fit our monitors to dual monitor arms?**
-A: Yes. 42 of the 47 monitors on this move were fitted to dual arms on height-adjustable desks. Worth confirming early whether the arms clamp to the desk or mount through a grommet, because sit-stand desks do not always suit both, and we will ask before the arms are ordered.
-
-**Q: Can you work alongside our own IT consultant?**
-A: Routinely. On this project the structured cabling, outlets and the leased printer were handled by other suppliers, and network configuration and user logins stayed with the client's own IT consultant. bcom ICT scoped the physical relocation and setup around them so nothing was assumed and nothing was done twice.
+**Q: Do you check the new office before the move?**
+A: Yes, and we ask for it early. Before this relocation we walked the new floor to confirm the outlets, power and cable trays were ready. It takes about fifteen minutes, and a problem found three weeks out is an email rather than a lost trading day.
 
 **Q: Do you work in Southport?**
-A: Yes — bcom ICT is based at Surfers Paradise, a few minutes from Southport, and attends the CBD, the courts precinct and the surrounding commercial buildings regularly. See IT support in Southport .
+A: Yes — bcom ICT is based at Surfers Paradise, a few minutes away, and works across Southport regularly. See IT support in Southport .
 
 
 ---
