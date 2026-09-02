@@ -272,7 +272,10 @@ def _strip_tags(html):
 
 def sla_gate():
     hits = []
-    for f in ROOT.glob("*.html"):
+    # Scripts too: the contact form's success message lived in main.js and
+    # promised everyone a 4-hour callback for weeks, unseen by an HTML-only scan.
+    targets = sorted(ROOT.glob("*.html")) + sorted((ROOT / "assets" / "js").glob("*.js"))
+    for f in targets:
         t = _strip_tags(f.read_text(encoding="utf-8"))
         # Only a response/callback promise matters here. "four hours a week" and
         # "four days instead of four hours" are not commitments.

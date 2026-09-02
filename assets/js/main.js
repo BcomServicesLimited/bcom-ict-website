@@ -24,8 +24,27 @@
   var btn = form.querySelector('button[type="submit"]');
   var original = btn ? btn.textContent : '';
 
+  /* Two spam traps. Both only catch bots that actually render this page —
+     anything POSTing straight at the form endpoint bypasses them, which is why
+     server-side verification is still the real fix. */
+  var loadedAt = Date.now();
+  var stamp = form.querySelector('input[name="_t"]');
+  if (stamp) stamp.value = String(loadedAt);
+
+  function looksAutomated() {
+    var hp = form.querySelector('input[name="website"]');
+    if (hp && hp.value !== '') return true;          // filled an invisible field
+    if (Date.now() - loadedAt < 3000) return true;   // faster than a human can type
+    return false;
+  }
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+
+    /* Show the fallback route rather than a silent success: if this ever fires
+       on a real person, they still get a way to reach us. */
+    if (looksAutomated()) { showError(); return; }
+
     if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
 
     fetch(form.action, {
@@ -40,13 +59,15 @@
       done.setAttribute('role', 'status');
       done.innerHTML =
         '<h3>Thanks — that\'s reached us</h3>' +
-        '<p>We\'ll come back to you within 4 business hours, during business hours: ' +
-        '8:00am to 5:00pm, Monday to Friday, Brisbane time.</p>' +
+        '<p>We\'ll come back to you during business hours &mdash; 8:00am to 5:00pm, ' +
+        'Monday to Friday, Brisbane time &mdash; usually the same business day.</p>' +
         '<p>If it\'s urgent, call <a href="tel:+61730418993"><strong>07 3041 8993</strong></a> ' +
         'rather than waiting on the email.</p>';
       form.replaceWith(done);
       done.focus && done.focus();
-    }).catch(function () {
+    }).catch(showError);
+
+    function showError() {
       if (btn) { btn.disabled = false; btn.textContent = original; }
       var err = form.querySelector('.form-error');
       if (!err) {
@@ -58,7 +79,7 @@
       err.innerHTML = 'That didn\'t send. Please email ' +
         '<a href="mailto:support@bcomservices.com">support@bcomservices.com</a> or call ' +
         '<a href="tel:+61730418993">07 3041 8993</a> and we\'ll pick it up.';
-    });
+    }
   });
 })();
 

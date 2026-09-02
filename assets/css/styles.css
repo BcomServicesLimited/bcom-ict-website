@@ -698,3 +698,7 @@ form.enquiry button[disabled]{opacity:.6;cursor:progress;}
 @media (max-width:767px){
   .map-embed iframe{height:300px;}
 }
+
+/* Honeypot. Positioned off-screen rather than display:none — a bot that skips
+   hidden inputs will skip a trap, and the point is that it fills this one. */
+.hp{position:absolute!important;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}

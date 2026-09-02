@@ -67,6 +67,8 @@ PAGE = {
         <input type="hidden" name="_subject" value="Website enquiry — bcom ICT">
         <input type="hidden" name="_next" value="https://www.bcomservices.com/thank-you">
         <p style="display:none" aria-hidden="true"><label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+        <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <input type="hidden" name="_t" value="">
         <div>
           <h3 style="margin-bottom:6px">Send us a message</h3>
           <p class="hint">Or just call — a person will pick up.</p>
