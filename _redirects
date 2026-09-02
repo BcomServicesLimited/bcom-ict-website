@@ -9,14 +9,22 @@
 https://bcomservices.com/*    https://www.bcomservices.com/:splat    301
 
 # --- consolidated during the rebuild -----------------------------------
+/aruba-business-wifi-gold-coast                                /aruba-instant-on-wifi-gold-coast                    301
+/aruba-business-wifi-gold-coast.html                           /aruba-instant-on-wifi-gold-coast                    301
 /asus-wifi-gold-coast                                          /business-wifi-gold-coast                            301
 /asus-wifi-gold-coast.html                                     /business-wifi-gold-coast                            301
+/blog-tech-geeks                                               /                                                    301
+/blog-tech-geeks.html                                          /                                                    301
 /business                                                      /services                                            301
 /business.html                                                 /services                                            301
 /computer-consultant-gold-coast                                /it-consulting-strategy-gold-coast                   301
 /computer-consultant-gold-coast.html                           /it-consulting-strategy-gold-coast                   301
 /computer-repairs-gold-coast                                   /on-site-computer-repair-gold-coast                  301
 /computer-repairs-gold-coast.html                              /on-site-computer-repair-gold-coast                  301
+/computer-support-burleigh-heads                               /on-site-computer-repair-gold-coast                  301
+/computer-support-burleigh-heads.html                          /on-site-computer-repair-gold-coast                  301
+/computer-support-surfers-paradise                             /on-site-computer-repair-gold-coast                  301
+/computer-support-surfers-paradise.html                        /on-site-computer-repair-gold-coast                  301
 /d-link-wifi-gold-coast                                        /business-wifi-gold-coast                            301
 /d-link-wifi-gold-coast.html                                   /business-wifi-gold-coast                            301
 /eero-wifi-gold-coast                                          /mesh-network-setup-gold-coast                       301
@@ -29,8 +37,14 @@ https://bcomservices.com/*    https://www.bcomservices.com/:splat    301
 /home-wifi-setup-and-troubleshooting-gold-coast.html           /mesh-network-setup-gold-coast                       301
 /linksys-wifi-gold-coast                                       /business-wifi-gold-coast                            301
 /linksys-wifi-gold-coast.html                                  /business-wifi-gold-coast                            301
+/mobile-phone-tech-support-gold-coast                          /hardware-software-troubleshooting-gold-coast        301
+/mobile-phone-tech-support-gold-coast.html                     /hardware-software-troubleshooting-gold-coast        301
 /netgear-wifi-gold-coast                                       /business-wifi-gold-coast                            301
 /netgear-wifi-gold-coast.html                                  /business-wifi-gold-coast                            301
+/office-it-relocation-and-setup-services-gold-coast            /office-it-relocation-gold-coast                     301
+/office-it-relocation-and-setup-services-gold-coast.html       /office-it-relocation-gold-coast                     301
+/starlink-installation-services                                /nbn-internet-support-gold-coast                     301
+/starlink-installation-services.html                           /nbn-internet-support-gold-coast                     301
 /synology-wifi-gold-coast                                      /business-wifi-gold-coast                            301
 /synology-wifi-gold-coast.html                                 /business-wifi-gold-coast                            301
 /tp-link-wifi-gold-coast                                       /business-wifi-gold-coast                            301
@@ -38,7 +52,6 @@ https://bcomservices.com/*    https://www.bcomservices.com/:splat    301
 
 # --- carried across from the previous site (flattened) ------------------
 /ai-agent-setup-gold-coast.html                                /artificial-intelligence-service-gold-coast          301
-/aruba-business-wifi-gold-coast.html                           /aruba-instant-on-wifi-gold-coast                    301
 /blog.html                                                     /                                                    301
 /blog/ai-practical-guide-chatgpt-grok-copilot-gold-coast.html  /artificial-intelligence-service-gold-coast          301
 /blog/ai-safety-everything-you-need-to-know-gold-coast.html    /artificial-intelligence-service-gold-coast          301
@@ -92,9 +105,7 @@ https://bcomservices.com/*    https://www.bcomservices.com/:splat    301
 /macbook-repairs-and-support-gold-coast.html                   /on-site-computer-repair-gold-coast                  301
 /microsoft-365-setup-and-support-gold-coast                    /microsoft-365-setup-gold-coast                      301
 /microsoft-365-setup-and-support-gold-coast.html               /microsoft-365-setup-gold-coast                      301
-/mobile-phone-tech-support-gold-coast.html                     /hardware-software-troubleshooting-gold-coast        301
 /northern-gold-coast-computer-repairs.html                     /on-site-computer-repair-gold-coast                  301
-/office-it-relocation-and-setup-services-gold-coast.html       /office-it-relocation-gold-coast                     301
 /operating-system-upgrades-windows-macos-gold-coast            /os-troubleshooting-repair-gold-coast                301
 /operating-system-upgrades-windows-macos-gold-coast.html       /os-troubleshooting-repair-gold-coast                301
 /pc-hardware-upgrades-and-installation-gold-coast.html         /hardware-software-troubleshooting-gold-coast        301

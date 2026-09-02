@@ -54,6 +54,19 @@ CONSOLIDATE = {
     "/home-wifi-setup-and-troubleshooting-gold-coast": "/mesh-network-setup-gold-coast",
     "/computer-repairs-gold-coast":     "/on-site-computer-repair-gold-coast",
     "/computer-consultant-gold-coast":  "/it-consulting-strategy-gold-coast",
+
+    # Found by live-testing every URL in the Search Console export (3 Sept 2026)
+    # against production. These seven 404'd — matching Search Console's own
+    # "Not found (404): 7". Three were extensionless twins of legacy rules that
+    # only carried the .html form; two were missing siblings of the
+    # computer-support-* set. Listing them here emits both forms.
+    "/mobile-phone-tech-support-gold-coast":               "/hardware-software-troubleshooting-gold-coast",
+    "/aruba-business-wifi-gold-coast":                     "/aruba-instant-on-wifi-gold-coast",
+    "/office-it-relocation-and-setup-services-gold-coast": "/office-it-relocation-gold-coast",
+    "/computer-support-surfers-paradise":                  "/on-site-computer-repair-gold-coast",
+    "/computer-support-burleigh-heads":                    "/on-site-computer-repair-gold-coast",
+    "/starlink-installation-services":                     "/nbn-internet-support-gold-coast",
+    "/blog-tech-geeks":                                    "/",
     "/business":                        "/services",
 }
 
