@@ -353,6 +353,9 @@ a.card:hover .more{gap:12px;}
 .foot h4{color:#fff;font-size:.8125rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:var(--s4);font-weight:700;}
 .foot-grid{display:grid;gap:var(--s7);}
 @media (min-width:700px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr 1fr;}}
+/* Five columns only where there is genuinely room; below this the last
+   column wraps to a second row rather than squeezing every label. */
+@media (min-width:1040px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr 1fr 1fr;gap:var(--s6);}}
 .foot ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
 .foot-brand img{height:28px;margin-bottom:var(--s4);}
 .foot-brand p{font-size:.875rem;line-height:1.6;max-width:34ch;}

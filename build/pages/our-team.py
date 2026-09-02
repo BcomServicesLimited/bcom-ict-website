@@ -3,14 +3,15 @@ from layout import MARK, cta, faq_block, ticks, related, trust_note
 PEOPLE = [
     {"slug": "royce-clark", "name": "Royce Clark", "photo": "royce.webp",
      "role": "Director — Technical Operations & ICT Delivery",
-     "bio": "Over 20 years in IT and a network engineer by trade. Royce leads technical delivery — the network infrastructure behind what we install, from business WiFi and firewalls to multi-site connectivity — and is the escalation point on any job that isn't going to plan. He holds ITIL 4 Foundation, the framework our service management is built on.",
-     "certs": ["ITIL 4 Foundation"],
-     "credentials": [{"name": "ITIL 4 Foundation", "issuer": "PeopleCert"}]},
+     "bio": "Over 20 years in IT and a network engineer by trade. Royce leads technical delivery — the network infrastructure behind what we install, from business WiFi and firewalls to multi-site connectivity — and is the escalation point on any job that isn't going to plan.",
+     "certs": [],
+     "credentials": []},
     {"slug": "ollie", "name": "Ollie", "photo": "ollie.webp",
      "role": "Director — ICT Contract Management & Business Development",
-     "bio": "Ollie runs client relationships and contracts, and makes sure what we deliver still matches where a business is heading rather than where it was when the agreement was signed. She holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI — the international standard for AI management systems — which underpins how we govern AI work for clients.",
-     "certs": ["ISO/IEC 42001:2023 Lead Implementer", "ITSM"],
-     "credentials": [{"name": "ISO/IEC 42001:2023 Lead Implementer", "issuer": "BSI"}]},
+     "bio": "Ollie runs client relationships and contracts, and makes sure what we deliver still matches where a business is heading rather than where it was when the agreement was signed. She holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI — the international standard for AI management systems — which underpins how we govern AI work for clients. She also holds ITIL 4 Foundation, the framework our service management is built on.",
+     "certs": ["ISO/IEC 42001:2023 Lead Implementer", "ITIL 4 Foundation"],
+     "credentials": [{"name": "ISO/IEC 42001:2023 Lead Implementer", "issuer": "BSI"},
+                     {"name": "ITIL 4 Foundation", "issuer": "PeopleCert"}]},
     {"slug": "daniel", "name": "Daniel", "photo": "daniel.webp",
      "role": "Software Development & IT Support",
      "bio": "Daniel covers the widest ground — day-to-day support one hour, custom software or automation the next. He is often the person who picks up a request first, and the one who works out whether a recurring problem needs a fix or a different approach entirely.",
@@ -29,7 +30,7 @@ cards_ = "".join(
 
 FAQS = [
     ("Who runs bcom ICT?",
-     "bcom ICT is led by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation and Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. Clients deal with them directly rather than through an account manager."),
+     "bcom ICT is led by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Ollie holds ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. Clients deal with them directly rather than through an account manager."),
     ("Will I get the same people each time?",
      "Yes — that's the point of how we're structured. There's no rotating pool of strangers reading your history off a ticket before they can help. Whoever knows your environment is who attends, and continuity is one of the main reasons clients stay with us for years."),
     ("Who do I escalate to?",
@@ -46,7 +47,7 @@ PAGE = {
     "path": "/our-team",
     "priority": "0.75",
     "title": "Our Team — The People Behind bcom ICT | Gold Coast",
-    "description": "Meet the bcom ICT leadership: Royce Clark (ITIL 4 Foundation), Ollie (ISO/IEC 42001:2023 Lead Implementer, BSI) and Daniel.",
+    "description": "Meet the bcom ICT leadership: Royce Clark, Ollie (ITIL 4 Foundation and ISO/IEC 42001 Lead Implementer, BSI) and Daniel.",
     "hero_kind": "doc",
     "eyebrow": "About",
     "h1": "The people you'll actually be dealing with",
@@ -60,8 +61,8 @@ PAGE = {
   <div class="wrap">
     <p class="answer">bcom ICT is led by Royce Clark, Director of
     Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business
-    Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation;
-    Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.</p>
+    Development, with Daniel covering software development and IT support. Ollie holds ITIL 4 Foundation
+    and ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.</p>
 
     <div class="people">{cards_}</div>
   </div>

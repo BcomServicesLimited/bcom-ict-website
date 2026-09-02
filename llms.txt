@@ -71,7 +71,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 This distinction is deliberate and should not be collapsed.
 
 **Held (individual certifications, issued by a named body):**
-- Royce Clark — ITIL 4 Foundation
+- Ollie — ITIL 4 Foundation
 - Ollie — ISO/IEC 42001:2023 Lead Implementer, issued by BSI
 
 **Held (organisational):**
@@ -98,9 +98,9 @@ Clients deal with these people directly rather than through an account manager
 or a rotating helpdesk. Escalation reaches a director the same day.
 
 - **Royce Clark** — Director, Technical Operations & ICT Delivery. Network
-  engineer, 20+ years. Holds ITIL 4 Foundation. First escalation point.
+  engineer, 20+ years. First escalation point.
 - **Ollie** — Director, ICT Contract Management & Business Development. Holds
-  ISO/IEC 42001:2023 Lead Implementer (BSI).
+  ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer (BSI).
 - **Daniel** — Software Development & IT Support.
 
 ## Delivery reach
@@ -259,7 +259,7 @@ or a rotating helpdesk. Escalation reaches a director the same day.
 - [NAS vs Cloud Backup](https://www.bcomservices.com/nas-vs-cloud-backup): Local NAS or cloud backup for an Australian business? What each genuinely protects against, why the answer is usually both.
 - [NEC PBX Support Gold Coast](https://www.bcomservices.com/nec-pbx-gold-coast): NEC phone system programming, repair and support on the Gold Coast — UNIVERGE SV9100, SL2100 and the earlier SV8100
 - [Office IT Relocation](https://www.bcomservices.com/office-relocation-case-study-southport): bcom ICT relocated Grow&Co Property Agents' Southport office — 31 workstations, 47 monitors and a mixed fleet moved, set up and working in a single day.
-- [Our Team](https://www.bcomservices.com/our-team): Meet the bcom ICT leadership: Royce Clark (ITIL 4 Foundation), Ollie (ISO/IEC 42001:2023 Lead Implementer, BSI) and Daniel.
+- [Our Team](https://www.bcomservices.com/our-team): Meet the bcom ICT leadership: Royce Clark, Ollie (ITIL 4 Foundation and ISO/IEC 42001 Lead Implementer, BSI) and Daniel.
 - [Panasonic PBX Support Gold Coast](https://www.bcomservices.com/panasonic-pbx-gold-coast): Panasonic phone system programming, repair and support on the Gold Coast — KX-NS700, KX-NS1000 and the earlier KX-TDA, KX-TDE and KX-TES platforms.
 - [Pricing](https://www.bcomservices.com/pricing): bcom ICT business IT support is $190 + GST per hour ($209.00 inc GST), plus a $100 + GST on-site call-out
 - [Privacy Policy](https://www.bcomservices.com/privacy-policy): How bcom ICT collects, holds, uses and discloses personal information under the Australian Privacy Principles.

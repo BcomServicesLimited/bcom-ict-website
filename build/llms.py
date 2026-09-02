@@ -103,7 +103,7 @@ Sitemap: {SITE}/sitemap.xml
 This distinction is deliberate and should not be collapsed.
 
 **Held (individual certifications, issued by a named body):**
-- Royce Clark — ITIL 4 Foundation
+- Ollie — ITIL 4 Foundation
 - Ollie — ISO/IEC 42001:2023 Lead Implementer, issued by BSI
 
 **Held (organisational):**
@@ -130,9 +130,9 @@ Clients deal with these people directly rather than through an account manager
 or a rotating helpdesk. Escalation reaches a director the same day.
 
 - **Royce Clark** — Director, Technical Operations & ICT Delivery. Network
-  engineer, 20+ years. Holds ITIL 4 Foundation. First escalation point.
+  engineer, 20+ years. First escalation point.
 - **Ollie** — Director, ICT Contract Management & Business Development. Holds
-  ISO/IEC 42001:2023 Lead Implementer (BSI).
+  ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer (BSI).
 - **Daniel** — Software Development & IT Support.
 
 ## Delivery reach

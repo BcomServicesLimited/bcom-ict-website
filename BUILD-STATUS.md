@@ -52,7 +52,9 @@ Preview: `bcom-ict` server on port 4400.
 
 ### Wording rules that must not be broken
 - Organisation: *"aligned to ISO/IEC 27001:2022 … not currently certified"*. Never "ISO certified".
-- Individuals: Royce = ITIL 4 Foundation. Ollie = ISO/IEC 42001:2023 Lead Implementer, issued by BSI.
+- Individuals: **Ollie = ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer, issued by BSI.**
+  Royce holds no listed certification. *(ITIL was attributed to Royce until 3 Sept 2026 — it is
+  Ollie's. Do not reassign it back, and do not invent a credential for Royce.)*
 - Callback promise is **"within 4 business hours"** everywhere. Never "1 hour".
 - **Hours (corrected 2026-08-31 — the site had overstated this):** business hours are
   **8:00am – 5:00pm, Monday to Friday, Brisbane time**. The digital assistant answers the

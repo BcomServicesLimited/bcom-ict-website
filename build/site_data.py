@@ -71,11 +71,12 @@ SUBURB_PAGES = [
     ("Coomera",          "/it-support-coomera-gold-coast"),
 ]
 
-# Credentials — all confirmed held by Royce 2026-08-31.
+# Credentials — confirmed by Royce 2026-08-31; ITIL attribution corrected
+# 2026-09-03: ITIL 4 Foundation is Ollie's, not Royce's.
 # NOTE: cabler registration number itself still needs to be supplied before
 # the registration line goes live on the cabling pages.
 CREDENTIALS = {
-    "itil":        "ITIL 4 Foundation — Royce Clark",
+    "itil":        "ITIL 4 Foundation — Ollie",
     "iso42001":    "ISO/IEC 42001:2023 Lead Implementer, issued by BSI — Ollie",
     # bcom ICT does NOT hold cabler registration. Cabling is subcontracted to
     # ACMA registered cabling contractors. Never write "bcom ICT is ACMA registered".
@@ -111,6 +112,15 @@ FOOTER = {
         ("Data & sovereignty",    "/data-handling-and-sovereignty"),
         ("Pricing",               "/pricing"),
         ("Reviews",               "/reviews"),
+    ],
+    # Comparison pages were reachable only from the service pages they sit under,
+    # so nothing collected them. Every page now links the set.
+    "Compare": [
+        ("Managed IT vs break-fix", "/managed-it-vs-break-fix"),
+        ("VoIP vs PBX",             "/voip-vs-pbx-phone-systems"),
+        ("Microsoft 365 vs Google", "/microsoft-365-vs-google-workspace"),
+        ("UniFi vs Aruba",          "/unifi-vs-aruba-instant-on"),
+        ("NAS vs cloud backup",     "/nas-vs-cloud-backup"),
     ],
     "Company": [
         ("About bcom ICT",        "/about"),

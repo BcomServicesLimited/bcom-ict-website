@@ -71,7 +71,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 This distinction is deliberate and should not be collapsed.
 
 **Held (individual certifications, issued by a named body):**
-- Royce Clark — ITIL 4 Foundation
+- Ollie — ITIL 4 Foundation
 - Ollie — ISO/IEC 42001:2023 Lead Implementer, issued by BSI
 
 **Held (organisational):**
@@ -98,9 +98,9 @@ Clients deal with these people directly rather than through an account manager
 or a rotating helpdesk. Escalation reaches a director the same day.
 
 - **Royce Clark** — Director, Technical Operations & ICT Delivery. Network
-  engineer, 20+ years. Holds ITIL 4 Foundation. First escalation point.
+  engineer, 20+ years. First escalation point.
 - **Ollie** — Director, ICT Contract Management & Business Development. Holds
-  ISO/IEC 42001:2023 Lead Implementer (BSI).
+  ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer (BSI).
 - **Daniel** — Software Development & IT Support.
 
 ## Delivery reach
@@ -158,7 +158,7 @@ A: No. bcom ICT works with businesses. We do still install WiFi and mesh network
 A: Most of our clients have between 3 and 60 staff. We're set up for businesses that are too big to keep muddling through and too small to employ a full-time IT person.
 
 **Q: Are you certified to any standards?**
-A: We work to recognised standards without overstating it. bcom ICT operates to the ASD Essential Eight and aligns its practices with ISO/IEC 27001 and ITIL 4, but the company is not formally certified to those standards. Individually, Royce holds ITIL 4 Foundation and Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. Our trust centre sets all of this out in full.
+A: We work to recognised standards without overstating it. bcom ICT operates to the ASD Essential Eight and aligns its practices with ISO/IEC 27001 and ITIL 4, but the company is not formally certified to those standards. Individually, Ollie holds ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. Our trust centre sets all of this out in full.
 
 
 ---
@@ -909,10 +909,10 @@ A: Yes, and few businesses do. Your provider holds administrative access to your
 ## How We Work
 URL: https://www.bcomservices.com/how-we-work-itil
 
-bcom ICT runs service management practices based on ITIL 4, covering service desk, incident, request, problem and change management, service levels, configuration management and continual improvement. Royce Clark holds ITIL 4 Foundation certification. bcom ICT is not certified as an organisation against ITIL or ISO/IEC 20000-1.
+bcom ICT runs service management practices based on ITIL 4, covering service desk, incident, request, problem and change management, service levels, configuration management and continual improvement. Ollie holds ITIL 4 Foundation certification. bcom ICT is not certified as an organisation against ITIL or ISO/IEC 20000-1.
 
 **Q: Does bcom ICT follow ITIL?**
-A: bcom ICT's service management practices are based on ITIL 4, and Royce Clark holds ITIL 4 Foundation certification. bcom ICT is not certified as an organisation against ITIL or ISO/IEC 20000-1 — ITIL is a framework we work to, not a badge we've been audited for. Call 07 3041 8993.
+A: bcom ICT's service management practices are based on ITIL 4, and Ollie holds ITIL 4 Foundation certification. bcom ICT is not certified as an organisation against ITIL or ISO/IEC 20000-1 — ITIL is a framework we work to, not a badge we've been audited for. Call 07 3041 8993.
 
 **Q: Isn't ITIL overkill for a small business?**
 A: The full framework is, and we don't run it. ITIL 4's own guiding principle is 'keep it simple and practical', and that's the part we take seriously. What a small business actually needs from it is: requests get logged, faults get prioritised sensibly, recurring problems get chased, and nothing changes without warning. That's it. The rest is machinery for organisations far larger than yours or ours.
@@ -2151,10 +2151,10 @@ A: No. bcom ICT works on business machines only.
 ## Our Team
 URL: https://www.bcomservices.com/our-team
 
-bcom ICT is led by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation; Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.
+bcom ICT is led by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Ollie holds ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer certification issued by BSI.
 
 **Q: Who runs bcom ICT?**
-A: bcom ICT is led by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Royce holds ITIL 4 Foundation and Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. Clients deal with them directly rather than through an account manager.
+A: bcom ICT is led by Royce Clark, Director of Technical Operations and ICT Delivery, and Ollie, Director of ICT Contract Management and Business Development, with Daniel covering software development and IT support. Ollie holds ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer certification issued by BSI. Clients deal with them directly rather than through an account manager.
 
 **Q: Will I get the same people each time?**
 A: Yes — that's the point of how we're structured. There's no rotating pool of strangers reading your history off a ticket before they can help. Whoever knows your environment is who attends, and continuity is one of the main reasons clients stay with us for years.
@@ -2737,7 +2737,7 @@ URL: https://www.bcomservices.com/trust-centre
 bcom ICT holds no organisational ISO certification. bcom ICT operates an information security management system aligned to ISO/IEC 27001:2022 and works to the ASD Essential Eight and ITIL 4, with individual certifications held by its people — ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer, issued by BSI. Professional indemnity, cyber liability and public liability insurance are held.
 
 **Q: Is bcom ICT ISO certified?**
-A: No. bcom ICT aligns its practices with ISO/IEC 27001:2022, ISO/IEC 20000-1:2018 and ISO 22301, but the company holds no organisational ISO certification from an accredited certification body. Individually, Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI, and Royce holds ITIL 4 Foundation. Those are personal credentials, not company certifications, and bcom ICT does not present them as such.
+A: No. bcom ICT aligns its practices with ISO/IEC 27001:2022, ISO/IEC 20000-1:2018 and ISO 22301, but the company holds no organisational ISO certification from an accredited certification body. Individually, Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI and ITIL 4 Foundation. Those are personal credentials, not company certifications, and bcom ICT does not present them as such.
 
 **Q: Why publish this at all if you're not certified?**
 A: Because the question gets asked and a vague answer costs trust. Most small IT providers either claim more than they hold or say nothing. Setting out plainly what is held, what is aligned, and where the line sits means a buyer, an insurer or an auditor can check us properly rather than take our word for it.

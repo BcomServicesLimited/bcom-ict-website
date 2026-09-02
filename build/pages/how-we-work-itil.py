@@ -40,7 +40,7 @@ COMMON_ISSUES = [
      "because undocumented knowledge is a dependency on individuals. It works perfectly until somebody is on leave, unwell, or no longer with either business.",
      "Documentation is yours, not ours &mdash; asset register, network diagrams, licences, credentials and configuration notes, available on request at any time rather than only on the way out."),
     ("&ldquo;Are you certified in ITIL?&rdquo;",
-     "a question worth answering precisely. Royce holds ITIL 4 certification. bcom ICT as an organisation is not certified in anything, because ITIL certification applies to people rather than to companies.",
+     "a question worth answering precisely. Ollie holds ITIL 4 certification. bcom ICT as an organisation is not certified in anything, because ITIL certification applies to people rather than to companies.",
      "Credentials sit on the person who holds them. We publish whose they are, which lets you check rather than take it on trust."),
 ]
 
@@ -60,7 +60,7 @@ EXAMPLE_2 = example(
 
 FAQS = [
     ("Does bcom ICT follow ITIL?",
-     "bcom ICT's service management practices are based on ITIL 4, and Royce Clark holds ITIL 4 Foundation certification. bcom ICT is not certified as an organisation against ITIL or ISO/IEC 20000-1 — ITIL is a framework we work to, not a badge we've been audited for. Call 07 3041 8993."),
+     "bcom ICT's service management practices are based on ITIL 4, and Ollie holds ITIL 4 Foundation certification. bcom ICT is not certified as an organisation against ITIL or ISO/IEC 20000-1 — ITIL is a framework we work to, not a badge we've been audited for. Call 07 3041 8993."),
     ("Isn't ITIL overkill for a small business?",
      "The full framework is, and we don't run it. ITIL 4's own guiding principle is 'keep it simple and practical', and that's the part we take seriously. What a small business actually needs from it is: requests get logged, faults get prioritised sensibly, recurring problems get chased, and nothing changes without warning. That's it. The rest is machinery for organisations far larger than yours or ours."),
     ("What's the difference between an incident and a request?",
@@ -90,7 +90,7 @@ PAGE = {
   <div class="wrap">
     <p class="answer">bcom ICT runs service management practices based on ITIL 4, covering service desk,
     incident, request, problem and change management, service levels, configuration management and continual
-    improvement. Royce Clark holds ITIL 4 Foundation certification. bcom ICT is not certified as an
+    improvement. Ollie holds ITIL 4 Foundation certification. bcom ICT is not certified as an
     organisation against ITIL or ISO/IEC 20000-1.</p>
 
     <h2 style="margin-top:56px">Eight practices, and the question each one answers</h2>
@@ -138,7 +138,7 @@ PAGE = {
       '<a href="/data-handling-and-sovereignty">Data handling</a> — what we hold, where it lives and who can reach it',
     ])}
 
-    {trust_note('Royce Clark holds ITIL 4 Foundation certification. That is an individual credential — it does not make bcom ICT an ITIL-certified or ISO/IEC 20000-1-certified organisation, and we do not describe it that way.')}
+    {trust_note('Ollie holds ITIL 4 Foundation certification. That is an individual credential — it does not make bcom ICT an ITIL-certified or ISO/IEC 20000-1-certified organisation, and we do not describe it that way.')}
   </div>
 </section>
 

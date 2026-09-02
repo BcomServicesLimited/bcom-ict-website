@@ -64,7 +64,7 @@ FAQS = [
     ("Are you certified to any standards?",
      "We work to recognised standards without overstating it. bcom ICT operates to the ASD Essential Eight and aligns "
      "its practices with ISO/IEC 27001 and ITIL 4, but the company is not formally certified to those standards. "
-     "Individually, Royce holds ITIL 4 Foundation and Ollie holds ISO/IEC 42001:2023 Lead Implementer certification "
+     "Individually, Ollie holds ITIL 4 Foundation and ISO/IEC 42001:2023 Lead Implementer certification "
      "issued by BSI. Our trust centre sets all of this out in full."),
 ]
 

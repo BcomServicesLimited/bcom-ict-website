@@ -1,7 +1,7 @@
 from layout import MARK, cta, faq_block, creds, related, trust_note
 
 CREDS = [
-    ("ITIL 4 Foundation — Royce Clark", "Individual certification in IT service management. Underwrites how bcom ICT runs incidents, requests, changes and service levels.", "held"),
+    ("ITIL 4 Foundation — Ollie", "Individual certification in IT service management. Underwrites how bcom ICT runs incidents, requests, changes and service levels.", "held"),
     ("ISO/IEC 42001:2023 Lead Implementer — Ollie", "Individual certification in AI management systems, issued by BSI. Rare in Australian IT, and the basis for how bcom ICT governs AI work.", "held"),
     ("Professional indemnity, cyber liability and public liability insurance", "All three held. Certificates of currency available on request — larger clients and insurance brokers usually ask, and we'd rather you didn't have to chase it.", "held"),
     ("National police checks and Queensland Blue Cards", "Held by technicians attending client sites. Relevant to healthcare, education and childcare clients where screening is a hard requirement.", "held"),
@@ -26,7 +26,7 @@ DOCS = [
 
 FAQS = [
     ("Is bcom ICT ISO certified?",
-     "No. bcom ICT aligns its practices with ISO/IEC 27001:2022, ISO/IEC 20000-1:2018 and ISO 22301, but the company holds no organisational ISO certification from an accredited certification body. Individually, Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI, and Royce holds ITIL 4 Foundation. Those are personal credentials, not company certifications, and bcom ICT does not present them as such."),
+     "No. bcom ICT aligns its practices with ISO/IEC 27001:2022, ISO/IEC 20000-1:2018 and ISO 22301, but the company holds no organisational ISO certification from an accredited certification body. Individually, Ollie holds ISO/IEC 42001:2023 Lead Implementer certification issued by BSI and ITIL 4 Foundation. Those are personal credentials, not company certifications, and bcom ICT does not present them as such."),
     ("Why publish this at all if you're not certified?",
      "Because the question gets asked and a vague answer costs trust. Most small IT providers either claim more than they hold or say nothing. Setting out plainly what is held, what is aligned, and where the line sits means a buyer, an insurer or an auditor can check us properly rather than take our word for it."),
     ("Do you carry insurance?",
