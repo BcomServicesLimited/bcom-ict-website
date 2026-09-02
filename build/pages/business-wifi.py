@@ -185,6 +185,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('UniFi vs Aruba Instant On', '/unifi-vs-aruba-instant-on'),
   ("Office Network Cabling", "/network-cabling-for-offices-gold-coast"),
   ("Network Security & Firewall", "/network-security-and-firewall-configuration-gold-coast"),
   ("Network Troubleshooting", "/network-troubleshooting-diagnostics-gold-coast"),

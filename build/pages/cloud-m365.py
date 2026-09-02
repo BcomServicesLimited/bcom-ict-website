@@ -186,6 +186,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('Microsoft 365 vs Google Workspace', '/microsoft-365-vs-google-workspace'),
   ("Microsoft 365 Setup & Support", "/microsoft-365-setup-gold-coast"),
   ("Microsoft Copilot", "/microsoft-copilot-gold-coast"),
   ("Data Backup & Disaster Recovery", "/data-backup-recovery-gold-coast"),

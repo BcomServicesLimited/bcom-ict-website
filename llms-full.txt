@@ -1637,6 +1637,32 @@ A: Whichever fits how you already work. Microsoft 365 suits businesses heavy on 
 
 ---
 
+## Microsoft 365 vs Google Workspace for Australian Business
+URL: https://www.bcomservices.com/microsoft-365-vs-google-workspace
+
+Microsoft 365 suits most Australian small businesses, largely because the desktop Office applications remain better for real document and spreadsheet work and because Australian industry software integrates with Outlook and Microsoft first. Google Workspace is the better choice where everyone works in a browser, collaboration is constant and there is no legacy software to satisfy. bcom ICT migrates businesses to and from both. Call 07 3041 8993.
+
+**Q: Microsoft 365 or Google Workspace for an Australian small business?**
+A: Microsoft 365 suits most Australian small businesses, mainly because the desktop Office applications are still better for real spreadsheet and document work and because Australian industry software — practice management, accounting, conveyancing, trades platforms — integrates with Outlook and Microsoft first. Google Workspace is the better answer where everyone works in a browser, collaboration is constant, and there is no legacy software to satisfy. bcom ICT migrates businesses to and from both.
+
+**Q: Which is cheaper?**
+A: Entry-level Google Workspace is typically slightly cheaper per user, and the difference is small enough that it should not decide this. The larger costs are migration, retraining and whether your other software integrates cleanly, all of which dwarf a few dollars a seat per month.
+
+**Q: Does either keep our data in Australia?**
+A: Both offer Australian data residency for core services, and the detail varies by service and by how the tenancy is provisioned. If it matters to you — and for health providers, AFS licensees and government suppliers it usually does — it should be established per service before you commit rather than assumed.
+
+**Q: Can we move from Google Workspace to Microsoft 365?**
+A: Yes, and we do it regularly. Mail, calendars and contacts move cleanly. Files move but shared-drive permissions and links inside documents need attention, and that is where a migration either goes well or generates months of small complaints.
+
+**Q: What about Teams versus Google Meet?**
+A: Teams is more than a meeting tool — it carries chat, files and increasingly telephony, which is why it tends to become the centre of a Microsoft business. Meet is a better meeting tool for many people and a smaller product overall. If you want phone calls inside the same application your staff already use, that points to Microsoft.
+
+**Q: Does bcom ICT prefer one?**
+A: We migrate more businesses to Microsoft 365 than to Google Workspace, and that reflects what Australian small businesses ask for rather than a position we hold. We support both, and we have advised clients to stay on Google where moving would have cost them more than it returned.
+
+
+---
+
 ## Microsoft Copilot Rollout for Australian Business
 URL: https://www.bcomservices.com/microsoft-copilot-gold-coast
 
@@ -1656,6 +1682,32 @@ A: Microsoft's commercial data protection terms govern this and the position dif
 
 **Q: Do we need an AI policy before deploying it?**
 A: It's strongly worth having. A written position on what AI may be used for and on what data means staff aren't making individual judgement calls — see ISO/IEC 42001 AI governance.
+
+
+---
+
+## NAS vs Cloud Backup
+URL: https://www.bcomservices.com/nas-vs-cloud-backup
+
+A NAS gives fast local restores when a machine or server fails, which is the common failure. Cloud backup gives an offsite copy that fire, theft and ransomware cannot reach, which is the rare failure that ends businesses. Most Australian small businesses need both, and the decision that matters is not which to buy but how long the business can afford to be without its data. Call 07 3041 8993.
+
+**Q: Should we use a NAS or cloud backup?**
+A: Almost always both, for different jobs. A local copy on a NAS gives you fast restores when a server or a machine fails, which is the common case. A cloud copy gives you a version that fire, theft and ransomware cannot reach, which is the rare case that ends businesses. Using only one means accepting the failure mode the other covers, and for most Gold Coast businesses running both costs less than a day of downtime.
+
+**Q: Is a NAS enough on its own?**
+A: Only if you accept that a fire, a theft or a ransomware attack takes your data with the building. A NAS sitting on the same network, mapped as a drive with the same credentials, is reachable by anything that reaches a workstation — we have recovered from an incident where the backup NAS was encrypted alongside the server it was protecting.
+
+**Q: How long does a cloud restore take?**
+A: That is the right question and it is rarely asked before it matters. It depends on how much data you hold and the download speed available, and many services are optimised for upload rather than download. We calculate the recovery time as part of designing the arrangement, because a backup is not a recovery until somebody has worked out how long the recovery takes.
+
+**Q: Does Microsoft 365 back itself up?**
+A: No, and this is the most common gap we find. Microsoft replicates data for their own availability, which is not the same as keeping a copy against deletion, a departing staff member, or ransomware syncing through OneDrive. Mail, files and Teams content need a separate backup.
+
+**Q: What does cloud backup cost?**
+A: Automatic cloud backup is $10 + GST per user per month for mailboxes, files and the data staff work on day to day. Servers, databases and on-premises infrastructure are quoted separately, because the volume and how quickly you need it back are what drive that number.
+
+**Q: How often should we test a restore?**
+A: At least annually, and after any significant change to the environment. Not a report confirming the backup ran — an actual file recovered by someone who did not configure it. A backup only becomes a backup the first time somebody gets something back out of it.
 
 
 ---
@@ -2578,6 +2630,32 @@ A: Yes — UniFi Protect for cameras and UniFi Access for doors, on the same con
 
 ---
 
+## UniFi vs Aruba Instant On
+URL: https://www.bcomservices.com/unifi-vs-aruba-instant-on
+
+Ubiquiti UniFi and Aruba Instant On are both strong choices for Australian small business WiFi and they suit different situations. UniFi suits a business that wants networking, cameras and access control on one platform and has somebody to administer it. Aruba Instant On suits a business that wants reliable WiFi with nothing to manage. bcom ICT installs and supports both across the Gold Coast. Call 07 3041 8993.
+
+**Q: Is Ubiquiti UniFi or Aruba Instant On better for a small business?**
+A: Neither is better in general — they answer different questions. UniFi suits a business that wants cameras, access control and networking on one platform and has someone to administer it. Aruba Instant On suits a business that wants reliable WiFi with nothing to manage. bcom ICT installs and supports both across the Gold Coast, so the recommendation depends on the building and who will look after it, not on what we would rather sell.
+
+**Q: Which is cheaper?**
+A: The hardware is broadly comparable at the access point level, and the real cost difference is elsewhere. UniFi may need a controller — a Cloud Key or a gateway that hosts one — which Instant On does not. Against that, if you also want CCTV, UniFi covers it on the same platform where Instant On means a second system and a second cost.
+
+**Q: Can I run UniFi without a controller?**
+A: The access points keep working if the controller is off, but nothing can be changed, monitored or updated while it is. Running the controller on somebody's laptop is the most common mistake we see on UniFi networks, and it is why a dedicated device or a hosted controller matters.
+
+**Q: Does Aruba Instant On do VLANs and guest networks?**
+A: Yes, both, and it does them cleanly. What it does not do is the depth UniFi offers — the granular controls, the ecosystem breadth or the CCTV integration. For most single-office businesses that depth is not needed and its absence is a feature.
+
+**Q: Can we mix the two?**
+A: You can run them on the same network but not manage them together, so you end up with two systems and two logins. On one site we would pick one and stay with it.
+
+**Q: What does bcom ICT install most often?**
+A: UniFi, because a large share of our clients want cameras on the same platform as the network. That is a reflection of what those clients asked for rather than a general recommendation, and we install Instant On regularly where simplicity is the priority.
+
+
+---
+
 ## Virus & Malware Removal Gold Coast
 URL: https://www.bcomservices.com/virus-and-malware-removal-services-gold-coast
 
@@ -2626,6 +2704,32 @@ A: Not always. Some existing handsets can be reused depending on make and model.
 
 **Q: Does it work with Microsoft Teams?**
 A: It can. Teams calling suits businesses already living in Microsoft 365 and wanting one application for chat, meetings and calls. It suits reception-heavy operations less well, where proper handsets and queues usually win. We'll walk you through both.
+
+
+---
+
+## Cloud VoIP vs On-Premises PBX
+URL: https://www.bcomservices.com/voip-vs-pbx-phone-systems
+
+Cloud VoIP suits businesses with staff working away from the office or across multiple sites, and removes the hardware entirely. An on-premises PBX still wins where the internet connection is unreliable, where the existing system is paid for and working, or where door intercoms, lift phones or alarm diallers are wired into it. A hybrid — the PBX for the office and cloud extensions for everyone else — is often the right answer for both. Call 07 3041 8993.
+
+**Q: Should we move from a PBX to a cloud phone system?**
+A: It depends on two things: whether people need to work away from the office, and whether your internet connection is genuinely stable enough to carry voice. If staff are remote or across sites, cloud is usually the right move. If your existing system works, is paid for, and everyone sits in one building on an unreliable connection, staying put is a defensible decision. bcom ICT supplies cloud and still programs legacy PBX systems, so we have no stake in the answer.
+
+**Q: What happens to a cloud phone system if the internet drops?**
+A: Calls stop, unless there is a second path. That is the honest limitation. It is why we add mobile failover on a site that depends on its phones, and why we measure the connection before recommending a move rather than after. An on-premises system on copper does not have this exposure, and that genuinely counts in its favour.
+
+**Q: Is cloud cheaper than an on-premises PBX?**
+A: Against a new PBX, usually yes — there is no hardware, no installer and no maintenance contract. Against a system you already own and have written down, often no on a monthly basis. The case for moving is usually capability and flexibility rather than price, and anyone telling you it is purely a saving has not compared it properly.
+
+**Q: Can we keep our existing phone numbers?**
+A: Yes. Local, mobile, 1300 and 1800 numbers are all portable. Most porting delays are administrative — account details not matching the losing provider's records — which is why we reconcile those before submitting rather than after a rejection.
+
+**Q: Can we run both at once?**
+A: Yes, and it is frequently the sensible answer. The existing system covers the office while cloud extensions cover people working elsewhere, joined so one published number reaches whoever is free. It costs a fraction of a full replacement and it makes the eventual move smaller.
+
+**Q: What about our lift phone and alarm dialler?**
+A: They stay where they are. Lift emergency phones, monitored alarm diallers and fire panels sit on their own services and are the most commonly forgotten casualty of a phone changeover. We identify every service in the building and what depends on it before anything is switched.
 
 
 ---

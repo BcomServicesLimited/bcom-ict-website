@@ -178,7 +178,8 @@ PAGE = {
   </div>
 </section>
 '''
-            + related([       ('Business Phone Systems', '/business-phone-systems-gold-coast'),
+            + related([('VoIP vs on-premises PBX', '/voip-vs-pbx-phone-systems'),
+               ('Business Phone Systems', '/business-phone-systems-gold-coast'),
         ('VoIP Phone Systems', '/voip-phone-system-installation-and-support-gold-coast'),
         ('Phone Line Installation & Cabling', '/phone-line-installation-cabling-gold-coast'),
         ('Office IT Relocation', '/office-it-relocation-gold-coast'),

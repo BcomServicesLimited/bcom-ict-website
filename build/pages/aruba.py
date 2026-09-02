@@ -168,7 +168,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
+            + related([('UniFi vs Aruba Instant On', '/unifi-vs-aruba-instant-on'),
+               ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Ubiquiti UniFi WiFi', '/ubiquiti-unifi-wifi-gold-coast'),
         ('Computer Networking Service', '/computer-networking-service-gold-coast'),
         ('Office Network Cabling', '/network-cabling-for-offices-gold-coast'),

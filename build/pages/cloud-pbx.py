@@ -169,6 +169,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('VoIP vs on-premises PBX', '/voip-vs-pbx-phone-systems'),
   ("Business Phone Systems", "/business-phone-systems-gold-coast"),
   ("VoIP Phone Systems", "/voip-phone-system-installation-and-support-gold-coast"),
   ("AI Phone Agents", "/ai-voice-agent-gold-coast"),

@@ -165,7 +165,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Cloud & Microsoft 365', '/cloud-computing-service-gold-coast'),
+            + related([('Microsoft 365 vs Google Workspace', '/microsoft-365-vs-google-workspace'),
+               ('Cloud & Microsoft 365', '/cloud-computing-service-gold-coast'),
         ('Microsoft Copilot', '/microsoft-copilot-gold-coast'),
         ('Data Backup & Disaster Recovery', '/data-backup-recovery-gold-coast'),
         ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),

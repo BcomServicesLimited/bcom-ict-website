@@ -172,7 +172,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Cyber Incident Response', '/cyber-incident-response-gold-coast'),
+            + related([('NAS vs cloud backup', '/nas-vs-cloud-backup'),
+               ('Cyber Incident Response', '/cyber-incident-response-gold-coast'),
         ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
         ('Microsoft 365 Setup & Support', '/microsoft-365-setup-gold-coast'),
         ('Essential Eight assessment', '/essential-eight-guide-gold-coast'),

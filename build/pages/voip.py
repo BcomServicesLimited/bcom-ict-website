@@ -170,7 +170,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Business Phone Systems', '/business-phone-systems-gold-coast'),
+            + related([('VoIP vs on-premises PBX', '/voip-vs-pbx-phone-systems'),
+               ('Business Phone Systems', '/business-phone-systems-gold-coast'),
         ('PBX Systems', '/pabx-phone-systems-gold-coast'),
         ('Business NBN & Internet', '/nbn-internet-support-gold-coast'),
         ('Phone Line Installation & Cabling', '/phone-line-installation-cabling-gold-coast'),
