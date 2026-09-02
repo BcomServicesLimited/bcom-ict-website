@@ -137,8 +137,8 @@ Each chunk ends with a commit and a push. Tick as they land.
       The HTML sitemap is generated from the pages actually built, so it cannot
       fall out of step.
 - [x] **Chunk 10 — LLM layer**
-      `llms.txt` (26 KB, indexes all 93 pages) and `llms-full.txt` (204 KB, every
-      answer block plus **513 Q&A pairs**) — both **generated from the pages
+      `llms.txt` (32 KB, indexes all 112 pages) and `llms-full.txt` (272 KB, every
+      answer block plus **651 Q&A pairs**) — both **generated from the pages
       actually built** by `build/llms.py`, so they cannot drift out of step.
       og:image share card generated on-brand at `assets/img/og-image.jpg`, wired
       into og + twitter tags on every page. `indexnow_submit.py` and the key file
@@ -243,7 +243,69 @@ serves.*
 | **Legal review of `/privacy-policy` and `/terms-and-conditions`** — both are reasonable and Australian-law aware (APPs, ACL consumer guarantees explicitly preserved) but have not been reviewed by a lawyer | Before go-live |
 | **Insurer names and cover limits** for PI / cyber / public liability | Written generically for now ("certificates of currency available on request") — add specifics when supplied |
 | **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
+| **Switch GBP to a service-area business** — hide the street address, set the coverage area. *Now surfaces on the site: the map embed on `/contact` and `/about` renders whatever GBP shows.* | Consistency with the site |
+| **GBP hours** still show "Open 24 hours" | Contradicts every page and the locked hours decision |
 | Permission to name the national retail chain client | `/case-studies` — written accurately but unnamed, with the reason stated in the FAQ |
+
+---
+
+## Location: service-area business (Royce, 3 Sept 2026)
+
+**There is no office.** Technicians and the sales team attend the customer; no
+customer comes to us. The site published `9 Ferny Avenue, Surfers Paradise QLD
+4217` in the utility bar, the footer, the `LocalBusiness` schema, `llms.txt`,
+the privacy policy, the terms, and as the travel-time anchor on all ten suburb
+pages. All of it is gone.
+
+- Published location is **`Gold Coast QLD, Australia`** and nothing narrower.
+  `address_line()` in `site_data.py` is the single source.
+- `BIZ` no longer holds `street`, `postcode`, `lat` or `lon` — the keys are
+  deleted, so they cannot be reintroduced by accident.
+- Schema carries `addressLocality` / `addressRegion` / `addressCountry` plus
+  `areaServed`, and **no `GeoCoordinates`**. This is the correct shape for a
+  service-area business; the suburb list does the geographic work.
+- `geo.region` and `geo.placename` meta tags are kept — they name a region,
+  not a point.
+- **Nowhere states that we do not have an office.** The address is simply
+  absent. Do not add an explanation.
+- Suburb pages frame local relevance by **attendance speed**, never by distance
+  from a base. "Roughly ten minutes from our office" must not come back.
+- `Ferny Avenue` still appears on the Surfers Paradise page describing **client**
+  towers. That is the street, not us, and it stays.
+
+## GBP map embed
+
+`map_embed()` in `layout.py`, URL in `MAP_EMBED` in `site_data.py`. On
+`/contact` and `/about` only — the entity signal comes from the association,
+not from repeating a third-party iframe 112 times.
+
+Google's snippet was changed in two ways: a `title` was added (an unlabelled
+iframe is announced as an anonymous frame), and the fixed `600x450` was replaced
+with `width:100%` and a height set by breakpoint (420px / 300px mobile).
+
+**The embed renders whatever GBP says.** If the profile still carries the street
+address, the map will show the address the site no longer publishes.
+
+## Mobile action bar
+
+`sticky_bar()` in `layout.py`, `.stickybar` in `styles.css`. Two actions: call,
+plus **Book a tech** on any page that links to the booking calendar and **Get a
+quote** everywhere else (18 / 94 split).
+
+Renders **visible in the HTML**; `main.js` only hides it while the hero — which
+carries its own calls to action — is on screen. With JS off the bar simply
+stays up. Nothing on this site may depend on JS to render.
+
+## SLA gate hardening (3 Sept 2026)
+
+`sla_gate()` missed two live unscoped 4-hour promises (`/contact`, `/support`)
+because the sentence wrapped across two source lines and the pattern matched a
+single space. `_strip_tags()` now strips markup **and collapses whitespace**,
+and the scope window is ±220 chars rather than ±600 — legitimate SLA prose
+elsewhere on a page was excusing unscoped claims several paragraphs away.
+
+Both pages also claimed calls are returned "including weekends and public
+holidays", contradicting the published Mon–Fri hours. Fixed.
 
 ---
 
@@ -258,7 +320,7 @@ Two components in `layout.py`, both fed from `BIZ["booking"]`:
   pages where a 620px calendar would be too heavy.
 
 **The external CSS/JS loads only on pages that set `"booking": True`** — 17 of
-98 pages. Do not put the loader in the global head.
+112 pages. Do not put the loader in the global head.
 
 Google injects `<button class="qxCTlb">` with inline colour. `.bookbtn button`
 in styles.css restyles it to match `.btn--primary` (Manrope, bcom blue, 14px 26px,
