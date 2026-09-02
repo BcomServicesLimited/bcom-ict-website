@@ -20,8 +20,6 @@ BIZ = {
     "email":        "support@bcomservices.com",
     "state":        "QLD",
     "region":       "Gold Coast",
-    "lat":          "-27.9986",
-    "lon":          "153.4295",
     "gmaps":        "https://g.page/r/CSc3yhyrbZCaEBM",
     "wikidata":     "https://www.wikidata.org/wiki/Q140075131",
     "rating":       "5.0",
