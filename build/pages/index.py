@@ -122,7 +122,7 @@ PAGE = {
       <div class="stat"><dt>Supporting businesses since</dt><dd>2011</dd></div>
       <div class="stat"><dt>Google rating</dt><dd>5.0 / 24</dd></div>
       <div class="stat"><dt>Business hours</dt><dd>Mon–Fri 8–5</dd></div>
-      <div class="stat"><dt>Callback promise</dt><dd>4 business hrs</dd></div>
+      <div class="stat"><dt>Callback</dt><dd>Same business day</dd></div>
     </dl>
   </div>
 </section>

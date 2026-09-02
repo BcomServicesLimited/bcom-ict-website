@@ -11,7 +11,7 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "13"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "14"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 ROBOTS_OK = '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'
@@ -288,6 +288,7 @@ def footer(p):
     </div>
   </div>
 </footer>
+{sticky_bar(p)}
 <script src="/assets/js/main.js?v={ASSET_V}" defer></script>
 </body>
 </html>
@@ -531,6 +532,25 @@ def example(title, situation, found, did, outcome, tag="Representative engagemen
 # The external CSS/JS is emitted only on pages that declare "booking": True, so
 # the other ~85 pages carry no third-party request. Privacy policy already
 # discloses the embed and the cookies it sets.
+
+
+SB_PHONE = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L7.9 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>')
+
+
+def sticky_bar(p):
+    """Two-action mobile bar: call, and the most useful second action for the
+    page. Pages that declare booking send people straight to the calendar,
+    since a booked visit is the cheapest path we have; everything else offers
+    a quote."""
+    offers_booking = p.get("booking") or BIZ["booking"] in (p.get("body", "") + str(p.get("actions", "")))
+    if offers_booking:
+        second = f'<a class="sb-act" href="{BIZ["booking"]}" target="_blank" rel="noopener">Book a tech</a>'
+    else:
+        second = '<a class="sb-act" href="/contact">Get a quote</a>'
+    return (f'<div class="stickybar" data-hidden="false">'
+            f'<a class="sb-call" href="{BIZ["phone_href"]}">{SB_PHONE} {BIZ["phone"]}</a>'
+            f'{second}</div>')
+
 
 def booking_head(p):
     if not p.get("booking"):

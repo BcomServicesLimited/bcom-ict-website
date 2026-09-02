@@ -10,6 +10,7 @@ output stays plain static HTML that AI crawlers can read without executing JS.
 """
 import importlib.util
 import pathlib
+import re
 import sys
 import datetime
 import re as _re
@@ -260,19 +261,28 @@ SAFE = ('not certified', 'not currently certified', 'no organisational iso',
 SLA_SCOPE = ('managed', 'sla', 'contracted', 'agreement', 'under their')
 
 
+def _strip_tags(html):
+    """The gate matches on prose, not markup: a claim split across <dt>/<dd>
+    reads as one promise to a human and to a crawler, and used to slip the
+    gate because the gap pattern excluded "<"."""
+    return re.sub(r"<[^>]+>", " ", html)
+
+
 def sla_gate():
-    import re
     hits = []
     for f in ROOT.glob("*.html"):
-        t = f.read_text(encoding="utf-8")
+        t = _strip_tags(f.read_text(encoding="utf-8"))
         # Only a response/callback promise matters here. "four hours a week" and
         # "four days instead of four hours" are not commitments.
         pats = (r'(callback|call back|respond(?:s|ed)?|response|come back to you|'
-                r'get back to you|reply|returned)[^.<]{0,90}?\b(4|four)[- ](business )?hours?',
-                r'\b(4|four)[- ]hour\b[^.<]{0,40}?(response|callback|sla|target)')
+                r'get back to you|reply|returned)[^.]{0,90}?\b(4|four)[- ](business )?hours?',
+                r'\b(4|four)[- ]hour\b[^.]{0,40}?(response|callback|sla|target)')
         for pat in pats:
           for m in re.finditer(pat, t, re.I):
-            ctx = t[max(0, m.start() - 600):m.end() + 600].lower()
+            # Tight window on purpose. A page may legitimately discuss SLAs
+            # several paragraphs away from an unscoped promise; only scoping in
+            # the same breath actually qualifies the claim for a reader.
+            ctx = t[max(0, m.start() - 220):m.end() + 220].lower()
             if any(w in ctx for w in SLA_SCOPE):
                 continue
             hits.append((f.name, t[max(0, m.start() - 70):m.end() + 40].strip()))

@@ -655,3 +655,35 @@ form.enquiry button[disabled]{opacity:.6;cursor:progress;}
 }
 .bookbtn button:hover{background-color:var(--blue-deep)!important;box-shadow:var(--shadow);}
 .bookbtn button:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+
+/* Mobile action bar. Renders visible by default so it works with JavaScript
+   off; main.js only hides it while the hero — which carries its own calls to
+   action — is still on screen. Local service traffic is overwhelmingly mobile
+   and the booking panel sits about halfway down the homepage, so this is the
+   contact path for everyone who never gets there. */
+.stickybar{display:none;}
+@media (max-width:767px){
+  .stickybar{
+    display:grid;grid-template-columns:1fr 1fr;gap:1px;
+    position:fixed;left:0;right:0;bottom:0;z-index:60;
+    background:var(--line);border-top:1px solid var(--line);
+    box-shadow:0 -6px 18px rgba(12,27,42,.10);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+    transform:translateY(0);transition:transform .22s ease;
+  }
+  .stickybar[data-hidden="true"]{transform:translateY(120%);}
+  .stickybar a{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    min-height:56px;padding:0 12px;text-decoration:none;
+    font-family:var(--display);font-weight:700;font-size:.9375rem;
+    letter-spacing:-.005em;
+  }
+  .stickybar .sb-call{background:var(--paper);color:var(--blue);}
+  .stickybar .sb-act{background:var(--blue);color:#fff;}
+  .stickybar a:active{filter:brightness(.94);}
+  .stickybar svg{width:16px;height:auto;flex:none;}
+  body{padding-bottom:calc(56px + env(safe-area-inset-bottom,0px));}
+}
+@media (prefers-reduced-motion:reduce){
+  .stickybar{transition:none;}
+}

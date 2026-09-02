@@ -14,7 +14,7 @@ COMMON_ISSUES = [
      "a fair concern given how this industry has often worked. Long terms with exit fees are common and they are not universal.",
      "Read the term and the exit. Our managed agreements are month-to-month, because we would rather earn the next month than hold a business to a three-year contract it regrets."),
     ("&ldquo;We&rsquo;ll get slower service if we&rsquo;re not managed&rdquo;",
-     "partly true and worth stating honestly. Managed clients have a contracted response and after-hours cover; everyone else has a callback within four business hours and a booked visit.",
+     "partly true and worth stating honestly. Managed clients have a contracted response target and after-hours cover; everyone else gets our best effort &mdash; a callback usually the same business day, and a booked visit.",
      "Know what you are getting either way. We publish both so the difference is visible before you choose rather than discovered during an outage."),
     ("&ldquo;We have someone here who handles it&rdquo;",
      "often true, and the question is what happens when that person is on leave, unwell or leaves. It is usually a dependency rather than an arrangement.",

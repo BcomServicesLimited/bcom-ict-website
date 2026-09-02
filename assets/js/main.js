@@ -61,3 +61,22 @@
     });
   });
 })();
+
+/* Mobile action bar — hide it while the hero is still on screen, since the hero
+   already carries its own calls to action. Defaults to visible in the HTML, so
+   with JavaScript off the bar simply stays up rather than disappearing. */
+(function () {
+  var bar = document.querySelector('.stickybar');
+  if (!bar) return;
+  var hero = document.querySelector('.hero');
+  var threshold = Math.min(700, hero ? Math.max(240, hero.offsetHeight - 160) : 320);
+  var ticking = false;
+  function update() {
+    bar.setAttribute('data-hidden', String(window.scrollY < threshold));
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+})();

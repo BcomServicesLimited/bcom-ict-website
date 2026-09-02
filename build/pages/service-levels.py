@@ -5,7 +5,7 @@ MATRIX = [
      "Response within 4 business hours (contracted). After-hours emergency attendance included.",
      "Best effort &mdash; usually the same business day, and attendance next business day."),
     ("p2", "P2 — High", "A team or a core system is down. A workaround exists but it's painful.",
-     "Response within 4 business hours; target resolution same business day.",
+     "Response within 4 business hours (contracted); target resolution same business day.",
      "Best effort &mdash; usually the same business day."),
     ("p3", "P3 — Medium", "One person blocked, or noticeable degradation with a workaround available.",
      "Next business day.", "Best effort, generally within one business day."),
@@ -63,7 +63,7 @@ EXAMPLE_1 = example(
 EXAMPLE_2 = example(
     "A missed target, raised by us",
     "A managed client had a P2 fault where our response fell outside the committed window. The business had not noticed &mdash; the fault was resolved the same day and nobody had been watching a clock.",
-    "The delay was ours. A job had been logged through a channel that was not checked promptly during a staffing gap, and the four-hour response commitment was breached by about ninety minutes. It would have been very easy to say nothing, since the outcome was fine and the client had no complaint.",
+    "The delay was ours. A job had been logged through a channel that was not checked promptly during a staffing gap, and that client's contracted four-hour response commitment was breached by about ninety minutes. It would have been very easy to say nothing, since the outcome was fine and the client had no complaint.",
     "Raised it at the service review, explained what had happened and what had been changed so it could not recur, and recorded it as a missed target in the client&rsquo;s own record rather than in ours alone.",
     "The client kept the agreement and said the disclosure had increased rather than reduced their confidence. A commitment nobody audits is not a commitment, and we would rather be the ones who mention it.")
 
