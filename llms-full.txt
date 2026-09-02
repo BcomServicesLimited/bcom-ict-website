@@ -504,6 +504,35 @@ A: That's usually the main reason businesses move. Email, files and Teams work f
 
 ---
 
+## Cloud PBX Gold Coast
+URL: https://www.bcomservices.com/cloud-pbx-gold-coast
+
+bcom ICT operates its own AI-powered cloud PBX rather than reselling another provider's. The platform trades as Click2Call, a trading name of Bcom Services Pty Ltd — the same company and the same ABN as bcom ICT. It is $25 + GST per user per month including a local number and 300 outbound minutes, Australian-hosted, with no lock-in contract. Call 07 3041 8993.
+
+**Q: Does bcom ICT run its own phone platform?**
+A: Yes. bcom ICT and Click2Call are the same company — Click2Call is a trading name of Bcom Services Pty Ltd, ABN 92 636 893 108, the same entity and ABN behind bcom ICT. The cloud PBX your phones run on is built and operated in-house rather than resold from another provider, which means a fault does not have to travel through a vendor before someone who can fix it hears about it.
+
+**Q: How much does a cloud phone system cost?**
+A: $25 + GST per user per month, including a local number and 300 outbound minutes, with no lock-in contract. An inbound-only number is $10 + GST per month. There is a seven-day free trial with no card required. Handsets, cabling and on-site installation are separate and quoted after we know what the site needs.
+
+**Q: Where is our call data held?**
+A: On Australian-hosted infrastructure, with data kept in Australia and New Zealand. Calls route through Australian data centres rather than taking international hops, which is why the audio holds up.
+
+**Q: Can we keep our existing numbers?**
+A: Yes — local, mobile, 1300 and 1800 numbers are all portable, and porting is handled end to end. Getting the account details to match the losing provider's records exactly is the part that decides whether a port runs on time, and it is the part we do before submitting anything.
+
+**Q: Do we need to buy handsets?**
+A: No. The same extension works on a mobile, a laptop and a desk phone, so a business that does not want handsets pays for none. Where desk phones do make sense — reception, a counter, a workshop — we supply and install them and quote that separately from the monthly service.
+
+**Q: Can it work with Microsoft Teams?**
+A: Yes, through Direct Routing. Staff make and take real phone calls inside Teams using the Microsoft 365 licences the business already holds, with no second application to learn.
+
+**Q: What if we already have a PBX?**
+A: It can stay. A hybrid arrangement — the existing system for the office and cloud extensions for people outside it, joined so one published number reaches whoever is free — is frequently a fraction of a full replacement. We support legacy Panasonic, NEC, LG Ericsson and Alcatel-Lucent systems as well, so the advice is not shaped by what we would rather sell.
+
+
+---
+
 ## Business Computer Networking Gold Coast
 URL: https://www.bcomservices.com/computer-networking-service-gold-coast
 

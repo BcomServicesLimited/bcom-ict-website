@@ -190,6 +190,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ("Cloud PBX &mdash; our own platform", "/cloud-pbx-gold-coast"),
   ("VoIP Phone Systems", "/voip-phone-system-installation-and-support-gold-coast"),
   ("PBX Systems", "/pabx-phone-systems-gold-coast"),
   ("Phone Line Installation & Cabling", "/phone-line-installation-cabling-gold-coast"),

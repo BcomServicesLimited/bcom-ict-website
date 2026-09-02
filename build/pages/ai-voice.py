@@ -144,7 +144,7 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('AI Implementation', '/artificial-intelligence-service-gold-coast'),
+            + related([('Cloud PBX — our own platform', '/cloud-pbx-gold-coast'),       ('AI Implementation', '/artificial-intelligence-service-gold-coast'),
         ('AI Chatbots', '/ai-chatbot-gold-coast'),
         ('ISO/IEC 42001 AI Governance', '/iso-42001-ai-governance-gold-coast'),
         ('VoIP Phone Systems', '/voip-phone-system-installation-and-support-gold-coast'),

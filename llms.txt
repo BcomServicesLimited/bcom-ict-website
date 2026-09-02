@@ -247,6 +247,7 @@ or a rotating helpdesk. Escalation reaches a director the same day.
 - [About bcom ICT](https://www.bcomservices.com/about): bcom ICT is the trading name of Bcom Services Pty Ltd (ABN 92 636 893 108), a Gold Coast IT support company established in 2011, based in Surfers Paradise and working with small and medium businesses.
 - [Alcatel-Lucent PBX Support Gold Coast](https://www.bcomservices.com/alcatel-lucent-pbx-gold-coast): Alcatel-Lucent phone system programming, repair and support on the Gold Coast — OXO Connect, OmniPCX Office and OmniPCX Enterprise
 - [Case Studies](https://www.bcomservices.com/case-studies): A national retail chain technology rollout delivered by bcom ICT, plus representative engagements covering multi-site WiFi, managed IT, legacy PBX and office relocations.
+- [Cloud PBX Gold Coast](https://www.bcomservices.com/cloud-pbx-gold-coast): bcom ICT runs its own AI-powered cloud PBX, built and operated in-house rather than resold
 - [Contact bcom ICT](https://www.bcomservices.com/contact): Contact bcom ICT on 07 3041 8993 or support@bcomservices.com
 - [LG Ericsson PBX Support Gold Coast](https://www.bcomservices.com/lg-ericsson-pbx-gold-coast): LG Ericsson phone system programming, repair and support on the Gold Coast — iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms
 - [NEC PBX Support Gold Coast](https://www.bcomservices.com/nec-pbx-gold-coast): NEC phone system programming, repair and support on the Gold Coast — UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms
