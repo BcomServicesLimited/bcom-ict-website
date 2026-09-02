@@ -248,12 +248,14 @@ or a rotating helpdesk. Escalation reaches a director the same day.
 - [IT Support Gold Coast for Business](https://www.bcomservices.com/): Business IT support on the Gold Coast since 2011
 - [About bcom ICT](https://www.bcomservices.com/about): bcom ICT is the trading name of Bcom Services Pty Ltd (ABN 92 636 893 108), a Gold Coast IT support company established in 2011, based in Surfers Paradise and working with small and medium businesses.
 - [Alcatel-Lucent PBX Support Gold Coast](https://www.bcomservices.com/alcatel-lucent-pbx-gold-coast): Alcatel-Lucent phone system programming, repair and support on the Gold Coast — OXO Connect, OmniPCX Office and OmniPCX Enterprise
+- [Microsoft Azure for Australian Business](https://www.bcomservices.com/azure-cloud-services-gold-coast): Azure deployment and support for Gold Coast businesses — hosted servers, Azure Virtual Desktop, backup and site recovery, Entra ID
 - [Case Studies](https://www.bcomservices.com/case-studies): A national retail chain technology rollout delivered by bcom ICT, plus representative engagements covering multi-site WiFi, managed IT, legacy PBX and office relocations.
 - [Cloud PBX Gold Coast](https://www.bcomservices.com/cloud-pbx-gold-coast): bcom ICT runs its own AI-powered cloud PBX, built and operated in-house rather than resold
 - [Contact bcom ICT](https://www.bcomservices.com/contact): Contact bcom ICT on 07 3041 8993 or support@bcomservices.com
 - [DrayTek Router Setup & Support Gold Coast](https://www.bcomservices.com/draytek-router-gold-coast): DrayTek Vigor configuration and support for Gold Coast businesses — NBN and FTTN, 4G/5G failover, site-to-site VPN, multi-WAN and firmware management
 - [FortiGate Firewall Support Gold Coast](https://www.bcomservices.com/fortigate-firewall-gold-coast): FortiGate firewall configuration, support and licence management for Gold Coast businesses
 - [LG Ericsson PBX Support Gold Coast](https://www.bcomservices.com/lg-ericsson-pbx-gold-coast): LG Ericsson phone system programming, repair and support on the Gold Coast — iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms
+- [Microsoft Teams Phone & Direct Routing](https://www.bcomservices.com/microsoft-teams-phone-gold-coast): Make and take business calls inside Microsoft Teams
 - [NAS vs Cloud Backup](https://www.bcomservices.com/nas-vs-cloud-backup): Local NAS or cloud backup for an Australian business? What each genuinely protects against, why the answer is usually both, and the recovery-time question almost nobody asks.
 - [NEC PBX Support Gold Coast](https://www.bcomservices.com/nec-pbx-gold-coast): NEC phone system programming, repair and support on the Gold Coast — UNIVERGE SV9100, SL2100 and the earlier SV8100, Aspire and Xen platforms
 - [Office IT Relocation](https://www.bcomservices.com/office-relocation-case-study-southport): bcom ICT relocated Grow&Co Property Agents' Southport office — 31 workstations, 47 monitors and a mixed fleet moved, set up and working in a single day.
@@ -269,6 +271,7 @@ or a rotating helpdesk. Escalation reaches a director the same day.
 - [Synology NAS Setup & Support Gold Coast](https://www.bcomservices.com/synology-nas-gold-coast): Synology NAS supply, setup and support for Gold Coast businesses — DSM, Active Backup for Business, immutable snapshots, offsite copies and permissions done properly
 - [Terms & Conditions](https://www.bcomservices.com/terms-and-conditions): bcom ICT's terms of service — services, pricing, payment, fair use, carrier dependency, VoIP emergency calling, support hours, liability under Australian Consumer Law and termination.
 - [UniFi vs Aruba Instant On](https://www.bcomservices.com/unifi-vs-aruba-instant-on): An honest comparison of Ubiquiti UniFi and Aruba Instant On for Australian small business WiFi — what each is genuinely better at, and the four questions that decide it
+- [Windows Server End of Support & Migration](https://www.bcomservices.com/windows-server-migration-gold-coast): Windows Server 2016 support ends 12 January 2027
 
 ## Full content
 

@@ -342,6 +342,32 @@ A: No, and we will not imply otherwise. bcom ICT aligns its own practices with I
 
 ---
 
+## Microsoft Azure for Australian Business
+URL: https://www.bcomservices.com/azure-cloud-services-gold-coast
+
+bcom ICT deploys and supports Microsoft Azure for Australian businesses — hosting line-of-business servers, Azure Virtual Desktop, backup and site recovery, and Microsoft Entra ID for identity and conditional access. Azure is rarely cheaper than owning a server for a steady workload, and we will say so. Call 07 3041 8993.
+
+**Q: Does bcom ICT work with Microsoft Azure?**
+A: Yes. bcom ICT deploys and supports Azure for Australian businesses — hosting line-of-business servers, Azure Virtual Desktop, backup and site recovery, and Microsoft Entra ID for identity and conditional access. We also advise against Azure where it is the wrong answer, which for a single always-on server in a business with one office it frequently is.
+
+**Q: Is Azure cheaper than running our own server?**
+A: For a steady, always-on workload, often no. Owning hardware for three to five years can cost less than the equivalent Azure resource running continuously. Azure wins on flexibility, on not owning a server room, on bringing systems up somewhere else after an incident, and on scaling without a capacity decision. Those are good reasons; price usually is not.
+
+**Q: What is Azure Virtual Desktop useful for?**
+A: Businesses with contractors, seasonal staff, or people using their own laptops. The desktop and the data stay in Azure and the device becomes a screen, so a departing contractor hands back nothing and a lost laptop carries nothing. It suits variable headcount far better than it suits a fixed team who all have company machines.
+
+**Q: Where is our Azure data stored?**
+A: In the region the resource was provisioned into, which for Australian businesses should generally be an Australian region. It is set per resource rather than globally, so it needs establishing and recording rather than assuming — particularly for health providers, AFS licensees and anyone answering a security questionnaire.
+
+**Q: Why did our Azure bill increase?**
+A: Almost always resources nobody owns. A test environment from a finished project, a machine somebody created to try something, or storage growing because nothing ever deletes. Azure has no natural brake on spending, so tagging by owner, budget alerts and a monthly review are not optional extras.
+
+**Q: Can you take over an Azure tenancy someone else set up?**
+A: Yes. We audit who holds administrative roles — which is where we usually find the largest exposure — check what is running against what is needed, establish the data residency position per service, and put cost controls in place. Inherited tenancies are where we most often find several global administrators and no multi-factor authentication on any of them.
+
+
+---
+
 ## When Should a Business Replace Its Computers?
 URL: https://www.bcomservices.com/business-computer-replacement-cycle
 
@@ -1738,6 +1764,32 @@ A: It's strongly worth having. A written position on what AI may be used for and
 
 ---
 
+## Microsoft Teams Phone & Direct Routing
+URL: https://www.bcomservices.com/microsoft-teams-phone-gold-coast
+
+Microsoft Teams becomes a business phone system once calling is connected to it, using the Microsoft 365 licences you already hold. bcom ICT provides that through Direct Routing on its own cloud PBX platform, so the numbers, the call flow, the rates and the support all sit with one company. Local, mobile, 1300 and 1800 numbers port across. Call 07 3041 8993.
+
+**Q: Can we make phone calls in Microsoft Teams?**
+A: Yes. Teams becomes a business phone system once calling is added, using the Microsoft 365 licences you already hold. There are three ways to connect it to the public phone network — Direct Routing, Operator Connect and Microsoft Calling Plans. bcom ICT provides Direct Routing through its own cloud PBX platform, which keeps the numbers, the call flow and the rates with us rather than with Microsoft.
+
+**Q: What is Direct Routing and why does it matter?**
+A: Direct Routing connects your own carrier to Microsoft Teams instead of buying minutes from Microsoft. It is generally cheaper, far more flexible on call flow and number handling, and it means one provider covers both the phone platform and the support. bcom ICT and Click2Call are the same company, so the Direct Routing behind your Teams calls is ours rather than a third party's.
+
+**Q: Is Teams Phone right for a reception desk?**
+A: Usually not on its own, and this is the honest limitation. Teams works well for someone taking their own calls and less well for a person managing a busy queue with constant transfers. The right design for most offices is mixed — a proper handset and a queue for reception, Teams for everyone else. Both run on the same platform and the same numbers.
+
+**Q: Do we need to buy new phone numbers?**
+A: No. Local, mobile, 1300 and 1800 numbers all port across. With Direct Routing through our platform, porting and call flow are handled in one place rather than split between a carrier and Microsoft.
+
+**Q: Is Teams Phone cheaper than a separate phone system?**
+A: It depends on the route. Microsoft Calling Plans are generally the most expensive per user. Direct Routing through a carrier is usually cheaper and more flexible, particularly for a business that already has the Microsoft 365 licences. The saving is real but it is not the main argument — the main argument is staff using one application instead of two.
+
+**Q: What if the internet drops?**
+A: Teams calls stop, in the same way any cloud phone system does. That is the honest trade. A business that cannot afford to lose its phones needs a second connection path with automatic failover, and we would rather set that up at the start than explain it afterwards.
+
+
+---
+
 ## NAS vs Cloud Backup
 URL: https://www.bcomservices.com/nas-vs-cloud-backup
 
@@ -2880,3 +2932,29 @@ A: For most homes and small premises where cabling isn't practical, yes. Mesh ke
 
 **Q: Can you extend WiFi to a shed or outbuilding?**
 A: Often, though it depends on distance, construction and whether power and a cable path exist. Steel sheds are particularly difficult. We'll measure and tell you honestly what's achievable before quoting.
+
+
+---
+
+## Windows Server End of Support & Migration
+URL: https://www.bcomservices.com/windows-server-migration-gold-coast
+
+Windows Server 2016 reaches end of extended support on 12 January 2027, after which Microsoft stops issuing security updates for it. Windows Server 2012 and 2012 R2 passed that point in October 2023. bcom ICT audits what the server actually does, then plans the right answer — replace it, move the workload to Azure, or retire it entirely. Call 07 3041 8993.
+
+**Q: When does Windows Server 2016 reach end of support?**
+A: 12 January 2027. After that date Microsoft stops issuing security updates for it, and any newly discovered vulnerability stays unpatched. Windows Server 2012 and 2012 R2 already passed end of support in October 2023. Windows Server 2019 runs until January 2029. Confirm current dates on Microsoft's lifecycle documentation before acting on anything time-sensitive.
+
+**Q: What happens if we keep running an unsupported Windows Server?**
+A: It keeps working — nothing breaks on the day. What stops is security updates, so every vulnerability found from that point onward remains open. For businesses handling client, health or financial information, it also becomes something your insurer and your clients may ask about directly, and 'it still works' is not an answer that survives a security questionnaire.
+
+**Q: Should we replace the server or move to the cloud?**
+A: It depends on what the server actually does. If it runs a line-of-business application that needs to be close to your staff and your connection is unremarkable, replacing it is often the right answer. If you have multiple sites, or the server room is genuinely the weakest link in the business, moving the workload to Azure makes more sense. And a surprising number of servers now exist to share files and run a print queue, both of which moved to Microsoft 365 years ago.
+
+**Q: Is moving to Azure cheaper than a new server?**
+A: Often not, and anyone telling you otherwise has not modelled it. A steady always-on workload can cost more per year in Azure than owning the hardware outright. Azure wins on flexibility, resilience and not owning a box in a cupboard — which are good reasons — but it should be chosen on those rather than on an assumption about price.
+
+**Q: How long does a server migration take?**
+A: Planning is weeks; the cutover is usually a weekend. Most of the work is establishing what actually depends on the server, because that is where migrations go wrong — a scheduled task, a licensing service or a nightly data exchange nobody documented.
+
+**Q: Can you migrate without downtime?**
+A: Rarely entirely, and we would not promise it. What we do commit to is a cutover scheduled outside trading hours, with a tested way back and an agreed point at which we revert regardless of progress. That preparation is the difference between a failed cutover and a lost week.

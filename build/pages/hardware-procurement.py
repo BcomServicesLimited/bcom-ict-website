@@ -150,7 +150,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([('Synology NAS', '/synology-nas-gold-coast'),
+            + related([('Windows Server Migration', '/windows-server-migration-gold-coast'),
+        ('Synology NAS', '/synology-nas-gold-coast'),
                ('Performance Optimisation', '/performance-optimisation-gold-coast'),
         ('Business Computer Repair', '/on-site-computer-repair-gold-coast'),
         ('Technology Procurement Advice', '/technology-procurement-advice-gold-coast'),

@@ -165,7 +165,9 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([('Microsoft 365 vs Google Workspace', '/microsoft-365-vs-google-workspace'),
+            + related([('Microsoft Teams Phone', '/microsoft-teams-phone-gold-coast'),
+        ('Windows Server Migration', '/windows-server-migration-gold-coast'),
+        ('Microsoft 365 vs Google Workspace', '/microsoft-365-vs-google-workspace'),
                ('Cloud & Microsoft 365', '/cloud-computing-service-gold-coast'),
         ('Microsoft Copilot', '/microsoft-copilot-gold-coast'),
         ('Data Backup & Disaster Recovery', '/data-backup-recovery-gold-coast'),

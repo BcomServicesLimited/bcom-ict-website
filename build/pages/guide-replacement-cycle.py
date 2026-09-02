@@ -160,7 +160,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Performance Optimisation', '/performance-optimisation-gold-coast'),
+            + related([('Windows Server Migration', '/windows-server-migration-gold-coast'),
+               ('Performance Optimisation', '/performance-optimisation-gold-coast'),
         ('Hardware Procurement & Setup', '/hardware-procurement-setup-gold-coast'),
         ('Business Computer Repair', '/on-site-computer-repair-gold-coast'),
         ('IT Consulting & Strategy', '/it-consulting-strategy-gold-coast'),

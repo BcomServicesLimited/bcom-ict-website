@@ -169,6 +169,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('Microsoft Teams Phone', '/microsoft-teams-phone-gold-coast'),
   ('VoIP vs on-premises PBX', '/voip-vs-pbx-phone-systems'),
   ("Business Phone Systems", "/business-phone-systems-gold-coast"),
   ("VoIP Phone Systems", "/voip-phone-system-installation-and-support-gold-coast"),

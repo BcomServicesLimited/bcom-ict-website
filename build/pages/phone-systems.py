@@ -190,6 +190,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('Microsoft Teams Phone', '/microsoft-teams-phone-gold-coast'),
   ("Cloud PBX &mdash; our own platform", "/cloud-pbx-gold-coast"),
   ("VoIP Phone Systems", "/voip-phone-system-installation-and-support-gold-coast"),
   ("PBX Systems", "/pabx-phone-systems-gold-coast"),

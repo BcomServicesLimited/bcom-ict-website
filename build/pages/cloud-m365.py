@@ -186,6 +186,8 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('Windows Server Migration', '/windows-server-migration-gold-coast'),
+  ('Microsoft Azure', '/azure-cloud-services-gold-coast'),
   ('Microsoft 365 vs Google Workspace', '/microsoft-365-vs-google-workspace'),
   ("Microsoft 365 Setup & Support", "/microsoft-365-setup-gold-coast"),
   ("Microsoft Copilot", "/microsoft-copilot-gold-coast"),

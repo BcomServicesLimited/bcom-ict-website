@@ -168,6 +168,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('Microsoft Azure', '/azure-cloud-services-gold-coast'),
   ("Trust centre", "/trust-centre"),
   ("Notifiable Data Breaches guide", "/notifiable-data-breach-guide-australia"),
   ("ISO alignment", "/iso-alignment"),
