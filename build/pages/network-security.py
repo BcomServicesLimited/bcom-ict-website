@@ -163,7 +163,10 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
+            + related([('DrayTek Routers', '/draytek-router-gold-coast'),
+        ('Sophos Firewalls', '/sophos-firewall-gold-coast'),
+        ('FortiGate Firewalls', '/fortigate-firewall-gold-coast'),
+               ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Computer Networking Service', '/computer-networking-service-gold-coast'),
         ('Cybersecurity Services', '/cybersecurity-services-gold-coast'),
         ('Network Troubleshooting', '/network-troubleshooting-diagnostics-gold-coast'),

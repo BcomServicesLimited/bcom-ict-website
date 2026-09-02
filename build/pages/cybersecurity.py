@@ -168,6 +168,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('FortiGate Firewalls', '/fortigate-firewall-gold-coast'),
   ("Cybersecurity Risk Assessment", "/cybersecurity-health-check-for-small-business-gold-coast"),
   ("24/7 Security Operations Centre", "/security-operations-centre-gold-coast"),
   ("Cyber Incident Response", "/cyber-incident-response-gold-coast"),

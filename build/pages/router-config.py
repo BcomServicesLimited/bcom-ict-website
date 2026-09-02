@@ -128,7 +128,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Business WiFi Installation', '/business-wifi-gold-coast'),
+            + related([('DrayTek Routers', '/draytek-router-gold-coast'),
+               ('Business WiFi Installation', '/business-wifi-gold-coast'),
         ('Mesh WiFi Setup', '/mesh-network-setup-gold-coast'),
         ('Network Troubleshooting', '/network-troubleshooting-diagnostics-gold-coast'),
         ('Business NBN & Internet', '/nbn-internet-support-gold-coast'),

@@ -721,6 +721,32 @@ A: Two categories, and we're explicit about both. Cabling is carried out by ACMA
 
 ---
 
+## DrayTek Router Setup & Support Gold Coast
+URL: https://www.bcomservices.com/draytek-router-gold-coast
+
+bcom ICT configures and supports DrayTek Vigor routers for Gold Coast businesses — NBN and FTTN connections, 4G and 5G failover, site-to-site and remote access VPN, multi-WAN, VLAN separation and firmware management. DrayTek is the gateway we deploy most often on straightforward sites, including on retail fit-outs. Call 07 3041 8993.
+
+**Q: Does bcom ICT support DrayTek routers?**
+A: Yes, and we deploy them regularly. DrayTek Vigor units handle Australian NBN and FTTN natively, include site-to-site and remote access VPN with no subscription, and support 4G or 5G failover — which is why they end up in a lot of Gold Coast small offices. We configure, support and take over existing units.
+
+**Q: Is a DrayTek a real firewall?**
+A: It is a router with firewall capability rather than a full inspection appliance. For a straightforward office it is genuinely enough — segmentation, VPN, sensible inbound control. If you need intrusion prevention, deep logging or evidence for an insurer, that is where a FortiGate or Sophos earns the extra cost, and we will say so.
+
+**Q: Can a DrayTek do 4G or 5G failover?**
+A: Yes, and it is one of the main reasons to choose one. A second path that takes over automatically turns a street-works outage from a lost day into a slower afternoon. It needs testing after install and periodically afterwards, because an untested failover is just an assumption.
+
+**Q: Which DrayTek model should we use?**
+A: It depends on the connection type, how many VPN tunnels you need concurrently and whether you want true multi-WAN rather than failover. For most single-office businesses on NBN the 2765 through 2927 band covers it. We will size it on the actual service rather than the headline figure.
+
+**Q: Our provider gave us a modem — do we need a DrayTek as well?**
+A: Not always, and if the supplied unit is doing the job we will tell you to keep it. Where it matters: failover, site-to-site VPN, proper VLAN separation and holding a configuration you own rather than one that resets when the provider swaps the hardware. If none of those apply, save the money.
+
+**Q: Can you recover a DrayTek nobody has the password for?**
+A: Usually. Where the credentials are genuinely lost the unit can be reset and rebuilt, which is a good argument for keeping an exported configuration somewhere the business controls.
+
+
+---
+
 ## Essential Eight Assessment & Uplift for Australian Business
 URL: https://www.bcomservices.com/essential-eight-guide-gold-coast
 
@@ -746,6 +772,32 @@ A: We review your environment against all eight controls, establish your current
 
 **Q: Does bcom ICT certify us against the Essential Eight?**
 A: No, and nobody can — the Essential Eight has no formal certification scheme. What we provide is an assessment and a written report of where you sit, which is what insurers and clients asking the question actually want to see. We're equally clear about our own position: bcom ICT operates to the Essential Eight and aligns with ISO/IEC 27001, but holds no organisational certification.
+
+
+---
+
+## FortiGate Firewall Support Gold Coast
+URL: https://www.bcomservices.com/fortigate-firewall-gold-coast
+
+bcom ICT configures, supports and maintains FortiGate firewalls for businesses across the Gold Coast and Australia-wide — policy design, VLAN segmentation, remote access and site-to-site VPN, security subscription management, firmware and inherited-unit takeovers. We work with several firewall ranges, so we will tell you when a FortiGate is more than your business needs. Call 07 3041 8993.
+
+**Q: Does bcom ICT support FortiGate firewalls?**
+A: Yes. bcom ICT configures, supports and maintains FortiGate units for businesses across the Gold Coast and Australia-wide — policy design, VLAN segmentation, site-to-site and remote access VPN, security service subscriptions, firmware and licence management. We are not a Fortinet-only shop, which means we will tell you when a FortiGate is more firewall than your business needs.
+
+**Q: What happens when a FortiGate licence expires?**
+A: The unit keeps passing traffic, so nothing looks broken. What stops is the subscription services — intrusion prevention, web filtering, application control and antivirus stop receiving updates and eventually stop working. It is the most common gap we find on an inherited FortiGate, because nothing announces it.
+
+**Q: Which FortiGate model suits a small business?**
+A: For most single-office Gold Coast businesses, the desktop range — the 40F through 80F — is the right band, and the deciding factor is your internet speed with inspection turned on rather than headcount. The published throughput figures assume inspection is off, so a unit sized on those numbers will disappoint.
+
+**Q: Is a FortiGate overkill for a small business?**
+A: Sometimes, and we will say so. If you have a straightforward office, no compliance obligation and no site-to-site requirement, a well-configured DrayTek or the firewall in a UniFi gateway may serve you better for less. FortiGate earns its keep where you need real intrusion prevention, detailed logging and evidence for a client or an insurer.
+
+**Q: Can you take over a FortiGate someone else configured?**
+A: Routinely. We recover administrative access, audit the policy against what the business actually does, document it and hand the configuration to you. Inherited firewalls are usually where we find inbound rules for systems that stopped existing years ago.
+
+**Q: Do you do FortiGate VPN for remote workers?**
+A: Yes, and it is usually the first thing we change on an inherited unit. Published remote desktop gets replaced with the VPN the FortiGate is already licensed for, with multi-factor authentication in front of it.
 
 
 ---
@@ -2480,6 +2532,32 @@ A: Occasionally, but rarely for a small business. Off-the-shelf plus proper conf
 
 ---
 
+## Sophos Firewall Support Gold Coast
+URL: https://www.bcomservices.com/sophos-firewall-gold-coast
+
+bcom ICT configures and supports Sophos Firewall for businesses across the Gold Coast — the current XGS range and the older SG and XG units still in service — covering policy design, VLAN segmentation, VPN, web and application control, and Sophos Central management. We work across several firewall ranges rather than one. Call 07 3041 8993.
+
+**Q: Does bcom ICT support Sophos firewalls?**
+A: Yes. bcom ICT configures and supports Sophos Firewall units — the current XGS range and the older SG and XG series still in service — including policy design, VLAN segmentation, VPN, web and application control, and Sophos Central management. We work across several firewall ranges rather than one, so the recommendation is not shaped by a reseller target.
+
+**Q: What is Synchronized Security and does it matter?**
+A: It is the feature that makes Sophos worth choosing as a set. The firewall and the endpoint software talk to each other, so a machine showing signs of compromise gets isolated from the network automatically rather than waiting for someone to notice. If you run Sophos endpoint already, matching the firewall is the single strongest argument for this range. If you do not, that argument disappears.
+
+**Q: Is Sophos better than FortiGate?**
+A: Neither is better in general. Sophos suits a business that wants firewall, endpoint and email in one console and values the automatic isolation between them. FortiGate suits a business that wants the deepest inspection and logging, particularly where evidence for an insurer or a client matters. Both are serious products and both are more than many small offices need.
+
+**Q: Our Sophos unit is out of support — does it need replacing?**
+A: Probably, and this is the one case where we would not argue for keeping working hardware. A firewall is the device on your network where the inability to receive security patches matters most. We will confirm the support status and tell you what the actual exposure is before quoting anything.
+
+**Q: Can you take over a Sophos firewall someone else set up?**
+A: Yes. We recover access to Sophos Central, audit the policy against what the business actually does, document it, and put ownership of the account in the business's name rather than a provider's. That last part is worth checking even if you are not changing providers.
+
+**Q: Do you support Sophos endpoint as well?**
+A: Yes, and where a client runs both we configure them as a pair so the isolation works. Running the firewall from one vendor and the endpoint from another is common and it costs you the feature you are paying for.
+
+
+---
+
 ## Get Support
 URL: https://www.bcomservices.com/support
 
@@ -2502,6 +2580,32 @@ A: What's affected — one person or everyone. When it started, and whether anyt
 
 **Q: I think we've been hacked. What do I do right now?**
 A: Call 07 3041 8993. Disconnect affected machines from the network but don't power them off — shutting down destroys evidence in memory. Don't delete anything, including the ransom note, and don't wipe and rebuild. See cyber incident response for the full first-hour checklist.
+
+
+---
+
+## Synology NAS Setup & Support Gold Coast
+URL: https://www.bcomservices.com/synology-nas-gold-coast
+
+bcom ICT supplies, configures and supports Synology NAS units for Gold Coast businesses — DSM setup, Active Backup for Business against workstations, servers and Microsoft 365, immutable snapshots, offsite copies with Hyper Backup, share permissions and drive health monitoring. We support QNAP as well. Call 07 3041 8993.
+
+**Q: Is a Synology NAS a backup?**
+A: Only if it is configured to be one. A NAS mapped as a drive on the same network with the same credentials is storage — ransomware that reaches a workstation reaches it too, and we have recovered from an incident where the backup unit was encrypted alongside the server it was protecting. Immutable snapshots and an offsite copy are what turn a NAS into a backup.
+
+**Q: Which Synology model suits a small business?**
+A: For most Gold Coast small businesses the desktop plus range — DS224+ through DS923+ — covers it, and the deciding factors are how much data you hold, how fast it is growing, and whether you want to run Active Backup for Business against servers and workstations. Rack units make sense once there is a comms cabinet and the data has outgrown a desktop box.
+
+**Q: Synology or QNAP?**
+A: Both are capable and the hardware is comparable. Synology's advantage is DSM and Active Backup for Business, which backs up PCs, servers and Microsoft 365 without an additional licence — for most small businesses that is the deciding factor. QNAP often gives more hardware for the money and suits a business that wants raw capability or specific virtualisation features. We support both; we deploy Synology more often for the software.
+
+**Q: Can a Synology back up Microsoft 365?**
+A: Yes, through Active Backup for Business, and it is one of the strongest reasons to have one. Microsoft replicates your data for their availability but does not keep a copy against deletion, a departing staff member, or ransomware syncing through OneDrive. Almost no business has this until someone explains it.
+
+**Q: Should our NAS be accessible from the internet?**
+A: Not directly. Put it behind a VPN rather than exposing it through a port forward or QuickConnect. Internet-facing NAS units are actively scanned for, and they have been the entry point in real ransomware incidents in Australia.
+
+**Q: Can you take over a NAS someone else set up?**
+A: Yes. We recover administrative access, review the share permissions and the backup jobs against what the business actually needs, check drive health, and set up notifications that reach a person. Inherited units are where we most often find a failed drive nobody knew about.
 
 
 ---

@@ -130,6 +130,7 @@ PAGE = {
 {faq_block(FAQS)}
 
 {related([
+  ('Synology NAS', '/synology-nas-gold-coast'),
   ("Data Backup & Disaster Recovery", "/data-backup-recovery-gold-coast"),
   ("Cyber Incident Response", "/cyber-incident-response-gold-coast"),
   ("Microsoft 365 Setup & Support", "/microsoft-365-setup-gold-coast"),

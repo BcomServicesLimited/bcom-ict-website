@@ -150,7 +150,8 @@ PAGE = {
 </section>
 '''
             + faq_block(FAQS)
-            + related([       ('Performance Optimisation', '/performance-optimisation-gold-coast'),
+            + related([('Synology NAS', '/synology-nas-gold-coast'),
+               ('Performance Optimisation', '/performance-optimisation-gold-coast'),
         ('Business Computer Repair', '/on-site-computer-repair-gold-coast'),
         ('Technology Procurement Advice', '/technology-procurement-advice-gold-coast'),
         ('Managed IT Services', '/managed-it-services-for-small-businesses-gold-coast'),
