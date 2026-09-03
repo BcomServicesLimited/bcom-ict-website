@@ -246,6 +246,7 @@ serves.*
 | **Microsoft Partner Center check** — is there a current Solutions Partner designation? "Silver" was retired with the old competency model | Chunk 3, Chunk 4 |
 | **Switch GBP to a service-area business** — hide the street address, set the coverage area. *Now surfaces on the site: the map embed on `/contact` and `/about` renders whatever GBP shows.* | Consistency with the site |
 | **GBP hours** still show "Open 24 hours" | Contradicts every page and the locked hours decision |
+| ~~Permission to name Grow&Co~~ — **granted in writing 3 Sept 2026** by Natalie Johnson, Executive Support & Project Coordinator, after reviewing the copy. The case study stays as published. *A material rewrite would need fresh approval — the permission covers the copy she saw.* | Closed |
 | Permission to name the national retail chain client | `/case-studies` — written accurately but unnamed, with the reason stated in the FAQ |
 
 ---
