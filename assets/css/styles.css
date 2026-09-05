@@ -483,6 +483,13 @@ tbody tr:last-child td{border-bottom:0;}
 }
 .quote .stars{color:#E8A33D;letter-spacing:2px;font-size:.9375rem;}
 .quote blockquote{font-size:1.0625rem;line-height:1.6;color:var(--ink-soft);}
+/* Longer reviews run to several paragraphs; keep them readable rather than
+   collapsing into a wall. */
+.quote blockquote p + p{margin-top:var(--s4);}
+.quote blockquote p::before{content:open-quote;}
+.quote blockquote p::after{content:none;}
+.quote blockquote p:last-child::after{content:close-quote;}
+.quote blockquote{quotes:'\201C' '\201D';}
 .quote cite{font-style:normal;font-size:.875rem;color:var(--slate);font-weight:600;margin-top:auto;}
 
 /* ---------- contact ---------- */

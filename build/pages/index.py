@@ -81,7 +81,7 @@ PAGE = {
     "lede": "Managed IT, cybersecurity, WiFi, phone systems and Microsoft 365 for small and medium businesses. On-site across the Gold Coast, remote and managed support Australia-wide.",
     "actions": [("Book an on-site tech", BIZ["booking"], "white"),
                 ("Call 07 3041 8993", BIZ["phone_href"], "onink")],
-    "trust": ["Local since 2011", "5.0 from 24 Google reviews", "Month-to-month, no lock-in", "Callback usually the same business day"],
+    "trust": ["Local since 2011", f"5.0 from {BIZ['reviews']} Google reviews", "Month-to-month, no lock-in", "Callback usually the same business day"],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": f'''

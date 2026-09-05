@@ -1,5 +1,5 @@
 from layout import MARK, cta, faq_block, cards, ticks, related, photo, trust_note, issues, example, booking_cta
-from site_data import SUBURBS
+from site_data import BIZ, SUBURBS
 
 FIXES = [
     ("Computers and laptops", None,
@@ -87,7 +87,7 @@ PAGE = {
     "h1": "Business IT support across the Gold Coast",
     "lede": "Something's broken and your staff can't work. Same-day on-site visits across the Gold Coast, or remote help that often has you going again in minutes.",
     "actions": [("Get help now", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ["Mon–Fri 8am–5pm", "Same-day on-site", "Local since 2011", "5.0 from 24 reviews"],
+    "trust": ["Mon–Fri 8am–5pm", "Same-day on-site", "Local since 2011", f"5.0 from {BIZ['reviews']} reviews"],
     "crumbs": [("Services", "/services"), ("Business IT Support", "/it-support-and-services-gold-coast")],
     "faqs": FAQS,
     "booking": True,

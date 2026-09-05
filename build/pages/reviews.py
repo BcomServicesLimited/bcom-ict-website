@@ -6,15 +6,19 @@ from site_data import BIZ
 QUOTES = [
     ("bcom ICT fixed our office network the same day we called. Professional, fast and fairly priced. Highly recommend for any Gold Coast business.", "Michael T. · Robina"),
     ("Set up our entire VoIP phone system for our Southport office. Very knowledgeable and explained everything clearly.", "David R. · Southport"),
+    # Public Google review, Sept 2026. Grow&Co gave written permission to be
+    # named (Natalie Johnson, 3 Sept 2026). Quoted verbatim, including their
+    # capitalisation of the brand — it is a quotation, not our own copy.
+    ("We found Bcom ICT via an online search for our recent office relocation, which required dual monitor arm setups for workstations and cable management. They were on time, communicated proactively, and left the workspace clean and organised. When we discovered the data cable management hadn&rsquo;t been completed by the desk suppliers, Royce didn&rsquo;t hesitate to help and even came in on Saturday so that we were ready to go Monday morning.</p><p>Royce also worked alongside several other contractors on site, handling any hurdles patiently and professionally, without drama. His communication was clear throughout, so there were no misunderstandings.</p><p>Pricing was fair and in line with other quotes we received, and our new office turned out amazingly. We&rsquo;d highly recommend Bcom ICT to any business relocating or upgrading their IT setup.", "Grow&amp;Co Property Agents · Southport"),
 ]
 
 quotes = "".join(
     f'<figure class="quote"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div>'
-    f'<blockquote>“{q}”</blockquote><cite>{who}</cite></figure>' for q, who in QUOTES)
+    f'<blockquote><p>{q}</p></blockquote><cite>{who}</cite></figure>' for q, who in QUOTES)
 
 FAQS = [
     ("How is bcom ICT rated?",
-     "bcom ICT holds a 5.0 star rating from 24 verified reviews on its Google Business Profile as at August 2026. Every review is from a real customer and the full set is public on Google — the reviews quoted on this page are a sample, not a curated selection with the rest hidden."),
+     f"bcom ICT holds a 5.0 star rating from {BIZ['reviews']} verified reviews on its Google Business Profile as at August 2026. Every review is from a real customer and the full set is public on Google — the reviews quoted on this page are a sample, not a curated selection with the rest hidden."),
     ("Are these reviews real?",
      "Yes. They come from bcom ICT's public Google Business Profile, where anyone can read all of them without going through us. We don't publish testimonials that can't be traced back to a verifiable source, which is why there are fewer quotes on this page than on most IT company websites."),
     ("Why aren't there more reviews for a business trading since 2011?",
@@ -27,18 +31,18 @@ PAGE = {
     "path": "/reviews",
     "priority": "0.7",
     "title": "Reviews — 5.0 Stars from Gold Coast Businesses | bcom ICT",
-    "description": "bcom ICT is rated 5.0 from 24 verified Google reviews. Read what Gold Coast businesses say about our IT support, networks and phone systems.",
+    "description": f"bcom ICT is rated 5.0 from {BIZ['reviews']} verified Google reviews. Read what Gold Coast businesses say about our IT support, networks and phone systems.",
     "hero_kind": "doc",
     "eyebrow": "About",
     "h1": "What Gold Coast businesses say",
-    "lede": "5.0 stars from 24 verified Google reviews. The full set is public on Google — these are a sample, not a shortlist with the rest hidden.",
+    "lede": f"5.0 stars from {BIZ['reviews']} verified Google reviews. The full set is public on Google — these are a sample, not a shortlist with the rest hidden.",
     "crumbs": [("About", "/about"), ("Reviews", "/reviews")],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": f'''
 <section class="section section--tight">
   <div class="wrap">
-    <p class="answer">bcom ICT holds a 5.0 star rating from 24 verified reviews on its Google Business
+    <p class="answer">bcom ICT holds a 5.0 star rating from {BIZ['reviews']} verified reviews on its Google Business
     Profile as at August 2026. Reviews come from Gold Coast businesses across IT support, networking, phone
     systems and cybersecurity work. The full set is publicly readable on Google.</p>
 

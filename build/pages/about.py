@@ -1,5 +1,5 @@
 from layout import MARK, cta, faq_block, ticks, related, photo, trust_note, map_embed
-from site_data import SUBURBS
+from site_data import BIZ, SUBURBS
 
 FAQS = [
     ("Who is bcom ICT?",
@@ -26,7 +26,7 @@ PAGE = {
     "h1": "Looking after Gold Coast businesses since 2011",
     "lede": "Fifteen years of looking after Gold Coast businesses, on site wherever you are, with delivery reaching across Australia.",
     "actions": [("Meet the team", "/our-team", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
-    "trust": ["Established 2011", "ABN 92 636 893 108", "We come to you", "5.0 from 24 reviews"],
+    "trust": ["Established 2011", "ABN 92 636 893 108", "We come to you", f"5.0 from {BIZ['reviews']} reviews"],
     "crumbs": [("About", "/about")],
     "faqs": FAQS,
     "reviewed": "August 2026",

@@ -86,6 +86,14 @@ PAGE = {
     floor that wasn&rsquo;t ready &mdash; we said so in writing before anyone committed to anything. Nobody
     likes a surprise on an invoice, least of all the person who has to explain it.</p>
 
+    <figure class="quote" style="margin-top:40px">
+      <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote><p>Pricing was fair and in line with other quotes we received, and our new office turned
+      out amazingly. We&rsquo;d highly recommend Bcom ICT to any business relocating or upgrading their IT
+      setup.</p></blockquote>
+      <cite>Grow&amp;Co Property Agents &middot; from their Google review, September 2026</cite>
+    </figure>
+
     {trust_note('Thirty-one desks, every machine on the right one, and a team that walked in on Monday and got on with it. For an agency listing and managing property across the Gold Coast, a good move is one where the following week looks like the one before.')}
   </div>
 </section>
