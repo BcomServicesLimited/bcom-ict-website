@@ -359,6 +359,23 @@ old site; treat it as the baseline the rebuild is measured against.
   carry noindex.
 - AI features: 1,318 impressions, but only since 18 May 2026 (106 days).
 
+## Indexing after cutover
+
+| Date | Indexed | Crawled, not indexed | 404 | Canonical dupes |
+|---|---|---|---|---|
+| 3 Sept 2026 (data to 28 Aug — pre-cutover) | 81 | 81 | 7 | 62 |
+| 7 Sept 2026 (data to 4 Sept) | **120** | 82 | 6 | 59 |
+
+**"Crawled — currently not indexed" is the number to watch.** It is the pages
+Google fetched and declined to index, and it was the old site's core problem:
+two hosts and two URL forms made everything look redundant. If the rebuild
+worked, it falls over the coming weeks.
+
+Google raised "Excluded by 'noindex' tag — 1 page" on 7 Sept. That page is
+`/thank-you`, verified live serving `noindex, follow`, kept out of sitemap.xml,
+and on the build's NOINDEX_OK allowlist. **Intentional — no action.** The alert
+fires on any new reason appearing, not only on faults.
+
 ## Rate card (Royce, Sept 2026 — current)
 
 | | Ex GST | Inc GST |
