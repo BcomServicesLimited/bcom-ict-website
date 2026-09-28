@@ -56,7 +56,7 @@ PAGE = {
     "eyebrow": "Comparison",
     "h1": "NAS or cloud backup?",
     "lede": "They protect against different things, which is why the honest answer is usually both. Here is what each one actually covers, and the question that decides how much you need.",
-    "crumbs": [("Services", "/services"), ("NAS vs cloud backup", "/nas-vs-cloud-backup")],
+    "crumbs": [("Guides", "/guides"), ("NAS vs cloud backup", "/nas-vs-cloud-backup")],
     "faqs": FAQS,
     "reviewed": "September 2026",
     "body": f'''

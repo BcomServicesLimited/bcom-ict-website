@@ -254,6 +254,7 @@ or a rotating helpdesk. Escalation reaches a director the same day.
 - [Contact bcom ICT](https://www.bcomservices.com/contact): Contact bcom ICT on 07 3041 8993 or support@bcomservices.com
 - [DrayTek Router Setup & Support Gold Coast](https://www.bcomservices.com/draytek-router-gold-coast): DrayTek Vigor configuration and support for Gold Coast businesses — NBN and FTTN, 4G/5G failover, site-to-site VPN
 - [FortiGate Firewall Support Gold Coast](https://www.bcomservices.com/fortigate-firewall-gold-coast): FortiGate firewall configuration, support and licence management for Gold Coast businesses
+- [IT Guides for Gold Coast Businesses](https://www.bcomservices.com/guides): Plain-English IT guides for Australian businesses: choosing a provider, what support costs, honest technology comparisons and planning checklists.
 - [LG Ericsson PBX Support Gold Coast](https://www.bcomservices.com/lg-ericsson-pbx-gold-coast): LG Ericsson phone system programming, repair and support on the Gold Coast — iPECS eMG80, eMG100, UCP and the earlier LIK and ipLDK platforms.
 - [Microsoft Teams Phone & Direct Routing](https://www.bcomservices.com/microsoft-teams-phone-gold-coast): Make and take business calls inside Microsoft Teams
 - [NAS vs Cloud Backup](https://www.bcomservices.com/nas-vs-cloud-backup): Local NAS or cloud backup for an Australian business? What each genuinely protects against, why the answer is usually both.

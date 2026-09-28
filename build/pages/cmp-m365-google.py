@@ -57,7 +57,7 @@ PAGE = {
     "eyebrow": "Comparison",
     "h1": "Microsoft 365 or Google Workspace?",
     "lede": "A decision most businesses make once and live with for years. Here is what actually separates them, and the costs that matter more than the price per seat.",
-    "crumbs": [("Services", "/services"), ("Microsoft 365 vs Google Workspace", "/microsoft-365-vs-google-workspace")],
+    "crumbs": [("Guides", "/guides"), ("Microsoft 365 vs Google Workspace", "/microsoft-365-vs-google-workspace")],
     "faqs": FAQS,
     "reviewed": "September 2026",
     "body": f'''

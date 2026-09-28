@@ -64,7 +64,7 @@ PAGE = {
     "eyebrow": "Guide",
     "h1": 'Managed IT or pay-as-you-go?',
     "lede": "Both are legitimate. The difference isn't really about cost — it's about who carries the incentive to stop problems recurring.",
-    "crumbs": [("Guides", "/services"), ('Managed IT vs break-fix', '/managed-it-vs-break-fix')],
+    "crumbs": [("Guides", "/guides"), ('Managed IT vs break-fix', '/managed-it-vs-break-fix')],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": svc_body(answer='Break-fix IT support means paying per job when something breaks; managed IT means a flat monthly fee covering monitoring, helpdesk, patching and backup. The structural difference is incentive: a break-fix provider earns when things fail, while a managed provider carries the cost of recurring faults. Managed IT suits businesses with a server, staff who cannot work without their systems, or client data they must prove is protected.',

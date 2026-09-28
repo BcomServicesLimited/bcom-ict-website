@@ -139,7 +139,7 @@ Each chunk ends with a commit and a push. Tick as they land.
       The HTML sitemap is generated from the pages actually built, so it cannot
       fall out of step.
 - [x] **Chunk 10 — LLM layer**
-      `llms.txt` (32 KB, indexes all 112 pages) and `llms-full.txt` (272 KB, every
+      `llms.txt` (indexes all 113 pages) and `llms-full.txt` (272 KB, every
       answer block plus **651 Q&A pairs**) — both **generated from the pages
       actually built** by `build/llms.py`, so they cannot drift out of step.
       og:image share card generated on-brand at `assets/img/og-image.jpg`, wired
@@ -251,6 +251,24 @@ serves.*
 
 ---
 
+## Guides hub — `/guides` (28 Sept 2026)
+
+`build/pages/guides.py`. Collects the seven guides and four comparisons, which
+previously had no parent at all. Grouped by what the reader is trying to do —
+choosing a provider, choosing technology, planning ahead — not by format.
+
+- **Breadcrumb bug fixed on the way in:** all seven guides carried a crumb
+  labelled "Guides" that linked to `/services`, so the site was claiming a
+  section that did not exist and emitting BreadcrumbList schema to match. All
+  eleven now sit under `/guides`.
+- The **hacked guide** gets an `.urgent` callout (semantic red) straight after
+  the answer block, rather than being a card among the others.
+- Footer column renamed **Compare → Guides**, with an "All guides" link, so the
+  hub is linked from every page.
+- `cards()` takes `more=` to label a linked card ("Read the guide").
+
+---
+
 ## Location: service-area business (Royce, 3 Sept 2026)
 
 **There is no office.** Technicians and the sales team attend the customer; no
@@ -322,7 +340,7 @@ Two components in `layout.py`, both fed from `BIZ["booking"]`:
   pages where a 620px calendar would be too heavy.
 
 **The external CSS/JS loads only on pages that set `"booking": True`** — 17 of
-112 pages. Do not put the loader in the global head.
+113 pages. Do not put the loader in the global head.
 
 Google injects `<button class="qxCTlb">` with inline colour. `.bookbtn button`
 in styles.css restyles it to match `.btn--primary` (Manrope, bcom blue, 14px 26px,

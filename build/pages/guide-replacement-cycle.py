@@ -65,7 +65,7 @@ PAGE = {
     "eyebrow": "Guide",
     "h1": 'When is a business computer past it?',
     "lede": "Most businesses replace computers when they die. That's the most expensive way to do it — unbudgeted, at the worst moment, with someone unable to work while it's sorted.",
-    "crumbs": [("Guides", "/services"), ('Computer replacement cycle', '/business-computer-replacement-cycle')],
+    "crumbs": [("Guides", "/guides"), ('Computer replacement cycle', '/business-computer-replacement-cycle')],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": svc_body(answer='Business computers typically remain economic for three to five years, depending on the work they do. The practical test is whether a repair costs more than a third of replacement, whether the machine will still be adequate in two years, and whether it is still receiving operating system security updates. Planned replacement on a schedule costs the same as emergency replacement and removes the disruption.',

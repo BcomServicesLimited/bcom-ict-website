@@ -68,7 +68,7 @@ PAGE = {
     "lede": 'What the connection types actually mean, whether a business plan is worth the premium, and the one thing worth spending money on that almost nobody does.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
     "trust": ['Business vs residential', 'Failover explained', 'Vendor-neutral', 'Gold Coast specific'],
-    "crumbs": [("Guides", "/services"), ('Business NBN guide', '/business-nbn-guide-gold-coast')],
+    "crumbs": [("Guides", "/guides"), ('Business NBN guide', '/business-nbn-guide-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": svc_body(answer='Business NBN plans typically differ from residential ones in fault response commitments and, on some plan types, guaranteed rather than best-effort speeds. For most Gold Coast businesses the more valuable investment is not a faster plan but an automatic 4G or 5G failover connection, since a total outage costs far more than a slow connection. bcom ICT is not a reseller and does not earn from plan recommendations.',

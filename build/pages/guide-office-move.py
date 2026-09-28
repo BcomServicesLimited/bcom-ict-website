@@ -66,7 +66,7 @@ PAGE = {
     "lede": 'Office IT moves almost never fail on moving day. They fail six weeks earlier, on the things nobody started in time.',
     "actions": [("Get a quote", "/contact", "white"), ("Call 07 3041 8993", "tel:+61730418993", "onink")],
     "trust": ['Start 6–8 weeks out', 'Carrier lead times', 'Weekend cutover', 'Tested before Monday'],
-    "crumbs": [("Guides", "/services"), ('Office move IT checklist', '/office-move-it-checklist')],
+    "crumbs": [("Guides", "/guides"), ('Office move IT checklist', '/office-move-it-checklist')],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": svc_body(answer='An office IT move should start six to eight weeks before the move date. The critical path is carrier services — NBN, fibre and phone line provisioning at the new site can take weeks — followed by number porting, cabling and a staged weekend cutover with everything tested before staff arrive. The physical equipment move is the easiest part.',

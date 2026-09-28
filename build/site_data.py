@@ -115,12 +115,13 @@ FOOTER = {
     ],
     # Comparison pages were reachable only from the service pages they sit under,
     # so nothing collected them. Every page now links the set.
-    "Compare": [
+    "Guides": [
         ("Managed IT vs break-fix", "/managed-it-vs-break-fix"),
         ("VoIP vs PBX",             "/voip-vs-pbx-phone-systems"),
         ("Microsoft 365 vs Google", "/microsoft-365-vs-google-workspace"),
         ("UniFi vs Aruba",          "/unifi-vs-aruba-instant-on"),
         ("NAS vs cloud backup",     "/nas-vs-cloud-backup"),
+        ("All guides",              "/guides"),
     ],
     "Company": [
         ("About bcom ICT",        "/about"),

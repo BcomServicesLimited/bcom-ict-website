@@ -64,7 +64,7 @@ PAGE = {
     "eyebrow": "Guide",
     "h1": 'What does IT support actually cost?',
     "lede": "Most providers won't put a number on a page. Here's ours, plus what genuinely drives the figure — so you can sanity-check any quote, including one that isn't from us.",
-    "crumbs": [("Guides", "/services"), ('What IT support costs', '/it-support-cost-gold-coast')],
+    "crumbs": [("Guides", "/guides"), ('What IT support costs', '/it-support-cost-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": svc_body(answer='Business IT support on the Gold Coast is typically charged either hourly or as a flat monthly managed fee. bcom ICT charges $190 + GST per hour ($209.00 inc GST), plus a $100 + GST call-out ($110.00 inc GST) for on-site attendance — so a first hour on site is $290 + GST ($319.00 inc GST), or a fixed $252 inc GST booked online. Remote support carries no call-out. Managed IT is a flat monthly fee calculated from business requirements and services included, quoted after a free review.',

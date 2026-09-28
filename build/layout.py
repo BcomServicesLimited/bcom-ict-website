@@ -11,7 +11,7 @@ MARK = ('<span class="mark" aria-hidden="true"><svg viewBox="0 0 140 73" xmlns="
         '<path fill="currentColor" d="M140 0 L74 36.5 L140 73 L140 53 L110.2 36.5 L140 20 Z"/>'
         '</svg></span>')
 
-ASSET_V = "18"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
+ASSET_V = "19"  # bump when styles.css or main.js changes — Cloudflare edge TTL otherwise serves stale
 
 
 ROBOTS_OK = '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'
@@ -350,9 +350,9 @@ def render(p):
 # Content components. Pages stay content; markup lives here.
 # ---------------------------------------------------------------------------
 
-def cards(items, icon=True):
+def cards(items, icon=True, more="Learn more"):
     """items: (title, href|None, blurb), or (title, blurb) for a plain card.
-    A href makes the whole card a link."""
+    A href makes the whole card a link; `more` labels it."""
     out = ""
     for item in items:
         if len(item) == 2:
@@ -362,7 +362,7 @@ def cards(items, icon=True):
         ic = f'<div class="card-icon">{MARK}</div>' if icon else ""
         if href:
             out += (f'<a class="card" href="{href}">{ic}<h3>{title}</h3><p>{blurb}</p>'
-                    f'<span class="more">Learn more {MARK}</span></a>')
+                    f'<span class="more">{more} {MARK}</span></a>')
         else:
             out += f'<div class="card">{ic}<h3>{title}</h3><p>{blurb}</p></div>'
     return out

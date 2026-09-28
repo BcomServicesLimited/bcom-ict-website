@@ -57,7 +57,7 @@ PAGE = {
     "eyebrow": "Comparison",
     "h1": "Cloud phone system, or keep the PBX?",
     "lede": "We sell cloud and we still program thirty-year-old PBX systems other providers will not touch. So here is the version where we have nothing riding on the answer.",
-    "crumbs": [("Services", "/services"), ("VoIP vs PBX", "/voip-vs-pbx-phone-systems")],
+    "crumbs": [("Guides", "/guides"), ("VoIP vs PBX", "/voip-vs-pbx-phone-systems")],
     "faqs": FAQS,
     "reviewed": "September 2026",
     "body": f'''

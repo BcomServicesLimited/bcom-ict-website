@@ -64,7 +64,7 @@ PAGE = {
     "eyebrow": "Comparison",
     "h1": "UniFi or Aruba Instant On?",
     "lede": "Two good ranges that answer different questions. We install both, so here is the honest version rather than the one that suits whichever we would rather sell you.",
-    "crumbs": [("Services", "/services"), ("UniFi vs Aruba Instant On", "/unifi-vs-aruba-instant-on")],
+    "crumbs": [("Guides", "/guides"), ("UniFi vs Aruba Instant On", "/unifi-vs-aruba-instant-on")],
     "faqs": FAQS,
     "reviewed": "September 2026",
     "body": f'''

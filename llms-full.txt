@@ -828,6 +828,26 @@ A: Yes, and it is usually the first thing we change on an inherited unit. Publis
 
 ---
 
+## IT Guides for Gold Coast Businesses
+URL: https://www.bcomservices.com/guides
+
+bcom ICT publishes free, plain-English IT guides for Australian businesses: how to choose an IT provider, what IT support costs, managed IT versus pay-as-you-go, comparisons of Microsoft 365 and Google Workspace, cloud and PBX phone systems, NAS and cloud backup, and UniFi and Aruba WiFi, plus checklists for office moves, business NBN and computer replacement. Call 07 3041 8993.
+
+**Q: Are the bcom ICT guides written to sell you something?**
+A: They are written to be useful whether or not you hire us. The provider guide tells you to ask every question in it of bcom ICT as well, and several of the comparisons conclude that the cheaper option or the one you already have is the right call. A guide that only ever arrived at our services would not be worth reading.
+
+**Q: Where should a business start when choosing an IT provider?**
+A: Start with how to choose an IT provider, which sets out the questions that separate a good provider from a confident one. Then read what IT support costs, so a quote can be judged against realistic numbers, and managed IT versus pay-as-you-go to decide which model you are buying before comparing anyone's price.
+
+**Q: Is advice on which technology to choose free?**
+A: The guides are free to read, and so is the first conversation with bcom ICT and the systems review that usually follows it. You get a plain-English view of what suits your business, and you keep it whether or not you engage us. Call 07 3041 8993.
+
+**Q: Do the guides apply outside the Gold Coast?**
+A: Almost all of it does. The comparisons, the provider questions and the planning checklists apply to any Australian business. The Gold Coast detail is mostly in the costs guide, where on-site rates reflect attending locally, and in the NBN guide where local connection types come up.
+
+
+---
+
 ## Business Hardware Procurement & Setup Gold Coast
 URL: https://www.bcomservices.com/hardware-procurement-setup-gold-coast
 

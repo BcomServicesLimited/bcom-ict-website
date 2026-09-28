@@ -65,7 +65,7 @@ PAGE = {
     "eyebrow": "Guide",
     "h1": 'Eight questions to ask any IT provider',
     "lede": "Written by people who sit on the other side of this table. Ask all eight of any provider you're considering — including us — and compare the answers in writing.",
-    "crumbs": [("Guides", "/services"), ('How to choose an MSP', '/how-to-choose-an-msp-gold-coast')],
+    "crumbs": [("Guides", "/guides"), ('How to choose an MSP', '/how-to-choose-an-msp-gold-coast')],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": svc_body(answer='To choose a managed IT provider, judge on criteria rather than marketing: a written response target, month-to-month terms rather than a lock-in contract, a documented security position, technicians who actually attend your premises, transparent pricing, and a clean exit process. Several capable MSPs operate on the Gold Coast — ask each the eight questions below and compare the written answers.',

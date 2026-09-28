@@ -63,7 +63,7 @@ PAGE = {
     "eyebrow": "Guide",
     "h1": 'Hacked? Do these things, in this order',
     "lede": 'Panic wastes the hour. A sequence uses it. Every step below assumes the one before it is done.',
-    "crumbs": [("Guides", "/services"), ('Hacked? First 60 minutes', '/what-to-do-when-hacked')],
+    "crumbs": [("Guides", "/guides"), ('Hacked? First 60 minutes', '/what-to-do-when-hacked')],
     "faqs": FAQS,
     "reviewed": "August 2026",
     "body": svc_body(answer='If your business has been hacked: disconnect affected machines from the network but do not switch them off, because shutting down destroys evidence held in memory. Do not delete anything or rebuild the machine. Change critical passwords from a device you know is clean, starting with email. Call your IT provider and your bank. Write down what you saw and when. Do not communicate with the attacker before taking advice. Call bcom ICT on 07 3041 8993 — returned in business hours.',

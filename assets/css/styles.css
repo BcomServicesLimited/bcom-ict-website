@@ -34,6 +34,7 @@
   --warn:        #A8620A;
   --warn-tint:   #FBF1E3;
   --alert:       #B3261E;
+  --alert-tint:  #FCEDEC;
 
   /* Type */
   --display: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -712,3 +713,15 @@ form.enquiry button[disabled]{opacity:.6;cursor:progress;}
 /* Honeypot. Positioned off-screen rather than display:none — a bot that skips
    hidden inputs will skip a trap, and the point is that it fills this one. */
 .hp{position:absolute!important;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+
+/* Urgent callout. A safety net for a reader who may be mid-incident; place it as
+   high as the page allows without leading a browsing page with an alarm.
+   Semantic red, not the brand blue. */
+.urgent{
+  display:flex;gap:var(--s4);align-items:flex-start;
+  background:var(--alert-tint);border:1px solid color-mix(in srgb,var(--alert) 22%,transparent);
+  border-left:4px solid var(--alert);border-radius:var(--radius);padding:var(--s5) var(--s6);
+}
+.urgent h2{font-size:1.25rem;color:var(--alert);}
+.urgent p{margin-top:var(--s2);color:var(--ink-soft);max-width:var(--measure);}
+.urgent .btn{margin-top:var(--s4);}
