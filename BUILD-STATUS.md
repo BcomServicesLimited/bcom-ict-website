@@ -365,11 +365,37 @@ old site; treat it as the baseline the rebuild is measured against.
 |---|---|---|---|---|
 | 3 Sept 2026 (data to 28 Aug — pre-cutover) | 81 | 81 | 7 | 62 |
 | 7 Sept 2026 (data to 4 Sept) | **120** | 82 | 6 | 59 |
+| 28 Sept 2026 (data to 21 Sept) | 113 | **34** | 7 | 54 |
 
 **"Crawled — currently not indexed" is the number to watch.** It is the pages
 Google fetched and declined to index, and it was the old site's core problem:
 two hosts and two URL forms made everything look redundant. If the rebuild
 worked, it falls over the coming weeks.
+
+**28 Sept read.** "Crawled — currently not indexed" fell **82 → 34**, the
+clearest evidence yet that the rebuild fixed what was wrong. Indexed settled at
+113 against a 112-page site: the stale old URLs have dropped out and the index
+now matches the site almost exactly. The non-www host has **disappeared from
+the Pages report entirely** — at the 3 Sept baseline it carried 108 URLs and
+half of all impressions.
+
+**The part that is not good news.** Impressions fell from ~300/day before
+cutover to **129/day** in the week of 21 Sept, and were still falling. Over the
+same weeks average position *improved* (42 → 37 → 31, the best since July) and
+CTR rose, which is the signature of low-value impressions disappearing rather
+than rankings collapsing. Some of the loss is intended — "seo services gold
+coast" went 1,383 impressions → 8 after that page was retired.
+
+**Do not read the money-term table in the 28 Sept export as a verdict.** Eleven
+of thirteen core terms show a worse position than the 12-month baseline, but the
+3-month window is 67 days of the *old* site and 25 of the new, and the old site
+was already sliding (position ~27 in June to ~35–38 through August, before any
+change). It cannot isolate the rebuild. The right test is Search Console's
+**Compare** mode on Queries: **1–25 Sept vs 1–25 Aug**.
+
+One live 404 found and fixed: `/support/iso-42001-ai-governance-gold-coast`,
+a fossil of a relative link inside the old site's `/support/` directory. The
+new build has no relative links, so nothing regenerates it.
 
 Google raised "Excluded by 'noindex' tag — 1 page" on 7 Sept. That page is
 `/thank-you`, verified live serving `noindex, follow`, kept out of sitemap.xml,

@@ -67,6 +67,10 @@ CONSOLIDATE = {
     "/computer-support-burleigh-heads":                    "/on-site-computer-repair-gold-coast",
     "/starlink-installation-services":                     "/nbn-internet-support-gold-coast",
     "/blog-tech-geeks":                                    "/",
+    # Old-site fossil (28 Sept 2026): the previous site had a /support/ directory,
+    # and a relative link inside it produced this nested URL. The new build has no
+    # relative links, so nothing generates it any more — Google just remembers it.
+    "/support/iso-42001-ai-governance-gold-coast":         "/iso-42001-ai-governance-gold-coast",
     "/business":                        "/services",
 }
 
