@@ -393,6 +393,16 @@ was already sliding (position ~27 in June to ~35–38 through August, before any
 change). It cannot isolate the rebuild. The right test is Search Console's
 **Compare** mode on Queries: **1–25 Sept vs 1–25 Aug**.
 
+**Twelve-month context (export of 28 Sept).** The old site peaked in Feb 2026
+(2.39 clicks/day) and declined for five straight months: **August — its last
+full month — was its worst of the year** on clicks (0.84/day), CTR (0.26%) and
+position (35.0). The rebuild landed at the bottom of a slide it did not cause.
+September on the new site (25 days): **clicks 1.24/day, +48% on August; CTR
+0.55%, more than double**. Impressions (226/day) and average position (38.6) are
+not yet recovering — most likely 112 new pages entering deep for long-tail
+queries, but unproven. **Next read: late October**, Compare mode, 1–25 Oct vs
+1–25 Aug. That is the per-query verdict.
+
 One live 404 found and fixed: `/support/iso-42001-ai-governance-gold-coast`,
 a fossil of a relative link inside the old site's `/support/` directory. The
 new build has no relative links, so nothing regenerates it.
