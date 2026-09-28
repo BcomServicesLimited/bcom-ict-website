@@ -7,7 +7,7 @@ QUOTES = [
     ("bcom ICT fixed our office network the same day we called. Professional, fast and fairly priced. Highly recommend for any Gold Coast business.", "Michael T. · Robina"),
     ("Set up our entire VoIP phone system for our Southport office. Very knowledgeable and explained everything clearly.", "David R. · Southport"),
     # Public Google review, Sept 2026. Grow&Co gave written permission to be
-    # named (Natalie Johnson, 3 Sept 2026). Quoted verbatim, including their
+    # named (in writing, 3 Sept 2026). Quoted verbatim, including their
     # capitalisation of the brand — it is a quotation, not our own copy.
     ("We found Bcom ICT via an online search for our recent office relocation, which required dual monitor arm setups for workstations and cable management. They were on time, communicated proactively, and left the workspace clean and organised. When we discovered the data cable management hadn&rsquo;t been completed by the desk suppliers, Royce didn&rsquo;t hesitate to help and even came in on Saturday so that we were ready to go Monday morning.</p><p>Royce also worked alongside several other contractors on site, handling any hurdles patiently and professionally, without drama. His communication was clear throughout, so there were no misunderstandings.</p><p>Pricing was fair and in line with other quotes we received, and our new office turned out amazingly. We&rsquo;d highly recommend Bcom ICT to any business relocating or upgrading their IT setup.", "Grow&amp;Co Property Agents · Southport"),
 ]

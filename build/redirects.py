@@ -136,6 +136,16 @@ def main():
         "# --- apex to www -------------------------------------------------------",
         "https://bcomservices.com/*    https://www.bcomservices.com/:splat    301",
         "",
+        "# --- repo files that are not part of the website -----------------------",
+        "# Cloudflare Pages publishes the repo root, so without these the live site",
+        "# serves the project notes and build source. They stay in the repo for",
+        "# anyone editing it; they just must not be served on the business domain.",
+        "/*.md          /    301",
+        "/*.py          /    301",
+        "/build/*       /    301",
+        "/.gitignore    /    301",
+        "/.wrangler/*   /    301",
+        "",
         "# --- consolidated during the rebuild -----------------------------------",
     ]
     for src, dst in sorted(set(cons)):
